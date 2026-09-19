@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://twbjtf6s8x3k"]
+
+[ext_resource type="Texture2D" uid="uid://cprfwnfvnwadb" path="res://assets/Journal Contacts.png" id="1_qu7dv"]
+[ext_resource type="Texture2D" uid="uid://dol4ei1qc0dlr" path="res://assets/Journal_Lady_Button_1.png" id="2_qu7dv"]
+[ext_resource type="Texture2D" uid="uid://bnbnertv03cb3" path="res://assets/Journal_Dagger_Button_1.png" id="3_6n68f"]
+[ext_resource type="Script" uid="uid://caj0xu2sl7bcq" path="res://lady.gd" id="3_ldwhp"]
+[ext_resource type="Shortcut" uid="uid://bu8or8fcmnct0" path="res://Dagger_Page.tscn" id="3_xtd5u"]
+[ext_resource type="Script" uid="uid://wwdsj6wr42fq" path="res://texture_button_2.gd" id="5_k8irv"]
+[ext_resource type="Texture2D" uid="uid://f4uworqd33k6" path="res://assets/Journal_Val_Button_1.png" id="6_nnpvs"]
+[ext_resource type="Script" uid="uid://dypp24imn3cx" path="res://val.gd" id="7_0vx2i"]
+[ext_resource type="Texture2D" uid="uid://d0p6okk5cb6h5" path="res://assets/Journal_Noah_Button_1.png" id="7_g73i5"]
+[ext_resource type="Texture2D" uid="uid://bf2ljb6ft4mn8" path="res://assets/Journal_Juniper_Button_1.png" id="8_xymn6"]
+[ext_resource type="Texture2D" uid="uid://g8xwpipkotnx" path="res://assets/Journal_Barb_Button_1.png" id="9_0vx2i"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="12_5xf86"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="13_tv8si"]
+
+[node name="Node2D" type="Node2D" unique_id=1401346317]
+
+[node name="Panel" type="Panel" parent="." unique_id=1750551759]
+visible = false
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="JournalContacts" type="Sprite2D" parent="." unique_id=1199986032]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("1_qu7dv")
+
+[node name="Lady" type="TextureButton" parent="JournalContacts" unique_id=102019825]
+offset_left = -195.48682
+offset_top = -284.05713
+offset_right = -40.247253
+offset_bottom = 70.94287
+texture_pressed = ExtResource("2_qu7dv")
+texture_hover = ExtResource("2_qu7dv")
+script = ExtResource("3_ldwhp")
+
+[node name="Dagger" type="TextureButton" parent="JournalContacts" unique_id=558758651]
+offset_left = -8.53164
+offset_top = -44.234882
+offset_right = 264.46835
+offset_bottom = 342.7651
+scale = Vector2(1.000004, 1.000004)
+shortcut = ExtResource("3_xtd5u")
+texture_pressed = ExtResource("3_6n68f")
+texture_hover = ExtResource("3_6n68f")
+script = ExtResource("5_k8irv")
+
+[node name="Val" type="TextureButton" parent="JournalContacts" unique_id=1414078442]
+offset_left = -520.98914
+offset_top = 131.03564
+offset_right = -351.98914
+offset_bottom = 337.03564
+texture_pressed = ExtResource("6_nnpvs")
+texture_hover = ExtResource("6_nnpvs")
+script = ExtResource("7_0vx2i")
+
+[node name="Noah" type="TextureButton" parent="JournalContacts" unique_id=1859000335]
+offset_left = -642.8439
+offset_top = -368.06796
+offset_right = -472.84387
+offset_bottom = -166.06796
+texture_pressed = ExtResource("7_g73i5")
+texture_hover = ExtResource("7_g73i5")
+
+[node name="Juniper" type="TextureButton" parent="JournalContacts" unique_id=543261019]
+offset_left = -796.4142
+offset_top = -358.05252
+offset_right = -625.4142
+offset_bottom = -154.05252
+texture_pressed = ExtResource("8_xymn6")
+texture_hover = ExtResource("8_xymn6")
+
+[node name="Barb" type="TextureButton" parent="JournalContacts" unique_id=1405527653]
+offset_left = -778.0525
+offset_top = -122.68929
+offset_right = -611.0525
+offset_bottom = 80.31071
+texture_pressed = ExtResource("9_0vx2i")
+texture_hover = ExtResource("9_0vx2i")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=1194998283]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("12_5xf86")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=2139536008]
+offset_left = 760.0
+offset_top = 34.000004
+offset_right = 800.0
+offset_bottom = 74.0
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("13_tv8si")
+
+[connection signal="pressed" from="JournalContacts/Lady" to="JournalContacts/Lady" method="_on_pressed"]
+[connection signal="pressed" from="JournalContacts/Dagger" to="JournalContacts/Dagger" method="_on_pressed"]
+[connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Dagger" method="_on_val_pressed"]
+[connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Val" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]

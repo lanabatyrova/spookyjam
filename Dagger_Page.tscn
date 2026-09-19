@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://bu8or8fcmnct0"]
+
+[ext_resource type="Texture2D" uid="uid://olvjm7c6arvr" path="res://assets/Journal Contacts_Dagger.png" id="1_5fscg"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_vjal6"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://flip_back.gd" id="3_vjal6"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="4_a7o1x"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="5_j4suj"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="6_r4dq4"]
+
+[node name="Node2D" type="Node2D" unique_id=1876731372]
+
+[node name="JournalContacts" type="Sprite2D" parent="." unique_id=331983510]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("1_5fscg")
+
+[node name="FLIP back" type="TextureButton" parent="." unique_id=780840195]
+offset_left = 63.0
+offset_top = 472.99997
+offset_right = 1576.0
+offset_bottom = 2361.0
+rotation = 0.008145895
+scale = Vector2(0.07847464, 0.07847464)
+texture_pressed = ExtResource("2_vjal6")
+texture_hover = ExtResource("2_vjal6")
+stretch_mode = 0
+script = ExtResource("3_vjal6")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=817211117]
+visible = false
+offset_left = 686.0
+offset_top = 433.9999
+offset_right = 2199.0
+offset_bottom = 2322.0
+rotation = -0.1690535
+scale = Vector2(0.07847464, 0.07847464)
+texture_pressed = ExtResource("2_vjal6")
+texture_hover = ExtResource("2_vjal6")
+stretch_mode = 0
+flip_h = true
+
+[node name="Contacts Button" type="LinkButton" parent="." unique_id=691147711]
+offset_left = 781.0
+offset_top = 242.99997
+offset_right = 821.0
+offset_bottom = 282.99997
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("4_a7o1x")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=1667002550]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("5_j4suj")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=528319352]
+offset_left = 1609.1451
+offset_top = 357.89325
+offset_right = 1649.1451
+offset_bottom = 397.89325
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("6_r4dq4")
+
+[connection signal="pressed" from="FLIP back" to="FLIP back" method="_on_pressed"]
+[connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
