@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh4eqmtbq5gpp"
-path="res://.godot/imported/Journal_Lady_Button.png-540d616a0535c8bd13444c41eea7aa9a.ctex"
+uid="uid://sjyq1kcph1kb"
+path="res://.godot/imported/behind_phone_screen.png-e78403363b6e693c99eca726f52018d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal_Lady_Button.png"
-dest_files=["res://.godot/imported/Journal_Lady_Button.png-540d616a0535c8bd13444c41eea7aa9a.ctex"]
+source_file="res://phone/behind_phone_screen.png"
+dest_files=["res://.godot/imported/behind_phone_screen.png-e78403363b6e693c99eca726f52018d4.ctex"]
 
 [params]
 

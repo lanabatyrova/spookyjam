@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de6jmx1v2mxxo"
-path="res://.godot/imported/Journal_Barb_Button.png-410128e93e7b1894a93de19fdcf17af0.ctex"
+uid="uid://tshkdlldjnql"
+path="res://.godot/imported/0_pressed.png-aa1bbb8fd95418d3148fbc5bfcb36c50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal_Barb_Button.png"
-dest_files=["res://.godot/imported/Journal_Barb_Button.png-410128e93e7b1894a93de19fdcf17af0.ctex"]
+source_file="res://phone/0_pressed.png"
+dest_files=["res://.godot/imported/0_pressed.png-aa1bbb8fd95418d3148fbc5bfcb36c50.ctex"]
 
 [params]
 

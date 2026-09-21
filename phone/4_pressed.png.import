@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clm3ox4rs2npd"
-path="res://.godot/imported/Journal_Noah_Button.png-23ac61666b51eecccd6a821f2fcd84da.ctex"
+uid="uid://bffyt0u55688l"
+path="res://.godot/imported/4_pressed.png-faa21a7787e4716f2c5846c28c05747c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal_Noah_Button.png"
-dest_files=["res://.godot/imported/Journal_Noah_Button.png-23ac61666b51eecccd6a821f2fcd84da.ctex"]
+source_file="res://phone/4_pressed.png"
+dest_files=["res://.godot/imported/4_pressed.png-faa21a7787e4716f2c5846c28c05747c.ctex"]
 
 [params]
 

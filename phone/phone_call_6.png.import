@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn4qp67yfpc7s"
-path="res://.godot/imported/Journal_Dagger_Button.png-47d06577f7c4fe750f1f36061a99c464.ctex"
+uid="uid://bd6lovst3hb5r"
+path="res://.godot/imported/phone_call_6.png-dc5b3a90ecaf916614a720d777dcd1ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal_Dagger_Button.png"
-dest_files=["res://.godot/imported/Journal_Dagger_Button.png-47d06577f7c4fe750f1f36061a99c464.ctex"]
+source_file="res://phone/phone_call_6.png"
+dest_files=["res://.godot/imported/phone_call_6.png-dc5b3a90ecaf916614a720d777dcd1ee.ctex"]
 
 [params]
 
