@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dfoupah3rcx7m"]
 
 [ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_l1kwa"]
-[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="2_lmb8y"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="3_lmb8y"]
-[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="4_ns3x7"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Journal Menu/contacts_button.gd" id="2_lmb8y"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="3_lmb8y"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Journal Menu/settings_button.gd" id="4_ns3x7"]
 
 [node name="Node2D" type="Node2D" unique_id=341417147]
 

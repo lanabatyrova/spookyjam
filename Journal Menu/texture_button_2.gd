@@ -1,4 +1,4 @@
-extends LinkButton
+extends TextureButton
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,4 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Settings.tscn")
+	get_tree().change_scene_to_file("res://Journal Menu/Dagger_Page.tscn")
+
+	pass # Replace with function body.

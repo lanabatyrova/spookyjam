@@ -11,5 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 
+
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Val_Page.tscn")
+	get_tree().change_scene_to_file("res://Journal Menu/Lady_Page.tscn")

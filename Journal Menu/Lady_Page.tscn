@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dru7x3cgkycrn" path="res://assets/Journal_Lady.png" id="1_shccm"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_4s3ma"]
-[ext_resource type="Script" uid="uid://d0k2f4w1cknwj" path="res://lady_flip_back.gd" id="3_luwdd"]
+[ext_resource type="Script" uid="uid://d0k2f4w1cknwj" path="res://Journal Menu/lady_flip_back.gd" id="3_luwdd"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Flip Page 2.png" id="3_shccm"]
-[ext_resource type="Script" uid="uid://12m8f8quuluf" path="res://lady_flip_forward.gd" id="4_4s3ma"]
-[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="6_dqr1g"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="7_u8hky"]
-[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="8_omsjp"]
+[ext_resource type="Script" uid="uid://12m8f8quuluf" path="res://Journal Menu/lady_flip_forward.gd" id="4_4s3ma"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Journal Menu/contacts_button.gd" id="6_dqr1g"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="7_u8hky"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Journal Menu/settings_button.gd" id="8_omsjp"]
 
 [node name="Node2D" type="Node2D" unique_id=948762319]
 

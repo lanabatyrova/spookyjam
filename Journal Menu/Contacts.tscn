@@ -3,16 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://cprfwnfvnwadb" path="res://assets/Journal Contacts.png" id="1_qu7dv"]
 [ext_resource type="Texture2D" uid="uid://dol4ei1qc0dlr" path="res://assets/Journal_Lady_Button_1.png" id="2_qu7dv"]
 [ext_resource type="Texture2D" uid="uid://bnbnertv03cb3" path="res://assets/Journal_Dagger_Button_1.png" id="3_6n68f"]
-[ext_resource type="Script" uid="uid://caj0xu2sl7bcq" path="res://lady.gd" id="3_ldwhp"]
-[ext_resource type="Shortcut" uid="uid://bu8or8fcmnct0" path="res://Dagger_Page.tscn" id="3_xtd5u"]
-[ext_resource type="Script" uid="uid://wwdsj6wr42fq" path="res://texture_button_2.gd" id="5_k8irv"]
+[ext_resource type="Script" uid="uid://caj0xu2sl7bcq" path="res://Journal Menu/lady.gd" id="3_ldwhp"]
+[ext_resource type="Script" uid="uid://wwdsj6wr42fq" path="res://Journal Menu/texture_button_2.gd" id="5_k8irv"]
 [ext_resource type="Texture2D" uid="uid://f4uworqd33k6" path="res://assets/Journal_Val_Button_1.png" id="6_nnpvs"]
-[ext_resource type="Script" uid="uid://dypp24imn3cx" path="res://val.gd" id="7_0vx2i"]
+[ext_resource type="Script" uid="uid://dypp24imn3cx" path="res://Journal Menu/val.gd" id="7_0vx2i"]
 [ext_resource type="Texture2D" uid="uid://d0p6okk5cb6h5" path="res://assets/Journal_Noah_Button_1.png" id="7_g73i5"]
 [ext_resource type="Texture2D" uid="uid://bf2ljb6ft4mn8" path="res://assets/Journal_Juniper_Button_1.png" id="8_xymn6"]
 [ext_resource type="Texture2D" uid="uid://g8xwpipkotnx" path="res://assets/Journal_Barb_Button_1.png" id="9_0vx2i"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="12_5xf86"]
-[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="13_tv8si"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="12_5xf86"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Journal Menu/settings_button.gd" id="13_tv8si"]
 
 [node name="Node2D" type="Node2D" unique_id=1401346317]
 
@@ -42,7 +41,6 @@ offset_top = -44.234882
 offset_right = 264.46835
 offset_bottom = 342.7651
 scale = Vector2(1.000004, 1.000004)
-shortcut = ExtResource("3_xtd5u")
 texture_pressed = ExtResource("3_6n68f")
 texture_hover = ExtResource("3_6n68f")
 script = ExtResource("5_k8irv")
