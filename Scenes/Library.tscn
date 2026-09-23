@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cudh0v5xqyki1"]
+
+[ext_resource type="Texture2D" uid="uid://u6am0uydlkwo" path="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" id="1_cjel0"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="2_quon1"]
+
+[node name="Node2D" type="Node2D" unique_id=1495003555]
+
+[node name="Panel" type="Panel" parent="." unique_id=1641530559]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="StockholmPublicLibraryAlamy1808398246" type="Sprite2D" parent="Panel" unique_id=2054042218]
+position = Vector2(576.0001, 324.25)
+scale = Vector2(0.56347656, 0.4228516)
+texture = ExtResource("1_cjel0")
+
+[node name="LadyMacDeath1" type="Sprite2D" parent="." unique_id=1527822353]
+position = Vector2(781.00006, 361)
+scale = Vector2(0.14494306, 0.14494307)
+texture = ExtResource("2_quon1")
