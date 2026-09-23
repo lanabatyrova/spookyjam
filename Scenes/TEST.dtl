@@ -1,0 +1,6 @@
+join Lizzy right
+Lizzy: hello
+join Barb center [animation="Fade In"]
+Barb: what
+join Juniper left [animation="Fade In" z_index="-50"]
+Juniper: hey everyone
