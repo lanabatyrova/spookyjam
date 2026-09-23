@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://clkh33qob0vfq" path="res://assets/Journal_Val.png" id="1_wwaxy"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_vjj0l"]
-[ext_resource type="Script" uid="uid://dbr0oxckeeb15" path="res://Val_Flip_Back.gd" id="3_5mh65"]
+[ext_resource type="Script" uid="uid://dbr0oxckeeb15" path="res://Journal Menu/Val_Flip_Back.gd" id="3_5mh65"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Flip Page 2.png" id="3_pw6v1"]
-[ext_resource type="Script" uid="uid://c481bci4s6cgv" path="res://Val_Flip_Forwards.gd" id="5_oyu38"]
-[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="6_5mh65"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="7_oyu38"]
-[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="8_2voj2"]
+[ext_resource type="Script" uid="uid://c481bci4s6cgv" path="res://Journal Menu/Val_Flip_Forwards.gd" id="5_oyu38"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Journal Menu/contacts_button.gd" id="6_5mh65"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="7_oyu38"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Journal Menu/settings_button.gd" id="8_2voj2"]
 
 [node name="Node2D" type="Node2D" unique_id=1955171214]
 

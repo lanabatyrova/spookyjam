@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Lady_Page.tscn")
+	get_tree().change_scene_to_file("res://Journal Menu/Dagger_Page.tscn")

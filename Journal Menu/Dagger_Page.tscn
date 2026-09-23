@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://bu8or8fcmnct0"]
 
-[ext_resource type="Texture2D" uid="uid://olvjm7c6arvr" path="res://assets/Journal Contacts_Dagger.png" id="1_5fscg"]
-[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_vjal6"]
-[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://flip_back.gd" id="3_vjal6"]
-[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="4_a7o1x"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="5_j4suj"]
-[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://settings_button.gd" id="6_r4dq4"]
+[ext_resource type="Texture2D" uid="uid://olvjm7c6arvr" path="res://assets/Journal Contacts_Dagger.png" id="1_bf32a"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_ipjsj"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Journal Menu/flip_back.gd" id="3_k3rsn"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Journal Menu/contacts_button.gd" id="4_3sf4i"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="5_lnoy5"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Journal Menu/settings_button.gd" id="6_ntplw"]
 
 [node name="Node2D" type="Node2D" unique_id=1876731372]
 
 [node name="JournalContacts" type="Sprite2D" parent="." unique_id=331983510]
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
-texture = ExtResource("1_5fscg")
+texture = ExtResource("1_bf32a")
 
 [node name="FLIP back" type="TextureButton" parent="." unique_id=780840195]
 offset_left = 63.0
@@ -21,10 +21,10 @@ offset_right = 1576.0
 offset_bottom = 2361.0
 rotation = 0.008145895
 scale = Vector2(0.07847464, 0.07847464)
-texture_pressed = ExtResource("2_vjal6")
-texture_hover = ExtResource("2_vjal6")
+texture_pressed = ExtResource("2_ipjsj")
+texture_hover = ExtResource("2_ipjsj")
 stretch_mode = 0
-script = ExtResource("3_vjal6")
+script = ExtResource("3_k3rsn")
 
 [node name="TextureButton2" type="TextureButton" parent="." unique_id=817211117]
 visible = false
@@ -34,8 +34,8 @@ offset_right = 2199.0
 offset_bottom = 2322.0
 rotation = -0.1690535
 scale = Vector2(0.07847464, 0.07847464)
-texture_pressed = ExtResource("2_vjal6")
-texture_hover = ExtResource("2_vjal6")
+texture_pressed = ExtResource("2_ipjsj")
+texture_hover = ExtResource("2_ipjsj")
 stretch_mode = 0
 flip_h = true
 
@@ -46,7 +46,7 @@ offset_right = 821.0
 offset_bottom = 282.99997
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
-script = ExtResource("4_a7o1x")
+script = ExtResource("4_3sf4i")
 
 [node name="Notes Button" type="LinkButton" parent="." unique_id=1667002550]
 offset_left = 790.00006
@@ -55,16 +55,16 @@ offset_right = 830.00006
 offset_bottom = 390.00003
 rotation = -0.09169341
 scale = Vector2(1.0723437, 2.437207)
-script = ExtResource("5_j4suj")
+script = ExtResource("5_lnoy5")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=528319352]
-offset_left = 1609.1451
-offset_top = 357.89325
-offset_right = 1649.1451
-offset_bottom = 397.89325
+offset_left = 766.00006
+offset_top = 32.999992
+offset_right = 806.00006
+offset_bottom = 72.99999
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
-script = ExtResource("6_r4dq4")
+script = ExtResource("6_ntplw")
 
 [connection signal="pressed" from="FLIP back" to="FLIP back" method="_on_pressed"]
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]

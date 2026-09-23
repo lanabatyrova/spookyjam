@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://c7axeg17208yy"]
 
 [ext_resource type="Texture2D" uid="uid://csfdpbuojgw3q" path="res://assets/Journal Settings.png" id="1_bvb5x"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://link_button.gd" id="2_mx4kw"]
-[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://contacts_button.gd" id="3_37a8j"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Journal Menu/link_button.gd" id="2_mx4kw"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Journal Menu/contacts_button.gd" id="3_37a8j"]
 [ext_resource type="Texture2D" uid="uid://dbhbjanta2r6b" path="res://assets/BFFS.png" id="4_37a8j"]
-[ext_resource type="Script" uid="uid://bd8o1x3kwuaxx" path="res://BFFs.gd" id="5_blqn1"]
-[ext_resource type="Script" uid="uid://ckmbg6au2a5jn" path="res://Vol_Up.gd" id="5_sfvul"]
+[ext_resource type="Script" uid="uid://bd8o1x3kwuaxx" path="res://Journal Menu/BFFs.gd" id="5_blqn1"]
+[ext_resource type="Script" uid="uid://ckmbg6au2a5jn" path="res://Journal Menu/Vol_Up.gd" id="5_sfvul"]
 
 [sub_resource type="Theme" id="Theme_vgl7g"]
 
