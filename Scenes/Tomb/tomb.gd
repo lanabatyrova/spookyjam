@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var lady_mac = $LadyMacDeath1
+@onready var ladymac = $LadyMacButton
 
 var current_day: int
 
@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	lady_mac.visible = day in [3,5]
+	ladymac.visible = day in [6,7]

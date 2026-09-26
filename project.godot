@@ -33,8 +33,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
-"test_timeline_d3": "res://Timelines/test_timeline_d3.dtl",
-"test_timeline_d5": "res://Timelines/test_timeline_d5.dtl"
+"test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
+"test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",

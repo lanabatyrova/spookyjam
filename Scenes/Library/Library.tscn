@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cudh0v5xqyki1"]
+
+[ext_resource type="Script" uid="uid://cgaermw4rem0" path="res://Scenes/Library/library.gd" id="1_3kh1m"]
+[ext_resource type="Texture2D" uid="uid://u6am0uydlkwo" path="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" id="1_cjel0"]
+[ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://sprites/Val_1.png" id="3_3kh1m"]
+[ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="4_3kh1m"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="5_6apm7"]
+[ext_resource type="Script" uid="uid://c45tqmv6kjcvo" path="res://Scenes/Library/barb_library.gd" id="6_1rjaq"]
+[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="7_1rjaq"]
+[ext_resource type="Script" uid="uid://lrkki6l17hps" path="res://Scenes/Library/noah_library.gd" id="8_hi2wh"]
+
+[node name="Library" type="Node2D" unique_id=1495003555]
+script = ExtResource("1_3kh1m")
+
+[node name="Panel" type="Panel" parent="." unique_id=1641530559]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="StockholmPublicLibraryAlamy1808398246" type="Sprite2D" parent="Panel" unique_id=2054042218]
+position = Vector2(576.0001, 324.25)
+scale = Vector2(0.56347656, 0.4228516)
+texture = ExtResource("1_cjel0")
+
+[node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
+offset_left = 830.0
+offset_top = 274.0
+offset_right = 2234.0
+offset_bottom = 2565.0
+scale = Vector2(0.1560062, 0.1560062)
+texture_normal = ExtResource("3_3kh1m")
+script = ExtResource("4_3kh1m")
+
+[node name="BarbButton" type="TextureButton" parent="." unique_id=506002566]
+offset_left = 599.0
+offset_top = 186.00002
+offset_right = 2003.0
+offset_bottom = 2477.0
+scale = Vector2(0.1560062, 0.1560062)
+texture_normal = ExtResource("5_6apm7")
+script = ExtResource("6_1rjaq")
+
+[node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
+offset_left = 19.999998
+offset_top = 329.0
+offset_right = 1424.0
+offset_bottom = 2620.0
+scale = Vector2(0.1560062, 0.1560062)
+texture_normal = ExtResource("7_1rjaq")
+script = ExtResource("8_hi2wh")
+
+[connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]
+[connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]

@@ -19,12 +19,21 @@ offset_bottom = 522.0
 scale = Vector2(17.975397, 3.8219967)
 script = ExtResource("2_n1uvu")
 
+[node name="Play Episode2" type="Button" parent="." unique_id=407851102]
+offset_left = 315.0
+offset_top = 514.0
+offset_right = 323.0
+offset_bottom = 522.0
+scale = Vector2(17.975397, 3.8219967)
+script = ExtResource("2_n1uvu")
+
 [node name="Button" type="Button" parent="." unique_id=1410823226]
-offset_left = 688.0
-offset_top = 280.0
-offset_right = 738.0
-offset_bottom = 321.0
+offset_left = 687.0
+offset_top = 281.0
+offset_right = 737.0
+offset_bottom = 322.0
 script = ExtResource("3_72c7f")
 
 [connection signal="pressed" from="Play Episode" to="Play Episode" method="_on_pressed"]
+[connection signal="pressed" from="Play Episode2" to="Play Episode2" method="_on_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

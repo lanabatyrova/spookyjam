@@ -1,4 +1,4 @@
-extends Button
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -10,6 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Tomb/Tomb.tscn") #TODO: fix
+func update_day(day: int):
+	pass

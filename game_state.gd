@@ -2,6 +2,20 @@ extends Node
 
 var current_day: int = 1
 
+var inventory = {
+	"sewing_kit": false,
+	"belt": false,
+	"allergy_meds": false,
+	"pocket_shakespeare": false
+	#TODO: add other items
+}
+
+var notes = {
+	"dress_ripped": false,
+	"allergy": false
+	#TODO: add other info
+}
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

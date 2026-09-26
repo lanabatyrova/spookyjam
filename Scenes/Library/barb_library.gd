@@ -13,8 +13,13 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	match GameState.current_day:
-		3:
-			Dialogic.start("res://Timelines/test/test_timeline_d3.dtl")
+		4:
+			print("barb dialogue in library on day ", GameState.current_day)
+			# Dialogic.start()
 		5:
-			Dialogic.start("res://Timelines/test/test_timeline_d5.dtl")
+			print("barb dialogue in library on day ", GameState.current_day)
+			# Dialogic.start()
+		7:
+			print("barb dialogue in library on day ", GameState.current_day)
+			# Dialogic.start()
 		_: print("how did this even happen???")
