@@ -9,7 +9,7 @@
 
 [sub_resource type="Theme" id="Theme_vgl7g"]
 
-[node name="Node2D" type="Node2D" unique_id=694031188]
+[node name="Settings" type="Node2D" unique_id=694031188]
 
 [node name="JournalSettings" type="Sprite2D" parent="." unique_id=2059866950]
 position = Vector2(575.1111, 324.49997)

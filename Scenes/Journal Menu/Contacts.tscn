@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="12_5xf86"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="13_tv8si"]
 
-[node name="Node2D" type="Node2D" unique_id=1401346317]
+[node name="Contacts" type="Node2D" unique_id=1401346317]
 
 [node name="Panel" type="Panel" parent="." unique_id=1750551759]
 visible = false

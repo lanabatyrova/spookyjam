@@ -12,4 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Journal Menu/Dagger_Page.tscn")
+	match GameState.current_day:
+		3:
+			Dialogic.start("res://Timelines/test_timeline_d3.dtl")
+		5:
+			Dialogic.start("res://Timelines/test_timeline_d5.dtl")
+		_: print("how did this even happen???")

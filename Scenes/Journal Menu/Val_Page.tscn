@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="7_oyu38"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_2voj2"]
 
-[node name="Node2D" type="Node2D" unique_id=1955171214]
+[node name="Val_Page" type="Node2D" unique_id=1955171214]
 
 [node name="JournalContacts" type="Sprite2D" parent="." unique_id=582597188]
 position = Vector2(575.1111, 324.49997)
