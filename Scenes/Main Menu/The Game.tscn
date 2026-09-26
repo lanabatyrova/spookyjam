@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c4jxsrexg1pd"]
 
 [ext_resource type="Texture2D" uid="uid://bpyiwjtrf85nu" path="res://Scenes/Main Menu/Main_Menu.png" id="1_oklcf"]
+[ext_resource type="AudioStream" uid="uid://dl8inxqtlikfy" path="res://audio/Lizzie Springs main menu theme.wav" id="1_wj43r"]
 [ext_resource type="Texture2D" uid="uid://hlwuk6y8up0j" path="res://Scenes/Main Menu/Main_Menu_Play.png" id="2_4kwe6"]
 [ext_resource type="Script" uid="uid://c7o62x7fymsdk" path="res://Scenes/day_tester_button.gd" id="2_bnksx"]
 [ext_resource type="Texture2D" uid="uid://depswihivpl5y" path="res://Scenes/Main Menu/Main_Menu_Play_Hover.png" id="3_nd2ui"]
@@ -12,8 +13,15 @@
 [ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://Scenes/Main Menu/settings.gd" id="8_03oub"]
 [ext_resource type="Texture2D" uid="uid://biupdqax7s2p4" path="res://Scenes/Main Menu/Main_Menu_Exit.png" id="8_fjkdb"]
 [ext_resource type="Texture2D" uid="uid://b1s45jlwiprtu" path="res://Scenes/Main Menu/Main_Menu_Exit_Hover.png" id="9_mfj42"]
+[ext_resource type="Texture2D" uid="uid://boxc2v8pn5csa" path="res://Scenes/Main Menu/Logo_Transparent_Nowhite.png" id="13_law43"]
+[ext_resource type="Texture2D" uid="uid://nyp3n4j2ordb" path="res://Scenes/Main Menu/TV EFFECT.png" id="14_oddrt"]
 
 [node name="Node2D" type="Node2D" unique_id=2053078578]
+
+[node name="LizzieSpringsMainMenuTheme" type="AudioStreamPlayer2D" parent="." unique_id=392147511]
+position = Vector2(333, 288)
+stream = ExtResource("1_wj43r")
+autoplay = true
 
 [node name="0000151" type="Sprite2D" parent="." unique_id=975768206]
 position = Vector2(577.125, 322.5)
@@ -34,9 +42,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 113.0
-offset_top = 250.0
+offset_top = 279.0
 offset_right = 113.0
-offset_bottom = 250.0
+offset_bottom = 279.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -85,6 +93,16 @@ offset_transform_position_ratio = Vector2(0.4, 0)
 texture_normal = ExtResource("8_fjkdb")
 texture_pressed = ExtResource("9_mfj42")
 texture_hover = ExtResource("9_mfj42")
+
+[node name="LogoTransparent" type="Sprite2D" parent="." unique_id=1105687240]
+position = Vector2(306, 164)
+scale = Vector2(0.23, 0.23)
+texture = ExtResource("13_law43")
+
+[node name="TvEffect" type="Sprite2D" parent="." unique_id=1355256325]
+position = Vector2(572, 325.00003)
+scale = Vector2(0.32944912, -0.3107788)
+texture = ExtResource("14_oddrt")
 
 [node name="DayButton" type="Button" parent="." unique_id=595193764]
 offset_left = 1087.0
