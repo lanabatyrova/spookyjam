@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://de35255uhcwak"]
+
+[ext_resource type="Script" uid="uid://2rolbvtiogva" path="res://Scenes/Hallway/hallway.gd" id="1_yixj0"]
+[ext_resource type="Texture2D" uid="uid://bpn2i1x5j5d3k" path="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" id="2_dqxua"]
+[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://sprites/Juniper_1.png" id="3_as5ck"]
+[ext_resource type="Script" uid="uid://kojof2x8xvyn" path="res://Scenes/Hallway/juniper_hallway.gd" id="4_84xge"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="5_c1afe"]
+[ext_resource type="Script" uid="uid://dcp3dx2knhfih" path="res://Scenes/Hallway/barb_hallway.gd" id="6_5tr82"]
+[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="7_jbjv5"]
+[ext_resource type="Script" uid="uid://chdd2cyneau1s" path="res://Scenes/Hallway/noah_hallway.gd" id="8_dfkrl"]
+
+[node name="Hallway" type="Node2D" unique_id=2132066994]
+script = ExtResource("1_yixj0")
+
+[node name="Panel" type="Panel" parent="." unique_id=1374773224]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="1000F347921305PjOg9rZciRuXplmBc7Lx8x8uFe6kBgNq825048994" type="Sprite2D" parent="." unique_id=1980758114]
+position = Vector2(574.5, 324)
+scale = Vector2(1.159, 0.97604793)
+texture = ExtResource("2_dqxua")
+
+[node name="JuniperButton" type="TextureButton" parent="." unique_id=445886226]
+offset_left = 283.0
+offset_top = 136.0
+offset_right = 1215.0
+offset_bottom = 2136.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("3_as5ck")
+script = ExtResource("4_84xge")
+
+[node name="BarbButton" type="TextureButton" parent="." unique_id=1459977272]
+offset_left = 484.99997
+offset_top = 136.0
+offset_right = 1417.0
+offset_bottom = 2136.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("5_c1afe")
+script = ExtResource("6_5tr82")
+
+[node name="NoahButton" type="TextureButton" parent="." unique_id=960815392]
+offset_left = 682.0
+offset_top = 139.0
+offset_right = 1614.0
+offset_bottom = 2139.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("7_jbjv5")
+script = ExtResource("8_dfkrl")
+
+[connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
+[connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]

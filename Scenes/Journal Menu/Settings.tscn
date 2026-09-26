@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c7axeg17208yy"]
+
+[ext_resource type="Texture2D" uid="uid://csfdpbuojgw3q" path="res://assets/Journal Settings.png" id="1_bvb5x"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="2_mx4kw"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="3_37a8j"]
+[ext_resource type="Texture2D" uid="uid://dbhbjanta2r6b" path="res://assets/BFFS.png" id="4_37a8j"]
+[ext_resource type="Script" uid="uid://bd8o1x3kwuaxx" path="res://Scenes/Journal Menu/BFFs.gd" id="5_blqn1"]
+[ext_resource type="Script" uid="uid://ckmbg6au2a5jn" path="res://Scenes/Journal Menu/Vol_Up.gd" id="5_sfvul"]
+
+[sub_resource type="Theme" id="Theme_vgl7g"]
+
+[node name="Settings" type="Node2D" unique_id=694031188]
+
+[node name="JournalSettings" type="Sprite2D" parent="." unique_id=2059866950]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("1_bvb5x")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=1677579107]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("2_mx4kw")
+
+[node name="Contacts Button" type="LinkButton" parent="." unique_id=1791698646]
+offset_left = 781.0
+offset_top = 242.99997
+offset_right = 821.0
+offset_bottom = 282.99997
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("3_37a8j")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=790438952]
+visible = false
+offset_left = 585.0
+offset_top = 10.000001
+offset_right = 2585.0
+offset_bottom = 2010.0
+scale = Vector2(0.086330175, 0.08500525)
+texture_pressed = ExtResource("4_37a8j")
+texture_hover = ExtResource("4_37a8j")
+script = ExtResource("5_blqn1")
+
+[node name="PopupPanel" type="PopupPanel" parent="TextureButton" unique_id=2086420149]
+oversampling_override = 1.0
+position = Vector2i(723, 139)
+size = Vector2i(152, 104)
+theme = SubResource("Theme_vgl7g")
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=223430586]
+offset_left = 718.0
+offset_top = 326.0
+offset_right = 726.0
+offset_bottom = 334.0
+scale = Vector2(2.146463, 1.963362)
+script = ExtResource("5_sfvul")
+
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_pressed"]

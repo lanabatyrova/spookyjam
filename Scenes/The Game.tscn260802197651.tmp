@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c4jxsrexg1pd"]
+
+[ext_resource type="Texture2D" uid="uid://cm7qr6fp8pi64" path="res://Temp Assets/0000151.jpg" id="1_jma1t"]
+[ext_resource type="Script" uid="uid://35bfhvros4qm" path="res://Scenes/play_episode.gd" id="2_n1uvu"]
+[ext_resource type="Script" uid="uid://c7o62x7fymsdk" path="res://Scenes/day_tester_button.gd" id="3_72c7f"]
+
+[node name="Node2D" type="Node2D" unique_id=2053078578]
+
+[node name="0000151" type="Sprite2D" parent="." unique_id=975768206]
+position = Vector2(577.125, 322.5)
+scale = Vector2(1.34375, 1.34375)
+texture = ExtResource("1_jma1t")
+
+[node name="Play Episode" type="Button" parent="." unique_id=1916412226]
+offset_left = 315.0
+offset_top = 514.0
+offset_right = 323.0
+offset_bottom = 522.0
+scale = Vector2(17.975397, 3.8219967)
+script = ExtResource("2_n1uvu")
+
+[node name="Button" type="Button" parent="." unique_id=1410823226]
+offset_left = 688.0
+offset_top = 280.0
+offset_right = 738.0
+offset_bottom = 321.0
+script = ExtResource("3_72c7f")
+
+[connection signal="pressed" from="Play Episode" to="Play Episode" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

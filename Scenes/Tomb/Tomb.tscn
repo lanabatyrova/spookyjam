@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://2ujnlloa6j47"]
+
+[ext_resource type="Script" uid="uid://b3yfdpvfhmai6" path="res://Scenes/Tomb/tomb.gd" id="1_0068g"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="2_am2i7"]
+[ext_resource type="Script" uid="uid://nvorwrr6a1gh" path="res://Scenes/Tomb/lady_mac_tomb.gd" id="3_tg8e8"]
+[ext_resource type="Texture2D" uid="uid://uuuwwixj625j" path="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" id="4_eh3cb"]
+
+[node name="Tomb" type="Node2D" unique_id=1279382060]
+script = ExtResource("1_0068g")
+
+[node name="Panel" type="Panel" parent="." unique_id=1260216006]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="EgyptianMummyTombKomOmbo765151824" type="Sprite2D" parent="." unique_id=445185509]
+position = Vector2(576, 324.25)
+scale = Vector2(1.8986928, 1.6154791)
+texture = ExtResource("4_eh3cb")
+
+[node name="LadyMacButton" type="TextureButton" parent="." unique_id=1395589348]
+offset_left = 456.0
+offset_top = 69.0
+offset_right = 1860.0
+offset_bottom = 2360.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("2_am2i7")
+script = ExtResource("3_tg8e8")
+
+[connection signal="pressed" from="LadyMacButton" to="LadyMacButton" method="_on_pressed"]

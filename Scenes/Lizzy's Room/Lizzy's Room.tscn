@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bmhubu1mtfhce"]
+
+[ext_resource type="Script" uid="uid://l5houlgo4v1l" path="res://Scenes/Lizzy's Room/lizzy's_room.gd" id="1_2ymcl"]
+[ext_resource type="Texture2D" uid="uid://c3met078m7tjt" path="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" id="2_ia8pw"]
+
+[node name="Lizzy\'sRoom" type="Node2D" unique_id=1457501583]
+script = ExtResource("1_2ymcl")
+
+[node name="Panel" type="Panel" parent="." unique_id=1798756798]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="Screenshot20260925At9_55_45Pm" type="Sprite2D" parent="." unique_id=344280710]
+position = Vector2(576.6458, 324.005)
+scale = Vector2(0.5695198, 0.39656672)
+texture = ExtResource("2_ia8pw")
