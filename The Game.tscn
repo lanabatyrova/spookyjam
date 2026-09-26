@@ -1,17 +1,142 @@
 [gd_scene format=3 uid="uid://c4jxsrexg1pd"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://cm7qr6fp8pi64" path="res://Temp Assets/0000151.jpg" id="1_lr3am"]
+=======
+[ext_resource type="Texture2D" uid="uid://bqh14p21m4g8l" path="res://Main Menu/Main_Menu.png" id="1_pqspf"]
+[ext_resource type="Script" uid="uid://cfib8aeihhkk8" path="res://scripts/mainscene.gd" id="2_4kwe6"]
+[ext_resource type="AudioStream" uid="uid://10g1qd3uaahy" path="res://audio/Lizzie Springs main menu theme.wav" id="3_r1gaj"]
+[ext_resource type="Script" uid="uid://ducqsgai8bye0" path="res://scripts/maintheme.gd" id="4_hm0rk"]
+[ext_resource type="AudioStream" uid="uid://bsncw712hwhvl" path="res://audio/freesound_community-vhs-tape-clicks-rewind-play-mechanical-05-54159.mp3" id="5_pqspf"]
+[ext_resource type="Texture2D" uid="uid://bo2d8adhkvrno" path="res://Main Menu/Main_Menu_Play.png" id="6_itsds"]
+[ext_resource type="Texture2D" uid="uid://cvhj4g4xtkpiy" path="res://Main Menu/Main_Menu_Play_Hover.png" id="7_qbkjq"]
+[ext_resource type="Texture2D" uid="uid://cuxrluaixdk0r" path="res://Main Menu/Main_Menu_Scenes.png" id="8_fjkdb"]
+[ext_resource type="Texture2D" uid="uid://cga2rl5kbyn20" path="res://Main Menu/Main_Menu_Scenes_Hover.png" id="9_mfj42"]
+[ext_resource type="Texture2D" uid="uid://cmtkk8l1tycno" path="res://Main Menu/Main_Menu_Settings.png" id="10_an0u0"]
+[ext_resource type="Texture2D" uid="uid://rb5gvk03bl12" path="res://Main Menu/Main_Menu_Exit.png" id="11_0ohhj"]
+[ext_resource type="Texture2D" uid="uid://cgwhgfbjy5dlo" path="res://Main Menu/Main_Menu_Settings_Hover.png" id="11_qbkjq"]
+[ext_resource type="Script" uid="uid://xbtexc8t4yxc" path="res://settings.gd" id="12_an0u0"]
+[ext_resource type="Texture2D" uid="uid://brrlccimymv0f" path="res://Main Menu/Main_Menu_Exit_Hover.png" id="12_oj3mk"]
+[ext_resource type="Texture2D" uid="uid://uff3budk3cup" path="res://Main Menu/Main_Menu_Credits_Hover.png" id="14_mfj42"]
+[ext_resource type="Texture2D" uid="uid://bjh77akh5itke" path="res://Main Menu/Main_Menu_Credits.png" id="15_an0u0"]
+>>>>>>> Stashed changes
 
 [node name="Node2D" type="Node2D" unique_id=2053078578]
 
 [node name="0000151" type="Sprite2D" parent="." unique_id=975768206]
 position = Vector2(577.125, 322.5)
+<<<<<<< Updated upstream
 scale = Vector2(1.34375, 1.34375)
 texture = ExtResource("1_lr3am")
+=======
+scale = Vector2(0.598, 0.598)
+texture = ExtResource("1_pqspf")
+script = ExtResource("2_4kwe6")
+>>>>>>> Stashed changes
 
 [node name="Play Episode" type="Button" parent="." unique_id=1916412226]
+visible = false
 offset_left = 315.0
 offset_top = 514.0
 offset_right = 323.0
 offset_bottom = 522.0
 scale = Vector2(17.975397, 3.8219967)
+<<<<<<< Updated upstream
+=======
+
+[node name="maintheme" type="AudioStreamPlayer2D" parent="." unique_id=592383369]
+scale = Vector2(0.23937568, 0.8663547)
+stream = ExtResource("3_r1gaj")
+volume_db = 1.842
+script = ExtResource("4_hm0rk")
+
+[node name="vhsClick" type="AudioStreamPlayer2D" parent="." unique_id=91930831]
+stream = ExtResource("5_pqspf")
+volume_db = 16.637
+
+[node name="Episodes" type="Button" parent="." unique_id=1463131852]
+visible = false
+offset_left = 507.0
+offset_top = 512.0
+offset_right = 515.0
+offset_bottom = 520.0
+scale = Vector2(17.975397, 3.8219967)
+
+[node name="Button" type="Button" parent="." unique_id=1224143912]
+visible = false
+offset_left = 723.00006
+offset_top = 251.0
+offset_right = 731.00006
+offset_bottom = 259.0
+scale = Vector2(2.7999904, 3.76)
+
+[node name="Control" type="Control" parent="." unique_id=313453309]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 129.0
+offset_top = 214.0
+offset_right = 129.0
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15999962, 0.15999962)
+
+[node name="Play" type="TextureButton" parent="Control" unique_id=1673443258]
+layout_mode = 0
+offset_left = 220.92035
+offset_top = 205.0
+offset_right = 1958.9204
+offset_bottom = 761.0
+size_flags_horizontal = 10
+texture_normal = ExtResource("6_itsds")
+texture_pressed = ExtResource("7_qbkjq")
+texture_hover = ExtResource("7_qbkjq")
+
+[node name="Scenes" type="TextureButton" parent="Control" unique_id=177895120]
+layout_mode = 0
+offset_left = 128.99982
+offset_top = 718.75195
+offset_right = 2129.0
+offset_bottom = 1274.752
+size_flags_horizontal = 10
+texture_normal = ExtResource("8_fjkdb")
+texture_pressed = ExtResource("9_mfj42")
+texture_hover = ExtResource("9_mfj42")
+
+[node name="Settings" type="TextureButton" parent="Control" unique_id=334852155]
+layout_mode = 0
+offset_left = 450.00104
+offset_top = 1181.2528
+offset_right = 2450.0012
+offset_bottom = 1737.2528
+texture_normal = ExtResource("10_an0u0")
+texture_pressed = ExtResource("11_qbkjq")
+texture_hover = ExtResource("11_qbkjq")
+script = ExtResource("12_an0u0")
+
+[node name="Exit" type="TextureButton" parent="Control" unique_id=648158617]
+layout_mode = 0
+offset_left = 587.50134
+offset_top = 1693.754
+offset_right = 2587.5015
+offset_bottom = 2249.754
+texture_normal = ExtResource("11_0ohhj")
+texture_pressed = ExtResource("12_oj3mk")
+texture_hover = ExtResource("12_oj3mk")
+
+[node name="Credits" type="TextureButton" parent="Control" unique_id=655291003]
+layout_mode = 0
+offset_left = 5250.012
+offset_top = -1268.7529
+offset_right = 7250.0127
+offset_bottom = -712.7529
+texture_normal = ExtResource("14_mfj42")
+texture_pressed = ExtResource("15_an0u0")
+texture_hover = ExtResource("15_an0u0")
+
+[connection signal="pressed" from="Play Episode" to="mainmenu" method="_on_play_episode_pressed"]
+[connection signal="pressed" from="Episodes" to="mainmenu" method="_on_episodes_pressed"]
+[connection signal="pressed" from="Control/Settings" to="mainmenu" method="_on_settings_pressed"]
+>>>>>>> Stashed changes
