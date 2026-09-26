@@ -1,17 +1,86 @@
 [gd_scene format=3 uid="uid://c4jxsrexg1pd"]
 
-[ext_resource type="Texture2D" uid="uid://cm7qr6fp8pi64" path="res://Temp Assets/0000151.jpg" id="1_lr3am"]
+[ext_resource type="Texture2D" uid="uid://bpyiwjtrf85nu" path="res://Main Menu/Main_Menu.png" id="1_oklcf"]
+[ext_resource type="Texture2D" uid="uid://hlwuk6y8up0j" path="res://Main Menu/Main_Menu_Play.png" id="2_4kwe6"]
+[ext_resource type="Texture2D" uid="uid://depswihivpl5y" path="res://Main Menu/Main_Menu_Play_Hover.png" id="3_nd2ui"]
+[ext_resource type="Texture2D" uid="uid://nn82e0puw21x" path="res://Main Menu/Main_Menu_Scenes.png" id="4_03oub"]
+[ext_resource type="Texture2D" uid="uid://cgudwwd68ncw5" path="res://Main Menu/Main_Menu_Scenes_Hover.png" id="5_pkhj1"]
+[ext_resource type="Texture2D" uid="uid://c6x6qcm2r8vn" path="res://Main Menu/Main_Menu_Settings.png" id="6_itsds"]
+[ext_resource type="Texture2D" uid="uid://dfanm3m8gwmgl" path="res://Main Menu/Main_Menu_Settings_Hover.png" id="7_qbkjq"]
+[ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://settings.gd" id="8_03oub"]
+[ext_resource type="Texture2D" uid="uid://biupdqax7s2p4" path="res://Main Menu/Main_Menu_Exit.png" id="8_fjkdb"]
+[ext_resource type="Texture2D" uid="uid://b1s45jlwiprtu" path="res://Main Menu/Main_Menu_Exit_Hover.png" id="9_mfj42"]
 
 [node name="Node2D" type="Node2D" unique_id=2053078578]
 
 [node name="0000151" type="Sprite2D" parent="." unique_id=975768206]
 position = Vector2(577.125, 322.5)
-scale = Vector2(1.34375, 1.34375)
-texture = ExtResource("1_lr3am")
+scale = Vector2(0.599, 0.5994741)
+texture = ExtResource("1_oklcf")
 
 [node name="Play Episode" type="Button" parent="." unique_id=1916412226]
+visible = false
 offset_left = 315.0
 offset_top = 514.0
 offset_right = 323.0
 offset_bottom = 522.0
 scale = Vector2(17.975397, 3.8219967)
+
+[node name="Control" type="Control" parent="." unique_id=1450916194]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = 250.0
+offset_right = 113.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1419739889]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.15
+offset_right = 1700.0
+offset_bottom = 2236.0
+scale = Vector2(0.15, 0.15)
+offset_transform_enabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Play" type="TextureButton" parent="Control/VBoxContainer" unique_id=1990394063]
+layout_mode = 2
+size_flags_horizontal = 0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.2, 0)
+texture_normal = ExtResource("2_4kwe6")
+texture_pressed = ExtResource("3_nd2ui")
+texture_hover = ExtResource("3_nd2ui")
+
+[node name="Scenes" type="TextureButton" parent="Control/VBoxContainer" unique_id=1884357600]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.13, 0)
+texture_normal = ExtResource("4_03oub")
+texture_pressed = ExtResource("5_pkhj1")
+texture_hover = ExtResource("5_pkhj1")
+
+[node name="Settings" type="TextureButton" parent="Control/VBoxContainer" unique_id=1587340858]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.3, 0)
+texture_normal = ExtResource("6_itsds")
+texture_pressed = ExtResource("7_qbkjq")
+texture_hover = ExtResource("7_qbkjq")
+script = ExtResource("8_03oub")
+
+[node name="Exit" type="TextureButton" parent="Control/VBoxContainer" unique_id=771568697]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.4, 0)
+texture_normal = ExtResource("8_fjkdb")
+texture_pressed = ExtResource("9_mfj42")
+texture_hover = ExtResource("9_mfj42")
+
+[connection signal="pressed" from="Control/VBoxContainer/Settings" to="Control/VBoxContainer/Settings" method="_on_pressed"]
