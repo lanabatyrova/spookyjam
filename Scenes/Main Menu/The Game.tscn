@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://c4jxsrexg1pd"]
 
-[ext_resource type="Texture2D" uid="uid://bpyiwjtrf85nu" path="res://Main Menu/Main_Menu.png" id="1_oklcf"]
-[ext_resource type="Texture2D" uid="uid://hlwuk6y8up0j" path="res://Main Menu/Main_Menu_Play.png" id="2_4kwe6"]
-[ext_resource type="Texture2D" uid="uid://depswihivpl5y" path="res://Main Menu/Main_Menu_Play_Hover.png" id="3_nd2ui"]
-[ext_resource type="Texture2D" uid="uid://nn82e0puw21x" path="res://Main Menu/Main_Menu_Scenes.png" id="4_03oub"]
-[ext_resource type="Texture2D" uid="uid://cgudwwd68ncw5" path="res://Main Menu/Main_Menu_Scenes_Hover.png" id="5_pkhj1"]
-[ext_resource type="Texture2D" uid="uid://c6x6qcm2r8vn" path="res://Main Menu/Main_Menu_Settings.png" id="6_itsds"]
-[ext_resource type="Texture2D" uid="uid://dfanm3m8gwmgl" path="res://Main Menu/Main_Menu_Settings_Hover.png" id="7_qbkjq"]
-[ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://settings.gd" id="8_03oub"]
-[ext_resource type="Texture2D" uid="uid://biupdqax7s2p4" path="res://Main Menu/Main_Menu_Exit.png" id="8_fjkdb"]
-[ext_resource type="Texture2D" uid="uid://b1s45jlwiprtu" path="res://Main Menu/Main_Menu_Exit_Hover.png" id="9_mfj42"]
+[ext_resource type="Texture2D" uid="uid://bpyiwjtrf85nu" path="res://Scenes/Main Menu/Main_Menu.png" id="1_oklcf"]
+[ext_resource type="Texture2D" uid="uid://hlwuk6y8up0j" path="res://Scenes/Main Menu/Main_Menu_Play.png" id="2_4kwe6"]
+[ext_resource type="Script" uid="uid://c7o62x7fymsdk" path="res://Scenes/day_tester_button.gd" id="2_bnksx"]
+[ext_resource type="Texture2D" uid="uid://depswihivpl5y" path="res://Scenes/Main Menu/Main_Menu_Play_Hover.png" id="3_nd2ui"]
+[ext_resource type="Texture2D" uid="uid://nn82e0puw21x" path="res://Scenes/Main Menu/Main_Menu_Scenes.png" id="4_03oub"]
+[ext_resource type="Script" uid="uid://c5fuvsnfr6fa7" path="res://Scenes/Main Menu/play.gd" id="4_motf4"]
+[ext_resource type="Texture2D" uid="uid://cgudwwd68ncw5" path="res://Scenes/Main Menu/Main_Menu_Scenes_Hover.png" id="5_pkhj1"]
+[ext_resource type="Texture2D" uid="uid://c6x6qcm2r8vn" path="res://Scenes/Main Menu/Main_Menu_Settings.png" id="6_itsds"]
+[ext_resource type="Texture2D" uid="uid://dfanm3m8gwmgl" path="res://Scenes/Main Menu/Main_Menu_Settings_Hover.png" id="7_qbkjq"]
+[ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://Scenes/Main Menu/settings.gd" id="8_03oub"]
+[ext_resource type="Texture2D" uid="uid://biupdqax7s2p4" path="res://Scenes/Main Menu/Main_Menu_Exit.png" id="8_fjkdb"]
+[ext_resource type="Texture2D" uid="uid://b1s45jlwiprtu" path="res://Scenes/Main Menu/Main_Menu_Exit_Hover.png" id="9_mfj42"]
 
 [node name="Node2D" type="Node2D" unique_id=2053078578]
 
@@ -57,6 +59,7 @@ offset_transform_position_ratio = Vector2(0.2, 0)
 texture_normal = ExtResource("2_4kwe6")
 texture_pressed = ExtResource("3_nd2ui")
 texture_hover = ExtResource("3_nd2ui")
+script = ExtResource("4_motf4")
 
 [node name="Scenes" type="TextureButton" parent="Control/VBoxContainer" unique_id=1884357600]
 layout_mode = 2
@@ -83,4 +86,13 @@ texture_normal = ExtResource("8_fjkdb")
 texture_pressed = ExtResource("9_mfj42")
 texture_hover = ExtResource("9_mfj42")
 
+[node name="DayButton" type="Button" parent="." unique_id=595193764]
+offset_left = 1087.0
+offset_top = 18.0
+offset_right = 1139.0
+offset_bottom = 61.0
+script = ExtResource("2_bnksx")
+
+[connection signal="pressed" from="Control/VBoxContainer/Play" to="Control/VBoxContainer/Play" method="_on_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Settings" to="Control/VBoxContainer/Settings" method="_on_pressed"]
+[connection signal="pressed" from="DayButton" to="DayButton" method="_on_pressed"]

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bygsi5apicue6"]
 
-[ext_resource type="Texture2D" uid="uid://cs071n2sypv0l" path="res://Main Menu/Main_Menu_Settings_Page.png" id="1_tsn30"]
-[ext_resource type="Texture2D" uid="uid://cq1rvh7kbn3vw" path="res://Main Menu/Main_Menu_Back.png" id="3_4mnmu"]
-[ext_resource type="Script" uid="uid://cuqwfek58h1fr" path="res://Main Menu/settings_back.gd" id="4_5kdjf"]
-[ext_resource type="Texture2D" uid="uid://bidk2ev5ku7gf" path="res://Main Menu/Main_Menu_Back_Hover.png" id="4_uht6g"]
+[ext_resource type="Texture2D" uid="uid://cs071n2sypv0l" path="res://Scenes/Main Menu/Main_Menu_Settings_Page.png" id="1_tsn30"]
+[ext_resource type="Texture2D" uid="uid://cq1rvh7kbn3vw" path="res://Scenes/Main Menu/Main_Menu_Back.png" id="3_4mnmu"]
+[ext_resource type="Script" uid="uid://cuqwfek58h1fr" path="res://Scenes/Main Menu/settings_back.gd" id="4_5kdjf"]
+[ext_resource type="Texture2D" uid="uid://bidk2ev5ku7gf" path="res://Scenes/Main Menu/Main_Menu_Back_Hover.png" id="4_uht6g"]
 
 [node name="Node2D" type="Node2D" unique_id=1891182610]
 
