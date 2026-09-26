@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dc4rfgugqbvyh"]
+
+[ext_resource type="Texture2D" uid="uid://clkh33qob0vfq" path="res://assets/Journal_Val.png" id="1_wwaxy"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Flip Page 1.png" id="2_vjj0l"]
+[ext_resource type="Script" uid="uid://dbr0oxckeeb15" path="res://Scenes/Journal Menu/Val_Flip_Back.gd" id="3_5mh65"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Flip Page 2.png" id="3_pw6v1"]
+[ext_resource type="Script" uid="uid://c481bci4s6cgv" path="res://Scenes/Journal Menu/Val_Flip_Forwards.gd" id="5_oyu38"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="6_5mh65"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="7_oyu38"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_2voj2"]
+
+[node name="Val_Page" type="Node2D" unique_id=1955171214]
+
+[node name="JournalContacts" type="Sprite2D" parent="." unique_id=582597188]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("1_wwaxy")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1890405225]
+offset_left = 61.0
+offset_top = 470.0
+offset_right = 1574.0
+offset_bottom = 2358.0
+scale = Vector2(0.08000032, 0.08000032)
+texture_pressed = ExtResource("2_vjj0l")
+texture_hover = ExtResource("2_vjj0l")
+script = ExtResource("3_5mh65")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=1604429782]
+offset_left = 700.0
+offset_top = 424.00003
+offset_right = 2213.0
+offset_bottom = 2312.0
+scale = Vector2(0.07999885, 0.07999885)
+texture_pressed = ExtResource("3_pw6v1")
+texture_hover = ExtResource("3_pw6v1")
+script = ExtResource("5_oyu38")
+
+[node name="Contacts Button" type="LinkButton" parent="." unique_id=1753985598]
+offset_left = 781.0
+offset_top = 242.99997
+offset_right = 821.0
+offset_bottom = 282.99997
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("6_5mh65")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=736259020]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("7_oyu38")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=842239944]
+offset_left = 760.0
+offset_top = 34.000004
+offset_right = 800.0
+offset_bottom = 74.0
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("8_2voj2")
+
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="_on_pressed"]
+[connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]

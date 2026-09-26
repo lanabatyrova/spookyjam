@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://m6jhvvpy8d1h"]
+
+[ext_resource type="Texture2D" uid="uid://b5if67hw4vkmi" path="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" id="1_bm5ir"]
+
+[node name="Diner" type="Node2D" unique_id=1757622433]
+
+[node name="Panel" type="Panel" parent="." unique_id=367505623]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="Depositphotos256047908StockPhotoAmericanDinerRestaurantRetroInterior3979675290" type="Sprite2D" parent="." unique_id=1238657391]
+position = Vector2(576.75, 324.87503)
+scale = Vector2(0.7221875, 0.5584833)
+texture = ExtResource("1_bm5ir")

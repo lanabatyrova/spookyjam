@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://jvmw01g6lqsr"]
+
+[node name="Basement" type="Node2D" unique_id=1156537435]
+
+[node name="Panel" type="Panel" parent="." unique_id=1151496643]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0

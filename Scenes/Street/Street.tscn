@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://blsuj7f0ohigg"]
+
+[ext_resource type="Script" uid="uid://bg23lqk1eybux" path="res://Scenes/Street/street.gd" id="1_q35gy"]
+[ext_resource type="Texture2D" uid="uid://bn4jyrngq187h" path="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" id="2_ecsos"]
+[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://sprites/Juniper_1.png" id="3_d4b3n"]
+[ext_resource type="Script" uid="uid://c5063scdyesue" path="res://Scenes/Street/juniper_street.gd" id="4_myi71"]
+
+[node name="Street" type="Node2D" unique_id=316988252]
+script = ExtResource("1_q35gy")
+
+[node name="Panel" type="Panel" parent="." unique_id=707589052]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="1000F723850983AeO7zIn4xl63ucBzNl6ZkAfNrKtNiQru1204700947" type="Sprite2D" parent="." unique_id=566009330]
+position = Vector2(576.5, 325.75)
+scale = Vector2(1.159, 1.1666666)
+texture = ExtResource("2_ecsos")
+
+[node name="JuniperButton" type="TextureButton" parent="." unique_id=1760701709]
+offset_left = 132.0
+offset_top = 123.0
+offset_right = 1064.0
+offset_bottom = 2123.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("3_d4b3n")
+script = ExtResource("4_myi71")
+
+[connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]

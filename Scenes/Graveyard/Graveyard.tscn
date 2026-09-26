@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cpk4sldhjcc8s"]
+
+[ext_resource type="Script" uid="uid://030ki2lwll28" path="res://Scenes/Graveyard/graveyard.gd" id="1_mfimy"]
+[ext_resource type="Texture2D" uid="uid://cg3ofocdsn2k3" path="res://Temp Assets/graveyard-1577478-4189764713.jpg" id="2_cpdem"]
+[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://sprites/Dagger_1.png" id="2_mfimy"]
+[ext_resource type="Script" uid="uid://cwjb6i587vi5h" path="res://Scenes/Graveyard/dagger_graveyard.gd" id="3_cpdem"]
+
+[node name="Graveyard" type="Node2D" unique_id=975334763]
+script = ExtResource("1_mfimy")
+
+[node name="Panel" type="Panel" parent="." unique_id=58270089]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="Graveyard15774784189764713" type="Sprite2D" parent="." unique_id=794933298]
+position = Vector2(575.5, 324.5)
+scale = Vector2(1.44875, 1.2228464)
+texture = ExtResource("2_cpdem")
+
+[node name="DaggerButton" type="TextureButton" parent="." unique_id=528494076]
+offset_left = 822.0
+offset_top = 111.0
+offset_right = 1852.0
+offset_bottom = 2162.0
+scale = Vector2(0.22271827, 0.22271827)
+texture_normal = ExtResource("2_mfimy")
+script = ExtResource("3_cpdem")
+
+[connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
