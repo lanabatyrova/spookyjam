@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
+UiOverlay="*uid://dr3bbkdfb4dxf"
 
 [dialogic]
 
@@ -33,6 +34,16 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
+"intro_1": "res://Timelines/Loop 1/intro_1.dtl",
+"intro_2": "res://Timelines/Loop 2/intro_2.dtl",
+"intro_3": "res://Timelines/Loop 3/intro_3.dtl",
+"intro_4": "res://Timelines/Loop 4/intro_4.dtl",
+"intro_5": "res://Timelines/Loop 5/intro_5.dtl",
+"intro_6": "res://Timelines/Loop 6/intro_6.dtl",
+"intro_7": "res://Timelines/Loop 7/intro_7.dtl",
+"library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }

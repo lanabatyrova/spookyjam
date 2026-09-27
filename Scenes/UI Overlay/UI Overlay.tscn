@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://dr3bbkdfb4dxf"]
+
+[ext_resource type="Script" uid="uid://uvsiq2g6n8ec" path="res://scripts/ui_panel.gd" id="2_0fm1h"]
+[ext_resource type="Texture2D" uid="uid://bosioptrmag7s" path="res://assets/map_button.png" id="3_38bau"]
+[ext_resource type="Script" uid="uid://dp3sp8o0gemp0" path="res://Scenes/UI Overlay/ui_map_button.gd" id="4_rregw"]
+[ext_resource type="Texture2D" uid="uid://cj0enhi7bbigo" path="res://assets/phone_button.png" id="5_ae22a"]
+[ext_resource type="Script" uid="uid://djx3y7xhrknoy" path="res://Scenes/UI Overlay/ui_phone_button.gd" id="6_38bau"]
+[ext_resource type="Texture2D" uid="uid://kkwhv6614ifh" path="res://assets/journal_button.png" id="6_iw2gq"]
+[ext_resource type="Texture2D" uid="uid://bpboh7a60603" path="res://assets/UI_test.png" id="7_703c3"]
+[ext_resource type="Script" uid="uid://c3x72744nagey" path="res://Scenes/UI Overlay/ui_journal_button.gd" id="8_rregw"]
+
+[node name="UiOverlay" type="CanvasLayer" unique_id=719090108]
+
+[node name="UI Panel" type="Control" parent="." unique_id=2126028901]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_0fm1h")
+
+[node name="MapButton" type="TextureButton" parent="UI Panel" unique_id=609533822]
+layout_mode = 0
+offset_left = 5.999999
+offset_top = 440.99997
+offset_right = 2340.507
+offset_bottom = 2775.507
+scale = Vector2(0.10402279, 0.10402279)
+texture_normal = ExtResource("3_38bau")
+script = ExtResource("4_rregw")
+
+[node name="PhoneButton" type="TextureButton" parent="UI Panel" unique_id=1858763735]
+layout_mode = 0
+offset_left = 842.00006
+offset_top = 18.999971
+offset_right = 2842.0
+offset_bottom = 2019.0
+scale = Vector2(0.086883135, 0.086883135)
+texture_normal = ExtResource("5_ae22a")
+script = ExtResource("6_38bau")
+
+[node name="JournalButton" type="TextureButton" parent="UI Panel" unique_id=1183452521]
+layout_mode = 0
+offset_left = 920.00006
+offset_top = 17.999998
+offset_right = 2920.0
+offset_bottom = 2018.0
+rotation = -0.23385441
+scale = Vector2(0.119561575, 0.119561575)
+texture_normal = ExtResource("6_iw2gq")
+script = ExtResource("8_rregw")
+
+[node name="UiTest" type="Sprite2D" parent="." unique_id=1165452259]
+visible = false
+position = Vector2(574.44446, 326.99997)
+scale = Vector2(0.5962963, 0.59629625)
+texture = ExtResource("7_703c3")
+
+[connection signal="pressed" from="UI Panel/MapButton" to="UI Panel/MapButton" method="_on_pressed"]
+[connection signal="pressed" from="UI Panel/PhoneButton" to="UI Panel/PhoneButton" method="_on_pressed"]
+[connection signal="pressed" from="UI Panel/JournalButton" to="UI Panel/JournalButton" method="_on_pressed"]

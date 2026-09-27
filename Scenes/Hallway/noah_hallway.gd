@@ -3,8 +3,7 @@ extends TextureButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -15,7 +14,9 @@ func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
 			print("noah dialogue in hallway on day ", GameState.current_day)
-			# Dialogic.start()
+			if !get_parent().spoken:
+				Dialogic.start("res://Timelines/Loop 1/hallway_njb_1.dtl")
+				get_parent().spoken = true
 		2:
 			print("noah dialogue in hallway on day ", GameState.current_day)
 			# Dialogic.start()

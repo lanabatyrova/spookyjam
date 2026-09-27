@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://i04316fv4t2b"]
+
+[ext_resource type="PackedScene" uid="uid://c7axeg17208yy" path="res://Scenes/Journal Menu/Settings.tscn" id="1_1p87o"]
+[ext_resource type="PackedScene" uid="uid://c66bpjqgnyl0m" path="res://Scenes/Journal Menu/Lady_Page.tscn" id="1_5y4hx"]
+[ext_resource type="Script" uid="uid://d3wdvs7m1w4mh" path="res://Scenes/Journal Menu/journal_pages.gd" id="1_md78m"]
+[ext_resource type="PackedScene" uid="uid://dc4rfgugqbvyh" path="res://Scenes/Journal Menu/Val_Page.tscn" id="2_xayug"]
+[ext_resource type="PackedScene" uid="uid://bu8or8fcmnct0" path="res://Scenes/Journal Menu/Dagger_Page.tscn" id="3_1p87o"]
+[ext_resource type="PackedScene" uid="uid://twbjtf6s8x3k" path="res://Scenes/Journal Menu/Contacts.tscn" id="3_md78m"]
+[ext_resource type="PackedScene" uid="uid://bfgkd4g0oq4jp" path="res://Scenes/Journal Menu/Inventory.tscn" id="4_md78m"]
+[ext_resource type="PackedScene" uid="uid://dfoupah3rcx7m" path="res://Scenes/Journal Menu/Notes.tscn" id="5_5tflb"]
+
+[node name="JournalUi" type="Control" unique_id=1935407484]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=203023796]
+layer = 25
+
+[node name="JournalBG" type="ColorRect" parent="CanvasLayer" unique_id=1620209662]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.19607843)
+
+[node name="JournalPages" type="Control" parent="CanvasLayer/JournalBG" unique_id=634621786]
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+script = ExtResource("1_md78m")
+
+[node name="Settings" parent="CanvasLayer/JournalBG/JournalPages" unique_id=694031188 instance=ExtResource("1_1p87o")]
+
+[node name="Inventory" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1401346317 instance=ExtResource("4_md78m")]
+
+[node name="Contacts" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1980306403 instance=ExtResource("3_md78m")]
+
+[node name="Lady_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=948762319 instance=ExtResource("1_5y4hx")]
+
+[node name="Val_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1955171214 instance=ExtResource("2_xayug")]
+
+[node name="Dagger_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1876731372 instance=ExtResource("3_1p87o")]
+
+[node name="Notes" parent="CanvasLayer/JournalBG/JournalPages" unique_id=341417147 instance=ExtResource("5_5tflb")]
