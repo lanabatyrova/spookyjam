@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
+MenuManager="*uid://bf6js6fstys8g"
 
 [dialogic]
 
