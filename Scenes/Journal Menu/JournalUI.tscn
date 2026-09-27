@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://twbjtf6s8x3k" path="res://Scenes/Journal Menu/Contacts.tscn" id="3_md78m"]
 [ext_resource type="PackedScene" uid="uid://bfgkd4g0oq4jp" path="res://Scenes/Journal Menu/Inventory.tscn" id="4_md78m"]
 [ext_resource type="PackedScene" uid="uid://dfoupah3rcx7m" path="res://Scenes/Journal Menu/Notes.tscn" id="5_5tflb"]
-[ext_resource type="Script" uid="uid://i7tb8n4c5nmf" path="res://Scenes/Journal Menu/close_button.gd" id="9_5tflb"]
+[ext_resource type="Script" uid="uid://i7tb8n4c5nmf" path="res://Scenes/Journal Menu/journal_close_button.gd" id="9_5tflb"]
 
 [node name="JournalUi" type="Control" unique_id=1935407484]
 layout_mode = 3
