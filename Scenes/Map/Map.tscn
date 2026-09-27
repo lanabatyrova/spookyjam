@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brlg0gwlgxqgf"]
 
-[ext_resource type="Texture2D" uid="uid://cbjxry08qfwy7" path="res://Temp Assets/image.png" id="1_iio4a"]
+[ext_resource type="Texture2D" uid="uid://d1pgyunro7ubf" path="res://Temp Assets/Map_New.png" id="1_lfsem"]
 [ext_resource type="Script" uid="uid://b5s5x88ss2bh4" path="res://Scenes/Map/library_button.gd" id="2_2brea"]
 [ext_resource type="Script" uid="uid://b21ecq8duf0l8" path="res://Scenes/Map/hallway_button.gd" id="3_lfsem"]
 [ext_resource type="Script" uid="uid://ct7un3fnnmqyb" path="res://Scenes/Map/mine_button.gd" id="4_3geo5"]
@@ -30,9 +30,9 @@ color = Color(0, 0, 0, 0.39215687)
 metadata/_edit_use_anchors_ = true
 
 [node name="Image" type="Sprite2D" parent="CanvasLayer" unique_id=1267663327]
-position = Vector2(575.4674, 323.75)
-scale = Vector2(0.98710173, 0.9871017)
-texture = ExtResource("1_iio4a")
+position = Vector2(576.2222, 324)
+scale = Vector2(0.59999996, 0.59999996)
+texture = ExtResource("1_lfsem")
 
 [node name="LibraryButton" type="Button" parent="CanvasLayer" unique_id=1615996151]
 offset_left = 736.0
@@ -43,10 +43,10 @@ text = "Lib"
 script = ExtResource("2_2brea")
 
 [node name="HallwayButton" type="Button" parent="CanvasLayer" unique_id=112907553]
-offset_left = 650.0
-offset_top = 301.0
-offset_right = 695.0
-offset_bottom = 340.0
+offset_left = 999.0
+offset_top = 472.0
+offset_right = 1044.0
+offset_bottom = 511.0
 text = "Hall"
 script = ExtResource("3_lfsem")
 
@@ -59,10 +59,10 @@ text = "Mine"
 script = ExtResource("4_3geo5")
 
 [node name="GraveButton" type="Button" parent="CanvasLayer" unique_id=1677941378]
-offset_left = 636.0
-offset_top = 487.0
-offset_right = 683.0
-offset_bottom = 526.0
+offset_left = 671.0
+offset_top = 475.0
+offset_right = 725.0
+offset_bottom = 514.0
 text = "Grave"
 script = ExtResource("5_alfaa")
 
@@ -75,34 +75,34 @@ text = "Diner"
 script = ExtResource("6_mxgwm")
 
 [node name="TombButton" type="Button" parent="CanvasLayer" unique_id=639450810]
-offset_left = 720.0
-offset_top = 539.0
-offset_right = 774.0
-offset_bottom = 578.0
+offset_left = 478.0
+offset_top = 459.0
+offset_right = 532.0
+offset_bottom = 498.0
 text = "Tomb"
 script = ExtResource("7_0dbjg")
 
 [node name="BasementButton" type="Button" parent="CanvasLayer" unique_id=1352609250]
-offset_left = 661.0
-offset_top = 345.0
-offset_right = 747.0
-offset_bottom = 384.0
+offset_left = 851.0
+offset_top = 594.0
+offset_right = 937.0
+offset_bottom = 633.0
 text = "Basement"
 script = ExtResource("8_bjb2o")
 
 [node name="RoomButton" type="Button" parent="CanvasLayer" unique_id=1029714288]
-offset_left = 882.0
-offset_top = 246.0
-offset_right = 943.0
-offset_bottom = 281.0
+offset_left = 640.0
+offset_top = 297.0
+offset_right = 701.0
+offset_bottom = 332.0
 text = "Room"
 script = ExtResource("9_5eygh")
 
 [node name="StreetButton" type="Button" parent="CanvasLayer" unique_id=879664678]
-offset_left = 797.0
-offset_top = 300.0
-offset_right = 858.0
-offset_bottom = 335.0
+offset_left = 476.0
+offset_top = 282.0
+offset_right = 537.0
+offset_bottom = 317.0
 text = "Street"
 script = ExtResource("10_3mmnv")
 

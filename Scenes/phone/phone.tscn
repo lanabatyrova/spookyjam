@@ -26,6 +26,7 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=65110340]
+layer = 25
 
 [node name="PhoneBG" type="ColorRect" parent="CanvasLayer" unique_id=1313786683]
 offset_right = 1152.0
