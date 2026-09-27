@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bgatukvc8ep50"
+path="res://.godot/imported/Eject Vhs.wav-ff652465f632d9e7adae1d9a5dec50bd.sample"
+
+[deps]
+
+source_file="res://audio/Eject Vhs.wav"
+dest_files=["res://.godot/imported/Eject Vhs.wav-ff652465f632d9e7adae1d9a5dec50bd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
