@@ -13,3 +13,4 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	print("journal button pressed")
+	MenuManager.open_journal()

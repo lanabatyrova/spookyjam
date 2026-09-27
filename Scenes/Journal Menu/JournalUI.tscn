@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://twbjtf6s8x3k" path="res://Scenes/Journal Menu/Contacts.tscn" id="3_md78m"]
 [ext_resource type="PackedScene" uid="uid://bfgkd4g0oq4jp" path="res://Scenes/Journal Menu/Inventory.tscn" id="4_md78m"]
 [ext_resource type="PackedScene" uid="uid://dfoupah3rcx7m" path="res://Scenes/Journal Menu/Notes.tscn" id="5_5tflb"]
+[ext_resource type="Script" uid="uid://i7tb8n4c5nmf" path="res://Scenes/Journal Menu/journal_close_button.gd" id="9_5tflb"]
 
 [node name="JournalUi" type="Control" unique_id=1935407484]
 layout_mode = 3
@@ -19,7 +20,7 @@ layer = 25
 [node name="JournalBG" type="ColorRect" parent="CanvasLayer" unique_id=1620209662]
 offset_right = 1152.0
 offset_bottom = 648.0
-color = Color(0, 0, 0, 0.19607843)
+color = Color(0, 0, 0, 0.39215687)
 
 [node name="JournalPages" type="Control" parent="CanvasLayer/JournalBG" unique_id=634621786]
 anchors_preset = 0
@@ -28,10 +29,13 @@ offset_bottom = 647.0
 script = ExtResource("1_md78m")
 
 [node name="Settings" parent="CanvasLayer/JournalBG/JournalPages" unique_id=694031188 instance=ExtResource("1_1p87o")]
+visible = false
 
 [node name="Inventory" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1401346317 instance=ExtResource("4_md78m")]
+visible = false
 
 [node name="Contacts" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1980306403 instance=ExtResource("3_md78m")]
+visible = false
 
 [node name="Lady_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=948762319 instance=ExtResource("1_5y4hx")]
 
@@ -40,3 +44,14 @@ script = ExtResource("1_md78m")
 [node name="Dagger_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1876731372 instance=ExtResource("3_1p87o")]
 
 [node name="Notes" parent="CanvasLayer/JournalBG/JournalPages" unique_id=341417147 instance=ExtResource("5_5tflb")]
+visible = false
+
+[node name="Close Button" type="Button" parent="CanvasLayer" unique_id=1261437690]
+offset_left = 59.0
+offset_top = 65.0
+offset_right = 82.0
+offset_bottom = 96.0
+text = "X"
+script = ExtResource("9_5tflb")
+
+[connection signal="pressed" from="CanvasLayer/Close Button" to="CanvasLayer/Close Button" method="_on_pressed"]

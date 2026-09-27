@@ -10,8 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://d0p6okk5cb6h5" path="res://assets/Journal Overlays/Journal_Noah_Button_1.png" id="7_g73i5"]
 [ext_resource type="Texture2D" uid="uid://bf2ljb6ft4mn8" path="res://assets/Journal Overlays/Journal_Juniper_Button_1.png" id="8_xymn6"]
 [ext_resource type="Texture2D" uid="uid://g8xwpipkotnx" path="res://assets/Journal Overlays/Journal_Barb_Button_1.png" id="9_0vx2i"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="12_5xf86"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="12_5xf86"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="13_0fexd"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="13_tv8si"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="14_g4vim"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="15_i5075"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_li7yr"]
 
 [node name="Contacts" type="Node2D" unique_id=1401346317]
 
@@ -96,9 +100,31 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("13_tv8si")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=1419315873]
+offset_left = 61.0
+offset_top = 470.0
+offset_right = 1574.0
+offset_bottom = 2358.0
+scale = Vector2(0.08000029, 0.08000029)
+texture_pressed = ExtResource("13_0fexd")
+texture_hover = ExtResource("13_0fexd")
+script = ExtResource("14_g4vim")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1848129652]
+offset_left = 700.00006
+offset_top = 422.00003
+offset_right = 2213.0
+offset_bottom = 2310.0
+scale = Vector2(0.07999894, 0.07999894)
+texture_pressed = ExtResource("15_i5075")
+texture_hover = ExtResource("15_i5075")
+script = ExtResource("16_li7yr")
+
 [connection signal="pressed" from="JournalContacts/Lady" to="JournalContacts/Lady" method="_on_pressed"]
 [connection signal="pressed" from="JournalContacts/Dagger" to="JournalContacts/Dagger" method="_on_pressed"]
 [connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Dagger" method="_on_val_pressed"]
 [connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Val" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

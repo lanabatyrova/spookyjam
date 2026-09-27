@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://c7axeg17208yy"]
 
 [ext_resource type="Texture2D" uid="uid://csfdpbuojgw3q" path="res://assets/Journal Settings.png" id="1_bvb5x"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="2_mx4kw"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="2_mx4kw"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="3_37a8j"]
 [ext_resource type="Texture2D" uid="uid://dbhbjanta2r6b" path="res://assets/Journal Overlays/BFFS.png" id="4_37a8j"]
 [ext_resource type="Script" uid="uid://bd8o1x3kwuaxx" path="res://Scenes/Journal Menu/BFFs.gd" id="5_blqn1"]
 [ext_resource type="Script" uid="uid://ckmbg6au2a5jn" path="res://Scenes/Journal Menu/Vol_Up.gd" id="5_sfvul"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_xur5m"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_10iyx"]
 
 [sub_resource type="Theme" id="Theme_vgl7g"]
 
@@ -59,7 +61,18 @@ offset_bottom = 334.0
 scale = Vector2(2.146463, 1.963362)
 script = ExtResource("5_sfvul")
 
+[node name="FlipForward" type="TextureButton" parent="." unique_id=86257955]
+offset_left = 700.00006
+offset_top = 422.00003
+offset_right = 2213.0
+offset_bottom = 2310.0
+scale = Vector2(0.07999894, 0.07999894)
+texture_pressed = ExtResource("7_xur5m")
+texture_hover = ExtResource("7_xur5m")
+script = ExtResource("8_10iyx")
+
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

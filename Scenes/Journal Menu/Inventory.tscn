@@ -10,8 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://54fcett0lcib" path="res://assets/Journal Overlays/inventory items/ji_shakespeare.png" id="7_tu3o6"]
 [ext_resource type="Texture2D" uid="uid://cqpnyiox2rxdh" path="res://assets/Journal Overlays/inventory items/ji_letter.png" id="8_8cfiv"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="9_s6ndr"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="11_t000x"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="11_t000x"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="12_dqeow"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="13_37iqa"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="14_tu3o6"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="15_8cfiv"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_s6ndr"]
 
 [node name="Inventory" type="Node2D" unique_id=1401346317]
 script = ExtResource("1_nuepj")
@@ -111,6 +115,28 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("12_dqeow")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=394321542]
+offset_left = 61.0
+offset_top = 470.0
+offset_right = 1574.0
+offset_bottom = 2358.0
+scale = Vector2(0.08000029, 0.08000029)
+texture_pressed = ExtResource("13_37iqa")
+texture_hover = ExtResource("13_37iqa")
+script = ExtResource("14_tu3o6")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=771107147]
+offset_left = 700.00006
+offset_top = 422.00003
+offset_right = 2213.0
+offset_bottom = 2310.0
+scale = Vector2(0.07999894, 0.07999894)
+texture_pressed = ExtResource("15_8cfiv")
+texture_hover = ExtResource("15_8cfiv")
+script = ExtResource("16_s6ndr")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

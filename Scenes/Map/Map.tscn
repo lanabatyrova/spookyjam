@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://brlg0gwlgxqgf"]
+
+[ext_resource type="Texture2D" uid="uid://d1pgyunro7ubf" path="res://Temp Assets/Map_New.png" id="1_lfsem"]
+[ext_resource type="Script" uid="uid://b5s5x88ss2bh4" path="res://Scenes/Map/library_button.gd" id="2_2brea"]
+[ext_resource type="Script" uid="uid://b21ecq8duf0l8" path="res://Scenes/Map/hallway_button.gd" id="3_lfsem"]
+[ext_resource type="Script" uid="uid://ct7un3fnnmqyb" path="res://Scenes/Map/mine_button.gd" id="4_3geo5"]
+[ext_resource type="Script" uid="uid://bnrjtw443f7d5" path="res://Scenes/Map/grave_button.gd" id="5_alfaa"]
+[ext_resource type="Script" uid="uid://bwrvgig12xde5" path="res://Scenes/Map/diner_button.gd" id="6_mxgwm"]
+[ext_resource type="Script" uid="uid://okpi2qool8fq" path="res://Scenes/Map/tomb_button.gd" id="7_0dbjg"]
+[ext_resource type="Script" uid="uid://cw7kvpypi7ihv" path="res://Scenes/Map/basement_button.gd" id="8_bjb2o"]
+[ext_resource type="Script" uid="uid://dhf7ln1007iec" path="res://Scenes/Map/room_button.gd" id="9_5eygh"]
+[ext_resource type="Script" uid="uid://cyoaqgr86i668" path="res://Scenes/Map/street_button.gd" id="10_3mmnv"]
+[ext_resource type="Script" uid="uid://d4b7aqecl4xen" path="res://Scenes/Map/map_close_button.gd" id="11_lfsem"]
+
+[node name="Map" type="Control" unique_id=527790266]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=429279297]
+layer = 25
+
+[node name="MapBG" type="ColorRect" parent="CanvasLayer" unique_id=2004177319]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.39215687)
+metadata/_edit_use_anchors_ = true
+
+[node name="Image" type="Sprite2D" parent="CanvasLayer" unique_id=1267663327]
+position = Vector2(576.2222, 324)
+scale = Vector2(0.59999996, 0.59999996)
+texture = ExtResource("1_lfsem")
+
+[node name="LibraryButton" type="Button" parent="CanvasLayer" unique_id=1615996151]
+offset_left = 736.0
+offset_top = 149.0
+offset_right = 781.0
+offset_bottom = 188.0
+text = "Lib"
+script = ExtResource("2_2brea")
+
+[node name="HallwayButton" type="Button" parent="CanvasLayer" unique_id=112907553]
+offset_left = 999.0
+offset_top = 472.0
+offset_right = 1044.0
+offset_bottom = 511.0
+text = "Hall"
+script = ExtResource("3_lfsem")
+
+[node name="MineButton" type="Button" parent="CanvasLayer" unique_id=899788440]
+offset_left = 225.0
+offset_top = 368.0
+offset_right = 270.0
+offset_bottom = 407.0
+text = "Mine"
+script = ExtResource("4_3geo5")
+
+[node name="GraveButton" type="Button" parent="CanvasLayer" unique_id=1677941378]
+offset_left = 671.0
+offset_top = 475.0
+offset_right = 725.0
+offset_bottom = 514.0
+text = "Grave"
+script = ExtResource("5_alfaa")
+
+[node name="DinerButton" type="Button" parent="CanvasLayer" unique_id=1408156451]
+offset_left = 798.0
+offset_top = 221.0
+offset_right = 852.0
+offset_bottom = 260.0
+text = "Diner"
+script = ExtResource("6_mxgwm")
+
+[node name="TombButton" type="Button" parent="CanvasLayer" unique_id=639450810]
+offset_left = 478.0
+offset_top = 459.0
+offset_right = 532.0
+offset_bottom = 498.0
+text = "Tomb"
+script = ExtResource("7_0dbjg")
+
+[node name="BasementButton" type="Button" parent="CanvasLayer" unique_id=1352609250]
+offset_left = 851.0
+offset_top = 594.0
+offset_right = 937.0
+offset_bottom = 633.0
+text = "Basement"
+script = ExtResource("8_bjb2o")
+
+[node name="RoomButton" type="Button" parent="CanvasLayer" unique_id=1029714288]
+offset_left = 640.0
+offset_top = 297.0
+offset_right = 701.0
+offset_bottom = 332.0
+text = "Room"
+script = ExtResource("9_5eygh")
+
+[node name="StreetButton" type="Button" parent="CanvasLayer" unique_id=879664678]
+offset_left = 476.0
+offset_top = 282.0
+offset_right = 537.0
+offset_bottom = 317.0
+text = "Street"
+script = ExtResource("10_3mmnv")
+
+[node name="CloseButton" type="Button" parent="CanvasLayer" unique_id=1499157882]
+offset_left = 36.0
+offset_top = 33.0
+offset_right = 54.0
+offset_bottom = 64.0
+text = "X"
+script = ExtResource("11_lfsem")
+
+[connection signal="pressed" from="CanvasLayer/LibraryButton" to="CanvasLayer/LibraryButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/HallwayButton" to="CanvasLayer/HallwayButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/MineButton" to="CanvasLayer/MineButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/GraveButton" to="CanvasLayer/GraveButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/DinerButton" to="CanvasLayer/DinerButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/TombButton" to="CanvasLayer/TombButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/BasementButton" to="CanvasLayer/BasementButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/RoomButton" to="CanvasLayer/RoomButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/StreetButton" to="CanvasLayer/StreetButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/CloseButton" to="CanvasLayer/CloseButton" method="_on_pressed"]
