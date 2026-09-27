@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://c3x72744nagey" path="res://Scenes/UI Overlay/ui_journal_button.gd" id="8_rregw"]
 
 [node name="UiOverlay" type="CanvasLayer" unique_id=719090108]
+visible = false
 
 [node name="UI Panel" type="Control" parent="." unique_id=2126028901]
 layout_mode = 3

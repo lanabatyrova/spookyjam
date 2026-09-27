@@ -2,8 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_l1kwa"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_lmb8y"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/link_button.gd" id="3_lmb8y"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_lmb8y"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="4_ns3x7"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="5_k0rfe"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_js6ib"]
 
 [node name="Notes" type="Node2D" unique_id=341417147]
 
@@ -39,6 +41,17 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_ns3x7")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=786352711]
+offset_left = 61.0
+offset_top = 470.0
+offset_right = 1574.0
+offset_bottom = 2358.0
+scale = Vector2(0.08000029, 0.08000029)
+texture_pressed = ExtResource("5_k0rfe")
+texture_hover = ExtResource("5_k0rfe")
+script = ExtResource("6_js6ib")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
