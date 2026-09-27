@@ -5,11 +5,11 @@ var current_day: int = 1
 var inventory = {
 	"sewing_kit": false,
 	"belt": false,
-	"allergy_meds": false,
+	"allergy_meds": true,
 	"pocket_shakespeare": false,
-	"silver_nugget": false,
+	"silver_nugget": true,
 	"pocket_watch": false,
-	"acceptance_letter": false
+	"acceptance_letter": true
 }
 
 var notes = {
