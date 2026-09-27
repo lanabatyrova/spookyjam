@@ -27,9 +27,11 @@ directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "Dagger": "res://Characters/Dagger.dch",
 "Juniper": "res://Characters/Juniper.dch",
+"King Fear": "res://Characters/King Fear.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Noah": "res://Characters/Noah.dch",
+"Postcard": "res://Characters/Postcard.dch",
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
@@ -43,15 +45,17 @@ directories/dtl_directory={
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
-"Default_Style": "res://Default_Style.tres"
+"Default_Style": "res://Default_Style.tres",
+"Previously On": "res://Scenes/Previously On/Previously On.tres"
 }
-layout/style_list=["res://Default_Style.tres"]
+layout/style_list=["res://Default_Style.tres", "res://Scenes/Previously On/Previously On.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={}
