@@ -1,16 +1,14 @@
 extends TextureButton
 
+signal page_backward_requested
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	pressed.connect(_on_pressed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-
-
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Journal Menu/Lady_Page.tscn")
+	page_backward_requested.emit()

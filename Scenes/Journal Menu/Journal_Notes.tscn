@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://fu174tym4how"]
-
-[ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_7x83i"]
-
-[node name="JournalContacts" type="Sprite2D" unique_id=264771658]
-position = Vector2(575.1111, 324.49997)
-scale = Vector2(0.59907407, 0.59907407)
-texture = ExtResource("1_7x83i")
