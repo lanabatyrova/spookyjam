@@ -1,20 +1,27 @@
 [gd_scene format=3 uid="uid://bfgkd4g0oq4jp"]
 
-[ext_resource type="Script" uid="uid://p5wksil4n7xw" path="res://Scenes/Journal Menu/inventory.gd" id="1_nuepj"]
+[ext_resource type="Script" uid="uid://p5wksil4n7xw" path="res://Scenes/Journal Menu/Inventory/inventory_b.gd" id="1_nuepj"]
 [ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_ujo8y"]
 [ext_resource type="Texture2D" uid="uid://cpb3mwq2s1523" path="res://assets/Journal Overlays/inventory items/ji_meds.png" id="2_nuepj"]
 [ext_resource type="Texture2D" uid="uid://bnph0f58xa5fm" path="res://assets/Journal Overlays/inventory items/ji_silver.png" id="3_enry8"]
+[ext_resource type="Script" uid="uid://cwb2ic7tpkw80" path="res://Scenes/Journal Menu/Inventory/allergy_meds_b.gd" id="4_0i8j7"]
 [ext_resource type="Texture2D" uid="uid://dopi3chvfve3q" path="res://assets/Journal Overlays/inventory items/ji_watch.png" id="4_by4rr"]
 [ext_resource type="Texture2D" uid="uid://c0jvjwjdp6av1" path="res://assets/Journal Overlays/inventory items/ji_sew.png" id="5_b88pg"]
 [ext_resource type="Texture2D" uid="uid://nikb3alualrn" path="res://assets/Journal Overlays/inventory items/ji_belt.png" id="6_37iqa"]
+[ext_resource type="Script" uid="uid://cv5qe1v8ta3vj" path="res://Scenes/Journal Menu/Inventory/silver_nugget_b.gd" id="6_fw8ml"]
 [ext_resource type="Texture2D" uid="uid://54fcett0lcib" path="res://assets/Journal Overlays/inventory items/ji_shakespeare.png" id="7_tu3o6"]
 [ext_resource type="Texture2D" uid="uid://cqpnyiox2rxdh" path="res://assets/Journal Overlays/inventory items/ji_letter.png" id="8_8cfiv"]
+[ext_resource type="Script" uid="uid://bgnaga0quecrq" path="res://Scenes/Journal Menu/Inventory/pocket_watch_b.gd" id="8_m4csm"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="9_s6ndr"]
+[ext_resource type="Script" uid="uid://f7vx3okrdayo" path="res://Scenes/Journal Menu/Inventory/sewing_kit_b.gd" id="10_poecn"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="11_t000x"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="12_dqeow"]
+[ext_resource type="Script" uid="uid://7frqupk8h8tx" path="res://Scenes/Journal Menu/Inventory/belt_b.gd" id="12_poecn"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="13_37iqa"]
+[ext_resource type="Script" uid="uid://c3njjyhlld5yu" path="res://Scenes/Journal Menu/Inventory/shakespeare_b.gd" id="14_2ffaf"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="14_tu3o6"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="15_8cfiv"]
+[ext_resource type="Script" uid="uid://dhhikkohl7x6t" path="res://Scenes/Journal Menu/Inventory/acceptance_letter_b.gd" id="16_0d0ry"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_s6ndr"]
 
 [node name="Inventory" type="Node2D" unique_id=1401346317]
@@ -38,6 +45,7 @@ offset_right = 1059.0
 offset_bottom = 811.0
 scale = Vector2(0.4167245, 0.4167245)
 texture_normal = ExtResource("2_nuepj")
+script = ExtResource("4_0i8j7")
 
 [node name="SilverNugget" type="TextureButton" parent="." unique_id=198257972]
 offset_left = 589.0
@@ -46,6 +54,7 @@ offset_right = 979.0
 offset_bottom = 500.0
 scale = Vector2(0.4152141, 0.4152141)
 texture_normal = ExtResource("3_enry8")
+script = ExtResource("6_fw8ml")
 
 [node name="PocketWatch" type="TextureButton" parent="." unique_id=312692282]
 offset_left = 285.0
@@ -55,6 +64,7 @@ offset_bottom = 777.3308
 scale = Vector2(0.41107115, 0.41107115)
 texture_normal = ExtResource("4_by4rr")
 ignore_texture_size = true
+script = ExtResource("8_m4csm")
 
 [node name="SewingKit" type="TextureButton" parent="." unique_id=1859702109]
 offset_left = 422.0
@@ -63,6 +73,7 @@ offset_right = 928.0
 offset_bottom = 704.0
 scale = Vector2(0.415945, 0.415945)
 texture_normal = ExtResource("5_b88pg")
+script = ExtResource("10_poecn")
 
 [node name="Belt" type="TextureButton" parent="." unique_id=1443964910]
 offset_left = 443.0
@@ -71,6 +82,7 @@ offset_right = 1124.0
 offset_bottom = 834.0
 scale = Vector2(0.41470698, 0.41470698)
 texture_normal = ExtResource("6_37iqa")
+script = ExtResource("12_poecn")
 
 [node name="Shakespeare" type="TextureButton" parent="." unique_id=1606091312]
 offset_left = 72.00003
@@ -79,6 +91,7 @@ offset_right = 856.0
 offset_bottom = 734.00006
 scale = Vector2(0.41128734, 0.41128734)
 texture_normal = ExtResource("7_tu3o6")
+script = ExtResource("14_2ffaf")
 
 [node name="AcceptanceLetter" type="TextureButton" parent="." unique_id=1475672826]
 offset_left = 86.99985
@@ -87,6 +100,7 @@ offset_right = 734.9999
 offset_bottom = 940.0
 scale = Vector2(0.4142866, 0.4142866)
 texture_normal = ExtResource("8_8cfiv")
+script = ExtResource("16_0d0ry")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=2078471373]
 offset_left = 781.0
@@ -135,6 +149,13 @@ texture_pressed = ExtResource("15_8cfiv")
 texture_hover = ExtResource("15_8cfiv")
 script = ExtResource("16_s6ndr")
 
+[connection signal="pressed" from="AllergyMeds" to="AllergyMeds" method="_on_pressed"]
+[connection signal="pressed" from="SilverNugget" to="SilverNugget" method="_on_pressed"]
+[connection signal="pressed" from="PocketWatch" to="PocketWatch" method="_on_pressed"]
+[connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
+[connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
+[connection signal="pressed" from="Shakespeare" to="Shakespeare" method="_on_pressed"]
+[connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]

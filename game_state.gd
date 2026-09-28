@@ -31,9 +31,9 @@ var facts = {
 	"n_detention": false,
 	"d_brother_death": false,
 	"d_zombie_plan": false,
-	"lm_dagger_vouch": false,
-	"j_bffs": false,
-	"j_past_adventures": false
+	"lm_dagger_vouch": false, # dagger's portrait
+	"j_bffs": false, # bff sticker
+	"j_past_adventures": false # beastiary page
 }
 
 var objectives = {
@@ -41,6 +41,8 @@ var objectives = {
 	"convince_B": false
 	#TODO: add other info
 }
+
+var is_minigame = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

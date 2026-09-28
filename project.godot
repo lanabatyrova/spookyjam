@@ -46,6 +46,7 @@ directories/dtl_directory={
 "item_collected": "res://Timelines/item_collected.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
+"test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }
@@ -92,6 +93,9 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+text/custom_bbcode_effects=""
+text/split_at_new_lines=false
+text/dialog_text_prefix="[bgcolor=black]"
 
 [display]
 

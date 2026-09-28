@@ -63,6 +63,30 @@ texture_pressed = ExtResource("2_vjj0l")
 texture_hover = ExtResource("2_vjj0l")
 script = ExtResource("3_jmooc")
 
+[node name="ValCharButton" type="Button" parent="." unique_id=54042634]
+offset_left = 192.0
+offset_top = 186.0
+offset_right = 266.0
+offset_bottom = 254.0
+text = "Val Char
+Button"
+
+[node name="CaseStudyButton" type="Button" parent="." unique_id=171810334]
+offset_left = 627.0
+offset_top = 265.0
+offset_right = 735.0
+offset_bottom = 303.0
+text = "v_case_study
+"
+
+[node name="FutureWorriesButton" type="Button" parent="." unique_id=1300792463]
+offset_left = 511.0
+offset_top = 428.0
+offset_right = 619.0
+offset_bottom = 466.0
+text = "v_future_worries
+"
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
