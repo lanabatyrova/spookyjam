@@ -1,0 +1,32 @@
+join Barb center
+Lizzy: BARB!
+Barb: What..?
+Lizzy: ALSO ONE MORE THING
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "b_clown_school":
+		Lizzy: Success!
+		Barb: I see
+	elif {current_item} == "sewing_kit":
+		Lizzy: Succes more specific for this one
+		Barb: how did you know that??
+	elif {current_item} == "b_camp_story":
+		Lizzy: You got lost in the woods for three days at Little Oaks Summer Camp when you were six.
+		Barb: What-
+		Barb: How did you know that?
+		Lizzy: You told me yourself.
+		Lizzy: It was a very touching moment.
+		Barb: Why would I ever tell you that?
+		Lizzy: I was going to go do something dangerous and you advised me against it.
+		Lizzy: You ate a pinecone and a poisonous bug.
+	set {strikes_number} += 1.0
+else:
+	Barb: that's doesn't make sense
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+[background fade="0.0"]
+Barb: You make a good point.

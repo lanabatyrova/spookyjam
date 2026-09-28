@@ -21,6 +21,7 @@ Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
 MenuManager="*uid://bf6js6fstys8g"
+MinegameTest="*uid://dye3d7c6locdx"
 
 [dialogic]
 
@@ -37,6 +38,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"Wrong_item": "res://Timelines/Loop 3/Wrong_item.dtl",
 "hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
 "intro_1": "res://Timelines/Loop 1/intro_1.dtl",
 "intro_2": "res://Timelines/Loop 2/intro_2.dtl",
@@ -47,6 +49,7 @@ directories/dtl_directory={
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
 "item_collected": "res://Timelines/item_collected.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"minigame_b_3": "res://Timelines/Loop 3/minigame_b_3.dtl",
 "previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
@@ -62,7 +65,10 @@ layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={
 "collected_item_image": "",
-"collected_item_name": ""
+"collected_item_name": "",
+"current_item": "",
+"is_success": false,
+"strikes_number": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bfgkd4g0oq4jp" path="res://Scenes/Journal Menu/Inventory.tscn" id="4_md78m"]
 [ext_resource type="PackedScene" uid="uid://dfoupah3rcx7m" path="res://Scenes/Journal Menu/Notes.tscn" id="5_5tflb"]
 [ext_resource type="Script" uid="uid://i7tb8n4c5nmf" path="res://Scenes/Journal Menu/journal_close_button.gd" id="9_5tflb"]
+[ext_resource type="Script" uid="uid://ba6det1lm7w2o" path="res://Scenes/Journal Menu/minigame_test_button.gd" id="10_vstuw"]
+[ext_resource type="Script" uid="uid://dryk6xouh5y0d" path="res://Scenes/Journal Menu/minigame_wrong_button.gd" id="11_qbbbw"]
 
 [node name="JournalUi" type="Control" unique_id=1935407484]
 layout_mode = 3
@@ -56,4 +58,25 @@ offset_bottom = 96.0
 text = "X"
 script = ExtResource("9_5tflb")
 
+[node name="Minigame Test Button" type="Button" parent="CanvasLayer" unique_id=58267368]
+offset_left = 330.0
+offset_top = 166.0
+offset_right = 532.0
+offset_bottom = 220.0
+scale = Vector2(0.71999407, 0.99999905)
+text = "MINIGAME
+TEST BUTTON"
+script = ExtResource("10_vstuw")
+
+[node name="Minigame Wrong Button" type="Button" parent="CanvasLayer" unique_id=1352454217]
+offset_left = 173.0
+offset_top = 311.0
+offset_right = 230.0
+offset_bottom = 342.0
+scale = Vector2(2.7100725, 2.5861084)
+text = "wrong"
+script = ExtResource("11_qbbbw")
+
 [connection signal="pressed" from="CanvasLayer/Close Button" to="CanvasLayer/Close Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Minigame Test Button" to="CanvasLayer/Minigame Test Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Minigame Wrong Button" to="CanvasLayer/Minigame Wrong Button" method="_on_pressed"]
