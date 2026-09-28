@@ -1,7 +1,6 @@
 extends Node2D
 
-@onready var belt = $Belt
-@onready var sewing = $SewingKit
+@onready var meds = $AllergyMeds
 
 var current_day: int
 # Called when the node enters the scene tree for the first time.
@@ -15,5 +14,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	belt.visible = day in [4] && !GameState.inventory["belt"]
-	sewing.visible = day in [3] && !GameState.inventory["sewing_kit"]
+	meds.visible = day in [1] && !GameState.inventory["allergy_meds"]
