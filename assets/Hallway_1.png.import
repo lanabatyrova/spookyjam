@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djarbrgc3recc"
-path="res://.godot/imported/phone_call_3.png-ed367a23ef2742bb8fbd4c5c17d88405.ctex"
+uid="uid://dhos22nquignr"
+path="res://.godot/imported/Hallway_1.png-f287b993c27033e0af152a5d8eba4115.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/phone/phone_call_3.png"
-dest_files=["res://.godot/imported/phone_call_3.png-ed367a23ef2742bb8fbd4c5c17d88405.ctex"]
+source_file="res://assets/Hallway_1.png"
+dest_files=["res://.godot/imported/Hallway_1.png-f287b993c27033e0af152a5d8eba4115.ctex"]
 
 [params]
 
