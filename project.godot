@@ -43,6 +43,7 @@ directories/dtl_directory={
 "intro_5": "res://Timelines/Loop 5/intro_5.dtl",
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
+"item_collected": "res://Timelines/item_collected.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
@@ -55,7 +56,10 @@ layout/style_directory={
 layout/style_list=["res://Default_Style.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"collected_item_image": "",
+"collected_item_name": ""
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
