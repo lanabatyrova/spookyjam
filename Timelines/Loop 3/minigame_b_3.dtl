@@ -1,0 +1,60 @@
+join Barb center
+Lizzy: I have proof!
+Barb: This is going to be good.
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "b_clown_school":
+		Lizzy: I know that you got accepted into Emmerdale's early admissions!
+		Barb: Well, that isn't hard to guess.
+		Lizzy: For the Clown Program.
+		Barb: Wait, how would you—
+		Barb: I haven't told anyone that yet.
+		Lizzy: You want to be a movie monster.
+		Barb: Okay... that's a bit specific...
+	elif {current_item} == "sewing_kit":
+		Lizzy: I brought this with me to fix your dress.
+		Barb: There's nothing wrong with my dress. It's perfect.
+		Lizzy: For now.
+		Lizzy: As soon as you try to put it on it's gonna rip apart like tissue paper.
+		Barb: Um, that's a bit rude.
+		Lizzy: The allowance is all messed up, but I bet you one million dollars that with a few self adjustments your dress will fit like a glove.
+		Lizzy: Which is why I'm giving you this.
+		Barb: ...
+		Lizzy: Use the floppy ruler—
+		Barb: I know how to use a sewing kit, okay? Stop hovering.
+		Barb: ...
+		Barb: What the... You're right. It's off by a few inches.
+		Barb: I gave them specific measurements.
+		Barb: What the hell?!
+	elif {current_item} == "b_camp_story":
+		Lizzy: You got lost in the woods for three days at Little Oaks Summer Camp when you were six.
+		Barb: What-
+		Barb: How did you know that?
+		Lizzy: You told me yourself.
+		Lizzy: It was a very touching moment.
+		Barb: Why would I ever tell you that?
+		Lizzy: I was going to go do something dangerous and you advised me against it.
+		Lizzy: You ate a pinecone and a poisonous bug.
+		Lizzy: All to show up that bitch from cabin five.
+		Lizzy: Your words, not mine.
+		Barb: ...
+		Barb: She was a bitch.
+	set {strikes_number} += 1.0
+else:
+	Barb: And this is supposed to mean something to me because....?
+	Lizzy: Uh... I was just testing to see if you're paying attention.
+	[V.O] I'll have to try something else.
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+Barb: A time loop? Figures.
+Barb: There always has to be something crazy happening.
+Lizzy: So, does that mean you believe me?
+Barb: I guess so.
+Barb: Thanks for saving my dress.
+Barb: I didn't think you care about that sort of thing.
+Lizzy: I'm multi-faceted.
+[end_timeline]

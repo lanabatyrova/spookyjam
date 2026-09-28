@@ -21,6 +21,7 @@ Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
 MenuManager="*uid://bf6js6fstys8g"
+MinegameTest="*uid://dye3d7c6locdx"
 
 [dialogic]
 
@@ -28,13 +29,16 @@ directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "Dagger": "res://Characters/Dagger.dch",
 "Juniper": "res://Characters/Juniper.dch",
+"King Fear": "res://Characters/King Fear.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Noah": "res://Characters/Noah.dch",
+"Postcard": "res://Characters/Postcard.dch",
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"Wrong_item": "res://Timelines/Loop 3/Wrong_item.dtl",
 "hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
 "intro_1": "res://Timelines/Loop 1/intro_1.dtl",
 "intro_2": "res://Timelines/Loop 2/intro_2.dtl",
@@ -45,21 +49,27 @@ directories/dtl_directory={
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
 "item_collected": "res://Timelines/item_collected.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"minigame_b_3": "res://Timelines/Loop 3/minigame_b_3.dtl",
+"previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
-"test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
+"scratch_pad": "res://scratch_pad.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
-"Default_Style": "res://Default_Style.tres"
+"Default_Style": "res://Default_Style.tres",
+"Previously On": "res://Scenes/Previously On/Previously On.tres"
 }
-layout/style_list=["res://Default_Style.tres"]
+layout/style_list=["res://Default_Style.tres", "res://Scenes/Previously On/Previously On.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={
 "collected_item_image": "",
-"collected_item_name": ""
+"collected_item_name": "",
+"current_item": "",
+"is_success": false,
+"strikes_number": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -93,9 +103,14 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-text/custom_bbcode_effects=""
-text/split_at_new_lines=false
-text/dialog_text_prefix="[bgcolor=black]"
+history/simple_history_save=false
+history/simple_history_enabled=false
+history/full_history_enabled=false
+history/visited_event_history_enabled=false
+history/save_on_save=true
+history/save_on_autosave=false
+text/input_action="dialogic_default_action"
+text/dialog_text_prefix="[bgcolor=080808]"
 
 [display]
 

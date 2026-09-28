@@ -1,6 +1,318 @@
-[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="0.0"]
-join Lizzy rightmost
-Lizzy: What a wonderful day to have a regular old prologue scene.
+[background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="0.0"]
+Alarm: BEEP. BEEP. BEEP.
+join Lizzy center [animation="Fade In"]
+Lizzy: Ugh. I so don’t want to get up.
+Lizzy: Graduation is tomorrow, why the hell are they making us go to class? Not only go to class, but a math exam?
+Lizzy: I’d take on ten times the amount of ghouls, vampires, zombies, evil scientists, frankensteins, and mutated fruit flies, over whatever calculus is.
+Lizzy: Life would be so much easier if I could punch numbers.
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.6"]
+MAIL DELIVERY
+Lizzy: Huh, what’s this?
+leave Lizzy
+[background arg="res://Temp Assets/Postcard.png" fade="0.0"]
+[wait_input]
 [background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.0"]
-[wait time="0.5"]
-Lizzy: woag i'm in the diner now
+join Lizzy center
+Lizzy: I guess once you become a best selling author writing your own letters is small potatoes.
+Lizzy: Well, time to fail this exam. Here goes nothing.
+
+Lizzy: [V.O] Wow I really beefed it on that.
+Barb: Finally, we’ve been waiting here for eons.
+Juniper: Barb’s just being mean because she’s excited.
+Lizzy: What’s so important that you’re forcing us to stay at school longer than humanely possible.
+Barb: Guess what I got this morning?
+Lizzy: Uhhh.
+Juniper: A good nights sleep? You need eight hours, you know.
+Barb: No and no-
+Lizzy: I didn’t say anything, you can’t no nothing-
+Barb: My grad dress!!
+Lizzy: ...
+Juniper: ...
+Barb: The one I ordered last year? To my exact measurements? 
+Barb: It’s all I’ve been talking about for the past week!
+Juniper: Sorry, Babs.
+Lizzy: A lot has happened, and you say a bunch of stuff I don’t pay attention to.
+Barb: Please tell me you’ve at least got your grad dresses.
+Lizzy: ...
+Juniper: ...
+Barb: I sent you both electronic mail!
+Lizzy: I’m going to be totally honest, I think my mom started marking your messages as spam since you sent so many.
+Barb: I expected this of Lizzy, but you too, Juniper? You’re psychic!
+Juniper: Clair-voyant, and that’s not how it works.
+Barb: Ugh, I swear when it doesn’t involve some sort of Mummy’s curse you two have the memory of a goldfish.
+Lizzy: Listen, I’d care a lot more about dress shopping if I wasn’t kicking demon ass on a regular basis.
+Barb: The grad dance is the single most important nights of our entire lives!
+Juniper: It really isn’t, but okay.
+Barb: If it doesn’t go picture perfectly I’m disowning all of you.
+Noah: Hey ladies, did I hear something about grad?
+Juniper: Please never say ladies like that ever again.
+Noah: Yeah, I don’t know why I went with that. 
+Barb: Noah, you have your grad outfit picked out already, right?
+Noah: Uh, does the apple fall far from the tree?
+Lizzy: No, not really.
+Barb: So is that a yes?
+Noah: Yeah, I’ve got my fit all picked and rip roaring to go. 
+Barb: See? Even Noah is prepared.
+Noah: I scored the full Bond. James Bond. Specially from “Licence to Kill”
+Totally not spelled how you expect it to be, by the way.
+Juniper: Doesn’t James Bond wear the same tuxedo in every movie?
+Noah: There are subtleties.
+Juniper: If you’re really that pressed about it, Barb, I’m sure Lizzy and I can throw something together.
+Barb: I don’t want you to throw something together! I want you both to look pretty and for me to look even prettier!
+Noah: I wouldn’t worry about grad, if you know what I mean...
+Barb: I can’t with you right now. I’m meeting Mona to go over the limo situation and by the time we meet back up you better have a full walk in closet of options.
+[barb leaves]
+Noah: Wait, you guys are taking a limo to grad? Isn’t it just at the school?
+Lizzy: We try not to ask too many questions.
+Juniper: She just wants tomorrow to be worth remembering. I can’t say I blame her optimistic spirit.
+Noah: Oh, it’ll be a night to remember...
+Noah: Now, if you’ll excuse me, I’ve got to go into the basement for no reason what-so-ever.
+Lizzy: I guess we’ve gotta add finding dresses to our evening plans.
+Juniper: My mother probably has something we can borrow.
+Juniper: If not, we can make a statement by going in our regular clothes as a commentary on the unreasonable expectation for women to perform perfect femininity.
+Lizzy: Took the words right out of my mouth.
+Juniper: I’m going to go find Barb and makes sure she’s not too upset. Meet in the library in like an hour?
+Lizzy: Sounds good. Don’t go easier on her! Let her stew a bit! She could use it.
+
+Valerie: Ah, Elizabeth, how was your last day of highschool? I heard whisperings in the staff room that Holiday gave you a math exam.
+Lizzy: It was pretty brutal.
+Valerie: Hm. Well, math will only get you so far in your, shall I say, career. It was wise of you to focus on baseball. Speaking of, I circled the most useful classes in the fax I sent you. History, naturally, is my most recommended.
+Lizzy: Val, is this really all there is?
+Valerie: Oh, no, there are many different classes. I’m sure you could squeeze in an art class or maybe theatre to give yourself something fun to do. And VCR’s sports teams comes highly regarded. They even have baseball.
+Lizzy: No, not in school, I mean in life. Am I doomed to make every waking moment about killing some old dudes?
+Valerie: The vampire lords aren’t some old dudes. They’re also old dudettes. 
+Lizzy: You must’ve had dreams outside of prophecies and the keepers.
+Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started. The eldest of every generation inherits that responsibility and the watch is a symbol of the struggle between light and darkness and of course, helps me get to appointments on time. Plus it’s been known to be quite lucky.
+Lizzy: Yeah the watch is cool and all, but...
+Lizzy: Didn’t you want to do literally anything else?
+Valerie: Hm.
+Valerie: ...
+Valerie: No.
+Lizzy: So you’re entirely happy doing exactly what you’re doing and you’re going to do it for the rest of your life?
+Valerie: I am.
+Lizzy: I don’t know why I bothered asking.
+Valerie: There was a time in my life where I questioned what I was doing, if it was worth continuing my family’s duty.
+Valerie: The Keep has it’s fair share of problems.
+I believe it was my questioning that allowed me to break the rules and start working with you. Originally I was sent to Vermilion to observe and if necessary, eliminate threats to humanity, at my discretion.
+Lizzy: Uh... Thanks for not... killing me?
+Valerie: You’re doing so much good here, all of you, Juniper, Barb, and even Noah. Without you and your friends, the Vermilion Event Horizon would have swallowed up half the country by now.
+Lizzy: But what do I tell my parents? Sorry mom, I can’t go to Emmerdale because I have to stop Dracula from killing the president?
+Valerie: I see. You’re worried about losing touch with everyone.
+Lizzy: Not exactly, but I guess that’s a little on my mind.
+Valerie: They care for you deeply, Elizabeth. Juniper isn’t the type of person to abandon those she loves. Barb is fiercely loyal, and Noah is enrolling in VCR’s arts program, so you’ll have a familiar face. Besides, situations like these are exactly why portable telephones and electronic mail was made—even if I disagree with the discarding of paper post.
+Lizzy: But Emmerdale is half way across the United States! What if they need me. I can’t kill a vampire through the computer. Not yet anyway. What if some crazed fishman attacks Barb or Juniper sees a vision about impending doom and I’m too busy writing an essay about an old book nobody reads anymore—
+Valerie: Thing are comfortable right now. And I’m sure we could spend another two or three years operating exactly as we are now, hunting vampires, saving people...
+Valerie: but there wouldn’t be anything to challenge us. We’d be stuck viewing the world through the lens of highschool student and teacher librarian, when it’s so much bigger than that.
+Lizzy: Of course as soon as I’ve got the whole monster hunting thing figured out I have to go and refigure it all out again.
+Valerie: You’re more capable than you think.
+
+Juniper: Lizzy, Barb’s locked herself in the bathroom and won't come out. Use your werewolf strength to bust down the door!
+Lizzy: okay!
+Valerie: it would be best if you didn't damage school property.
+Lizzy: of course. [Wink]
+Valerie: see you tomorrow.
+(Juniper and Lizzy running)
+Noah is dragged past them
+Noah: hey watch the shirt, it's new.
+Principal: its covered in glitter.
+
+Lizzy: whoa. What happened there?
+Juniper: no clue.
+
+
+Juniper: Barb, I brought Lizzy. She's going to rip the door down.
+Barb: WHAT! are you crazy?
+Lizzy: or am I sane enough to see how ridiculous it is to lock yourself in the washroom. Its so gross in there.
+Barb: its where I belong.
+Lizzy: juniper, why is she in there. She seems more humbled than usual.
+Juniper: i have no idea, she won't tell me.
+Lizzy: typical.
+Barb: just leave me to die.
+Lizzy:...
+Lizzy: is this because we didnt get dresses?
+Barb: DON'T say the D word.
+Lizzy: didn't?
+Juniper: Barb, what happen to your grad... gown?
+Barb: oh god, I'm ruined. My reputation for being stylish despite the current economical climate and my parents divorce is surely ruined!
+Lizzy: she Must've spilled something on it.
+Juniper: we cant help you if you don't tell us the problem.
+Lizzy: yeah we arent psychics. Or at least im not.
+Barb: [sniff]
+Barb: dont laugh.
+Lizzy: i cant promise that.
+Juniper: Lizzy.
+Lizzy: fine, i wont laugh. Scouts honor.
+Barb: okay. Im coming out.
+Lizzy:finally amirite haha
+Juniper: shhh
+Lizzy: uh.. did a wild animal tear into that?
+Barb: i tried putting it on and.. it.. [sniff]
+Juniper: i mean. Its not so bad.
+Lizzy: are you kidding that things shredded motza!
+Barb: i might as well jump off a bridge now. 
+Lizzy: Barb, you are the most capable person I know when it comes to fashion. You could pull of a paper bag and make it look cute. Are you telling me that you’re going to let a ruined dress mess up your entire grad dance?
+Barb: sniff. Uh, yeah?
+Lizzy: The Barb I know, doesn’t give up. 
+Juniper: Exactly. You’ve got the most school spirit out of all of us. You can make any old dress shine.
+Barb: ...
+Barb: I am pretty fashion forward.
+Lizzy: Yeah, yeah! 
+[Barb emerges from bathroom]
+Barb: sigh. Maybe I could pull something together. Or we could all go dress shopping together. And then we could all match.
+Lizzy:  uh, I don’t think I.. Um
+Juniper: that sounds like a great idea.
+Lizzy: [whisper] juniper?? 
+Juniper: [whisper] it’ll make her feel better.
+Barb: okay, follow my lead exactly. I don’t want you to embarrass me.
+
+Lizzy: I never want to see a dress again
+Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
+Noah: I’m still upset you didn’t invite me.
+Juniper: sorry, but you were in detention. What did you even do anyway?
+
+
+Noah: Sigh. It was going to be awesome.
+Juniper: and you needed glitter for that?
+Noah: Innovators are often hated because they’re ahead of their time.
+Barb: If Kenzie didn’t stop you from shooting off what ever hairbrained device you whipped up, I would’ve made sure you would regret every decision you’ve ever made.
+Lizzy: she’s been like this all day. Very intense about grad.
+Barb: Most important night of our entire lives!!
+Lizzy: it’s pretty wild that we’re going to be out of VHS soon. Like, we’re going to be adults. What.
+Juniper: I wouldn’t worry too much about that. Growing up has its advantages.
+Lizzy: and after everything we’ve been through the past two years?
+Barb: Yeah, like the time we all lost our memory.
+Noah: That was awesome.
+Juniper: Or the time we swapped bodies?
+Lizzy: Don’t remind me…
+Barb: That was the worst week of my life.
+Noah: My favorite Vermilion Hills weird moment was when Donny was part of our group because of magic fake memories. He was chill.
+Barb: He tried to kill you??
+Noah: I mean, yeah, but ultimately I knew he was a good guy deep down.
+Juniper: He only tried to kill you because he wanted to replace you, so honestly, kind of a compliment.
+Barb: You’re all so messed up.
+Lizzy: Hm…
+Juniper: What’s up, Lizzy? You’re not normally this quiet.
+Lizzy: I’m just trying to think about my favorite memory since coming here.
+Noah: Um, well let’s see, there was the ants that got super big, and that evil puppets, King Fear crashing the school play .and almost eating Barb 
+Barb: That was really scary for me, okay?? Also ruined my chance to be scouted by that talent agent.
+Juniper: The ghost in that apartment complex, or maybe the book that stole faces? You looked like you had fun shredding it.
+Barb: I bet she’s going to choose the fish monster one. Or even the time we all got our voices stolen.
+Lizzy: I don’t know. Can I say all of them?
+Juniper: seems like a cop out.
+Lizzy: Yeah, but, a lot’s been on my mind lately. Thinking about all this stuff is making it seem like it’s over.
+Noah: What? Like the supernatural stuff is going to quit messing with you. You’re a magnet.
+Barb: Why would that be a bad thing, anyway? You can start focusing on getting a real job.
+Noah: Real jobs are for chumps.
+Lizzy: I know defeating King Fear or whatever was supposedly an important step into defeating the vampire lords, but what am I supposed to do? Do I wait for them to come to me?
+Juniper: Hm. That’s a good point. You can’t really send out an ad in the paper.
+Barb: Maybe you can ask your hot vampire boyfriend.
+Lizzy: he’s not my boyfriend.
+Barb: Sure, whatever. What you do in your own time is your own business, we don’t care.
+Noah: It kinda sounds like you care.
+Barb: I don’t care! Why would I care?
+Juniper: Dagger might be a good way to figure out what the vampires are doing, though. 
+Lizzy: eh, we sort of had a falling out.
+Juniper: What? You didn’t tell us anything.
+Lizzy: he said something about werewolves and vampires not working out together and the vanished dramatically. It’s really hard to end a conversation on the high ground with that guy.
+Barb: So he’s potentially available?
+Lizzy: Ew. Don’t even think about it.
+Noah: Your last boyfriend ended up being a shapeshifter, Barb. I thought that would’ve thrown you off supernatural creatures.
+Barb: I’m sorry for being human, okay?
+Lizzy: It’s been a whole week and a bit since anything weird has happened, and it’s driving me crazy. Usually some, like, portal would open up somewhere and a demon would come out and eat a baby.
+Barb: You want a demon to eat a baby? God, you’re sick in the head.
+Lizzy: I don’t WANT a demon to eat a baby but at least then I wouldn’t be waiting for it to happen. And I know how to deal with demons.
+Juniper: Sometimes things don’t happen, and that can be scarier than things happening.
+Lizzy: Something always happens! Ever since I got bitten by the mayor who was secretly a werewolf.
+Noah: I still can’t believe he came from a long line of werewolves with a long family history of protecting Vermilion Hills. I guess that’s why he had such good polling numbers.
+Lizzy: When I held him in my arms as he died and he told me it was my job now, and then Valerie showed up and told me that I was part of this prophecy…
+Barb: Are you going to tell us you want to run for mayor? Because I could totally help with your campaign. I actually have a few ideas. You will have to reinvent every part of your personality, though.
+Juniper: I don’t think that would make you a very good campaign manager.
+Lizzy: I’m not running for Mayor. I’m saying that it’s a lot of responsibility to have the fate of the entire living world on my shoulders.
+Juniper: We’re all here for you, Lizzy. You aren’t saving the world alone. And King Fear died super easily, so the rest of the vampire lords are probably going to be swiss cheese pretty soon.
+Lizzy: But half of you are leaving to go to Emmerdale, and Noah’s taking a gap year, and I’ll be stuck in some class I don’t even want to take.
+Barb: You could still try and get into Emmerdale’s regular admission period. It opens up next month, I double checked.
+Lizzy: No. Valerie said I shouldn’t leave the town. It’s too risky.
+Barb: That’s so unfair!
+Noah: Hey, don’t worry Lizzy, since I’m taking a year off, I can make sure there’s never a dull moment. I was actually thinking we could join the local improv group-
+Lizzy: kill me now.
+Juniper: I didn’t get into Emmerdale.
+Everyone:…
+Lizzy: What? ? You didn’t get in?
+Barb: Bullshit.
+Juniper: No, I got the rejection letter this morning. I’m not bummed about it or anything, I didn’t really want to go. It’s too “establishment” for me.
+Lizzy: I’m sorry.
+Lizzy: [V.O] This is awesome!
+Lizzy: Are you going to go to VCR instead?
+Juniper: Yeah, I was thinking about it.
+Barb: That sucks. Now I’m going to be all alone! All my new friends are going to be clowns, literally!
+Lizzy: Wait, sorry, say that again?
+Barb: I didn’t tell you guys because I was sort of embarrassed, but I got into the clown program.
+Noah: No way. You’re going to become a clown?
+Barb: Clowns are very important to society and have a strict code in which they operate. But no, I don’t want to become a clown. I’m going to become an actor.
+Lizzy: Uh, how does becoming a clown make you an actor?
+Barb: They’re not a lot of jobs I hollywood right now for traditional roles, so I’m going to go for the ones that have a gap in the market.
+Juniper: Which means?
+Barb: Zombies, scary ghosts, creepy ghouls. I figure I have enough experience with the real things to sell it.
+Noah: Wow, Barb. I knew you were a horror movie nut, but I didn’t think you’d go so far to become part of the industry. I’m impressed.
+Barb: Your approval means nothing to me.
+No: yeah, I know. Still impressed.
+Barb: thanks.
+Lizzy: We can all send each other electronic emails or chat on MySpace. And you could visit on your breaks, right?
+Barb: I guess. Ugh. It’s so hard to chase your dreams.
+Lizzy: By the way, my mom offered to drive all of us tomorrow, if you want.
+Barb: I’m still taking my Limo. If my dress is ruined, I’ll just have to make due in other ways.
+Noah: I’ll take that ride.
+Juniper: My too. Saves me from having to walk.
+Lizzy: Okay, see you all bright and early.
+
+Lizzy: hey, Juniper. I am really sorry you didn’t get in. I know it meant a lot to you.
+Juniper: it’s okay, honestly. I’d rather be here with you and where I can help you the most.
+Lizzy: The stuff I was saying earlier, about the prophecy, I’m mostly fine with it. You don’t have to worry about me or anything.
+Juniper: I do. And it’s okay. If you’re taking care of everyone, who’s taking care of you?
+Lizzy: ..
+Lizzy: Yeah…
+Juniper: I’ll see you tomorrow.
+Lizzy: See you tomorrow.
+[Juniper leaves]
+Lizzy: [V.O] man, I’m a terrible friend, celebrating Juniper’s misfortune. 
+Lizzy: oh hey, she dropped something.
+
+Lizzy: this looks important. I better give it back to her.
+Lizzy: Juniper!
+[Dagger appears]
+Dagger: Elizabeth.
+Lizzy: Jesus Christ, Dagger. What the hell? You can’t just sneak up on me like that. What happened to never seeing each other again?
+Dagger: I couldn’t stay away. Also I came to warn you.
+Dagger: Do not go to your graduation ceremony tomorrow. Stay home and keep your loved ones close.
+Preferably with your windows boarded up. I will retrieve you when it’s safe to do so.
+Lizzy: Is that a threat?
+Dagger: No, I assure you I have the best of intentions. If something were to you harm you... I’d never forgive myself.
+Lizzy: Does this have to do with Lady MacDeath? Is she behind all the bad luck?
+Dagger: Uh, bad luck? I’m not too sure what you mean by that, but I have already said too much.
+Dagger: Farewell, Lizzy Springs. Heed my warning. Please
+Lizzy: Dagger! Wait!
+
+
+Lizzy: [V.O] ugh. I hate when he does that.
+Lizzy: He thinks it makes him all mysterious and unattainable. Well, it’s just annoying.
+
+Lizzy: If Dagger felt the need to warn me... I better go the graveyard and ask him for more details.
+Lizzy: Time to wolf out.
+
+
+
+Lizzy: Phew, that was farther away than I remembered.
+Lizzy: Dagger! I know you’re around here somewhere
+Dagger: Lizzy? You really shouldn’t be here.
+Lizzy: What is so bad that I can’t handle it? I killed your boss, remember?
+Dagger: Technically Lady is my boss-
+"Lady MacDeath": [evil laughter]
+Lizzy: I knew it. I knew she was behind this.
+"Lady MacDeath": Why hello Elizabeth Springs, what a pleasant surprise.
+"Lady MacDeath": Dagger my darling, you shouldn’t have.
+Lizzy: You did this on purpose?
+Dagger: I didn’t, I swear to you. I warned you away. Why can’t you listen to me when I tell you to do something?
+"Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim,
+"Lady MacDeath": Of my undead army!
+Lizzy: Crap!
+Lizzy: [V.O] This is bad!
