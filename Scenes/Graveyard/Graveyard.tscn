@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cg3ofocdsn2k3" path="res://Temp Assets/graveyard-1577478-4189764713.jpg" id="2_cpdem"]
 [ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://sprites/Dagger_1.png" id="2_mfimy"]
 [ext_resource type="Script" uid="uid://cwjb6i587vi5h" path="res://Scenes/Graveyard/dagger_graveyard.gd" id="3_cpdem"]
+[ext_resource type="Texture2D" uid="uid://c6ybld6qgrotj" path="res://Temp Assets/temp items/H20262-L413765233-2429097319.jpg" id="5_cpdem"]
+[ext_resource type="Script" uid="uid://dbbh62br4k1ng" path="res://Scenes/Graveyard/pocket_shakespeare.gd" id="6_wr5li"]
 
 [node name="Graveyard" type="Node2D" unique_id=975334763]
 script = ExtResource("1_mfimy")
@@ -27,4 +29,14 @@ scale = Vector2(0.22271827, 0.22271827)
 texture_normal = ExtResource("2_mfimy")
 script = ExtResource("3_cpdem")
 
+[node name="PocketShakespeare" type="TextureButton" parent="." unique_id=1951281941]
+offset_left = 150.0
+offset_top = 449.00003
+offset_right = 1150.0
+offset_bottom = 1173.0
+scale = Vector2(0.18175772, 0.18175772)
+texture_normal = ExtResource("5_cpdem")
+script = ExtResource("6_wr5li")
+
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
+[connection signal="pressed" from="PocketShakespeare" to="PocketShakespeare" method="_on_pressed"]

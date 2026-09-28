@@ -12,6 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Journal Menu/Dagger_Page.tscn")
-
-	pass # Replace with function body.
+	Dialogic.VAR.set_variable("collected_item_name", "Belt")
+	#Dialogic.VAR.set_variable("collected_item_image", "INSERTPATH")
+	Dialogic.start("res://Timelines/item_collected.dtl")
+	GameState.inventory["belt"] = true
+	get_parent().update_day(get_parent().current_day)

@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://dcp3dx2knhfih" path="res://Scenes/Hallway/barb_hallway.gd" id="6_5tr82"]
 [ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="7_jbjv5"]
 [ext_resource type="Script" uid="uid://chdd2cyneau1s" path="res://Scenes/Hallway/noah_hallway.gd" id="8_dfkrl"]
+[ext_resource type="Texture2D" uid="uid://bdtu1j23pe870" path="res://Temp Assets/temp items/letter-8052497_1280-2988743124.png" id="9_dqxua"]
+[ext_resource type="Script" uid="uid://cv25vfgjjqyhg" path="res://Scenes/Hallway/acceptance_letter.gd" id="10_as5ck"]
 
 [node name="Hallway" type="Node2D" unique_id=2132066994]
 script = ExtResource("1_yixj0")
@@ -49,6 +51,16 @@ scale = Vector2(0.22271827, 0.22271827)
 texture_normal = ExtResource("7_jbjv5")
 script = ExtResource("8_dfkrl")
 
+[node name="AcceptanceLetter" type="TextureButton" parent="." unique_id=1338115080]
+offset_left = 363.0
+offset_top = 462.99997
+offset_right = 1643.0
+offset_bottom = 1743.0
+scale = Vector2(0.13770987, 0.13770987)
+texture_normal = ExtResource("9_dqxua")
+script = ExtResource("10_as5ck")
+
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]
