@@ -13,5 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	Dialogic.VAR.set_variable("is_success", true)
-	Dialogic.VAR.set_variable("current_item", "b_camp_story")
+	Dialogic.VAR.set_variable("current_item", "sewing_kit")
 	MenuManager.close_journal()

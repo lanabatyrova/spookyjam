@@ -52,6 +52,7 @@ directories/dtl_directory={
 "minigame_b_3": "res://Timelines/Loop 3/minigame_b_3.dtl",
 "previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
+"scratch_pad": "res://scratch_pad.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
 }
@@ -102,6 +103,14 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+history/simple_history_save=false
+history/simple_history_enabled=false
+history/full_history_enabled=false
+history/visited_event_history_enabled=false
+history/save_on_save=true
+history/save_on_autosave=false
+text/input_action="dialogic_default_action"
+text/dialog_text_prefix="[bgcolor=080808]"
 
 [display]
 

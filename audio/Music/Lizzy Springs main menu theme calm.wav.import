@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bep80df3ns8qc"
+path="res://.godot/imported/Lizzy Springs main menu theme calm.wav-2d636a9957782cea360c485175bc221d.sample"
+
+[deps]
+
+source_file="res://audio/Music/Lizzy Springs main menu theme calm.wav"
+dest_files=["res://.godot/imported/Lizzy Springs main menu theme calm.wav-2d636a9957782cea360c485175bc221d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
