@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://87p6dye2mh7y"]
+
+[ext_resource type="Script" uid="uid://dye3d7c6locdx" path="res://scripts/minigame_manager.gd" id="1_abxb1"]
+[ext_resource type="Texture2D" uid="uid://ndsuwxyqiq7h" path="res://assets/Minigame/Minigame_1.png" id="2_rmcoy"]
+[ext_resource type="Texture2D" uid="uid://c7nn5hjjigpvh" path="res://assets/Minigame/Minigame_2.png" id="3_3t08o"]
+[ext_resource type="Texture2D" uid="uid://dgul7bf5pr1m6" path="res://assets/Minigame/Minigame_3.png" id="4_dm7j4"]
+[ext_resource type="Texture2D" uid="uid://vfah12lmat0u" path="res://assets/Minigame/Minigame_4.png" id="5_scq4q"]
+
+[node name="MinegameTest" type="Control" unique_id=1284692]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_abxb1")
+
+[node name="Minigame1" type="Sprite2D" parent="." unique_id=169841274]
+position = Vector2(575.1741, 323.535)
+scale = Vector2(0.5764387, 0.5764387)
+texture = ExtResource("2_rmcoy")
+
+[node name="Minigame2" type="Sprite2D" parent="." unique_id=1921501298]
+position = Vector2(575.1741, 323.535)
+scale = Vector2(0.5764387, 0.5764387)
+texture = ExtResource("3_3t08o")
+
+[node name="Minigame3" type="Sprite2D" parent="." unique_id=1103360832]
+position = Vector2(575.1741, 323.535)
+scale = Vector2(0.5764387, 0.5764387)
+texture = ExtResource("4_dm7j4")
+
+[node name="Minigame4" type="Sprite2D" parent="." unique_id=1296137044]
+position = Vector2(575.1741, 323.535)
+scale = Vector2(0.5764387, 0.5764387)
+texture = ExtResource("5_scq4q")

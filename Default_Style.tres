@@ -31,6 +31,20 @@ scene = ExtResource("5_di13k")
 [sub_resource type="Resource" id="Resource_irfgj"]
 script = ExtResource("2_chqmg")
 scene = ExtResource("6_d0h4s")
+overrides = {
+"box_margin_bottom": "5.0",
+"box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
+"box_size": "Vector2(550, 105)",
+"name_label_alignment": "2",
+"name_label_box_offset": "Vector2(-560, 39)",
+"name_label_box_panel": "\"res://Design/Name_Subtitle_Box.tres\"",
+"name_label_custom_color": "Color(0, 0, 0, 1)",
+"name_label_custom_font_size": "24.0",
+"name_label_use_character_color": "false",
+"name_label_use_global_font_size": "false",
+"text_size": "24.0",
+"text_use_global_size": "false"
+}
 
 [sub_resource type="Resource" id="Resource_vi8g4"]
 script = ExtResource("2_chqmg")
@@ -63,4 +77,4 @@ layer_info = {
 "16": SubResource("Resource_sh82e"),
 "17": SubResource("Resource_4yivh")
 }
-metadata/_latest_layer = ""
+metadata/_latest_layer = "13"

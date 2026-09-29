@@ -10,28 +10,26 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func is_convinceable():
+	return GameState.items["silver_nugget"] && GameState.facts["d_brother_death"] && GameState.facts["d_zombie_plan"]
+
 
 func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
 			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
-		2:
-			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["dagger"]:
+				Dialogic.start("res://Timelines/Loop 1/graveyard_d_1.dtl")
 		3:
 			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["dagger"]:
+				Dialogic.start("res://Timelines/Loop 3/graveyard_d_3.dtl")
 		4:
 			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
-		5:
-			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["dagger"]:
+				Dialogic.start("res://Timelines/Loop 4/graveyard_d_4.dtl")
 		6:
 			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
-		7:
-			print("dagger dialogue in graveyard on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["dagger"]:
+				Dialogic.start("res://Timelines/Loop 6/graveyard_dbnm_6.dtl")
 		_: print("how did this even happen???")

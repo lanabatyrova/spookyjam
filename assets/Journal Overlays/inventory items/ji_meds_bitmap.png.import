@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dn8tybtdftp2h"
+path="res://.godot/imported/ji_meds_bitmap.png-bb11daf4ede94ec7ff363348df746295.res"
+
+[deps]
+
+source_file="res://assets/Journal Overlays/inventory items/ji_meds_bitmap.png"
+dest_files=["res://.godot/imported/ji_meds_bitmap.png-bb11daf4ede94ec7ff363348df746295.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

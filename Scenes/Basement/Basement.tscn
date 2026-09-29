@@ -1,8 +1,30 @@
 [gd_scene format=3 uid="uid://jvmw01g6lqsr"]
 
+[ext_resource type="Texture2D" uid="uid://hbmnotj4ag7" path="res://assets/Basement.png" id="1_5fdut"]
+[ext_resource type="Script" uid="uid://c1uk035w18ycn" path="res://Scenes/Basement/basement.gd" id="1_gg0k3"]
+[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="2_gu83p"]
+[ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="4_u0mjk"]
+
 [node name="Basement" type="Node2D" unique_id=1156537435]
+script = ExtResource("1_gg0k3")
 
 [node name="Panel" type="Panel" parent="." unique_id=1151496643]
 offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
+
+[node name="Basement" type="Sprite2D" parent="." unique_id=2014623844]
+position = Vector2(575.77783, 324)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("1_5fdut")
+
+[node name="NoahButton" type="TextureButton" parent="." unique_id=1249788943]
+offset_left = 774.0
+offset_top = 124.999985
+offset_right = 1706.0
+offset_bottom = 2125.0
+scale = Vector2(0.22519131, 0.22519131)
+texture_normal = ExtResource("2_gu83p")
+script = ExtResource("4_u0mjk")
+
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
