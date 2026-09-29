@@ -1,4 +1,3 @@
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.0"]
 join Lizzy center
 Lizzy: Alright, time to stop this thing once and for all.
 [wait_input]
@@ -27,3 +26,4 @@ leave "Lady MacDeath" [animation="Fade Out" wait="true"]
 leave Dagger [animation="Fade Out" wait="true"]
 Lizzy: AhhHhHhhh
 leave Lizzy [animation="Fade Out Down" length="3.0" wait="true"]
+jump intro_3/

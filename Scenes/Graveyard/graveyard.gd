@@ -15,5 +15,5 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	dagger.visible = day in [1,2,3,4,5,7]
+	dagger.visible = day in [1,3,4,6]
 	shakespeare.visible = day in [2] && !GameState.inventory["pocket_shakespeare"]

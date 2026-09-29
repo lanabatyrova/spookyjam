@@ -1,5 +1,6 @@
 do GameState.start_minigame()
 [background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
 join Barb center
 [wait time="1.5"]
 Lizzy: I have proof!
@@ -71,4 +72,4 @@ Barb: Thanks for saving my dress.
 Barb: I didn't think you care about that sort of thing.
 Lizzy: I'm multi-faceted.
 do GameState.end_minigame()
-[end_timeline]
+jump ending_3/

@@ -14,20 +14,23 @@ func _on_pressed() -> void:
 			print("valerie dialogue in library on day ", GameState.current_day)
 			if !GameState.spoken_today["valerie"]:
 				Dialogic.start("res://Timelines/Loop 1/library_v_1.dtl")
-				#GameState.spoken_today["valerie"] = true
 		2:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["valerie"]:
+				Dialogic.start("res://Timelines/Loop 2/library_v_2.dtl")
 		3:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["valerie"]:
+				Dialogic.start("res://Timelines/Loop 3/library_vb_3.dtl")
 		4:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["valerie"]:
+				Dialogic.start("res://Timelines/Loop 4/library_vb_4.dtl")
 		5:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["valerie"]:
+				Dialogic.start("res://Timelines/Loop 5/library_vbn_5.dtl")
 		7:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
 		_: print("how did this even happen???")
