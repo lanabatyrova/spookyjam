@@ -36,11 +36,11 @@ scale = Vector2(0.59907407, 0.59907407)
 texture = ExtResource("1_wwaxy")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=1753985598]
-offset_left = 781.0
-offset_top = 242.99997
-offset_right = 821.0
-offset_bottom = 282.99997
-rotation = -0.0878505
+offset_left = 21.999998
+offset_top = 291.00003
+offset_right = 62.0
+offset_bottom = 331.00003
+rotation = -0.04017042
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("6_5mh65")
 

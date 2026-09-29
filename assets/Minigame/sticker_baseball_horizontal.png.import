@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sjyq1kcph1kb"
-path="res://.godot/imported/behind_phone_screen.png-d7823efb9a8a19711192f758ad9105a3.ctex"
+uid="uid://dwqosvkgk2qf2"
+path="res://.godot/imported/sticker_baseball_horizontal.png-bb6e6179a11a330049189fed25bc3420.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Phone/behind_phone_screen.png"
-dest_files=["res://.godot/imported/behind_phone_screen.png-d7823efb9a8a19711192f758ad9105a3.ctex"]
+source_file="res://assets/Minigame/sticker_baseball_horizontal.png"
+dest_files=["res://.godot/imported/sticker_baseball_horizontal.png-bb6e6179a11a330049189fed25bc3420.ctex"]
 
 [params]
 
