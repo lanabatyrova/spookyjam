@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://bu8or8fcmnct0"]
 
-[ext_resource type="Texture2D" uid="uid://olvjm7c6arvr" path="res://assets/Journal Contacts_Dagger.png" id="1_lvv0r"]
+[ext_resource type="Texture2D" uid="uid://olvjm7c6arvr" path="res://assets/Journal_Dagger.png" id="1_lvv0r"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_3h3rx"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_vq6vg"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="4_7xdvo"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="5_7fojc"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="5_vq6vg"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="6_7xdvo"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_gjhgc"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_cje14"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_nbkba"]
@@ -44,6 +46,24 @@ offset_bottom = 72.99999
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_7xdvo")
+
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=563553748]
+offset_left = 771.00006
+offset_top = 137.0
+offset_right = 811.00006
+offset_bottom = 177.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("5_vq6vg")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=946145374]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("6_7xdvo")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=780840195]
 offset_left = 63.0
@@ -88,5 +108,9 @@ script = ExtResource("10_vmrb2")
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
+[connection signal="pressed" from="DaggerCharButton" to="DaggerCharButton" method="_on_pressed"]
+[connection signal="pressed" from="BrotherDeathButton" to="BrotherDeathButton" method="_on_pressed"]

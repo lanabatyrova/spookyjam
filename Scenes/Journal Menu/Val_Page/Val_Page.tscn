@@ -4,10 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="2_vjj0l"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="3_jmooc"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="3_pw6v1"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="5_f4unm"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="5_g625x"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="6_5mh65"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="6_kidco"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="7_oyu38"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_2voj2"]
+[ext_resource type="Script" uid="uid://6rkbgenk2fj6" path="res://Scenes/Journal Menu/Val_Page/val_char_button.gd" id="9_qmlvn"]
+[ext_resource type="Script" uid="uid://beb8dxvx2iioh" path="res://Scenes/Journal Menu/Val_Page/case_study_button.gd" id="10_rofvi"]
+[ext_resource type="Script" uid="uid://dsabvsp236mu3" path="res://Scenes/Journal Menu/Val_Page/future_worries_button.gd" id="11_0okkg"]
 
 [node name="Val_Page" type="Node2D" unique_id=1955171214]
 
@@ -43,6 +48,24 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("8_2voj2")
 
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=2099124288]
+offset_left = 771.00006
+offset_top = 137.0
+offset_right = 811.00006
+offset_bottom = 177.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("5_f4unm")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1940719184]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("6_kidco")
+
 [node name="FlipForward" type="TextureButton" parent="." unique_id=1604429782]
 offset_left = 700.0
 offset_top = 424.00003
@@ -70,6 +93,7 @@ offset_right = 266.0
 offset_bottom = 254.0
 text = "Val Char
 Button"
+script = ExtResource("9_qmlvn")
 
 [node name="CaseStudyButton" type="Button" parent="." unique_id=171810334]
 offset_left = 627.0
@@ -78,6 +102,7 @@ offset_right = 735.0
 offset_bottom = 303.0
 text = "v_case_study
 "
+script = ExtResource("10_rofvi")
 
 [node name="FutureWorriesButton" type="Button" parent="." unique_id=1300792463]
 offset_left = 511.0
@@ -86,9 +111,15 @@ offset_right = 619.0
 offset_bottom = 466.0
 text = "v_future_worries
 "
+script = ExtResource("11_0okkg")
 
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
 [connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="ValCharButton" to="ValCharButton" method="_on_pressed"]
+[connection signal="pressed" from="CaseStudyButton" to="CaseStudyButton" method="_on_pressed"]
+[connection signal="pressed" from="FutureWorriesButton" to="FutureWorriesButton" method="_on_pressed"]

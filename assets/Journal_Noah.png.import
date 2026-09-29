@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://olvjm7c6arvr"
-path="res://.godot/imported/Journal Contacts_Dagger.png-7453e48447e3af40af3cd031cde4b134.ctex"
+uid="uid://ck4vcf4gje116"
+path="res://.godot/imported/Journal_Noah.png-bf3a183f639ee1ba1f343aa69f70d419.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal Contacts_Dagger.png"
-dest_files=["res://.godot/imported/Journal Contacts_Dagger.png-7453e48447e3af40af3cd031cde4b134.ctex"]
+source_file="res://assets/Journal_Noah.png"
+dest_files=["res://.godot/imported/Journal_Noah.png-bf3a183f639ee1ba1f343aa69f70d419.ctex"]
 
 [params]
 

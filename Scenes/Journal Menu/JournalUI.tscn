@@ -7,9 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://bu8or8fcmnct0" path="res://Scenes/Journal Menu/Dagger_Page/Dagger_Page.tscn" id="3_1p87o"]
 [ext_resource type="PackedScene" uid="uid://twbjtf6s8x3k" path="res://Scenes/Journal Menu/Contacts/Contacts.tscn" id="3_md78m"]
 [ext_resource type="PackedScene" uid="uid://bfgkd4g0oq4jp" path="res://Scenes/Journal Menu/Inventory/Inventory.tscn" id="4_md78m"]
+[ext_resource type="PackedScene" uid="uid://bowixpvgh6ief" path="res://Scenes/Journal Menu/Juniper_Page/Juniper_Page.tscn" id="5_1fd5m"]
 [ext_resource type="PackedScene" uid="uid://dfoupah3rcx7m" path="res://Scenes/Journal Menu/Notes/Notes.tscn" id="5_5tflb"]
+[ext_resource type="PackedScene" uid="uid://llogx4bxa56p" path="res://Scenes/Journal Menu/Noah_Page/Noah_Page.tscn" id="5_q8gqs"]
 [ext_resource type="Script" uid="uid://i7tb8n4c5nmf" path="res://Scenes/Journal Menu/journal_close_button.gd" id="9_5tflb"]
+[ext_resource type="PackedScene" uid="uid://bnfoyutr3eom8" path="res://Scenes/Journal Menu/Barb_Page/Barb_Page.tscn" id="9_kcsn1"]
 [ext_resource type="Script" uid="uid://ba6det1lm7w2o" path="res://Scenes/Journal Menu/minigame_test_button.gd" id="10_vstuw"]
+[ext_resource type="PackedScene" uid="uid://cctd6tpk4kbnk" path="res://Scenes/Journal Menu/Bestiary/Bestiary.tscn" id="11_oxvox"]
 [ext_resource type="Script" uid="uid://dryk6xouh5y0d" path="res://Scenes/Journal Menu/minigame_wrong_button.gd" id="11_qbbbw"]
 
 [node name="JournalUi" type="Control" unique_id=1935407484]
@@ -38,17 +42,25 @@ visible = false
 [node name="Contacts" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1980306403 instance=ExtResource("3_md78m")]
 visible = false
 
-[node name="Lady_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=948762319 instance=ExtResource("1_5y4hx")]
-visible = false
+[node name="Juniper_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1876731372 instance=ExtResource("5_1fd5m")]
+
+[node name="Noah_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1102092708 instance=ExtResource("5_q8gqs")]
+
+[node name="Barb_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=2087918236 instance=ExtResource("9_kcsn1")]
 
 [node name="Val_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1955171214 instance=ExtResource("2_xayug")]
 visible = false
 
-[node name="Dagger_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1876731372 instance=ExtResource("3_1p87o")]
+[node name="Lady_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=948762319 instance=ExtResource("1_5y4hx")]
+visible = false
+
+[node name="Dagger_Page" parent="CanvasLayer/JournalBG/JournalPages" unique_id=971859933 instance=ExtResource("3_1p87o")]
 visible = false
 
 [node name="Notes" parent="CanvasLayer/JournalBG/JournalPages" unique_id=341417147 instance=ExtResource("5_5tflb")]
 visible = false
+
+[node name="Bestiary" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1784635410 instance=ExtResource("11_oxvox")]
 
 [node name="Close Button" type="Button" parent="CanvasLayer" unique_id=1261437690]
 offset_left = 59.0
@@ -59,21 +71,21 @@ text = "X"
 script = ExtResource("9_5tflb")
 
 [node name="Minigame Test Button" type="Button" parent="CanvasLayer" unique_id=58267368]
-offset_left = 330.0
-offset_top = 166.0
-offset_right = 532.0
-offset_bottom = 220.0
+offset_left = 890.0
+offset_top = 92.0
+offset_right = 1004.0
+offset_bottom = 146.0
 scale = Vector2(0.71999407, 0.99999905)
 text = "MINIGAME
 TEST BUTTON"
 script = ExtResource("10_vstuw")
 
 [node name="Minigame Wrong Button" type="Button" parent="CanvasLayer" unique_id=1352454217]
-offset_left = 173.0
-offset_top = 311.0
-offset_right = 230.0
-offset_bottom = 342.0
-scale = Vector2(2.7100725, 2.5861084)
+offset_left = 899.0
+offset_top = 51.00006
+offset_right = 956.0
+offset_bottom = 82.00006
+scale = Vector2(0.874059, 0.83407784)
 text = "wrong"
 script = ExtResource("11_qbbbw")
 

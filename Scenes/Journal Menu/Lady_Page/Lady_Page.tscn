@@ -9,8 +9,10 @@
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="6_dqr1g"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="7_u8hky"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_omsjp"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="10_e4lmo"]
 [ext_resource type="Script" uid="uid://bkvp1mjq3tbs" path="res://Scenes/Journal Menu/Lady_Page/lady_char_button.gd" id="10_jusjv"]
 [ext_resource type="Script" uid="uid://bw1ck1r0h2765" path="res://Scenes/Journal Menu/Lady_Page/zombie_plan_button.gd" id="11_4enno"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="11_507vs"]
 
 [node name="Lady_Page" type="Node2D" unique_id=948762319]
 script = ExtResource("1_4blye")
@@ -67,6 +69,24 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("8_omsjp")
 
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=1701553806]
+offset_left = 771.00006
+offset_top = 137.0
+offset_right = 811.00006
+offset_bottom = 177.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("10_e4lmo")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1508417571]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("11_507vs")
+
 [node name="LadyCharButton" type="Button" parent="." unique_id=1391457794]
 offset_left = 182.0
 offset_top = 234.0
@@ -89,3 +109,7 @@ script = ExtResource("11_4enno")
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyCharButton" to="LadyCharButton" method="_on_pressed"]
+[connection signal="pressed" from="ZombiePlanButton" to="ZombiePlanButton" method="_on_pressed"]

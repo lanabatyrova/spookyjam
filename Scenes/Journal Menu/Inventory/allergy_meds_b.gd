@@ -16,6 +16,6 @@ func _on_pressed() -> void:
 		if(GameState.current_day == 4):
 			Dialogic.VAR.set_variable("is_success", true)
 			Dialogic.VAR.set_variable("current_item", "allergy_meds")
-			# is_success, current_item, close journal
+			MenuManager.close_journal()
 		else:
 			MenuManager.close_journal()

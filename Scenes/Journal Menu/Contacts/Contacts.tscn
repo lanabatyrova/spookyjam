@@ -10,12 +10,17 @@
 [ext_resource type="Texture2D" uid="uid://d0p6okk5cb6h5" path="res://assets/Journal Overlays/Journal_Noah_Button_1.png" id="7_g73i5"]
 [ext_resource type="Texture2D" uid="uid://bf2ljb6ft4mn8" path="res://assets/Journal Overlays/Journal_Juniper_Button_1.png" id="8_xymn6"]
 [ext_resource type="Texture2D" uid="uid://g8xwpipkotnx" path="res://assets/Journal Overlays/Journal_Barb_Button_1.png" id="9_0vx2i"]
+[ext_resource type="Script" uid="uid://djsoumpi1wgjy" path="res://Scenes/Journal Menu/Contacts/noah_contact_button.gd" id="9_n3kpf"]
+[ext_resource type="Script" uid="uid://4d0tdb16dmv2" path="res://Scenes/Journal Menu/Contacts/juniper_contact_page.gd" id="11_k1v61"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="12_5xf86"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="13_0fexd"]
+[ext_resource type="Script" uid="uid://bhqsefxr32qml" path="res://Scenes/Journal Menu/Contacts/barb_contact_button.gd" id="13_mja2t"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="13_tv8si"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="14_g4vim"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="15_i5075"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="15_jsc1a"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_li7yr"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="17_vwxf8"]
 
 [node name="Contacts" type="Node2D" unique_id=1401346317]
 
@@ -65,6 +70,7 @@ offset_right = -473.563
 offset_bottom = -165.113
 texture_pressed = ExtResource("7_g73i5")
 texture_hover = ExtResource("7_g73i5")
+script = ExtResource("9_n3kpf")
 
 [node name="Juniper" type="TextureButton" parent="JournalContacts" unique_id=543261019]
 offset_left = -796.4142
@@ -73,6 +79,7 @@ offset_right = -625.4142
 offset_bottom = -154.05252
 texture_pressed = ExtResource("8_xymn6")
 texture_hover = ExtResource("8_xymn6")
+script = ExtResource("11_k1v61")
 
 [node name="Barb" type="TextureButton" parent="JournalContacts" unique_id=1405527653]
 offset_left = -775.872
@@ -81,6 +88,25 @@ offset_right = -608.872
 offset_bottom = 80.311
 texture_pressed = ExtResource("9_0vx2i")
 texture_hover = ExtResource("9_0vx2i")
+script = ExtResource("13_mja2t")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=2139536008]
+offset_left = 760.0
+offset_top = 34.000004
+offset_right = 800.0
+offset_bottom = 74.0
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("13_tv8si")
+
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=1902665937]
+offset_left = 771.00006
+offset_top = 137.0
+offset_right = 811.00006
+offset_bottom = 177.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("15_jsc1a")
 
 [node name="Notes Button" type="LinkButton" parent="." unique_id=1194998283]
 offset_left = 790.00006
@@ -91,14 +117,14 @@ rotation = -0.09169341
 scale = Vector2(1.0723437, 2.437207)
 script = ExtResource("12_5xf86")
 
-[node name="Settings Button" type="LinkButton" parent="." unique_id=2139536008]
-offset_left = 760.0
-offset_top = 34.000004
-offset_right = 800.0
-offset_bottom = 74.0
-rotation = -0.09229068
-scale = Vector2(1.0235412, 2.5269282)
-script = ExtResource("13_tv8si")
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1917161642]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("17_vwxf8")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=1419315873]
 offset_left = 61.0
@@ -124,7 +150,12 @@ script = ExtResource("16_li7yr")
 [connection signal="pressed" from="JournalContacts/Dagger" to="JournalContacts/Dagger" method="_on_pressed"]
 [connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Dagger" method="_on_val_pressed"]
 [connection signal="pressed" from="JournalContacts/Val" to="JournalContacts/Val" method="_on_pressed"]
-[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="JournalContacts/Noah" to="JournalContacts/Noah" method="_on_pressed"]
+[connection signal="pressed" from="JournalContacts/Juniper" to="JournalContacts/Juniper" method="_on_pressed"]
+[connection signal="pressed" from="JournalContacts/Barb" to="JournalContacts/Barb" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

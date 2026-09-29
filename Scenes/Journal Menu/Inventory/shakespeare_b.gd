@@ -14,6 +14,8 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	if(GameState.is_minigame):
 		if(GameState.current_day == 6):
-			pass
+			Dialogic.VAR.set_variable("is_success", true)
+			Dialogic.VAR.set_variable("current_item", "pocket_shakespeare")
+			MenuManager.close_journal()
 		else:
 			MenuManager.close_journal()

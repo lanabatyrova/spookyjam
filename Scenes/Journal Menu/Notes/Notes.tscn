@@ -2,10 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_l1kwa"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_lmb8y"]
-[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_lmb8y"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_hsadq"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="4_ns3x7"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="5_e5cl4"]
 [ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="5_k0rfe"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_js6ib"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_0lswh"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_hsadq"]
 
 [node name="Notes" type="Node2D" unique_id=341417147]
 
@@ -23,15 +26,6 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("2_lmb8y")
 
-[node name="Notes Button" type="LinkButton" parent="." unique_id=1924823044]
-offset_left = 790.00006
-offset_top = 350.00003
-offset_right = 830.00006
-offset_bottom = 390.00003
-rotation = -0.09169341
-scale = Vector2(1.0723437, 2.437207)
-script = ExtResource("3_lmb8y")
-
 [node name="Settings Button" type="LinkButton" parent="." unique_id=1060290117]
 offset_left = 760.0
 offset_top = 34.000004
@@ -40,6 +34,24 @@ offset_bottom = 74.0
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_ns3x7")
+
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=1750392480]
+offset_left = 771.00006
+offset_top = 137.0
+offset_right = 811.00006
+offset_bottom = 177.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("4_hsadq")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1578294707]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("5_e5cl4")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=786352711]
 offset_left = 61.0
@@ -51,7 +63,19 @@ texture_pressed = ExtResource("5_k0rfe")
 texture_hover = ExtResource("5_k0rfe")
 script = ExtResource("6_js6ib")
 
+[node name="FlipForward" type="TextureButton" parent="." unique_id=809075484]
+offset_left = 700.00006
+offset_top = 422.00003
+offset_right = 2213.0
+offset_bottom = 2310.0
+scale = Vector2(0.07999894, 0.07999894)
+texture_pressed = ExtResource("7_0lswh")
+texture_hover = ExtResource("7_0lswh")
+script = ExtResource("8_hsadq")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
-[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

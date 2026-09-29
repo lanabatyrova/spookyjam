@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	if(GameState.is_minigame && GameState.facts["j_bffs"]):
+	if(GameState.is_minigame):
 		pass

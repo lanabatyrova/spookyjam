@@ -1,3 +1,4 @@
+do GameState.start_minigame()
 join Barb center
 Lizzy: I have proof!
 Barb: This is going to be good.
@@ -57,4 +58,5 @@ Barb: I guess so.
 Barb: Thanks for saving my dress.
 Barb: I didn't think you care about that sort of thing.
 Lizzy: I'm multi-faceted.
+do GameState.end_minigame()
 [end_timeline]

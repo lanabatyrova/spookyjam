@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_items(items):
-	bffs.visible = GameState.facts["j_BFFS"] && GameState.is_minigame == true
+	bffs.visible = GameState.facts["j_bffs"] && GameState.is_minigame == true
