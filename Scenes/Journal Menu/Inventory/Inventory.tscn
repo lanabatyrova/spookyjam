@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://bfgkd4g0oq4jp"]
+
+[ext_resource type="Script" uid="uid://p5wksil4n7xw" path="res://Scenes/Journal Menu/Inventory/inventory_b.gd" id="1_nuepj"]
+[ext_resource type="Texture2D" uid="uid://d0ljskkpqkdtd" path="res://assets/Journal_Inventory.png" id="2_poecn"]
+[ext_resource type="BitMap" uid="uid://dn8tybtdftp2h" path="res://assets/Journal Overlays/inventory items/ji_meds_bitmap.png" id="3_n0lre"]
+[ext_resource type="Script" uid="uid://cwb2ic7tpkw80" path="res://Scenes/Journal Menu/Inventory/allergy_meds_b.gd" id="4_0i8j7"]
+[ext_resource type="Texture2D" uid="uid://dopi3chvfve3q" path="res://assets/Journal Overlays/inventory items/ji_watch.png" id="4_by4rr"]
+[ext_resource type="BitMap" uid="uid://u7om5ad5wi1v" path="res://assets/Journal Overlays/inventory items/ji_silver_bitmap.png" id="5_gd4yh"]
+[ext_resource type="Script" uid="uid://cv5qe1v8ta3vj" path="res://Scenes/Journal Menu/Inventory/silver_nugget_b.gd" id="6_fw8ml"]
+[ext_resource type="Texture2D" uid="uid://gjnasmtu5j4e" path="res://assets/Journal Overlays/inventory items/ji_watch_highlighted.png" id="7_2ffaf"]
+[ext_resource type="Script" uid="uid://bgnaga0quecrq" path="res://Scenes/Journal Menu/Inventory/pocket_watch_b.gd" id="8_m4csm"]
+[ext_resource type="BitMap" uid="uid://2o78k1ch0ui4" path="res://assets/Journal Overlays/inventory items/ji_watch_bitmap.png" id="9_48aww"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="9_s6ndr"]
+[ext_resource type="Script" uid="uid://f7vx3okrdayo" path="res://Scenes/Journal Menu/Inventory/sewing_kit_b.gd" id="10_poecn"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="11_t000x"]
+[ext_resource type="BitMap" uid="uid://ce11a5b6k8ujj" path="res://assets/Journal Overlays/inventory items/ji_sew_bitmap.png" id="11_ucgfg"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="12_dqeow"]
+[ext_resource type="Script" uid="uid://7frqupk8h8tx" path="res://Scenes/Journal Menu/Inventory/belt_b.gd" id="12_poecn"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="13_37iqa"]
+[ext_resource type="BitMap" uid="uid://d0ccekigq3x5s" path="res://assets/Journal Overlays/inventory items/ji_belt_bitmap.png" id="13_hpnxa"]
+[ext_resource type="Script" uid="uid://c3njjyhlld5yu" path="res://Scenes/Journal Menu/Inventory/shakespeare_b.gd" id="14_2ffaf"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="14_tu3o6"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="15_8cfiv"]
+[ext_resource type="BitMap" uid="uid://b5wcunnk2ieve" path="res://assets/Journal Overlays/inventory items/ji_shakespeare_bitmap.png" id="15_p75dq"]
+[ext_resource type="Script" uid="uid://dhhikkohl7x6t" path="res://Scenes/Journal Menu/Inventory/acceptance_letter_b.gd" id="16_0d0ry"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_s6ndr"]
+[ext_resource type="BitMap" uid="uid://bsb0c1tmchgye" path="res://assets/Journal Overlays/inventory items/ji_letter_bitmap.png" id="17_kb6r5"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="20_2ffaf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n0lre"]
+load_path = "res://.godot/imported/ji_meds.png-819a9a834a7985a5e7daab98a0a619e4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_13165"]
+load_path = "res://.godot/imported/ji_meds_highlighted.png-5b624c01f4bee0b64a69b103cba05754.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gd4yh"]
+load_path = "res://.godot/imported/ji_silver.png-3b987b98f313f0b307b1180c5f3be54c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1tpnb"]
+load_path = "res://.godot/imported/ji_silver_highlighted.png-d0a42bb190f25c27cacf81270f823fc3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_48aww"]
+load_path = "res://.godot/imported/ji_sew.png-a23b9efb97421aac334d0dd7d084f53c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0i8j7"]
+load_path = "res://.godot/imported/ji_sew_highlighted.png-40598aa7d7a1b6ba05ad8edf95be365d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ucgfg"]
+load_path = "res://.godot/imported/ji_belt.png-6b43058b0cc558be5668a4a3cadc960a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fw8ml"]
+load_path = "res://.godot/imported/ji_belt_highlighted.png-35975791cc87600561e98d9fb5cd780c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hpnxa"]
+load_path = "res://.godot/imported/ji_shakespeare.png-98eb210648fe4b76d4da47134d13e888.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m4csm"]
+load_path = "res://.godot/imported/ji_shakespeare_highlighted.png-65725fa58ec06289feaae1eb7da48cb9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p75dq"]
+load_path = "res://.godot/imported/ji_letter.png-4a799e3a5e9a8f7d0051570fe6d1c9f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kb6r5"]
+load_path = "res://.godot/imported/ji_letter_highlighted.png-332739c4f85c32cedacee623067d033b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ffaf"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0d0ry"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
+[node name="Inventory" type="Node2D" unique_id=1401346317]
+script = ExtResource("1_nuepj")
+
+[node name="Panel" type="Panel" parent="." unique_id=1750551759]
+visible = false
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="JournaInv" type="Sprite2D" parent="." unique_id=696553089]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("2_poecn")
+
+[node name="AllergyMeds" type="TextureButton" parent="." unique_id=418230969]
+offset_left = 583.0
+offset_top = 263.0
+offset_right = 1059.0
+offset_bottom = 811.0
+scale = Vector2(0.4167245, 0.4167245)
+texture_normal = SubResource("CompressedTexture2D_n0lre")
+texture_hover = SubResource("CompressedTexture2D_13165")
+texture_click_mask = ExtResource("3_n0lre")
+script = ExtResource("4_0i8j7")
+
+[node name="SilverNugget" type="TextureButton" parent="." unique_id=198257972]
+offset_left = 589.0
+offset_top = 29.0
+offset_right = 979.0
+offset_bottom = 500.0
+scale = Vector2(0.4152141, 0.4152141)
+texture_normal = SubResource("CompressedTexture2D_gd4yh")
+texture_hover = SubResource("CompressedTexture2D_1tpnb")
+texture_click_mask = ExtResource("5_gd4yh")
+script = ExtResource("6_fw8ml")
+
+[node name="PocketWatch" type="TextureButton" parent="." unique_id=1709469736]
+offset_left = 274.00006
+offset_top = 233.99998
+offset_right = 929.00006
+offset_bottom = 777.0
+scale = Vector2(0.4152141, 0.4152141)
+texture_normal = ExtResource("4_by4rr")
+texture_hover = ExtResource("7_2ffaf")
+texture_click_mask = ExtResource("9_48aww")
+script = ExtResource("8_m4csm")
+
+[node name="SewingKit" type="TextureButton" parent="." unique_id=1859702109]
+offset_left = 422.0
+offset_top = 60.0
+offset_right = 928.0
+offset_bottom = 704.0
+scale = Vector2(0.415945, 0.415945)
+texture_normal = SubResource("CompressedTexture2D_48aww")
+texture_hover = SubResource("CompressedTexture2D_0i8j7")
+texture_click_mask = ExtResource("11_ucgfg")
+script = ExtResource("10_poecn")
+
+[node name="Belt" type="TextureButton" parent="." unique_id=1443964910]
+offset_left = 443.0
+offset_top = 365.0
+offset_right = 1124.0
+offset_bottom = 834.0
+scale = Vector2(0.41470698, 0.41470698)
+texture_normal = SubResource("CompressedTexture2D_ucgfg")
+texture_hover = SubResource("CompressedTexture2D_fw8ml")
+texture_click_mask = ExtResource("13_hpnxa")
+script = ExtResource("12_poecn")
+
+[node name="Shakespeare" type="TextureButton" parent="." unique_id=1606091312]
+offset_left = 72.00003
+offset_top = 83.00006
+offset_right = 856.0
+offset_bottom = 734.00006
+scale = Vector2(0.41128734, 0.41128734)
+texture_normal = SubResource("CompressedTexture2D_hpnxa")
+texture_hover = SubResource("CompressedTexture2D_m4csm")
+texture_click_mask = ExtResource("15_p75dq")
+script = ExtResource("14_2ffaf")
+
+[node name="AcceptanceLetter" type="TextureButton" parent="." unique_id=1475672826]
+offset_left = 86.99985
+offset_top = 363.0
+offset_right = 734.9999
+offset_bottom = 940.0
+scale = Vector2(0.4142866, 0.4142866)
+texture_normal = SubResource("CompressedTexture2D_p75dq")
+texture_hover = SubResource("CompressedTexture2D_kb6r5")
+texture_click_mask = ExtResource("17_kb6r5")
+script = ExtResource("16_0d0ry")
+
+[node name="Contacts Button" type="LinkButton" parent="." unique_id=2078471373]
+offset_left = 781.0
+offset_top = 242.99997
+offset_right = 821.0
+offset_bottom = 282.99997
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("9_s6ndr")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=658740425]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("11_t000x")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=737911959]
+offset_left = 7.0
+offset_top = 81.0
+offset_right = 47.0
+offset_bottom = 121.0
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("12_dqeow")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1884246403]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("20_2ffaf")
+
+[node name="FlipBack" type="TextureButton" parent="." unique_id=394321542]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_2ffaf")
+texture_hover = ExtResource("13_37iqa")
+script = ExtResource("14_tu3o6")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1826396132]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_0d0ry")
+texture_hover = ExtResource("15_8cfiv")
+script = ExtResource("16_s6ndr")
+
+[connection signal="pressed" from="AllergyMeds" to="AllergyMeds" method="_on_pressed"]
+[connection signal="pressed" from="SilverNugget" to="SilverNugget" method="_on_pressed"]
+[connection signal="pressed" from="PocketWatch" to="PocketWatch" method="_on_pressed"]
+[connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
+[connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
+[connection signal="pressed" from="Shakespeare" to="Shakespeare" method="_on_pressed"]
+[connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]
+[connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

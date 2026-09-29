@@ -30,6 +30,7 @@ offset_top = 514.0
 offset_right = 323.0
 offset_bottom = 522.0
 scale = Vector2(17.975397, 3.8219967)
+script = ExtResource("4_motf4")
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=1450916194]
 layout_mode = 3

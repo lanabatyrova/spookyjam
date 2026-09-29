@@ -13,5 +13,4 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	# Note: she's only here on loop 5 at night!
-	# Dialogic.start()
-	pass # Replace with function body.
+	Dialogic.start("res://Timelines/Loop 5/minigame_j_5.dtl")

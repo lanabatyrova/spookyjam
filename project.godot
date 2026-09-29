@@ -21,27 +21,40 @@ Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
 MenuManager="*uid://bf6js6fstys8g"
+MinegameTest="*uid://dye3d7c6locdx"
 
 [dialogic]
 
 directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "Dagger": "res://Characters/Dagger.dch",
+"Item": "res://Characters/Strike Ball.dch",
 "Juniper": "res://Characters/Juniper.dch",
+"King Fear": "res://Characters/King Fear.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Noah": "res://Characters/Noah.dch",
+"Postcard": "res://Characters/Postcard.dch",
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
-"abandonedmine_ljbnlmdv_7": "res://Timelines/Loop 1/abandonedmine_ljbnlmdv_7.dtl",
-"graveyard_dlbnlmj_6": "res://Timelines/Loop 6/graveyard_dlbnlm_6.dtl",
-"graveyard_llmd_2": "res://Timelines/Loop 2/graveyard_llmd_2.dtl",
-"hallway_jbl_2": "res://Timelines/Loop 2/hallway_jbl_2.dtl",
+"Wrong_item": "res://Timelines/Loop 3/Wrong_item.dtl",
+"ending_1": "res://Timelines/Loop 1/ending_1.dtl",
+"ending_2": "res://Timelines/Loop 2/ending_2.dtl",
+"ending_3": "res://Timelines/Loop 3/ending_3.dtl",
+"ending_4": "res://Timelines/Loop 4/ending_4.dtl",
+"ending_5": "res://Timelines/Loop 5/ending_5.dtl",
+"ending_6": "res://Timelines/Loop 6/ending_6.dtl",
+"ending_7": "res://Timelines/Loop 7/ending_7.dtl",
+"graveyard_d_1": "res://Timelines/Loop 1/graveyard_d_1.dtl",
+"graveyard_d_3": "res://Timelines/Loop 3/graveyard_d_3.dtl",
+"graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",
+"graveyard_dbnm_6": "res://Timelines/Loop 6/graveyard_dbnm_6.dtl",
+"hallway_j_4": "res://Timelines/Loop 4/hallway_j_4.dtl",
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
-"hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
-"home_l_1": "res://Timelines/Loop 1/home_l_1.dtl",
+"hallway_jbn_2": "res://Timelines/Loop 2/hallway_jbn_2.dtl",
+"hallway_jbn_3": "res://Timelines/Loop 3/hallway_jbn_3.dtl",
 "intro_1": "res://Timelines/Loop 1/intro_1.dtl",
 "intro_2": "res://Timelines/Loop 2/intro_2.dtl",
 "intro_3": "res://Timelines/Loop 3/intro_3.dtl",
@@ -49,14 +62,28 @@ directories/dtl_directory={
 "intro_5": "res://Timelines/Loop 5/intro_5.dtl",
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
-"library_lv_2": "res://Timelines/Loop 2/library_lv_2.dtl",
+"item_collected": "res://Timelines/item_collected.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
-"library_vlb_3": "res://Timelines/Loop 3/library_vlb_3.dtl",
+"library_v_2": "res://Timelines/Loop 2/library_v_2.dtl",
+"library_vb_3": "res://Timelines/Loop 3/library_vb_3.dtl",
+"library_vb_4": "res://Timelines/Loop 4/library_vb_4.dtl",
+"library_vbn_5": "res://Timelines/Loop 5/library_vbn_5.dtl",
+"library_vbndm_7": "res://Timelines/Loop 7/library_vbndm_7.dtl",
+"minigame_b_3": "res://Timelines/Loop 3/minigame_b_3.dtl",
+"minigame_d_5": "res://Timelines/Loop 5/minigame_d_5.dtl",
+"minigame_j_5": "res://Timelines/Loop 5/minigame_j_5.dtl",
+"minigame_j_7": "res://Timelines/Loop 7/minigame_j_7.dtl",
+"minigame_m_6": "res://Timelines/Loop 6/minigame_m_6.dtl",
+"minigame_n_4": "res://Timelines/Loop 4/minigame_n_4.dtl",
+"minigame_v_2": "res://Timelines/Loop 2/minigame_v_2.dtl",
+"not_ready_vo": "res://Timelines/not_ready_vo.dtl",
+"previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
+"scratch_pad": "res://scratch_pad.dtl",
+"test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl",
-"testtest_timeline": "res://testtest_timeline.dtl",
-"tomb_dlbnlmj_6": "res://Timelines/Loop 6/tomb_dlbnlmj_6.dtl"
+"testtest_timeline": "res://testtest_timeline.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
@@ -65,7 +92,13 @@ layout/style_directory={
 layout/style_list=["res://Default_Style.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"collected_item_image": "",
+"collected_item_name": "",
+"current_item": "",
+"is_success": false,
+"strikes_number": 0
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -98,6 +131,16 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+text/custom_bbcode_effects=""
+text/split_at_new_lines=false
+text/dialog_text_prefix="[bgcolor=000000E6]"
+history/simple_history_save=false
+history/simple_history_enabled=false
+history/full_history_enabled=false
+history/visited_event_history_enabled=false
+history/save_on_save=true
+history/save_on_autosave=false
+text/input_action="dialogic_default_action"
 
 [display]
 

@@ -4,6 +4,8 @@ var journal_instance: Control = null
 var map_instance: Control = null
 var phone_instance: Control = null
 
+var audio_player = AudioStreamPlayer.new()
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -15,6 +17,9 @@ func _process(delta: float) -> void:
 func open_journal():
 	if journal_instance == null:
 		var journal_scene = preload("res://Scenes/Journal Menu/JournalUI.tscn")
+		audio_player.stream = load("res://audio/soumages-book-opening-345808_trimmed.wav")
+		add_child(audio_player)
+		audio_player.play()
 		journal_instance = journal_scene.instantiate()
 		get_tree().root.add_child(journal_instance)
 

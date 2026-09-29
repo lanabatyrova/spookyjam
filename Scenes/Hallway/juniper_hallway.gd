@@ -14,16 +14,19 @@ func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
 			print("juniper dialogue in hallway on day ", GameState.current_day)
-			if !get_parent().spoken:
+			if !GameState.spoken_today["juniper"]:
 				Dialogic.start("res://Timelines/Loop 1/hallway_njb_1.dtl")
-				get_parent().spoken = true
+				#GameState.spoken_today["juniper"] = true
 		2:
 			print("juniper dialogue in hallway on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["juniper"]:
+				Dialogic.start("res://Timelines/Loop 2/hallway_njb_2.dtl")
 		3:
 			print("juniper dialogue in hallway on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["juniper"]:
+				Dialogic.start("res://Timelines/Loop 3/hallway_njb_3.dtl")
 		4:
 			print("juniper dialogue in hallway on day ", GameState.current_day)
-			# Dialogic.start()
+			if !GameState.spoken_today["juniper"]:
+				Dialogic.start("res://Timelines/Loop 4/hallway_j_4.dtl")
 		_: print("how did this even happen???")

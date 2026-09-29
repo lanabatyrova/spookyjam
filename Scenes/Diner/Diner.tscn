@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://m6jhvvpy8d1h"]
 
+[ext_resource type="Script" uid="uid://lsj62taw77b0" path="res://Scenes/Diner/diner.gd" id="1_1iy0u"]
 [ext_resource type="Texture2D" uid="uid://b5if67hw4vkmi" path="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" id="1_bm5ir"]
+[ext_resource type="Texture2D" uid="uid://c3kbobphgqti5" path="res://Temp Assets/temp items/KS-Allergy-Medicine-600-Tablets_99491240-91c8-4333-a440-d0a0196c6808_1.ad8dad44887d5295331706cf2775e9b3-4085374194.jpg" id="2_yxgp7"]
+[ext_resource type="Script" uid="uid://d16ufkis4lu1b" path="res://Scenes/Diner/allergy_meds.gd" id="4_hui2y"]
 
 [node name="Diner" type="Node2D" unique_id=1757622433]
+script = ExtResource("1_1iy0u")
 
 [node name="Panel" type="Panel" parent="." unique_id=367505623]
 offset_left = -9.1552734e-05
@@ -13,3 +17,14 @@ offset_bottom = 649.0
 position = Vector2(576.75, 324.87503)
 scale = Vector2(0.7221875, 0.5584833)
 texture = ExtResource("1_bm5ir")
+
+[node name="AllergyMeds" type="TextureButton" parent="." unique_id=1189417611]
+offset_left = 866.0
+offset_top = 378.0
+offset_right = 2066.0
+offset_bottom = 1578.0
+scale = Vector2(0.10744974, 0.10744974)
+texture_normal = ExtResource("2_yxgp7")
+script = ExtResource("4_hui2y")
+
+[connection signal="pressed" from="AllergyMeds" to="AllergyMeds" method="_on_pressed"]
