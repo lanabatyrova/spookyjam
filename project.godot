@@ -35,8 +35,10 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"abandonedmine_ljbnlmdv_7": "res://Timelines/Loop 1/abandonedmine_ljbnlmdv_7.dtl",
 "graveyard_dlbnlmj_6": "res://Timelines/Loop 6/graveyard_dlbnlm_6.dtl",
 "graveyard_llmd_2": "res://Timelines/Loop 2/graveyard_llmd_2.dtl",
+"hallway_jbl_2": "res://Timelines/Loop 2/hallway_jbl_2.dtl",
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
 "hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
 "home_l_1": "res://Timelines/Loop 1/home_l_1.dtl",
