@@ -25,6 +25,15 @@
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
+},
+"Zoomed in": {
+"export_overrides": {
+"image": "\"res://sprites/Dagger_1.png\""
+},
+"mirror": true,
+"offset": Vector2(0, -60),
+"scale": 0.05,
+"scene": ""
 }
 },
 &"scale": 1.0

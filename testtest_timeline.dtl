@@ -1,0 +1,17 @@
+[background arg="res://Temp Assets/0000151.jpg" fade="0.0"]
+audio "res://audio/Lizzie Springs main menu theme.wav"
+audio music -
+join Valerie left
+join Lizzy right
+Valerie: is there anyone who you have enough information to convince?
+Lizzy: lets see well, at around 12 barbs dress rips, and Noah gets hauled to detention. It was actually so weird Barb told this really personal story about getting lost in the woods that she hasnt told to anyone else-
+Valerie: perhaps you should start with Barb, since you know a secret. Secrets are just as valuable as predicting events.
+Lizzy: alright. I'll see what I can do.
+Lizzy: hm im remembering dagger...
+leave --All--
+dagger...
+join Dagger center [animation="Bounce In"]
+[wait_input]
+leave --All--
+join Lizzy rightmost
+Lizzy: danm

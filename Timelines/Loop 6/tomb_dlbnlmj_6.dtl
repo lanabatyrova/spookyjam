@@ -1,0 +1,28 @@
+[background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.0"]
+join "Lady MacDeath" leftmost [animation="Fade In" length="2.0" wait="true" mirrored="true"]
+join Lizzy right [animation="Fade In" length="2.0" wait="true"]
+join Barb rightmost [animation="Fade In" length="2.0"]
+join Dagger left [animation="Fade In" length="2.0"]
+join Noah center [animation="Fade In" length="2.0"]
+"Lady MacDeath": You've made a compelling argument.
+"Lady MacDeath": Shakespeare was King Fears- Micheals thing.
+"Lady MacDeath": I only went along with it because I thought he had a real shot at becoming the ultimate vampire lord.
+update "Lady MacDeath" [animation="Bounce" wait="true" mirrored="false"]
+"Lady MacDeath": And then you killed him.
+Lizzy: I would say sorry but he had it coming.
+"Lady MacDeath": This new development has made me realise how precious life really is.
+"Lady MacDeath": It's time to shed this terrible persona.
+"Lady MacDeath": From now on.. call me...
+"Lady MacDeath": Lady Knightmare
+Everyone: ....
+Barb: And that's supposed to be better?
+"Lady MacDeath": You will be the first I crush with my new found identity.
+"Lady MacDeath": But for now. You have my sword. And my dagger.
+Dagger: uh..
+Lizzy: I guess that sort of fits the knight theme.
+Noah: Wait is it knightmare with a knight instead of night??
+"Lady MacDeath": Yes. What else would it be.
+join Juniper center [animation="Fade In Up" length="2.0" wait="true" mirrored="true"]
+Juniper: Please stop.
+update Lizzy [animation="Bounce" wait="true"]
+Lizzy: Juniper!
