@@ -1,2 +1,29 @@
-waking up on day 3
-Valerie: [phonecall]
+Lizzy: -AaAAAAAAAAHHHHHHHHHH-
+[background arg="res://Temp Assets/0000151.jpg" fade="0.0"]
+join Lizzy center [animation="Fade In Up" length="2.0" wait="true"]
+Lizzy: ...
+Lizzy: Okay. That was a terrible plan.
+Lizzy: My guts are still firmly inside of me, where they belong.
+Lizzy: I guess that’s one of the advantages of being stuck in a time loop.
+Lizzy: Oh, hey, I still have this heavily annotated book.
+Lizzy: Attacking Lady MacDeath directly won’t get me anywhere...
+Lizzy: Well.
+I’m out of ideas.
+
+
+[PHONE RINGING]
+Valerie’s calling me? She never does that. She doesn’t believe in phones.
+Valerie: Elizabeth, it’s Valerie.
+Lizzy: I know, I have caller ID.
+Valerie: Good for you.
+Valerie: I called to tell you that I remember everything.
+update Lizzy [animation="Bounce" wait="true"]
+Lizzy: WHAT! Really? That’s amazing!
+Lizzy: Well, I mean, it sucks because now we’re both stuck in this time loop,
+Lizzy: But at least I’m not alone anymore!
+Valerie: Your unbeatable spirit allowed me to retain my memories from the previous loop. My research may have uncovered a possible solution.
+Lizzy: Phew, I was getting worried I’d have to keep doing random stuff until something changed.
+Valerie: Meet me in the library as soon as you get to school. I’m giving you permission to skip your exam.
+Lizzy: Oh, don’t worry, I don’t need your permission.
+Lizzy: She hung up.
+Lizzy: Wow, her phone etiquette is terrible.
