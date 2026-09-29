@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" format=3 uid="uid://4tkaim4qm3as"]
+
+[ext_resource type="FontFile" uid="uid://k3cfn1gyq815" path="res://Design/Fonts/TT-Prosto-Sans-Condensed-Bold-DEMO.otf" id="1_6108g"]
+
+[resource]
+base_font = ExtResource("1_6108g")

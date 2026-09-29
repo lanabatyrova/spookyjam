@@ -1,4 +1,5 @@
-join Barb center
+[background arg="res://assets/Minigame/minigame_hallway.png" fade="0.0"]
+join Barb (Minigame) center
 Lizzy: I have proof!
 Barb: This is going to be good.
 label Journal Select
@@ -20,7 +21,8 @@ if {is_success} == true:
 		Lizzy: For now.
 		Lizzy: As soon as you try to put it on it's gonna rip apart like tissue paper.
 		Barb: Um, that's a bit rude.
-		Lizzy: The allowance is all messed up, but I bet you one million dollars that with a few self adjustments your dress will fit like a glove.
+		Lizzy: The allowance is all messed up,
+		Lizzy: but I bet you one million dollars that with a few self adjustments your dress will fit like a glove.
 		Lizzy: Which is why I'm giving you this.
 		Barb: ...
 		Lizzy: Use the floppy ruler—
