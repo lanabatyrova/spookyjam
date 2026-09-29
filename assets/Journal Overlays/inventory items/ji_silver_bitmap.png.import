@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://u7om5ad5wi1v"
+path="res://.godot/imported/ji_silver_bitmap.png-da5ec7d6848c10981cceb2d20fe6ddee.res"
+
+[deps]
+
+source_file="res://assets/Journal Overlays/inventory items/ji_silver_bitmap.png"
+dest_files=["res://.godot/imported/ji_silver_bitmap.png-da5ec7d6848c10981cceb2d20fe6ddee.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

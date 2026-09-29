@@ -8,6 +8,10 @@
 [ext_resource type="Script" uid="uid://c45tqmv6kjcvo" path="res://Scenes/Library/barb_library.gd" id="6_1rjaq"]
 [ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="7_1rjaq"]
 [ext_resource type="Script" uid="uid://lrkki6l17hps" path="res://Scenes/Library/noah_library.gd" id="8_hi2wh"]
+[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://sprites/Dagger_1.png" id="9_14au8"]
+[ext_resource type="Script" uid="uid://b0udjftf53w77" path="res://Scenes/Library/dagger_library.gd" id="10_bybqk"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="11_0fyj4"]
+[ext_resource type="Script" uid="uid://my8fu5o6jxvf" path="res://Scenes/Library/lady_library.gd" id="12_rjhi6"]
 
 [node name="Library" type="Node2D" unique_id=1495003555]
 script = ExtResource("1_3kh1m")
@@ -25,8 +29,8 @@ texture = ExtResource("1_cjel0")
 [node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
 offset_left = 830.0
 offset_top = 274.0
-offset_right = 2234.0
-offset_bottom = 2565.0
+offset_right = 1537.0
+offset_bottom = 2229.0
 scale = Vector2(0.1560062, 0.1560062)
 texture_normal = ExtResource("3_3kh1m")
 script = ExtResource("4_3kh1m")
@@ -34,21 +38,41 @@ script = ExtResource("4_3kh1m")
 [node name="BarbButton" type="TextureButton" parent="." unique_id=506002566]
 offset_left = 599.0
 offset_top = 186.00002
-offset_right = 2003.0
-offset_bottom = 2477.0
+offset_right = 1531.0
+offset_bottom = 2186.0
 scale = Vector2(0.1560062, 0.1560062)
 texture_normal = ExtResource("5_6apm7")
 script = ExtResource("6_1rjaq")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
-offset_left = 19.999998
-offset_top = 329.0
-offset_right = 1424.0
-offset_bottom = 2620.0
+offset_left = 30.0
+offset_top = 325.00003
+offset_right = 962.0
+offset_bottom = 2325.0
 scale = Vector2(0.1560062, 0.1560062)
 texture_normal = ExtResource("7_1rjaq")
 script = ExtResource("8_hi2wh")
 
+[node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
+offset_left = 370.0
+offset_top = 117.0
+offset_right = 1400.0
+offset_bottom = 2168.0
+scale = Vector2(0.1560062, 0.1560062)
+texture_normal = ExtResource("9_14au8")
+script = ExtResource("10_bybqk")
+
+[node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
+offset_left = 212.0
+offset_top = 94.000015
+offset_right = 919.0
+offset_bottom = 2049.0
+scale = Vector2(0.1560062, 0.1560062)
+texture_normal = ExtResource("11_0fyj4")
+script = ExtResource("12_rjhi6")
+
 [connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]

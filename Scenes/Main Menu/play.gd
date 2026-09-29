@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Hallway/Hallway.tscn") #TODO: fix
-	#Dialogic.start("res://Timelines/prologue_timeline.dtl")
+	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn") #TODO: fix
+	Dialogic.start("res://Timelines/previously_on_timeline.dtl")
+	Dialogic.start("res://Timelines/prologue_timeline.dtl")

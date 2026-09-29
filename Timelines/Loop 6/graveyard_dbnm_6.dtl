@@ -1,0 +1,22 @@
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.0"]
+join Dagger center [animation="Fade In Up" length="2.0" wait="true"]
+Dagger: My vampire hearing is picking up the ringing from over here.
+join Lizzy right [animation="Slide From Right" length="2.0" wait="true"]
+Lizzy: I have super hearing too.
+join Barb rightmost [animation="Bounce In" wait="true"]
+Barb: Dog hearing.
+join Noah left [animation="Bounce In" wait="true"]
+Noah: Wolf hearing.
+Lizzy: Normal super hearing.
+Barb: So you can't hear dog whistles??
+Lizzy: I mean, I guess I can.
+Barb: Dog hearing.
+Lizzy: Fine. Yes. I have dog hearing.
+
+
+Lizzy: Oh she just picked up-
+
+"Lady MacDeath": Accursed knave, how in the blazes did you acquire my personal information!! I'll skin you alive and then send your loved ones pieces of your meat.
+
+Lizzy: ...
+Noah: She must really value her privacy.

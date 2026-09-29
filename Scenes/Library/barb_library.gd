@@ -15,11 +15,11 @@ func _on_pressed() -> void:
 	match GameState.current_day:
 		4:
 			print("barb dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 4/library_vb_4.dtl")
 		5:
 			print("barb dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 5/library_vbn_5.dtl")
 		7:
 			print("barb dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
 		_: print("how did this even happen???")

@@ -1,0 +1,26 @@
+[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
+join Valerie left [animation="Fade In"]
+join Lizzy right
+Valerie: Elizabeth, excellent.
+(other text)
+Lizzy: That sounds like a much better plan. All I've managed to accomplish so far is be eaten by zombies twice and stabbed.
+update Valerie [animation="Bounce" wait="true"]
+Valerie: Don't tell me you confronted Lady MacDeath alone...
+Lizzy: What? It seemed like the best idea.
+Valerie: Oh, Lizzy... perhaps it's good that there's a time loop. It could teach you a valuable lesson.
+Lizzy: What ever. I'm done with learning.
+
+Valerie: Is there anyone who you have enough information to convince?
+Lizzy: Lets see… Well, at around twelve Barb’s dress rips, and Noah gets hauled to detention.
+Lizzy: It was actually so weird Barb told this really personal story about getting lost in the woods that she hasn't told to anyone else-
+Valerie: Perhaps you should start with Barb, since you know a secret.
+Lizzy: Alright. I'll see what I can do.
+join Barb center [animation="Slide From Right" wait="true"]
+update Lizzy [animation="Bounce" wait="true"]
+
+Lizzy: BARB
+Barb: What? Is there something on my face?
+update Barb [animation="Tada" wait="true"]
+Barb: Get it off getitoff
+Lizzy: You're fine. No. We're in a time loop. And I can prove it.
+Barb: What?

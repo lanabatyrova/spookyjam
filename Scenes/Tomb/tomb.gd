@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	ladymac.visible = day in [6,7]
+	ladymac.visible = day in [6]

@@ -36,7 +36,7 @@ overrides = {
 "box_animation_out": "0",
 "box_margin_bottom": "5.0",
 "box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
-"box_size": "Vector2(550, 100)",
+"box_size": "Vector2(550, 105)",
 "name_label_alignment": "2",
 "name_label_box_offset": "Vector2(-560, 39)",
 "name_label_box_panel": "\"res://Design/Name_Subtitle_Box.tres\"",

@@ -15,8 +15,8 @@ func _on_pressed() -> void:
 	match GameState.current_day:
 		5:
 			print("noah dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 5/library_vbn_5.dtl")
 		7:
 			print("noah dialogue in library on day ", GameState.current_day)
-			# Dialogic.start()
+			Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
 		_: print("how did this even happen???")

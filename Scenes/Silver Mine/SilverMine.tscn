@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cckv6rggv5d81"]
+
+[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://sprites/Juniper_1.png" id="1_efmqu"]
+[ext_resource type="Texture2D" uid="uid://yihfwg1wmwyu" path="res://assets/Silver_Mine.png" id="1_lrsmp"]
+[ext_resource type="Script" uid="uid://bmwqq8a787kce" path="res://Scenes/Silver Mine/juniper_mine.gd" id="3_1g6fs"]
+
+[node name="SilverMine" type="Node2D" unique_id=1269674359]
+
+[node name="Panel" type="Panel" parent="." unique_id=2028365430]
+offset_left = -9.1552734e-05
+offset_right = 1150.9999
+offset_bottom = 649.0
+
+[node name="SilverMine" type="Sprite2D" parent="." unique_id=2061513618]
+position = Vector2(575.50006, 323.75)
+scale = Vector2(0.44960937, 0.3799063)
+texture = ExtResource("1_lrsmp")
+
+[node name="JuniperButton" type="TextureButton" parent="." unique_id=96460217]
+offset_left = 493.99997
+offset_top = 132.0
+offset_right = 1426.0
+offset_bottom = 2132.0
+scale = Vector2(0.25237244, 0.25237244)
+texture_normal = ExtResource("1_efmqu")
+script = ExtResource("3_1g6fs")
+
+[connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bsb0c1tmchgye"
+path="res://.godot/imported/ji_letter_bitmap.png-12061eade2da26cce482204747bc1e1a.res"
+
+[deps]
+
+source_file="res://assets/Journal Overlays/inventory items/ji_letter_bitmap.png"
+dest_files=["res://.godot/imported/ji_letter_bitmap.png-12061eade2da26cce482204747bc1e1a.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

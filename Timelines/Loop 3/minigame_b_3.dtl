@@ -1,5 +1,8 @@
-[background arg="res://assets/Minigame/minigame_hallway.png" fade="0.0"]
-join Barb (Minigame) center
+do GameState.start_minigame()
+[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
+join Barb center
+[wait time="1.5"]
 Lizzy: I have proof!
 Barb: This is going to be good.
 label Journal Select
@@ -21,8 +24,7 @@ if {is_success} == true:
 		Lizzy: For now.
 		Lizzy: As soon as you try to put it on it's gonna rip apart like tissue paper.
 		Barb: Um, that's a bit rude.
-		Lizzy: The allowance is all messed up,
-		Lizzy: but I bet you one million dollars that with a few self adjustments your dress will fit like a glove.
+		Lizzy: The allowance is all messed up, but I bet you one million dollars that with a few self adjustments your dress will fit like a glove.
 		Lizzy: Which is why I'm giving you this.
 		Barb: ...
 		Lizzy: Use the floppy ruler—
@@ -45,6 +47,15 @@ if {is_success} == true:
 		Barb: ...
 		Barb: She was a bitch.
 	set {strikes_number} += 1.0
+	join Item leftmost [animation="Zoom In" length="9.0"]
+	leave Item [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 2.0:
+		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 3.0:
+		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+	[wait time="1.5"]
 else:
 	Barb: And this is supposed to mean something to me because....?
 	Lizzy: Uh... I was just testing to see if you're paying attention.
@@ -52,6 +63,7 @@ else:
 set {is_success} = false
 if {strikes_number} < 3.0:
 	jump Journal Select
+[background fade="2.0" wait="true"]
 Barb: A time loop? Figures.
 Barb: There always has to be something crazy happening.
 Lizzy: So, does that mean you believe me?
@@ -59,4 +71,5 @@ Barb: I guess so.
 Barb: Thanks for saving my dress.
 Barb: I didn't think you care about that sort of thing.
 Lizzy: I'm multi-faceted.
-[end_timeline]
+do GameState.end_minigame()
+jump ending_3/

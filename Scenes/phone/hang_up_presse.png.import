@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhpq3avfqfjed"
-path="res://.godot/imported/hang_up_presse.png-036ec922542c1715959f7116dd02db86.ctex"
+path="res://.godot/imported/hang_up_presse.png-cdfd5a57562c0b9e3b35cecf930d3034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/phone/hang_up_presse.png"
-dest_files=["res://.godot/imported/hang_up_presse.png-036ec922542c1715959f7116dd02db86.ctex"]
+source_file="res://Scenes/Phone/hang_up_presse.png"
+dest_files=["res://.godot/imported/hang_up_presse.png-cdfd5a57562c0b9e3b35cecf930d3034.ctex"]
 
 [params]
 

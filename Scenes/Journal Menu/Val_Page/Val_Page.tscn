@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://dc4rfgugqbvyh"]
+
+[ext_resource type="Script" uid="uid://fdqlcylsfsan" path="res://Scenes/Journal Menu/Val_Page/val_page.gd" id="1_kidco"]
+[ext_resource type="Texture2D" uid="uid://clkh33qob0vfq" path="res://assets/Journal_Val.png" id="1_wwaxy"]
+[ext_resource type="Texture2D" uid="uid://bg70h0ftdsiqr" path="res://assets/Journal Overlays/Flip Page 1.png" id="2_vjj0l"]
+[ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="3_jmooc"]
+[ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="3_pw6v1"]
+[ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="5_f4unm"]
+[ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="5_g625x"]
+[ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="6_5mh65"]
+[ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="6_kidco"]
+[ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="7_oyu38"]
+[ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_2voj2"]
+[ext_resource type="Script" uid="uid://6rkbgenk2fj6" path="res://Scenes/Journal Menu/Val_Page/val_char_button.gd" id="9_qmlvn"]
+[ext_resource type="Texture2D" uid="uid://bfibsrsvtfm4p" path="res://assets/Journal Overlays/Polaroid_Val.png" id="9_v61il"]
+[ext_resource type="Script" uid="uid://beb8dxvx2iioh" path="res://Scenes/Journal Menu/Val_Page/case_study_button.gd" id="10_rofvi"]
+[ext_resource type="Texture2D" uid="uid://b5b3ejuap2js0" path="res://assets/Journal Overlays/Polaroid_Val_Hover.png" id="10_ydkfi"]
+[ext_resource type="Script" uid="uid://dsabvsp236mu3" path="res://Scenes/Journal Menu/Val_Page/future_worries_button.gd" id="11_0okkg"]
+[ext_resource type="Texture2D" uid="uid://cik630x0auodx" path="res://assets/Journal Overlays/V_Case_Study.png" id="12_pn360"]
+[ext_resource type="Texture2D" uid="uid://cnqyu5ssrj6i" path="res://assets/Journal Overlays/V_Case_Study_Hover.png" id="13_dpd8a"]
+[ext_resource type="Texture2D" uid="uid://db7j3arfuxp0g" path="res://assets/Journal Overlays/V_Future_Worries.png" id="15_elwd1"]
+[ext_resource type="Texture2D" uid="uid://q4w7dy18hdv3" path="res://assets/Journal Overlays/V_Future_Worries_Hover.png" id="16_5in8q"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f4unm"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kidco"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
+[node name="Val_Page" type="Node2D" unique_id=1955171214]
+script = ExtResource("1_kidco")
+
+[node name="JournalContacts" type="Sprite2D" parent="." unique_id=582597188]
+position = Vector2(575.1111, 324.49997)
+scale = Vector2(0.59907407, 0.59907407)
+texture = ExtResource("1_wwaxy")
+
+[node name="Contacts Button" type="LinkButton" parent="." unique_id=1753985598]
+offset_left = 21.999998
+offset_top = 291.00003
+offset_right = 62.0
+offset_bottom = 331.00003
+rotation = -0.04017042
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("6_5mh65")
+
+[node name="Notes Button" type="LinkButton" parent="." unique_id=736259020]
+offset_left = 790.00006
+offset_top = 350.00003
+offset_right = 830.00006
+offset_bottom = 390.00003
+rotation = -0.09169341
+scale = Vector2(1.0723437, 2.437207)
+script = ExtResource("7_oyu38")
+
+[node name="Settings Button" type="LinkButton" parent="." unique_id=842239944]
+offset_left = 7.0
+offset_top = 80.0
+offset_right = 47.0
+offset_bottom = 120.0
+rotation = -0.09229068
+scale = Vector2(1.0235412, 2.5269282)
+script = ExtResource("8_2voj2")
+
+[node name="InventoryButton" type="LinkButton" parent="." unique_id=2099124288]
+offset_left = 15.0
+offset_top = 185.0
+offset_right = 55.0
+offset_bottom = 225.0
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("5_f4unm")
+
+[node name="BestiaryButton" type="LinkButton" parent="." unique_id=1940719184]
+offset_left = 804.0
+offset_top = 452.99994
+offset_right = 844.0
+offset_bottom = 492.99994
+rotation = -0.0878505
+scale = Vector2(1.0196751, 2.4833512)
+script = ExtResource("6_kidco")
+
+[node name="ValCharButton" type="TextureButton" parent="." unique_id=1592270285]
+offset_left = 80.99999
+offset_top = 127.0
+offset_right = 1742.0
+offset_bottom = 1208.0
+rotation = -0.0633762
+scale = Vector2(0.17431296, 0.17431296)
+texture_normal = ExtResource("9_v61il")
+texture_hover = ExtResource("10_ydkfi")
+script = ExtResource("9_qmlvn")
+
+[node name="CaseStudyButton" type="TextureButton" parent="." unique_id=1609927110]
+offset_left = 422.0
+offset_top = 144.0
+offset_right = 2144.0
+offset_bottom = 658.0
+rotation = -0.09330906
+scale = Vector2(0.18791477, 0.18791477)
+texture_normal = ExtResource("12_pn360")
+texture_hover = ExtResource("13_dpd8a")
+script = ExtResource("10_rofvi")
+
+[node name="FutureWorriesButton" type="TextureButton" parent="." unique_id=1758593075]
+offset_left = 428.0
+offset_top = 260.00003
+offset_right = 2175.0
+offset_bottom = 671.0
+rotation = -0.10417791
+scale = Vector2(0.1900825, 0.1900825)
+texture_normal = ExtResource("15_elwd1")
+texture_hover = ExtResource("16_5in8q")
+script = ExtResource("11_0okkg")
+
+[node name="FlipBack" type="TextureButton" parent="." unique_id=1844599141]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_f4unm")
+texture_hover = ExtResource("2_vjj0l")
+script = ExtResource("3_jmooc")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=2005146266]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_kidco")
+texture_hover = ExtResource("3_pw6v1")
+script = ExtResource("5_g625x")
+
+[connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
+[connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
+[connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
+[connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
+[connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
+[connection signal="pressed" from="ValCharButton" to="ValCharButton" method="_on_pressed"]
+[connection signal="pressed" from="CaseStudyButton" to="CaseStudyButton" method="_on_pressed"]
+[connection signal="pressed" from="FutureWorriesButton" to="FutureWorriesButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
