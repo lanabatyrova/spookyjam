@@ -1,24 +1,20 @@
 extends TextureButton
 
-var spoken: bool
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	spoken = false
-
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
 			print("valerie dialogue in library on day ", GameState.current_day)
-			if !spoken:
+			if !GameState.spoken_today["valerie"]:
 				Dialogic.start("res://Timelines/Loop 1/library_v_1.dtl")
-				spoken = true
+				#GameState.spoken_today["valerie"] = true
 		2:
 			print("valerie dialogue in library on day ", GameState.current_day)
 			# Dialogic.start()

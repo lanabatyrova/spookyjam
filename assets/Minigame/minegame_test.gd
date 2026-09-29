@@ -1,10 +1,10 @@
 
 extends Node2D
 
-@onready var minigame1 = $Minigame1
-@onready var minigame2 = $Minigame2
-@onready var minigame3 = $Minigame3
-@onready var minigame4 = $Minigame4
+#@onready var minigame1 = $Minigame1
+#@onready var minigame2 = $Minigame2
+#@onready var minigame3 = $Minigame3
+#@onready var minigame4 = $Minigame4
 
 
 # Called when the node enters the scene tree for the first time.

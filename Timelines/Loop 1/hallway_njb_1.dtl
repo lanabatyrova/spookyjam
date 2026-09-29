@@ -8,3 +8,6 @@ Juniper: ...
 leave Juniper
 join Barb leftmost
 Barb: Anyway we've got exams to worry about!!!
+do GameState.mark_character_as_spoken("noah")
+do GameState.mark_character_as_spoken("juniper")
+do GameState.mark_character_as_spoken("barb")

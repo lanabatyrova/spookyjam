@@ -9,10 +9,28 @@
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="6_dqr1g"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="7_u8hky"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="8_omsjp"]
+[ext_resource type="Texture2D" uid="uid://bmpt7v0j2eb74" path="res://assets/Journal Overlays/D_Zombie_Plan.png" id="9_2w1v6"]
+[ext_resource type="Texture2D" uid="uid://dhaeeawoj5g5c" path="res://assets/Journal Overlays/D_Zombie_Plan_Hover.png" id="10_6tjxn"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="10_e4lmo"]
 [ext_resource type="Script" uid="uid://bkvp1mjq3tbs" path="res://Scenes/Journal Menu/Lady_Page/lady_char_button.gd" id="10_jusjv"]
 [ext_resource type="Script" uid="uid://bw1ck1r0h2765" path="res://Scenes/Journal Menu/Lady_Page/zombie_plan_button.gd" id="11_4enno"]
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="11_507vs"]
+[ext_resource type="Texture2D" uid="uid://cmg1yahilxyk1" path="res://assets/Journal Overlays/Lady_NameChange.png" id="15_6rcgt"]
+[ext_resource type="Texture2D" uid="uid://c3cme2wifoxxi" path="res://assets/Journal Overlays/Lady_PhoneNumber.png" id="15_r4ufa"]
+[ext_resource type="Texture2D" uid="uid://cf4mxul1ayej3" path="res://assets/Journal Overlays/Lady_Timeloop.png" id="16_ajc5n"]
+[ext_resource type="Texture2D" uid="uid://dhhhwy54jmtpc" path="res://assets/Journal Overlays/Lady_Timeloop_Crossedout.png" id="17_6rcgt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6tjxn"]
+load_path = "res://.godot/imported/Polaroid_Lady.png-ba170196a638cb6701f41b4dbbb62dea.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6rcgt"]
+load_path = "res://.godot/imported/Polaroid_Lady_Hover.png-b6564a831ced6d86e7835d2b2b48d9e3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e4lmo"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_507vs"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
 
 [node name="Lady_Page" type="Node2D" unique_id=948762319]
 script = ExtResource("1_4blye")
@@ -21,26 +39,6 @@ script = ExtResource("1_4blye")
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
 texture = ExtResource("1_shccm")
-
-[node name="FlipBack" type="TextureButton" parent="." unique_id=728848147]
-offset_left = 61.0
-offset_top = 470.0
-offset_right = 1574.0
-offset_bottom = 2358.0
-scale = Vector2(0.08000029, 0.08000029)
-texture_pressed = ExtResource("2_4s3ma")
-texture_hover = ExtResource("2_4s3ma")
-script = ExtResource("3_71f1s")
-
-[node name="FlipForward" type="TextureButton" parent="." unique_id=605838729]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("3_shccm")
-texture_hover = ExtResource("3_shccm")
-script = ExtResource("5_4blye")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=688100995]
 offset_left = 781.0
@@ -61,20 +59,20 @@ scale = Vector2(1.0723437, 2.437207)
 script = ExtResource("7_u8hky")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=1108170955]
-offset_left = 760.0
-offset_top = 34.000004
-offset_right = 800.0
-offset_bottom = 74.0
-rotation = -0.09229068
+offset_left = 6.999999
+offset_top = 79.0
+offset_right = 47.0
+offset_bottom = 119.0
+rotation = -0.066799074
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("8_omsjp")
 
 [node name="InventoryButton" type="LinkButton" parent="." unique_id=1701553806]
-offset_left = 771.00006
-offset_top = 137.0
-offset_right = 811.00006
-offset_bottom = 177.0
-rotation = -0.0878505
+offset_left = 15.0
+offset_top = 183.0
+offset_right = 55.0
+offset_bottom = 223.0
+rotation = -0.058186196
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("10_e4lmo")
 
@@ -87,29 +85,94 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("11_507vs")
 
-[node name="LadyCharButton" type="Button" parent="." unique_id=1391457794]
-offset_left = 182.0
-offset_top = 234.0
-offset_right = 292.0
-offset_bottom = 305.0
-text = "LM character
-button"
-script = ExtResource("10_jusjv")
-
-[node name="ZombiePlanButton" type="Button" parent="." unique_id=1448866175]
-offset_left = 489.0
-offset_top = 332.0
-offset_right = 620.0
-offset_bottom = 371.0
-text = "d_zombie_plan"
+[node name="ZombiePlanButton" type="TextureButton" parent="." unique_id=297718658]
+offset_left = 466.00003
+offset_top = 339.0
+offset_right = 1767.0
+offset_bottom = 987.0
+rotation = 0.052703112
+scale = Vector2(0.22396293, 0.22396293)
+texture_normal = ExtResource("9_2w1v6")
+texture_hover = ExtResource("10_6tjxn")
 script = ExtResource("11_4enno")
 
-[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
-[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
+[node name="LadyCharButton" type="TextureButton" parent="." unique_id=236713383]
+offset_left = 101.0
+offset_top = 103.0
+offset_right = 1176.0
+offset_bottom = 1214.0
+rotation = -0.053523265
+scale = Vector2(0.23201175, 0.23201175)
+texture_normal = SubResource("CompressedTexture2D_6tjxn")
+texture_hover = SubResource("CompressedTexture2D_6rcgt")
+script = ExtResource("10_jusjv")
+
+[node name="LadyNameButton" type="TextureButton" parent="." unique_id=713271291]
+offset_left = 104.99999
+offset_top = 435.99997
+offset_right = 1397.0
+offset_bottom = 899.0
+rotation = -0.073459744
+scale = Vector2(0.22807324, 0.22807324)
+texture_normal = ExtResource("15_6rcgt")
+
+[node name="TimeLoopButton" type="TextureButton" parent="." unique_id=1925376482]
+offset_left = 537.0
+offset_top = 498.0
+offset_right = 1275.0
+offset_bottom = 806.0
+rotation = -0.16587111
+scale = Vector2(0.26621538, 0.26621538)
+texture_normal = ExtResource("16_ajc5n")
+
+[node name="TimeLoopScribbleButton" type="TextureButton" parent="." unique_id=1977040039]
+offset_left = 535.0
+offset_top = 497.0
+offset_right = 1273.0
+offset_bottom = 805.0
+rotation = -0.14543574
+scale = Vector2(0.24131715, 0.24131715)
+texture_normal = ExtResource("17_6rcgt")
+
+[node name="LadyPhoneButton" type="TextureButton" parent="." unique_id=1736466630]
+offset_left = 431.99994
+offset_top = 257.99997
+offset_right = 2070.0
+offset_bottom = 826.0
+rotation = -0.09362312
+scale = Vector2(0.17269942, 0.17269942)
+texture_normal = ExtResource("15_r4ufa")
+
+[node name="FlipBack" type="TextureButton" parent="." unique_id=2026612763]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_e4lmo")
+texture_hover = ExtResource("2_4s3ma")
+script = ExtResource("3_71f1s")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1121875044]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_507vs")
+texture_hover = ExtResource("3_shccm")
+script = ExtResource("5_4blye")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
-[connection signal="pressed" from="LadyCharButton" to="LadyCharButton" method="_on_pressed"]
 [connection signal="pressed" from="ZombiePlanButton" to="ZombiePlanButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyCharButton" to="LadyCharButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyNameButton" to="LadyNameButton" method="_on_pressed"]
+[connection signal="pressed" from="TimeLoopButton" to="TimeLoopButton" method="_on_pressed"]
+[connection signal="pressed" from="TimeLoopScribbleButton" to="TimeLoopScribbleButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyPhoneButton" to="LadyPhoneButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

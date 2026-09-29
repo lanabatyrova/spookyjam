@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cprfwnfvnwadb"
-path="res://.godot/imported/Journal Contacts.png-8e7fbc0167e017fadb2bbcf042f899d6.ctex"
+uid="uid://b5b3ejuap2js0"
+path="res://.godot/imported/Polaroid_Val_Hover.png-3213c55e76f66996c76be909f84ecce1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal Contacts.png"
-dest_files=["res://.godot/imported/Journal Contacts.png-8e7fbc0167e017fadb2bbcf042f899d6.ctex"]
+source_file="res://assets/Journal Overlays/Polaroid_Val_Hover.png"
+dest_files=["res://.godot/imported/Polaroid_Val_Hover.png-3213c55e76f66996c76be909f84ecce1.ctex"]
 
 [params]
 

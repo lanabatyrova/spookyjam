@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://twbjtf6s8x3k"]
 
-[ext_resource type="Texture2D" uid="uid://cprfwnfvnwadb" path="res://assets/Journal Contacts.png" id="1_qu7dv"]
+[ext_resource type="Texture2D" uid="uid://bd0n7ra6os3ih" path="res://assets/Journal_Contacts.png" id="1_jsc1a"]
 [ext_resource type="Texture2D" uid="uid://dol4ei1qc0dlr" path="res://assets/Journal Overlays/Journal_Lady_Button_1.png" id="2_qu7dv"]
 [ext_resource type="Texture2D" uid="uid://bnbnertv03cb3" path="res://assets/Journal Overlays/Journal_Dagger_Button_1.png" id="3_6n68f"]
 [ext_resource type="Script" uid="uid://caj0xu2sl7bcq" path="res://Scenes/Journal Menu/Contacts/lady_contact_button.gd" id="3_ldwhp"]
@@ -22,6 +22,12 @@
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="16_li7yr"]
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="17_vwxf8"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jsc1a"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vwxf8"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
 [node name="Contacts" type="Node2D" unique_id=1401346317]
 
 [node name="Panel" type="Panel" parent="." unique_id=1750551759]
@@ -33,7 +39,7 @@ offset_bottom = 649.0
 [node name="JournalContacts" type="Sprite2D" parent="." unique_id=1199986032]
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
-texture = ExtResource("1_qu7dv")
+texture = ExtResource("1_jsc1a")
 
 [node name="Lady" type="TextureButton" parent="JournalContacts" unique_id=102019825]
 offset_left = -196.612
@@ -91,19 +97,19 @@ texture_hover = ExtResource("9_0vx2i")
 script = ExtResource("13_mja2t")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=2139536008]
-offset_left = 760.0
-offset_top = 34.000004
-offset_right = 800.0
-offset_bottom = 74.0
+offset_left = 8.0
+offset_top = 81.0
+offset_right = 48.0
+offset_bottom = 121.0
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("13_tv8si")
 
 [node name="InventoryButton" type="LinkButton" parent="." unique_id=1902665937]
-offset_left = 771.00006
-offset_top = 137.0
-offset_right = 811.00006
-offset_bottom = 177.0
+offset_left = 14.0
+offset_top = 184.0
+offset_right = 54.0
+offset_bottom = 224.0
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("15_jsc1a")
@@ -126,23 +132,23 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("17_vwxf8")
 
-[node name="FlipBack" type="TextureButton" parent="." unique_id=1419315873]
-offset_left = 61.0
-offset_top = 470.0
-offset_right = 1574.0
-offset_bottom = 2358.0
-scale = Vector2(0.08000029, 0.08000029)
-texture_pressed = ExtResource("13_0fexd")
+[node name="FlipBack" type="TextureButton" parent="." unique_id=466387267]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_jsc1a")
 texture_hover = ExtResource("13_0fexd")
 script = ExtResource("14_g4vim")
 
-[node name="FlipForward" type="TextureButton" parent="." unique_id=1848129652]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("15_i5075")
+[node name="FlipForward" type="TextureButton" parent="." unique_id=406647276]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_vwxf8")
 texture_hover = ExtResource("15_i5075")
 script = ExtResource("16_li7yr")
 

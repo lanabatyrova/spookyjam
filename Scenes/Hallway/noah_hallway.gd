@@ -14,9 +14,9 @@ func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
 			print("noah dialogue in hallway on day ", GameState.current_day)
-			if !get_parent().spoken:
+			if !GameState.spoken_today["noah"]:
 				Dialogic.start("res://Timelines/Loop 1/hallway_njb_1.dtl")
-				get_parent().spoken = true
+				#GameState.spoken_today["noah"] = true
 		2:
 			print("noah dialogue in hallway on day ", GameState.current_day)
 			# Dialogic.start()

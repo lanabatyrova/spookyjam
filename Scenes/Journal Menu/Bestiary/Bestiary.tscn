@@ -9,6 +9,9 @@
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_kr362"]
 [ext_resource type="Script" uid="uid://bcpdag2f4iqdf" path="res://Scenes/Journal Menu/Bestiary/past_adventures.gd" id="9_gks2w"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qkfka"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
 [node name="Bestiary" type="Node2D" unique_id=1876731372]
 
 [node name="Bestiary" type="Sprite2D" parent="." unique_id=331983510]
@@ -52,18 +55,6 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("5_xivgm")
 
-[node name="FlipBack" type="TextureButton" parent="." unique_id=780840195]
-offset_left = 63.0
-offset_top = 472.99997
-offset_right = 1576.0
-offset_bottom = 2361.0
-rotation = 0.008145895
-scale = Vector2(0.07847464, 0.07847464)
-texture_pressed = ExtResource("5_t7bht")
-texture_hover = ExtResource("5_t7bht")
-stretch_mode = 0
-script = ExtResource("6_kr362")
-
 [node name="PastAdventures" type="Button" parent="." unique_id=2091267164]
 offset_left = 192.0
 offset_top = 223.0
@@ -73,9 +64,19 @@ text = "j_past_adventures
 "
 script = ExtResource("9_gks2w")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=230079663]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_qkfka")
+texture_hover = ExtResource("5_t7bht")
+script = ExtResource("6_kr362")
+
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
-[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
 [connection signal="pressed" from="PastAdventures" to="PastAdventures" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]

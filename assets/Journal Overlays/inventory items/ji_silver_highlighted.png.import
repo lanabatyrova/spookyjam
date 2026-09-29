@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csfdpbuojgw3q"
-path="res://.godot/imported/Journal Settings.png-6354041bc86b0a631c2ec61f34ce9063.ctex"
+uid="uid://cua28b75uf4tk"
+path="res://.godot/imported/ji_silver_highlighted.png-d0a42bb190f25c27cacf81270f823fc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Journal Settings.png"
-dest_files=["res://.godot/imported/Journal Settings.png-6354041bc86b0a631c2ec61f34ce9063.ctex"]
+source_file="res://assets/Journal Overlays/inventory items/ji_silver_highlighted.png"
+dest_files=["res://.godot/imported/ji_silver_highlighted.png-d0a42bb190f25c27cacf81270f823fc3.ctex"]
 
 [params]
 

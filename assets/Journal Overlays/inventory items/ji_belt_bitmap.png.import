@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d0ccekigq3x5s"
+path="res://.godot/imported/ji_belt_bitmap.png-d12de23c34a8301f2d2b45324b4ebc07.res"
+
+[deps]
+
+source_file="res://assets/Journal Overlays/inventory items/ji_belt_bitmap.png"
+dest_files=["res://.godot/imported/ji_belt_bitmap.png-d12de23c34a8301f2d2b45324b4ebc07.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

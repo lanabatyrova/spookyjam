@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://2o78k1ch0ui4"
+path="res://.godot/imported/ji_watch_bitmap.png-102487de732ba4a82b23c6da3b63913d.res"
+
+[deps]
+
+source_file="res://assets/Journal Overlays/inventory items/ji_watch_bitmap.png"
+dest_files=["res://.godot/imported/ji_watch_bitmap.png-102487de732ba4a82b23c6da3b63913d.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

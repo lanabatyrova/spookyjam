@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://llogx4bxa56p"]
 
+[ext_resource type="Script" uid="uid://ip68drjrem8b" path="res://Scenes/Journal Menu/Noah_Page/noah_page.gd" id="1_g06te"]
 [ext_resource type="Texture2D" uid="uid://ck4vcf4gje116" path="res://assets/Journal_Noah.png" id="1_qp6ql"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_nunql"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_20vrq"]
@@ -13,7 +14,14 @@
 [ext_resource type="Script" uid="uid://dhp0mkuf5plwd" path="res://Scenes/Journal Menu/Noah_Page/noah_char_button.gd" id="9_8q5e3"]
 [ext_resource type="Script" uid="uid://ciuwp4sogdly6" path="res://Scenes/Journal Menu/Noah_Page/detention_button.gd" id="10_l237s"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8x6mv"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g06te"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
 [node name="Noah_Page" type="Node2D" unique_id=1876731372]
+script = ExtResource("1_g06te")
 
 [node name="NoahPage" type="Sprite2D" parent="." unique_id=331983510]
 position = Vector2(575.1111, 324.49997)
@@ -65,28 +73,6 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_ouwsn")
 
-[node name="FlipBack" type="TextureButton" parent="." unique_id=780840195]
-offset_left = 63.0
-offset_top = 472.99997
-offset_right = 1576.0
-offset_bottom = 2361.0
-rotation = 0.008145895
-scale = Vector2(0.07847464, 0.07847464)
-texture_pressed = ExtResource("5_8867f")
-texture_hover = ExtResource("5_8867f")
-stretch_mode = 0
-script = ExtResource("6_qqwtk")
-
-[node name="FlipForward" type="TextureButton" parent="." unique_id=220362713]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("7_pnmge")
-texture_hover = ExtResource("7_pnmge")
-script = ExtResource("8_p32i5")
-
 [node name="NoahCharButton" type="Button" parent="." unique_id=2091267164]
 offset_left = 192.0
 offset_top = 186.0
@@ -104,12 +90,32 @@ offset_bottom = 183.0
 text = "n_detention"
 script = ExtResource("10_l237s")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=1058246892]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_8x6mv")
+texture_hover = ExtResource("5_8867f")
+script = ExtResource("6_qqwtk")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1282204693]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_g06te")
+texture_hover = ExtResource("7_pnmge")
+script = ExtResource("8_p32i5")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
-[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
-[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
 [connection signal="pressed" from="NoahCharButton" to="NoahCharButton" method="_on_pressed"]
 [connection signal="pressed" from="DetentionButton" to="DetentionButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

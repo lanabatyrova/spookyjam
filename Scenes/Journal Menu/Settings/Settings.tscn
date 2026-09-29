@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7axeg17208yy"]
 
 [ext_resource type="Script" uid="uid://d0oh8feqhqwjq" path="res://Scenes/Journal Menu/Settings/settings.gd" id="1_8x4u2"]
-[ext_resource type="Texture2D" uid="uid://csfdpbuojgw3q" path="res://assets/Journal Settings.png" id="2_xgdt1"]
+[ext_resource type="Texture2D" uid="uid://vyrxj5ju58sn" path="res://assets/Journal_Settings.png" id="2_xgdt1"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_gu7ho"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="4_fwqi6"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_xgdt1"]
@@ -31,6 +31,9 @@ func _process(delta: float) -> void:
 "
 
 [sub_resource type="Theme" id="Theme_vgl7g"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xgdt1"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
 
 [node name="Settings" type="Node2D" unique_id=694031188]
 script = ExtResource("1_8x4u2")
@@ -93,16 +96,6 @@ position = Vector2i(723, 139)
 size = Vector2i(152, 104)
 theme = SubResource("Theme_vgl7g")
 
-[node name="FlipForward" type="TextureButton" parent="." unique_id=86257955]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("7_p1mro")
-texture_hover = ExtResource("7_p1mro")
-script = ExtResource("8_si324")
-
 [node name="BFF_Button" type="TextureButton" parent="." unique_id=1644946146]
 offset_left = 593.0
 offset_top = 38.0
@@ -114,10 +107,20 @@ texture_pressed = ExtResource("9_jr3r8")
 texture_hover = ExtResource("9_jr3r8")
 script = ExtResource("10_c5na5")
 
+[node name="FlipForward" type="TextureButton" parent="." unique_id=279445448]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_xgdt1")
+texture_hover = ExtResource("7_p1mro")
+script = ExtResource("8_si324")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
 [connection signal="pressed" from="BFF_Button" to="BFF_Button" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

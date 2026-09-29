@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bnfoyutr3eom8"]
 
+[ext_resource type="Script" uid="uid://duns4ctcwpgve" path="res://Scenes/Journal Menu/Barb_Page/barb_page.gd" id="1_dc5lk"]
 [ext_resource type="Texture2D" uid="uid://cpu3f4tx1qvi2" path="res://assets/Journal_Barb.png" id="1_nygq1"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_t3vbd"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="3_1sl3i"]
@@ -14,7 +15,14 @@
 [ext_resource type="Script" uid="uid://clcchyji3if0u" path="res://Scenes/Journal Menu/Barb_Page/clown_school_button.gd" id="10_76aaw"]
 [ext_resource type="Script" uid="uid://cvj8xfcu5gwkt" path="res://Scenes/Journal Menu/Barb_Page/camp_story_button.gd" id="11_njpve"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1sl3i"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dc5lk"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
 [node name="Barb_Page" type="Node2D" unique_id=1876731372]
+script = ExtResource("1_dc5lk")
 
 [node name="BarbPage" type="Sprite2D" parent="." unique_id=331983510]
 position = Vector2(575.1111, 324.49997)
@@ -66,28 +74,6 @@ rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_6j5xp")
 
-[node name="FlipBack" type="TextureButton" parent="." unique_id=780840195]
-offset_left = 63.0
-offset_top = 472.99997
-offset_right = 1576.0
-offset_bottom = 2361.0
-rotation = 0.008145895
-scale = Vector2(0.07847464, 0.07847464)
-texture_pressed = ExtResource("5_5req0")
-texture_hover = ExtResource("5_5req0")
-stretch_mode = 0
-script = ExtResource("6_834cu")
-
-[node name="FlipForward" type="TextureButton" parent="." unique_id=220362713]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("7_hnp06")
-texture_hover = ExtResource("7_hnp06")
-script = ExtResource("8_6edos")
-
 [node name="BarbCharButton" type="Button" parent="." unique_id=2091267164]
 offset_left = 192.0
 offset_top = 186.0
@@ -113,13 +99,33 @@ offset_bottom = 362.0
 text = "b_camp_story"
 script = ExtResource("11_njpve")
 
+[node name="FlipBack" type="TextureButton" parent="." unique_id=1570868437]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_1sl3i")
+texture_hover = ExtResource("5_5req0")
+script = ExtResource("6_834cu")
+
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1658102183]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_dc5lk")
+texture_hover = ExtResource("7_hnp06")
+script = ExtResource("8_6edos")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="BestiaryButton" to="BestiaryButton" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
-[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
-[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
 [connection signal="pressed" from="BarbCharButton" to="BarbCharButton" method="_on_pressed"]
 [connection signal="pressed" from="ClownSchoolButton" to="ClownSchoolButton" method="_on_pressed"]
 [connection signal="pressed" from="CampStoryButton" to="CampStoryButton" method="_on_pressed"]
+[connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
+[connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

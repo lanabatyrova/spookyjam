@@ -10,6 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_0lswh"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_hsadq"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hsadq"]
+load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e5cl4"]
+load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6946.ctex"
+
 [node name="Notes" type="Node2D" unique_id=341417147]
 
 [node name="JournalContacts" type="Sprite2D" parent="." unique_id=39793011]
@@ -53,23 +59,23 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("5_e5cl4")
 
-[node name="FlipBack" type="TextureButton" parent="." unique_id=786352711]
-offset_left = 61.0
-offset_top = 470.0
-offset_right = 1574.0
-offset_bottom = 2358.0
-scale = Vector2(0.08000029, 0.08000029)
-texture_pressed = ExtResource("5_k0rfe")
+[node name="FlipBack" type="TextureButton" parent="." unique_id=1658647756]
+offset_left = 69.0
+offset_top = 543.0
+offset_right = 1582.0
+offset_bottom = 2431.0
+scale = Vector2(0.048468105, 0.048468105)
+texture_pressed = SubResource("CompressedTexture2D_hsadq")
 texture_hover = ExtResource("5_k0rfe")
 script = ExtResource("6_js6ib")
 
-[node name="FlipForward" type="TextureButton" parent="." unique_id=809075484]
-offset_left = 700.00006
-offset_top = 422.00003
-offset_right = 2213.0
-offset_bottom = 2310.0
-scale = Vector2(0.07999894, 0.07999894)
-texture_pressed = ExtResource("7_0lswh")
+[node name="FlipForward" type="TextureButton" parent="." unique_id=1699543845]
+offset_left = 748.00006
+offset_top = 480.0
+offset_right = 2261.0
+offset_bottom = 2368.0
+scale = Vector2(0.047738403, 0.047738403)
+texture_pressed = SubResource("CompressedTexture2D_e5cl4")
 texture_hover = ExtResource("7_0lswh")
 script = ExtResource("8_hsadq")
 

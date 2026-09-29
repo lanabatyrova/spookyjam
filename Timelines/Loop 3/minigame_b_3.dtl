@@ -1,5 +1,7 @@
 do GameState.start_minigame()
+[background arg="res://assets/IMG_0223.png" fade="1.0" transition="Push Up"]
 join Barb center
+[wait time="1.5"]
 Lizzy: I have proof!
 Barb: This is going to be good.
 label Journal Select
