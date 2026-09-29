@@ -32,12 +32,19 @@ scene = ExtResource("5_xboyk")
 script = ExtResource("2_u13s4")
 scene = ExtResource("6_4bh1n")
 overrides = {
-"box_panel": "\"res://style_box_empty.tres\""
+"box_panel": "\"res://style_box_empty.tres\"",
+"normal_font": "\"res://Design/Fonts/Subtitle Font.tres\"",
+"text_size": "30.0",
+"text_use_global_font": "false"
 }
 
 [sub_resource type="Resource" id="Resource_0wguj"]
 script = ExtResource("2_u13s4")
 scene = ExtResource("7_832eg")
+
+[sub_resource type="Resource" id="Resource_u13s4"]
+script = ExtResource("2_u13s4")
+scene = ExtResource("10_rybdu")
 
 [sub_resource type="Resource" id="Resource_4750c"]
 script = ExtResource("2_u13s4")
@@ -46,10 +53,6 @@ scene = ExtResource("9_gdemu")
 [sub_resource type="Resource" id="Resource_4u722"]
 script = ExtResource("2_u13s4")
 scene = ExtResource("10_5li64")
-
-[sub_resource type="Resource" id="Resource_u13s4"]
-script = ExtResource("2_u13s4")
-scene = ExtResource("10_rybdu")
 
 [resource]
 script = ExtResource("11_3b8mj")
@@ -66,4 +69,4 @@ layer_info = {
 "16": SubResource("Resource_4750c"),
 "17": SubResource("Resource_4u722")
 }
-metadata/_latest_layer = "15"
+metadata/_latest_layer = "13"

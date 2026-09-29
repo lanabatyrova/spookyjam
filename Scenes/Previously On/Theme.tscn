@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b5a4byr2c1evu"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_oa74c"]
+[ext_resource type="Texture2D" uid="uid://cg3ofocdsn2k3" path="res://Temp Assets/graveyard-1577478-4189764713.jpg" id="2_tulyf"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="3_emgsc"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="4_1cjcw"]
+
+[sub_resource type="Animation" id="Animation_x7yhg"]
+resource_name = "Barb Theme"
+length = 5.3333335
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lpaqm"]
+_data = {
+&"Barb Theme": SubResource("Animation_x7yhg")
+}
+
+[node name="Theme" type="Node" unique_id=1484056673]
+script = ExtResource("1_oa74c")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Graveyard15774784189764713" type="Sprite2D" parent="." unique_id=1337167595]
+position = Vector2(580, 288)
+scale = Vector2(1.4925094, 1.4925094)
+texture = ExtResource("2_tulyf")
+
+[node name="Barb1" type="Sprite2D" parent="." unique_id=1624180216]
+position = Vector2(188.00002, 392.00003)
+scale = Vector2(0.34478754, 0.3447875)
+texture = ExtResource("3_emgsc")
+
+[node name="LadyMacDeath1" type="Sprite2D" parent="." unique_id=918266175]
+position = Vector2(1065, 215)
+scale = Vector2(0.18369175, 0.18369177)
+texture = ExtResource("4_1cjcw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1397854409]
+root_node = NodePath("../Barb1")
+libraries/ = SubResource("AnimationLibrary_lpaqm")

@@ -1,0 +1,6 @@
+[background arg="res://Temp Assets/Smooth Notebook Paper.PNG" fade="0.0"]
+audio "res://audio/Music/Lizzy Springs theme backwards 3.wav"
+join Logo center [animation="Zoom Center In" length="5.0" wait="true"]
+[wait time="1.0"]
+join  center
+INTRO DAY 1
