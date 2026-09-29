@@ -1,0 +1,63 @@
+[background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.0"]
+join Lizzy right
+join Juniper left
+join Barb center
+Juniper: Hey, Lizzy, want to head to the exam together?
+Lizzy: ... why isn’t there zombies everywhere eating people?
+Juniper: Should there be?
+Lizzy: Uh. Yeah.
+Lizzy: Also wait, exam? We already did an exam and it was terrible!\
+Aren’t we graduating today?
+Juniper: Graduation’s tomorrow...?\
+Are you feeling alright?
+Lizzy: ...
+Lizzy: I’ll get back to you on that.
+Barb: Yes? Do you need something?
+Lizzy: Have you noticed anything strange around here recently?\
+Like flesh eating dead great-grandpas? Or just generally dead people shambling around.
+Barb: It concerns me how genuinely you asked that.
+Lizzy: Just keep your eyes peeled.
+Barb: Whatever, just another Tuesday.
+leave Lizzy
+label START
+join Lizzy right
+Barb: Finally, we’ve been waiting here for eons.
+Juniper: Barb’s just being mean because she’s excited.
+Lizzy: We already took that test, right? Like it was the same exact test we took yesterday?
+Barb: What?
+Juniper: ...
+Lizzy: And you said that yesterday too.
+Barb: “What” is a reflexive response to you at this point.
+Lizzy: No, the eons thing.
+Lizzy: I thought it was a bit much then too.
+Barb: Are you high or something?
+Lizzy: Honestly, I have no idea.\
+Maybe.
+[wait_input]
+join Noah center [animation="Slide From Right" length="3.0" wait="true"]
+update Barb leftmost [animation="Shake X" wait="true"]
+Noah: Whoa, you’re high? That’s badass.
+Barb: Of course you’d be interested in doing recreational drugs. Your mind is already scrambled eggs, so what do you care?
+Lizzy: Noah. Tell me I’m not crazy and that today was yesterday.
+Noah: ...
+Noah: Uh. Sorry, what do you want me to say?
+[background fade="0.0"]
+This is just like the time I was in an alternate universe where I never got bit by the mayor and everyone was miserable because vampires were hanging out everywhere.
+Well, maybe this isn’t anything like that, but I’m feeling about the same as I did then.
+- Tell everyone about the time you got transported into an alternate universe where you were never bitten and turned into a werewolf and it was horrible and vampires hung out everywhere.
+	Lizzy: Do you guys remember that time I got transported to an alternate universe where I was never turned into a werewolf and vampires were hanging out everywhere?
+	Noah: I don’t personally remember, because I didn’t go to that alternate universe, but I remember you telling us about it.
+	Barb: I’m still not sure I believe you.
+	Juniper: ...
+	I should talk to Val, she’ll believe me! She’s got to.
+	Lizzy: I’ve gotta go.
+	Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
+	Barb: Why am I even friends with you??
+	[end_timeline]
+
+
+- Find an elegant way to leave the conversation without suspicion because what if you’re actually being mind probed by Lady MacDeath and she’s trying to learn valuable secrets?
+	Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
+	Barb: ....
+	Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
+	[end_timeline]

@@ -35,7 +35,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"graveyard_dlbnlmj_6": "res://Timelines/Loop 6/graveyard_dlbnlm_6.dtl",
+"graveyard_llmd_2": "res://Timelines/Loop 2/graveyard_llmd_2.dtl",
+"hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
 "hallway_njb_1": "res://Timelines/Loop 1/hallway_njb_1.dtl",
+"home_l_1": "res://Timelines/Loop 1/home_l_1.dtl",
 "intro_1": "res://Timelines/Loop 1/intro_1.dtl",
 "intro_2": "res://Timelines/Loop 2/intro_2.dtl",
 "intro_3": "res://Timelines/Loop 3/intro_3.dtl",
@@ -43,10 +47,14 @@ directories/dtl_directory={
 "intro_5": "res://Timelines/Loop 5/intro_5.dtl",
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
+"library_lv_2": "res://Timelines/Loop 2/library_lv_2.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"library_vlb_3": "res://Timelines/Loop 3/library_vlb_3.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
-"test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl"
+"test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl",
+"testtest_timeline": "res://testtest_timeline.dtl",
+"tomb_dlbnlmj_6": "res://Timelines/Loop 6/tomb_dlbnlmj_6.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
