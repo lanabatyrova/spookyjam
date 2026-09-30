@@ -1,1 +1,2 @@
 we're in the hallway on loop 3!
+do ProgressionTracker.complete_requirement("3A", "hallway_dialog")

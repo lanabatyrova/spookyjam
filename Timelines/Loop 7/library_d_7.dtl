@@ -1,0 +1,2 @@
+prep chat with dagger
+do ProgressionTracker.complete_requirement("7A", "dagger_dialog")

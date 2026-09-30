@@ -1,1 +1,38 @@
-we're in the hallway on loop 2!
+[background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.0"]
+join Juniper left
+join Barb center
+join Lizzy right
+Juniper: Hey, Lizzy, want to head to the exam together?
+
+
+Lizzy: Sorry, I gotta take care of something in the library first.
+
+
+Juniper: ...
+Juniper: Are you feeling alright?
+
+
+Lizzy: Honestly, I think I’m doing pretty okay all things considered.
+
+Juniper: ...
+Juniper: I’ll see you in class.
+leave Juniper [animation="Slide To Left" wait="true"]
+
+Barb: Yes? Do you need something?
+
+
+Lizzy: I just gotta go to the library real quick.
+
+
+Barb: Why are you telling me this? Do I look like your PDA?
+
+
+Lizzy: Public Display of Affection?
+update Barb [animation="Tada" wait="true" mirrored="true"]
+
+
+Barb: Ugh, you know I didn’t mean that.
+
+
+Lizzy: Yeah, I just like seeing you flustered.
+do GameState.mark_characters_as_spoken("[\"barb\",\"juniper\",\"noah\"]")

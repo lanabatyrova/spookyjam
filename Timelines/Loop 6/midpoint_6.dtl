@@ -1,0 +1,3 @@
+[background arg="#000000ff" fade="1.0"]
+it's night time now midpoint scene let's all go to the graveyard or w/e
+do GameState.reach_midpoint()

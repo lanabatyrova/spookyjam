@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	noah.visible = day in [4]
+	noah.visible = day in [4] && !GameState.midpoint_reached

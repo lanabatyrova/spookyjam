@@ -1,0 +1,6 @@
+diner chats
+Noah: i'm also here! and i got detention guys \:(
+do GameState.learn_fact("n_detention")
+do GameState.mark_characters_as_spoken(["barb", "juniper"])
+do ProgressionTracker.complete_requirement()
+jump ending_1/

@@ -19,10 +19,10 @@ scale = Vector2(1.159, 1.1666666)
 texture = ExtResource("2_ecsos")
 
 [node name="JuniperButton" type="TextureButton" parent="." unique_id=1760701709]
-offset_left = 132.0
-offset_top = 123.0
-offset_right = 1064.0
-offset_bottom = 2123.0
+offset_left = 143.0
+offset_top = 174.0
+offset_right = 1075.0
+offset_bottom = 2174.0
 scale = Vector2(0.22271827, 0.22271827)
 texture_normal = ExtResource("3_d4b3n")
 script = ExtResource("4_myi71")

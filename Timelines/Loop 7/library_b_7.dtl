@@ -1,0 +1,2 @@
+prep chat with barb
+do ProgressionTracker.complete_requirement("7A", "barb_dialog")

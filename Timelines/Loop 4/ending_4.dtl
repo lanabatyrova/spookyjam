@@ -1,0 +1,3 @@
+ending scene number 4
+do GameState.next_day()
+jump intro_5/

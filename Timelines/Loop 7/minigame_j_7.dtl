@@ -1,0 +1,5 @@
+do GameState.learn_fact("j_past_adventures")
+juniper minigame (final)
+then at some point\:
+do GameState.learn_fact("j_bffs")
+jump ending_7/

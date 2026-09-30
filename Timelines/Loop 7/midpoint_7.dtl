@@ -1,0 +1,3 @@
+[background arg="#000000ff" fade="1.0"]
+midopint scene day 7, this might not even be anything tbh maybe just a transition? who knows, after this you have to open the map and go to the mine
+do GameState.reach_midpoint()

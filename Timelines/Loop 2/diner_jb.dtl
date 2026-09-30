@@ -1,0 +1,3 @@
+chatting in the diner with juniper and barb (day 2) — this exchange is optional
+Noah: i'm on the phone!
+do GameState.mark_characters_as_spoken("[\"barb\", \"juniper\"]")

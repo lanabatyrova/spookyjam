@@ -52,9 +52,9 @@ texture_normal = ExtResource("7_jbjv5")
 script = ExtResource("8_dfkrl")
 
 [node name="AcceptanceLetter" type="TextureButton" parent="." unique_id=1338115080]
-offset_left = 363.0
+offset_left = 183.00002
 offset_top = 462.99997
-offset_right = 1643.0
+offset_right = 1463.0
 offset_bottom = 1743.0
 scale = Vector2(0.13770987, 0.13770987)
 texture_normal = ExtResource("9_dqxua")

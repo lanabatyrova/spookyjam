@@ -14,5 +14,8 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	match GameState.current_day:
 		7:
-			Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
+			if !GameState.spoken_today["noah"]:
+				Dialogic.start("res://Timelines/Loop 7/library_m_7.dtl")
+				if ProgressionTracker.is_requirement_met("7A"):
+					Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
 		_: print("how did this even happen???")

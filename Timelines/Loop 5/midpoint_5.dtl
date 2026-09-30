@@ -1,0 +1,3 @@
+[background arg="#000000ff" fade="1.0"]
+(cut to evening on day 5)
+do GameState.reach_midpoint()

@@ -1,0 +1,5 @@
+ending scene 4
+Dagger: LadyMacdeath hates shakespeare btw
+do GameState.learn_fact("m_shakespeare_hate")
+do GameState.next_day()
+jump intro_6/
