@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7ule1p041naa"
+path="res://.godot/imported/Alarm and Click.mp3-800ec2e6a34ad706f5e945a1ba1189d0.mp3str"
+
+[deps]
+
+source_file="res://audio/Alarm and Click.mp3"
+dest_files=["res://.godot/imported/Alarm and Click.mp3-800ec2e6a34ad706f5e945a1ba1189d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

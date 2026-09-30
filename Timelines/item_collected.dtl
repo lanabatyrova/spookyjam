@@ -9,3 +9,5 @@ elif {collected_item_name} == "Annotated Pocket Shakespeare":
 	VO: What in the world is this?
 elif {collected_item_name} == "Acceptance Letter":
 	VO: This must be Juniper's... [note\: idk enough details about this letter to put something here]
+elif {collected_item_name} == "Pocket Watch":
+	VO: This is a really nice watch.

@@ -28,12 +28,15 @@ ProgressionTracker="*uid://3a2w24rr6hsm"
 
 directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
+"Characters/Item": "res://Characters/Item.dch",
 "Dagger": "res://Characters/Dagger.dch",
 "Item": "res://Characters/Strike Ball.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
+"Logo": "res://Characters/Logo.dch",
+"Names": "res://Characters/Names.dch",
 "Noah": "res://Characters/Noah.dch",
 "Postcard": "res://Characters/Postcard.dch",
 "VO": "res://Characters/VO.dch",
@@ -41,6 +44,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
+"Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
 "basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",
 "diner_j_4": "res://Timelines/Loop 4/diner_j_4.dtl",
 "diner_jb_1": "res://Timelines/Loop 1/diner_jb_1.dtl",
@@ -60,6 +64,7 @@ directories/dtl_directory={
 "graveyard_dbnm_6": "res://Timelines/Loop 6/graveyard_dbnm_6.dtl",
 "hallway_b_3": "res://Timelines/Loop 3/hallway_b_3.dtl",
 "hallway_j_4": "res://Timelines/Loop 4/hallway_j_4.dtl",
+"hallway_jbl_2": "res://Timelines/Loop 2/hallway_jbl_2.dtl",
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
 "hallway_jbn_2": "res://Timelines/Loop 2/hallway_jbn_2.dtl",
 "hallway_jbn_3": "res://Timelines/Loop 3/hallway_jbn_3.dtl",
@@ -106,6 +111,7 @@ directories/dtl_directory={
 "not_ready_vo": "res://Timelines/not_ready_vo.dtl",
 "previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
+"rewind": "res://Timelines/rewind.dtl",
 "scratch_pad": "res://scratch_pad.dtl",
 "street_j_5": "res://Timelines/Loop 5/street_j_5.dtl",
 "test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
@@ -116,9 +122,10 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
-"Default_Style": "res://Default_Style.tres"
+"Default_Style": "res://Default_Style.tres",
+"Previously On": "res://Scenes/Previously On/Previously On.tres"
 }
-layout/style_list=["res://Default_Style.tres"]
+layout/style_list=["res://Default_Style.tres", "res://Scenes/Previously On/Previously On.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={

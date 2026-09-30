@@ -1,12 +1,79 @@
-join Lizzy rightmost
-Lizzy: i'm in a time loop!!!
-join Valerie leftmost
-Valerie: no ur not
+[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
+join Lizzy (Talking) right
+Lizzy: VALERIE!
+join Valerie (Talking) left
+Valerie: Ah, Elizabeth, how was your last day of highschool?
+Lizzy: You said that yesterday.
+Valerie: Oh. Did I? I think I would remember something like that.
+Lizzy: You also mentioned something about faxing me class lists. It was a bad day in all honesty.
+Valerie: ...
+Valerie: Hm. You are under a lot of stress, so it makes sense that you would feel overwhelmed by—
+Lizzy: No, you don’t understand.
+Lizzy: I’m reliving the same day over again.
+Lizzy: All exactly the same.
+Lizzy: Maybe not exactly the same. There’s little differences.
+Lizzy: It’s like im stuck in some sort of...
+Lizzy: Loop of...
+Lizzy: Time.
+Valerie: ...
+Valerie: A time loop?
+Lizzy: Yes! That’s the word.
+Valerie: Time loops are incredibly rare, Elizabeth.
+Valerie: Perhaps a more accurate word would be Deja vu? The sensation of feeling you’ve lived the same experience—
+Lizzy: I know what deja vu is and this is  not it.
+Lizzy: I’m experiencing the same twenty-four hours over again.
+Valerie: Wouldn’t a time loop need to be repeated multiple times for you to know for sure that you’re in one?
+Lizzy: Time loops are time loops Valerie!
+Lizzy: Isn’t it enough that I’ve experienced the same day more than once!
+Lizzy: No one should go through that.
+Valerie: I do think it’s concerning that you’re experiencing the same day, but a time loop?
+Valerie: The Keepers often hold committee meetings about these supernatural phenomena,
+Valerie: and they often result in quite a few fists flying.
+Lizzy: Val, please, level with me. Somebody has got to be behind this!
+Lizzy: Somebody like Lady MacDeath, she raised a bunch of zombies in the last yesterday and was cackling about some evil plan.
+Valerie: One of the keepers, Humprey Egbert, the second, actually published a case study about this very thing.
 do GameState.learn_fact("v_case_study")
-do GameState.learn_fact("v_future_worries")
-Valerie: also take this
+VO: Oh no, she’s going off on one of her tangents.
+Valerie: In the report he asserted that he’d been through more than ten years of the same day looping over and over again.
+Valerie: It contained a very exhaustive list of citations and appendices,
+Valerie: due in part because he had written it while being stuck in said time loop.
+Valerie: The control group in this case was the rest of the world.
+Lizzy: okay, well, how does this help me?
+Lizzy: Can you call Humphrey up and maybe he can walk me through how he broke his?
+Valerie: I detest phones, you know this Elizabeth,
+Valerie: but in any case, we wouldn’t be able to.
+Lizzy: Why not??
+Valerie: He died.
+Lizzy: oh.
+Valerie: While on a sailing trip...
+Valerie: The circumstances were quite mysterious and I’m still convinced he was murdered...
+Valerie: No one will give me the funding to look into it.
+Lizzy: This was a waste of time.
+Valerie: Elizabeth, please know that I’m here to help with whatever problem you’re facing,
+Valerie: but you need to be more realistic.
+Valerie: Why would Lady MacDeath go to all the trouble to make a time loop when you could spend all of your loops figuring out how to stop her?
+Lizzy: because she’s evil?
+Valerie: How about you go home and get some rest before graduation tomorrow.
+Valerie: And then, if you wake up tomorrow, or at the beginning of the day again, you can face it with a fresh mind.
+Lizzy: thanks for the advice.
+Valerie: ...
+Valerie: I’m sorry I wasn’t able to give you the answer you wanted.
+Lizzy: It’s fine.
+Valerie: Here, take this.
 set {collected_item_name} = "pocket_watch"
+join Characters/Item center [animation="Fade In" length="1.0"]
 do GameState.pick_up_item("pocket_watch")
+[wait_input]
+leave Characters/Item [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
+Lizzy: Your lucky pocket watch? Didn’t your grandma give you this?
+Valerie: She told me it would get me through any difficult obstacle life threw at me. It’s made of gold and is only a few minutes behind.
+Lizzy: why are you giving this to me?
+Valerie: To give you something to remind you of how you aren’t the only one in this fight. You can give it back to me after you graduate tomorrow.
+Lizzy: if there is a tomorrow...
+do GameState.learn_fact("v_future_worries")
+
+
 do ProgressionTracker.complete_requirement("1A", "library_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])
 jump item_collected/

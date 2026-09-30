@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://spnl4eqcq5pm"
+path="res://.godot/imported/floraphonic-spooky-movement-violin-4-186908.mp3-7f30cc570fe1c950284e30760fcc144c.mp3str"
+
+[deps]
+
+source_file="res://audio/Character Sounds/floraphonic-spooky-movement-violin-4-186908.mp3"
+dest_files=["res://.godot/imported/floraphonic-spooky-movement-violin-4-186908.mp3-7f30cc570fe1c950284e30760fcc144c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

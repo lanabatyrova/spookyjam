@@ -1,6 +1,47 @@
-diner chats
-Noah: i'm also here! and i got detention guys \:(
+[background scene="res://Scenes/Diner/Diner_Sitting.tscn" fade="0.0"]
+join Lizzy (Talking) rightmost
+
+Barb: You’re out of jam.
+Lizzy: Hello to you too. Also I told you to stop taking those!
+Lizzy: They’re for paying customers only.
+Barb: You won’t have any paying customers if I review bomb you.
+VO: Why do I even bother...
+Juniper: Are you feeling any better? You seem to be back to your old self.
+Lizzy: After the day I’ve had... It’s nice to see you two enjoying a quiet moment.
+Lizzy: Uh, speaking of, where’s Noah?
+Barb: The slammer.
+Lizzy: ...
+Lizzy: What?
+Juniper: He’s in detention. Or was in detention.
 do GameState.learn_fact("n_detention")
+join Noah center
+Noah: Hey, I’m here actually, just on the phone.
+Noah: I’m in the hospital now.
+VO: Oh yeah, he mentioned that yesterday over the phone.
+Lizzy: What!! That’s too bad.
+Noah: I’m feeling a little better.
+Barb: Why he didn’t have his allergy meds on him, I have no idea.
+Barb: If he was going to pull a stunt like that, he should have the brains to get away with it.
+Noah: I can hear you!!
+Barb: I know.
+Lizzy: Compassionate as usual.
+Barb: I’ve had a shit day, okay?
+Barb: And the dress shop didn’t have the colour I wanted.
+Barb: I had to settle for mauve. Ugh. It’ll totally clash with my corsage.
+Lizzy: ...
+Lizzy: What?
+Juniper: that flower thing for your arm.
+Lizzy: oh.
+Lizzy: I still have no idea what that is.
+Noah: It’s like a watch, but for girls.
+Juniper: Are you going to hang out for a bit?
+Lizzy: Uh, I gotta take care of something first, but I’ll be right back.
+Juniper: ...
+Barb: What ever.
+Noah: Bye!!
 do GameState.mark_characters_as_spoken(["barb", "juniper"])
 do ProgressionTracker.complete_requirement()
+[background fade="0.0"]
+leave --All--
+
 jump ending_1/

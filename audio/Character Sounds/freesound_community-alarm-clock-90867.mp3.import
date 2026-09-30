@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4mr4iwxp0lij"
+path="res://.godot/imported/freesound_community-alarm-clock-90867.mp3-878623e55c29034d4c13cf66899e4350.mp3str"
+
+[deps]
+
+source_file="res://audio/Character Sounds/freesound_community-alarm-clock-90867.mp3"
+dest_files=["res://.godot/imported/freesound_community-alarm-clock-90867.mp3-878623e55c29034d4c13cf66899e4350.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

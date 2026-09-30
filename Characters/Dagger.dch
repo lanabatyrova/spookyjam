@@ -30,9 +30,9 @@
 "export_overrides": {
 "image": "\"res://sprites/Dagger_1.png\""
 },
-"mirror": true,
-"offset": Vector2(0, -60),
-"scale": 0.05,
+"mirror": false,
+"offset": Vector2(0, 230),
+"scale": 1.4,
 "scene": ""
 }
 },
