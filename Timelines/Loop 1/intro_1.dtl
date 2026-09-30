@@ -7,7 +7,7 @@ Lizzy: Be realistic, Lizzy. I probably just passed out and Dagger carried me hom
 Lizzy: He always does that stupid romantic crap. I’ll have to chew him out for it later.
 [background fade="0.0"]
 Lizzy: I better hurry to graduation before everyone dies from being eaten by zombies!
-[wait_input]
+[wait time="3.0"]
 Lizzy: Wait...
 Lizzy: This is the same postcard I got yesterday...\
 Why would mom send an identical message?

@@ -1,3 +1,4 @@
 TBC (ending 1)
+do GameState.learn_fact("m_suspition")
 do GameState.next_day()
 jump intro_2/

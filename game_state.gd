@@ -6,7 +6,7 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 2
+var current_day: int = 1
 var midpoint_reached = false
 var is_minigame = false
 
@@ -17,7 +17,7 @@ var inventory = {
 	"allergy_meds": false,
 	"pocket_shakespeare": false,
 	"silver_nugget": true,
-	"pocket_watch": true,
+	"pocket_watch": false,
 	"acceptance_letter": false
 }
 
@@ -36,8 +36,8 @@ var item_collectible = {
 # and bff photo) to more easily keep track of them. Could be used
 # both for journal display and mini game button appearances?
 var facts = {
-	"v_case_study": true,
-	"v_future_worries": true,
+	"v_case_study": false,
+	"v_future_worries": false,
 	"b_camp_story": false,
 	"b_clown_school": true,
 	"n_detention": false,
@@ -91,6 +91,10 @@ func pick_up_item(name):
 
 func learn_fact(name):
 	facts[name] = true
+
+func make_item_collectible(name):
+	item_collectible[name] = true
+	#print(item_collectible)
 
 func complete_task(name):
 	objectives[name] = true

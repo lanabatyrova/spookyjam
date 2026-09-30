@@ -1,5 +1,6 @@
 Barb: we're chillin'
 Barb: also you've gotta hear about noah's machine
-do GameState
+leave Barb
+do GameState.make_item_collectible("belt")
 do GameState.next_day()
 jump intro_4/

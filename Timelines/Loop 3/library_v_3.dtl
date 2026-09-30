@@ -16,15 +16,6 @@ Lizzy: Lets see… Well, at around twelve Barb’s dress rips, and Noah gets hau
 Lizzy: It was actually so weird Barb told this really personal story about getting lost in the woods that she hasn't told to anyone else-
 Valerie: Perhaps you should start with Barb, since you know a secret.
 Lizzy: Alright. I'll see what I can do.
-join Barb center [animation="Slide From Right" wait="true"]
-update Lizzy [animation="Bounce" wait="true"]
-
-Lizzy: BARB
-Barb: What? Is there something on my face?
-update Barb [animation="Tada" wait="true"]
-Barb: Get it off getitoff
-Lizzy: You're fine. No. We're in a time loop. And I can prove it.
-Barb: What?
-do GameState.learn_fact("j_clairvoyance")
+do GameState.make_item_collectible("sewing_kit")
 do ProgressionTracker.complete_requirement("3A", "library_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])

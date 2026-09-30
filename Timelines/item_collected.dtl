@@ -1,5 +1,5 @@
 {collected_item_name}
-if {collected_item_name} == "Sewing Kit":
+if {collected_item_name} == "Portable Sewing Kit":
 	VO: Barb's dress is going to rip later... maybe if I fix it for her, she'll believe me.
 elif {collected_item_name} == "Allergy Meds":
 	VO: Noah always forgets to bring his allergy meds to school... I should grab these just in case.

@@ -30,4 +30,6 @@ Juniper: Please stop.
 update Lizzy [animation="Bounce" wait="true"]
 Lizzy: Juniper!
 do GameState.next_day()
+leave --All--
+[background fade="0.0"]
 jump intro_7/

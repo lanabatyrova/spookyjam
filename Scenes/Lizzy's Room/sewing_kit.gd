@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	if(GameState.item_collectible["sewing_kit"]):
-		Dialogic.VAR.set_variable("collected_item_name", "Potable Sewing Kit")
+		Dialogic.VAR.set_variable("collected_item_name", "Portable Sewing Kit")
 		#Dialogic.VAR.set_variable("collected_item_image", "INSERTPATH")
 		Dialogic.start("res://Timelines/item_collected.dtl")
 		GameState.inventory["sewing_kit"] = true

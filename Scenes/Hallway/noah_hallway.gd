@@ -28,6 +28,7 @@ func _on_pressed() -> void:
 				Dialogic.start("res://Timelines/Loop 3/hallway_jbn_3.dtl")
 				await Dialogic.timeline_ended
 				if ProgressionTracker.is_requirement_met("3A"):
-					Dialogic.start("res://Timelines/Loop 1/midpoint_3.dtl")
+					Dialogic.start("res://Timelines/Loop 3/midpoint_3.dtl")
+					await Dialogic.timeline_ended
 					get_parent().update_day(GameState.current_day)
 		_: print("how did this even happen???")
