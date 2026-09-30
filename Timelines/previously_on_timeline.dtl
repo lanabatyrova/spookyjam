@@ -60,3 +60,4 @@ join Lizzy center [animation="Zoom In"]
 Lizzy: So, what? I’ve got five more to go?
 Piece of cake.
 leave Lizzy [animation="Instant Out"]
+jump prologue_timeline/

@@ -36,9 +36,9 @@ overrides = {
 "box_animation_out": "0",
 "box_margin_bottom": "5.0",
 "box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
-"box_size": "Vector2(550, 105)",
+"box_size": "Vector2(850, 105)",
 "name_label_alignment": "2",
-"name_label_box_offset": "Vector2(-560, 39)",
+"name_label_box_offset": "Vector2(-860, 39)",
 "name_label_box_panel": "\"res://Design/Name_Subtitle_Box.tres\"",
 "name_label_custom_color": "Color(0, 0, 0, 1)",
 "name_label_custom_font_size": "24.0",
@@ -62,6 +62,9 @@ scene = ExtResource("7_7otkr")
 [sub_resource type="Resource" id="Resource_4mpkx"]
 script = ExtResource("2_chqmg")
 scene = ExtResource("8_5yft1")
+overrides = {
+"boxes_fill_width": "false"
+}
 
 [sub_resource type="Resource" id="Resource_sh82e"]
 script = ExtResource("2_chqmg")
@@ -86,4 +89,4 @@ layer_info = {
 "16": SubResource("Resource_sh82e"),
 "17": SubResource("Resource_4yivh")
 }
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "15"

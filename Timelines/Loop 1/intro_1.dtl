@@ -1,0 +1,16 @@
+Lizzy: Huh? What just happened?\
+Shouldn’t I be, like, zombie chow by now?\
+Did I die?
+[background fade="0.0"]
+join Lizzy center
+Lizzy: Be realistic, Lizzy. I probably just passed out and Dagger carried me home.
+Lizzy: He always does that stupid romantic crap. I’ll have to chew him out for it later.
+[background fade="0.0"]
+Lizzy: I better hurry to graduation before everyone dies from being eaten by zombies!
+[wait_input]
+Lizzy: Wait...
+Lizzy: This is the same postcard I got yesterday...\
+Why would mom send an identical message?
+Lizzy: Also wait, shouldn’t they be back by now?\
+Something weird is going on.
+Lizzy: If I wasn’t used to dealing with weird things on an almost weekly schedule, I’d be concerned!

@@ -22,6 +22,7 @@ GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
 MenuManager="*uid://bf6js6fstys8g"
 MinegameTest="*uid://dye3d7c6locdx"
+ProgressionTracker="*uid://3a2w24rr6hsm"
 
 [dialogic]
 
@@ -35,11 +36,15 @@ directories/dch_directory={
 "Lizzy": "res://Characters/Lizzy.dch",
 "Noah": "res://Characters/Noah.dch",
 "Postcard": "res://Characters/Postcard.dch",
+"VO": "res://Characters/VO.dch",
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
 "TEST": "res://Scenes/TEST.dtl",
-"Wrong_item": "res://Timelines/Loop 3/Wrong_item.dtl",
+"basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",
+"diner_j_4": "res://Timelines/Loop 4/diner_j_4.dtl",
+"diner_jb_1": "res://Timelines/Loop 1/diner_jb_1.dtl",
+"diner_jb_2": "res://Timelines/Loop 2/diner_jb_2.dtl",
 "ending_1": "res://Timelines/Loop 1/ending_1.dtl",
 "ending_2": "res://Timelines/Loop 2/ending_2.dtl",
 "ending_3": "res://Timelines/Loop 3/ending_3.dtl",
@@ -47,10 +52,13 @@ directories/dtl_directory={
 "ending_5": "res://Timelines/Loop 5/ending_5.dtl",
 "ending_6": "res://Timelines/Loop 6/ending_6.dtl",
 "ending_7": "res://Timelines/Loop 7/ending_7.dtl",
+"epilogue_timeline": "res://Timelines/epilogue_timeline.dtl",
 "graveyard_d_1": "res://Timelines/Loop 1/graveyard_d_1.dtl",
 "graveyard_d_3": "res://Timelines/Loop 3/graveyard_d_3.dtl",
 "graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",
+"graveyard_d_5": "res://Timelines/Loop 5/graveyard_d_5.dtl",
 "graveyard_dbnm_6": "res://Timelines/Loop 6/graveyard_dbnm_6.dtl",
+"hallway_b_3": "res://Timelines/Loop 3/hallway_b_3.dtl",
 "hallway_j_4": "res://Timelines/Loop 4/hallway_j_4.dtl",
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
 "hallway_jbn_2": "res://Timelines/Loop 2/hallway_jbn_2.dtl",
@@ -63,12 +71,31 @@ directories/dtl_directory={
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
 "item_collected": "res://Timelines/item_collected.dtl",
+"library_b_7": "res://Timelines/Loop 7/library_b_7.dtl",
+"library_d_7": "res://Timelines/Loop 7/library_d_7.dtl",
+"library_m_7": "res://Timelines/Loop 7/library_m_7.dtl",
+"library_n_7": "res://Timelines/Loop 7/library_n_7.dtl",
 "library_v_1": "res://Timelines/Loop 1/library_v_1.dtl",
+"library_v_1B": "res://Timelines/Loop 1/library_v_1B.dtl",
 "library_v_2": "res://Timelines/Loop 2/library_v_2.dtl",
-"library_vb_3": "res://Timelines/Loop 3/library_vb_3.dtl",
+"library_v_2B": "res://Timelines/Loop 2/library_v_2B.dtl",
+"library_v_3": "res://Timelines/Loop 3/library_v_3.dtl",
+"library_v_3B": "res://Timelines/Loop 3/library_v_3B.dtl",
+"library_v_7": "res://Timelines/Loop 7/library_v_7.dtl",
 "library_vb_4": "res://Timelines/Loop 4/library_vb_4.dtl",
+"library_vbn_4": "res://Timelines/Loop 4/library_vbn_4.dtl",
 "library_vbn_5": "res://Timelines/Loop 5/library_vbn_5.dtl",
+"library_vbn_5B": "res://Timelines/Loop 5/library_vbn_5B.dtl",
+"library_vbn_6": "res://Timelines/Loop 6/library_vbn_6.dtl",
 "library_vbndm_7": "res://Timelines/Loop 7/library_vbndm_7.dtl",
+"midpoint_1": "res://Timelines/Loop 1/midpoint_1.dtl",
+"midpoint_2": "res://Timelines/Loop 2/midpoint_2.dtl",
+"midpoint_3": "res://Timelines/Loop 3/midpoint_3.dtl",
+"midpoint_4": "res://Timelines/Loop 4/midpoint_4.dtl",
+"midpoint_5": "res://Timelines/Loop 5/midpoint_5.dtl",
+"midpoint_6": "res://Timelines/Loop 6/midpoint_6.dtl",
+"midpoint_7": "res://Timelines/Loop 7/midpoint_7.dtl",
+"mine_j_7": "res://Timelines/Loop 7/mine_j_7.dtl",
 "minigame_b_3": "res://Timelines/Loop 3/minigame_b_3.dtl",
 "minigame_d_5": "res://Timelines/Loop 5/minigame_d_5.dtl",
 "minigame_j_5": "res://Timelines/Loop 5/minigame_j_5.dtl",
@@ -80,10 +107,12 @@ directories/dtl_directory={
 "previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "scratch_pad": "res://scratch_pad.dtl",
+"street_j_5": "res://Timelines/Loop 5/street_j_5.dtl",
 "test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
 "test_timeline_d3": "res://Timelines/test/test_timeline_d3.dtl",
 "test_timeline_d5": "res://Timelines/test/test_timeline_d5.dtl",
-"testtest_timeline": "res://testtest_timeline.dtl"
+"testtest_timeline": "res://testtest_timeline.dtl",
+"unnecessary_item": "res://Timelines/unnecessary_item.dtl"
 }
 layout/style_directory={
 "": "res://Default_Style.tres",

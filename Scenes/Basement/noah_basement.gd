@@ -9,10 +9,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func can_be_convinced() -> bool:
+	return GameState.inventory["belt"] && GameState.facts["n_detention"] && GameState.facts["n_allergy_meds"]
+
 func _on_pressed() -> void:
-	match GameState.current_day:
-		1:
-			print("noah dialogue in hallway on day ", GameState.current_day)
-			if !GameState.spoken_today["noah"]:
-				Dialogic.start("res://Timelines/Loop 4/minigame_n_4.dtl")
-				#GameState.spoken_today["noah"] = true
+	if can_be_convinced():
+		Dialogic.start("res://Timelines/Loop 4/basement_n.dtl")
+	else:
+		Dialogic.start("res://Timelines/not_ready_vo.dtl")

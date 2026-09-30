@@ -1,5 +1,12 @@
 join Lizzy rightmost
 Lizzy: i'm in a time loop!!!
 join Valerie leftmost
-Valerie: no ur not, also take this
-do GameState.mark_character_as_spoken("valerie")
+Valerie: no ur not
+do GameState.learn_fact("v_case_study")
+do GameState.learn_fact("v_future_worries")
+Valerie: also take this
+set {collected_item_name} = "pocket_watch"
+do GameState.pick_up_item("pocket_watch")
+do ProgressionTracker.complete_requirement("1A", "library_dialog")
+do GameState.mark_characters_as_spoken(["valerie"])
+jump item_collected/

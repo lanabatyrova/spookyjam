@@ -12,8 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	match GameState.current_day:
-		6:
-			print("lady macdeath dialogue in tomb on day ", GameState.current_day)
-			Dialogic.start("res://Timelines/Loop 6/minigame_m_6.dtl")
-		_: print("how did this even happen???")
+	Dialogic.start("res://Timelines/Loop 6/minigame_m_6.dtl")

@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	juniper.visible = day in [5]
+	juniper.visible = day in [5] && GameState.midpoint_reached

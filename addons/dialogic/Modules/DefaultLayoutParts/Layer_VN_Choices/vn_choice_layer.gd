@@ -131,7 +131,7 @@ func _apply_export_overrides() -> void:
 			new_choice.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 
 		new_choice.custom_minimum_size = boxes_min_size
-
+		
 
 	set(&'theme', layer_theme)
 

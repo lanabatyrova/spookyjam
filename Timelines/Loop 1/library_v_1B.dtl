@@ -1,0 +1,2 @@
+chatting with v in the evening loop 1
+do GameState.mark_characters_as_spoken("[\"valerie\"]")
