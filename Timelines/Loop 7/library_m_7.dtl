@@ -1,2 +1,3 @@
 prep chat with lady macdeath
 do ProgressionTracker.complete_requirement("7A", "lady_dialog")
+do GameState.mark_characters_as_spoken(["lady_macdeath"])

@@ -1,2 +1,4 @@
 prep chat with barb
 do ProgressionTracker.complete_requirement("7A", "barb_dialog")
+
+do GameState.mark_characters_as_spoken(["barb"])

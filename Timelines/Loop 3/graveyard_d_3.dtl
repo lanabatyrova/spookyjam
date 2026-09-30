@@ -1,1 +1,2 @@
 Dagger: just chatting, i have nothing crucial to say today so this is optional
+do GameState.mark_characters_as_spoken(["dagger"])

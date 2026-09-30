@@ -32,8 +32,8 @@ func morning_branch():
 				if can_be_convinced():
 					Dialogic.start("res://Timelines/Loop 2/library_v_2.dtl")
 					var emitted_signal
-					while (emitted_signal != "my_signal"):
-						await Dialogic.signal_emitted
+					while (emitted_signal != "midpoint_updated"):
+						emitted_signal = await Dialogic.signal_event
 					get_parent().update_day(GameState.current_day)
 				else:
 					Dialogic.start("res://Timelines/not_ready_vo.dtl")
@@ -61,8 +61,20 @@ func morning_branch():
 		_: print("how did this even happen???")
 	
 	
-	func handle_morning_2():
-		pass
+func handle_morning_1():
+	pass
+func handle_morning_2():
+	pass
+func handle_morning_3():
+	pass
+func handle_morning_4():
+	pass
+func handle_morning_5():
+	pass
+func handle_morning_6():
+	pass
+func handle_morning_7():
+	pass
 	
 	
 	

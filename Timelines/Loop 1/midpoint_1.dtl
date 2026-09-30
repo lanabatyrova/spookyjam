@@ -1,4 +1,5 @@
 do GameState.reach_midpoint()
 [background arg="#000000ff" fade="1.0"]
 [cut to evening 1]
+[signal arg="midpoint_updated"]
 [background fade="4.0"]

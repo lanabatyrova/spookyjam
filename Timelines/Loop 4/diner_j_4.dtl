@@ -1,1 +1,2 @@
 Juniper: chillin' alone... probably still going "lalala i can't hear you"
+do GameState.mark_characters_as_spoken(["juniper"])

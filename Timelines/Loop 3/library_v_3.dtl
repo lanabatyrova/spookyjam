@@ -27,3 +27,4 @@ Lizzy: You're fine. No. We're in a time loop. And I can prove it.
 Barb: What?
 do GameState.learn_fact("j_clairvoyance")
 do ProgressionTracker.complete_requirement("3A", "library_dialog")
+do GameState.mark_characters_as_spoken(["valerie"])

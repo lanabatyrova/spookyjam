@@ -35,4 +35,4 @@ Barb: Ugh, you know I didn’t mean that.
 
 
 Lizzy: Yeah, I just like seeing you flustered.
-do GameState.mark_characters_as_spoken("[\"barb\",\"juniper\",\"noah\"]")
+do GameState.mark_characters_as_spoken(["barb","noah","juniper"])

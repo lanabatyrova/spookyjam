@@ -1,1 +1,2 @@
 Dagger: brooding again, not really listening to you
+do GameState.mark_characters_as_spoken(["dagger"])
