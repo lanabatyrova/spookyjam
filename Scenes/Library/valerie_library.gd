@@ -42,7 +42,9 @@ func morning_branch():
 				Dialogic.start("res://Timelines/Loop 3/library_v_3.dtl")
 				await Dialogic.timeline_ended
 				if ProgressionTracker.is_requirement_met("3A"):
-					Dialogic.start("res://Timelines/Loop 1/midpoint_3.dtl")
+					Dialogic.start("res://Timelines/Loop 3/midpoint_3.dtl")
+					await Dialogic.timeline_ended
+					get_parent().update_day(GameState.current_day)
 					
 		4:
 			if !GameState.spoken_today["valerie"]:
@@ -53,11 +55,21 @@ func morning_branch():
 		6:
 			if !GameState.spoken_today["valerie"]:
 				Dialogic.start("res://Timelines/Loop 6/library_vbn_6.dtl")
+				var emitted_signal
+				while (emitted_signal != "midpoint_updated"):
+					emitted_signal = await Dialogic.signal_event
+				get_tree().change_scene_to_file("res://Scenes/Graveyard/Graveyard.tscn")
+				
 		7:
-			if !GameState.spoken_today["valerie"]:
+			if ProgressionTracker.is_requirement_met("7A"):
 				Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
-				if ProgressionTracker.is_requirement_met("7A"):
-					Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
+				var emitted_signal
+				while (emitted_signal != "midpoint_updated"):
+					emitted_signal = await Dialogic.signal_event
+				get_tree().change_scene_to_file("res://Scenes/Graveyard/Graveyard.tscn")
+			else:
+				if !GameState.spoken_today["valerie"]:
+					Dialogic.start("res://Timelines/Loop 7/library_v_7.dtl")
 		_: print("how did this even happen???")
 	
 	
@@ -86,9 +98,11 @@ func evening_branch():
 		2:
 			Dialogic.start("res://Timelines/Loop 2/library_v_2B.dtl")
 		3:
-			Dialogic.start("res://Timelines/Loop 1/library_v_1B.dtl")
+			Dialogic.start("res://Timelines/Loop 3/library_v_3B.dtl")
 		4:
 			Dialogic.start("res://Timelines/Loop 4/library_vbn_4.dtl")
 		5:
 			Dialogic.start("res://Timelines/Loop 5/library_vbn_5B.dtl")
+		6:
+			Dialogic.start("res://Timelines/Loop 6/library_v_6.dtl")
 		_: print("how did this even happen???")

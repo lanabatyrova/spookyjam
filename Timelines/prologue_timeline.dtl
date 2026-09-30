@@ -5,6 +5,7 @@ Lizzy: Ugh. I so don’t want to get up.
 Lizzy: Graduation is tomorrow, why the hell are they making us go to class? Not only go to class, but a math exam?
 Lizzy: I’d take on ten times the amount of ghouls, vampires, zombies, evil scientists, frankensteins, and mutated fruit flies, over whatever calculus is.
 Lizzy: Life would be so much easier if I could punch numbers.
+jump END
 [background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.6"]
 MAIL DELIVERY
 Lizzy: Huh, what’s this?
@@ -314,7 +315,11 @@ Lizzy: I knew it. I knew she was behind this.
 Lizzy: You did this on purpose?
 Dagger: I didn’t, I swear to you. I warned you away. Why can’t you listen to me when I tell you to do something?
 "Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim,
+label END
 "Lady MacDeath": Of my undead army!
 Lizzy: Crap!
 Lizzy: [V.O] This is bad!
+do GameState.next_day()
+[background fade="0.0"]
+leave --All--
 jump intro_1/

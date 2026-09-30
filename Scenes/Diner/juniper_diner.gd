@@ -20,5 +20,5 @@ func _on_pressed() -> void:
 				Dialogic.start("res://Timelines/Loop 2/diner_jb_2.dtl")
 		4:
 			if !GameState.spoken_today["juniper"]:
-				Dialogic.start("res://Timelines/Loop 2/diner_j_4.dtl")
+				Dialogic.start("res://Timelines/Loop 4/diner_j_4.dtl")
 		_: print("how did this even happen???")

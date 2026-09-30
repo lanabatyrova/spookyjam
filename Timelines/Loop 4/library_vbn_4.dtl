@@ -1,3 +1,3 @@
 day 4, now everyone's here
 Noah: yay i believe in the time loop
-do GameState.mark_characters_as_spoken(["valerie","barb","noah"])
+do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

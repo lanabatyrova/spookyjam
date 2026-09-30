@@ -64,6 +64,7 @@ set {is_success} = false
 if {strikes_number} < 3.0:
 	jump Journal Select
 [background fade="2.0" wait="true"]
+audio music - [fade="4.0"]
 Barb: A time loop? Figures.
 Barb: There always has to be something crazy happening.
 Lizzy: So, does that mean you believe me?

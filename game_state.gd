@@ -92,6 +92,10 @@ func pick_up_item(name):
 func learn_fact(name):
 	facts[name] = true
 
+func make_item_collectible(name):
+	item_collectible[name] = true
+	#print(item_collectible)
+
 func complete_task(name):
 	objectives[name] = true
 

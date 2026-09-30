@@ -86,6 +86,7 @@ directories/dtl_directory={
 "library_v_2B": "res://Timelines/Loop 2/library_v_2B.dtl",
 "library_v_3": "res://Timelines/Loop 3/library_v_3.dtl",
 "library_v_3B": "res://Timelines/Loop 3/library_v_3B.dtl",
+"library_v_6": "res://Timelines/Loop 6/library_v_6.dtl",
 "library_v_7": "res://Timelines/Loop 7/library_v_7.dtl",
 "library_vb_4": "res://Timelines/Loop 4/library_vb_4.dtl",
 "library_vbn_4": "res://Timelines/Loop 4/library_vbn_4.dtl",

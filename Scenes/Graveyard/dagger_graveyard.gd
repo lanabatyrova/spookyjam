@@ -27,7 +27,7 @@ func _on_pressed() -> void:
 				Dialogic.start("res://Timelines/Loop 4/graveyard_d_4.dtl")
 		5:
 			if !GameState.spoken_today["dagger"]:
-				Dialogic.start("res://Timelines/Loop 4/graveyard_d_5.dtl")
+				Dialogic.start("res://Timelines/Loop 5/graveyard_d_5.dtl")
 		6:
 			if !GameState.spoken_today["dagger"]:
 				Dialogic.start("res://Timelines/Loop 6/graveyard_dbnm_6.dtl")

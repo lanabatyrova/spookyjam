@@ -1,2 +1,2 @@
 everyone's hanging out in the library
-do GameState.mark_characters_as_spoken(["valerie","barb","noah"])
+do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

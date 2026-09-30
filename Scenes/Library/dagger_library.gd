@@ -13,8 +13,13 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	match GameState.current_day:
 		7:
-			if !GameState.spoken_today["noah"]:
-				Dialogic.start("res://Timelines/Loop 7/library_d_7.dtl")
-				if ProgressionTracker.is_requirement_met("7A"):
-					Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
+			if ProgressionTracker.is_requirement_met("7A"):
+				Dialogic.start("res://Timelines/Loop 7/library_vbndm_7.dtl")
+				var emitted_signal
+				while (emitted_signal != "midpoint_updated"):
+					emitted_signal = await Dialogic.signal_event
+				get_tree().change_scene_to_file("res://Scenes/Graveyard/Graveyard.tscn")
+			else:
+				if !GameState.spoken_today["dagger"]:
+					Dialogic.start("res://Timelines/Loop 7/library_d_7.dtl")
 		_: print("how did this even happen???")
