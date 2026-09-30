@@ -15,5 +15,5 @@ func _process(delta: float) -> void:
 	pass
 
 func update_day(day: int):
-	belt.visible = day in [4] && !GameState.inventory["belt"]
-	sewing.visible = day in [3] && !GameState.inventory["sewing_kit"]
+	belt.visible = !GameState.inventory["belt"]
+	sewing.visible = !GameState.inventory["sewing_kit"]

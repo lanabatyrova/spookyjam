@@ -1,2 +1,3 @@
-TBC
+TBC (ending 1)
+do GameState.next_day()
 jump intro_2/

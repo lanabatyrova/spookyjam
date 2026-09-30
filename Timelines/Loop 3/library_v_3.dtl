@@ -1,4 +1,5 @@
-[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
+NOTE\: needs to include some point about how maybe juniper knows something because she's clairvoyant
+do GameState.learn_fact("j_clairvoyance")
 join Valerie left [animation="Fade In"]
 join Lizzy right
 Valerie: Elizabeth, excellent.
@@ -24,3 +25,6 @@ update Barb [animation="Tada" wait="true"]
 Barb: Get it off getitoff
 Lizzy: You're fine. No. We're in a time loop. And I can prove it.
 Barb: What?
+do GameState.learn_fact("j_clairvoyance")
+do ProgressionTracker.complete_requirement("3A", "library_dialog")
+do GameState.mark_characters_as_spoken(["valerie"])

@@ -1,0 +1,6 @@
+[background arg="#000000ff" fade="1.0"]
+(cut to evening day 2)
+do GameState.learn_fact("camp_story")
+do GameState.reach_midpoint()
+[signal arg="midpoint_updated"]
+do GameState.reset_all_spoken_states()

@@ -1,2 +1,5 @@
 Barb: we're chillin'
+Barb: also you've gotta hear about noah's machine
+do GameState
+do GameState.next_day()
 jump intro_4/

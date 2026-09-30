@@ -1,0 +1,2 @@
+library chat with val
+do GameState.mark_characters_as_spoken(["valerie"])

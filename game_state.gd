@@ -6,17 +6,29 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 3
+var current_day: int = 2
+var midpoint_reached = false
+var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
-	"sewing_kit": true,
-	"belt": true,
-	"allergy_meds": true,
-	"pocket_shakespeare": true,
+	"sewing_kit": false,
+	"belt": false,
+	"allergy_meds": false,
+	"pocket_shakespeare": false,
 	"silver_nugget": true,
 	"pocket_watch": true,
-	"acceptance_letter": true
+	"acceptance_letter": false
+}
+
+var item_collectible = {
+	"sewing_kit": false,
+	"belt": false,
+	"allergy_meds": true,
+	"pocket_shakespeare": false,
+	"silver_nugget": false,
+	"pocket_watch": false,
+	"acceptance_letter": false
 }
 
 # Note: this currently includes both notes added on character pages
@@ -26,15 +38,19 @@ var inventory = {
 var facts = {
 	"v_case_study": true,
 	"v_future_worries": true,
-	"b_camp_story": true,
+	"b_camp_story": false,
 	"b_clown_school": true,
-	"n_detention": true,
-	"d_brother_death": true,
-	"d_zombie_plan": true,
-	"lm_dagger_vouch": true, # dagger's portrait
-	"j_clairvoyance": true,
-	"j_bffs": true, # bff sticker
-	"j_past_adventures": true # beastiary page
+	"n_detention": false,
+	"d_brother_death": false,
+	"d_zombie_plan": false,
+	"m_suspition": false, # lmd is causing the loop?
+	"m_absolved": false, #no she's not
+	"m_shakespeare_hate": false,
+	"m_phone": false, #LMD phone number
+	"m_name": false, # LMD name change to Knightmare
+	"j_clairvoyance": false,
+	"j_bffs": false, # bff sticker (clickable, visible always)
+	"j_past_adventures": false # beastiary page (clickable. visible always)
 }
 
 var objectives = {
@@ -43,9 +59,7 @@ var objectives = {
 	#TODO: add other info
 }
 
-var is_minigame = true
-
-# TODO: should reset to all false when the day ends!!!!
+# TODO: should reset to all false when the day ends!!!
 # might change how this is structured, but this makes the most sense atm
 var spoken_today = {
 	"juniper": false,
@@ -60,15 +74,43 @@ var spoken_today = {
 func _ready() -> void:
 	set_dialogic_layer()
 	
-
 func start_minigame():
 	is_minigame = true
 
 func end_minigame():
 	is_minigame = false
 	
-func mark_character_as_spoken(name):
-	spoken_today[name] = true
+func mark_characters_as_spoken(names):
+	#print(names)
+	for name in names:
+		spoken_today[name] = true
+	#print(spoken_today)
+
+func pick_up_item(name):
+	inventory[name] = true
+
+func learn_fact(name):
+	facts[name] = true
+
+func complete_task(name):
+	objectives[name] = true
+
+func reach_midpoint():
+	midpoint_reached = true
+	reset_all_spoken_states()
+
+func reset_midpoint():
+	midpoint_reached = false
+
+func reset_all_spoken_states():
+	spoken_today = {
+	"juniper": false,
+	"noah": false,
+	"barb": false,
+	"valerie": false,
+	"lady_macdeath": false,
+	"dagger": false
+}
 
 func set_dialogic_layer():
 	var dialogic_canvas = get_tree().root.find_child("DialogicLayout_DefaultStyle", true, false)
@@ -84,4 +126,6 @@ func _process(delta: float) -> void:
 
 func next_day():
 	current_day += 1
+	midpoint_reached = false
+	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print
