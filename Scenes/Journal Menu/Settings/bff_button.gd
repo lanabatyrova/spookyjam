@@ -11,11 +11,11 @@ func _process(delta: float) -> void:
 	pass
 
 func _update_hover_state():
-	if !GameState.is_minigame:
+	if !GameState.is_minigame && GameState.current_day == 7 && GameState.facts["j_bffs"]:
 		mouse_filter = Control.MOUSE_FILTER_IGNORE
 	else:
 		mouse_filter = Control.MOUSE_FILTER_STOP
 
 func _on_pressed() -> void:
-	if(GameState.is_minigame):
-		pass
+	# do stuff... this will be juniper minigame things
+	pass

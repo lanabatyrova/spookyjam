@@ -1,4 +1,4 @@
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.0"]
+[add more here where we've just met up and started talking to dagger, etc. etc.]
 join Dagger center [animation="Fade In Up" length="2.0" wait="true"]
 Dagger: My vampire hearing is picking up the ringing from over here.
 join Lizzy right [animation="Slide From Right" length="2.0" wait="true"]
@@ -20,3 +20,4 @@ Lizzy: Oh she just picked up-
 
 Lizzy: ...
 Noah: She must really value her privacy.
+jump minigame_m_6/

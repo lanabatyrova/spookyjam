@@ -15,15 +15,25 @@ func is_convinceable():
 func _on_pressed() -> void:
 	match GameState.current_day:
 		1:
-			print("barb dialogue in hallway on day ", GameState.current_day)
 			if !GameState.spoken_today["barb"]:
-				Dialogic.start("res://Timelines/Loop 1/hallway_njb_1.dtl")
+				Dialogic.start("res://Timelines/Loop 1/hallway_jbn_1.dtl")
+				await Dialogic.timeline_ended
+				if ProgressionTracker.is_requirement_met("1A"):
+					Dialogic.start("res://Timelines/Loop 1/midpoint_1.dtl")
+					await Dialogic.timeline_ended
+					get_parent().update_day(GameState.current_day)
+					#get_parent().update_day(GameState.current_day)
 		2:
 			if !GameState.spoken_today["barb"]:
-				Dialogic.start("res://Timelines/Loop 2/hallway_njb_2.dtl")
+				Dialogic.start("res://Timelines/Loop 2/hallway_jbn_2.dtl")
 		3:
-			if !GameState.spoken_today["barb"]:
-				Dialogic.start("res://Timelines/Loop 3/hallway_njb_3.dtl")
+			if !GameState.midpoint_reached:
+				if !GameState.spoken_today["barb"]:
+					Dialogic.start("res://Timelines/Loop 3/hallway_jbn_3.dtl")
+					await Dialogic.timeline_ended
+					if ProgressionTracker.is_requirement_met("3A"):
+						Dialogic.start("res://Timelines/Loop 1/midpoint_3.dtl")
+						get_parent().update_day(GameState.current_day)
 			elif is_convinceable():
 				Dialogic.start("res://Timelines/Loop 3/minigame_b_3.dtl")
 		_: print("how did this even happen???")

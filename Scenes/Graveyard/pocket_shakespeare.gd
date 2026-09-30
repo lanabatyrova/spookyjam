@@ -18,3 +18,4 @@ func _on_pressed() -> void:
 	GameState.inventory["pocket_shakespeare"] = true
 	get_parent().update_day(get_parent().current_day)
 	Dialogic.start("res://Timelines/graveyard_md_2.dtl")
+	

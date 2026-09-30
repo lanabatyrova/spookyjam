@@ -11,5 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	Dialogic.start("res://Timelines/Loop 7/minigame_j_7.dtl")
-	#GameState.spoken_today["noah"] = true
+	Dialogic.start("res://Timelines/Loop 7/mine_j_7.dtl")
