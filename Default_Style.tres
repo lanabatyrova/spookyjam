@@ -35,10 +35,11 @@ overrides = {
 "box_animation_in": "0",
 "box_animation_out": "0",
 "box_margin_bottom": "5.0",
+"box_offset_x": "10.0",
 "box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
-"box_size": "Vector2(590, 100)",
+"box_size": "Vector2(800, 100)",
 "name_label_alignment": "2",
-"name_label_box_offset": "Vector2(-600, 39)",
+"name_label_box_offset": "Vector2(-810, 39)",
 "name_label_box_panel": "\"res://Design/Name_Subtitle_Box.tres\"",
 "name_label_custom_color": "Color(0, 0, 0, 1)",
 "name_label_custom_font_size": "24.0",
@@ -91,4 +92,4 @@ layer_info = {
 "16": SubResource("Resource_sh82e"),
 "17": SubResource("Resource_4yivh")
 }
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "11"

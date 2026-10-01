@@ -48,7 +48,7 @@ func _ready():
 
 
 func _refresh():
-	%PositionSuggestions.text = ProjectSettings.get_setting(POSITION_SUGGESTION_KEY, 'leftmost, left, center, right, rightmost')
+	%PositionSuggestions.text = ProjectSettings.get_setting(POSITION_SUGGESTION_KEY, 'leftmost, lefter, left, midleft, center, midright, right, righter, rightmost')
 
 	%CustomPortraitScene.resource_icon = get_theme_icon(&"PackedScene", &"EditorIcons")
 	%CustomPortraitScene.set_value(ProjectSettings.get_setting(DEFAULT_PORTRAIT_SCENE_KEY, ''))

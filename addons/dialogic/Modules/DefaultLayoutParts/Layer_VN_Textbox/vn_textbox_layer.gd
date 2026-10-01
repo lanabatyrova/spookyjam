@@ -56,6 +56,7 @@ enum AnimationsNewText {NONE, WIGGLE}
 @export_subgroup("Size & Position")
 @export var box_size: Vector2 = Vector2(550, 110)
 @export var box_margin_bottom: int = 15
+@export var box_offset_x: float = 0
 
 @export_subgroup("Animation")
 @export var box_animation_in: AnimationsIn = AnimationsIn.FADE_UP
@@ -160,7 +161,7 @@ func _apply_box_settings() -> void:
 
 	var sizer: Control = %Sizer
 	sizer.size = box_size
-	sizer.position = box_size * Vector2(-0.5, -1)+Vector2(0, -box_margin_bottom)
+	sizer.position = box_size * Vector2((box_offset_x/100)-0.5, -1)+Vector2(0, -box_margin_bottom)
 
 
 ## Applies box animations settings to the scene.

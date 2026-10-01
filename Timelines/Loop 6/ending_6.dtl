@@ -1,35 +1,54 @@
 [background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.0"]
-join "Lady MacDeath" leftmost [animation="Fade In" length="2.0" wait="true" mirrored="true"]
-join Lizzy right [animation="Fade In" length="2.0" wait="true"]
-join Barb rightmost [animation="Fade In" length="2.0"]
-join Dagger left [animation="Fade In" length="2.0"]
-join Noah center [animation="Fade In" length="2.0"]
+join "Lady MacDeath" leftmost [animation="Fade In" length="1.0" mirrored="true"]
+join Lizzy center [animation="Fade In" length="1.0"]
+join Barb rightmost [animation="Fade In" length="1.0" mirrored="true"]
+join Dagger right [animation="Fade In" length="1.0"]
+join Noah righter [animation="Fade In" length="1.0" mirrored="true"]
 do GameState.learn_fact("m_absolved")
 "Lady MacDeath": You've made a compelling argument.
-"Lady MacDeath": Shakespeare was King Fears- Micheals thing.
+"Lady MacDeath": Shakespeare was King Fears— Julian’s thing.
 "Lady MacDeath": I only went along with it because I thought he had a real shot at becoming the ultimate vampire lord.
 update "Lady MacDeath" [animation="Bounce" wait="true" mirrored="false"]
 "Lady MacDeath": And then you killed him.
-Lizzy: I would say sorry but he had it coming.
+Lizzy: I would say sorry, but he had it coming.
 "Lady MacDeath": This new development has made me realise how precious life really is.
 "Lady MacDeath": It's time to shed this terrible persona.
 "Lady MacDeath": From now on.. call me...
-"Lady MacDeath": Lady Knightmare
-Everyone: ....
+leave "Lady MacDeath" [animation="Fade Out Down" length="0.2" wait="true"]
+[Triumphant music plays]
+audio "res://audio/Lady Knightmare Appears.mp3"
+join Knightmare leftmost [animation="Fade In Up" length="13.0" wait="true" z_index="-1"]
+Knightmare: Lady Knightmare
+Lizzy: ....
 Barb: And that's supposed to be better?
-"Lady MacDeath": You will be the first I crush with my new found identity.
-"Lady MacDeath": But for now. You have my sword. And my dagger.
-Dagger: uh..
+Knightmare: You will be the first I crush with my new found identity.
+Knightmare: But for now, you will be spared.
+Knightmare: We have bigger fish to Obliterate You have my sword. And my dagger.
+Dagger: Uh..
 Lizzy: I guess that sort of fits the knight theme.
-Noah: Wait is it knightmare with a knight instead of night??
-"Lady MacDeath": Yes. What else would it be.
+Noah: Wait is it Knightmare with a knight instead of night?
+Knightmare: Yes. What else would it be.
 do GameState.learn_fact("m_name")
 do GameState.learn_fact("m_phone")
-join Juniper center [animation="Fade In Up" length="2.0" wait="true" mirrored="true"]
-Juniper: Please stop.
+join Juniper leftmost [animation="Slide From Right" length="1.0" wait="true"]
+update Knightmare midright [mirrored="true" move_time="0.2"]
+update Lizzy midleft [move_time="0.2"]
+Juniper: Lizzy, stop what you’re doing right now.
+Lizzy: Juniper!
+Juniper: I had it all figured out, and you keep messing everything up.
+Noah: Uh, why is she talking like, in a totally overrun with evil power kinda way?
+Barb: Juniper?? Have you turned evil?
+Knightmare: Finally.
+Knightmare: It’s about time.
+update Lizzy midleft [animation="Bounce" mirrored="true" move_time="0.2"]
+Lizzy: She’s not evil!!!!
+update Lizzy [mirrored="false" move_time="0.2"]
+Juniper: It’s fine. I can fix this. Just, nobody do anything.
+Juniper: Next time will be better.
+leave Juniper [animation="Slide To Left" wait="true"]
 update Lizzy [animation="Bounce" wait="true"]
 Lizzy: Juniper!
 do GameState.next_day()
-leave --All--
+leave --All-- [animation="Fade Out Down" length="0.3"]
 [background fade="0.0"]
 jump intro_7/

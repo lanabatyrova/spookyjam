@@ -1,11 +1,29 @@
-[add more here where we've just met up and started talking to dagger, etc. etc.]
-join Dagger center [animation="Fade In Up" length="2.0" wait="true"]
+join Dagger leftmost [animation="Fade In Up" length="0.3" mirrored="true"]
+join Lizzy center [animation="Fade In Up" length="0.3"]
+join Noah right [animation="Fade In Up" length="0.3" mirrored="true"]
+join Barb rightmost [animation="Fade In Up" length="0.3" wait="true" mirrored="true"]
+Dagger: Excellent, you’ve arrived.
+Dagger: Hello Lizzy’s friends.
+Noah: Hey.
+Barb: Um, hi.
+Dagger: Where is the other one?
+Dagger: The psychic.
+Lizzy: She’s experiencing some technical difficulties.
+Lizzy: Hopefully when we deal with Lady MacTime Loop she should go back to normal.
+Barb: MacTime Loop. You couldn’t think of anything better?
+Lizzy: I’m working with what I got.
+Dagger: Alright then.
+Dagger: Lead the way.
+update Lizzy rightmost [mirrored="true" move_time="0.2"]
+update Barb left [mirrored="false" move_time="0.2"]
+update Noah center [mirrored="false" move_time="0.2"]
+Noah: ....
+Dagger: ....
+
+
 Dagger: My vampire hearing is picking up the ringing from over here.
-join Lizzy right [animation="Slide From Right" length="2.0" wait="true"]
 Lizzy: I have super hearing too.
-join Barb rightmost [animation="Bounce In" wait="true"]
 Barb: Dog hearing.
-join Noah left [animation="Bounce In" wait="true"]
 Noah: Wolf hearing.
 Lizzy: Normal super hearing.
 Barb: So you can't hear dog whistles??
@@ -15,9 +33,72 @@ Lizzy: Fine. Yes. I have dog hearing.
 
 
 Lizzy: Oh she just picked up-
+join "Lady MacDeath" (Phone) center [animation="Slide In Up" length="0.3"]
 
-"Lady MacDeath": Accursed knave, how in the blazes did you acquire my personal information!! I'll skin you alive and then send your loved ones pieces of your meat.
+"Lady MacDeath": Accursed knave, how in the blazes did you acquire my personal information!!
+"Lady MacDeath": I'll skin you alive and then send your loved ones pieces of your meat.
+leave "Lady MacDeath" [animation="Slide Out Down" length="0.3"]
+[click]
 
 Lizzy: ...
 Noah: She must really value her privacy.
+
+Barb: Hey, this tombstone is loose. Somebody should really get that fixed.
+Lizzy: Here, let me wolf out and—
+Lizzy: Grahhhhh.
+Lizzy: Wooof.
+Noah: Would you look at that! A secret entrance to an underground lair.
+Noah: This is awesome.
+Barb: ...
+Barb: Do we really have to go down there? These are new shoes.
+Lizzy: I’ll buy you a new pair.
+Barb: Ugh, what ever.
+Dagger: Let’s go now, before my Lady gets wise to the plan.
+
+
+Lizzy: Lady MacDeath!
+"Lady MacDeath": Uh, what?
+"Lady MacDeath": Elizabeth Springs and your other busy body friends,
+"Lady MacDeath": though I notice a lack of the tall one, I always liked her best,
+"Lady MacDeath": What are you doing here? How did you find my secret lair?
+Lizzy: We called your landline.
+"Lady MacDeath": That was you?
+"Lady MacDeath": I should’ve known!
+"Lady MacDeath": I was going to save your destruction for later tonight when my plan comes to fruition...
+"Lady MacDeath": But this opportunity is so delicious—
+Dagger: My Lady, wait.
+"Lady MacDeath": Dagger?
+"Lady MacDeath": What are you doing here?
+Lizzy: He’s here to stop your manipulation of time and space.
+Lizzy: It’s starting to piss me off!
+"Lady MacDeath": Time...
+"Lady MacDeath": And space?
+"Lady MacDeath": ...
+"Lady MacDeath": What?
+Lizzy: Your time loop.
+"Lady MacDeath": Time...
+"Lady MacDeath": Loop?
+Lizzy: You’re making the day restart over and over again to try and wear down my resolve?
+"Lady MacDeath": ...
+"Lady MacDeath": I have no idea what you’re talking about.
+Dagger: Are you not behind the repetition of the day?
+"Lady MacDeath": No. Why would you want to relive the same day over and over again?
+"Lady MacDeath": That’s boring.
+Barb: Wait, so she’s not behind this?
+Barb: We came here for nothing?
+Noah: I mean, this lair is pretty cool. So I wouldn’t call it nothing.
+Lizzy: This doesn’t make any sense.
+"Lady MacDeath": A time loop...
+"Lady MacDeath": You’re messing with me. I see now.
+"Lady MacDeath": It won’t work.
+"Lady MacDeath": I’ve been alive for over six hundred years.
+"Lady MacDeath": My mind is as sharp as a sharpened blade honed to perfection and covered in poison.
+VO: Great.
+VO: If I can convince her we’re in a time loop, maybe she can help us figure out who’s really behind it.
+
+Lizzy: Lady MacDeath, the time loop is happening.
+Lizzy: And I have proof!
+
+
+leave --All-- [animation="Fade Out Down" wait="true"]
 jump minigame_m_6/
