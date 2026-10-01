@@ -33,6 +33,7 @@ directories/dch_directory={
 "Item": "res://Characters/Strike Ball.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
+"Knightmare": "res://Characters/Knightmare.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Logo": "res://Characters/Logo.dch",
@@ -123,10 +124,9 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
-"Default_Style": "res://Default_Style.tres",
-"Previously On": "res://Scenes/Previously On/Previously On.tres"
+"Default_Style": "res://Default_Style.tres"
 }
-layout/style_list=["res://Default_Style.tres", "res://Scenes/Previously On/Previously On.tres"]
+layout/style_list=["res://Default_Style.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={

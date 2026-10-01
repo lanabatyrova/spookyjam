@@ -7,32 +7,23 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "Default_Style",
+"style": "",
 "suffix": ""
 },
-&"default_portrait": "Full Body",
+&"default_portrait": "default",
 &"description": "",
-&"display_name": "Noah: ",
+&"display_name": "Knightmare: ",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Full Body": {
+"default": {
 "export_overrides": {
-"image": "\"res://sprites/Noah_1.png\""
+"image": "\"res://sprites/Lady-Knightmare_1.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
-},
-"Talking": {
-"export_overrides": {
-"image": "\"res://sprites/Noah_1.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 270),
-"scale": 1.3,
 "scene": ""
 }
 },

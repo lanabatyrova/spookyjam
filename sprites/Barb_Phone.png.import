@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sjyq1kcph1kb"
-path="res://.godot/imported/behind_phone_screen.png-d7823efb9a8a19711192f758ad9105a3.ctex"
+uid="uid://d2ytp78257bam"
+path="res://.godot/imported/Barb_Phone.png-fee5272ec6f82564c4de0100d1edb110.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Phone/behind_phone_screen.png"
-dest_files=["res://.godot/imported/behind_phone_screen.png-d7823efb9a8a19711192f758ad9105a3.ctex"]
+source_file="res://sprites/Barb_Phone.png"
+dest_files=["res://.godot/imported/Barb_Phone.png-fee5272ec6f82564c4de0100d1edb110.ctex"]
 
 [params]
 

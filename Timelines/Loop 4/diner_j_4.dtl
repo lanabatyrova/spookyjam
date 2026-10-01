@@ -1,2 +1,25 @@
-Juniper: chillin' alone... probably still going "lalala i can't hear you"
+join Juniper (Talking) left
+Juniper: Lizzy, there you are. You didn’t come to the exam.
+Juniper: Neither did Barb or Noah.
+Juniper: I’m pretty sure Holiday all gave you automatic fails.
+join Lizzy (Talking) right [animation="Fade In Up" length="0.2"]
+Lizzy: Eh, she can deal. I got like 80% on that group project, I think my grades are safe.
+Juniper: What was so important that you ditched?
+Lizzy: I can’t tell you right now...
+Lizzy: Also, unrelated, but are you feeling.. Anything weird?
+Juniper: ... huh?
+Lizzy: Like you know.
+Lizzy: Psychically.
+Juniper: Uh, no? I don’t think so.
+Lizzy: No visions or vision like... things?
+Juniper: Nope.
+Lizzy: Hm. Okay. Keep me posted.
+Juniper: ...
+Juniper: Are YOU feeling alright?
+Lizzy: Never better.
+Juniper: I think I’m just going to go home.
+Lizzy: Okay, yeah. Sure.
+Juniper: See you tomorrow.
+VO: Don’t worry, Jay. I’ll fix this.
+leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["juniper"])

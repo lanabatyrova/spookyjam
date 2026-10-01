@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cy1y14inwkplb"]
+[gd_scene format=3 uid="uid://cy1y14inwkplb"]
 
 [ext_resource type="Script" uid="uid://cx1i44s2olq2d" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.gd" id="1_1i7em"]
 [ext_resource type="Script" uid="uid://d0ptqnbudhkyj" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="1_rxdcc"]
 
-[node name="VN_PortraitLayer" type="Control"]
+[node name="VN_PortraitLayer" type="Control" unique_id=2038664309]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +13,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_1i7em")
 
-[node name="Portraits" type="Control" parent="."]
+[node name="Portraits" type="Control" parent="." unique_id=1415599407]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -23,7 +23,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="DialogicNode_PortraitContainer1" type="Control" parent="Portraits"]
+[node name="DialogicNode_PortraitContainer1" type="Control" parent="Portraits" unique_id=227601608]
 layout_mode = 1
 anchor_right = 0.2
 anchor_bottom = 1.0
@@ -35,7 +35,20 @@ script = ExtResource("1_rxdcc")
 container_ids = PackedStringArray("leftmost", "0")
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogicNode_PortraitContainer2" type="Control" parent="Portraits"]
+[node name="DialogicNode_PortraitContainer1B" type="Control" parent="Portraits" unique_id=1185301409]
+layout_mode = 1
+anchor_left = 0.104166664
+anchor_right = 0.30416667
+anchor_bottom = 1.0
+offset_right = -1.5258789e-05
+grow_vertical = 2
+pivot_offset = Vector2(115.2, 648)
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("lefter", "0")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogicNode_PortraitContainer2" type="Control" parent="Portraits" unique_id=455088414]
 layout_mode = 1
 anchor_left = 0.2
 anchor_right = 0.4
@@ -47,7 +60,19 @@ script = ExtResource("1_rxdcc")
 container_ids = PackedStringArray("left", "1")
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogicNode_PortraitContainer3" type="Control" parent="Portraits"]
+[node name="DialogicNode_PortraitContainer2B" type="Control" parent="Portraits" unique_id=6469423]
+layout_mode = 1
+anchor_left = 0.30416667
+anchor_right = 0.5041667
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("midleft", "1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogicNode_PortraitContainer3" type="Control" parent="Portraits" unique_id=550637318]
 layout_mode = 1
 anchor_left = 0.4
 anchor_right = 0.6
@@ -59,7 +84,19 @@ script = ExtResource("1_rxdcc")
 container_ids = PackedStringArray("center", "middle", "2")
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogicNode_PortraitContainer4" type="Control" parent="Portraits"]
+[node name="DialogicNode_PortraitContainer3B" type="Control" parent="Portraits" unique_id=1009818052]
+layout_mode = 1
+anchor_left = 0.51111114
+anchor_right = 0.7111112
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("midright", "middle", "2")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogicNode_PortraitContainer4" type="Control" parent="Portraits" unique_id=1757533676]
 layout_mode = 1
 anchor_left = 0.6
 anchor_right = 0.8
@@ -71,7 +108,19 @@ script = ExtResource("1_rxdcc")
 container_ids = PackedStringArray("right", "3")
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogicNode_PortraitContainer5" type="Control" parent="Portraits"]
+[node name="DialogicNode_PortraitContainer4B" type="Control" parent="Portraits" unique_id=1250973879]
+layout_mode = 1
+anchor_left = 0.6972223
+anchor_right = 0.8972223
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("righter", "3")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogicNode_PortraitContainer5" type="Control" parent="Portraits" unique_id=1782084073]
 layout_mode = 1
 anchor_left = 0.8
 anchor_right = 1.0

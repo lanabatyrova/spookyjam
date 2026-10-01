@@ -1,3 +1,33 @@
-Valerie: hello it's me on loop 4 in the library
-Barb: I'm also here
+join Barb (Talking) left
+join Valerie (Talking) right [mirrored="true"]
+update Barb (Talking) [animation="Bounce"]
+Barb: I just don’t think it’s going to be easy reaching through to him.
+update Barb (Talking) [animation="Bounce"]
+Barb: There’s nothing in there. Just cartoons and like, those swirly lollipops you get at the amusement park.
+update Valerie (Talking) [animation="Bounce"]
+Valerie: Barbara. That’s no way to talk about your friends.
+update Barb (Talking) [animation="Bounce"]
+Barb: But it’s true!
+join Lizzy (Talking) right [animation="Slide From Right"]
+update Valerie left [mirrored="false" move_time="0.3"]
+update Barb leftmost [move_time="0.3"]
+[wait time="0.5"]
+update Valerie (Talking) [animation="Bounce"]
+
+Valerie: Elizabeth, how nice to see you. Have you made any progress with Juniper or Noah?
+update Lizzy (Talking) [animation="Bounce"]
+Lizzy: Juniper is still acting all weird.
+update Valerie (Talking) [animation="Bounce"]
+Valerie: hm. That’s expected.
+update Valerie (Talking) [animation="Bounce"]
+Valerie: Maybe you should try to find Noah.
+update Barb (Talking) [animation="Bounce"]
+Barb: waste of time!
+update Lizzy (Talking) [animation="Bounce"]
+Lizzy: He should be working on his machine right now. I think I might be able to catch him before it explodes.
+update Valerie (Talking) [animation="Bounce"]
+Valerie: you better hurry.
+update Barb (Talking) [animation="Bounce"]
+Barb: when it blows up in your face, don’t come crawling back to me.
+leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["valerie", "barb"])
