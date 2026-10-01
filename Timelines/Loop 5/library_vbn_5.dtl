@@ -1,2 +1,30 @@
-everyone's hanging out in the library
+join Valerie leftmost [animation="Instant In"]
+join Barb midleft [animation="Instant In" mirrored="true"]
+join Noah center [animation="Instant In"]
+join Lizzy righter [animation="Slide From Right"]
+Valerie: Elizabeth.
+Barb: Lizzy.
+Noah: Lizzy.
+Lizzy: ...
+Lizzy: Is something wrong?
+Barb: Noah is just being irritating as usual.
+update Noah [animation="Bounce" mirrored="true"]
+Noah: Whoa, okay, totally uncalled for?
+update Barb [animation="Shake Y" mirrored="false"]
+Barb: You know what’s uncalled for—
+leave Barb [animation="Fade Out" length="1.5"]
+leave Noah [animation="Fade Out" length="1.5" wait="true"]
+[wait time="1.5"]
+Valerie: they’ve been at it all morning.
+Valerie: I told them they could hang out somewhere else, like their house,
+Valerie: Perhaps a public park...
+Valerie: But they insist on staying here.
+Valerie: Where I am.
+Lizzy: They probably just want to stay close in case we all need to go do something.
+update Valerie midleft [move_time="0.5"]
+Valerie: Please resolve this time loop situation fast,
+Valerie: I’m not sure how much more I can take.
+Lizzy: I’m going to go find Juniper and then we can take on Lady MacDeath and save the day!
+Valerie: Hurry.
+
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

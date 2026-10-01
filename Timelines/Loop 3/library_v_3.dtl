@@ -1,21 +1,29 @@
-NOTE\: needs to include some point about how maybe juniper knows something because she's clairvoyant
 do GameState.learn_fact("j_clairvoyance")
-join Valerie left [animation="Fade In"]
-join Lizzy right
-Valerie: Elizabeth, excellent.
-(other text)
-Lizzy: That sounds like a much better plan. All I've managed to accomplish so far is be eaten by zombies twice and stabbed.
-update Valerie [animation="Bounce" wait="true"]
+join Valerie left [animation="Instant In"]
+join Lizzy right [animation="Slide From Right"]
+Valerie: Elizabeth, excellent. How are you faring?
+Lizzy: All I've managed to accomplish so far is be eaten by zombies twice and stabbed.
+update Valerie [animation="Bounce" length="0.4" wait="true"]
 Valerie: Don't tell me you confronted Lady MacDeath alone...
 Lizzy: What? It seemed like the best idea.
 Valerie: Oh, Lizzy... perhaps it's good that there's a time loop. It could teach you a valuable lesson.
 Lizzy: What ever. I'm done with learning.
 
-Valerie: Is there anyone who you have enough information to convince?
-Lizzy: Lets see… Well, at around twelve Barb’s dress rips, and Noah gets hauled to detention.
-Lizzy: It was actually so weird Barb told this really personal story about getting lost in the woods that she hasn't told to anyone else-
-Valerie: Perhaps you should start with Barb, since you know a secret.
-Lizzy: Alright. I'll see what I can do.
+Valerie: Have you had any luck with figuring out how to convince the others?
+Lizzy: Well, Barb hasn’t tried on her dress yet, not while she’s taking that terrible math exam.
+Lizzy: Noah gets hauled to detention and then the hospital.
+Valerie: Oh dear...
+Lizzy: Um. Juniper is kinda floaty. She hasn’t really held a long conversation with me.
+Lizzy: It’s weird.
+Valerie: The time loop is probably affecting her more than the others because of her clairvoyance.
+Valerie: I’m not well versed in the science behind psychic abilities, but they’re often sensitive to even the tiniest changes in the paranatural.
+Lizzy: poor Juniper. I better stop what ever magic Lady MacDeath is using.
+Valerie: If it’s indeed magic. It may be something else...
+Lizzy: I guess I’ll go try and convince either Noah or Barb.
+Lizzy: You know, she told me this crazy story about getting lost and eating a bug.
+Valerie: It’s alright, you don’t have to tell me.
+Valerie: good luck.
+Lizzy: Thanks.
 do GameState.make_item_collectible("sewing_kit")
 do ProgressionTracker.complete_requirement("3A", "library_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])

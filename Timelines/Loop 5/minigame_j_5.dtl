@@ -1,4 +1,76 @@
-minigame for juniper
-(she runs away)
+do GameState.start_minigame()
+[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
+join Juniper center
+[wait time="1.5"]
+Lizzy: I know it sounds crazy, but trust me.
+Lizzy: I can prove it.
+Juniper: ...
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "silver_nugget":
+		Lizzy: Before all this crazy time loop stuff started, you dropped this strange nugget thing.
+		Lizzy: And now I have it because stuff in my pockets travels with me every time I loop.
+		Lizzy: I haven’t been able to figure that out yet.
+		Juniper: You shouldn’t be holding that...
+		Lizzy: Exactly, if there wasn’t a time loop, how would I have it?
+		Juniper: It’s dangerous.
+		Lizzy: Wait, really?
+		Lizzy: Is it like radioactive or something?
+		Juniper: Lizzy
+		Juniper: Just, stop this, okay?
+		VO: What is with her?
+		VO: She’s totally not acting like herself.
+	
+	
+	elif {current_item} == "acceptance_letter":
+		Lizzy: I found this in the hallway,
+		Lizzy: It’s your acceptance to Emmerdale.
+		Juniper: You weren’t supposed to see that.
+		Lizzy: In a previous loop you lied to me about getting in.
+		Juniper: I...
+		Juniper: It’s for the best.
+		Lizzy: You don’t have to protect my feelings, Jay.
+		Lizzy: I’m proud of you.
+		Juniper (Sad Face): ...
+		Juniper (Sad Face): It’s not that...
+		Juniper: You wouldn’t understand...
+		VO: Hm. It doesn’t seem to be working.
+	
+	
+	elif {current_item} == "j_clairvoyance":
+		Lizzy: Valerie said that this time loop is probably messing with your powers.
+		Lizzy: Have you noticed anything strange or weird?
+		Lizzy: Like dizziness or trouble staying awake or maybe vomiting?
+		Juniper: You’re just describing random medical symptoms.
+		Lizzy: I don’t know what psychic sickness looks like, okay?
+		Juniper: I’m fine.
+		Juniper: Nothing is wrong.
+	
+	set {strikes_number} += 1.0
+	join Item leftmost [animation="Zoom In" length="9.0"]
+	leave Item [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 2.0:
+		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 3.0:
+		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+	[wait time="1.5"]
+else:
+	Juniper: …
+	VO: This isn’t getting through to her.
+
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+[background fade="2.0" wait="true"]
+audio music - [fade="4.0"]
+
+do GameState.end_minigame()
+leave Juniper [animation="Slide To Left"]
 Dagger: i'm here now!
 jump minigame_d_5/

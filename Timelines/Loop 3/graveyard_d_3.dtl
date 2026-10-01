@@ -1,2 +1,20 @@
-Dagger: just chatting, i have nothing crucial to say today so this is optional
+join Dagger leftmost [animation="Instant In" mirrored="true"]
+join Lizzy righter [animation="Bounce In"]
+Dagger: Lizzy… a serendipitous entrance...
+update Dagger left [length="0.8" move_time="1.5"]
+Dagger: I was just observing the epitaphs on the tombstones--
+Lizzy: Yes, yes I know, I know.
+Lizzy: Death is the thing that separates loved ones, yadda yadda.
+Dagger: ...
+Dagger: You seem somewhat perturbed.
+Lizzy: I’ve had to relive the same day like four times, so yeah, I’m a little annoyed.
+Lizzy: like the first time we had this conversation I felt a little bad, but now I’m like, whatever.
+Dagger: Being an immortal often feels as though you are stuck in a certain time. 
+For me, I still feel as the day I was turned, eighteen and directionless--
+Lizzy: I’m just going to go, I don’t know why I came here.
+Dagger: If that’s how you feel...
+update Dagger [mirrored="false"]
+Dagger: Farewell.
+leave Dagger [animation="Fade Out"]
+
 do GameState.mark_characters_as_spoken(["dagger"])

@@ -1,1 +1,34 @@
-waking up on day 5
+join Lizzy center [animation="Fade In"]
+VO: Ugh, I’m really starting to hate my alarm sound.
+VO: Dagger told me some pretty heavy stuff just now...
+VO: I’m not really sure what to do with that information,
+VO: Especially since he won’t remember telling me.
+VO: ...
+
+[Cellphone ringing]
+update Lizzy right [move_time="0.5"]
+join Noah left [animation="Bounce In" length="1.0"]
+Noah: Lizzy!
+update Noah [animation="Bounce" repeat="3"]
+Noah: Oh my god! The time loop is real!
+Lizzy: Yep.
+Noah: I feel so free and untethered by societal expectations.
+Lizzy: I might hold off on doing anything too wild,
+Lizzy: because this might be the final loop.
+Noah: ...
+Noah: Hm.
+Noah: Could we maybe make tomorrow’s loop the one where we end it?
+Noah: Asking for a friend.
+Lizzy: What did you do.
+Noah: Oh, nothing too crazy.
+Noah: I gotta go real quick.
+
+[hang up]
+leave Noah [animation="Bounce Out" wait="true"]
+update Lizzy center [move_time="0.5"]
+VO: I better get the library to talk with everyone.
+VO: Or they’re probably fine on their own.
+VO: I should find Juniper and tell her about the time loop.
+VO: And then we can all face off against Lady MacDeath and end this thing once and for all.
+VO: See? I’m great at plans.
+VO: No problem.
