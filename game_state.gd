@@ -130,6 +130,7 @@ func _process(delta: float) -> void:
 
 func next_day():
 	current_day += 1
+	Dialogic.VAR.set_variable("cur_day", current_day)
 	midpoint_reached = false
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print

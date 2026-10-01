@@ -1,6 +1,23 @@
 [background arg="res://Temp Assets/Smooth Notebook Paper.PNG" fade="0.0"]
-audio "res://audio/Music/Lizzy Springs theme backwards 3.wav"
+audio music "res://audio/Music/Lizzy Springs theme backwards 3.wav" [loop="false"]
 join Logo center [animation="Zoom Center In" length="5.0" wait="true"]
-[wait time="1.0"]
-join  center
-INTRO DAY 1
+[wait time="2.5"]
+leave Logo [animation="Fade Out" length="1.0"]
+[background arg="#000000ff" fade="1.5"]
+[wait time="2.0"]
+[BEEP BEEP BEEP]
+[background fade="2.0" wait="true"]
+if {cur_day} == "1":
+	jump intro_1/
+elif {cur_day} == "2":
+	jump intro_2/
+elif {cur_day} == "3":
+	jump intro_3/
+elif {cur_day} == "4":
+	jump intro_4/
+elif {cur_day} == "5":
+	jump intro_5/
+elif {cur_day} == "6":
+	jump intro_6/
+elif {cur_day} == "7":
+	jump intro_7/

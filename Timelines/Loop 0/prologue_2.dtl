@@ -1,0 +1,135 @@
+[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.5"]
+join Valerie (Talking) left [animation="Fade In"]
+join Lizzy (Talking) right [animation="Fade In" wait="true"]
+Valerie: Ah, Elizabeth, how was your last day of highschool? I heard whisperings in the staff room that Holiday gave you a math exam.
+Lizzy: It was pretty brutal.
+Valerie: Hm. Well, math will only get you so far in your, shall I say, career. It was wise of you to focus on baseball.
+Valerie: Speaking of, I circled the most useful classes in the fax I sent you. History, naturally, is my most recommended.
+update Lizzy [mirrored="true"]
+[wait time="2.0"]
+update Lizzy
+Lizzy: Val, is this really all there is?
+update Valerie [animation="Bounce"]
+Valerie: Oh, no, there are many different classes. I’m sure you could squeeze in an art class or maybe theatre to give yourself something fun to do.
+Valerie: And VCR’s sports teams comes highly regarded. They even have baseball.
+update Lizzy [animation="Shake X"]
+Lizzy: No, not in school, I mean in life. Am I doomed to make every waking moment about killing some old dudes?
+Valerie: The vampire lords aren’t some old dudes.
+Valerie: They’re also old dudettes.
+Lizzy: You must’ve had dreams outside of prophecies and the keepers.
+update Valerie [mirrored="true"]
+[wait time="2.0"]
+update Valerie [mirrored="false"]
+join Item (Watch) center [animation="Fade In Up"]
+Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started.
+Valerie: The eldest of every generation inherits that responsibility and the watch is a symbol of the struggle between light and darkness,
+Valerie: And of course, helps me get to appointments on time. Plus it’s been known to be quite lucky.
+update Lizzy [mirrored="false"]
+Lizzy: Yeah the watch is cool and all, but...
+Lizzy: Didn’t you want to do literally anything else?
+Valerie: Hm.
+leave Item [animation="Fade Out Down" length="0.3"]
+Valerie: ...
+[wait time="1.0"]
+Valerie: No.
+update Lizzy [animation="Shake X"]
+Lizzy: So you’re entirely happy doing exactly what you’re doing and you’re going to do it for the rest of your life?
+Valerie: I am.
+update Lizzy [mirrored="true"]
+Lizzy: I don’t know why I bothered asking.
+update Valerie [mirrored="true"]
+Valerie: There was a time in my life where I questioned what I was doing, if it was worth continuing my family’s duty.
+Valerie: The Keep has it’s fair share of problems.
+update Valerie [mirrored="false"]
+Valerie: I believe it was my questioning that allowed me to break the rules and start working with you.
+Valerie: Originally I was sent to Vermilion to observe and if necessary, eliminate threats to humanity, at my discretion.
+update Lizzy [mirrored="false"]
+Lizzy: Uh... Thanks for not... killing me?
+update Valerie midleft [move_time="0.3"]
+Valerie: You’re doing so much good here, all of you, Juniper, Barb, and even Noah.
+Valerie: Without you and your friends, the Vermilion Event Horizon would have swallowed up half the country by now.
+update Lizzy [animation="Shake X" length="1.0" mirrored="false"]
+Lizzy: But what do I tell my parents? Sorry mom, I can’t go to Emmerdale because I have to stop Dracula from killing the president?
+update Valerie left [move_time="0.3"]
+Valerie: I see. You’re worried about losing touch with everyone.
+update Lizzy [animation="Shake X" mirrored="true"]
+Lizzy: Not exactly, but I guess that’s a little on my mind.
+Valerie: They care for you deeply, Elizabeth.
+Valerie:  Juniper isn’t the type of person to abandon those she loves. Barb is fiercely loyal, and Noah is enrolling in VCR’s arts program, so you’ll have a familiar face.
+Valerie:  Besides, situations like these are exactly why portable telephones and electronic mail was made—even if I disagree with the discarding of paper post.
+update Lizzy [animation="Bounce" repeat_forever="true" mirrored="false"]
+Lizzy: But Emmerdale is half way across the United States!
+Lizzy: What if they need me. I can’t kill a vampire through the computer. Not yet anyway.
+Lizzy: What if some crazed fishman attacks Barb or Juniper sees a vision about impending doom and I’m too busy writing an essay about an old book nobody reads anymore—
+update Lizzy [animation="Bounce"]
+update Valerie center [move_time="0.1"]
+Valerie: Lizzie!
+Valerie: Thing are comfortable right now. And I’m sure we could spend another two or three years operating exactly as we are now, hunting vampires, saving people...
+update Valerie left [move_time="0.5"]
+Valerie: but there wouldn’t be anything to challenge us.
+Valerie: We’d be stuck viewing the world through the lens of highschool student and teacher librarian, when it’s so much bigger than that.
+Lizzy: Of course as soon as I’ve got the whole monster hunting thing figured out I have to go and refigure it all out again.
+Valerie: You’re more capable than you think.
+
+
+(hall)
+Juniper: Lizzy, Barb’s locked herself in the bathroom and won't come out. Use your werewolf strength to bust down the door!
+Lizzy: okay!
+Valerie: it would be best if you didn't damage school property.
+Lizzy: of course. [Wink]
+Valerie: see you tomorrow.
+(Juniper and Lizzy running)
+Noah is dragged past them
+Noah: hey watch the shirt, it's new.
+Principal: its covered in glitter.
+
+Lizzy: whoa. What happened there?
+Juniper: no clue.
+
+
+Juniper: Barb, I brought Lizzy. She's going to rip the door down.
+Barb: WHAT! are you crazy?
+Lizzy: or am I sane enough to see how ridiculous it is to lock yourself in the washroom. Its so gross in there.
+Barb: its where I belong.
+Lizzy: juniper, why is she in there. She seems more humbled than usual.
+Juniper: i have no idea, she won't tell me.
+Lizzy: typical.
+Barb: just leave me to die.
+Lizzy: ...
+Lizzy: is this because we didnt get dresses?
+Barb: DON'T say the D word.
+Lizzy: didn't?
+Juniper: Barb, what happen to your grad... gown?
+Barb: oh god, I'm ruined. My reputation for being stylish despite the current economical climate and my parents divorce is surely ruined!
+Lizzy: she Must've spilled something on it.
+Juniper: we cant help you if you don't tell us the problem.
+Lizzy: yeah we arent psychics. Or at least im not.
+Barb: [sniff]
+Barb: dont laugh.
+Lizzy: i cant promise that.
+Juniper: Lizzy.
+Lizzy: fine, i wont laugh. Scouts honor.
+Barb: okay. Im coming out.
+Lizzy: finally amirite haha
+Juniper: shhh
+Lizzy: uh.. did a wild animal tear into that?
+Barb: i tried putting it on and.. it.. [sniff]
+Juniper: i mean. Its not so bad.
+Lizzy: are you kidding that things shredded motza!
+Barb: i might as well jump off a bridge now.
+Lizzy: Barb, you are the most capable person I know when it comes to fashion. You could pull of a paper bag and make it look cute. Are you telling me that you’re going to let a ruined dress mess up your entire grad dance?
+Barb: sniff. Uh, yeah?
+Lizzy: The Barb I know, doesn’t give up.
+Juniper: Exactly. You’ve got the most school spirit out of all of us. You can make any old dress shine.
+Barb: ...
+Barb: I am pretty fashion forward.
+Lizzy: Yeah, yeah!
+[Barb emerges from bathroom]
+Barb: sigh. Maybe I could pull something together. Or we could all go dress shopping together. And then we could all match.
+Lizzy: uh, I don’t think I.. Um
+Juniper: that sounds like a great idea.
+Lizzy: [whisper] juniper??
+Juniper: [whisper] it’ll make her feel better.
+Barb: okay, follow my lead exactly. I don’t want you to embarrass me.
+
+jump prologue_3/

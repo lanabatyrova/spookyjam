@@ -1,20 +1,14 @@
 [gd_scene format=3 uid="uid://bcq4uyags6rw2"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_nxmwh"]
-[ext_resource type="Texture2D" uid="uid://d2un2gav0iv3c" path="res://Temp Assets/44036fde0f1d8e2ee343d15ee1341896--high-schools-theater-3799087699.jpg" id="1_v0eww"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="2_fwf7h"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="2_fwf7h"]
 [ext_resource type="Texture2D" uid="uid://c3bisqgolpst7" path="res://sprites/King Fear Temp.png" id="3_qqms2"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="4_qqms2"]
-[ext_resource type="Texture2D" uid="uid://cnobl5w03ydu0" path="res://sprites/Lizzy_1.png" id="5_nxmwh"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="4_qqms2"]
+[ext_resource type="Texture2D" uid="uid://cnobl5w03ydu0" path="res://assets/Lizzy_1.png" id="5_nxmwh"]
 
 [node name="Node2D" type="Node" unique_id=720099633]
 script = ExtResource("1_nxmwh")
 metadata/_custom_type_script = "uid://blsjcvm6gvd78"
-
-[node name="44036Fde0f1d8e2Ee343d15Ee1341896HighSchoolsTheater3799087699" type="Sprite2D" parent="." unique_id=1727449491]
-position = Vector2(583, 299)
-scale = Vector2(1.6327544, 1.6327544)
-texture = ExtResource("1_v0eww")
 
 [node name="Control" type="Control" parent="." unique_id=1719612803]
 layout_mode = 3

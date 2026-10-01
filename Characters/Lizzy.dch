@@ -12,18 +12,18 @@
 },
 &"default_portrait": "Full Body",
 &"description": "",
-&"display_name": "Lizzy: ",
+&"display_name": "Lizzie:  ",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "Full Body": {
 "export_overrides": {
-"image": "\"res://sprites/Lizzy_1.png\""
+"image": "\"res://sprites/Lizzie_1.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1.0,
+"scale": 0.85,
 "scene": ""
 },
 "Full Wolf": {
@@ -32,7 +32,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.85,
 "scene": ""
 },
 "Half Wolf": {
@@ -41,12 +41,12 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.85,
 "scene": ""
 },
 "Talking": {
 "export_overrides": {
-"image": "\"res://sprites/Lizzy_1.png\""
+"image": "\"res://sprites/Lizzie_1.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 270),

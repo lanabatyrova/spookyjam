@@ -25,6 +25,24 @@
 "offset": Vector2(0, -450),
 "scale": 0.5,
 "scene": ""
+},
+"Strike Ball Mini": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/sticker_baseball_horizontal.png\""
+},
+"mirror": false,
+"offset": Vector2(50, -350),
+"scale": 0.1,
+"scene": ""
+},
+"Watch": {
+"export_overrides": {
+"image": "\"res://Temp Assets/temp items/IMG_0269_1-278510870.jpg\""
+},
+"mirror": false,
+"offset": Vector2(0, -20),
+"scale": 0.4,
+"scene": ""
 }
 },
 &"scale": 1.0

@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dw5rgw4odyhlj"]
 
-[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="2_byuqw"]
-[ext_resource type="Texture2D" uid="uid://byxc6jvmiffdc" path="res://assets/Minigame/minigame_sprite_portrait_bar.png" id="4_kqfvn"]
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_e2bxk"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="2_lme4x"]
+[ext_resource type="Texture2D" uid="uid://byxc6jvmiffdc" path="res://assets/Minigame/minigame_sprite_portrait_bar.png" id="3_74ppk"]
 
 [node name="LayeredPortrait" type="CanvasGroup" unique_id=714366001]
-script = ExtResource("1_uubi5")
+script = ExtResource("1_e2bxk")
 
 [node name="Layer1" type="Sprite2D" parent="." unique_id=1166713620]
 
@@ -14,13 +14,12 @@ script = ExtResource("1_uubi5")
 [node name="Barb1" type="Sprite2D" parent="Group1" unique_id=283490462]
 position = Vector2(563.00006, 507)
 scale = Vector2(0.3729882, 0.37298808)
-texture = ExtResource("2_byuqw")
+texture = ExtResource("2_lme4x")
 
 [node name="Minigame1" type="Sprite2D" parent="Group1" unique_id=936795022]
-visible = false
 position = Vector2(575.1741, 323.535)
 scale = Vector2(0.5764387, 0.5764387)
-texture = ExtResource("4_kqfvn")
+texture = ExtResource("3_74ppk")
 
 [node name="Layer1" type="Sprite2D" parent="Group1" unique_id=803476350]
 

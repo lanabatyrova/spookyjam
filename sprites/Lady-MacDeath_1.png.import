@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8kjux08cenjj"
-path="res://.godot/imported/Lady-MacDeath_1.png-1d5913d5b4e62dff43eb17c86c555745.ctex"
+uid="uid://hajg5pj5tw70"
+path="res://.godot/imported/Lady-Macdeath_1.png-01a2cbeb1eb5690218c3ffce14b58c8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Lady-MacDeath_1.png"
-dest_files=["res://.godot/imported/Lady-MacDeath_1.png-1d5913d5b4e62dff43eb17c86c555745.ctex"]
+source_file="res://sprites/Lady-Macdeath_1.png"
+dest_files=["res://.godot/imported/Lady-Macdeath_1.png-01a2cbeb1eb5690218c3ffce14b58c8b.ctex"]
 
 [params]
 

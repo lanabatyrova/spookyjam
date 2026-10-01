@@ -1,0 +1,57 @@
+(street)
+Lizzy: hey, Juniper. I am really sorry you didn’t get in. I know it meant a lot to you.
+Juniper: it’s okay, honestly. I’d rather be here with you and where I can help you the most.
+Lizzy: The stuff I was saying earlier, about the prophecy, I’m mostly fine with it. You don’t have to worry about me or anything.
+Juniper: I do. And it’s okay. If you’re taking care of everyone, who’s taking care of you?
+Lizzy: ..
+Lizzy: Yeah…
+Juniper: I’ll see you tomorrow.
+Lizzy: See you tomorrow.
+[Juniper leaves]
+Lizzy: [V.O] man, I’m a terrible friend, celebrating Juniper’s misfortune.
+Lizzy: oh hey, she dropped something.
+
+Lizzy: this looks important. I better give it back to her.
+Lizzy: Juniper!
+[Dagger appears]
+Dagger: Elizabeth.
+Lizzy: Jesus Christ, Dagger. What the hell? You can’t just sneak up on me like that. What happened to never seeing each other again?
+Dagger: I couldn’t stay away. Also I came to warn you.
+Dagger: Do not go to your graduation ceremony tomorrow. Stay home and keep your loved ones close.
+Preferably with your windows boarded up. I will retrieve you when it’s safe to do so.
+Lizzy: Is that a threat?
+Dagger: No, I assure you I have the best of intentions. If something were to you harm you... I’d never forgive myself.
+Lizzy: Does this have to do with Lady MacDeath? Is she behind all the bad luck?
+Dagger: Uh, bad luck? I’m not too sure what you mean by that, but I have already said too much.
+Dagger: Farewell, Lizzy Springs. Heed my warning. Please
+Lizzy: Dagger! Wait!
+
+
+Lizzy: [V.O] ugh. I hate when he does that.
+Lizzy: He thinks it makes him all mysterious and unattainable. Well, it’s just annoying.
+
+Lizzy: If Dagger felt the need to warn me... I better go the graveyard and ask him for more details.
+Lizzy: Time to wolf out.
+
+
+
+Lizzy: Phew, that was farther away than I remembered.
+Lizzy: Dagger! I know you’re around here somewhere
+Dagger: Lizzy? You really shouldn’t be here.
+Lizzy: What is so bad that I can’t handle it? I killed your boss, remember?
+Dagger: Technically Lady is my boss-
+"Lady MacDeath": [evil laughter]
+Lizzy: I knew it. I knew she was behind this.
+"Lady MacDeath": Why hello Elizabeth Springs, what a pleasant surprise.
+"Lady MacDeath": Dagger my darling, you shouldn’t have.
+Lizzy: You did this on purpose?
+Dagger: I didn’t, I swear to you. I warned you away. Why can’t you listen to me when I tell you to do something?
+"Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim,
+label END
+"Lady MacDeath": Of my undead army!
+Lizzy: Crap!
+Lizzy: [V.O] This is bad!
+do GameState.next_day()
+[background fade="0.0"]
+leave --All--
+jump intro_1/

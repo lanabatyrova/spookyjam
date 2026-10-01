@@ -1,0 +1,103 @@
+BEEP. BEEP. BEEP.
+[background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="2.0" wait="true"]
+join Lizzy (Talking) center [animation="Fade In"]
+Lizzy: Ugh. I so don’t want to get up.
+Lizzy: Graduation is tomorrow, why the hell are they making us go to class? Not only go to class, but a math exam?
+Lizzy: I’d take on ten times the amount of ghouls, vampires, zombies, evil scientists, frankensteins, and mutated fruit flies, over whatever calculus is.
+Lizzy: Life would be so much easier if I could punch numbers.
+leave Lizzy [animation="Fade Out"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+join Lizzy (Full Body) left [animation="Fade In" mirrored="true" move_time="0.5"]
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5"]
+MAIL DELIVERY
+Lizzy: Huh, what’s this?
+leave Lizzy [animation="Fade Out"]
+[background arg="res://Temp Assets/Postcard.png" fade="0.5"]
+[wait_input]
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5"]
+join Lizzy left [animation="Fade In" mirrored="true"]
+Lizzy: I guess once you become a best selling author writing your own letters is small potatoes.
+Lizzy: Well, time to fail this exam. Here goes nothing.
+leave Lizzy [animation="Fade Out"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+[One horrible exam later...]
+[background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.5"]
+join Barb lefter [animation="Fade In" z_index="1"]
+join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
+[wait time="0.2"]
+join Lizzy righter [animation="Slide From Right" length="1.0"]
+
+Lizzy: [V.O] Wow I really beefed it on that.
+update Barb [animation="Bounce" length="0.3" repeat="3"]
+Barb: Finally, we’ve been waiting here for eons.
+[wait time="0.2"]
+update Juniper [mirrored="false"]
+Juniper: Barb’s just being mean because she’s excited.
+Lizzy: What’s so important that you’re forcing us to stay at school longer than humanely possible.
+Barb: Guess what I got this morning?
+Lizzy: Uhhh.
+Juniper: A good nights sleep? You need eight hours, you know.
+Barb: No and no-
+Lizzy: I didn’t say anything, you can’t no nothing-
+update Barb [animation="Shake X" length="0.3"]
+Barb: My grad dress!!
+Lizzy: ...
+Juniper: ...
+update Barb [animation="Shake X" length="0.3" repeat="3"]
+Barb: The one I ordered last year? To my exact measurements?
+Barb: It’s all I’ve been talking about for the past week!
+update Juniper [mirrored="true"]
+Juniper: Sorry, Babs.
+Lizzy: A lot has happened, and you say a bunch of stuff I don’t pay attention to.
+Barb: Please tell me you’ve at least got your grad dresses.
+Lizzy: ...
+Juniper: ...
+Barb: I sent you both electronic mail!
+Lizzy: I’m going to be totally honest, I think my mom started marking your messages as spam since you sent so many.
+Barb: I expected this of Lizzy, but you too, Juniper? You’re psychic!
+Juniper: Clair-voyant, and that’s not how it works.
+Barb: Ugh, I swear when it doesn’t involve some sort of Mummy’s curse you two have the memory of a goldfish.
+Lizzy: Listen, I’d care a lot more about dress shopping if I wasn’t kicking demon ass on a regular basis.
+Barb: The grad dance is the single most important nights of our entire lives!
+Juniper: It really isn’t, but okay.
+Barb: If it doesn’t go picture perfectly I’m disowning all of you.
+join Noah righter [animation="Slide From Right" wait="true" mirrored="true"]
+update Lizzy midright [mirrored="true" move_time="0.3"]
+Noah: Heeey laaadies, did I hear something about grad?
+update Juniper [mirrored="false"]
+Juniper: Please never say ladies like that ever again.
+Noah: Yeah, I don’t know why I went with that.
+Barb: Noah, you have your grad outfit picked out already, right?
+Noah: Uh, does the apple fall far from the tree?
+Lizzy: No, not really.
+Barb: So is that a yes?
+Noah: Yeah, I’ve got my fit all picked and rip roaring to go.
+Barb: See? Even Noah is prepared.
+Noah: I scored the full Bond. James Bond. Specially from “Licence to Kill”
+Noah: Totally not spelled how you expect it to be, by the way.
+Juniper: Doesn’t James Bond wear the same tuxedo in every movie?
+Noah: There are subtleties.
+Juniper: If you’re really that pressed about it, Barb, I’m sure Lizzy and I can throw something together.
+Barb: I don’t want you to throw something together! I want you both to look pretty and for me to look even prettier!
+Noah: I wouldn’t worry about grad, if you know what I mean...
+Barb: I can’t with you right now. I’m meeting Mona to go over the limo situation and by the time we meet back up you better have a full walk in closet of options.
+leave Barb [animation="Slide To Right" length="1.5" wait="true"]
+[wait time="0.5"]
+Noah: Wait, you guys are taking a limo to grad? Isn’t it just at the school?
+Lizzy: We try not to ask too many questions.
+Juniper: She just wants tomorrow to be worth remembering. I can’t say I blame her optimistic spirit.
+Noah: Oh, it’ll be a night to remember...
+Noah: Now, if you’ll excuse me, I’ve got to go into the basement for no reason what-so-ever.
+update Noah [mirrored="false"]
+leave Noah [animation="Slide To Right" length="0.3" wait="true"]
+[wait time="0.5"]
+update Lizzy [mirrored="false"]
+Lizzy: I guess we’ve gotta add finding dresses to our evening plans.
+Juniper: My mother probably has something we can borrow.
+Juniper: If not, we can make a statement by going in our regular clothes as a commentary on the unreasonable expectation for women to perform perfect femininity.
+Lizzy: Took the words right out of my mouth.
+Juniper: I’m going to go find Barb and makes sure she’s not too upset. Meet in the library in like an hour?
+Lizzy: Sounds good. Don’t go easier on her! Let her stew a bit! She could use it.
+leave --All-- [animation="Fade Out" length="0.4"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+jump prologue_2/

@@ -1,0 +1,90 @@
+audio music "res://audio/Stay the Course.mp3"
+[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+Noah: Previously on Lizzy Springs Monster Hunter and Werewolf...
+[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+join Valerie (VO) center [animation="Fade In Up" length="4.0"]
+update Valerie leftmost [move_time="4.0"]
+Valerie: The keepers have a prophecy.
+Valerie: One that speaks of a half person half monster.
+leave Valerie [animation="Fade Out" wait="true"]
+[background arg="res://Temp Assets/44036fde0f1d8e2ee343d15ee1341896--high-schools-theater-3799087699.jpg" fade="0.5"]
+join Lizzy (Half Wolf) righter [animation="Fade In"]
+join "Lady MacDeath" leftmost [animation="Fade In"]
+join Barb left [animation="Fade In"]
+join "King Fear" midleft [animation="Fade In" mirrored="true"]
+update "King Fear" [animation="Bounce"]
+"King Fear": Blood will have blood!
+update "King Fear" [animation="Bounce"]
+"King Fear": To be or not to be!
+update Barb [animation="Bounce"]
+Barb: He’s just saying random quotes!!
+leave --All-- [animation="Fade Out" length="0.2"]
+[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.2" wait="true"]
+join Valerie (VO) leftmost [animation="Fade In" wait="true"]
+Valerie: ...Who is destined to defeat the six vampire lords and prevent the end of days from wiping out every single non-monster in existence.
+leave Valerie [animation="Fade Out" wait="true"]
+join Noah midright [animation="Fade In" length="0.3" mirrored="true"]
+join Barb rightmost [animation="Fade In" length="0.3" mirrored="true"]
+join Lizzy midleft [animation="Fade In" length="0.3" mirrored="true"]
+join Valerie leftmost [animation="Fade In" length="0.3"]
+join Juniper righter [animation="Fade In" length="0.3" mirrored="true"]
+[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.3" wait="true"]
+update Noah [animation="Bounce"]
+Noah: So, the entire fate of the world depends on if Lizzy can pass Mr. Burke’s english final?
+update Lizzy [animation="Bounce"]
+Lizzy: This blows.
+update Barb [animation="Bounce"]
+Barb: Screw the english final, what about grad?
+leave --All-- [animation="Fade Out" length="0.8"]
+[background arg="res://Temp Assets/kitchen location.png" fade="0.8" wait="true"]
+join Juniper (Talking) left [animation="Fade In" length="0.4"]
+join Valerie (Talking) right [animation="Fade In" length="0.4" wait="true" mirrored="true"]
+update Juniper [animation="Shake X" length="2.0"]
+Juniper: In my vision... Vermilion was gone.
+update Valerie [animation="Bounce"]
+Valerie: Did you see anything else?
+[wait time="0.5"]
+update Juniper [mirrored="true"]
+Juniper: ...
+leave --All-- [animation="Fade Out"]
+[background arg="res://Temp Assets/dead lizzy.png" fade="2.0" wait="true"]
+[wait time="1.0"]
+Juniper: No...
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.5" wait="true"]
+join Dagger right [animation="Fade In" length="1.0"]
+Dagger (Talking): There’s more at play than you and I, dearest Elizabeth.
+leave Dagger [animation="Fade Out" length="0.2" wait="true"]
+[background arg="res://Temp Assets/baseball-field-night-260nw-2508561219-3781484238.jpg" fade="0.5" wait="true"]
+AND THE VERMILION WOLVES TAKE ANOTHER VICTORY-
+join "King Fear" center [animation="Slide In Up" length="0.7"]
+"King Fear": King Fear\: Tonight is the day you die Springs!! Now is the winter of your discontent!
+join Lizzy (Full Body) rightmost [animation="Slide From Right" z_index="1"]
+Lizzy: Here goes nothing
+join Item (Strike Ball Mini) center [animation="Slide From Right" length="0.3" wait="true" mirrored="true"]
+leave Item [animation="Fade Out Down" length="0.1"]
+update "King Fear" left [animation="Heartbeat" length="1.0"]
+"King Fear": [aa=0.1]Urghh
+leave "King Fear" [animation="Slide Out Down" wait="true"]
+join "Lady MacDeath" leftmost
+"Lady MacDeath": My King! NOOOOO
+join Noah (Full Body) midright [animation="Fade In Up" length="0.2"]
+Noah: Whoa, killer throw!
+leave --All-- [animation="Fade Out" length="0.4"]
+[wait time="0.4"]
+[background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.5" wait="true"]
+join "Lady MacDeath" (FullBody LM) right [animation="Fade In"]
+join Dagger left [animation="Fade In" wait="true" mirrored="true"]
+"Lady MacDeath": Come now, Dagger. We have much work ahead if we are to deliver Elizabeth Springs to her retribution.
+update Dagger lefter [mirrored="false" move_time="0.5" move_ease="out"]
+Dagger: ...
+leave --All-- [animation="Fade Out"]
+[wait time="0.5"]
+[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.5" wait="true"]
+join Lizzy center [animation="Zoom In"]
+Lizzy: So, what? I’ve got five more to go?
+Piece of cake.
+[background arg="#000000ff" fade="0.5"]
+leave Lizzy [animation="Fade Out" wait="true"]
+audio music - [fade="0.5"]
+[wait time="1.0"]
+jump prologue_timeline/

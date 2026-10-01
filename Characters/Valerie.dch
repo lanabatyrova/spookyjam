@@ -19,19 +19,37 @@
 &"portraits": {
 "Full Body V": {
 "export_overrides": {
-"image": "\"res://sprites/Val_1.png\""
+"image": "\"res://sprites/Valerie_1.png\""
 },
 "mirror": false,
 "offset": Vector2(60, 0),
-"scale": 1,
+"scale": 0.85,
+"scene": ""
+},
+"Phone": {
+"export_overrides": {
+"image": "\"res://sprites/Val_Phone.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.85,
 "scene": ""
 },
 "Talking": {
 "export_overrides": {
-"image": "\"res://sprites/Val_1.png\""
+"image": "\"res://sprites/Valerie_1.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 280),
+"scale": 1.4,
+"scene": ""
+},
+"VO": {
+"export_overrides": {
+"image": "\"res://sprites/Val_dream.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 340),
 "scale": 1.4,
 "scene": ""
 }

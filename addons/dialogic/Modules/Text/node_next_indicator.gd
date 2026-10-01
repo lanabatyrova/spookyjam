@@ -83,7 +83,7 @@ func play_animation(current_animation: int, time:float) -> void:
 	match current_animation:
 		Animations.BOUNCE:
 			tween = (create_tween() as Tween)
-			var distance := 4
+			var distance := 2
 			tween.set_parallel(false)
 			tween.set_trans(Tween.TRANS_SINE)
 			tween.set_ease(Tween.EASE_IN_OUT)

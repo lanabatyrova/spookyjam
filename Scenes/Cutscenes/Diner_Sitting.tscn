@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_ql1wc"]
 [ext_resource type="Texture2D" uid="uid://5bwpmcixvinx" path="res://Temp Assets/neons-36-of-44-scaled-975515292.jpg" id="2_4xt2k"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="3_irx62"]
-[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://sprites/Juniper_1.png" id="4_4xt2k"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="3_irx62"]
+[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/Juniper_1.png" id="4_4xt2k"]
 [ext_resource type="Texture2D" uid="uid://cops428hn2e2e" path="res://Temp Assets/diner table.png" id="4_sq7km"]
 [ext_resource type="Texture2D" uid="uid://cskpbmisc7wdl" path="res://Temp Assets/Smuckers.png" id="6_irx62"]
 

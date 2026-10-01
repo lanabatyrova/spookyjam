@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://2ujnlloa6j47"]
 
 [ext_resource type="Script" uid="uid://b3yfdpvfhmai6" path="res://Scenes/Tomb/tomb.gd" id="1_0068g"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="2_am2i7"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="2_am2i7"]
 [ext_resource type="Script" uid="uid://nvorwrr6a1gh" path="res://Scenes/Tomb/lady_mac_tomb.gd" id="3_tg8e8"]
 [ext_resource type="Texture2D" uid="uid://uuuwwixj625j" path="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" id="4_eh3cb"]
 

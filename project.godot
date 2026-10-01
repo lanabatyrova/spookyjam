@@ -111,7 +111,11 @@ directories/dtl_directory={
 "minigame_n_4": "res://Timelines/Loop 4/minigame_n_4.dtl",
 "minigame_v_2": "res://Timelines/Loop 2/minigame_v_2.dtl",
 "not_ready_vo": "res://Timelines/not_ready_vo.dtl",
-"previously_on_timeline": "res://Timelines/previously_on_timeline.dtl",
+"previously_on_timeline": "res://Timelines/Loop 0/previously_on_timeline.dtl",
+"prologue_1": "res://Timelines/Loop 0/prologue_1.dtl",
+"prologue_2": "res://Timelines/Loop 0/prologue_2.dtl",
+"prologue_3": "res://Timelines/Loop 0/prologue_3.dtl",
+"prologue_4": "res://Timelines/Loop 0/prologue_4.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "rewind": "res://Timelines/rewind.dtl",
 "scratch_pad": "res://scratch_pad.dtl",
@@ -132,6 +136,7 @@ glossary/default_case_sensitive=true
 variables={
 "collected_item_image": "",
 "collected_item_name": "",
+"cur_day": "",
 "current_item": "",
 "is_success": false,
 "strikes_number": 0

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://hbmnotj4ag7" path="res://assets/Basement.png" id="1_5fdut"]
 [ext_resource type="Script" uid="uid://c1uk035w18ycn" path="res://Scenes/Basement/basement.gd" id="1_gg0k3"]
-[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://sprites/Noah_1.png" id="2_gu83p"]
+[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://assets/Noah_1.png" id="2_gu83p"]
 [ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="4_u0mjk"]
 
 [node name="Basement" type="Node2D" unique_id=1156537435]

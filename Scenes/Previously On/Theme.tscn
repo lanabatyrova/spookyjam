@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_oa74c"]
 [ext_resource type="Texture2D" uid="uid://cg3ofocdsn2k3" path="res://Temp Assets/graveyard-1577478-4189764713.jpg" id="2_tulyf"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="3_emgsc"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://sprites/Lady-MacDeath_1.png" id="4_1cjcw"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="3_emgsc"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="4_1cjcw"]
 
 [sub_resource type="Animation" id="Animation_x7yhg"]
 resource_name = "Barb Theme"

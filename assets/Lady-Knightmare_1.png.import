@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnobl5w03ydu0"
-path="res://.godot/imported/Lizzy_1.png-9c926d3ee80b60a7b87c45c32fe9235b.ctex"
+uid="uid://vrefpe0mc0kf"
+path="res://.godot/imported/Lady-Knightmare_1.png-985ca1003a4239063b02699e99e3b2f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Lizzy_1.png"
-dest_files=["res://.godot/imported/Lizzy_1.png-9c926d3ee80b60a7b87c45c32fe9235b.ctex"]
+source_file="res://assets/Lady-Knightmare_1.png"
+dest_files=["res://.godot/imported/Lady-Knightmare_1.png-985ca1003a4239063b02699e99e3b2f9.ctex"]
 
 [params]
 

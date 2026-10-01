@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuinl2o4vim0p"
-path="res://.godot/imported/Val_1.png-82147e9d0eadfe9b8a7258a95061a065.ctex"
+uid="uid://fr0578byryf1"
+path="res://.godot/imported/Barb_1.png-79351f3e24168364981d5f035df6192c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Val_1.png"
-dest_files=["res://.godot/imported/Val_1.png-82147e9d0eadfe9b8a7258a95061a065.ctex"]
+source_file="res://assets/Barb_1.png"
+dest_files=["res://.godot/imported/Barb_1.png-79351f3e24168364981d5f035df6192c.ctex"]
 
 [params]
 
