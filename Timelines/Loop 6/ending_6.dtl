@@ -4,8 +4,6 @@ join Lizzy center [animation="Fade In" length="1.0"]
 join Barb rightmost [animation="Fade In" length="1.0" mirrored="true"]
 join Dagger right [animation="Fade In" length="1.0"]
 join Noah righter [animation="Fade In" length="1.0" mirrored="true"]
-do GameState.learn_fact("m_absolved")
-"Lady MacDeath": You've made a compelling argument.
 "Lady MacDeath": Shakespeare was King Fears— Julian’s thing.
 "Lady MacDeath": I only went along with it because I thought he had a real shot at becoming the ultimate vampire lord.
 update "Lady MacDeath" [animation="Bounce" wait="true" mirrored="false"]
@@ -29,7 +27,6 @@ Lizzy: I guess that sort of fits the knight theme.
 Noah: Wait is it Knightmare with a knight instead of night?
 Knightmare: Yes. What else would it be.
 do GameState.learn_fact("m_name")
-do GameState.learn_fact("m_phone")
 join Juniper leftmost [animation="Slide From Right" length="1.0" wait="true"]
 update Knightmare midright [mirrored="true" move_time="0.2"]
 update Lizzy midleft [move_time="0.2"]

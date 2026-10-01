@@ -1,2 +1,80 @@
-lady md minigame!!!
+do GameState.start_minigame()
+[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
+join "Lady MacDeath" center [mirrored="true"]
+[wait time="1.5"]
+Lizzy: Lady MacDeath, the time loop is happening.
+Lizzy: And I have proof!
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "pocket_shakespeare":
+		Lizzy: i found this heavily annotated shakespeare book in the graveyard in one of the loops.
+		"Lady MacDeath": I was looking for that.
+		Lizzy: I've read some of the notes and you've really torn old Willy S apart.
+		"Lady MacDeath": I loath the man.
+		"Lady MacDeath": He was quite obtuse when I first met him and then my husband became obsessed and dragged me to every showing.
+		"Lady MacDeath": One can only take so many misperformances of Taming of the Shrew and Romeo and Juilet.
+		"Lady MacDeath": More like Groaneo and Juilget me out of there.
+		"Lady MacDeath": I celebrated when Hamnet died.
+		Lizzy: Isn’t it Hamlet?
+		"Lady MacDeath": Hamnet was Shakespeares son.
+		Lizzy: ...
+		Lizzy: That’s dark.
+		"Lady MacDeath": I’m an evil vampire. What do you expect?
+	
+	elif {current_item} == "lm_dagger_vouch":
+		Dagger: My Lady, Elizabeth speaks the truth.
+		Dagger: We are stuck in a time loop.
+		"Lady MacDeath": You are weak when it comes to this werewolf pup.
+		Lizzy: I’m not that young...
+		"Lady MacDeath": But you are quite honest when it really comes down to it.
+		"Lady MacDeath": I've been meaning to talk to you about that, actually.
+		"Lady MacDeath": It is beyond irritating.
+		Dagger: Of course, my lady. I will work on this flaw of character.
+		Lizzy: Are you kidding me?
+		Lizzy: You're letting her walk all over you, man!
+		Dagger: What would you have me do?
+		Dagger: We want to convince her, right?
+		Lizzy: Yeah, but,
+		Lizzy: Stand up for yourself.
+		"Lady MacDeath": Elizabeth Springs is right.
+		"Lady MacDeath": Have back bone, Dagger, darling.
+		"Lady MacDeath": It's embarrassing.
+		"Lady MacDeath": ...
+		"Lady MacDeath": Perhaps we are more alike than I've previously assumed, young werewolf.
+		Lizzy: You seem pretty cool too, for an evil vampire.
+	
+	
+	elif {current_item} == "d_zombie_plan":
+		Lizzy: i know all about your zombie plan!
+		"Lady MacDeath": Dagger told you.
+		"Lady MacDeath": I knew he was leaking previous information.
+		Lizzy: No. You attacked me in a previous loop and then you said something along the lines of
+		Lizzy: "Watch as my undead army eats everybody you love muhahahahha~"
+		"Lady MacDeath": That does sound like me.
+	
+	set {strikes_number} += 1.0
+	join Item leftmost [animation="Zoom In" length="9.0"]
+	leave Item [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 2.0:
+		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 3.0:
+		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+	[wait time="1.5"]
+else:
+	"Lady MacDeath": And this is supposed to mean something to me because....?
+	Lizzy: Uh... I was just testing to see if you're paying attention.
+	[V.O] I'll have to try something else.
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+[background fade="2.0" wait="true"]
+audio music - [fade="4.0"]
+"Lady MacDeath": You've made a compelling argument.
+do GameState.end_minigame()
 jump ending_6/

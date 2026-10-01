@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7axeg17208yy" path="res://Scenes/Journal Menu/Settings/Settings.tscn" id="1_1p87o"]
 [ext_resource type="PackedScene" uid="uid://c66bpjqgnyl0m" path="res://Scenes/Journal Menu/Lady_Page/Lady_Page.tscn" id="1_5y4hx"]
 [ext_resource type="Script" uid="uid://d3wdvs7m1w4mh" path="res://Scenes/Journal Menu/journal_pages.gd" id="1_md78m"]
+[ext_resource type="Script" uid="uid://c8cb8xg07bmnj" path="res://Scenes/Journal Menu/journal_ui.gd" id="1_nyf8x"]
 [ext_resource type="PackedScene" uid="uid://dc4rfgugqbvyh" path="res://Scenes/Journal Menu/Val_Page/Val_Page.tscn" id="2_xayug"]
 [ext_resource type="PackedScene" uid="uid://bu8or8fcmnct0" path="res://Scenes/Journal Menu/Dagger_Page/Dagger_Page.tscn" id="3_1p87o"]
 [ext_resource type="PackedScene" uid="uid://twbjtf6s8x3k" path="res://Scenes/Journal Menu/Contacts/Contacts.tscn" id="3_md78m"]
@@ -19,6 +20,7 @@
 [node name="JournalUi" type="Control" unique_id=1935407484]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_nyf8x")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=203023796]
 layer = 25
@@ -56,7 +58,7 @@ script = ExtResource("1_md78m")
 
 [node name="Bestiary" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1784635410 instance=ExtResource("11_oxvox")]
 
-[node name="Close Button" type="Button" parent="CanvasLayer" unique_id=1261437690]
+[node name="CloseButton" type="Button" parent="CanvasLayer" unique_id=1261437690]
 offset_left = 59.0
 offset_top = 65.0
 offset_right = 82.0
@@ -83,6 +85,6 @@ scale = Vector2(0.874059, 0.83407784)
 text = "wrong"
 script = ExtResource("11_qbbbw")
 
-[connection signal="pressed" from="CanvasLayer/Close Button" to="CanvasLayer/Close Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/CloseButton" to="CanvasLayer/CloseButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Minigame Test Button" to="CanvasLayer/Minigame Test Button" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Minigame Wrong Button" to="CanvasLayer/Minigame Wrong Button" method="_on_pressed"]
