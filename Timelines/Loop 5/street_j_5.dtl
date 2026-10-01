@@ -1,3 +1,11 @@
-Juniper: i have something important to tell you i think probably
-Lizzy: me too we're in a time loop!!!
+join Juniper lefter [animation="Instant In" mirrored="true"]
+join Lizzy right [animation="Bounce In"]
+Lizzy: Juniper, there you are.
+Lizzy: I’ve been looking all over for you.
+update Juniper [mirrored="false"]
+Juniper: Lizzy, I’ve been meaning to talk to you too.
+Lizzy: Listen, we’re stuck in a time loop and it’s all because Lady MacDeath wants to make me suffer or something,
+Juniper: ...
+leave Lizzy [animation="Slide To Right"]
+
 jump minigame_j_5/

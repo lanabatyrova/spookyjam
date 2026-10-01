@@ -1,5 +1,29 @@
-ending scene 4
-Dagger: LadyMacdeath hates shakespeare btw
+Dagger: Dagger: It doesn’t make any sense.
+Lizzy: Like it or not, she's added trapping me in an endless time loop to her ultimate revenge plan, so that's great.
+Dagger: I don't know why she wouldn't have talked to me about it first. She always consults with me.
+Lizzy: Maybe she knows about...
+Lizzy: You know, the conflict of interest?
+Dagger: I suppose she's noticed how frequently we've been speaking.
+Dagger: How... 
+Dagger: ...
+Dagger: You affect me, Lizzy.
+Lizzy: Dagger...
+Lizzy: I’m sorry about how I’ve been treating you.
+Dagger: Don’t apologize.
+Dagger: I’m the one who should know not to play with your emotions.
+Dagger: There’s an unspoken bond between us,
+Dagger: You understand me unlike any other.
+Lizzy: In your weird way, I think you understand me too.
+Dagger: I don’t want to lose that.
+Dagger: Even more than I fear your death.
+Dagger: I’d rather know you while you’re alive.
+Lizzy: That’s oddly sweet.
+Dagger: I have my moments.
+Lizzy: ...
+Lizzy: This isn’t easy for me to say,
+Lizzy: but I want to know you too—
+TO BE CONTINUED
+
 do GameState.learn_fact("m_shakespeare_hate")
 do GameState.next_day()
 jump intro_6/

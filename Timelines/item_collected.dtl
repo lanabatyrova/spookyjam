@@ -1,6 +1,9 @@
 {collected_item_name}
 if {collected_item_name} == "Portable Sewing Kit":
-	VO: Barb's dress is going to rip later... maybe if I fix it for her, she'll believe me.
+	VO: Man… Barb’s grad dress ended up being totaled. Maybe if she had this she could’ve done some last minute adjustments.
+	VO: I guess that’s one good thing about being in a time loop, third... or fourth or fifth time’s the charm.
+	VO: Let’s hope it doesn’t come to that.
+
 elif {collected_item_name} == "Allergy Meds":
 	VO: Noah always forgets to bring his allergy meds to school... I should grab these just in case.
 elif {collected_item_name} == "Belt":
@@ -13,6 +16,17 @@ elif {collected_item_name} == "Belt":
 elif {collected_item_name} == "Annotated Pocket Shakespeare":
 	VO: What in the world is this?
 elif {collected_item_name} == "Acceptance Letter":
-	VO: This must be Juniper's... [note\: idk enough details about this letter to put something here]
+	VO: VO\: Huh, Juniper isn’t here.
+	VO: Wait, what’s this.
+	VO: An opened letter addressed to Juniper...? From Emmerdale.
+	VO: It’s probably her rejection letter.
+	VO: ...
+	VO: Dear Miss Juniper Chandra,
+	VO: it is on behalf of Emmerdale that we would like to congratulate you on your acceptance into Emmerdale’s Theoretical Physics Program—
+	VO: Wait a damn minute,
+	VO: This is an acceptance letter!
+	VO: If she’s read this, why did Juniper say she didn’t get in?
+	VO: ...
+	VO: I need to ask her about it.
 elif {collected_item_name} == "Pocket Watch":
 	VO: This is a really nice watch.

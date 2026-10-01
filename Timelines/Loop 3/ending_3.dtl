@@ -1,5 +1,38 @@
-Barb: we're chillin'
-Barb: also you've gotta hear about noah's machine
+[background arg="res://assets/Basement.png" fade="0.0"]
+join Barb left
+join Lizzy right
+Barb: Um, what the hell is this?
+Lizzy: It looks like… a piece of glittery beef jerky.
+VO: Now I’m hungry.
+Barb: Oooh my god. It’s one of his contraptions.
+
+Lizzy: His "contraptions"?
+Barb: You know him and his whacky inventions or whatever. He was probably planning something to ruin grad.
+Lizzy: What does the beef jerky have to do with anything?
+Barb: It’s not beef jerky, Lizzy. Ugh, you’re such a dog.
+Lizzy: Hey!
+Barb: It looks like the sorry remains of a ....... belt.
+Barb: The structural integrity of faux leather is weaker compared to the high quality of genuine leather.
+Barb: but he must’ve cheaped out. Just goes to show that the real thing is worth the money.
+VO: to stop his machine from breaking... he just needs a higher quality belt.
+VO: I’ve got like a million of those.
+Lizzy: good work, Barb. You should be a private detective.
+Barb: I’d rather die, thanks.
+Lizzy: ...
+Barb: I mean, yeah, maybe. Could be fun.
+Lizzy: ...
+Lizzy: how is that worse?
+Barb: Well, what do we do now?
+Lizzy: I guess we wait for the next loop so I can tell Noah his machine is going to break. Then he’ll believe me.
+update Barb [animation="Bounce" length="0.3" repeat="2"]
+Barb: No! Don’t fix it!
+Barb: He wants to ruin graduation with it!
+Lizzy: Sorry, Barb, but this thing’s bigger than graduation.
+Barb: It’s fine, I can just sabotage it later.
+Lizzy: Just do it after I convince him, okay?
+Barb: No promises.
+To be continued starts to fade onto the screen.
+Lizzy: wait what the hell--
 leave Barb
 do GameState.make_item_collectible("belt")
 do GameState.next_day()
