@@ -1,4 +1,4 @@
-[background scene="res://Scenes/Diner/Diner_Sitting.tscn" fade="0.0"]
+[background scene="res://Scenes/Cutscenes/Diner_Sitting.tscn" fade="0.0"]
 join Lizzy (Talking) rightmost
 
 Barb: You’re out of jam.
