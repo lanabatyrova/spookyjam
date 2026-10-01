@@ -694,7 +694,7 @@ static func get_portrait_suggestions(search_text:String, character:DialogicChara
 static func get_portrait_position_suggestions(search_text := "") -> Dictionary:
 	var icon := load(DialogicUtil.get_module_path("Character").path_join('portrait_position.svg'))
 
-	var setting: String = ProjectSettings.get_setting('dialogic/portraits/position_suggestion_names', 'leftmost, left, center, right, rightmost')
+	var setting: String = ProjectSettings.get_setting('dialogic/portraits/position_suggestion_names', 'leftmost,lefter, left, midleft, center, midright, right, righter, rightmost')
 
 	var suggestions := {}
 

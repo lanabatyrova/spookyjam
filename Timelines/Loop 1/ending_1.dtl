@@ -1,3 +1,24 @@
-TBC (ending 1)
+[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="0.0"]
+join Lizzy right [animation="Instant In"]
+VO: Well, that could've been better.
+[wait time="0.4"]
+audio "res://audio/Character Sounds/floraphonic-spooky-movement-violin-6-186910.mp3"
+join Dagger left [animation="Fade In" length="2.0" wait="true"]
+[wait time="0.5"]
+Lizzy: Dagger!
+Lizzy: What are you doing here?
+Dagger: It may be best if you left town, or hid somewhere safe for what’s coming.
+Dagger: if something was to happen to you.
+Dagger: I…
+Lizzy: Look, Dagger, you know how I feel about you. We’ve had our relationship drama already.
+Lizzy: But I’m alive right now! See,  check my pulse!
+Lizzy: actually you can probably hear it with your creepy vampire powers or whatever.
+Lizzy: Your grief over me is not helpful. AT ALL.
+Lizzy: When will you get it through your thick lucious curls! There’s more going on
+Dagger: …
+Dagger: I apologise for getting in the way.
+Lizzy: Dagger—
+Lizzy: I didn’t.
+Lizzy: …
 do GameState.next_day()
 jump intro_2/

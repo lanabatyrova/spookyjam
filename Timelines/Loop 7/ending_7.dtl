@@ -1,4 +1,3 @@
-[background arg="res://Temp Assets/0000151.jpg" fade="0.0"]
 [present bffs]
 join Juniper left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
 join Lizzy right [animation="Fade In" length="2.0" wait="true"]

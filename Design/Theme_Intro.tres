@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="DialogicStyle" format=3 uid="uid://s64gfneojwfx"]
+
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_fonr8"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_2lq3o"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="2_xmcdu"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_xmcdu"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="4_dsh2i"]
+
+[sub_resource type="Resource" id="Resource_xmcdu"]
+script = ExtResource("1_fonr8")
+
+[sub_resource type="Resource" id="Resource_dsh2i"]
+script = ExtResource("1_fonr8")
+scene = ExtResource("2_xmcdu")
+overrides = {
+"box_animation_in": "0",
+"box_animation_out": "0",
+"box_color_use_global": "false",
+"box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
+"box_size": "Vector2(550, -150)",
+"name_label_box_offset": "Vector2(0, 150)",
+"name_label_box_panel": "\"res://Design/Subtitle_Text_Box.tres\"",
+"name_label_box_use_global_color": "false",
+"name_label_custom_font_size": "40.0",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false",
+"name_label_use_global_font_size": "false"
+}
+
+[sub_resource type="Resource" id="Resource_ubxlb"]
+script = ExtResource("1_fonr8")
+scene = ExtResource("3_xmcdu")
+
+[sub_resource type="Resource" id="Resource_g40vl"]
+script = ExtResource("1_fonr8")
+scene = ExtResource("4_dsh2i")
+
+[resource]
+script = ExtResource("2_2lq3o")
+name = "Theme_Intro"
+layer_list = Array[String](["12", "11", "10"])
+layer_info = {
+"": SubResource("Resource_xmcdu"),
+"10": SubResource("Resource_dsh2i"),
+"11": SubResource("Resource_ubxlb"),
+"12": SubResource("Resource_g40vl")
+}
+metadata/_latest_layer = "11"

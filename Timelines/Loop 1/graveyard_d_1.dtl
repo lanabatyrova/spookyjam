@@ -1,1 +1,20 @@
-Dagger: i'm in the graveyard on loop 1 (he's just sulking here)
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.0"]
+join Lizzy (Talking) right [animation="Instant In"]
+join Dagger (Zoomed in) left [animation="Fade In" mirrored="true"]
+Lizzy: Dagger! You’re here.
+Lizzy: Actually, I don’t know why I’m surprised.
+Dagger: Lizzy… a serendipitous entrance...
+update Dagger (Zoomed in) [animation="Shake X" mirrored="false"]
+Dagger: I was just observing the epitaphs on the tombstones that call this place home,
+Dagger: and it struck me how death is inevitability for much of humanity,
+Dagger: But for others...
+Dagger: those cursed with cruel mistress of immortality,
+Dagger: it’s the horrid power that rips loved ones from each other’s arms and drives the emotional stake of—
+Lizzy: Alright, I get it. Death sucks.
+Dagger: You see… I’ve been pondering us.
+Lizzy: Oh here we go again.
+Dagger: …
+Dagger: We are as... You see, vampires and werewolves go together as well as Napoleon and surrendering.
+Lizzy: Please stop reminding me how old you are.
+VO: This is getting me no where.
+leave --All-- [animation="Fade Out"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6p0vmcongova"
+path="res://.godot/imported/Lady Knightmare Appears.mp3-87d681efc7e8e83ccf200649be87931b.mp3str"
+
+[deps]
+
+source_file="res://audio/Lady Knightmare Appears.mp3"
+dest_files=["res://.godot/imported/Lady Knightmare Appears.mp3-87d681efc7e8e83ccf200649be87931b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dvup7hyp8pt1m"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_ql1wc"]
+[ext_resource type="Texture2D" uid="uid://5bwpmcixvinx" path="res://Temp Assets/neons-36-of-44-scaled-975515292.jpg" id="2_4xt2k"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://sprites/Barb_1.png" id="3_irx62"]
+[ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://sprites/Juniper_1.png" id="4_4xt2k"]
+[ext_resource type="Texture2D" uid="uid://cops428hn2e2e" path="res://Temp Assets/diner table.png" id="4_sq7km"]
+[ext_resource type="Texture2D" uid="uid://cskpbmisc7wdl" path="res://Temp Assets/Smuckers.png" id="6_irx62"]
+
+[node name="DialogicBackground" type="Node" unique_id=1496060221]
+script = ExtResource("1_ql1wc")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Control" type="Control" parent="." unique_id=114303891]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = -9.999996
+offset_right = 1462.0
+offset_bottom = 947.0
+scale = Vector2(0.9199998, 0.9199998)
+
+[node name="Neons36Of44Scaled975515292" type="Sprite2D" parent="Control" unique_id=1026287920]
+position = Vector2(532, 531)
+scale = Vector2(0.6007689, 0.60076904)
+texture = ExtResource("2_4xt2k")
+
+[node name="Barb1" type="Sprite2D" parent="Control" unique_id=1755955643]
+position = Vector2(352, 653)
+scale = Vector2(0.4628154, 0.4628154)
+texture = ExtResource("3_irx62")
+
+[node name="Juniper1" type="Sprite2D" parent="Control" unique_id=1285419599]
+position = Vector2(98.91308, 682.60895)
+scale = Vector2(0.53005576, 0.5300557)
+texture = ExtResource("4_4xt2k")
+
+[node name="DinerTable" type="Sprite2D" parent="Control" unique_id=137182115]
+position = Vector2(517, 785)
+scale = Vector2(0.658291, 0.65829104)
+texture = ExtResource("4_sq7km")
+
+[node name="Smuckers" type="Sprite2D" parent="Control" unique_id=585268309]
+position = Vector2(390.2175, 588.04364)
+scale = Vector2(0.10734976, 0.10380937)
+texture = ExtResource("6_irx62")

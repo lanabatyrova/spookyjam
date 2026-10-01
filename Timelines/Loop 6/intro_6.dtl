@@ -1,5 +1,12 @@
-[background arg="res://Temp Assets/0000151.jpg" fade="0.0"]
-join Lizzy center [animation="Bounce In"]
+join Lizzy (Talking) right
+Lizzy: Oh, come on.
+Lizzy: Right when Dagger and I were starting to get into the groove of a good conversation.
+Lizzy: ...
+Lizzy: This time loop is really effecting Juniper.
+Lizzy: I need to do something fast.
+[Ring ring]
+
+join Dagger (Phone) left
 Dagger: Elizabeth, I bring an important message.
 Lizzy: How did you get this number?
 Dagger: The angry cheerleader gave it to me. I think her name is Brenda.
@@ -14,11 +21,14 @@ Dagger: I wouldn't normally share such personal information, but here is my Lady
 Lizzy: Wait, hold on, let me grab a piece of paper.
 Dagger: 732. 737. 8257.
 Lizzy: ...
-Lizzy: Okay. Got it.
-Dagger: You can use it to locate her secret tomb, unknown to even me. 
-Dagger: She keeps her landline ringer on very high, mostly because nobody calls her, and she enjoys the dulcet tones.
+Lizzy: okay. Got it.
+Dagger: You can use it to locate her secret tomb, unknown to even me. She keeps her landline ringer on very high,  mostly because nobody calls her, and she enjoys the dulcet tones.
 
 Lizzy: Thanks. I guess I'll just punch in the number when we're in the graveyard
 
 Dagger: Farewell, my deepest regret…
+leave Dagger [animation="Fade Out Down"]
 Lizzy: Yeahh. You gotta stop doing that.
+leave Lizzy [animation="Fade Out Down"]
+
+VO: Time to go to the library and let everyone know what the plan is.

@@ -1,2 +1,54 @@
-everyone's chillin at the library babes apparently that's the only thing to do today
+join Valerie left
+Valerie: Elizabeth.
+Valerie: Please help, they’re still fighting.
+join Lizzy right [animation="Fade In Up" length="0.2"]
+Lizzy: Sorry, Val.
+Lizzy: They’ll wear each other out eventually.
+join Barb left [animation="Fade In Up" length="0.2"]
+join Noah right [animation="Fade In Up" length="0.2"]
+update Valerie leftmost [move_time="0.2"]
+update Lizzy rightmost [move_time="0.2"]
+Barb: Well, Star Wars isn’t even a real sci-fi, it’s a fantasy—
+Noah: They’re in space!
+Noah: How is that not science fiction?
+update Valerie left [move_time="0.2"]
+update Lizzy right [move_time="0.2"]
+update Barb leftmost [move_time="0.2"]
+update Noah rightmost [move_time="0.2"]
+Valerie: ...
+Lizzy: Alright, listen up everybody.
+Barb: Lizzy, thank god,
+Barb: Can you tell Noah he’s being ridiculous.
+Noah: Excuse me?
+Noah: Lizzy. Barb is out of hand!
+Noah: You gotta stop her.
+Lizzy: That’s not important right now.
+Lizzy: Dagger gave me Lady MacDeath’s phone number, so now we can locate her secret hidden underground lair.
+Valerie: Underground vampire lair?
+Valerie: ...
+Valerie: I think it’s best if I stay here.
+Valerie: To watch over the books, just in case.
+Lizzy: You’re not scared of Lady MacDeath are you?
+Valerie: No.
+Valerie: Nothing like that.
+Valerie: I would just... Prefer to stay here with my research materials.
+Barb: ...
+Barb: You’re like a professional monster hunter, why are you such a chicken?
+Valerie: I’m not a monster hunter, I’m a monster researcher.
+Barb: Sure.
+Lizzy: It’s okay, Val. I can take Barb and Noah.
+Lizzy: We’ve gone on adventures just the three of us before.
+Noah: Yeah, like that one time we met the ghost of the guy that invented drink coasters!
+Noah: and then Barb trapped him in hell.
+Barb: He should’ve have stood so close to the cursed amulet, okay?
+Barb: Totally not my fault.
+Lizzy: No this again...
+Valerie: Thank you, Elizabeth.
+Lizzy: Besides, Dagger is going to be there too. We’ll be fine.
+Valerie: ...
+Valerie: That doesn’t make me feel any better.
+Lizzy: Okay people, let’s go!
+Noah: Wooooooo!!!
+Barb: Ugh.
+leave --All-- [animation="Fade Out Down" wait="true"]
 jump midpoint_6/

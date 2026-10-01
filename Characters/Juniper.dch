@@ -25,6 +25,15 @@
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
+},
+"Talking": {
+"export_overrides": {
+"image": "\"res://sprites/Juniper_1.png\""
+},
+"mirror": false,
+"offset": Vector2(10, 300),
+"scale": 1.4,
+"scene": ""
 }
 },
 &"scale": 1.0

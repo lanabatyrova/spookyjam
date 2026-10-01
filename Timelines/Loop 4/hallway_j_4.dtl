@@ -1,2 +1,16 @@
-Juniper: lalalala i can't hear you
+join Juniper (Talking) left
+Juniper: Hey Lizzy, want to head to the exam together?
+Juniper: Barb and Noah are kinda no shows... Hopefully they don’t miss it.
+join Lizzy (Talking) right
+Lizzy: they probably just went there early to get ahead start.
+Juniper: Yeah.
+Lizzy: ...
+Lizzy: so this might sound crazy—
+Juniper: Sorry, Lizzy, I’m going to go into the exam. I really don’t want to be late. I’ll see you in there.
+Lizzy: Oh, okay. Uh.
+Lizzy: I’ll talk to you later.
+Juniper: See ya.
+leave Juniper
+VO: Weird. She’s not normally so...
+VO: Avoidant.
 do GameState.mark_characters_as_spoken(["juniper"])

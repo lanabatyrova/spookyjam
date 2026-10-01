@@ -1,2 +1,8 @@
-chatting with v in the evening loop 1
-do GameState.mark_characters_as_spoken("[\"valerie\"]")
+join Valerie (Talking) left
+join Lizzy (Talking) right
+Valerie: Elizabeth, you should be home resting.
+VO: I don't think she wants to hear anymore about the time loop.
+Lizzy: Yeah, I'm heading there now.
+Lizzy: Thanks again for the watch.
+Valerie: Of course, I meant what I said.
+do GameState.mark_characters_as_spoken()

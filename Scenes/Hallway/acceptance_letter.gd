@@ -18,3 +18,5 @@ func _on_pressed() -> void:
 	Dialogic.start("res://Timelines/item_collected.dtl")
 	GameState.pick_up_item("acceptance_letter")
 	get_parent().update_day(get_parent().current_day)
+	await Dialogic.timeline_ended
+	Dialogic.start("res://Timelines/Loop 5/midpoint_5.dtl")

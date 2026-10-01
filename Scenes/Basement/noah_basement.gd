@@ -10,10 +10,14 @@ func _process(delta: float) -> void:
 	pass
 
 func can_be_convinced() -> bool:
-	return GameState.inventory["belt"] && GameState.facts["n_detention"] && GameState.facts["n_allergy_meds"]
+	return GameState.inventory["belt"] && GameState.facts["n_detention"] && GameState.inventory["allergy_meds"]
 
 func _on_pressed() -> void:
 	if can_be_convinced():
-		Dialogic.start("res://Timelines/Loop 4/basement_n.dtl")
+		Dialogic.start("res://Timelines/Loop 4/basement_n_4.dtl")
+		var emitted_signal
+		while (emitted_signal != "midpoint_updated"):
+			emitted_signal = await Dialogic.signal_event
+		get_parent().update_day(GameState.current_day)
 	else:
 		Dialogic.start("res://Timelines/not_ready_vo.dtl")

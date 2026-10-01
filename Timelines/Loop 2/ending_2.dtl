@@ -1,8 +1,6 @@
 [this ending needs to change a bit cause idk what's going on down there... anyway you just picked up the shakespeare book]
 join Lizzy center
-jump ending_2/
 Lizzy: Alright, time to stop this thing once and for all.
-[wait_input]
 Lizzy: Huh. What's this?
 Lizzy: An annoted Shakespeare??
 join "Lady MacDeath" left [animation="Fade In" length="3.0" wait="true"]
