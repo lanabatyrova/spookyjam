@@ -1,1 +1,4 @@
+audio "res://audio/freesound_community-tape-player-sounds-90780.mp3"
+[wait time="2.0"]
+audio "res://audio/Alarm and Click.mp3"
 waking up on day 2

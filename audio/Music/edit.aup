@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="edit_data" version="1.3.0" audacityversion="2.4.2" sel0="0.4573504574" sel1="0.4573504574" vpos="0" h="0.0000000000" zoom="56.8491833296" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="COMMENTS" value="ISRC: USUAN1900018"/>
+		<tag name="TITLE" value="Unholy Knight "/>
+		<tag name="YEAR" value="2019"/>
+		<tag name="ALBUM" value="Destruction Device"/>
+		<tag name="ARTIST" value="Kevin MacLeod"/>
+		<tag name="GENRE" value="Cinematic"/>
+		<tag name="COMM" value="ISRC: USUAN1900018"/>
+	</tags>
+	<wavetrack name="Lizzy Springs theme edited" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="251921">
+				<waveblock start="0">
+					<simpleblockfile filename="e080863f.au" len="251921" min="-0.222007" max="0.301528" rms="0.037732"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="5.71248312" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="24855">
+				<waveblock start="0">
+					<simpleblockfile filename="e080826d.au" len="4145" min="-0.521178" max="0.467032" rms="0.024317"/>
+				</waveblock>
+				<waveblock start="4145">
+					<simpleblockfile filename="e0808cea.au" len="20710" min="-0.15178" max="0.268175" rms="0.035434"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Lizzy Springs theme edited" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="251921">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808664.au" len="251921" min="-0.217075" max="0.319452" rms="0.031378"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="5.71248312" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="24855">
+				<waveblock start="0">
+					<simpleblockfile filename="e08088f1.au" len="4145" min="-0.339079" max="0.41819" rms="0.024742"/>
+				</waveblock>
+				<waveblock start="4145">
+					<simpleblockfile filename="e0808606.au" len="20710" min="-0.16249" max="0.294674" rms="0.03851"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

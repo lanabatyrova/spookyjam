@@ -17,8 +17,14 @@ Lizzy: Your grief over me is not helpful. AT ALL.
 Lizzy: When will you get it through your thick lucious curls! There’s more going on
 Dagger: …
 Dagger: I apologise for getting in the way.
+leave Dagger [animation="Fade Out" wait="true"]
 Lizzy: Dagger—
 Lizzy: I didn’t.
 Lizzy: …
+[background arg="#000000ff" fade="0.0"]
+leave Lizzy [animation="Fade Out"]
+[background arg="res://assets/to be continued.png" fade="1.0" wait="true"]
+[wait time="2.0"]
 do GameState.next_day()
+[background fade="1.7"]
 jump intro_2/
