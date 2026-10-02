@@ -23,6 +23,19 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="DialogicNode_PortraitContainer0" type="Control" parent="Portraits" unique_id=1820033407]
+layout_mode = 1
+anchor_left = -0.7248264
+anchor_right = -0.52482635
+anchor_bottom = 1.0
+offset_right = -1.5258789e-05
+grow_vertical = 2
+pivot_offset = Vector2(115.2, 648)
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("offleft", "0")
+metadata/_edit_use_anchors_ = true
+
 [node name="DialogicNode_PortraitContainer1" type="Control" parent="Portraits" unique_id=227601608]
 layout_mode = 1
 anchor_right = 0.2
@@ -130,4 +143,16 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_rxdcc")
 container_ids = PackedStringArray("rightmost", "4")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogicNode_PortraitContainer6" type="Control" parent="Portraits" unique_id=236744891]
+layout_mode = 1
+anchor_left = 1.8897569
+anchor_right = 2.089757
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rxdcc")
+container_ids = PackedStringArray("offright", "4")
 metadata/_edit_use_anchors_ = true

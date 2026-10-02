@@ -1,3 +1,5 @@
+[wait time="2.0"]
+audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
 BEEP. BEEP. BEEP.
 [background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="2.0" wait="true"]
 join Lizzy (Talking) center [animation="Fade In"]
@@ -12,9 +14,9 @@ join Lizzy (Full Body) left [animation="Fade In" mirrored="true" move_time="0.5"
 MAIL DELIVERY
 Lizzy: Huh, what’s this?
 leave Lizzy [animation="Fade Out"]
-[background arg="res://Temp Assets/Postcard.png" fade="0.5"]
+[background arg="res://Temp Assets/Postcard.png" fade="1.0"]
 [wait_input]
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5"]
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="1.0"]
 join Lizzy left [animation="Fade In" mirrored="true"]
 Lizzy: I guess once you become a best selling author writing your own letters is small potatoes.
 Lizzy: Well, time to fail this exam. Here goes nothing.
@@ -27,7 +29,7 @@ join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
 join Lizzy righter [animation="Slide From Right" length="1.0"]
 
-Lizzy: [V.O] Wow I really beefed it on that.
+VO: Wow I really beefed it on that.
 update Barb [animation="Bounce" length="0.3" repeat="3"]
 Barb: Finally, we’ve been waiting here for eons.
 [wait time="0.2"]
@@ -36,7 +38,9 @@ Juniper: Barb’s just being mean because she’s excited.
 Lizzy: What’s so important that you’re forcing us to stay at school longer than humanely possible.
 Barb: Guess what I got this morning?
 Lizzy: Uhhh.
+update Juniper [mirrored="true"]
 Juniper: A good nights sleep? You need eight hours, you know.
+update Barb [animation="Shake X" length="1.0"]
 Barb: No and no-
 Lizzy: I didn’t say anything, you can’t no nothing-
 update Barb [animation="Shake X" length="0.3"]
@@ -46,7 +50,7 @@ Juniper: ...
 update Barb [animation="Shake X" length="0.3" repeat="3"]
 Barb: The one I ordered last year? To my exact measurements?
 Barb: It’s all I’ve been talking about for the past week!
-update Juniper [mirrored="true"]
+update Juniper [animation="Shake X" length="2.0"]
 Juniper: Sorry, Babs.
 Lizzy: A lot has happened, and you say a bunch of stuff I don’t pay attention to.
 Barb: Please tell me you’ve at least got your grad dresses.

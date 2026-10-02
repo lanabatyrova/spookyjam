@@ -6,18 +6,18 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 5
+var current_day: int = 0
 var midpoint_reached = false
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
-	"sewing_kit": true,
-	"belt": true,
-	"allergy_meds": true,
+	"sewing_kit": false,
+	"belt": false,
+	"allergy_meds": false,
 	"pocket_shakespeare": false,
 	"silver_nugget": true,
-	"pocket_watch": true,
+	"pocket_watch": false,
 	"acceptance_letter": false
 }
 
@@ -28,7 +28,7 @@ var item_collectible = {
 	"pocket_shakespeare": false,
 	"silver_nugget": false,
 	"pocket_watch": false,
-	"acceptance_letter": true
+	"acceptance_letter": false
 }
 
 # Note: this currently includes both notes added on character pages
@@ -36,19 +36,19 @@ var item_collectible = {
 # and bff photo) to more easily keep track of them. Could be used
 # both for journal display and mini game button appearances?
 var facts = {
-	"v_case_study": true,
-	"v_future_worries": true,
-	"b_camp_story": true,
+	"v_case_study": false,
+	"v_future_worries": false,
+	"b_camp_story": false,
 	"b_clown_school": true,
 	"n_detention": false,
-	"d_brother_death": true,
-	"d_zombie_plan": true,
-	"m_suspition": true, # lmd is causing the loop?
+	"d_brother_death": false,
+	"d_zombie_plan": false,
+	"m_suspition": false, # lmd is causing the loop?
 	"m_absolved": false, #no she's not
 	"m_shakespeare_hate": false,
 	"m_phone": false, #LMD phone number
 	"m_name": false, # LMD name change to Knightmare
-	"j_clairvoyance": true,
+	"j_clairvoyance": false,
 	"j_bffs": false, # bff sticker (clickable, visible always)
 	"j_past_adventures": false # beastiary page (clickable. visible always)
 }

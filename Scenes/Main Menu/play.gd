@@ -18,7 +18,7 @@ func _on_pressed() -> void:
 func start_day(day):
 	match (day):
 		0:
-			Dialogic.start("res://Timelines/previously_on_timeline.dtl")
+			Dialogic.start("res://Timelines//Loop 0/previously_on_timeline.dtl")
 		1:
 			Dialogic.start("res://Timelines/Loop 1/intro_1.dtl")
 		2:

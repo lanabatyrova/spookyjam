@@ -1,4 +1,2 @@
-audio "res://audio/freesound_community-tape-player-sounds-90780.mp3"
-[wait time="2.0"]
-audio "res://audio/Alarm and Click.mp3"
+join Lizzy (Talking) center [animation="Fade In" wait="true"]
 waking up on day 2

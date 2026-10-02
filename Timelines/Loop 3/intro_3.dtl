@@ -1,5 +1,4 @@
 Lizzy: -AaAAAAAAAAHHHHHHHHHH-
-[background arg="res://Temp Assets/0000151.jpg" fade="0.0"]
 join Lizzy center [animation="Fade In Up" length="2.0" wait="true"]
 Lizzy: ...
 Lizzy: Okay. That was a terrible plan.

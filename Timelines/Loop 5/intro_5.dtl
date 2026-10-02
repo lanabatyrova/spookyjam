@@ -1,4 +1,4 @@
-join Lizzy center [animation="Fade In"]
+join Lizzy (Talking) center [animation="Fade In" wait="true"]
 VO: Ugh, I’m really starting to hate my alarm sound.
 VO: Dagger told me some pretty heavy stuff just now...
 VO: I’m not really sure what to do with that information,

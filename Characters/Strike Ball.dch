@@ -17,6 +17,15 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Silver": {
+"export_overrides": {
+"image": "\"res://Temp Assets/temp items/il_1080xN.7412258212_mfbi-1282366530.jpg\""
+},
+"mirror": false,
+"offset": Vector2(0, -40),
+"scale": 0.3,
+"scene": ""
+},
 "Strike Ball": {
 "export_overrides": {
 "image": "\"res://assets/Minigame/sticker_baseball_horizontal.png\""

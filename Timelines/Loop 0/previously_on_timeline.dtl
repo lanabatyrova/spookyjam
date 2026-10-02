@@ -1,5 +1,6 @@
-audio music "res://audio/Stay the Course.mp3"
 [background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+[wait time="1.0"]
+audio music "res://audio/Stay the Course.mp3"
 Noah: Previously on Lizzy Springs Monster Hunter and Werewolf...
 [background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
 join Valerie (VO) center [animation="Fade In Up" length="4.0"]
@@ -16,10 +17,10 @@ update "King Fear" [animation="Bounce"]
 "King Fear": Blood will have blood!
 update "King Fear" [animation="Bounce"]
 "King Fear": To be or not to be!
-update Barb [animation="Bounce"]
+update Barb [animation="Shake Y" length="1.0"]
 Barb: He’s just saying random quotes!!
-leave --All-- [animation="Fade Out" length="0.2"]
-[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.2" wait="true"]
+leave --All-- [animation="Fade Out"]
+[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.5" wait="true"]
 join Valerie (VO) leftmost [animation="Fade In" wait="true"]
 Valerie: ...Who is destined to defeat the six vampire lords and prevent the end of days from wiping out every single non-monster in existence.
 leave Valerie [animation="Fade Out" wait="true"]
@@ -31,9 +32,9 @@ join Juniper righter [animation="Fade In" length="0.3" mirrored="true"]
 [background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.3" wait="true"]
 update Noah [animation="Bounce"]
 Noah: So, the entire fate of the world depends on if Lizzy can pass Mr. Burke’s english final?
-update Lizzy [animation="Bounce"]
+update Lizzy [animation="Shake X" length="1.0"]
 Lizzy: This blows.
-update Barb [animation="Bounce"]
+update Barb [animation="Bounce" repeat="2"]
 Barb: Screw the english final, what about grad?
 leave --All-- [animation="Fade Out" length="0.8"]
 [background arg="res://Temp Assets/kitchen location.png" fade="0.8" wait="true"]
@@ -50,11 +51,11 @@ leave --All-- [animation="Fade Out"]
 [background arg="res://Temp Assets/dead lizzy.png" fade="2.0" wait="true"]
 [wait time="1.0"]
 Juniper: No...
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.5" wait="true"]
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="2.0" wait="true"]
 join Dagger right [animation="Fade In" length="1.0"]
 Dagger (Talking): There’s more at play than you and I, dearest Elizabeth.
-leave Dagger [animation="Fade Out" length="0.2" wait="true"]
-[background arg="res://Temp Assets/baseball-field-night-260nw-2508561219-3781484238.jpg" fade="0.5" wait="true"]
+leave Dagger [animation="Fade Out" length="1.0"]
+[background arg="res://Temp Assets/baseball-field-night-260nw-2508561219-3781484238.jpg" fade="1.0" wait="true"]
 AND THE VERMILION WOLVES TAKE ANOTHER VICTORY-
 join "King Fear" center [animation="Slide In Up" length="0.7"]
 "King Fear": King Fear\: Tonight is the day you die Springs!! Now is the winter of your discontent!
@@ -81,10 +82,10 @@ leave --All-- [animation="Fade Out"]
 [wait time="0.5"]
 [background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.5" wait="true"]
 join Lizzy center [animation="Zoom In"]
-Lizzy: So, what? I’ve got five more to go?
+Lizzy (Talking): So, what? I’ve got five more to go?
 Piece of cake.
 [background arg="#000000ff" fade="0.5"]
 leave Lizzy [animation="Fade Out" wait="true"]
 audio music - [fade="0.5"]
 [wait time="1.0"]
-jump prologue_timeline/
+jump prologue_1/

@@ -1,12 +1,15 @@
-[background arg="res://Temp Assets/Smooth Notebook Paper.PNG" fade="0.0"]
+[wait time="1.0"]
+audio "res://audio/freesound_community-tape-player-sounds-90780.mp3"
+[wait time="7.0"]
+[background arg="res://Temp Assets/Smooth Notebook Paper.PNG" fade="1.0"]
 audio music "res://audio/Music/Lizzy Springs theme backwards 3.wav" [loop="false"]
 join Logo center [animation="Zoom Center In" length="5.0" wait="true"]
 [wait time="2.5"]
-leave Logo [animation="Fade Out" length="1.0"]
-[background arg="#000000ff" fade="1.5"]
-[wait time="2.0"]
-[BEEP BEEP BEEP]
-[background fade="2.0" wait="true"]
+leave Logo [animation="Zoom Center Out" length="1.0"]
+[background arg="#000000ff" fade="1.5" wait="true"]
+[wait time="5.0"]
+audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
+BEEP. BEEP. BEEP.
 if {cur_day} == "1":
 	jump intro_1/
 elif {cur_day} == "2":

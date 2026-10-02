@@ -21,11 +21,11 @@ scale = Vector2(1.44875, 1.2228464)
 texture = ExtResource("2_cpdem")
 
 [node name="DaggerButton" type="TextureButton" parent="." unique_id=528494076]
-offset_left = 822.0
-offset_top = 111.0
-offset_right = 1852.0
-offset_bottom = 2162.0
-scale = Vector2(0.22271827, 0.22271827)
+offset_left = 733.00006
+offset_top = 162.0
+offset_right = 1644.0
+offset_bottom = 1816.0
+scale = Vector2(0.2835533, 0.2835533)
 texture_normal = ExtResource("2_mfimy")
 script = ExtResource("3_cpdem")
 

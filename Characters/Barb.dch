@@ -12,7 +12,7 @@
 },
 &"default_portrait": "Full Body",
 &"description": "",
-&"display_name": "Barb: ",
+&"display_name": "Barb:  ",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

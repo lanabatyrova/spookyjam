@@ -1,57 +1,111 @@
-(street)
+[later]
+[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="1.0"]
+join Juniper left [animation="Fade In" length="1.0" mirrored="true"]
+join Lizzy right [animation="Fade In" length="1.0" wait="true"]
 Lizzy: hey, Juniper. I am really sorry you didn’t get in. I know it meant a lot to you.
+update Juniper [mirrored="false"]
 Juniper: it’s okay, honestly. I’d rather be here with you and where I can help you the most.
 Lizzy: The stuff I was saying earlier, about the prophecy, I’m mostly fine with it. You don’t have to worry about me or anything.
 Juniper: I do. And it’s okay. If you’re taking care of everyone, who’s taking care of you?
-Lizzy: ..
+update Lizzy [mirrored="true"]
+Lizzy: ...
+update Lizzy [mirrored="false"]
 Lizzy: Yeah…
 Juniper: I’ll see you tomorrow.
 Lizzy: See you tomorrow.
-[Juniper leaves]
-Lizzy: [V.O] man, I’m a terrible friend, celebrating Juniper’s misfortune.
-Lizzy: oh hey, she dropped something.
+update Juniper offleft [mirrored="true" move_time="2.0"]
+[wait time="2.0"]
+VO: man, I’m a terrible friend, celebrating Juniper’s misfortune.
+update Lizzy midright [move_time="0.5"]
+VO: oh hey, she dropped something.
+join Item (Silver) center [animation="Slide In Up" length="0.6" wait="true"]
 
-Lizzy: this looks important. I better give it back to her.
+VO: this looks important. I better give it back to her.
+leave Item [animation="Fade Out Down" wait="true"]
+update Lizzy left [move_time="0.5"]
 Lizzy: Juniper!
-[Dagger appears]
+join Dagger lefter [animation="Slide From Left" mirrored="true"]
+update Lizzy right [animation="Bounce" move_time="0.2"]
 Dagger: Elizabeth.
+update Lizzy [animation="Bounce"]
 Lizzy: Jesus Christ, Dagger. What the hell? You can’t just sneak up on me like that. What happened to never seeing each other again?
+update Dagger left [move_time="0.5"]
 Dagger: I couldn’t stay away. Also I came to warn you.
 Dagger: Do not go to your graduation ceremony tomorrow. Stay home and keep your loved ones close.
-Preferably with your windows boarded up. I will retrieve you when it’s safe to do so.
+update Dagger [mirrored="false"]
+Dagger: Preferably with your windows boarded up. I will retrieve you when it’s safe to do so.
+update Lizzy [animation="Shake X" length="0.3"]
 Lizzy: Is that a threat?
+update Dagger [mirrored="true"]
 Dagger: No, I assure you I have the best of intentions. If something were to you harm you... I’d never forgive myself.
 Lizzy: Does this have to do with Lady MacDeath? Is she behind all the bad luck?
-Dagger: Uh, bad luck? I’m not too sure what you mean by that, but I have already said too much.
+Dagger: Uh, bad luck? I’m not too sure what you mean by that.
+update Dagger [mirrored="false"]
+Dagger: but I have already said too much.
 Dagger: Farewell, Lizzy Springs. Heed my warning. Please
+leave Dagger [animation="Slide To Left"]
+[wait time="0.4"]
+update Lizzy lefter [wait="true" move_time="0.5"]
 Lizzy: Dagger! Wait!
+update Lizzy left [wait="true" move_time="0.5"]
 
 
-Lizzy: [V.O] ugh. I hate when he does that.
-Lizzy: He thinks it makes him all mysterious and unattainable. Well, it’s just annoying.
+VO: ugh. I hate when he does that.
+VO: He thinks it makes him all mysterious and unattainable. Well, it’s just annoying.
 
-Lizzy: If Dagger felt the need to warn me... I better go the graveyard and ask him for more details.
+VO: If Dagger felt the need to warn me... I better go the graveyard and ask him for more details.
 Lizzy: Time to wolf out.
+update Lizzy (Half Wolf) [animation="Tada"]
+[background arg="#ffffffff" fade="0.2"]
+[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="0.2" wait="true"]
+[wait time="1.0"]
+leave Lizzy [animation="Slide To Left" length="1.0" wait="true"]
+leave --All-- [animation="Instant Out" length="0.1"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+[wait time="1.0"]
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.5" wait="true"]
+join Lizzy (Half Wolf) center [animation="Slide From Left" length="1.0" mirrored="true"]
 
 
 
 Lizzy: Phew, that was farther away than I remembered.
 Lizzy: Dagger! I know you’re around here somewhere
-Dagger: Lizzy? You really shouldn’t be here.
+join Dagger right [animation="Slide From Right"]
+update Lizzy left [mirrored="true" move_time="0.2"]
+Dagger: Lizzie? You really shouldn’t be here.
 Lizzy: What is so bad that I can’t handle it? I killed your boss, remember?
 Dagger: Technically Lady is my boss-
+update Dagger [animation="Shake X" length="0.3" mirrored="true"]
 "Lady MacDeath": [evil laughter]
+update Lizzy [animation="Bounce"]
 Lizzy: I knew it. I knew she was behind this.
+join "Lady MacDeath" right [animation="Slide From Right" wait="true" mirrored="true"]
+update Dagger center [move_time="0.2"]
 "Lady MacDeath": Why hello Elizabeth Springs, what a pleasant surprise.
 "Lady MacDeath": Dagger my darling, you shouldn’t have.
 Lizzy: You did this on purpose?
+update Dagger [mirrored="false"]
 Dagger: I didn’t, I swear to you. I warned you away. Why can’t you listen to me when I tell you to do something?
-"Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim,
+"Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim...
+update "Lady MacDeath" center [move_time="0.5"]
+[wait time="0.5"]
+update Dagger right [animation="Bounce" mirrored="false"]
+[wait time="0.5"]
 label END
+update "Lady MacDeath" [animation="Heartbeat" length="1.0" repeat="3" mirrored="false"]
 "Lady MacDeath": Of my undead army!
+[background arg="#000000ff" fade="0.2" wait="true"]
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+[background arg="#000000ff" fade="0.2" wait="true"]
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+[background arg="#000000ff" fade="0.2" wait="true"]
+[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+update Lizzy [mirrored="false"]
 Lizzy: Crap!
 Lizzy: [V.O] This is bad!
 do GameState.next_day()
-[background fade="0.0"]
-leave --All--
-jump intro_1/
+leave --All-- [animation="Fade Out" length="0.2"]
+[background arg="#000000ff" fade="0.2" wait="true"]
+[wait time="1.0"]
+do GameState.next_day()
+jump rewind/
