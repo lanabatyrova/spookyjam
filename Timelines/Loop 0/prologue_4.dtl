@@ -4,9 +4,11 @@ join Juniper left [animation="Fade In" length="1.0" mirrored="true"]
 join Lizzy right [animation="Fade In" length="1.0" wait="true"]
 Lizzy: hey, Juniper. I am really sorry you didn’t get in. I know it meant a lot to you.
 update Juniper [mirrored="false"]
-Juniper: it’s okay, honestly. I’d rather be here with you and where I can help you the most.
+Juniper: it’s okay, honestly. I’d rather be here with you and where I can help the most.
 Lizzy: The stuff I was saying earlier, about the prophecy, I’m mostly fine with it. You don’t have to worry about me or anything.
-Juniper: I do. And it’s okay. If you’re taking care of everyone, who’s taking care of you?
+Juniper: I do.
+Juniper:  And it’s okay.
+Juniper:  If you’re taking care of everyone, who’s taking care of you?
 update Lizzy [mirrored="true"]
 Lizzy: ...
 update Lizzy [mirrored="false"]
@@ -30,7 +32,8 @@ Dagger: Elizabeth.
 update Lizzy [animation="Bounce"]
 Lizzy: Jesus Christ, Dagger. What the hell? You can’t just sneak up on me like that. What happened to never seeing each other again?
 update Dagger left [move_time="0.5"]
-Dagger: I couldn’t stay away. Also I came to warn you.
+Dagger: I couldn’t stay away.
+Dagger:  Also I came to warn you.
 Dagger: Do not go to your graduation ceremony tomorrow. Stay home and keep your loved ones close.
 update Dagger [mirrored="false"]
 Dagger: Preferably with your windows boarded up. I will retrieve you when it’s safe to do so.
@@ -38,12 +41,12 @@ update Lizzy [animation="Shake X" length="0.3"]
 Lizzy: Is that a threat?
 update Dagger [mirrored="true"]
 Dagger: No, I assure you I have the best of intentions. If something were to you harm you... I’d never forgive myself.
-Lizzy: Does this have to do with Lady MacDeath? Is she behind all the bad luck?
-Dagger: Uh, bad luck? I’m not too sure what you mean by that.
+Lizzy: Does this have to do with Lady MacDeath?
 update Dagger [mirrored="false"]
-Dagger: but I have already said too much.
-Dagger: Farewell, Lizzy Springs. Heed my warning. Please
+Dagger: I have already said too much.
+Dagger: Farewell, Lizzy Springs. Heed my warning.
 leave Dagger [animation="Slide To Left"]
+Dagger: Please.
 [wait time="0.4"]
 update Lizzy lefter [wait="true" move_time="0.5"]
 Lizzy: Dagger! Wait!
@@ -68,15 +71,15 @@ join Lizzy (Half Wolf) center [animation="Slide From Left" length="1.0" mirrored
 
 
 
-Lizzy: Phew, that was farther away than I remembered.
+VO: Phew, that was farther away than I remembered.
 Lizzy: Dagger! I know you’re around here somewhere
 join Dagger right [animation="Slide From Right"]
 update Lizzy left [mirrored="true" move_time="0.2"]
 Dagger: Lizzie? You really shouldn’t be here.
 Lizzy: What is so bad that I can’t handle it? I killed your boss, remember?
-Dagger: Technically Lady is my boss-
+Dagger: Technically Lady is my boss—
 update Dagger [animation="Shake X" length="0.3" mirrored="true"]
-"Lady MacDeath": [evil laughter]
+[evil laughter]
 update Lizzy [animation="Bounce"]
 Lizzy: I knew it. I knew she was behind this.
 join "Lady MacDeath" right [animation="Slide From Right" wait="true" mirrored="true"]
@@ -85,7 +88,8 @@ update Dagger center [move_time="0.2"]
 "Lady MacDeath": Dagger my darling, you shouldn’t have.
 Lizzy: You did this on purpose?
 update Dagger [mirrored="false"]
-Dagger: I didn’t, I swear to you. I warned you away. Why can’t you listen to me when I tell you to do something?
+Dagger: I didn’t, I swear to you. I warned you away.
+Dagger: Why don't you ever listen to me?
 "Lady MacDeath": I was hoping to see you perish with the rest of the student body tomorrow, but you’ll make a wonderful first victim...
 update "Lady MacDeath" center [move_time="0.5"]
 [wait time="0.5"]
@@ -102,10 +106,11 @@ update "Lady MacDeath" [animation="Heartbeat" length="1.0" repeat="3" mirrored="
 [background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
 update Lizzy [mirrored="false"]
 Lizzy: Crap!
-Lizzy: [V.O] This is bad!
+VO: This is bad!
 do GameState.next_day()
 leave --All-- [animation="Fade Out" length="0.2"]
 [background arg="#000000ff" fade="0.2" wait="true"]
+[background arg="res://assets/to be continued.png" fade="7.0"]
 [wait time="1.0"]
 do GameState.next_day()
 jump rewind/

@@ -1,122 +1,180 @@
 [dress shopping montage]
 [background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="1.0"]
-join Juniper (Talking) midleft [animation="Fade In" length="1.0"]
-join Barb (Talking) lefter [animation="Fade In" length="1.0"]
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
+join Foreground center [z_index="1"]
+join Juniper (Talking) left [animation="Fade In" length="1.0"]
+join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
 join Lizzy (Talking) righter [animation="Fade In" length="1.0" wait="true"]
-Lizzy: I never want to see a dress again
+Lizzy: I never want to see a dress again.
 Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
-join Noah (Barb's Phone) midright [animation="Slide In Up"]
+join Noah (Barb's Phone) center [animation="Slide In Up" z_index="2"]
 Noah: I’m still upset you didn’t invite me.
-Juniper: sorry, but you were in detention. What did you even do anyway?
+Juniper: sorry, but you were in detention.
+Noah: And now I'm in the hospital.
+Noah: Go figure.
+Lizzy: What did you even do anyway?
 
 
-Noah: Sigh. It was going to be awesome. [insert explanation of prank?]
-Juniper: and you needed glitter for that?
-Noah: Innovators are often hated because they’re ahead of their time.
+Noah: Sigh.
+Noah: I guess I'll tell you because it's got to live on in legend.
+Noah: Imagine everyone sitting at graduation.
+Noah: And suddenly, without warning,
+Noah: they're all covered from head to toe,
+Noah: in glitter.
+Lizzy: ...
+Juniper: Glitter?
+Barb: That's diaboloical.
+Barb: Do you know how hard it is to get glitter out of my hair?
+Noah: It would've been awesome.
 update Barb [animation="Bounce"]
-Barb: If Kenzie didn’t stop you from shooting off what ever hairbrained device you whipped up, I would’ve made sure you would regret every decision you’ve ever made.
-Lizzy: she’s been like this all day. Very intense about grad.
+Barb: If Kenzie hadn't t stop you from shooting off that awful machine,
+Barb: I'd personally made sure you'd regret being born.
+Lizzy: she’s been like this all day.
+Lizzy: Like bridezilla but for grad.
 update Barb [animation="Bounce" repeat="3"]
 Barb: Most important night of our entire lives!!
 Lizzy: it’s pretty wild that we’re going to be out of VHS soon. Like, we’re going to be adults. What.
-Juniper: I wouldn’t worry too much about that. Growing up has its advantages.
+Juniper: I wouldn’t worry too much about that.
+Juniper: Growing up has its advantages.
+Noah: Like being able to legally drink!
+Noah: and buy cigarettes!
+Juniper: I was thinking like, moving out and becoming your own person.
+Noah: That's cool too.
 Lizzy: and after everything we’ve been through the past two years?
-Barb: Yeah, like the time we all lost our memory.
-Noah: That was awesome.
+Barb: Ugh, we can never catch a break.
+Barb: The time we all lost our memory and I thought I was a gas station clerk?
+Barb: They still haven't paid me for that shift, by the way.
+Noah: Oh, man, good times.
 update Juniper [mirrored="true"]
 Juniper: Or the time we swapped bodies?
 Lizzy: Don’t remind me…
 update Barb [animation="Shake X" length="0.7"]
-Barb: That was the worst week of my life.
-Noah: My favorite Vermilion Hills weird moment was when Donny was part of our group because of magic fake memories. He was chill.
-Barb: He tried to kill you??
+Barb: Worst week of my life.
+Noah: My favorite Vermilion Hills weird moment was when Donny was part of our group because of magic fake memories.
+Barb: He was chill.
+Barb: He tried to kill you?
 Noah: I mean, yeah, but ultimately I knew he was a good guy deep down.
 update Juniper [mirrored="false"]
-Juniper: He only tried to kill you because he wanted to replace you, so honestly, kind of a compliment.
+Juniper: He only tried to kill you because he wanted to replace you,
+Juniper: kind of a compliment.
 Barb: You’re all so messed up.
 update Lizzy [mirrored="true"]
 Lizzy: Hm…
-Juniper: What’s up, Lizzy? You’re not normally this quiet.
+Juniper: What’s up, Lizzy?
+Juniper: You haven't shared your favorite memory yet.
 update Lizzy [animation="Shake X" length="1.0"]
-Lizzy: I’m just trying to think about my favorite memory since coming here.
+Lizzy: It's just really hard to choose.
 update Noah [animation="Bounce" repeat="2"]
-Noah: Um, well let’s see, there was the ants that got super big, and that evil puppets, King Fear crashing the school play and almost eating Barb
+Noah: Um, well let’s see, there was the ants that got super big,
+and the evil puppets,
+Noah: King Fear crashing the school play and almost eating Barb.
 update Barb [animation="Bounce"]
-Barb: That was really scary for me, okay??
+Barb: That was really scary for me, okay?
 update Barb [animation="Bounce" mirrored="true"]
 Barb: Also ruined my chance to be scouted by that talent agent.
-Juniper: The ghost in that apartment complex, or maybe the book that stole faces? You looked like you had fun shredding it.
+Barb: I killed at Lady MacBeth.
+Juniper: The ghost in that apartment complex,
+Juniper: or maybe the book that stole faces?
+Noah: I've never seen Valerie so eager to burn a book before.
 update Barb [mirrored="false"]
-Barb: I bet she’s going to choose the fish monster one. Or even the time we all got our voices stolen.
+Barb: I bet she’s going to choose the fish monster.
 update Lizzy [mirrored="false"]
-Lizzy: I don’t know. Can I say all of them?
+Lizzy: Can I say all of them?
 Juniper: seems like a cop out.
-Lizzy: Yeah, but, a lot’s been on my mind lately. Thinking about all this stuff is making it seem like it’s over.
-Noah: What? Like the supernatural stuff is going to quit messing with you. You’re a magnet.
-Barb: Why would that be a bad thing, anyway? You can start focusing on getting a real job.
+Lizzy: Yeah, but... Thinking about all this stuff is making it seem like it’s over.
+Noah: What? You're a weird stuff magnet!
+Barb: Why would not dealing with weird stuff be bad?  You can start focusing on getting a real job.
 update Noah [animation="Bounce"]
 Noah: Real jobs are for chumps.
-Lizzy: I know defeating King Fear or whatever was supposedly an important step into defeating the vampire lords, but what am I supposed to do? Do I wait for them to come to me?
-Juniper: Hm. That’s a good point. You can’t really send out an ad in the paper.
+Noah: I plan on being unemployed forever!!!!!!!
+Barb: Aren't you busy like, dying or something, hospital boy?
+Lizzy: I know defeating King Fear or whatever was supposedly an important step into defeating the vampire lords, but what am I supposed to do?
+Lizzy: Wait for them to come to me?
+Juniper: Hm. You can’t really send out an ad in the paper.
 Barb: Maybe you can ask your hot vampire boyfriend.
 update Lizzy [animation="Bounce"]
 update Lizzy [animation="Shake X"]
 Lizzy: he’s not my boyfriend.
 update Barb [mirrored="true"]
-Barb: Sure, whatever. What you do in your own time is your own business, we don’t care.
+Barb: Sure, whatever.
+Barb: What you do in your own time is your own business, we don’t care.
 Noah: It kinda sounds like you care.
 update Barb [animation="Bounce" repeat="3" mirrored="false"]
 Barb: I don’t care! Why would I care?
-Juniper: Dagger might be a good way to figure out what the vampires are doing, though.
+Juniper: Barb's interest in your love life aside,
+Juniper: Dagger might be a good way to figure out what the vampires are doing.
 update Lizzy [mirrored="true"]
 Lizzy: eh, we sort of had a falling out.
-Juniper: What? You didn’t tell us anything.
+Juniper: What?
+Juniper: Why didn't you tell us?
+Noah: Wait what's happening, the nurse just gave me more jello.
 update Lizzy [mirrored="false"]
 Lizzy: he said something about werewolves and vampires not working out together and the vanished dramatically.
 Lizzy: It’s really hard to end a conversation on the high ground with that guy.
-Barb: So he’s potentially available?
+Barb: So... he’s potentially available?
 update Lizzy [animation="Shake X" length="1.0"]
 Lizzy: Ew. Don’t even think about it.
 Noah: Your last boyfriend ended up being a shapeshifter, Barb. I thought that would’ve thrown you off supernatural creatures.
 update Barb [animation="Bounce"]
-Barb: I’m sorry for being human, okay?
-Lizzy: It’s been a whole week and a bit since anything weird has happened, and it’s driving me crazy.
+Barb: I’m sorry for being opportunistic, okay?
+Lizzy: I just wish something would happen already.
 Lizzy: Usually some, like, portal would open up somewhere and a demon would come out and eat a baby.
-Barb: You want a demon to eat a baby? God, you’re sick in the head.
-Lizzy: I don’t WANT a demon to eat a baby but at least then I wouldn’t be waiting for it to happen. And I know how to deal with demons.
+Barb: You want a demon to eat a baby?
+Barb: God, you’re sick.
+Lizzy: I don’t WANT a demon to eat a baby but at least then I wouldn’t be waiting for it to happen.
+Lizzy: And I know how to deal with demons.
+Noah: Riddles.
+Lizzy: And snakes and ladders.
+Noah: snakes and ladders and snakes and ladders and—
+Barb: Hey, remember who's phone your on.
+Barb: Keep testing my patience and I'm severing the connection.
+Noah: ...
 Juniper: Sometimes things don’t happen, and that can be scarier than things happening.
-Lizzy: Something always happens! Ever since I got bitten by the mayor who was secretly a werewolf.
-Noah: I still can’t believe he came from a long line of werewolves with a long family history of protecting Vermilion Hills.
+Lizzy: Something always happens!
+Lizzy: Ever since I got bitten by the mayor who was secretly a werewolf.
+Noah: I still can’t believe that he was apart of a long line of werewolves that protected Vermilion Hills from the vampire lords.
 Noah: I guess that’s why he had such good polling numbers.
 update Lizzy [mirrored="true"]
-Lizzy: When I held him in my arms as he died and he told me it was my job now, and then Valerie showed up and told me that I was part of this prophecy…
-Barb: Are you going to tell us you want to run for mayor? Because I could totally help with your campaign.
-Barb: I actually have a few ideas. You will have to reinvent every part of your personality, though.
+Lizzy: When I held him in my arms as he died and he told me it was my job now,
+Lizzy: and then like a day after that, Valerie showed up and told me that I was part of this prophecy…
+Barb: Are you going to tell us you want to run for mayor?
+Barb: Because I could totally help with your campaign.
+Barb: I actually have a few ideas.
+Barb: You'll have to reinvent every part of your personality, though.
 update Juniper [mirrored="true"]
-Juniper: I don’t think that would make you a very good campaign manager.
+Juniper: barb, I'm your friend so I'm going to be real with you,
+Juniper: You'd be a terrible campaign manager.
 update Lizzy [mirrored="false"]
-Lizzy: I’m not running for Mayor. I’m saying that it’s a lot of responsibility to have the fate of the entire living world on my shoulders.
+Lizzy: I’m not running for Mayor.
+I’m saying that it’s a lot of responsibility to have the fate of the entire world on my shoulders.
 update Juniper [mirrored="false"]
-Juniper: We’re all here for you, Lizzy. You aren’t saving the world alone.
-Juniper: And King Fear died super easily, so the rest of the vampire lords are probably going to be swiss cheese pretty soon.
-Lizzy: But half of you are leaving to go to Emmerdale, and Noah’s taking a gap year, and I’ll be stuck in some class I don’t even want to take.
-Barb: You could still try and get into Emmerdale’s regular admission period. It opens up next month, I double checked.
-Lizzy: No. Valerie said I shouldn’t leave the town. It’s too risky.
+Juniper: We’re all here for you, Lizzy.
+Juniper: You aren’t saving the world alone.
+Barb: The entire world is a bit of an exaggeration.
+Noah: King Fear died super easily, so like, the rest of the vampire lords are gonna be swiss cheese, no problem.
+Lizzy: But half of you are leaving to go to Emmerdale, and Noah’s taking a gap year,
+Lizzy: and I’ll be stuck in some class Val faxed to me and I don’t even want to take.
+Barb: You could still try and get into Emmerdale’s regular admission period.
+Barb: It opens up next month, I double checked the website.
+Lizzy: Valerie said I shouldn’t leave the town.
+Lizzy: It’s too risky.
 update Barb [animation="Bounce"]
 Barb: That’s so unfair!
 Noah: Hey, don’t worry Lizzy, since I’m taking a year off, I can make sure there’s never a dull moment.
 update Lizzy [mirrored="true"]
-Lizzy: kill me now.
+Lizzy: ....
 Juniper: I didn’t get into Emmerdale.
 update Lizzy [mirrored="false"]
 Everyone: \: …
 update Lizzy [animation="Bounce"]
-Lizzy: What?!? You didn’t get in?
+Lizzy: What?!
 update Barb [animation="Bounce"]
 Barb: Bullshit.
-Juniper: No, I got the rejection letter this morning.
+Noah: Burn the school down!
+Juniper: I got the rejection letter this morning.
 update Juniper [mirrored="true"]
-Juniper: I’m not bummed about it or anything, I didn’t really want to go. It’s too “establishment” for me.
+Juniper: I’m not bummed about it or anything, I didn’t really want to go.
+Juniper: It’s too “establishment” for me.
 Lizzy: I’m sorry.
 VO: This is awesome!
 Lizzy: Are you going to go to VCR instead?
@@ -124,35 +182,67 @@ update Juniper [mirrored="false"]
 update Juniper [mirrored="false"]
 Juniper: Yeah, I was thinking about it.
 update Barb [mirrored="true"]
-Barb: That sucks. Now I’m going to be all alone! All my new friends are going to be clowns, literally!
+Barb: That sucks. Now I’m going to be all alone!
+Barb: All my new friends are going to be clowns, literally!
 Lizzy: Wait, sorry, say that again?
 update Barb [mirrored="false"]
 Barb: ...
 update Barb [mirrored="true"]
 Barb: I didn’t tell you guys because I was sort of embarrassed, but I got into the clown program.
 Noah: No way. You’re going to become a clown?
+Noah: And you didn't tell me????
+Noah: I was literally voted class clown four years in a row!
 update Barb [animation="Bounce" mirrored="false"]
-Barb: Clowns are very important to society and have a strict code in which they operate.
-Barb: But no, I don’t want to become a clown. I’m going to become an actor.
+Barb: Clowns aren't all flowers that spray water and pulling pranks and making balloon animals,
+Barb: they're  important to society and have a strict code of ethics.
+Barb: But no, I'm not becoming a clown.
+Barb: I’m becoming an actor.
+Juniper: There's a difference?
 Lizzy: Uh, how does becoming a clown make you an actor?
 Barb: There's not a lot of jobs in hollywood right now for traditional roles, so I’m going to go for the ones that have a gap in the market.
 Juniper: Which means?
 update Barb [animation="Shake Y" length="1.0"]
-Barb: Zombies, scary ghosts, creepy ghouls. I figure I have enough experience with the real things to sell it.
-Noah: Wow, Barb. I knew you were a horror movie nut, but I didn’t think you’d go so far to become part of the industry. I’m impressed.
+Barb: Zombies, scary ghosts, creepy ghouls.
+Barb: I figure I have enough experience with the real things to sell it.
+Noah: Wow, Barb. I knew you were a horror movie nut, but I didn’t think you’d go so far to become part of the industry.
+Noah: I’m impressed.
 Barb: Your approval means nothing to me.
-Noah: yeah, I know. Still impressed.
+Noah: yeah, I know.
+Noah: Still impressed.
 Barb: thanks.
-Lizzy: We can all send each other electronic emails or chat on MySpace. And you could visit on your breaks, right?
+Lizzy: We can all send each other electronic mails or chat on MySpace.
+Lizzy: And you could visit on your breaks, right?
 Barb: I guess.
 update Barb [animation="Shake X" length="1.0"]
 Barb: Ugh. It’s so hard to chase your dreams.
-Lizzy: By the way, my mom offered to drive all of us tomorrow, if you want.
+Barb: Us splitting up means that tomorrow is even more important!
+Barb: Juniper, please tell me you managed to get a better date than Noah.
+Noah: That's just being mean for no reason.
+Juniper: We're just going as friends, incase you were worried.
+Barb: I'm always worried for my friend's love life.
+Noah: Like you've got a better date than me. I'm the best.
+Barb: I'm going with Dave.
+Barb: Yeah. Hot Dave.
+Lizzy: Isn't he in the year below us?
+Barb: The pool is very limited so we all have to make compromises.
+Barb: His brother is totally cool to go with you, Lizzy.
+Lizzy: I'll pass...
+Barb: What ever.
+Lizzy: Speaking of, my mom offered to drive all of us tomorrow.
+Lizzy: To graduation not the dance.
+Lizzy: since they're in the same place.
 update Barb [animation="Bounce" mirrored="true"]
-Barb: I’m still taking my Limo. If my dress is ruined, I’ll just have to make do in other ways.
+Barb: I’m still taking my Limo.
+Barb: My new dress isn't as glamorous so I’ll just have to make do in other ways.
 Noah: I’ll take that ride.
-Juniper: Me too. Saves me from having to walk.
-Lizzy: Okay, see you all bright and early.
+Noah: Not the limo.
+Barb: You weren't invited anyway!
+Noah: Hey wait don'thangup—
+leave Noah
+Barb: Men!
+Juniper: That's really nice of your mom.
+Lizzy: she felt bad abandonning me for a week to go relax in the tropics.
+Lizzy: and she wouldn't let me borrow the car.
 leave --All-- [animation="Fade Out" length="0.4"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 jump prologue_4/

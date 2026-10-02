@@ -30,6 +30,7 @@ directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "Characters/Item": "res://Characters/Item.dch",
 "Dagger": "res://Characters/Dagger.dch",
+"Foreground": "res://Characters/Foreground.dch",
 "Item": "res://Characters/Strike Ball.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
