@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c2ppsa32t31mx"
+path="res://.godot/imported/Barb_1_bitmap.png-dc5e1fed0d91af701b4ac1c1ba0f94b4.res"
+
+[deps]
+
+source_file="res://assets/People/Barb_1_bitmap.png"
+dest_files=["res://.godot/imported/Barb_1_bitmap.png-dc5e1fed0d91af701b4ac1c1ba0f94b4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

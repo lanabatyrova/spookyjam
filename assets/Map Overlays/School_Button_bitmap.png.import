@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dg1hp15y6wmpx"
+path="res://.godot/imported/School_Button_bitmap.png-4b1d8bb3defa2a80dea04f42b1a4c89c.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays/School_Button_bitmap.png"
+dest_files=["res://.godot/imported/School_Button_bitmap.png-4b1d8bb3defa2a80dea04f42b1a4c89c.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

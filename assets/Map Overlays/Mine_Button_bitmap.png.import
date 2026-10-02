@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b335mj8nbhdde"
+path="res://.godot/imported/Mine_Button_bitmap.png-9597e853600fce1ea90032cb50bbefce.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays/Mine_Button_bitmap.png"
+dest_files=["res://.godot/imported/Mine_Button_bitmap.png-9597e853600fce1ea90032cb50bbefce.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

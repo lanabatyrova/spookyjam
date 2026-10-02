@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bcq4uyags6rw2"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_nxmwh"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="2_fwf7h"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/People/Lady-MacDeath_1.png" id="2_fwf7h"]
 [ext_resource type="Texture2D" uid="uid://c3bisqgolpst7" path="res://sprites/King Fear Temp.png" id="3_qqms2"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="4_qqms2"]
-[ext_resource type="Texture2D" uid="uid://cnobl5w03ydu0" path="res://assets/Lizzy_1.png" id="5_nxmwh"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="4_qqms2"]
+[ext_resource type="Texture2D" uid="uid://cnobl5w03ydu0" path="res://assets/People/Lizzy_1.png" id="5_nxmwh"]
 
 [node name="Node2D" type="Node" unique_id=720099633]
 script = ExtResource("1_nxmwh")

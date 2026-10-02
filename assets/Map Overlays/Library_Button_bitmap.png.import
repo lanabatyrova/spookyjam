@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://brerwqc6i2uq"
+path="res://.godot/imported/Library_Button_bitmap.png-65452efa4df2b7270ca88bcfddfec159.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays/Library_Button_bitmap.png"
+dest_files=["res://.godot/imported/Library_Button_bitmap.png-65452efa4df2b7270ca88bcfddfec159.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

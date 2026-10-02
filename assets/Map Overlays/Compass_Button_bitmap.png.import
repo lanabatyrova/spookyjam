@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bh1x86jakdfp4"
+path="res://.godot/imported/Compass_Button_bitmap.png-68020c53ea09980c3d6ca3c5379b4be4.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays/Compass_Button_bitmap.png"
+dest_files=["res://.godot/imported/Compass_Button_bitmap.png-68020c53ea09980c3d6ca3c5379b4be4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

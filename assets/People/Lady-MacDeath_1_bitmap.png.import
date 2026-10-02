@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d1uoemouek5yk"
+path="res://.godot/imported/Lady-MacDeath_1_bitmap.png-bb990ef83916b076047738b98c4d8391.res"
+
+[deps]
+
+source_file="res://assets/People/Lady-MacDeath_1_bitmap.png"
+dest_files=["res://.godot/imported/Lady-MacDeath_1_bitmap.png-bb990ef83916b076047738b98c4d8391.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

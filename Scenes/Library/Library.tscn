@@ -2,16 +2,26 @@
 
 [ext_resource type="Script" uid="uid://cgaermw4rem0" path="res://Scenes/Library/library.gd" id="1_3kh1m"]
 [ext_resource type="Texture2D" uid="uid://u6am0uydlkwo" path="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" id="1_cjel0"]
-[ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/Val_1.png" id="3_3kh1m"]
+[ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="3_3kh1m"]
 [ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="4_3kh1m"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="5_6apm7"]
+[ext_resource type="Texture2D" uid="uid://c8p0mr4tndkhr" path="res://assets/People/Lady-MacDeath_1_Hover.png" id="4_gnrwe"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="5_6apm7"]
+[ext_resource type="BitMap" uid="uid://d1uoemouek5yk" path="res://assets/People/Lady-MacDeath_1_bitmap.png" id="5_fsgr3"]
 [ext_resource type="Script" uid="uid://c45tqmv6kjcvo" path="res://Scenes/Library/barb_library.gd" id="6_1rjaq"]
-[ext_resource type="Texture2D" uid="uid://bdiummlgdh4gg" path="res://assets/Noah_1.png" id="7_1rjaq"]
+[ext_resource type="Texture2D" uid="uid://cyn3pynrl4o6q" path="res://assets/People/Dagger_1_Hover.png" id="8_e1b7t"]
 [ext_resource type="Script" uid="uid://lrkki6l17hps" path="res://Scenes/Library/noah_library.gd" id="8_hi2wh"]
-[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/Dagger_1.png" id="9_14au8"]
+[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="9_14au8"]
+[ext_resource type="BitMap" uid="uid://kkiegcjf5lvx" path="res://assets/People/Dagger_1_bitmap.png" id="9_re8ce"]
 [ext_resource type="Script" uid="uid://b0udjftf53w77" path="res://Scenes/Library/dagger_library.gd" id="10_bybqk"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="11_0fyj4"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/People/Lady-MacDeath_1.png" id="11_0fyj4"]
+[ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="11_06v86"]
 [ext_resource type="Script" uid="uid://my8fu5o6jxvf" path="res://Scenes/Library/lady_library.gd" id="12_rjhi6"]
+[ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="12_t63kn"]
+[ext_resource type="BitMap" uid="uid://cd1bfd8fsbfn7" path="res://assets/People/Noah_1_bitmap.png" id="13_luw7s"]
+[ext_resource type="Texture2D" uid="uid://bp1x25rh6pjun" path="res://assets/People/Val_1_Hover.png" id="16_uc0od"]
+[ext_resource type="BitMap" uid="uid://b7ix8eaqx2n1e" path="res://assets/People/Val_1_bitmap.png" id="17_1b55p"]
+[ext_resource type="Texture2D" uid="uid://cma3l10yvy1jg" path="res://assets/People/Barb_1_Hover.png" id="20_am823"]
+[ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="21_7pdhs"]
 
 [node name="Library" type="Node2D" unique_id=1495003555]
 script = ExtResource("1_3kh1m")
@@ -26,53 +36,63 @@ position = Vector2(576.0001, 324.25)
 scale = Vector2(0.56347656, 0.4228516)
 texture = ExtResource("1_cjel0")
 
+[node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
+offset_left = 163.0
+offset_top = 298.00003
+offset_right = 1325.0
+offset_bottom = 2180.0
+scale = Vector2(0.20761497, 0.20761497)
+texture_normal = ExtResource("11_0fyj4")
+texture_hover = ExtResource("4_gnrwe")
+texture_click_mask = ExtResource("5_fsgr3")
+script = ExtResource("12_rjhi6")
+
+[node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
+offset_left = 438.0
+offset_top = 345.0
+offset_right = 1335.0
+offset_bottom = 2048.0
+scale = Vector2(0.22653967, 0.22653967)
+texture_normal = ExtResource("9_14au8")
+texture_hover = ExtResource("8_e1b7t")
+texture_click_mask = ExtResource("9_re8ce")
+script = ExtResource("10_bybqk")
+
+[node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
+offset_left = 19.00003
+offset_top = 310.00003
+offset_right = 668.0
+offset_bottom = 2065.0
+scale = Vector2(0.18333973, 0.18333973)
+texture_normal = ExtResource("11_06v86")
+texture_hover = ExtResource("12_t63kn")
+texture_click_mask = ExtResource("13_luw7s")
+script = ExtResource("8_hi2wh")
+
 [node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
-offset_left = 830.0
-offset_top = 274.0
-offset_right = 1537.0
-offset_bottom = 2229.0
-scale = Vector2(0.1560062, 0.1560062)
+offset_left = 842.99994
+offset_top = 244.99997
+offset_right = 1599.0
+offset_bottom = 2250.0
+scale = Vector2(0.1794737, 0.1794737)
 texture_normal = ExtResource("3_3kh1m")
+texture_hover = ExtResource("16_uc0od")
+texture_click_mask = ExtResource("17_1b55p")
 script = ExtResource("4_3kh1m")
 
 [node name="BarbButton" type="TextureButton" parent="." unique_id=506002566]
-offset_left = 599.0
-offset_top = 186.00002
-offset_right = 1531.0
-offset_bottom = 2186.0
-scale = Vector2(0.1560062, 0.1560062)
+offset_left = 640.0
+offset_top = 177.0
+offset_right = 1439.0
+offset_bottom = 1969.0
+scale = Vector2(0.18415901, 0.18415901)
 texture_normal = ExtResource("5_6apm7")
+texture_hover = ExtResource("20_am823")
+texture_click_mask = ExtResource("21_7pdhs")
 script = ExtResource("6_1rjaq")
 
-[node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
-offset_left = 30.0
-offset_top = 325.00003
-offset_right = 962.0
-offset_bottom = 2325.0
-scale = Vector2(0.1560062, 0.1560062)
-texture_normal = ExtResource("7_1rjaq")
-script = ExtResource("8_hi2wh")
-
-[node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
-offset_left = 370.0
-offset_top = 117.0
-offset_right = 1400.0
-offset_bottom = 2168.0
-scale = Vector2(0.1560062, 0.1560062)
-texture_normal = ExtResource("9_14au8")
-script = ExtResource("10_bybqk")
-
-[node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
-offset_left = 212.0
-offset_top = 94.000015
-offset_right = 919.0
-offset_bottom = 2049.0
-scale = Vector2(0.1560062, 0.1560062)
-texture_normal = ExtResource("11_0fyj4")
-script = ExtResource("12_rjhi6")
-
+[connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]
+[connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
-[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
-[connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
-[connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]

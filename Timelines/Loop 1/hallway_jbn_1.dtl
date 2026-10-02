@@ -1,6 +1,7 @@
-join Lizzy (Talking) right
-join Juniper (Talking) leftmost
-join Barb (Talking) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.2"]
+join Lizzy (Talking) right [animation="Fade In Up"]
+join Juniper (Talking) leftmost [animation="Fade In Up"]
+join Barb (Talking) left [animation="Fade In Up" wait="true"]
 Juniper: Hey, Lizzy, want to head to the exam together?
 Lizzy: ... why isn’t there zombies everywhere eating people?
 Juniper: Should there be?
@@ -13,15 +14,20 @@ Lizzy: So you guys haven't noticed anything strange around here recently?
 Lizzy: Like dead people shambling around.
 Barb: It concerns me how genuinely you asked that.
 Lizzy: Just keep your eyes peeled.
-leave --All-- [animation="Instant Out"]
-[background arg="#000000ff" fade="0.0"]
+leave --All-- [animation="Fade Out"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+[wait time="1.0"]
 [one painful exam later]
-join Lizzy right [animation="Instant In"]
-join Barb center
-join Juniper left
-Lizzy: [V.O] That was even worse than last time.
-
+[background arg="res://assets/Locations/Hallway_1.png" fade="0.5"]
+join Barb lefter [animation="Fade In" z_index="1"]
+join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
+[wait time="0.2"]
+join Lizzy righter [animation="Slide From Right" length="1.0"]
+VO: That was even worse than last time.
+update Barb [animation="Bounce" length="0.3" repeat="3"]
 Barb: Finally, we’ve been waiting here for eons.
+[wait time="0.2"]
+update Juniper [mirrored="false"]
 Juniper: Barb’s just being mean because she’s excited.
 Lizzy: We already took that test, right?
 Lizzy: Like it was the same exact test we took yesterday?
@@ -34,9 +40,7 @@ Lizzy: I thought it was a bit much then too.
 Barb: Are you high or something?
 Lizzy: Honestly, I have no idea.
 Lizzy: Maybe.
-[wait_input]
-join Noah center [animation="Slide From Right" length="3.0" wait="true"]
-update Barb leftmost [animation="Shake X" wait="true"]
+join Noah midright [animation="Slide From Right" length="1.0" wait="true"]
 Noah: Whoa, you’re high? That’s badass.
 Barb: Of course you’d be interested in doing recreational drugs.
 Barb: Your brain is already scrambled eggs.
@@ -60,18 +64,13 @@ VO: but I’m feeling about the same as I did then.
 	Lizzy: I’ve gotta go.
 	Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
 	Barb: Why am I even friends with you??
-	leave --All-- [animation="Instant Out"]
-	[background fade="4.0"]
-	jump END
 
 
 - Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
 	Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
 	Barb: ....
 	Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
-	leave --All--
-	[background fade="4.0"]
-	jump END
-label END
+leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")
+[background fade="4.0"]

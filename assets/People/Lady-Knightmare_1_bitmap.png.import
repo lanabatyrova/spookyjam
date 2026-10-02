@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c6h5tkfbf8ge3"
+path="res://.godot/imported/Lady-Knightmare_1_bitmap.png-4c18c4b5d94e84bd18cac4e4eeb29ea4.res"
+
+[deps]
+
+source_file="res://assets/People/Lady-Knightmare_1_bitmap.png"
+dest_files=["res://.godot/imported/Lady-Knightmare_1_bitmap.png-4c18c4b5d94e84bd18cac4e4eeb29ea4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,16 +1,39 @@
 [gd_scene format=3 uid="uid://brlg0gwlgxqgf"]
 
-[ext_resource type="Texture2D" uid="uid://d1pgyunro7ubf" path="res://Temp Assets/Map_New.png" id="1_lfsem"]
+[ext_resource type="Texture2D" uid="uid://dsui2pd44nvuo" path="res://assets/Vermilion_Map.png" id="1_lfsem"]
 [ext_resource type="Script" uid="uid://b5s5x88ss2bh4" path="res://Scenes/Map/library_button.gd" id="2_2brea"]
+[ext_resource type="Texture2D" uid="uid://bjxfhrley7iev" path="res://assets/Map Overlays/Library_Button.png" id="2_wc7dp"]
+[ext_resource type="Texture2D" uid="uid://dxq2fltxabag3" path="res://assets/Map Overlays/Library_Button_Hover.png" id="3_ejhk4"]
 [ext_resource type="Script" uid="uid://b21ecq8duf0l8" path="res://Scenes/Map/hallway_button.gd" id="3_lfsem"]
+[ext_resource type="Texture2D" uid="uid://c6he3abtjm46l" path="res://assets/Map Overlays/School_Button_1.png" id="3_mxgwm"]
+[ext_resource type="Texture2D" uid="uid://v54hwyc5lqyw" path="res://assets/Map Overlays/School_Button.png" id="4_0dbjg"]
 [ext_resource type="Script" uid="uid://ct7un3fnnmqyb" path="res://Scenes/Map/mine_button.gd" id="4_3geo5"]
+[ext_resource type="BitMap" uid="uid://brerwqc6i2uq" path="res://assets/Map Overlays/Library_Button_bitmap.png" id="4_me637"]
+[ext_resource type="BitMap" uid="uid://dg1hp15y6wmpx" path="res://assets/Map Overlays/School_Button_bitmap.png" id="5_0dbjg"]
 [ext_resource type="Script" uid="uid://bnrjtw443f7d5" path="res://Scenes/Map/grave_button.gd" id="5_alfaa"]
 [ext_resource type="Script" uid="uid://bwrvgig12xde5" path="res://Scenes/Map/diner_button.gd" id="6_mxgwm"]
 [ext_resource type="Script" uid="uid://okpi2qool8fq" path="res://Scenes/Map/tomb_button.gd" id="7_0dbjg"]
 [ext_resource type="Script" uid="uid://cw7kvpypi7ihv" path="res://Scenes/Map/basement_button.gd" id="8_bjb2o"]
 [ext_resource type="Script" uid="uid://dhf7ln1007iec" path="res://Scenes/Map/room_button.gd" id="9_5eygh"]
 [ext_resource type="Script" uid="uid://cyoaqgr86i668" path="res://Scenes/Map/street_button.gd" id="10_3mmnv"]
+[ext_resource type="Texture2D" uid="uid://1mgv07584edj" path="res://assets/Map Overlays/Mine_Button_hover.png" id="10_5oj27"]
+[ext_resource type="Texture2D" uid="uid://byb2obgfjw4ye" path="res://assets/Map Overlays/Cemetary_Button.png" id="11_3mmnv"]
+[ext_resource type="BitMap" uid="uid://b335mj8nbhdde" path="res://assets/Map Overlays/Mine_Button_bitmap.png" id="11_ejhk4"]
 [ext_resource type="Script" uid="uid://d4b7aqecl4xen" path="res://Scenes/Map/map_close_button.gd" id="11_lfsem"]
+[ext_resource type="Texture2D" uid="uid://ndhrtwh1bv3e" path="res://assets/Map Overlays/Cemetary_Button_Hover.png" id="12_2405y"]
+[ext_resource type="BitMap" uid="uid://bxalu55e2ykrr" path="res://assets/Map Overlays/Cemetary_Button_bitmap.png" id="13_g2seq"]
+[ext_resource type="Texture2D" uid="uid://byl3mwsl8vc0y" path="res://assets/Map Overlays/Diner_Button.png" id="15_2qr53"]
+[ext_resource type="Texture2D" uid="uid://p0is8mhono3s" path="res://assets/Map Overlays/Diner_Button_Hover.png" id="17_yhais"]
+[ext_resource type="Texture2D" uid="uid://bdubxvricwlel" path="res://assets/Map Overlays/Tomb_Button.png" id="19_36xy7"]
+[ext_resource type="Texture2D" uid="uid://bs75p6u14ijos" path="res://assets/Map Overlays/Creepy_Basement.png" id="20_3toky"]
+[ext_resource type="Texture2D" uid="uid://dv26sp45ycu3l" path="res://assets/Map Overlays/Tomb_Button_Hover.png" id="20_wc7dp"]
+[ext_resource type="Texture2D" uid="uid://b2ureatqshpbm" path="res://assets/Map Overlays/Creepy_Basement_Hober.png" id="21_3toky"]
+[ext_resource type="BitMap" uid="uid://boq660e4ro8sj" path="res://assets/Map Overlays/Creepy_Basement_bitmap.png" id="22_eembv"]
+[ext_resource type="Texture2D" uid="uid://dx0qppakr73lt" path="res://assets/Map Overlays/Home_Button.png" id="24_to72p"]
+[ext_resource type="Texture2D" uid="uid://do8lyjkgnb551" path="res://assets/Map Overlays/Home_Button_Hover.png" id="25_dqgt3"]
+[ext_resource type="Texture2D" uid="uid://bdf6irmc5pn1v" path="res://assets/Map Overlays/Street_Button.png" id="27_36xy7"]
+[ext_resource type="Texture2D" uid="uid://bq4437wwyrl1j" path="res://assets/Map Overlays/Street_Button_Hover.png" id="29_36xy7"]
+[ext_resource type="Texture2D" uid="uid://do22vniosomvl" path="res://assets/Map Overlays/compass_button_uncropped_Hover.png" id="33_36xy7"]
 
 [node name="Map" type="Control" unique_id=527790266]
 layout_mode = 3
@@ -34,84 +57,113 @@ position = Vector2(576.2222, 324)
 scale = Vector2(0.59999996, 0.59999996)
 texture = ExtResource("1_lfsem")
 
-[node name="LibraryButton" type="Button" parent="CanvasLayer" unique_id=1615996151]
-offset_left = 736.0
-offset_top = 149.0
-offset_right = 781.0
-offset_bottom = 188.0
-text = "Lib"
+[node name="LibraryButton" type="TextureButton" parent="CanvasLayer" unique_id=1141175549]
+offset_left = 623.00006
+offset_top = 75.00001
+offset_right = 1915.0
+offset_bottom = 959.0
+scale = Vector2(0.122174, 0.122174)
+texture_normal = ExtResource("2_wc7dp")
+texture_hover = ExtResource("3_ejhk4")
+texture_click_mask = ExtResource("4_me637")
 script = ExtResource("2_2brea")
 
-[node name="HallwayButton" type="Button" parent="CanvasLayer" unique_id=112907553]
-offset_left = 999.0
-offset_top = 472.0
-offset_right = 1044.0
-offset_bottom = 511.0
-text = "Hall"
+[node name="HallwayButton" type="TextureButton" parent="CanvasLayer" unique_id=1878624417]
+offset_left = 975.9999
+offset_top = 503.00003
+offset_right = 2827.0
+offset_bottom = 1928.0
+scale = Vector2(0.06892898, 0.06892898)
+offset_transform_position = Vector2(3.155, 0)
+texture_normal = ExtResource("3_mxgwm")
+texture_hover = ExtResource("4_0dbjg")
+texture_click_mask = ExtResource("5_0dbjg")
 script = ExtResource("3_lfsem")
 
-[node name="MineButton" type="Button" parent="CanvasLayer" unique_id=899788440]
-offset_left = 225.0
-offset_top = 368.0
-offset_right = 270.0
-offset_bottom = 407.0
-text = "Mine"
+[node name="MineButton" type="TextureButton" parent="CanvasLayer" unique_id=2058142343]
+offset_left = 232.0
+offset_top = 383.0
+offset_right = 2158.0
+offset_bottom = 2118.0
+scale = Vector2(0.116455406, 0.116455406)
+texture_hover = ExtResource("10_5oj27")
+texture_click_mask = ExtResource("11_ejhk4")
 script = ExtResource("4_3geo5")
 
-[node name="GraveButton" type="Button" parent="CanvasLayer" unique_id=1677941378]
-offset_left = 671.0
-offset_top = 475.0
-offset_right = 725.0
-offset_bottom = 514.0
-text = "Grave"
+[node name="GraveButton" type="TextureButton" parent="CanvasLayer" unique_id=193776330]
+offset_left = 555.00006
+offset_top = 492.0
+offset_right = 2348.0
+offset_bottom = 1382.0
+scale = Vector2(0.12313657, 0.12313657)
+texture_normal = ExtResource("11_3mmnv")
+texture_hover = ExtResource("12_2405y")
+texture_click_mask = ExtResource("13_g2seq")
 script = ExtResource("5_alfaa")
 
-[node name="DinerButton" type="Button" parent="CanvasLayer" unique_id=1408156451]
-offset_left = 798.0
-offset_top = 221.0
-offset_right = 852.0
-offset_bottom = 260.0
-text = "Diner"
+[node name="DinerButton" type="TextureButton" parent="CanvasLayer" unique_id=1365399994]
+offset_left = 734.00006
+offset_top = 256.99997
+offset_right = 2514.0
+offset_bottom = 1387.0
+rotation = -0.019324172
+scale = Vector2(0.07138685, 0.07138685)
+texture_normal = ExtResource("15_2qr53")
+texture_hover = ExtResource("17_yhais")
 script = ExtResource("6_mxgwm")
 
-[node name="TombButton" type="Button" parent="CanvasLayer" unique_id=639450810]
-offset_left = 478.0
-offset_top = 459.0
-offset_right = 532.0
-offset_bottom = 498.0
-text = "Tomb"
+[node name="TombButton" type="TextureButton" parent="CanvasLayer" unique_id=392880534]
+offset_left = 435.00003
+offset_top = 441.00003
+offset_right = 2182.0
+offset_bottom = 1082.0
+rotation = -0.18061097
+scale = Vector2(0.13768637, 0.13768637)
+texture_normal = ExtResource("19_36xy7")
+texture_hover = ExtResource("20_wc7dp")
 script = ExtResource("7_0dbjg")
 
-[node name="BasementButton" type="Button" parent="CanvasLayer" unique_id=1352609250]
-offset_left = 851.0
-offset_top = 594.0
-offset_right = 937.0
-offset_bottom = 633.0
-text = "Basement"
+[node name="BasementButton" type="TextureButton" parent="CanvasLayer" unique_id=18194653]
+offset_left = 834.00006
+offset_top = 595.0
+offset_right = 2454.0
+offset_bottom = 1385.0
+rotation = -0.21721292
+scale = Vector2(0.06859281, 0.068615824)
+texture_normal = ExtResource("20_3toky")
+texture_hover = ExtResource("21_3toky")
+texture_click_mask = ExtResource("22_eembv")
 script = ExtResource("8_bjb2o")
 
-[node name="RoomButton" type="Button" parent="CanvasLayer" unique_id=1029714288]
-offset_left = 640.0
-offset_top = 297.0
-offset_right = 701.0
-offset_bottom = 332.0
-text = "Room"
+[node name="RoomButton" type="TextureButton" parent="CanvasLayer" unique_id=1198260930]
+offset_left = 575.0
+offset_top = 230.0
+offset_right = 1996.0
+offset_bottom = 2046.0
+rotation = -0.12065226
+scale = Vector2(0.099427246, 0.099427246)
+texture_normal = ExtResource("24_to72p")
+texture_hover = ExtResource("25_dqgt3")
 script = ExtResource("9_5eygh")
 
-[node name="StreetButton" type="Button" parent="CanvasLayer" unique_id=879664678]
-offset_left = 476.0
-offset_top = 282.0
-offset_right = 537.0
-offset_bottom = 317.0
-text = "Street"
+[node name="StreetButton" type="TextureButton" parent="CanvasLayer" unique_id=1787506839]
+offset_left = 436.99997
+offset_top = 194.99997
+offset_right = 1861.0
+offset_bottom = 2032.0
+rotation = 0.17343026
+scale = Vector2(0.10095845, 0.10095845)
+texture_normal = ExtResource("27_36xy7")
+texture_hover = ExtResource("29_36xy7")
 script = ExtResource("10_3mmnv")
 
-[node name="CloseButton" type="Button" parent="CanvasLayer" unique_id=1499157882]
-offset_left = 36.0
-offset_top = 33.0
-offset_right = 54.0
-offset_bottom = 64.0
-text = "X"
+[node name="CloseButton" type="TextureButton" parent="CanvasLayer" unique_id=916130645]
+offset_left = 883.00006
+offset_top = -50.000004
+offset_right = 2338.0
+offset_bottom = 1456.0
+scale = Vector2(0.18938503, 0.18938503)
+texture_hover = ExtResource("33_36xy7")
 script = ExtResource("11_lfsem")
 
 [connection signal="pressed" from="CanvasLayer/LibraryButton" to="CanvasLayer/LibraryButton" method="_on_pressed"]

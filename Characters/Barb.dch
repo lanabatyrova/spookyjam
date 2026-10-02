@@ -29,7 +29,7 @@
 },
 "Minigame": {
 "export_overrides": {
-"image": "\"res://assets/Barb_1.png\""
+"image": "\"res://assets/People/Barb_1.png\""
 },
 "ignore_char_scale": false,
 "mirror": false,

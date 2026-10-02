@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dw5rgw4odyhlj"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_e2bxk"]
-[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/Barb_1.png" id="2_lme4x"]
+[ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="2_lme4x"]
 [ext_resource type="Texture2D" uid="uid://byxc6jvmiffdc" path="res://assets/Minigame/minigame_sprite_portrait_bar.png" id="3_74ppk"]
 
 [node name="LayeredPortrait" type="CanvasGroup" unique_id=714366001]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bgnnamndrqnvt"
+path="res://.godot/imported/Silver_Mine_Button_bitmap.png-012fba2fe1411b3f10968f76eff32033.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays/Silver_Mine_Button_bitmap.png"
+dest_files=["res://.godot/imported/Silver_Mine_Button_bitmap.png-012fba2fe1411b3f10968f76eff32033.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

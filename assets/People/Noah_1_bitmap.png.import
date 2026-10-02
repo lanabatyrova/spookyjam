@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cd1bfd8fsbfn7"
+path="res://.godot/imported/Noah_1_bitmap.png-0a2de6cea3a2e27b84174ccbff1bc928.res"
+
+[deps]
+
+source_file="res://assets/People/Noah_1_bitmap.png"
+dest_files=["res://.godot/imported/Noah_1_bitmap.png-0a2de6cea3a2e27b84174ccbff1bc928.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

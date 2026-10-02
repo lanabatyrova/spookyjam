@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://2ujnlloa6j47"]
 
 [ext_resource type="Script" uid="uid://b3yfdpvfhmai6" path="res://Scenes/Tomb/tomb.gd" id="1_0068g"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/Lady-MacDeath_1.png" id="2_am2i7"]
+[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/People/Lady-MacDeath_1.png" id="2_am2i7"]
 [ext_resource type="Script" uid="uid://nvorwrr6a1gh" path="res://Scenes/Tomb/lady_mac_tomb.gd" id="3_tg8e8"]
+[ext_resource type="Texture2D" uid="uid://c8p0mr4tndkhr" path="res://assets/People/Lady-MacDeath_1_Hover.png" id="4_ae0ni"]
 [ext_resource type="Texture2D" uid="uid://uuuwwixj625j" path="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" id="4_eh3cb"]
+[ext_resource type="BitMap" uid="uid://d1uoemouek5yk" path="res://assets/People/Lady-MacDeath_1_bitmap.png" id="5_4uy4w"]
+[ext_resource type="Texture2D" uid="uid://vrefpe0mc0kf" path="res://assets/People/Lady-Knightmare_1.png" id="7_y6tjd"]
+[ext_resource type="Texture2D" uid="uid://xaevj0anadga" path="res://assets/People/Lady-Knightmare_1_Hover.png" id="8_gvqv7"]
+[ext_resource type="BitMap" uid="uid://c6h5tkfbf8ge3" path="res://assets/People/Lady-Knightmare_1_bitmap.png" id="9_lslfh"]
+[ext_resource type="Script" uid="uid://bf5xjo1bivts1" path="res://Scenes/Tomb/lady_knight_button.gd" id="10_4uy4w"]
 
 [node name="Tomb" type="Node2D" unique_id=1279382060]
 script = ExtResource("1_0068g")
@@ -19,12 +25,26 @@ scale = Vector2(1.8986928, 1.6154791)
 texture = ExtResource("4_eh3cb")
 
 [node name="LadyMacButton" type="TextureButton" parent="." unique_id=1395589348]
-offset_left = 456.0
-offset_top = 69.0
-offset_right = 1860.0
-offset_bottom = 2360.0
-scale = Vector2(0.22271827, 0.22271827)
+offset_left = 395.0
+offset_top = 110.99999
+offset_right = 1557.0
+offset_bottom = 1993.0
+scale = Vector2(0.27263227, 0.27263227)
 texture_normal = ExtResource("2_am2i7")
+texture_hover = ExtResource("4_ae0ni")
+texture_click_mask = ExtResource("5_4uy4w")
 script = ExtResource("3_tg8e8")
 
+[node name="LadyKnightButton" type="TextureButton" parent="." unique_id=2121829198]
+offset_left = 464.00003
+offset_top = 79.00001
+offset_right = 1271.0
+offset_bottom = 2052.0
+scale = Vector2(0.27263227, 0.27263227)
+texture_normal = ExtResource("7_y6tjd")
+texture_hover = ExtResource("8_gvqv7")
+texture_click_mask = ExtResource("9_lslfh")
+script = ExtResource("10_4uy4w")
+
 [connection signal="pressed" from="LadyMacButton" to="LadyMacButton" method="_on_pressed"]
+[connection signal="pressed" from="LadyKnightButton" to="LadyKnightButton" method="_on_pressed"]
