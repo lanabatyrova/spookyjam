@@ -1,3 +1,85 @@
-chatting in the diner with juniper and barb (day 2) — this exchange is optional
-Noah: i'm on the phone!
+[background arg="#000000ff" fade="0.0"]
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
+join Foreground center [z_index="1"]
+join Juniper (Talking) left [animation="Fade In" length="1.0"]
+join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
+join Lizzy (Talking) righter [z_index="1"]
+Barb: You’re out of jam.
+Lizzy: Thanks for letting me know, I'll get on that.
+join Noah (Barb's Phone) center [animation="Slide In Up" z_index="2"]
+Noah: Don't let Barb win, Lizzy!
+Noah: Also I'm here, but on the phone, because I'm in the hospital.
+Noah: Long story.
+Juniper: You seem to be back to your old self.
+Lizzy: I feel like I’m finally making progress.
+Juniper: Progress? With what?
+Lizzy: something I’m working on.
+Barb: Is it getting a grad dress?
+Lizzy: Uh.
+Lizzy: Sure. Something like that.
+Barb: Finally, you came to your senses.
+Barb: The dresses Juniper and I got are mauve, so you’ll have to colour match.
+Lizzy: We’re supposed to be matching?
+Barb: Duh... How else will everyone know we’re in a group.
+Lizzy: Um, because we’d be hanging together?
+Barb: We won’t be hanging out the entire time, we’ll be with our dates.
+Barb: Speaking of, did you ask out Jimmy yet?
+- She wants me to ask out Jimmy from bio?[br]We've barely ever spoken except to do that[br]group project about ribosomes or whatever...
+	Lizzy: Jimmy?
+	Lizzy: From Bio?
+	Noah: You're going to the dance with Jimmy from Bio?
+	Noah: raise your standards, girl. You can do better.
+	Barb: stay out of girl stuff, Noah.
+	Lizzy: I'm not going on with Jimmy.
+	Lizzy: I’ll ask him for you tomorrow, if it’s not too late.
+	Noah: You're spending an awful lot of time trying to hook Lizzy up with someone, but you haven't shared who you're going with.
+	Noah: Trying to throw off suspicion, perhaps?
+	Barb: I've got a date!
+	Barb: Owen wasn’t available because he’s going out with Tammy,
+	Barb: but I managed to snag Dave.
+- Jimmy? Oh yeah, we go wayyyyy back, in fact,[br]I think I'm going to marry him tomorrow.[br]It's going to be a private wedding though.[br]We want to keep it small.
+	Lizzy: Way ahead of you, Barb.
+	Lizzy: I asked him out earlier and he said yes.
+	Barb: You did?
+	Noah: You did?
+	Juniper: You did?
+	Lizzy: Yeah.
+	Juniper: ...
+	Juniper: This is new.
+	Lizzy: Why is that so unbelievable??
+	Barb: ...
+	Noah: You barely know the guy, Lizzy!
+	Noah: Also aren't you with that tall vampire?
+	Lizzy: Dagger and I aren't together.
+	Noah: I didn't say his name, but you thought of him.
+	Barb: Well, that's great, Lizzy.
+	Barb: I'm really happy for you.
+	VO: She seems upset? Isn't this what she wanted?
+	Barb: I've scored a real catch, too.
+	Barb: Dave.
+Barb: Hot Dave.
+Lizzy: Do you even like Dave?
+Barb: His name is hot Dave, Lizzy, why wouldn't I?
+Juniper: He’s a pretty nice guy. And not bad on the eyes. Those bangs? Killer.
+Juniper: I should ask for his barber’s number.
+Noah: Ugh.
+Noah: Hot Dave.
+Noah: ...
+Noah: I think regular Dave is just as hot.
+Lizzy: Who are you going with Juniper?
+Juniper: Noah.
+Noah: Meeeeee
+Juniper: But just as friends.
+Barb: See, that’s how it starts. You say you’re going as friends and then hugging becomes kissing becomes coitious.
+Lizzy: ...
+Lizzy: What?
+Barb: Sex! Sex Lizzy!
+Lizzy: ew, I don’t think we need to talk about Juniper and Noah—
+Juniper: It’s better if we don’t, thanks.
+Noah: What's happening, the nurse just gave me more jello.
+Barb: I’m just saying.
+Lizzy: ...
+Juniper: ...
+Noah: Why is everyone quiet.
+Lizzy: I’m going to go take care of something and leave this conversation as non conspicuously as possible.
 do GameState.mark_characters_as_spoken(["barb", "juniper"])

@@ -1,5 +1,5 @@
+[background arg="#000000ff" fade="0.0"]
 [dress shopping montage]
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="1.0"]
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
 join Juniper (Talking) left [animation="Fade In" length="1.0"]
@@ -37,6 +37,7 @@ Lizzy: it’s pretty wild that we’re going to be out of VHS soon. Like, we’r
 Juniper: I wouldn’t worry too much about that.
 Juniper: Growing up has its advantages.
 Noah: Like being able to legally drink!
+update Noah [animation="Tada"]
 Noah: and buy cigarettes!
 Juniper: I was thinking like, moving out and becoming your own person.
 Noah: That's cool too.
@@ -66,7 +67,7 @@ update Lizzy [animation="Shake X" length="1.0"]
 Lizzy: It's just really hard to choose.
 update Noah [animation="Bounce" repeat="2"]
 Noah: Um, well let’s see, there was the ants that got super big,
-and the evil puppets,
+Noah: and the evil puppets,
 Noah: King Fear crashing the school play and almost eating Barb.
 update Barb [animation="Bounce"]
 Barb: That was really scary for me, okay?
@@ -146,7 +147,7 @@ Juniper: barb, I'm your friend so I'm going to be real with you,
 Juniper: You'd be a terrible campaign manager.
 update Lizzy [mirrored="false"]
 Lizzy: I’m not running for Mayor.
-I’m saying that it’s a lot of responsibility to have the fate of the entire world on my shoulders.
+Lizzy: I’m saying that it’s a lot of responsibility to have the fate of the entire world on my shoulders.
 update Juniper [mirrored="false"]
 Juniper: We’re all here for you, Lizzy.
 Juniper: You aren’t saving the world alone.
@@ -165,7 +166,7 @@ update Lizzy [mirrored="true"]
 Lizzy: ....
 Juniper: I didn’t get into Emmerdale.
 update Lizzy [mirrored="false"]
-Everyone: \: …
+Everyone:…
 update Lizzy [animation="Bounce"]
 Lizzy: What?!
 update Barb [animation="Bounce"]
@@ -237,7 +238,8 @@ Barb: My new dress isn't as glamorous so I’ll just have to make do in other wa
 Noah: I’ll take that ride.
 Noah: Not the limo.
 Barb: You weren't invited anyway!
-Noah: Hey wait don'thangup—
+update Noah [animation="Shake X"]
+Noah: Heywaitdon'thangup—
 leave Noah
 Barb: Men!
 Juniper: That's really nice of your mom.

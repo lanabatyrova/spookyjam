@@ -1,7 +1,7 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.2"]
 join Lizzy (Talking) right [animation="Fade In Up"]
 join Juniper (Talking) leftmost [animation="Fade In Up"]
-join Barb (Talking) left [animation="Fade In Up" wait="true"]
+join Barb (Talking) left [animation="Fade In Up" wait="true" extra_data="show Normal"]
 Juniper: Hey, Lizzy, want to head to the exam together?
 Lizzy: ... why isn’t there zombies everywhere eating people?
 Juniper: Should there be?

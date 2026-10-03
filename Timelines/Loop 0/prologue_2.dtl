@@ -5,7 +5,7 @@ Valerie: Ah, Elizabeth, how was your last day of highschool?
 Valerie: Some of the visiting students were grumbling about an exam?
 Lizzy: It was pretty brutal.
 Valerie: Hm. Well, academics will only get you so far in your, shall I say, career.
-Valerie:  It was wise of you to focus on baseball.
+Valerie: It was wise of you to focus on baseball.
 Valerie: Speaking of, I circled the most useful classes in the fax I sent you. History, naturally, is my most recommended.
 update Lizzy [mirrored="true"]
 [wait time="2.0"]
@@ -17,7 +17,7 @@ Valerie: I’m sure you could squeeze in an art class or maybe theatre, to give 
 Valerie: And VCR’s sports teams comes highly regarded. They even have baseball.
 update Lizzy [animation="Shake X"]
 Lizzy: No, not in school, I mean in life.
-Lizzy:  Am I doomed to make every waking moment about killing some old dudes?
+Lizzy: Am I doomed to make every waking moment about killing some old dudes?
 Valerie: The vampire lords aren’t some old dudes.
 Valerie: They’re also old dudettes.
 Lizzy: You must’ve had dreams outside of prophecies and the keepers.
@@ -101,7 +101,6 @@ update Lizzy [mirrored="true"]
 update Juniper [mirrored="false"]
 leave Lizzy [animation="Slide To Right" wait="true"]
 leave Juniper [animation="Slide To Right"]
-Valerie: See you both tomorrow at graduation.
 leave --All-- [animation="Fade Out" length="0.4"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.5" wait="true"]
@@ -113,24 +112,24 @@ join Noah offleft [animation="Slide From Right" length="5.0" mirrored="true"]
 [wait time="0.5"]
 update Lizzy [mirrored="false"]
 update Juniper [mirrored="true"]
-Noah: hey watch the shirt, it's new!
+Noah: Sorry, 'scuse me, coming through!
 update Lizzy [mirrored="true"]
 
-Lizzy: whoa. What happened there?
-Juniper: no clue.
+Lizzy: Uh, why is he covered in glitter?
+Juniper: No idea.
 leave Juniper [animation="Slide To Right"]
 leave Lizzy [animation="Slide To Right"]
 leave --All-- [animation="Fade Out" length="0.1"]
-[background arg="res://Temp Assets/image-5.png" fade="1.0" wait="true"]
+[background arg="res://assets/Locations/Girls_Bathroom.png" fade="1.0" wait="true"]
 join Juniper (Talking) right [animation="Slide From Left" length="1.0"]
-join Lizzy (Talking) leftmost [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
+join Lizzy (Talking) lefter [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
 update Juniper [mirrored="true"]
 
 
 Juniper: Barb, I brought Lizzy.
-Juniper:  She's going to rip the door down.
+Juniper: She's going to rip the door down.
 Barb: WHAT!
-Barb:  are you crazy?
+Barb: are you crazy?
 Lizzy: or am I sane enough to see how ridiculous it is to lock yourself in the first floor girls bathroom.
 Lizzy: It's so gross in there.
 Barb: its where I belong.
@@ -156,25 +155,27 @@ update Juniper [animation="Bounce"]
 Juniper: Lizzy.
 update Lizzy [mirrored="false"]
 Lizzy: fine, i wont laugh.
-Werewolf's honor.
+Lizzy: Werewolf's honor.
 update Lizzy [mirrored="true"]
 Barb: okay.
-Barb:  I'm coming out.
+Barb: I'm coming out.
 Lizzy: finally amirite haha...
 Juniper: shhh
+[background arg="res://assets/Locations/Girls_Bathroom_Open.png" fade="0.5" wait="true"]
 join Barb (Talking) midleft [animation="Fade In Up" length="3.0" wait="true"]
+[background arg="res://assets/Locations/Girls_Bathroom.png" fade="0.4" wait="true"]
 Lizzy: uh.. did a wild animal tear into that?
 update Barb [animation="Shake X" length="1.5" mirrored="true"]
 Barb: i tried putting it on and.. it..
 [sniff]
 Juniper: i mean.
-Juniper: I's not so bad.
+Juniper: It's not so bad.
 update Lizzy [animation="Bounce"]
 Lizzy: are you kidding that things shredded motza!
 update Barb [mirrored="false"]
 Barb: i might as well jump off a bridge now.
 Lizzy: Barb, you are the most capable person I know
-Lizzy:  when it comes to fashion.
+Lizzy: when it comes to fashion.
 Lizzy: You could pull of a paper bag and make it look cute.
 Are you seriously telling me that you’re going to let a ruined dress mess up your entire grad dance?
 update Barb [mirrored="true"]
@@ -188,7 +189,7 @@ update Barb [mirrored="true"]
 Barb: I am pretty fashion forward.
 Lizzy: Yeah, yeah!
 Barb: Maybe I could pull something together.
-Barb:  Or we could all go dress shopping together. Then we could all match.
+Barb: Or we could all go dress shopping together. Then we could all match.
 Lizzy: uh, I don’t think I.. Um
 update Juniper [animation="Bounce"]
 Juniper: that sounds like a great idea.

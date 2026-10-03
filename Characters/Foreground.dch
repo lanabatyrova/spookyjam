@@ -19,11 +19,20 @@
 &"portraits": {
 "Diner Table": {
 "export_overrides": {
-"image": "\"res://Temp Assets/diner table.png\""
+"image": "\"res://assets/bgs/Diner_Sitting_Table.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 410),
-"scale": 0.9,
+"offset": Vector2(0, 350),
+"scale": 0.8,
+"scene": ""
+},
+"Diner Table_duplicated": {
+"export_overrides": {
+"image": "\"res://assets/bgs/Diner_Sitting_Table.png\""
+},
+"mirror": false,
+"offset": Vector2(-40, 210),
+"scale": 0.6,
 "scene": ""
 }
 },

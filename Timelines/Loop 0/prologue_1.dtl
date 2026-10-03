@@ -1,6 +1,6 @@
 [wait time="2.0"]
 audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
-BEEP. BEEP. BEEP.
+[alarm blaring]
 [background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="2.0" wait="true"]
 join Lizzy (Talking) center [animation="Fade In"]
 Lizzy: Ugh. I so don’t want to get up.
@@ -14,16 +14,21 @@ join Lizzy (Full Body) left [animation="Fade In" mirrored="true" move_time="0.5"
 MAIL DELIVERY
 Lizzy: Huh, what’s this?
 leave Lizzy [animation="Fade Out"]
-[background arg="res://Temp Assets/Postcard.png" fade="1.0"]
+[background arg="#000000ff" fade="0.0"]
+join Item (Postcard Front) center
 [wait_input]
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="1.0"]
-join Lizzy left [animation="Fade In" mirrored="true"]
+update Item (Postcard Back) [animation="Heartbeat"]
+[wait_input]
+join Lizzy (Talking) right [animation="Fade In"]
 Lizzy: I guess once you become a best selling author writing your own letters is small potatoes.
+leave Item
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.0"]
+update Lizzy (Full Body) [mirrored="true"]
 Lizzy: Well, time to fail this exam. Here goes nothing.
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [One horrible exam later...]
-[background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.5"]
+[background scene="res://Scenes/Cutscenes/Hallway_To_Scale.tscn" fade="0.0"]
 join Barb lefter [animation="Fade In" z_index="1"]
 join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
@@ -84,7 +89,8 @@ Noah: There are subtleties.
 Juniper: If you’re really that pressed about it, Barb, I’m sure Lizzy and I can throw something together.
 Barb: I don’t want you to throw something together! I want you both to look pretty and for me to look even prettier!
 Noah: I wouldn’t worry about grad, if you know what I mean...
-Barb: I can’t with you right now. I’m meeting Mona to go over the limo situation and by the time we meet back up you better have a full walk in closet of options.
+Barb: I can’t with you right now.
+Barb: I’m meeting Mona to go over the limo situation and by the time we meet back up you better have a full walk in closet of options.
 leave Barb [animation="Slide To Right" length="1.5" wait="true"]
 [wait time="0.5"]
 Noah: Wait, you guys are taking a limo to grad? Isn’t it just at the school?
@@ -98,7 +104,7 @@ leave Noah [animation="Slide To Right" length="0.3" wait="true"]
 update Lizzy [mirrored="false"]
 Lizzy: I guess we’ve gotta add finding dresses to our evening plans.
 Juniper: My mother probably has something we can borrow.
-Juniper: If not, we can make a statement by going in our regular clothes as a commentary on the unreasonable expectation for women to perform perfect femininity.
+Juniper: If not, we can make a statement by going in our regular clothes as a commentary on the unreasonable expectation for women to perform femininity.
 Lizzy: Took the words right out of my mouth.
 Juniper: I’m going to go find Barb and makes sure she’s not too upset. Meet in the library in like an hour?
 Lizzy: Sounds good. Don’t go easier on her! Let her stew a bit! She could use it.

@@ -6,7 +6,7 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 1
+var current_day: int = 0
 var midpoint_reached = false
 var is_minigame = false
 

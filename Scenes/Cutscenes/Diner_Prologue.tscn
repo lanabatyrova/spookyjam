@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://2s2g0fylrjoa"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_mqman"]
-[ext_resource type="Texture2D" uid="uid://1fyjll5ticy7" path="res://Temp Assets/diner new.png" id="2_ln1l7"]
+[ext_resource type="Texture2D" uid="uid://kpd8fhnmp6db" path="res://assets/bgs/Diner seat.png" id="2_ln1l7"]
 
 [node name="DinerPrologue" type="Node" unique_id=497357335]
 script = ExtResource("1_mqman")
 metadata/_custom_type_script = "uid://blsjcvm6gvd78"
 
 [node name="Neons36Of44Scaled975515292" type="Sprite2D" parent="." unique_id=151490127]
-position = Vector2(585, 366)
-scale = Vector2(0.6702098, 0.7498319)
+position = Vector2(571.00006, 379)
+scale = Vector2(0.6919352, 0.83376235)
 texture = ExtResource("2_ln1l7")
