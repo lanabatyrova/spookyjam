@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dfoupah3rcx7m"]
 
-[ext_resource type="Texture2D" uid="uid://rtkhjg7rrfmo" path="res://assets/Journal Notes.png" id="1_l1kwa"]
+[ext_resource type="Texture2D" uid="uid://lejs27rxgi0t" path="res://assets/Journal_Goals.png" id="1_hsadq"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_lmb8y"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_hsadq"]
 [ext_resource type="Script" uid="uid://bjjvdyeisd1ee" path="res://Scenes/Journal Menu/settings_button.gd" id="4_ns3x7"]
@@ -9,6 +9,22 @@
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_js6ib"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_0lswh"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_hsadq"]
+[ext_resource type="Texture2D" uid="uid://dh8sfag5dn0n4" path="res://assets/Journal Overlays/objectives_journal/Know_1.png" id="10_vse1x"]
+[ext_resource type="Texture2D" uid="uid://c475b8kci72f" path="res://assets/Journal Overlays/objectives_journal/Know_2.png" id="11_35u8c"]
+[ext_resource type="Texture2D" uid="uid://ec0uk48qqudg" path="res://assets/Journal Overlays/objectives_journal/Know_3.png" id="12_68rlo"]
+[ext_resource type="Texture2D" uid="uid://3fmit230sfhq" path="res://assets/Journal Overlays/objectives_journal/Know_4.png" id="13_sg7nk"]
+[ext_resource type="Texture2D" uid="uid://dx5ni6ypnqypg" path="res://assets/Journal Overlays/objectives_journal/Know_5.png" id="14_b2kyr"]
+[ext_resource type="Texture2D" uid="uid://0fj0emx53233" path="res://assets/Journal Overlays/objectives_journal/Know_6.png" id="15_x8gh8"]
+[ext_resource type="Texture2D" uid="uid://elrkhra5x6jr" path="res://assets/Journal Overlays/objectives_journal/Know_7.png" id="16_vxffq"]
+[ext_resource type="Texture2D" uid="uid://6pbqiagwcr3p" path="res://assets/Journal Overlays/objectives_journal/Know_8.png" id="17_twqtu"]
+[ext_resource type="Texture2D" uid="uid://bolm58ytsptf" path="res://assets/Journal Overlays/objectives_journal/Know_9.png" id="18_hw0vg"]
+[ext_resource type="Texture2D" uid="uid://cx5comd7ywfae" path="res://assets/Journal Overlays/objectives_journal/Know_10.png" id="19_2djf0"]
+[ext_resource type="Texture2D" uid="uid://ctx6vm0eryt81" path="res://assets/Journal Overlays/objectives_journal/Goals_1.png" id="20_oxnp2"]
+[ext_resource type="Texture2D" uid="uid://byskuj7cdmsxc" path="res://assets/Journal Overlays/objectives_journal/Goals_2.png" id="21_8e52q"]
+[ext_resource type="Texture2D" uid="uid://d0y7hck40dsq7" path="res://assets/Journal Overlays/objectives_journal/Goals_3.png" id="22_iyvqt"]
+[ext_resource type="Texture2D" uid="uid://dd3wdlijtpjsn" path="res://assets/Journal Overlays/objectives_journal/Goals_4.png" id="23_7leaa"]
+[ext_resource type="Texture2D" uid="uid://bqjjtdl0k72u4" path="res://assets/Journal Overlays/objectives_journal/Goals_5.png" id="24_xaudx"]
+[ext_resource type="Texture2D" uid="uid://cqmbu0o8hribq" path="res://assets/Journal Overlays/objectives_journal/Goals_6.png" id="25_5aclb"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hsadq"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
@@ -21,31 +37,31 @@ load_path = "res://.godot/imported/Flip Page 2.png-e4a4ade8948643eb06a9addf888a6
 [node name="JournalContacts" type="Sprite2D" parent="." unique_id=39793011]
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
-texture = ExtResource("1_l1kwa")
+texture = ExtResource("1_hsadq")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=1891300025]
-offset_left = 781.0
-offset_top = 242.99997
-offset_right = 821.0
-offset_bottom = 282.99997
+offset_left = 21.0
+offset_top = 293.77313
+offset_right = 61.0
+offset_bottom = 333.77313
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("2_lmb8y")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=1060290117]
-offset_left = 760.0
-offset_top = 34.000004
-offset_right = 800.0
-offset_bottom = 74.0
+offset_left = 5.0000005
+offset_top = 83.0
+offset_right = 45.0
+offset_bottom = 122.99999
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_ns3x7")
 
 [node name="InventoryButton" type="LinkButton" parent="." unique_id=1750392480]
-offset_left = 771.00006
-offset_top = 137.0
-offset_right = 811.00006
-offset_bottom = 177.0
+offset_left = 11.000061
+offset_top = 187.77316
+offset_right = 51.00006
+offset_bottom = 227.77316
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("4_hsadq")
@@ -78,6 +94,102 @@ scale = Vector2(0.047738403, 0.047738403)
 texture_pressed = SubResource("CompressedTexture2D_e5cl4")
 texture_hover = ExtResource("7_0lswh")
 script = ExtResource("8_hsadq")
+
+[node name="Know1" type="Sprite2D" parent="." unique_id=135657157]
+position = Vector2(572.64716, 136.9605)
+rotation = -0.11261095
+scale = Vector2(0.16722426, 0.16722427)
+texture = ExtResource("10_vse1x")
+
+[node name="Know2" type="Sprite2D" parent="." unique_id=928063919]
+position = Vector2(582.61774, 175.96843)
+rotation = -0.1098644
+scale = Vector2(0.17777924, 0.17777933)
+texture = ExtResource("11_35u8c")
+
+[node name="Know3" type="Sprite2D" parent="." unique_id=60623840]
+position = Vector2(589.8334, 222.2258)
+rotation = -0.099368826
+scale = Vector2(0.1731942, 0.17319421)
+texture = ExtResource("12_68rlo")
+
+[node name="Know4" type="Sprite2D" parent="." unique_id=901565411]
+position = Vector2(589.2217, 258.70068)
+rotation = -0.10105928
+scale = Vector2(0.17395034, 0.17395034)
+texture = ExtResource("13_sg7nk")
+
+[node name="Know5" type="Sprite2D" parent="." unique_id=1137333865]
+position = Vector2(595, 302.00003)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("14_b2kyr")
+
+[node name="Know6" type="Sprite2D" parent="." unique_id=1447315775]
+position = Vector2(594, 345.00003)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("15_x8gh8")
+
+[node name="Know7" type="Sprite2D" parent="." unique_id=2015538404]
+position = Vector2(610, 388.00003)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("16_vxffq")
+
+[node name="Know8" type="Sprite2D" parent="." unique_id=1252581174]
+position = Vector2(608.2217, 436.70068)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("17_twqtu")
+
+[node name="Know9" type="Sprite2D" parent="." unique_id=726205772]
+position = Vector2(603.00006, 484)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("18_hw0vg")
+
+[node name="Know10" type="Sprite2D" parent="." unique_id=1220070397]
+position = Vector2(612.00006, 528)
+rotation = -0.10105928
+scale = Vector2(0.17395033, 0.17395033)
+texture = ExtResource("19_2djf0")
+
+[node name="Goals1" type="Sprite2D" parent="." unique_id=1550301453]
+position = Vector2(166.54384, 160.79973)
+rotation = -0.05815944
+scale = Vector2(0.17996518, 0.17996518)
+texture = ExtResource("20_oxnp2")
+
+[node name="Goals2" type="Sprite2D" parent="." unique_id=858075528]
+position = Vector2(167.00002, 199)
+rotation = -0.05815944
+scale = Vector2(0.17996518, 0.17996518)
+texture = ExtResource("21_8e52q")
+
+[node name="Goals3" type="Sprite2D" parent="." unique_id=686527040]
+position = Vector2(172.00002, 232)
+rotation = -0.05815944
+scale = Vector2(0.17996518, 0.17996518)
+texture = ExtResource("22_iyvqt")
+
+[node name="Goals4" type="Sprite2D" parent="." unique_id=2033580460]
+position = Vector2(170.99988, 269)
+rotation = -0.05815944
+scale = Vector2(0.17996521, 0.17996521)
+texture = ExtResource("23_7leaa")
+
+[node name="Goals5" type="Sprite2D" parent="." unique_id=1944136753]
+position = Vector2(181.00002, 307)
+rotation = -0.05815944
+scale = Vector2(0.17996521, 0.17996521)
+texture = ExtResource("24_xaudx")
+
+[node name="Goals6" type="Sprite2D" parent="." unique_id=1772581263]
+position = Vector2(198.99998, 344.00003)
+rotation = -0.05815944
+scale = Vector2(0.17996521, 0.17996521)
+texture = ExtResource("25_5aclb")
 
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cii6gxwxamlbs"
+path="res://.godot/imported/Map Opening.mp3-5a8f22d858c74b3df178780aa1f9ef73.mp3str"
+
+[deps]
+
+source_file="res://audio/Map Opening.mp3"
+dest_files=["res://.godot/imported/Map Opening.mp3-5a8f22d858c74b3df178780aa1f9ef73.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

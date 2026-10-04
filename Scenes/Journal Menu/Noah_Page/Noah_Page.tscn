@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://llogx4bxa56p"]
 
 [ext_resource type="Script" uid="uid://ip68drjrem8b" path="res://Scenes/Journal Menu/Noah_Page/noah_page.gd" id="1_g06te"]
-[ext_resource type="Texture2D" uid="uid://ck4vcf4gje116" path="res://assets/Journal_Noah.png" id="1_qp6ql"]
+[ext_resource type="Texture2D" uid="uid://cm7huuhcgbdw0" path="res://assets/Journal_Noah.png" id="1_qp6ql"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_nunql"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_20vrq"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_8x6mv"]
@@ -10,9 +10,13 @@
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="5_g06te"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_qqwtk"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_pnmge"]
+[ext_resource type="Texture2D" uid="uid://dqb7eb5uj060w" path="res://assets/Journal Overlays/noah_journal/Noah_Polaroid.png" id="8_65a6g"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_p32i5"]
 [ext_resource type="Script" uid="uid://dhp0mkuf5plwd" path="res://Scenes/Journal Menu/Noah_Page/noah_char_button.gd" id="9_8q5e3"]
+[ext_resource type="Texture2D" uid="uid://cmums4kfict60" path="res://assets/Journal Overlays/noah_journal/Noah_Polaroid_Hover.png" id="9_jstpq"]
 [ext_resource type="Script" uid="uid://ciuwp4sogdly6" path="res://Scenes/Journal Menu/Noah_Page/detention_button.gd" id="10_l237s"]
+[ext_resource type="Texture2D" uid="uid://dv343vpku6fg4" path="res://assets/Journal Overlays/noah_journal/N_Detention_Button.png" id="11_agu5n"]
+[ext_resource type="Texture2D" uid="uid://dehnh8068vavp" path="res://assets/Journal Overlays/noah_journal/N_Detention_Button_Hover.png" id="12_4cwn4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8x6mv"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
@@ -29,10 +33,10 @@ scale = Vector2(0.59907407, 0.59907407)
 texture = ExtResource("1_qp6ql")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=691147711]
-offset_left = 781.0
-offset_top = 242.99997
-offset_right = 821.0
-offset_bottom = 282.99997
+offset_left = 19.000061
+offset_top = 291.0
+offset_right = 59.00006
+offset_bottom = 331.0
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("2_nunql")
@@ -47,10 +51,10 @@ scale = Vector2(1.0723437, 2.437207)
 script = ExtResource("3_20vrq")
 
 [node name="InventoryButton" type="LinkButton" parent="." unique_id=825785624]
-offset_left = 771.00006
-offset_top = 137.0
-offset_right = 811.00006
-offset_bottom = 177.0
+offset_left = 12.0
+offset_top = 184.0
+offset_right = 52.0
+offset_bottom = 224.0
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("4_8x6mv")
@@ -65,29 +69,34 @@ scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("5_g06te")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=528319352]
-offset_left = 766.00006
-offset_top = 32.999992
-offset_right = 806.00006
-offset_bottom = 72.99999
+offset_left = 5.0
+offset_top = 80.99999
+offset_right = 45.0
+offset_bottom = 120.99999
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_ouwsn")
 
-[node name="NoahCharButton" type="Button" parent="." unique_id=2091267164]
-offset_left = 192.0
-offset_top = 186.0
-offset_right = 266.0
-offset_bottom = 254.0
-text = "Noah Char
-Button"
+[node name="NoahCharButton" type="TextureButton" parent="." unique_id=472890752]
+offset_left = 133.0
+offset_top = 291.0
+offset_right = 2415.0
+offset_bottom = 3147.0
+rotation = -0.080864854
+scale = Vector2(0.09772877, 0.09772877)
+texture_normal = ExtResource("8_65a6g")
+texture_hover = ExtResource("9_jstpq")
 script = ExtResource("9_8q5e3")
 
-[node name="DetentionButton" type="Button" parent="." unique_id=16920673]
-offset_left = 507.0
-offset_top = 145.0
-offset_right = 643.0
-offset_bottom = 183.0
-text = "n_detention"
+[node name="DetentionButton" type="TextureButton" parent="." unique_id=14041784]
+offset_left = 448.0
+offset_top = 489.0
+offset_right = 2217.0
+offset_bottom = 745.0
+rotation = -0.092865914
+scale = Vector2(0.18737209, 0.18737209)
+texture_normal = ExtResource("11_agu5n")
+texture_hover = ExtResource("12_4cwn4")
 script = ExtResource("10_l237s")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=1058246892]
