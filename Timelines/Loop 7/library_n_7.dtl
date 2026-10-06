@@ -1,3 +1,48 @@
-prep chat with noah
+join Lizzy right
+join Noah left
+Lizzy: You're dealing with this whole thing pretty well, Noah.
+Noah: I'm just happy I'm not in the hospital.
+- Noah is always coming up [br] with whacky schemes, [br] I should ask him about how [br] we should approach this.
+	Lizzy: Do you have any ideas of how to get through to Juniper?
+	Lizzy: you guys are childhood friends, right?
+	Noah: yeah, we go way back.
+	Noah: It's hard seeing her like this.
+	Lizzy: yeah.
+	Noah: she's usually the rational one.
+	Noah: maybe always being reasonable made her feel trapped within that indentity...
+	Noah: so the way to stop her is to address our imagined version of how she should be and accept who she really is.
+	Lizzy: ...
+	Lizzy: okay this is weirding me out.
+	Noah: yeah i have no idea where that came from.
+	Noah: ...
+- I really want to know[br]what he did a few loops[br]ago when he called me
+	Lizzy: hey, so I hate to ask this, but
+	Lizzy: what did you do that one time you called me?
+	Noah: Oh. That.
+	Noah: It's probably best you don't know.
+	Lizzy: I really really really
+	Lizzy: really really really really
+	Lizzy: Really really 
+	Lizzy: really want to know.
+	Noah: like ten reallys.
+	Noah: wow...
+	Noah: okay, well, only because we might not being coming back from this.
+	Lizzy: I wouldn't go that far—
+	Noah: I ate a bunch of styrofoam.
+	Lizzy: ...
+	Lizzy: What.
+	Noah: It always looked so good and I was like, well, since I'm getting reset anyway, why not?
+	Lizzy: ...
+	Noah: ...
+	Lizzy: Was it worth it—
+	Noah: yes.
+	Lizzy: ...
+	VO: damn. Why didn't I think of that?
+
+
+Noah: You know...
+Noah: A time loop would've been a wayyy better prank than my glitter canon.
+Lizzy: please don't try to make another time loop.
+Noah: I'm just saying!
 do ProgressionTracker.complete_requirement("7A", "noah_dialog")
 do GameState.mark_characters_as_spoken(["noah"])

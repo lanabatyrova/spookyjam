@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2ww3lx2ecg"
+path="res://.godot/imported/Myst on the Moor.mp3-978b1e5ff298652e7b66e8c4dd0ee3b1.mp3str"
+
+[deps]
+
+source_file="res://audio/Character Sounds/Myst on the Moor.mp3"
+dest_files=["res://.godot/imported/Myst on the Moor.mp3-978b1e5ff298652e7b66e8c4dd0ee3b1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

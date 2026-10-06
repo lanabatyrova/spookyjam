@@ -1,3 +1,61 @@
-prep chat with lady macdeath
+join Lizzy right
+join Knightmare left
+Lizzy: ...
+Knightmare: ...
+VO: well, this is awkward.
+VO: what do you say to your worst enemy?
+- How did Dagger and Lady Knightmare[br] even get into the library?[br]Last time I checked [br] vampires burn up in the sun.
+	Lizzy: So...
+	Lizzy: How did you and dagger get in here?
+	Lizzy: Isn't it like,
+	Lizzy: day light outside?
+	Knightmare: ... so?
+	Lizzy: why aren't you like,
+	Lizzy: piles of dust?
+	Knightmare: we traveled under the complex tunnels of your pitiful town.
+	Knightmare: it was easy to circumvent your false safeties.
+	Lizzy: ...
+	Lizzy: The sewer system?
+	Knightmare: Correct.
+	Lizzy: That explains the smell.
+	Knightmare: When I return to my mission of wiping you from this earth, all will crumble before my might, and the sewer system will become my domain!
+	Lizzy: I'm glad you're kinda back to your old self.
+	Knightmare: I will crush you!
+	Knightmare: after our mutual goal is complete.
+	VO: at least she's semi-resonable.
+- She seems really at [br] home in her new identity. [br] I wonder what inspired it?
+	Lizzy: I have to ask, this whole knights costume—
+	Knightmare: It is not a costume, Elizabeth Springs. It is a way of life.
+	Lizzy: Uh,
+	Lizzy: this way of life,
+	Lizzy: is it new to you, or is it something you've always...
+	Lizzy: Had?
+	Knightmare: Why do you wish to know? Are you fishing for secrets?
+	Lizzy: No, I'm just curious.
+	Knightmare: curosity killed the dog.
+	Lizzy: ...
+	Lizzy: It's cat.
+	Lizzy: Curosity killed that cat.
+	Knightmare: It does not matter.
+	Lizzy: c'mon, we like, came to an understanding earlier.
+	Lizzy: you can't reveal a crumb of backstory?
+	Knightmare: ...
+	Knightmare: I suppose you've earned it.
+	audio music "res://audio/Oppressive Gloom.mp3" [volume="0.0"]
+	Knightmare: It all started the minute I entered this world—
+	VO: oh wow, she's starting early.
+	leave --All-- [animation="Fade Out"]
+	[background arg="#000000ff" fade="0.0"]
+	[several sweeping minutes of rich visual storytelling]
+	[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
+	join Lizzy right
+	join Knightmare left
+	audio music -
+	Lizzy: Wow, that's incredible.
+	Knightmare: yes.
+	Knightmare: Thank you for respecting my tale, despite our past. It takes true strength of character to be an active listener.
+	VO: I totally just zoned out for all of that.
+	VO: ...
+	VO: I'll have to ask dagger later.
 do ProgressionTracker.complete_requirement("7A", "lady_dialog")
 do GameState.reach_midpoint(["lady_macdeath"])

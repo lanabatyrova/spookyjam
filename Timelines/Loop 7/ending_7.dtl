@@ -1,7 +1,8 @@
+[background arg="#000000ff" fade="0.0"]
 [present bffs]
 join Juniper left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
-join Lizzy right [animation="Fade In" length="2.0" wait="true"]
-Lizzy: You mean so much to me Juniper, and to see you in pain like this... we've got to look out for each other. I love you.
+join Lizzy (Full Wolf) right [animation="Fade In" length="2.0" wait="true"]
+Lizzy: You mean so much to me Juniper, and to see you in pain like this...
 Juniper: ....
 update Juniper [animation="Shake X" length="1.0" wait="true"]
 Juniper: Oh my god.
@@ -9,68 +10,90 @@ Juniper: I... oh god what have I...
 update Juniper [animation="Shake X" length="2.0" repeat_forever="true" mirrored="false"]
 update Lizzy center [animation="Tada" wait="true" move_time="0.5"]
 Lizzy: It's okay. You're okay.
+update Juniper [animation="Shake X"]
+[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
+update Juniper leftmost
+update Lizzy lefter
+join Noah midright [mirrored="true"]
 
 
+Noah: So, that just happened.
+join Barb center [mirrored="true"]
+Barb: Just because you know you’re in a TV show doesn’t mean you need to pull out the cliche dialogue.
+join Valerie right [mirrored="true"]
+Valerie: Oh my, this is a lot to take in…
+Valerie: A television program?
+join Dagger righter [mirrored="true"]
+join Knightmare rightmost
+Dagger: I don’t know how I feel about my pain being put on display to millions of viewers across the country.
+Noah: That explains why weird things happen on a weekly basis.
+update Lizzy (Full Body)
+Lizzy: Jay, how did this all start?
+Lizzy: How can we help?
 Juniper: I don't know where to begin.
-join Barb right [animation="Slide From Right" wait="true"]
-Barb: How about with why you forced us into a time loop?
-join "Lady MacDeath" rightmost [animation="Slide In Up" wait="true"]
-"Lady MacDeath": Yes. Seconded.
-Juniper: Okay, so, this is going to sound crazy. This wasn't actually a time loop.
-Everyone: ...
-Juniper: There's this TV show called Lizzy Springs Monster Hunter and Werewolf, and it ran for two seasons from the years 2000- 2002.
-Everyone: ...
-Lizzy: Juniper..
-Lizzy: Are you saying someone stole my life story and is making money off it?
-Juniper: No. No. I practised this conversation so many times... Okay.
-Juniper: What I meant to say is, we've all been under a lot of pressure from the vampire lords, and I had this vision where Vermilion Hills was destroyed. I told Valerie.
-Valerie: Yes, I remember that.
-Juniper: What I didn't tell you Valerie was that in one of my visions, Lizzy died.
-Lizzy: Oh...
-Juniper: I didn’t tell anyone, because I wasn't going to let it happen.
-When my family first moved to Vermilion Hills, it was said the silver made their Clairvoyance stronger. I decided to test the theory by going into the mine, to just widen the picture a bit. See if I could prevent it.
-Well, the silver was too much. I saw something... not of this world.
-Juniper: We are in a TV show, and we only exist for 2 seasons and 22 episodes.
-Juniper: Ever wonder why weird things happen on a weekly basis?
-Lizzy: I don't believe this.
-Juniper: In my vision, I saw that we don't get a season 3. Season 2 ends on a cliff hanger. A cliff hanger where you're presumed dead, Lizzy.
-Lizzy: I don't understand…
-Juniper: The day we've been living over and over again is season 2, episode 21\: Lady in Waiting.  Tomorrow would've been season 2, episode 22\: One in Vermilion.
-Valerie: The final episode of the show.
-Lizzy: They named it a stupid pun? No wonder it got canceled.
-Juniper: I'll be honest, the titles grew on me eventually.
-Juniper: I chose episode 21 because it's the only episode where we can spend time with each other. I tried earlier ones but they weren't the same.
-Barb: Why didn't you try to change the ending of the final episode? Also
-Barb: just double checking, we're okay with this whole we're a tv show thing?
+Barb: How about with why you thought it was a good idea to force us into a time loop?
+Noah: I think the more accurate term is "rerun".
+Barb: Just double checking, we're okay with this whole we're a tv show thing?
 Noah: Yeah.
-Dagger: I don’t really know what a tv show is, but I assume it's those watchies?
-Lizzy: Please stop showing your age.
-Juniper: Oh, I tried. I tried a lot. The first year was me trying and trying and trying but no matter what we just stopped existing. Even if I saved Lizzy.
+Valerie: Yes.
+Dagger: No.
+knightmare: Excalibur!
+Barb: Can she leave?
+Juniper: I’m sorry you had to learn about it this way.
+Lizzy: Why this day?
+Juniper: I chose this episode because it’s one where we spend the most time together, going dress shopping with Barb, talking in the diner.
+Noah: Lizzy told me I got sent to the hospital?
+Noah: How is that spending time together?
+Juniper: Sorry, Noah,
+Juniper: None of the other episodes were as...
+Juniper: Nice.
+Juniper: Next episode is the season finale, where Lady MacDeath attacks graduation and kills almost everyone.
+Juniper: It ends with...
+Juniper: Lizzy, it ends with you dying.
+Lizzy: What.
+Juniper: And the show was cancelled after season two, so there was never a season three where we could bring you back.
+Lizzy: I...
+Lizzy: Die?
+Noah: Why’d we get cancelled?
+Juniper: I think it’s because of the oversaturated teen paranormal drama genre.
+Noah: Originality goes to Hollywood to die.
+Lizzy: So, how did you figure out we were in a TV show?
+Juniper: It’s said that the silver from the mine makes my family’s power of clairvoyance  stronger.
+Juniper: When I had my vision about Vermillion Hills being destroyed,
+Juniper: About you dying,
+Juniper: I decided I might as well see if the mine could help widen the picture,
+Juniper: To see if there was a way to prevent you from dying.
+Valerie: You never told me Elizabeth died in your vision.
+Valerie: Why did you keep it from us.
+Juniper: I thought I could stop it. Make it so there was no reason to tell you.
+Juniper: Well, as it turns out, silver worked.
+Juniper: Too well.
+Juniper: I saw the real world,
+Juniper: Saw the executives refusing to renew the next season,
+Juniper: The writers leaving to work on other shows.
+Juniper: I didn’t know how to process it at first.
+Juniper: I think I convinced myself it wasn’t real, that I was imagining it.
+Juniper: But then, the finale played, and everything was happening as I saw it.
+Juniper: I rushed back here.
+Juniper: The only thing I could do to stop the episode from ending was to rewind. I kept rewinding. All the way to the beginning.
+Juniper: I did that for a while, restarted the whole show over and over again.
+Juniper: The first year was a lot of trying and failing to save you, Lizzy.
+Juniper: It became easier to just play one episode.
 Valerie: The first year?
-Lizzy: We've been looping for a year???
+Lizzy: We've been looping for a year?
 Juniper: ...
 Juniper: More like.
-Juniper: Twenty-five or so years. Give or take.
-Barb: No.
-Noah: Wait I can legally drink now?
-Valerie: Twenty five years. .. that's unimaginable. How are you not.. well...
+Juniper: Twenty-five or so years.
+Juniper: Give or take.
+Barb: Excuse me?
+Noah: Wait,
+Noah: I can legally drink now?
+Valerie: Twenty five years. .. that's unimaginable.
+Valerie: How are you not.. well...
 Juniper: Insane?
-Juniper: I'll be honest, having visions was already like reliving the same day. At first, when I set up the automatic rewind, I would do everything exactly as it was supposed to be. Sometimes I would spice things up again and spend time with each and every one of you. I know so much about Barb's love of bad Sci Fi monster of the week shows and her crush on Lizzy-
-Lizzy: Wait
-Barb: Hold on um sorry what
-Dagger: what
-Lady Knightmare\: Huzzah! What a twist!
-Noah: I knew it.
-Juniper: Oh. Sorry Barb. I. I'm still used to nothing really sticking after the reset.
-Barb: You are so mean! All of you stop smirking!
-Lizzy: Awh... you're so flustered.
-Barb: UGH!!!
-Juniper: I was comfortable in knowing exactly how everyone would react to everything. What would happen every second. It was safe.
-Valerie: Did you ever let the episode end? Episode 22?
-Juniper: There's nothing. I saw it. In my vision.
-Juniper: If it ends, I won't be able to rewind.
-Lizzy: Well. We don't know what will happen. Not really.
-Juniper: But my visions..
-Lizzy: They've been wrong before.
+Valerie: Uh...
+Valerie: I wasn’t going to say it.
+STILL need to finish
+
 do GameState.next_day()
 jump epilogue_timeline/
