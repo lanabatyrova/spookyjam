@@ -53,25 +53,53 @@ Valerie: Elizabeth, please know that I’m here to help with whatever problem yo
 Valerie: but you need to be more realistic.
 Valerie: Why would Lady MacDeath go to all the trouble to make a time loop when you could spend all of your loops figuring out how to stop her?
 Lizzy: because she’s evil?
-Valerie: How about you go home and get some rest before graduation tomorrow.
-Valerie: And then, if you wake up tomorrow, or at the beginning of the day again, you can face it with a fresh mind.
-Lizzy: thanks for the advice.
-Valerie: ...
-Valerie: I’m sorry I wasn’t able to give you the answer you wanted.
-Lizzy: It’s fine.
-Valerie: Here, take this.
+Valerie: You cannot create problems to solve. Change is scary and that's okay—
+Lizzy: I'm not making this up, it's real.
+Lizzy: We deal with weird stuff all the time, why is this so hard to believe.
+Valerie: When I graduated from highschool, I was expected to go directly into the Keepers.
+Valerie: It was tradition.
+Valerie: but I didn't want to be a keeper. I saw how it tore my mother and father apart.
+Valerie: the long hours, the desperate struggle between good and evil,
+Valerie: and also the corruption within the institution.
+Valerie: I don't like sharing this about myself, but...
+Valerie: during my highschool years I'd worked a couple of odd jobs here and there at chemists and one stop shops.
+Valerie: Eventually I'd saved up enough travel money.
+Valerie: After I finished school, I packed a few things and took a train to Glasgow.
+Valerie: that's in Scotland, if you were wondering.
+Lizzy: I actually was.
+Valerie: I left a note for my father, telling him I was going to live my own life and forge my own path.
+Valerie: it was quite mean spirited actually.
+Lizzy: This is kinda blowing my mind right now, Val.
+Valerie: I am a very different person now.
+do GameState.learn_fact("v_future_worries")
+Lizzy: what did you do in Scotland?
+Valerie: well, I mostly hung out with sheep in fields and wrote poetry while staring out at the water.
+Lizzy: ...
+Valerie: It took about a year for my father to finally track me down and take me back home.
+Valerie: and I went kicking and screaming,
+Valerie: but eventually, I saw reason.
+Valerie: He sat me down and gave me this.
+join Item (Watch) center [animation="Fade In Up"]
+Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started.
+Valerie: It's a symbol of the struggle between light and darkness.
+Valerie: and why I had to join the Keepers.
+leave Item [animation="Fade Out Down" length="0.3"]
+Lizzy: The watch is nice and all, but you told me this last time too.
+Valerie: I want you to hold onto it for me,
+Valerie: just until graduation.
+Valerie: then you can give it back.
+Lizzy: I....
 set {collected_item_name} = "pocket_watch"
 join Characters/Item center [animation="Fade In" length="1.0"]
 do GameState.pick_up_item("pocket_watch")
 [wait_input]
 leave Characters/Item [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
-Lizzy: Your lucky pocket watch? Didn’t your grandma give you this?
-Valerie: She told me it would get me through any difficult obstacle life threw at me. It’s made of gold and is only a few minutes behind.
-Lizzy: why are you giving this to me?
-Valerie: To give you something to remind you of how you aren’t the only one in this fight. You can give it back to me after you graduate tomorrow.
-Lizzy: if there is a tomorrow...
-do GameState.learn_fact("v_future_worries")
+Lizzy: Thanks.
+Valerie: get some rest before your big day.
+Valerie: I'll see you tomorrow.
+VO: if there is a tomorrow...
+
 
 
 do ProgressionTracker.complete_requirement("1A", "library_dialog")
