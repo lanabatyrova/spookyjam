@@ -1,2 +1,74 @@
-intro chat with juniper when you get to the mine
+[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
+join Lizzy left
+Lizzy: So this is the abandoned silver mine, huh?
+join Barb midleft [mirrored="true"]
+Barb: It’s super creepy
+join Noah midright [z_index="1" mirrored="true"]
+Noah: It looks...
+Noah: well, abandoned is a good description.
+Lizzy: It’s like everyone just vanished and left behind dusty stuff.
+join Valerie center [mirrored="true"]
+Valerie: Vermilion’s entire economy was based around this mine. It’s a living piece of history. Look at this preserved gear.
+join Knightmare rightmost
+Knightmare: Hmm.
+join Dagger right
+Dagger: ...
+Dagger: There is a lot of silver still within these walls.
+update Dagger [animation="Shake Y" length="0.8"]
+Dagger: My vampire strength is weakening...
+Knightmare: We shouldn’t stay here long.
+Lizzy: Juniper!
+Lizzy: Please, we want to help!
+Barb: aren’t you going to wolf out?
+Lizzy: What? Why?
+Barb: because Juniper’s gone all rogue.
+update Lizzy [animation="Bounce" mirrored="false"]
+Lizzy: We’re not here to fight her, Barb.
+Barb: Really? Because this is totally like some boss battle or climatic finish to a movie or something.
+Knightmare: I’ve come prepared to fight.
+Lizzy: We’re not fighting anyone.
+update Lizzy [mirrored="false"]
+
+
+Juniper: ah. Lizzy.
+join Juniper leftmost [animation="Fade In"]
+Juniper: and everyone else.
+Noah: Hey, Juni!
+Barb: ...
+update Knightmare [animation="Heartbeat" length="0.8" repeat="3"]
+Knightmare: We’ve come to crush your bones to ash—
+Lizzy: We’ve come to help you.
+update Knightmare [mirrored="true"]
+Knightmare: Don’t interrupt me.
+Lizzy: Lady, we talked about this like two seconds ago.
+Dagger: My Lady, perhaps it’s best to let Lizzy take the lead on this.
+Knightmare: Whatever.
+Knightmare: When you’re ready to kill someone, let me know.
+Juniper: I wasn’t expecting you to team up with Dagger and Lady MacDeath.
+Juniper: Or I guess she’s Lady Knightmare now.
+Knightmare: and don’t you dare forget it, knave!
+update Lizzy [mirrored="false"]
+Lizzy: Desperate times.
+Barb: Yeah, you didn’t really give us a chance.
+Barb: What gives??
+Juniper: It’s too difficult to explain.
+Juniper: and even if I did...
+update Juniper [animation="Shake Y" mirrored="true"]
+Juniper: all of you would just complicate things.
+Lizzy: Things are already pretty complicated,
+Lizzy: because you’re trapping everyone in a time loop for some reason.
+Juniper: This isn’t something I’ve chosen to do lightly.
+Juniper: I’ve tried everything else.
+Lizzy: There’s always another way.
+Juniper: ...
+update Juniper [mirrored="true"]
+Juniper: No offense, Lizzy, but I know what you’re trying to do, but you don’t know the whole story.
+Lizzy: then tell me! Please, don’t carry this alone!
+Juniper: I’m sorry.
+Juniper: I can’t.
+Juniper: There’s nothing you can say to change my mind.
+Lizzy: Oh, really?
+Lizzy: Wanna bet on it?
+Juniper: Lizzy...
+
 jump minigame_j_7/

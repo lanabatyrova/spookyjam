@@ -1,1 +1,44 @@
-waking up on day 7
+[alarm blaring]
+join Lizzy (Talking) center
+VO: what the hell?
+
+[phone ringing]
+
+
+Lizzy: Juniper!
+update Lizzy right [length="0.1" move_time="0.2"]
+join Juniper (Phone) left
+Juniper: Hey Lizzy. Sorry about...
+Juniper: ...
+Juniper: I lost my cool.
+Juniper: That doesn’t usually happen.
+Lizzy: What you’re doing is crazy, but I know you must have a good reason.
+Lizzy: Let us help you figure it out. We’re a team.
+Juniper: You have to trust me.
+Juniper: ...
+Juniper: Don’t you trust me, Lizzy?
+Lizzy: ...
+update Lizzy [mirrored="true"]
+Lizzy: I wish I could say I did.
+Juniper: ...
+Juniper: That’s...
+Juniper: ...
+Juniper: I’m sorry you feel that way.
+Juniper: ...
+Juniper: Maybe next time around, you’ll understand.
+update Lizzy [mirrored="false"]
+Lizzy: Please, Jay.
+Lizzy: You must know how ominous that sounds.
+Juniper: Goodbye, Lizzy.
+leave Juniper
+Lizzy: Juniper!
+update Lizzy center
+
+VO: she hung up.
+VO: why is she doing this? It doesn’t make any sense?
+VO: is she trying to stop something from happening?
+VO: something she saw in a vision?
+VO: ...
+VO: the why doesn’t matter.
+VO: I need to save her from herself.
+VO: it’s going to be okay, Jay. Just hang on a bit longer.

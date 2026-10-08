@@ -1,3 +1,34 @@
-prep chat with dagger
+join Lizzy left
+join Dagger right
+Lizzy: Hey.
+Dagger: Hello.
+- I appreciate dagger being [br] here, I should tell him.
+	Lizzy: Thanks for making it, Dagger.
+	Lizzy: it means a lot to me.
+	Dagger: of course.
+	Dagger: I would walk to the ends of existence for you.
+	Lizzy: ...
+	Dagger: in a loyal friend kind of way,
+	Dagger: if you'd prefer.
+	Lizzy: I'm still deciding.
+- he's like super old, he probably [br]deals with this sort of thing all the time.
+	Lizzy: Have you much experience with...
+	Lizzy: this sort of thing?
+	Dagger: betrayal?
+	Lizzy: I wouldn't call it betrayal—
+	Dagger: it's hard to accept at first that a close ally could possess the ability to stab you in the back.
+	Lizzy: Okay, okay,
+	Lizzy: Juniper isn't stabbing me in the back or anything,
+	Lizzy: she's just,
+	Lizzy: repeating the same day over and over again.
+	Lizzy: Normal teen stuff.
+	Dagger: You may have to kill her.
+	Lizzy: WHoa, hey! No. No one is killing her, alright?
+	Dagger: ...
+	Dagger: just prepare for the possibility.
+	Lizzy: Yeah, i'm not doing that.
+	Dagger: ...
+	Dagger: you are a better person than I am.
+	
 do ProgressionTracker.complete_requirement("7A", "dagger_dialog")
 do GameState.mark_characters_as_spoken(["dagger"])

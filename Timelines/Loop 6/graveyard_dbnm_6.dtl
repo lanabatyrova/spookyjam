@@ -2,25 +2,36 @@ join Dagger leftmost [animation="Fade In Up" length="0.3" wait="true" z_index="1
 join Lizzy center [animation="Fade In Up" length="0.3"]
 join Noah right [animation="Fade In Up" length="0.3" z_index="3" mirrored="true"]
 join Barb rightmost [animation="Fade In Up" length="0.3" wait="true" z_index="2" mirrored="true"]
-Dagger: Excellent, you’ve arrived.
-Dagger: Hello Lizzy’s friends.
+Dagger: You're here.
+Dagger: And you've brought...
+Dagger: Friends.
 Noah: Hey.
 Barb: Um, hi.
 Dagger: Where is the other one?
 Dagger: The psychic.
-Lizzy: She’s experiencing some technical difficulties.
+Lizzy: She’s experiencing some...
+Lizzy: technical difficulties.
 Lizzy: Hopefully when we deal with Lady MacTime Loop she should go back to normal.
-Barb: MacTime Loop. You couldn’t think of anything better?
-Lizzy: I’m working with what I got.
-Dagger: Alright then.
+Barb: MacTime Loop?
+Barb: You couldn’t think of anything better?
+Noah: yeah, like Lady Mac...
+Noah: ...
+Noah: I got nothing.
+Lizzy: See?
+Lizzy: It's not easy coming up with this stuff.
+Barb: Whatever.
+Dagger: As much as I enjoy witnessing your friendship banter,
+Dagger: We are wasting time.
+Lizzy: Right. Follow me.
 Dagger: Lead the way.
 update Lizzy righter [mirrored="true" move_time="0.2"]
 update Barb left [mirrored="false" move_time="0.2"]
 update Noah center [mirrored="false" move_time="0.2"]
+[Click]
+[Phone ringing]
+Lizzy: It's ringing.
 Noah: ....
 Dagger: ....
-
-
 Dagger: My vampire hearing is picking up the ringing from over here.
 Lizzy: I have super hearing too.
 Barb: Dog hearing.
@@ -29,9 +40,11 @@ Lizzy: Normal super hearing.
 Barb: So you can't hear dog whistles??
 Lizzy: I mean, I guess I can.
 Barb: Dog hearing.
-Lizzy: Fine. Yes. I have dog hearing.
+Lizzy: Fine.
+Lizzy: Yes.
+Lizzy: I have dog hearing.
 
-
+[Phone clicks]
 Lizzy: Oh she just picked up-
 join "Lady MacDeath" (Phone) center [animation="Slide In Up" length="0.3" z_index="5"]
 
@@ -43,19 +56,32 @@ leave "Lady MacDeath" [animation="Slide Out Down" length="0.3"]
 Lizzy: ...
 Noah: She must really value her privacy.
 
-Barb: Hey, this tombstone is loose. Somebody should really get that fixed.
-Lizzy: Here, let me wolf out and—
+Barb: Hey, Um, sorry to interupt the phone call buddies or whatever,
+Barb: but this tombstone is like totally loose!
+Barb: When I went to sit on it I almost broke my arm.
+Barb: Do the graveyard staff do any maintenance.
+Noah: You were sitting on a tombstone?
+Noah: It's that like,
+Noah: super disrespectful?
+Barb: Um? Why would they care?
+Barb: They're dead.
+Lizzy: I'm just glad we found something.
+Lizzy: Let me wolf out and—
 update Lizzy (Half Wolf) [animation="Tada"]
 [background arg="#ffffffff" fade="0.2"]
 [background arg="res://" fade="0.2"]
 Lizzy: Grahhhhh.
+[stone being moved and tossed a few feet away]
 Lizzy: Wooof.
 Noah: Would you look at that! A secret entrance to an underground lair.
-Noah: This is awesome.
+Noah: This is so cool.
+Noah: like the catacombs in parie.
 Barb: ...
-Barb: Do we really have to go down there? These are new shoes.
-Lizzy: I’ll buy you a new pair.
-Barb: Ugh, what ever.
+Barb: Do we really have to go down there?
+Barb: These are new shoes.
+Lizzy: I’ll buy you an even newer pair.
+Barb: ...
+Barb: I'm holding you to that.
 Dagger: Let’s go now, before my Lady gets wise to the plan.
 [background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="1.0"]
 update Lizzy center [mirrored="false" move_time="0.5"]
@@ -68,12 +94,15 @@ join "Lady MacDeath" leftmost [animation="Fade In" length="1.0" wait="true"]
 Lizzy: Lady MacDeath!
 "Lady MacDeath": Uh, what?
 "Lady MacDeath": Elizabeth Springs and your other busy body friends,
-"Lady MacDeath": though I notice a lack of the tall one, I always liked her best,
+"Lady MacDeath": though I notice a lack of the tall one fashionable one, I've always liked her best.
+Barb: I'm fashionable!
+"Lady MacDeath": with those shoes and jacket?
+Barb: unbelievable! You're like one million years old.
 "Lady MacDeath": What are you doing here? How did you find my secret lair?
 Lizzy: We called your landline.
 "Lady MacDeath": That was you?
 "Lady MacDeath": I should’ve known!
-"Lady MacDeath": I was going to save your destruction for later tonight when my plan comes to fruition...
+"Lady MacDeath": I was going to save your destruction for later tonight when my plan comes to pass...
 update "Lady MacDeath" [animation="Shake X" length="1.0"]
 "Lady MacDeath": But this opportunity is so delicious—
 update Dagger midleft [move_time="0.2"]

@@ -1,4 +1,61 @@
-prep chat with barb
+join Barb (Talking) left [z_index="1"]
+join Lizzy (Talking) right
+Lizzy: hey.
+Barb: ...
+Lizzy: ...
+VO: she's normally more talkative than this.
+VO: Juniper must be really affecting her.
+- I should comfort Barb, she looks [br]like she's having a tough time
+	Lizzy: How are you doing? Everything okay?
+	Lizzy: I'm here for you.
+	Barb: Are you trying to comfort me?
+	Lizzy: Uh.
+	Lizzy: No?
+	Lizzy: No. Why would I do that?
+	Lizzy: it's not like we're all going through an extremely stressful time or anything.
+	Barb: ...
+	Barb: sorry, I didn't mean it like that.
+	Barb: thanks.
+	Lizzy: ...
+	Lizzy: now i really know that you're worried.
+	Barb: you don't have to be an asshole.
+	Lizzy: sorry.
+	Lizzy: Do you want a hug?
+	Barb: ...
+	Barb: yes.
+	Lizzy: come here.
+	update Barb midright [animation="Tada" move_time="0.5"]
+	[wait time="3.0"]
+	update Barb center [move_time="0.4"]
+- emotional vulnerability [br] makes barb uncomfortable,[br] I should approach this [br] with a blase attitude.
+	Lizzy: what a wild tuesday.
+	Lizzy: ...
+	Lizzy: you catch the big game?
+	Barb: ...
+	Barb: how could she do this to us?
+	VO: thank god.
+	VO: I suck at small talk.
+	Lizzy: whatever she's doing, it's only because she thinks its helping.
+	Barb: She thinks its helping you, Lizzy.
+	Barb: everything she does is because of you.
+	Barb: the whole school is convinced you're both massive lesbos.
+	Lizzy: whoa, you can't be saying that.
+	Barb: what ever.
+	Lizzy: the whole school?
+	Lizzy: you asked every single person?
+	Lizzy: even Janitor Jim?
+	Barb: especially janitor jim.
+	Lizzy: oh, well, if janitor jim thinks so...
+
+
+Barb: she really cares about you, Lizzy.
+Barb: don't mess this up by self sacrificing yourself or going along with her idea because she's super good at convincing you.
+Barb: be firm.
+Barb: and...
+Barb: ...
+Barb: be careful.
+
+
 do ProgressionTracker.complete_requirement("7A", "barb_dialog")
 
 do GameState.mark_characters_as_spoken(["barb"])
