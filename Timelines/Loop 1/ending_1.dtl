@@ -1,9 +1,10 @@
-[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="0.0"]
+[wait time="0.5"]
+[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="1.0"]
 join Lizzy right [animation="Instant In"]
 VO: Well, that could've been better.
 [wait time="0.4"]
 audio "res://audio/Character Sounds/floraphonic-spooky-movement-violin-6-186910.mp3"
-join Dagger left [animation="Fade In" length="2.0" wait="true"]
+join Dagger left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
 [wait time="0.5"]
 Lizzy: Dagger!
 Lizzy: What are you doing here?
@@ -17,14 +18,14 @@ Lizzy: Your grief over me is not helpful. AT ALL.
 Lizzy: When will you get it through your thick lucious curls! There’s more going on
 Dagger: …
 Dagger: I apologise for getting in the way.
-leave Dagger [animation="Fade Out" wait="true"]
+update Dagger offleft [wait="true" mirrored="false" move_time="0.5"]
 Lizzy: Dagger—
 Lizzy: I didn’t.
 Lizzy: …
-[background arg="#000000ff" fade="0.0"]
 leave Lizzy [animation="Fade Out"]
+[background arg="#000000ff" fade="1.0" wait="true"]
 [background arg="res://assets/to be continued.png" fade="1.0" wait="true"]
 [wait time="2.0"]
 do GameState.next_day()
-[background fade="1.7"]
-jump intro_2/
+[background arg="#000000ff" fade="0.5" wait="true"]
+jump rewind/

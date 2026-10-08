@@ -74,8 +74,9 @@ update Lizzy [animation="Bounce" repeat_forever="true" mirrored="false"]
 Lizzy: But Emmerdale is half way across the United States!
 Lizzy: What if they need me. I can’t kill a vampire through the computer. Not yet anyway.
 Lizzy: What if some crazed frogman attacks Barb or Juniper sees a vision about impending doom and I’m too busy writing an essay about an old book nobody reads anymore—
-update Lizzy [animation="Bounce"]
 update Valerie center [move_time="0.1"]
+[wait time="0.1"]
+update Lizzy [animation="Bounce"]
 Valerie: Lizzy!
 Valerie: Things are comfortable right now.
 Valerie: And I’m sure we could spend another two or three years operating exactly as we are now, hunting vampires, saving people...

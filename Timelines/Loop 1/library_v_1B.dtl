@@ -5,4 +5,5 @@ VO: I don't think she wants to hear anymore about the time loop.
 Lizzy: Yeah, I'm heading there now.
 Lizzy: Thanks again for the watch.
 Valerie: Of course, I meant what I said.
+leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken()

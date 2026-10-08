@@ -1,10 +1,12 @@
-Dagger: Dagger: It doesn’t make any sense.
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Lizzy (Talking) right [animation="Fade In Up"]
+join Dagger (Talking) left [animation="Fade In Up" wait="true" mirrored="true"]
 Lizzy: Like it or not, she's added trapping me in an endless time loop to her ultimate revenge plan, so that's great.
 Dagger: I don't know why she wouldn't have talked to me about it first. She always consults with me.
 Lizzy: Maybe she knows about...
 Lizzy: You know, the conflict of interest?
 Dagger: I suppose she's noticed how frequently we've been speaking.
-Dagger: How... 
+Dagger: How...
 Dagger: ...
 Dagger: You affect me, Lizzy.
 Lizzy: Dagger...
@@ -23,7 +25,5 @@ Lizzy: ...
 Lizzy: This isn’t easy for me to say,
 Lizzy: but I want to know you too—
 TO BE CONTINUED
-
-do GameState.learn_fact("m_shakespeare_hate")
 do GameState.next_day()
 jump intro_6/

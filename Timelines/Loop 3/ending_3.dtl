@@ -36,4 +36,4 @@ Lizzy: wait what the hell--
 leave Barb
 do GameState.make_item_collectible("belt")
 do GameState.next_day()
-jump intro_4/
+jump rewind/

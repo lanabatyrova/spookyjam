@@ -19,7 +19,7 @@
 &"portraits": {
 "Full Body": {
 "export_overrides": {
-"image": "\"res://assets/People/Barb_1.png\""
+"image": "\"res://sprites/Barb_1.png\""
 },
 "ignore_char_scale": true,
 "mirror": false,
@@ -48,7 +48,7 @@
 },
 "Talking": {
 "export_overrides": {
-"image": "\"res://assets/People/Barb_1.png\""
+"image": "\"res://sprites/Barb_1.png\""
 },
 "mirror": false,
 "offset": Vector2(30, 310),

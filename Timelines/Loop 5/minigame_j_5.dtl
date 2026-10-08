@@ -69,8 +69,11 @@ if {strikes_number} < 3.0:
 	jump Journal Select
 [background fade="2.0" wait="true"]
 audio music - [fade="4.0"]
-
-do GameState.end_minigame()
-leave Juniper [animation="Slide To Left"]
-Dagger: i'm here now!
+update Juniper [animation="Shake X"]
+Juniper: [something something getting mad about stuff]
+leave Juniper [animation="Slide To Left" wait="true"]
+join  center
+Lizzy: [insert lizzy line]
+join Dagger center [animation="Fade In Up"]
+Dagger: i'm here now! that's crazy that thing you just said...
 jump minigame_d_5/

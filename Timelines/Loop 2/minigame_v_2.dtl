@@ -1,7 +1,7 @@
 do GameState.start_minigame()
 [background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
 audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
-join Valerie center
+join Valerie midleft
 [wait time="1.5"]
 Lizzy: I have proof!
 Valerie: Alright then.
@@ -24,7 +24,7 @@ if {is_success} == true:
 		Lizzy: and then travelled around Scotland for two years and hung out with sheep.
 		Lizzy: Eventually your dad dragged you back and you agreed to work with him.
 		Valerie: ...
-		Valerie: I don't see how you would know... 
+		Valerie: I don't see how you would know...
 		Valerie: Unless you contacted my father, but that's rather unlikely.
 	
 	elif {current_item} == "pocket_watch":
@@ -60,5 +60,4 @@ Valerie: Now this is troubling...
 Lizzy: This is what I've been dealing with.
 Valerie: Well, I'm sure we can figure this out together.
 do GameState.end_minigame()
-jump ending_3/
 jump midpoint_2/

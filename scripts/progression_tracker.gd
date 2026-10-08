@@ -29,6 +29,7 @@ var requirements_7A = {
 
 var requirement_sets = {
 	"1A" = requirements_1A,
+	"1B" = requirements_1B,
 	"3A" = requirements_3A,
 	"7A" = requirements_7A
 }

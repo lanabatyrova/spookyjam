@@ -1,10 +1,10 @@
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.0"]
-join Lizzy (Talking) right [animation="Instant In"]
-join Dagger (Zoomed in) left [animation="Fade In" mirrored="true"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Lizzy (Talking) right [animation="Fade In"]
+join Dagger (Talking) left [animation="Fade In" mirrored="true"]
 Lizzy: Dagger! You’re here.
 Lizzy: Actually, I don’t know why I’m surprised.
 Dagger: Lizzy… a serendipitous entrance...
-update Dagger (Zoomed in) [animation="Shake X" mirrored="false"]
+update Dagger [animation="Shake X" mirrored="false"]
 Dagger: I was just observing the epitaphs on the tombstones that call this place home,
 Dagger: and it struck me how death is inevitability for much of humanity,
 Dagger: But for others...
@@ -17,4 +17,4 @@ Dagger: …
 Dagger: We are as... You see, vampires and werewolves go together as well as Napoleon and surrendering.
 Lizzy: Please stop reminding me how old you are.
 VO: This is getting me no where.
-leave --All-- [animation="Fade Out"]
+leave --All-- [animation="Fade Out Down"]

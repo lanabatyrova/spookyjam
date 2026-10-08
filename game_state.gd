@@ -6,15 +6,15 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 0
-var midpoint_reached = false
+var current_day: int = 5
+var midpoint_reached = true
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
 	"sewing_kit": false,
-	"belt": false,
-	"allergy_meds": false,
+	"belt": true,
+	"allergy_meds": true,
 	"pocket_shakespeare": false,
 	"silver_nugget": true,
 	"pocket_watch": false,
@@ -36,13 +36,13 @@ var item_collectible = {
 # and bff photo) to more easily keep track of them. Could be used
 # both for journal display and mini game button appearances?
 var facts = {
-	"v_case_study": false,
-	"v_future_worries": false,
+	"v_case_study": true,
+	"v_future_worries": true,
 	"b_camp_story": false,
 	"b_clown_school": true,
-	"n_detention": false,
-	"d_brother_death": false,
-	"d_zombie_plan": false,
+	"n_detention": true,
+	"d_brother_death": true,
+	"d_zombie_plan": true,
 	"m_suspition": false, # lmd is causing the loop?
 	"m_absolved": false, #no she's not
 	"m_shakespeare_hate": false,
@@ -134,3 +134,9 @@ func next_day():
 	midpoint_reached = false
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print
+
+
+
+
+
+# ---------debug helper section-----------

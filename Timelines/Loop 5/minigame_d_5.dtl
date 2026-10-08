@@ -1,2 +1,61 @@
-minigame for dagger
+do GameState.start_minigame()
+[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
+join Dagger (Full Body) center
+[wait time="1.5"]
+Dagger: [that conversation i overheard just now is very compelling...]
+set {strikes_number} += 1.0
+jump Ball
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "d_brother_death":
+		Lizzy: you told me last loop that your first vampire kill was your older brother.
+		Dagger: Oh.
+		Dagger: that is not something I ever wished to share with you, Elizabeth.
+		Lizzy: you were in a pretty bad place. Yeah.
+		Dagger: My brother wasn't a good person, but he did not deserve his fate. I atone for that mistake everyday-
+		Lizzy: yeah youve told me all this already.
+		Dagger: oh, yes, that makes sense.
+	elif {current_item} == "d_zombie_plan":
+		Lizzy: For the last few loops Lady MacDeath keeps attacking the town with zombies.
+		Lizzy: it's really annoying.
+		Dagger: her plan... how could you possibly know that. I haven't told you yet.
+		Lizzy: i also know that she's doing it because she's really broken up about me killing her husband. Like really broken up.
+		Dagger: yes. She hasn't been herself lately.
+		Lizzy: uh, she seems the same sort of crazy as she was before?
+		Dagger: She isn't so bad once you get to know her. She can be quite lovely at times. Shakespeare was her husbands thing, and honestly, she sort of hates the bard.
+		do GameState.learn_fact("m_shakespeare_hate")
+		Dagger: i think that eventually she will come into her own, but for now, she's using it as a critch to deal with her negative emotions.
+		Lizzy: youve really analysed her, huh?
+		Dagger: i spend a lot of time alone with my thoughts
+		Lizzy: well now shes added time loop to her ultimate revenge plan,  so that's great.
+		Dagger: i dont know why she wouldnt have talked to me about it first. She always consults me before her evil plans.
+		Lizzy: conflict of interest?
+		Dagger: I suppose she's noticed how frequently we've been speaking.
+	set {strikes_number} += 1.0
+	label Ball
+	join Item leftmost [animation="Zoom In" length="9.0"]
+	leave Item [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 2.0:
+		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 3.0:
+		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+	[wait time="1.5"]
+else:
+	Dagger: And this is supposed to mean something to me because....?
+	Lizzy: Uh... I was just testing to see if you're paying attention.
+	[V.O] I'll have to try something else.
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+[background fade="2.0" wait="true"]
+audio music - [fade="4.0"]
+Dagger: it doesn't make any sense...
+leave --All-- [animation="Fade Out Down" wait="true"]
+do GameState.end_minigame()
 jump ending_5/
