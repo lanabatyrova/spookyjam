@@ -1,3 +1,19 @@
-we're in the hallway on loop 3!
+join Juniper lefter
+join Barb midleft
+join Lizzy midright
+Juniper: Hey, Lizzy, want to head to the exam together?
+Lizzy: Um, I’m okay, actually.
+join Noah righter [animation="Slide From Right" wait="true" mirrored="true"]
+Noah: Are you blowing off the exam?
+Noah: I didn’t take you for a rule breaker.
+Lizzy: I just have to do something first.
+Barb: Of course you do.
+Barb: When Holiday gives you an automatic fail, don’t come crawling back to us about it.
+Noah: I’ll stage a distraction and buy you an hour.
+Lizzy: A distraction?
+Noah: Are you familiar with Benny Hill?
+Barb: Not this again.
+Juniper: Wait... Let’s see how it plays out.
+Juniper: I like that song.
 do ProgressionTracker.complete_requirement("3A", "hallway_dialog")
-do GameState.mark_characters_as_spoken(["barb","juniper","noah"])
+do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])

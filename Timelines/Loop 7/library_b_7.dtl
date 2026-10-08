@@ -1,5 +1,5 @@
-join Barb left
-join Lizzy right
+join Barb (Talking) left [z_index="1"]
+join Lizzy (Talking) right
 Lizzy: hey.
 Barb: ...
 Lizzy: ...
@@ -24,6 +24,9 @@ VO: Juniper must be really affecting her.
 	Barb: ...
 	Barb: yes.
 	Lizzy: come here.
+	update Barb midright [animation="Tada" move_time="0.5"]
+	[wait time="3.0"]
+	update Barb center [move_time="0.4"]
 - emotional vulnerability [br] makes barb uncomfortable,[br] I should approach this [br] with a blase attitude.
 	Lizzy: what a wild tuesday.
 	Lizzy: ...
@@ -46,7 +49,7 @@ VO: Juniper must be really affecting her.
 
 
 Barb: she really cares about you, Lizzy.
-Barb: don't mess this up by self sacraficing yourself or going along with her idea because she's super good at convincing you.
+Barb: don't mess this up by self sacrificing yourself or going along with her idea because she's super good at convincing you.
 Barb: be firm.
 Barb: and...
 Barb: ...

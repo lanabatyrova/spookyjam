@@ -1,3 +1,79 @@
-prep chat with val
+join Lizzy (Talking) right
+join Valerie (Talking) left
+Lizzy: Hey, Val.
+Valerie: Hello, Elizabeth.
+Valerie: i am sorry that Juniper is wrapped up in all of this.
+Valerie: i should have seen it coming.
+Lizzy: it's super out of character for her.
+Valerie: ...
+Valerie: she told me of a vision,, where Vermilion was destroyed.
+Valerie: it weighed on her heavily.
+Valerie: I figured, it would be alright,
+Valerie: that whatever happened would make all of your stronger,
+Valerie: but I should've offered her more support.
+Lizzy: hey, we can handle ourselves.
+Lizzy: and she should've told all of us about that vision, not just you.
+Lizzy: we're a team.
+Valerie: yes.
+Valerie: we are.
+Valerie: and she needs us now more than ever.
+
+- This might be the only chance [br] I'll get to ask her about what [br] else she did in Scotland.
+	Lizzy: so, when you were taking your uh, gap years, what else did you get up to?
+	Lizzy: any whacky adventures?
+	Valerie: hm.
+	Valerie: well, there was that coven I joined for a short time.
+	Valerie: they were quite fun.
+	Lizzy: you joined a coven??
+	Valerie: yes, they were all the rage back then.
+	Valerie: of course, having knowledge of the supernatural helped me find legitimate ones over the more metaphorical.
+	Lizzy: that's awesome!
+	Lizzy: did you guys cast spells and eat hearts for power?
+	Valerie: spells, yes. Hearts...
+	Valerie: not really.
+	Lizzy: not really isn't a no.
+	Valerie: it's more nuanced.
+	Lizzy: well, okay, what type of spells did you cast.
+	Valerie: mostly good luck charms and curses.
+	Lizzy: curses?
+	Lizzy: who were you cursing.
+	Valerie: a wide variety.
+	Valerie: I'm not entirely proud of who was in my early twenties,
+	Valerie: but I can't deny I was very good at making people regret crossing me.
+	Lizzy: you just became two hundred percent cooler.
+	Lizzy: is there any chance you could cast a spell right now?
+	Valerie: I'm sorry, Elizabeth, but unfortunately I no longer possess the ability.
+	Valerie: I've been out of practice for far too long.
+	Valerie: and I'd rather not give in to the temptation.
+	Lizzy: it was worth a shot.
+- 
+	Lizzy: so.
+	Lizzy: you grew up in the Keep, right?
+	Valerie: that's correct.
+	Lizzy: what was that like?
+	Lizzy: i only found out about paranormal stuff being real when I was turned into a werewolf,
+	Lizzy: but you've known your whole life!
+	Valerie: there is a certain madness in keeping a secret such as that, but I suppose that's why my order is called the Keepers.
+	Valerie: it's not entirely lonely, however.
+	Valerie: my mother was told when she married my father, and once they had children, the information was shared with us.
+	Valerie: and the Keep has plenty of families within it.
+	Valerie: families in which we can mingle and form close bonds.
+	Lizzy: like arranged marriage?
+	Valerie: er,
+	Valerie: i don't like thinking about it like that,
+	Valerie: the Keepers prefer to keep it within the order, but marriage and relationships outside of the keep is also permitted.
+	Valerie: are you interested in joining the order?
+	Valerie: im not sure how they'd feel about,
+	Valerie: a... um...
+	Lizzy: werewolf?
+	Valerie: american.
+	Lizzy: oh. Well.
+	Lizzy: I'm not interested in joining, so you don't have to worry about that.
+	Valerie: hm, that's a shame. You would make an excellent keeper.
+	Valerie: if you change your mind, when we figure out a way to stop this whole thing, please let me know.
+	Lizzy: thanks, VAL.
+	VO: american werewolf in london.
+	VO: where have I heard that before?
+
 do ProgressionTracker.complete_requirement("7A", "valerie_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])
