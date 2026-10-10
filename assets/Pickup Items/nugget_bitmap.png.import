@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c80ivb32tp1mk"
+path="res://.godot/imported/nugget_bitmap.png-c3cd6deba8e7c286ea1879b675a63282.res"
+
+[deps]
+
+source_file="res://assets/Pickup Items/nugget_bitmap.png"
+dest_files=["res://.godot/imported/nugget_bitmap.png-c3cd6deba8e7c286ea1879b675a63282.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

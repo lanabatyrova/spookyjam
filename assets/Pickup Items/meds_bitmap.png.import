@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://xm3kppnk80f7"
+path="res://.godot/imported/meds_bitmap.png-a1cab6eb86732aec6fffd37db17712f9.res"
+
+[deps]
+
+source_file="res://assets/Pickup Items/meds_bitmap.png"
+dest_files=["res://.godot/imported/meds_bitmap.png-a1cab6eb86732aec6fffd37db17712f9.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

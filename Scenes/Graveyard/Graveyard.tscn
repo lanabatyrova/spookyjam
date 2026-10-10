@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://cpk4sldhjcc8s"]
 
 [ext_resource type="Script" uid="uid://030ki2lwll28" path="res://Scenes/Graveyard/graveyard.gd" id="1_mfimy"]
-[ext_resource type="Texture2D" uid="uid://cg3ofocdsn2k3" path="res://Temp Assets/graveyard-1577478-4189764713.jpg" id="2_cpdem"]
 [ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="2_mfimy"]
+[ext_resource type="Texture2D" uid="uid://lwxxef1rnnu1" path="res://assets/Locations/graveyard_day.png" id="2_t4qhj"]
 [ext_resource type="Script" uid="uid://cwjb6i587vi5h" path="res://Scenes/Graveyard/dagger_graveyard.gd" id="3_cpdem"]
+[ext_resource type="Texture2D" uid="uid://df4lwl3p5nt5b" path="res://assets/Locations/graveyard_night.png" id="3_fc70l"]
 [ext_resource type="Texture2D" uid="uid://cyn3pynrl4o6q" path="res://assets/People/Dagger_1_Hover.png" id="4_cjcfh"]
-[ext_resource type="Texture2D" uid="uid://c6ybld6qgrotj" path="res://Temp Assets/temp items/H20262-L413765233-2429097319.jpg" id="5_cpdem"]
+[ext_resource type="Texture2D" uid="uid://u56t5g5o3r81" path="res://assets/Pickup Items/shakespeare.png" id="6_fc70l"]
 [ext_resource type="Script" uid="uid://dbbh62br4k1ng" path="res://Scenes/Graveyard/pocket_shakespeare.gd" id="6_wr5li"]
+[ext_resource type="Texture2D" uid="uid://djlo0jcvmr78v" path="res://assets/Pickup Items/skespeare_hover.png" id="7_3cfoq"]
+[ext_resource type="BitMap" uid="uid://70va1jdrb0un" path="res://assets/Pickup Items/shakespeare_bitmap.png" id="9_3cfoq"]
 
 [node name="Graveyard" type="Node2D" unique_id=975334763]
 script = ExtResource("1_mfimy")
@@ -16,10 +19,15 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="Graveyard15774784189764713" type="Sprite2D" parent="." unique_id=794933298]
-position = Vector2(575.5, 324.5)
-scale = Vector2(1.44875, 1.2228464)
-texture = ExtResource("2_cpdem")
+[node name="GraveyardDay" type="Sprite2D" parent="." unique_id=794933298]
+position = Vector2(576.5, 325.00003)
+scale = Vector2(0.6015625, 0.6018519)
+texture = ExtResource("2_t4qhj")
+
+[node name="GraveyardNight" type="Sprite2D" parent="." unique_id=1414763594]
+position = Vector2(576.5, 325.00003)
+scale = Vector2(0.6015625, 0.6018519)
+texture = ExtResource("3_fc70l")
 
 [node name="DaggerButton" type="TextureButton" parent="." unique_id=528494076]
 offset_left = 738.00006
@@ -32,12 +40,14 @@ texture_hover = ExtResource("4_cjcfh")
 script = ExtResource("3_cpdem")
 
 [node name="PocketShakespeare" type="TextureButton" parent="." unique_id=1951281941]
-offset_left = 150.0
-offset_top = 449.00003
-offset_right = 1150.0
-offset_bottom = 1173.0
-scale = Vector2(0.18175772, 0.18175772)
-texture_normal = ExtResource("5_cpdem")
+offset_left = 270.0
+offset_top = 433.0
+offset_right = 2318.0
+offset_bottom = 2481.0
+scale = Vector2(0.100695446, 0.100695446)
+texture_normal = ExtResource("6_fc70l")
+texture_hover = ExtResource("7_3cfoq")
+texture_click_mask = ExtResource("9_3cfoq")
 script = ExtResource("6_wr5li")
 
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]

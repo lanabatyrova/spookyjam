@@ -7,7 +7,7 @@ var settings = {
 }
 
 var current_day: int = 5
-var midpoint_reached = true
+var midpoint_reached = false
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.

@@ -15,11 +15,11 @@
 [ext_resource type="Script" uid="uid://bkvp1mjq3tbs" path="res://Scenes/Journal Menu/Lady_Page/lady_char_button.gd" id="10_jusjv"]
 [ext_resource type="Script" uid="uid://bw1ck1r0h2765" path="res://Scenes/Journal Menu/Lady_Page/zombie_plan_button.gd" id="11_4enno"]
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="11_507vs"]
-[ext_resource type="Texture2D" uid="uid://cmg1yahilxyk1" path="res://assets/Journal Overlays/Lady_NameChange.png" id="15_6rcgt"]
-[ext_resource type="Texture2D" uid="uid://c3cme2wifoxxi" path="res://assets/Journal Overlays/Lady_PhoneNumber.png" id="15_r4ufa"]
+[ext_resource type="Texture2D" uid="uid://cmg1yahilxyk1" path="res://assets/Journal Overlays/macdeath_journal/Lady_NameChange.png" id="15_6rcgt"]
+[ext_resource type="Texture2D" uid="uid://c3cme2wifoxxi" path="res://assets/Journal Overlays/macdeath_journal/Lady_PhoneNumber.png" id="15_r4ufa"]
 [ext_resource type="Script" uid="uid://pqdaq1ktx3fy" path="res://Scenes/Journal Menu/Lady_Page/lady_phone_button.gd" id="16_6tjxn"]
-[ext_resource type="Texture2D" uid="uid://cf4mxul1ayej3" path="res://assets/Journal Overlays/Lady_Timeloop.png" id="16_ajc5n"]
-[ext_resource type="Texture2D" uid="uid://dhhhwy54jmtpc" path="res://assets/Journal Overlays/Lady_Timeloop_Crossedout.png" id="17_6rcgt"]
+[ext_resource type="Texture2D" uid="uid://cf4mxul1ayej3" path="res://assets/Journal Overlays/macdeath_journal/Lady_Timeloop.png" id="16_ajc5n"]
+[ext_resource type="Texture2D" uid="uid://dhhhwy54jmtpc" path="res://assets/Journal Overlays/macdeath_journal/Lady_Timeloop_Crossedout.png" id="17_6rcgt"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6tjxn"]
 load_path = "res://.godot/imported/Polaroid_Lady.png-ba170196a638cb6701f41b4dbbb62dea.ctex"

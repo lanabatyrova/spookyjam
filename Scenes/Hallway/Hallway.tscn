@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://de35255uhcwak"]
 
 [ext_resource type="Script" uid="uid://2rolbvtiogva" path="res://Scenes/Hallway/hallway.gd" id="1_yixj0"]
-[ext_resource type="Texture2D" uid="uid://dhos22nquignr" path="res://assets/Locations/Hallway_1.png" id="2_yixj0"]
+[ext_resource type="Texture2D" uid="uid://dhos22nquignr" path="res://assets/Locations/hallway_day.png" id="2_yixj0"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="3_as5ck"]
+[ext_resource type="Texture2D" uid="uid://d3j2ombum2vuh" path="res://assets/Locations/hallway_night.png" id="3_bogav"]
 [ext_resource type="Script" uid="uid://kojof2x8xvyn" path="res://Scenes/Hallway/juniper_hallway.gd" id="4_84xge"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="4_c1afe"]
 [ext_resource type="BitMap" uid="uid://dp7wbt46ne45d" path="res://assets/People/Juniper_1_bitmap.png" id="5_0f3vm"]
@@ -10,12 +11,14 @@
 [ext_resource type="Script" uid="uid://dcp3dx2knhfih" path="res://Scenes/Hallway/barb_hallway.gd" id="6_5tr82"]
 [ext_resource type="Texture2D" uid="uid://cma3l10yvy1jg" path="res://assets/People/Barb_1_Hover.png" id="7_5tr82"]
 [ext_resource type="Script" uid="uid://chdd2cyneau1s" path="res://Scenes/Hallway/noah_hallway.gd" id="8_dfkrl"]
-[ext_resource type="Texture2D" uid="uid://bdtu1j23pe870" path="res://Temp Assets/temp items/letter-8052497_1280-2988743124.png" id="9_dqxua"]
 [ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="9_hae4b"]
 [ext_resource type="Script" uid="uid://cv25vfgjjqyhg" path="res://Scenes/Hallway/acceptance_letter.gd" id="10_as5ck"]
 [ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="12_0f3vm"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="12_bogav"]
 [ext_resource type="BitMap" uid="uid://cd1bfd8fsbfn7" path="res://assets/People/Noah_1_bitmap.png" id="13_rtv73"]
+[ext_resource type="Texture2D" uid="uid://c4x4kumo8qhh6" path="res://assets/Pickup Items/letter.png" id="15_hae4b"]
+[ext_resource type="Texture2D" uid="uid://bomqn53blpl7w" path="res://assets/Pickup Items/letter_hover.png" id="16_bogav"]
+[ext_resource type="BitMap" uid="uid://bs2x8wwm71wr8" path="res://assets/Pickup Items/letter_bitmap.png" id="18_rtv73"]
 
 [node name="Hallway" type="Node2D" unique_id=2132066994]
 script = ExtResource("1_yixj0")
@@ -25,16 +28,21 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="1000F347921305PjOg9rZciRuXplmBc7Lx8x8uFe6kBgNq825048994" type="Sprite2D" parent="." unique_id=1980758114]
-position = Vector2(578, 273)
-scale = Vector2(0.7, 0.59)
+[node name="HallwayDay" type="Sprite2D" parent="." unique_id=1980758114]
+position = Vector2(615, 254.10376)
+scale = Vector2(0.62, 0.5970138)
 texture = ExtResource("2_yixj0")
 
+[node name="HallwayNight" type="Sprite2D" parent="." unique_id=438440098]
+position = Vector2(615, 254.10378)
+scale = Vector2(0.62, 0.5970138)
+texture = ExtResource("3_bogav")
+
 [node name="JuniperButton" type="TextureButton" parent="." unique_id=445886226]
-offset_left = 277.0
-offset_top = 136.0
-offset_right = 947.0
-offset_bottom = 1958.0
+offset_left = 262.0
+offset_top = 159.0
+offset_right = 932.0
+offset_bottom = 1981.0
 scale = Vector2(0.2288405, 0.2288405)
 texture_normal = ExtResource("3_as5ck")
 texture_hover = ExtResource("4_c1afe")
@@ -42,10 +50,10 @@ texture_click_mask = ExtResource("5_0f3vm")
 script = ExtResource("4_84xge")
 
 [node name="BarbButton" type="TextureButton" parent="." unique_id=1459977272]
-offset_left = 460.00003
-offset_top = 169.0
-offset_right = 1259.0
-offset_bottom = 1961.0
+offset_left = 413.0
+offset_top = 184.00002
+offset_right = 1212.0
+offset_bottom = 1976.0
 scale = Vector2(0.2079453, 0.2079453)
 texture_normal = ExtResource("5_c1afe")
 texture_hover = ExtResource("7_5tr82")
@@ -53,10 +61,10 @@ texture_click_mask = ExtResource("9_hae4b")
 script = ExtResource("6_5tr82")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=960815392]
-offset_left = 631.0
-offset_top = 165.99998
-offset_right = 1280.0
-offset_bottom = 1921.0
+offset_left = 554.99994
+offset_top = 197.0
+offset_right = 1211.0
+offset_bottom = 1952.0
 scale = Vector2(0.21628141, 0.21628141)
 texture_normal = ExtResource("12_bogav")
 texture_hover = ExtResource("12_0f3vm")
@@ -65,12 +73,15 @@ flip_h = true
 script = ExtResource("8_dfkrl")
 
 [node name="AcceptanceLetter" type="TextureButton" parent="." unique_id=1338115080]
-offset_left = 183.00002
-offset_top = 462.99997
-offset_right = 1463.0
-offset_bottom = 1743.0
-scale = Vector2(0.13770987, 0.13770987)
-texture_normal = ExtResource("9_dqxua")
+offset_left = 221.0
+offset_top = 517.0
+offset_right = 2269.0
+offset_bottom = 2565.0
+rotation = -0.22172931
+scale = Vector2(0.06308499, 0.06308499)
+texture_normal = ExtResource("15_hae4b")
+texture_hover = ExtResource("16_bogav")
+texture_click_mask = ExtResource("18_rtv73")
 script = ExtResource("10_as5ck")
 
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]

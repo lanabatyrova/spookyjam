@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0tvbnqy8axcp"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_kutg2"]
-[ext_resource type="Texture2D" uid="uid://dhos22nquignr" path="res://assets/Locations/Hallway_1.png" id="2_fs5pb"]
+[ext_resource type="Texture2D" uid="uid://dhos22nquignr" path="res://assets/Locations/hallway_day.png" id="2_fs5pb"]
 
 [node name="DialogicBackground" type="Node" unique_id=1406915900]
 script = ExtResource("1_kutg2")

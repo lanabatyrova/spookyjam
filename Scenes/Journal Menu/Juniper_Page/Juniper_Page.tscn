@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bowixpvgh6ief"]
 
 [ext_resource type="Script" uid="uid://bowcvcrlaugk0" path="res://Scenes/Journal Menu/Juniper_Page/juniper_page.gd" id="1_u2yhl"]
-[ext_resource type="Texture2D" uid="uid://dlxqvh4ybdkhg" path="res://assets/Journal_Juniper.png" id="1_w8bjl"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_26clk"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_8ba4b"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_ijk6r"]
@@ -10,9 +9,19 @@
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="5_u2yhl"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_h55sc"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_6ymjw"]
+[ext_resource type="Texture2D" uid="uid://6sqlv6312lxk" path="res://assets/Journal Overlays/juniper_journal/Juniper_Polaroid.png" id="7_l05s0"]
+[ext_resource type="Texture2D" uid="uid://baxqmdaa4wmlg" path="res://assets/Journal Overlays/juniper_journal/Juniper_Polaroid_Hover.png" id="8_2kw7x"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_02m1d"]
+[ext_resource type="Script" uid="uid://bun7boyrq0sqa" path="res://Scenes/Journal Menu/Juniper_Page/emmerdale_button.gd" id="9_u2yhl"]
 [ext_resource type="Script" uid="uid://3tvkpt5duqab" path="res://Scenes/Journal Menu/Juniper_Page/juniper_char_button.gd" id="9_w8bjl"]
+[ext_resource type="Texture2D" uid="uid://cd26mpkvk3qct" path="res://assets/Journal Overlays/juniper_journal/J_Clairvoyant.png" id="10_86tou"]
 [ext_resource type="Script" uid="uid://bxv01snmb4561" path="res://Scenes/Journal Menu/Juniper_Page/clairvoyance_button.gd" id="10_mdknk"]
+[ext_resource type="Texture2D" uid="uid://yqs22apte7og" path="res://assets/Journal Overlays/juniper_journal/J_Clairvoyant_Hover.png" id="11_hnfy6"]
+[ext_resource type="Texture2D" uid="uid://ccyph8fth613n" path="res://assets/Journal Overlays/juniper_journal/J_Lied.png" id="13_w18wb"]
+[ext_resource type="Texture2D" uid="uid://uoi1kn7tviua" path="res://assets/Journal Overlays/juniper_journal/J_Lied_Hover.png" id="14_505p3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wkakf"]
+load_path = "res://.godot/imported/journal_juniper.png-3554f55938390bb1f4c34e7c25bf1576.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ijk6r"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
@@ -26,13 +35,13 @@ script = ExtResource("1_u2yhl")
 [node name="JuniperPage" type="Sprite2D" parent="." unique_id=331983510]
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
-texture = ExtResource("1_w8bjl")
+texture = SubResource("CompressedTexture2D_wkakf")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=691147711]
-offset_left = 781.0
-offset_top = 242.99997
-offset_right = 821.0
-offset_bottom = 282.99997
+offset_left = 21.999939
+offset_top = 288.77313
+offset_right = 61.99994
+offset_bottom = 328.77313
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("2_26clk")
@@ -47,10 +56,10 @@ scale = Vector2(1.0723437, 2.437207)
 script = ExtResource("3_8ba4b")
 
 [node name="InventoryButton" type="LinkButton" parent="." unique_id=221398170]
-offset_left = 771.00006
-offset_top = 137.0
-offset_right = 811.00006
-offset_bottom = 177.0
+offset_left = 12.0
+offset_top = 182.77318
+offset_right = 52.0
+offset_bottom = 222.77318
 rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("4_ijk6r")
@@ -65,30 +74,46 @@ scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("5_u2yhl")
 
 [node name="Settings Button" type="LinkButton" parent="." unique_id=528319352]
-offset_left = 766.00006
-offset_top = 32.999992
-offset_right = 806.00006
-offset_bottom = 72.99999
+offset_left = 7.0
+offset_top = 78.77317
+offset_right = 47.0
+offset_bottom = 118.77317
 rotation = -0.09229068
 scale = Vector2(1.0235412, 2.5269282)
 script = ExtResource("4_uavqr")
 
-[node name="JuniperCharButton" type="Button" parent="." unique_id=2091267164]
-offset_left = 179.0
-offset_top = 265.0
-offset_right = 284.0
-offset_bottom = 333.0
-text = "Juniper Char
-Button"
+[node name="JuniperCharButton" type="TextureButton" parent="." unique_id=472878191]
+offset_left = 79.0
+offset_top = 79.99999
+offset_right = 2079.0
+offset_bottom = 2080.0
+rotation = -0.055471797
+scale = Vector2(0.15363899, 0.15363899)
+texture_normal = ExtResource("7_l05s0")
+texture_hover = ExtResource("8_2kw7x")
 script = ExtResource("9_w8bjl")
 
-[node name="ClairvoyanceButton" type="Button" parent="." unique_id=16920673]
-offset_left = 507.0
-offset_top = 145.0
-offset_right = 643.0
-offset_bottom = 183.0
-text = "j_clairvoyance"
+[node name="ClairvoyanceButton" type="TextureButton" parent="." unique_id=39042324]
+offset_left = 440.0
+offset_top = 415.99997
+offset_right = 1675.0
+offset_bottom = 714.0
+rotation = -0.071635514
+scale = Vector2(0.25671974, 0.25671974)
+texture_normal = ExtResource("10_86tou")
+texture_hover = ExtResource("11_hnfy6")
 script = ExtResource("10_mdknk")
+
+[node name="EmmerdaleButton" type="TextureButton" parent="." unique_id=1923091701]
+offset_left = 446.0
+offset_top = 489.0
+offset_right = 1681.0
+offset_bottom = 787.0
+rotation = -0.13787723
+scale = Vector2(0.2640783, 0.2640783)
+texture_normal = ExtResource("13_w18wb")
+texture_hover = ExtResource("14_505p3")
+script = ExtResource("9_u2yhl")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=1755022154]
 offset_left = 69.0
@@ -117,5 +142,6 @@ script = ExtResource("8_02m1d")
 [connection signal="pressed" from="Settings Button" to="Settings Button" method="_on_pressed"]
 [connection signal="pressed" from="JuniperCharButton" to="JuniperCharButton" method="_on_pressed"]
 [connection signal="pressed" from="ClairvoyanceButton" to="ClairvoyanceButton" method="_on_pressed"]
+[connection signal="pressed" from="EmmerdaleButton" to="EmmerdaleButton" method="_on_pressed"]
 [connection signal="pressed" from="FlipBack" to="FlipBack" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]

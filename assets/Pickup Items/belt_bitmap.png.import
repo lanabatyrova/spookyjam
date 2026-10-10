@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dqaatxbj0o8mp"
+path="res://.godot/imported/belt_bitmap.png-fc5ce4d45a1da1668847903eeef789f4.res"
+
+[deps]
+
+source_file="res://assets/Pickup Items/belt_bitmap.png"
+dest_files=["res://.godot/imported/belt_bitmap.png-fc5ce4d45a1da1668847903eeef789f4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

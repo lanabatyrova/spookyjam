@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://m6jhvvpy8d1h"]
 
 [ext_resource type="Script" uid="uid://lsj62taw77b0" path="res://Scenes/Diner/diner.gd" id="1_1iy0u"]
-[ext_resource type="Texture2D" uid="uid://b5if67hw4vkmi" path="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" id="1_bm5ir"]
-[ext_resource type="Texture2D" uid="uid://c3kbobphgqti5" path="res://Temp Assets/temp items/KS-Allergy-Medicine-600-Tablets_99491240-91c8-4333-a440-d0a0196c6808_1.ad8dad44887d5295331706cf2775e9b3-4085374194.jpg" id="2_yxgp7"]
+[ext_resource type="Texture2D" uid="uid://d3fe3uju2c1kd" path="res://assets/Locations/diner_day.png" id="2_nbcyd"]
+[ext_resource type="Texture2D" uid="uid://bfpijbn07b88l" path="res://assets/Locations/diner_night.png" id="3_0wn7f"]
+[ext_resource type="Texture2D" uid="uid://b3cm2u0t2umsl" path="res://assets/Pickup Items/meds.png" id="3_2l1dh"]
+[ext_resource type="Texture2D" uid="uid://bhwh7q8ooi1cs" path="res://assets/Pickup Items/meds_hover.png" id="4_0wn7f"]
 [ext_resource type="Script" uid="uid://d16ufkis4lu1b" path="res://Scenes/Diner/allergy_meds.gd" id="4_hui2y"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="5_qitao"]
+[ext_resource type="BitMap" uid="uid://xm3kppnk80f7" path="res://assets/Pickup Items/meds_bitmap.png" id="6_0wn7f"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="6_1j8du"]
 [ext_resource type="Script" uid="uid://6h8bgwjcv5si" path="res://Scenes/Diner/juniper_diner.gd" id="6_7cxi7"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="6_pw08d"]
@@ -23,25 +26,33 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="Depositphotos256047908StockPhotoAmericanDinerRestaurantRetroInterior3979675290" type="Sprite2D" parent="." unique_id=1238657391]
-position = Vector2(576.75, 324.87503)
-scale = Vector2(0.7221875, 0.5584833)
-texture = ExtResource("1_bm5ir")
+[node name="DinerDay" type="Sprite2D" parent="." unique_id=1238657391]
+position = Vector2(576, 323.50003)
+scale = Vector2(0.6041666, 0.6083333)
+texture = ExtResource("2_nbcyd")
+
+[node name="DinerNight" type="Sprite2D" parent="." unique_id=436265283]
+position = Vector2(576, 323.50003)
+scale = Vector2(0.6041666, 0.6083333)
+texture = ExtResource("3_0wn7f")
 
 [node name="AllergyMeds" type="TextureButton" parent="." unique_id=1189417611]
-offset_left = 866.0
-offset_top = 378.0
-offset_right = 2066.0
-offset_bottom = 1578.0
-scale = Vector2(0.10744974, 0.10744974)
-texture_normal = ExtResource("2_yxgp7")
+offset_left = 969.0
+offset_top = 377.99997
+offset_right = 1671.0
+offset_bottom = 1266.0
+rotation = 0.34837958
+scale = Vector2(0.16957128, 0.16957128)
+texture_normal = ExtResource("3_2l1dh")
+texture_hover = ExtResource("4_0wn7f")
+texture_click_mask = ExtResource("6_0wn7f")
 script = ExtResource("4_hui2y")
 
 [node name="JuniperButton" type="TextureButton" parent="." unique_id=1235646306]
-offset_left = 57.99991
-offset_top = 171.0
-offset_right = 685.9999
-offset_bottom = 1943.0
+offset_left = 191.0
+offset_top = 233.99998
+offset_right = 861.0
+offset_bottom = 2056.0
 scale = Vector2(0.22519131, 0.22519131)
 texture_normal = ExtResource("5_qitao")
 texture_hover = ExtResource("6_pw08d")
@@ -49,10 +60,10 @@ texture_click_mask = ExtResource("7_cmmlo")
 script = ExtResource("6_7cxi7")
 
 [node name="BarbButton" type="TextureButton" parent="." unique_id=563511851]
-offset_left = 302.0
-offset_top = 199.0
-offset_right = 1101.0
-offset_bottom = 1991.0
+offset_left = 371.0
+offset_top = 241.0
+offset_right = 1170.0
+offset_bottom = 2033.0
 scale = Vector2(0.213211, 0.213211)
 texture_normal = ExtResource("6_1j8du")
 texture_hover = ExtResource("9_3ntpo")
@@ -61,10 +72,10 @@ flip_h = true
 script = ExtResource("8_jhg32")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=1926191232]
-offset_left = 237.00002
-offset_top = 363.0
-offset_right = 584.0
-offset_bottom = 1315.0
+offset_left = 345.0
+offset_top = 290.00003
+offset_right = 692.0
+offset_bottom = 1242.0
 scale = Vector2(0.20837258, 0.20837258)
 texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
