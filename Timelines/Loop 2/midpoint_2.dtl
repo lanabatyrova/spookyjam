@@ -1,6 +1,105 @@
 [background arg="#000000ff" fade="1.0"]
-(cut to evening day 2)
+[background arg="res://Temp Assets/depositphotos_2371440-stock-photo-modern-school-building-4143423643.jpg" fade="0.0"]
+join Lizzy right [mirrored="true"]
+join Barb left
+Barb: Lizzy, wait.
+Lizzy: Barb?
+update Lizzy [mirrored="false"]
+update Barb center [move_time="0.5"]
+Barb: Literally what is your problem today? You blew off the math exam and now you’re slinking away to god knows where.
+Lizzy: since when are you concerned about what I do?
+Barb: we fight monsters together, Lizzy.
+Barb: what if you go off into a dangerous situation and then die and then we’re going to be left picking up the pieces.
+Lizzy: I’ll be fine.
+Barb: Lately you’ve been super distant. It’s not healthy.
+Lizzy: Do you want me to start talking about my problems?
+Lizzy: I’ve got a lot of them.
+Barb: I mean...
+Barb: what are friends for?
+Lizzy: ...
+Lizzy: I’m not used to you being this emotionally vulnerable.
+Barb: Ugh!
+Barb: you act like you’re the main character or something.
+Barb: Not everything is about you, Lizzy.
+Lizzy: unfortunately, Barb, it kinda is.
+Lizzy: Lady MacDeath is up to something and I need to go stop her.
+Barb: Is that where you’re going now?
+Barb: Without us?
+Lizzy: Uh.
+Lizzy: no.
+Barb: you’re a terrible liar.
+Lizzy: I disagree.
+Barb: Lady MacDeath is the least of our problems.
+Barb: Her boyfriend is like, dead dead. Isn’t she in hiding?
+Lizzy: you’d think, but recent events have...
+Lizzy: informed me otherwise.
+Barb: oh, your hot vampire boyfriend?
+Lizzy: he’s not my boyfriend!
+Barb: Wake up and smell the graveyard dirt, Lizzy. Don’t throw away your life to go on some silly mission with no back up and expect us to sit back and watch.
+Lizzy: ...
+Lizzy: It’s not a silly mission.
+Lizzy: she’s done something to us, and I’m going to fix it.
+Barb: ...
+Barb: I’m going to tell you something extremely personal.
+VO: oh my god.
+VO: is this actually happening?
+VO: I’m going to have to owe Noah five bucks?
+Barb: When I was six years old—
+Lizzy: Is this a long story? Because I really gotta go—
+Barb: shut up and listen.
+Barb: When I was six, I went to this summer camp called Little Oaks.
+Lizzy: I’ve heard of that place.
+Lizzy: Didn’t it shut down because of some scandal?
+Lizzy: a kid went missing for four days or something?
+Barb: ...
+Barb: I used to be super into camping.
+Barb: I knew how to set up tents, roast marshmallows, make friendship bracelets, you know, the essentials.
+VO: I guess tents are camping related.
+Barb: I was eager to prove to everyone I was capable.
+Barb: There was this total bitch in cabin three who wanted to show me up, all because she knew how to do archery and tie fancy knots.
+Barb: and of course, she managed to con everyone into voting her the mvc.
+Lizzy: Mvc?
+Barb: the most valuable camper.
+Barb: Well, I couldn’t let that stand.
+Barb: I hatched this plan to show everyone I should’ve been the one they voted for.
+Lizzy: I’m assuming it didn’t work, because this is totally the type of thing you’d brag about.
+Barb: I got lost in the woods for three days.
+Lizzy: Lost in the woods.
+Lizzy: WAIT.
+Lizzy: that was you?
+Barb: ...
+Barb: yes.
+Lizzy: YOu single handedly shut down the camp and destroyed any chance of them ever hosting children ever again.
+Barb: ...
+Barb: this is my greatest shame, Lizzy.
+Barb: it keeps me up at night.
+Barb: I was forced to survive by eating pinecones and bugs.
+Barb: but I made one kick-ass lean to.
+Lizzy: Why’d you eat a pinecone?
+Barb: I didn’t want to eat bugs.
+Lizzy: This is a great story and all, but what does this have to do with me?
+Barb: read between the lines, Lizzy!
+Barb: I thought I had to prove myself by doing a dangerous stunt that ultimately shut down the only place I ever loved and I ended up in the ER
+Barb: because the bug I ate was actually super toxic.
+Lizzy: I’m not trying to prove myself, Barb.
+Lizzy: this is my job.
+Barb: Getting yourself killed isn’t a job.
+Barb: It’s a distraction from thinking about graduation.
+Barb: and your lack of grad dress.
+Lizzy: I’m getting real sick of this conversation—
+Barb: Well, I’m getting real sick of you acting like you’re the only one in this fight.
+Barb: we’re a team, Lizzy.
+Barb: Please stop cutting us off.
+Lizzy: ...
+Barb: ...
+Barb: you're going to ignore everything I just said and run head first into danger, right?
+Lizzy: yeah.
+Lizzy: pretty much.
+Barb: whatever.
+Barb: it’s your funeral.
 do GameState.learn_fact("b_camp_story")
+leave Barb
+VO: barb was unusually forthcoming with that story just now, the dress thing must’ve really humbled her.
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
 do GameState.reset_all_spoken_states()

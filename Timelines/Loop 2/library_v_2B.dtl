@@ -1,2 +1,7 @@
-Valerie: i'm also still in the library (i'm always here)
+Valerie: I've only just started my research, but I'm confident we'll find something useful.
+Lizzy: what should I do?
+Valerie: continue trying new things.
+Lizzy: I think I might have a plan...
+Valerie: ...
+Valerie: just don't do anything foolish.
 do GameState.mark_characters_as_spoken(["valerie"])

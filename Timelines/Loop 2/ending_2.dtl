@@ -1,6 +1,6 @@
-[this ending needs to change a bit cause idk what's going on down there... anyway you just picked up the shakespeare book]
 join Lizzy center
 Lizzy: Alright, time to stop this thing once and for all.
+VO: I hope i'm not too late.
 Lizzy: Huh. What's this?
 Lizzy: An annoted Shakespeare??
 join "Lady MacDeath" left [animation="Fade In" length="3.0" wait="true"]
@@ -16,7 +16,6 @@ update Lizzy rightmost [animation="Shake X" wait="true"]
 Lizzy: You'll never win!
 "Lady MacDeath": Huzzah!
 update "Lady MacDeath" right [animation="Tada" wait="true"]
-Wait is this a prop sword-
 update Lizzy [animation="Shake X" length="1.0" wait="true" repeat="2"]
 Lizzy: Ough.....
 join Dagger left [animation="Slide From Left" wait="true" mirrored="true"]

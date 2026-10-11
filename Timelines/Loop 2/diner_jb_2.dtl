@@ -82,4 +82,9 @@ Lizzy: ...
 Juniper: ...
 Noah: Why is everyone quiet.
 Lizzy: I’m going to go take care of something and leave this conversation as non conspicuously as possible.
+
+leave --All--
+
+
+
 do GameState.mark_characters_as_spoken(["barb", "juniper"])
