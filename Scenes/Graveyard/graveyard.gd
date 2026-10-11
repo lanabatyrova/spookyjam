@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var dagger = $DaggerButton
 @onready var shakespeare = $PocketShakespeare
+@onready var evening = $GraveyardNight
 
 var current_day: int
 
@@ -17,3 +18,4 @@ func _process(delta: float) -> void:
 func update_day(day: int):
 	dagger.visible = day in [1,3,4,5,6] && GameState.midpoint_reached
 	shakespeare.visible = day in [2] && GameState.midpoint_reached && !GameState.inventory["pocket_shakespeare"]
+	evening.visible = GameState.midpoint_reached

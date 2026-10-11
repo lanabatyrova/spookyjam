@@ -2,9 +2,9 @@
 [dress shopping montage]
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
-join Juniper (Talking) left [animation="Fade In" length="1.0"]
-join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
 join Lizzy (Talking) righter [animation="Fade In" length="1.0" wait="true"]
+join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
+join Juniper (Talking) left [animation="Fade In" length="1.0"]
 Lizzy: I never want to see a dress again.
 Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
 join Noah (Barb's Phone) center [animation="Slide In Up" z_index="2"]
@@ -166,7 +166,7 @@ update Lizzy [mirrored="true"]
 Lizzy: ....
 Juniper: I didn’t get into Emmerdale.
 update Lizzy [mirrored="false"]
-Everyone:…
+Everyone: …
 update Lizzy [animation="Bounce"]
 Lizzy: What?!
 update Barb [animation="Bounce"]

@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bsivq4hk3qxlt" path="res://assets/UI/Journal_Button_Stickers.png" id="8_703c3"]
 [ext_resource type="Script" uid="uid://c3x72744nagey" path="res://Scenes/UI Overlay/ui_journal_button.gd" id="8_rregw"]
 [ext_resource type="Texture2D" uid="uid://bfllwx101lk10" path="res://assets/UI/journal_button_stickers_selected.png" id="9_ae22a"]
+[ext_resource type="Texture2D" uid="uid://dgoxfwcophw0j" path="res://assets/UI/VHS_UI.png" id="11_iw2gq"]
 
 [node name="UiOverlay" type="CanvasLayer" unique_id=719090108]
 
@@ -57,6 +58,11 @@ scale = Vector2(0.119561575, 0.119561575)
 texture_normal = ExtResource("8_703c3")
 texture_hover = ExtResource("9_ae22a")
 script = ExtResource("8_rregw")
+
+[node name="VhsUi" type="Sprite2D" parent="UI Panel" unique_id=1013850591]
+position = Vector2(119.00001, 86.50002)
+scale = Vector2(0.119, 0.119)
+texture = ExtResource("11_iw2gq")
 
 [node name="UiTest" type="Sprite2D" parent="." unique_id=1165452259]
 visible = false

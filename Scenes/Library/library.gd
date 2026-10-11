@@ -5,6 +5,7 @@ extends Node2D
 @onready var noah = $NoahButton
 @onready var dagger = $DaggerButton
 @onready var lady = $LadyButton
+@onready var evening = $LibraryNight
 
 var current_day: int
 
@@ -23,3 +24,4 @@ func update_day(day: int):
 	noah.visible = day in [5] || day in [4] && GameState.midpoint_reached || day in [6,7] && !GameState.midpoint_reached
 	dagger.visible = day in [7] && !GameState.midpoint_reached
 	lady.visible = day in [7] && !GameState.midpoint_reached
+	evening.visible = GameState.midpoint_reached

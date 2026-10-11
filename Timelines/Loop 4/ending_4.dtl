@@ -25,4 +25,4 @@ VO: Two.
 VO: and--
 leave --All--
 do GameState.next_day()
-jump intro_5/
+jump rewind/

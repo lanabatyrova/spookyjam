@@ -4,6 +4,7 @@ extends Node2D
 @onready var barb = $BarbButton
 @onready var juniper = $JuniperButton
 @onready var noah = $NoahButton
+@onready var evening = $DinerNight
 
 var current_day: int
 # Called when the node enters the scene tree for the first time.
@@ -21,3 +22,4 @@ func update_day(day: int):
 	barb.visible = day in [1,2] && GameState.midpoint_reached
 	juniper.visible = day in [1,2,4] && GameState.midpoint_reached
 	noah.visible = day in [1,2] && GameState.midpoint_reached
+	evening.visible = GameState.midpoint_reached

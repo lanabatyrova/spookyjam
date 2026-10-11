@@ -17,4 +17,5 @@ Valerie: But they are incredibly rare. Are you sure the pressure of post-seconda
 
 There has to be a way to convince her. Think, Lizzy, Think!
 It’s just like the pitcher’s mound. Ready the ball, and throw.
+leave Lizzy [animation="Fade Out Down" wait="true"]
 jump minigame_v_2/

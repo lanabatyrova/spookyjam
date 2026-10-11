@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _update_hover_state():
-	if !GameState.is_minigame:
+	if !GameState.is_minigame || GameState.current_day != 7:
 		mouse_filter = Control.MOUSE_FILTER_IGNORE
 	else:
 		mouse_filter = Control.MOUSE_FILTER_STOP

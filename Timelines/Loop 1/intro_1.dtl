@@ -1,3 +1,4 @@
+[background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="0.0"]
 join Lizzy (Talking) center [animation="Fade In" wait="true"]
 Lizzy: Huh? What just happened?
 Lizzy: Shouldn’t I be, like, zombie chow by now?
@@ -5,16 +6,13 @@ Lizzy: Didn't I die?
 Lizzy: Be realistic, Lizzy. I probably just passed out and Dagger carried me home.
 Lizzy: He always does that stupid romantic crap. I’ll have to chew him out for it later.
 Lizzy: I better hurry to graduation before everyone dies from being eaten by zombies!
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.0"]
-leave Lizzy
-join Postcard center
-[wait_input]
-leave Postcard
+leave Lizzy [animation="Fade Out"]
+[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5" wait="true"]
+join Item (Postcard Front) center
 Lizzy: Wait...
 Lizzy: This is the same postcard I got yesterday...
+leave Postcard
 Lizzy: Why would mom send an identical message?
 Lizzy: Also wait, shouldn’t they be back by now?
-Lizzy: And why do I have this weird rock in my pocket?
 Lizzy: Something weird is going on.
 Lizzy: If I wasn’t used to dealing with weird things on an almost weekly schedule, I’d be concerned!
-at the end of this Lizzy needs to be in the diner.

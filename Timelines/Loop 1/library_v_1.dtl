@@ -89,11 +89,12 @@ Valerie: I want you to hold onto it for me,
 Valerie: just until graduation.
 Valerie: then you can give it back.
 Lizzy: I....
-set {collected_item_name} = "pocket_watch"
-join Characters/Item center [animation="Fade In" length="1.0"]
+set {collected_item_name} = "Pocket Watch"
+join Characters/Item center [animation="Fade In"]
 do GameState.pick_up_item("pocket_watch")
+[wait time="1.0"]
 [wait_input]
-leave Characters/Item [animation="Fade Out" length="1.0"]
+leave Characters/Item [animation="Fade Out"]
 [wait time="1.0"]
 Lizzy: Thanks.
 Valerie: get some rest before your big day.

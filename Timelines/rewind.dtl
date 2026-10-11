@@ -10,17 +10,17 @@ leave Logo [animation="Zoom Center Out" length="1.0"]
 [wait time="5.0"]
 audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
 BEEP. BEEP. BEEP.
-if {cur_day} == "1":
+if {cur_day} == 1:
 	jump intro_1/
-elif {cur_day} == "2":
+elif {cur_day} == 2:
 	jump intro_2/
-elif {cur_day} == "3":
+elif {cur_day} == 3:
 	jump intro_3/
-elif {cur_day} == "4":
+elif {cur_day} == 4:
 	jump intro_4/
-elif {cur_day} == "5":
+elif {cur_day} == 5:
 	jump intro_5/
-elif {cur_day} == "6":
+elif {cur_day} == 6:
 	jump intro_6/
-elif {cur_day} == "7":
+elif {cur_day} == 7:
 	jump intro_7/

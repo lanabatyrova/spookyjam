@@ -37,7 +37,7 @@ var item_collectible = {
 # both for journal display and mini game button appearances?
 var facts = {
 	"v_case_study": false,
-	"v_future_worries": false,
+	"v_future_worries": true,
 	"b_camp_story": false,
 	"b_clown_school": true,
 	"n_detention": true,
@@ -134,3 +134,9 @@ func next_day():
 	midpoint_reached = false
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print
+
+
+
+
+
+# ---------debug helper section-----------

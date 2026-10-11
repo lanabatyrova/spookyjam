@@ -67,20 +67,20 @@ text = "X"
 script = ExtResource("9_5tflb")
 
 [node name="Minigame Test Button" type="Button" parent="CanvasLayer" unique_id=58267368]
-offset_left = 1031.0
-offset_top = 579.0
-offset_right = 1145.0
-offset_bottom = 633.0
+offset_left = 1040.0
+offset_top = 680.0
+offset_right = 1154.0
+offset_bottom = 734.0
 scale = Vector2(0.71999407, 0.99999905)
 text = "MINIGAME
 TEST BUTTON"
 script = ExtResource("10_vstuw")
 
 [node name="Minigame Wrong Button" type="Button" parent="CanvasLayer" unique_id=1352454217]
-offset_left = 955.0
-offset_top = 593.99994
-offset_right = 1012.0
-offset_bottom = 624.99994
+offset_left = 962.00006
+offset_top = 690.0
+offset_right = 1019.00006
+offset_bottom = 721.0
 scale = Vector2(0.874059, 0.83407784)
 text = "wrong"
 script = ExtResource("11_qbbbw")

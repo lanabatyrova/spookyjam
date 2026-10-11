@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://2wv5dm1hw0rd"
+path="res://.godot/imported/watch_bitmap.png-7bbc932de4b02a41b11fe03c57e3ec18.res"
+
+[deps]
+
+source_file="res://assets/Pickup Items/watch_bitmap.png"
+dest_files=["res://.godot/imported/watch_bitmap.png-7bbc932de4b02a41b11fe03c57e3ec18.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

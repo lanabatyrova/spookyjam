@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cudh0v5xqyki1"]
 
 [ext_resource type="Script" uid="uid://cgaermw4rem0" path="res://Scenes/Library/library.gd" id="1_3kh1m"]
-[ext_resource type="Texture2D" uid="uid://u6am0uydlkwo" path="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" id="1_cjel0"]
+[ext_resource type="Texture2D" uid="uid://02ja2xmax1np" path="res://assets/Locations/library_day.png" id="2_fsgr3"]
 [ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="3_3kh1m"]
+[ext_resource type="Texture2D" uid="uid://cuax18n2jnhhs" path="res://assets/Locations/library_night.png" id="3_e1b7t"]
 [ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="4_3kh1m"]
 [ext_resource type="Texture2D" uid="uid://c8p0mr4tndkhr" path="res://assets/People/Lady-MacDeath_1_Hover.png" id="4_gnrwe"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="5_6apm7"]
@@ -31,16 +32,21 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="StockholmPublicLibraryAlamy1808398246" type="Sprite2D" parent="Panel" unique_id=2054042218]
-position = Vector2(576.0001, 324.25)
-scale = Vector2(0.56347656, 0.4228516)
-texture = ExtResource("1_cjel0")
+[node name="LibraryDay" type="Sprite2D" parent="." unique_id=2054042218]
+position = Vector2(575.7385, 313.81253)
+scale = Vector2(0.4236739, 0.38397217)
+texture = ExtResource("2_fsgr3")
+
+[node name="LibraryNight" type="Sprite2D" parent="." unique_id=1561707157]
+position = Vector2(575.7385, 313.81253)
+scale = Vector2(0.4236739, 0.38397217)
+texture = ExtResource("3_e1b7t")
 
 [node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
-offset_left = 163.0
-offset_top = 298.00003
-offset_right = 1325.0
-offset_bottom = 2180.0
+offset_left = 916.0
+offset_top = 196.0
+offset_right = 2078.0
+offset_bottom = 2078.0
 scale = Vector2(0.20761497, 0.20761497)
 texture_normal = ExtResource("11_0fyj4")
 texture_hover = ExtResource("4_gnrwe")
@@ -48,43 +54,43 @@ texture_click_mask = ExtResource("5_fsgr3")
 script = ExtResource("12_rjhi6")
 
 [node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
-offset_left = 438.0
-offset_top = 345.0
-offset_right = 1335.0
-offset_bottom = 2048.0
+offset_left = 34.0
+offset_top = 246.00002
+offset_right = 931.0
+offset_bottom = 1949.0
 scale = Vector2(0.22653967, 0.22653967)
 texture_normal = ExtResource("9_14au8")
 texture_hover = ExtResource("8_e1b7t")
 texture_click_mask = ExtResource("9_re8ce")
 script = ExtResource("10_bybqk")
 
-[node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
-offset_left = 19.00003
-offset_top = 310.00003
-offset_right = 668.0
-offset_bottom = 2065.0
-scale = Vector2(0.18333973, 0.18333973)
-texture_normal = ExtResource("11_06v86")
-texture_hover = ExtResource("12_t63kn")
-texture_click_mask = ExtResource("13_luw7s")
-script = ExtResource("8_hi2wh")
-
 [node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
-offset_left = 842.99994
-offset_top = 244.99997
-offset_right = 1599.0
-offset_bottom = 2250.0
+offset_left = 234.0
+offset_top = 181.0
+offset_right = 990.0
+offset_bottom = 2186.0
 scale = Vector2(0.1794737, 0.1794737)
 texture_normal = ExtResource("3_3kh1m")
 texture_hover = ExtResource("16_uc0od")
 texture_click_mask = ExtResource("17_1b55p")
 script = ExtResource("4_3kh1m")
 
+[node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
+offset_left = 452.0
+offset_top = 250.0
+offset_right = 1108.0
+offset_bottom = 2005.0
+scale = Vector2(0.18333973, 0.18333973)
+texture_normal = ExtResource("11_06v86")
+texture_hover = ExtResource("12_t63kn")
+texture_click_mask = ExtResource("13_luw7s")
+script = ExtResource("8_hi2wh")
+
 [node name="BarbButton" type="TextureButton" parent="." unique_id=506002566]
-offset_left = 640.0
-offset_top = 177.0
-offset_right = 1439.0
-offset_bottom = 1969.0
+offset_left = 562.0
+offset_top = 238.0
+offset_right = 1361.0
+offset_bottom = 2030.0
 scale = Vector2(0.18415901, 0.18415901)
 texture_normal = ExtResource("5_6apm7")
 texture_hover = ExtResource("20_am823")
@@ -93,6 +99,6 @@ script = ExtResource("6_1rjaq")
 
 [connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
-[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]

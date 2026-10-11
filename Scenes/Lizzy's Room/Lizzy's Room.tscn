@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://l5houlgo4v1l" path="res://Scenes/Lizzy's Room/lizzy's_room.gd" id="1_2ymcl"]
 [ext_resource type="Texture2D" uid="uid://c3met078m7tjt" path="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" id="2_ia8pw"]
-[ext_resource type="Texture2D" uid="uid://c6losffstrfrv" path="res://Temp Assets/temp items/71twLqJqwNL._AC_SL1500_-338368066.jpg" id="3_8vw3a"]
-[ext_resource type="Texture2D" uid="uid://cxyhfye78hfb3" path="res://Temp Assets/temp items/Men-s-Belt-With-Full-Grain-Leather-Belts-Casual-Jeans-Belts-for-Men-1-5inch_dd948f66-7ddc-4eca-9abf-ff2d7c039440.763e1e51438ee8f2a0b5d5649baa50b1-1619073598_webp.png" id="4_w7d7s"]
+[ext_resource type="Texture2D" uid="uid://bwcihf5fljjfg" path="res://assets/Pickup Items/sewing_kit.png" id="3_qpxkf"]
+[ext_resource type="Texture2D" uid="uid://dxfcqnkeof5fn" path="res://assets/Pickup Items/sewing_kit_hover.png" id="4_r7hqq"]
 [ext_resource type="Script" uid="uid://dhbdd7gs3fsw6" path="res://Scenes/Lizzy's Room/sewing_kit.gd" id="4_wdvmo"]
+[ext_resource type="BitMap" uid="uid://bkm5tgg1pduwk" path="res://assets/Pickup Items/sewing_kit_bitmap.png" id="5_jlpgp"]
+[ext_resource type="Texture2D" uid="uid://boomcv1mvkfeo" path="res://assets/Pickup Items/belt.png" id="6_jlpgp"]
 [ext_resource type="Script" uid="uid://dncv7q0ecgvbb" path="res://Scenes/Lizzy's Room/belt.gd" id="6_l8lln"]
+[ext_resource type="Texture2D" uid="uid://clcl8u1yg681k" path="res://assets/Pickup Items/belt_hover.png" id="7_q7j6m"]
+[ext_resource type="BitMap" uid="uid://dqaatxbj0o8mp" path="res://assets/Pickup Items/belt_bitmap.png" id="9_q7j6m"]
 
 [node name="Lizzy\'sRoom" type="Node2D" unique_id=1457501583]
 script = ExtResource("1_2ymcl")
@@ -16,8 +20,8 @@ offset_right = 1150.9999
 offset_bottom = 649.0
 
 [node name="Screenshot20260925At9_55_45Pm" type="Sprite2D" parent="." unique_id=344280710]
-position = Vector2(576.6458, 324.005)
-scale = Vector2(0.5695198, 0.39656672)
+position = Vector2(576.6458, 309.50003)
+scale = Vector2(0.5695198, 0.43757653)
 texture = ExtResource("2_ia8pw")
 
 [node name="SewingKit" type="TextureButton" parent="." unique_id=1095395440]
@@ -26,16 +30,20 @@ offset_top = 431.0
 offset_right = 1707.0
 offset_bottom = 1617.0
 scale = Vector2(0.10744974, 0.10744974)
-texture_normal = ExtResource("3_8vw3a")
+texture_normal = ExtResource("3_qpxkf")
+texture_hover = ExtResource("4_r7hqq")
+texture_click_mask = ExtResource("5_jlpgp")
 script = ExtResource("4_wdvmo")
 
 [node name="Belt" type="TextureButton" parent="." unique_id=36942555]
-offset_left = 712.0
-offset_top = 444.99997
-offset_right = 1288.0
-offset_bottom = 1021.0
-scale = Vector2(0.22056004, 0.22056004)
-texture_normal = ExtResource("4_w7d7s")
+offset_left = 925.0
+offset_top = 466.0
+offset_right = 2973.0
+offset_bottom = 2514.0
+scale = Vector2(0.09610536, 0.09610536)
+texture_normal = ExtResource("6_jlpgp")
+texture_hover = ExtResource("7_q7j6m")
+texture_click_mask = ExtResource("9_q7j6m")
 script = ExtResource("6_l8lln")
 
 [connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]

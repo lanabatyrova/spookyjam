@@ -1,16 +1,6 @@
-join Noah (Talking) left
-Noah: Dude……..
-Noah: We’re in a time loop??
-join Lizzy (Talking) right
-Lizzy: Sorry.
-Noah: Nahhhhhh its chill. Actually. It’s better than chill.
-Noah: we can do what ever we want without having to worry about the consequences!
-Lizzy: uh. I’m not sure that’s what you should be taking from this.
-Noah: thanks, Lizzy. This is awesome.
-Lizzy: ...
-leave --All-- [animation="Slide Out Down" wait="true"]
+leave --All-- [animation="Fade Out" wait="true"]
 
-[background arg="#000000ff" fade="1.0"]
-(cut to evening on day 4)
+[background arg="#000000ff" fade="0.5"]
+[later that day]
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]

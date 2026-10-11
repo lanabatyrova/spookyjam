@@ -20,10 +20,10 @@ scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_5fdut")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=1249788943]
-offset_left = 774.0
-offset_top = 124.999985
-offset_right = 1423.0
-offset_bottom = 1880.0
+offset_left = 837.99994
+offset_top = 197.0
+offset_right = 1494.0
+offset_bottom = 1952.0
 scale = Vector2(0.22519131, 0.22519131)
 texture_normal = ExtResource("3_u0mjk")
 texture_hover = ExtResource("4_7dc70")

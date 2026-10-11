@@ -1,5 +1,8 @@
-[background scene="res://Scenes/Cutscenes/Diner_Sitting.tscn" fade="0.0"]
-join Lizzy (Talking) rightmost
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
+join Foreground center [z_index="1"]
+join Lizzy (Talking) righter [animation="Fade In"]
+join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
+join Juniper (Talking) left [animation="Fade In" length="1.0" z_index="-1"]
 
 Barb: You’re out of jam.
 Lizzy: Hello to you too. Also I told you to stop taking those!
@@ -14,7 +17,7 @@ Lizzy: ...
 Lizzy: What?
 Juniper: He’s in detention. Or was in detention.
 do GameState.learn_fact("n_detention")
-join Noah center
+join Noah (Barb's Phone) center [animation="Bounce In" z_index="2"]
 Noah: Hey, I’m here actually, just on the phone.
 Noah: I’m in the hospital now.
 VO: Oh yeah, he mentioned that yesterday over the phone.
@@ -39,9 +42,8 @@ Lizzy: Uh, I gotta take care of something first, but I’ll be right back.
 Juniper: ...
 Barb: What ever.
 Noah: Bye!!
-do GameState.mark_characters_as_spoken(["barb", "juniper"])
-do ProgressionTracker.complete_requirement()
-[background fade="0.0"]
-leave --All--
+do ProgressionTracker.complete_requirement("1B", "diner_dialog")
+leave --All-- [animation="Fade Out Down"]
+[background arg="#000000ff" fade="1.0" wait="true"]
 
 jump ending_1/

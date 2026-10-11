@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bkm5tgg1pduwk"
+path="res://.godot/imported/sewing_kit_bitmap.png-e804af59045530d1784ec1d2d5fe12a8.res"
+
+[deps]
+
+source_file="res://assets/Pickup Items/sewing_kit_bitmap.png"
+dest_files=["res://.godot/imported/sewing_kit_bitmap.png-e804af59045530d1784ec1d2d5fe12a8.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
