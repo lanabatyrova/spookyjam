@@ -46,14 +46,25 @@ Noah: Lizzy told me I got sent to the hospital?
 Noah: How is that spending time together?
 Juniper: Sorry, Noah,
 Juniper: None of the other episodes were as...
+leave --All-- [animation="Instant Out"]
+join Juniper (Talking) left
 Juniper: Nice.
 Juniper: Next episode is the season finale, where Lady MacDeath attacks graduation and kills almost everyone.
 Juniper: It ends with...
 Juniper: Lizzy, it ends with you dying.
+join Lizzy (Talking) right
 Lizzy: What.
 Juniper: And the show was cancelled after season two, so there was never a season three where we could bring you back.
 Lizzy: I...
 Lizzy: Die?
+leave --All-- [animation="Instant Out"]
+join Noah midright [animation="Instant In" mirrored="true"]
+join Barb center [animation="Instant In" mirrored="true"]
+join Valerie right [animation="Instant In" mirrored="true"]
+join Dagger righter [animation="Instant In" mirrored="true"]
+join Knightmare rightmost [animation="Instant In"]
+join Lizzy left 
+join Juniper Lefter
 Noah: Why’d we get cancelled?
 Juniper: I think it’s because of the oversaturated teen paranormal drama genre.
 Noah: Originality goes to Hollywood to die.
@@ -93,7 +104,80 @@ Valerie: How are you not.. well...
 Juniper: Insane?
 Valerie: Uh...
 Valerie: I wasn’t going to say it.
-STILL need to finish
+Juniper: my clairvoyance is already sort of like knowing the future, so it felt comfortable.
+Juniper: the worst part was knowing I couldn't stop. I had to keep going, or else..
+Juniper: everything would end.
+Lizzy: we don't know that for sure.
+Juniper: I do.
+Lizzy: but your visions aren't always right!
+Lizzy: remember the time you thought my mom was going to win the lottery and it ended up being this super convoluted thing with the sheriff and visiting cello band?
+Juniper: ...
+Juniper: I guess so.
+Lizzy: if we keep rewinding over and over again to stop whatever is going to happen,
+Lizzy: well I don't think that's really living,
+Lizzy: tv show characters non withstanding.
+Noah: yeah. Also I'm pretty sure we've gone past whatever the writers originally wrote us as, because I doubt they wrote this whole thing.
+Noah: and oh my god, barb!
+Barb: huh?
+Noah: you achieved your dream.
+Noah: you're an actorr.
+Barb: ugh, you're so...
+Barb: hmm..
+Barb: i guess i am.
+Barb: do viewers have a favorite?
+Juniper: favorite?
+Barb: character.
+Juniper: oh, um.
+Juniper: there is a big lizzy fan club.
+Lizzy: naturally.
+Juniper: and a lot of people like pairing you and barb up.
+Lizzy: um, what?
+Barb: excuse me?
+Barb: i could do so much better.
+Juniper: There's a large fan group for Dagger too.
+Dagger: ...
+Dagger: really?
+Juniper: yeah they love your whole badboy persona.
+Dagger: i wouldn't call myself a bad boy.
+Knightmare: and what of me?
+Juniper: uh, you're not a fan favorite but the writers like you.
+Knightmare: i will accept that.
+Juniper: oh, speaking of, noah,
+Noah: yeah?
+Juniper: you ended up being a surprise fan favorite, because originally the show runners were going to kill you off after the first few episodes.
+Noah: wait, really?
+Noah: thats awesome!
+Noah: i can never die!!!!
+Juniper: and Valerie, there's a whole librarian community who got into library science because of you.
+Valerie: hmm..im glad to inspire future learners.
+Lizzy: and what about you?
+Juniper: me?
+Lizzy: you gotta have fans, right?
+Juniper: i guess so...
+Juniper: it's not really about me, though.
+Juniper: the show is called Lizzy Springs.
+Lizzy: fuck the show.
+Barb: whoaa
+Noah: badass.
+Valerie: language!
+Lizzy: why? We aren't being aired on tv anymore.
+Lizzy: we can swear as much as we want!
+Noah: ...
+Noah: fuck yeah!!!!
+Lizzy: what are they gonna do?
+Lizzy: cancel us some more?
+Knightmare: cocksucker!!
+Lizzy: okay that's a bit much.
+Dagger: i agree.
+Lizzy: let's all go to the diner and drink some milkshakes.
+Juniper: what about...
+Lizzy: tomorrow?
+Lizzy: i think we should have the best night of our lives.
+Lizzy: and what ever happens... happens.
+Barb: that's what I've been saying!!!
+Juniper: ....
+Juniper: yeah. Okay.
+
 
 do GameState.next_day()
 jump epilogue_timeline/

@@ -1,2 +1,26 @@
-Dagger: brooding again, not really listening to you
+join Lizzy right
+join Dagger left
+
+Dagger: dearest Elizabeth...
+Lizzy: dagger.
+Dagger: such a beautiful night...
+Dagger: It reminds me of the first time we met...
+Lizzy: while running through the woods chasing the same deer?
+Dagger: you were incredible.
+Dagger: your fur so red in the moonlight...
+Lizzy: i almost took your face off.
+Dagger: yes, I look upon that memory fondly.
+Dagger: vampires and werewolves don't normally engage in... 
+Dagger: well, what we shared was special.
+Lizzy: and then you had to go and ruin it.
+Dagger: it was for the best.
+Lizzy: but the age gap isn't that bad.
+Lizzy: i know everyone makes a big deal about it, but honestly,
+Lizzy: now that I'm eighteen--
+Dagger: i think it's best we stop talking about this.
+Lizzy: ...
+VO: maybe after this whole thing is sorted out we can have a real conversation.
+VO: not that I want to date him,
+VO: i just hate anything being off limits.
+
 do GameState.mark_characters_as_spoken(["dagger"])

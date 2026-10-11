@@ -23,7 +23,7 @@ Lizzy: What did you do.
 Noah: Oh, nothing too crazy.
 Noah: I gotta go real quick.
 
-[hang up]
+[phone click]
 leave Noah [animation="Bounce Out" wait="true"]
 update Lizzy center [move_time="0.5"]
 VO: I better get the library to talk with everyone.

@@ -72,5 +72,37 @@ audio music - [fade="4.0"]
 
 do GameState.end_minigame()
 leave Juniper [animation="Slide To Left"]
-Dagger: i'm here now!
+Lizzy: Juniper, wait!
+VO: Why is she running away?
+join Lizzy right
+join Dagger left 
+Dagger: Lizzy—
+Lizzy: Not now, Dagger.
+Lizzy: I need to go after Juniper.
+
+Dagger: Wait. I overheard your conversation.
+Dagger: I found it most intriguing.
+Dagger: Especially the silver you presented to her.
+Lizzy: Silver?
+Dagger: Yes.
+Dagger: You described it as a "strange nugget"
+Lizzy: This is silver?
+Dagger: Silver is toxic for vampires. It carries a magical energy that amplifies psychic abilities and harms the undead.
+Dagger: It can also be used to kill... Werewolves.
+Lizzy: Uh.
+Lizzy: What was she doing with that?
+Dagger: I do not know.
+Dagger: Could you put the silver back in your pocket, actually.
+Dagger: I’m feeling weaker than I usually do around... you...
+VO: Of course he’d say something cheesy like that.
+Lizzy: Well, if you overheard everything, you know that I’m going to demand you help me stop Lady MacDeath and her time loop.
+Lizzy: Unless you’re in on it.
+Dagger: I am unfamiliar with the concept of time loop.
+Lizzy: it’s like the same day repeating over and over again.
+Dagger: You arguments with Juniper were compelling,
+Dagger: But I don’t believe Lady MacDeath would do something like that.
+Dagger: Have you considered the stress of your day-to-day life has finally gotten to you?
+VO: He sounds like Valerie before I convinced her.
+VO: If I’m going to stop Lady MacDeath, I should probably get him on board.
+VO: Here goes nothing I guess.
 jump minigame_d_5/

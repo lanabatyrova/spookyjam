@@ -1,3 +1,53 @@
+[Alarm blaring]
 join Lizzy (Talking) center [animation="Fade In" wait="true"]
-waking up on day 4
-I should try to convince Noah today
+VO: okay, this is really starting to test my patience.
+
+[phone ringing]
+VO: barbs calling..?
+join Barb (Phone) left
+update Lizzy right [move_time="0.4"]
+
+Lizzy: y’ello?
+Barb: Lizzy, oh my god. This time loop thing is real?
+Lizzy: ...
+Lizzy: yeah? I thought I'd convinced you already.
+Barb: i mean, yeah, you did,
+Barb: but I mostly thought you were exaggerating, like you usually do.
+Lizzy: i don't exaggerate.
+Lizzy: I'm very realistic in my explanations.
+Barb: so, like, does the same day repeat every day?
+Lizzy: pretty much, yeah.
+Barb: ...
+Barb: this is just like the new SG1 episode, window of opportunity.
+Lizzy: sg1...?
+Barb: stargate? You know the movie with james spader and kurt Russell?
+Barb: I personally prefer kurt with long hair, but I think RDA makes the short hair for Jack work.
+Lizzy: I don't know what any of this means.
+Barb: it's like talking to a wall!
+Barb: ...
+Barb: so I'll have to fix my dress with your sewing kit, every day?
+Lizzy: didn't i give it to—
+Lizzy: oh I still have it.
+Lizzy: yeah, I guess so.
+Barb: this is terrible!
+Barb: how do I get stuff to stay in my pockets?
+Lizzy: to be completely honest, I don't know
+Barb: ugh
+Barb: you better figure it out because I'm this close to loosing it.
+Lizzy: i can't see what you're doing.
+Barb: holding my fingers very close together.
+Lizzy: why are you fixing your dress? Can't you wait until we sort this time loop thing out?
+Barb: because, by the time we do, it'll already be tomorrow!
+Barb: and then it'll be too late!
+Lizzy: we're stuck in a time loop and you're still obsessing over the grad dance?
+Barb: yes!
+Barb: i still have priorities!
+Lizzy: i don't know if I'd call them that...
+Barb: just, figure it out, okay?
+Barb: I'm going to go to the library and see if Valerie knows anything.
+Lizzy: go easy on her, she's still new at this.
+leave Barb [animation="Fade Out Down"]
+[Phone clicks]
+VO: not even a goodbye?
+VO: I should probably tell Noah and Juniper about the time loop next,
+VO: leaving Valerie with Barb seems unnecessarily cruel.

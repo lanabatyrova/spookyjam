@@ -1,8 +1,10 @@
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Juniper (Talking) left
+join Foreground center
+join Lizzy (Talking) right [animation="Fade In Up" length="0.2" z_index="1"]
 Juniper: Lizzy, there you are. You didn’t come to the exam.
 Juniper: Neither did Barb or Noah.
 Juniper: I’m pretty sure Holiday all gave you automatic fails.
-join Lizzy (Talking) right [animation="Fade In Up" length="0.2"]
 Lizzy: Eh, she can deal. I got like 80% on that group project, I think my grades are safe.
 Juniper: What was so important that you ditched?
 Lizzy: I can’t tell you right now...
@@ -20,6 +22,8 @@ Lizzy: Never better.
 Juniper: I think I’m just going to go home.
 Lizzy: Okay, yeah. Sure.
 Juniper: See you tomorrow.
+leave Juniper [animation="Fade Out"]
+[wait_input]
 VO: Don’t worry, Jay. I’ll fix this.
 leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["juniper"])

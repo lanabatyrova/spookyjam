@@ -1,2 +1,17 @@
-\setup for noah's minigame
+join Lizzy (Talking) right
+join Noah (Talking) left [mirrored="true"]
+Lizzy: Noah!
+update Noah [mirrored="false"]
+Noah: Whoa, hey, Lizzy.
+Noah: what are you doing down here?
+Noah: normally you guys avoid creepy basements.
+Noah: because of all the weirdos.
+Lizzy: we're stuck in a time loop.
+Lizzy: and I'm here to prove it!
+Noah: really?
+Noah: that sounds cool, but...
+Noah: can we do this another time? I'm sort of in the middle of something.
+VO: here goes nothing!
+leave Lizzy
+
 jump minigame_n_4/

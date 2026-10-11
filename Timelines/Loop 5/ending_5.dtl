@@ -1,8 +1,5 @@
-Dagger: Dagger: It doesn’t make any sense.
-Lizzy: Like it or not, she's added trapping me in an endless time loop to her ultimate revenge plan, so that's great.
-Dagger: I don't know why she wouldn't have talked to me about it first. She always consults with me.
-Lizzy: Maybe she knows about...
-Lizzy: You know, the conflict of interest?
+join Dagger left
+join Lizzy right
 Dagger: I suppose she's noticed how frequently we've been speaking.
 Dagger: How... 
 Dagger: ...
@@ -22,7 +19,7 @@ Dagger: I have my moments.
 Lizzy: ...
 Lizzy: This isn’t easy for me to say,
 Lizzy: but I want to know you too—
-TO BE CONTINUED
+leave --All-- 
 
 do GameState.learn_fact("m_shakespeare_hate")
 do GameState.next_day()

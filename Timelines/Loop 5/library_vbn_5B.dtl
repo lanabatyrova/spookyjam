@@ -1,2 +1,17 @@
-everyone's hanging out in the library (evening version)
+join Valerie (Talking) midright [mirrored="true"]
+
+Valerie (Talking): Can't you both go home now?
+Valerie: won't your parents worry?
+join Barb (Talking) left
+Barb: I can't stand having the same conversation over and over with them.
+join Noah (Talking) lefter
+Noah: Don't you want us to hang out at the library, Valerie?
+Noah: supporting public spaces.
+update Valerie (Talking) [mirrored="false"]
+Valerie: ...
+Valerie: fine, but don't bring me into any more of your arguments.
+update Valerie (Talking) [mirrored="true"]
+Valerie: I don't watch television and all the books I read are non-fiction.
+Barb: so boring.
+VO: I should probably let them do their own thing.
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

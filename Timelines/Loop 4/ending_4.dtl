@@ -1,3 +1,28 @@
-ending scene number 4
+update Lizzy (Full Body) right
+update Dagger (Full Body) left
+
+"Lady MacDeath": Elizabeth Springs, how fortuitous...
+join "Lady MacDeath" (FullBody LM) center [animation="Fade In"]
+Lizzy: come on, not now!
+"Lady MacDeath": yes, now!
+Lizzy: i know, i know, you're going to raise your undead army.
+"Lady MacDeath": ...
+"Lady MacDeath": yes.
+"Lady MacDeath": How did you know that?
+Lizzy: I'm just that good, Lady.
+"Lady MacDeath": Perhaps Dagger told you with his weakened love soaked heart—
+update Dagger [animation="Tada" mirrored="true"]
+Dagger: i assure you, my lady, i did not--
+update "Lady MacDeath" midleft [mirrored="true" move_time="0.4"]
+update Dagger lefter [move_time="0.4"]
+"Lady MacDeath": i will deal with you later.
+update "Lady MacDeath" [animation="Bounce" mirrored="false"]
+Lizzy: Come on Lady MacDeath, just give it a rest already.
+"Lady MacDeath": you will crumble against my undead army!!!
+VO: here we go again.
+VO: one.
+VO: Two.
+VO: and--
+leave --All--
 do GameState.next_day()
 jump intro_5/

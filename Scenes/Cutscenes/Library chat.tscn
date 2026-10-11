@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b30segoi411ru"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_v8xi6"]
+[ext_resource type="Texture2D" uid="uid://cr2qynsc1io6k" path="res://assets/bgs/bg library blurred.png" id="2_4n44h"]
+[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="4_ljyqc"]
+[ext_resource type="Texture2D" uid="uid://vrefpe0mc0kf" path="res://assets/People/Lady-Knightmare_1.png" id="5_xpchq"]
+[ext_resource type="Texture2D" uid="uid://crt76u32actv2" path="res://assets/bgs/table.png" id="6_bxhqy"]
+
+[node name="DialogicBackground" type="Node" unique_id=1867004614]
+script = ExtResource("1_v8xi6")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Control" type="Control" parent="." unique_id=898740825]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 487.0
+offset_top = 331.0
+offset_right = 527.0
+offset_bottom = 371.00003
+scale = Vector2(0.5628975, 0.5628975)
+
+[node name="BgLibrary" type="Sprite2D" parent="Control" unique_id=2018891331]
+position = Vector2(-2, -11)
+texture = ExtResource("2_4n44h")
+
+[node name="Dagger1" type="Sprite2D" parent="Control" unique_id=1478238259]
+position = Vector2(220.00005, -48.333282)
+scale = Vector2(0.47891128, 0.47891128)
+texture = ExtResource("4_ljyqc")
+
+[node name="LadyKnightmare1" type="Sprite2D" parent="Control" unique_id=325308881]
+position = Vector2(-72.83744, -111.92092)
+scale = Vector2(0.47007844, 0.4700785)
+texture = ExtResource("5_xpchq")
+
+[node name="Table" type="Sprite2D" parent="Control" unique_id=1055524328]
+position = Vector2(-1.666616, -11.666626)
+texture = ExtResource("6_bxhqy")

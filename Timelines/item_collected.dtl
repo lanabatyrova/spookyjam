@@ -16,13 +16,15 @@ elif {collected_item_name} == "Belt":
 elif {collected_item_name} == "Annotated Pocket Shakespeare":
 	VO: What in the world is this?
 elif {collected_item_name} == "Acceptance Letter":
+	join Item (Acceptance Letter Closed) center [animation="Fade In Up" wait="true"]
 	VO: VO\: Huh, Juniper isn’t here.
 	VO: Wait, what’s this.
 	VO: An opened letter addressed to Juniper...? From Emmerdale.
 	VO: It’s probably her rejection letter.
 	VO: ...
+	update Item (Acceptance Letter open) [animation="Bounce" length="0.7" fade="Fade Cross" fade_length="0.6"]
 	VO: Dear Miss Juniper Chandra,
-	VO: it is on behalf of Emmerdale that we would like to congratulate you on your acceptance into Emmerdale’s Theoretical Physics Program—
+	VO: it is on behalf of Emmerdale that we would like to congratulate you on your acceptance into Emmerdale’s Physics Program—
 	VO: Wait a damn minute,
 	VO: This is an acceptance letter!
 	VO: If she’s read this, why did Juniper say she didn’t get in?

@@ -1,2 +1,89 @@
-okay we've all discussed stuff, now it's time to go
+[background scene="res://Scenes/Cutscenes/Library chat.tscn" fade="0.0"]
+join Valerie lefter
+join Noah (Full Body) leftmost [z_index="1"]
+join Barb (Full Body) righter [z_index="1" mirrored="true"]
+join Lizzy (Full Body) right
+
+Lizzy: Alright everyone, are we ready?
+Valerie: yes.
+Knightmare: what's our plan of attack?
+Lizzy: we're not attacking anybody,  we're simply going to confront Juniper in a non aggressive way.
+Knightmare: ...
+Knightmare: then why am i even here.
+Lizzy: numbers, Lady, numbers!
+Dagger: it will be good for you to see ways to solve problems without violence, my lady.
+Knightmare: [sigh] i cannot promise i won't shed blood if i see it fit to do so.
+Barb: won't Juniper be more defensive if we all overwhelm her?
+Lizzy: i think she'll see our numbers as we care about you so we all made it out.
+Noah: hmm.
+Noah: maybe we should make a sign that says its okay we still love you.
+Barb: good idea.
+Barb: wait, why am I agreeing with you?
+Noah: because I'm awesome
+Barb: ruined it.
+Lizzy: We don't need to make a sign, that's...
+Lizzy: hm.
+Lizzy: its okay we love you is a bit much, but maybe something like--
+Valerie: we are running out of time, Elizabeth.
+Valerie: do we have any idea of where Juniper is?
+VO: think, Lizzy. We've gathered the clues.
+Vo: also there isn't many of places we could possibly go to in town.
+Lizzy: i think i know where.
+- shes totally in the abandoned silver mine. [br] That place screams isolation.
+	Lizzy: the silver nugget, the fact she would disappear out of thin air...
+	Lizzy: clearly she's in the vermilion abandoned silver mine.
+	Barb: you could've just said silver mine.
+	Barb: we know its in vermilion and also abandoned.
+	Lizzy: where's the drama in that?
+	Valerie: of course. Silver is known to have an impact on psychic abilities.
+- if I were doing something I didn't want [br] people to see I'd go into the basement at school. [br] Plus it's creepy, and we don't have[br] to use a new location. Nicee.
+	
+	Lizzy: it makes most sense she would be holed up in the school basement.
+	Noah: uh
+	Noah: wouldn't I have noticed her?
+	Lizzy: the basement is a big place!
+	Valerie: not that I think your logic is flawed,
+	Lizzy: it sounds like you do,
+	Valerie: but is there any reason you think this?
+	Lizzy: well, its creepy.
+	Lizzy: she's doing creepy stuff.
+	Barb: open your eyes, lizzy, clearly she's not in the school basement.
+	Dagger: lizzy, do you remember the night you were talking with Juniper, and she was quite upset,
+	Lizzy: please don't remind me...
+	Dagger: you mentioned the strange nugget to which I pointed out that as silver, same as my nose ring.
+	Lizzy: yeah...?
+	Dagger: so wouldn't it stand to reason-
+	Valerie: that she would be in the abandoned silver mine!
+	Valerie: of course.
+	Lizzy: way to steal my thunder.
+	Lizzy: i would've gotten there eventually.
+
+Dagger: it's fitting that she would use the silver deposits not yet mined to amplify her power and loop time to her design.
+Knightmare: silver is quite powerful...
+Knightmare: gives one much to think about.
+Noah: i remember taking a field trip there once.
+Noah: juniper really didn't like going inside.
+Noah: her family has a whole bunch of history with it.
+Lizzy: won't the silver mine hurt you guys, too?
+Dagger: its alright, i am used to the sting of silver.
+Dagger: my nose ring is made from it as it's the only thing that will pierce my flesh and keep it from healing.
+Barb: gross.
+Noah: i always wondered about that.
+Knightmare: my armour should shield me from most ill effects.
+Knightmare: besides, i am as old as time--
+Dagger: not really---
+Knightmare: a little silver deposit will be no match for my strength of character.
+Lizzy: okay, so.
+Lizzy: should we make the sign now or--
+Valerie: let's go before we miss our  window opportunity entirely.
+Noah: oh my god that's what I was thinking, just like the sg1 episode.
+Barb: i already said that like three loops ago.
+Knightmare: we will meet you at the mine post haste.
+Lizzy: yeah. Um. Take your time.
+Noah: lets kick some metaphorical ass
+Noah: and by kick I mean nicely ask and listen to Juniper’s point of view.
+Lizzy: what you said.
+Lizzy: let's go!!
+leave --All-- [animation="Instant Out"]
+
 jump midpoint_7/

@@ -1,3 +1,94 @@
 join Noah center
-noah's minigame
+do GameState.start_minigame()
+[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
+[wait time="1.5"]
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "allergy_meds":
+		Lizzy: in previous loops you've been admitted into the hospital to your severe reaction to glitter.
+		Noah: what that's crazy
+		[sneeze]
+		Lizzy: i brought these meds so that you won't be in medical distress.
+		Noah: Allergy meds is just a good thing to have on you at all times,
+		Noah: How do I know it's because you've time traveled.
+		Lizzy: I haven't time travelled, it's a time loop,
+		Lizzy: that's different.
+		Noah: is it?
+		Lizzy: That's not important.
+		Lizzy: You ran out of yours,
+		Lizzy: but actually you dropped the bottle and all of them fell down the sink a few days ago.
+		Noah: ...
+		Noah: Did my brother tattle?
+	elif {current_item} == "belt":
+		Lizzy: your machines fan belt may look like its in pristine condish, but actually it isn't!
+		Lizzy: Check for yourself, the material is cheap fake leather.
+		Noah: this baby is fool proof—
+		Noah: oh it's all crumbly.
+		Lizzy: you've been working on it for too long the dampness of the basement eroded it.
+		Lizzy: which is why I've brought my expensive nice leather belt for you to use.
+		Noah: wow! Thanks Lizzy.
+		Noah: I owe you one.
+		Lizzy: how about you believe me about the time loop.
+		Noah: I'll think about it.
+	
+	elif {current_item} == "n_detention":
+		Lizzy: any second Principal Kenzie is going to walk in and catch you red handed with your machine.
+		Noah: what, no way, she never comes to the basement.
+		Noah: Kinda why I chose this place.
+		Lizzy: if you dont want to be hauled away and for your prank to go off without a hitch tomorrow, help me cover your machine with a tarp real quick.
+		Noah: i guess it wouldnt hurt.
+		[tarp rustling]
+		[footsteps on stairs]
+		Principal: ah. Noah. Elizabeth.
+		Principal: What are you doing down here?
+		Lizzy: oh were just.. um reminiscing—
+		Noah: and helping me fill out volunteer hours—
+		Lizzy: by cleaning the basement—
+		Noah: we've got a lot of work to do—
+		Lizzy: it's so gross in here, haha
+		Principal: you should've submitted your volunteer hours weeks ago,
+		Principal: but given your track record, i'm just glad you felt comfortable enough to ask Elizabeth for help.
+		Principal: and Elizabeth, how lovely that you decided to help Noah.
+		Principal: Really showing the VHS spirit!
+		Lizzy: no problem, P K.
+		Principal: have a good rest of your day, and see you bright and early!
+		Principal: I owe both of you a diploma!
+		Noah: see yaa
+		[footsteps receeding]
+		Noah:... okay she's gone.
+		Noah: How the hell did you know that?
+		Lizzy: Time. Loop.
+	
+	set {strikes_number} += 1.0
+	join Item leftmost [animation="Zoom In" length="9.0"]
+	leave Item [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 2.0:
+		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+	elif {strikes_number} == 3.0:
+		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+	[wait time="1.5"]
+else:
+	Noah: Cool, but also what does this have to do with me?
+	Lizzy: I just thought you should see it.
+	Noah: Oh, sweet! Thanks, I guess...
+	VO: I'll have to try something else.
+
+set {is_success} = false
+if {strikes_number} < 3.0:
+	jump Journal Select
+[background fade="2.0" wait="true"]
+audio music - [fade="4.0"]
+Noah: i guess I have no choice but to believe you.
+Lizzy: you say that like you totally weren't on board before
+Noah: oh, yeah, I am soo psyched this is happening.
+Noah: Thanks for the save with Kenzie. That would've been bad.
+Lizzy: no problem.
+
+do GameState.end_minigame()
 jump midpoint_4/

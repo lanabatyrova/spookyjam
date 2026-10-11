@@ -17,6 +17,24 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Acceptance Letter Closed": {
+"export_overrides": {
+"image": "\"res://assets/Items/letter_closed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Acceptance Letter open": {
+"export_overrides": {
+"image": "\"res://assets/Items/Letter_Open.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "Postcard Back": {
 "export_overrides": {
 "image": "\"res://assets/Postcard_back.png\""

@@ -6,7 +6,7 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 0
+var current_day: int = 1
 var midpoint_reached = false
 var is_minigame = false
 
@@ -40,7 +40,7 @@ var facts = {
 	"v_future_worries": false,
 	"b_camp_story": false,
 	"b_clown_school": true,
-	"n_detention": false,
+	"n_detention": true,
 	"d_brother_death": false,
 	"d_zombie_plan": false,
 	"m_suspition": false, # lmd is causing the loop?

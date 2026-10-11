@@ -1,3 +1,100 @@
-Dagger: something something brooding i killed my brother you know
+join Dagger (Talking) left
+join Lizzy (Talking) right
+Dagger: Lizzy… a serendipitous entrance...
+Lizzy: Yeah. Yeah.
+Lizzy: I know.
+Dagger: ...
+Dagger: is something on your mind?
+update Lizzy [animation="Bounce" mirrored="true"]
+Lizzy: You don't even know the half of it!
+Lizzy: ...
+Lizzy: It's not fair.
+Lizzy: I didn't choose to be a werewolf.
+Lizzy: and now I have to deal with all of this supernatural bullshit.
+Dagger: ...
+Dagger: you could've left vermilion hills a long time ago, Lizzy.
+update Dagger midleft [mirrored="true" move_time="0.3"]
+Dagger: you chose to stay.
+Dagger: To protect the people who call this humble town their home.
+Dagger: what mayor Silver did to you was selfish and irresponsible.
+update Lizzy [mirrored="false"]
+Lizzy: he seemed like a decent guy.
+Lizzy: also he apologized a lot before he, you know, died.
+Lizzy: and I actually love being a werewolf.
+Lizzy: It's awesome.
+update Dagger [mirrored="false"]
+Dagger: when I was turned into a vampire, I hated who I had become.
+Dagger: i was impulsive, impatient, angry...
+Dagger: but what I didn't understand at the time was that it didn't change aspects of who I was.
+Dagger: the change ripped away the walls and safe guards I had built up for the years.
+Dagger: i was starting fresh, with a lust for blood.
+Lizzy: that sounds rough.
+Dagger: yes.
+Dagger: It was.
+Lizzy: why did Lady MacDeath turn you?
+Lizzy: if you don't mind me asking.
+Dagger: not at all.
+Dagger: it's a story I'm all too at peace with.
+Dagger: after I'd finished high school, I decided to go into psychology. I wished to become a psychiatrist to help mend my family's estranged nature.
+Dagger: my older brother, Henry, was the pride and joy of my mother and father, while I was barely thought of.
+Dagger: going into psychology I naturally knew that i had developed a complex about it.
+Lizzy: at least you were a little self aware.
+Dagger: my chums and I decided to celebrate our new admission to the most prestigious university in the country.
+Lizzy: emmerdale?
+Dagger: oh.
+Dagger: No, im not talking about america.
+Dagger: I'm from Italy.
+Lizzy: sorry what.
+Lizzy: you're italian??
+Lizzy: how didn't i know this?
+Dagger: my accent has waned due to my thespian training.
+Dagger: but that's not important to the story.
+Dagger: we celebrated by going out to the theatre, to see Midsomer Nights Dream.
+Dagger: what we didn't know was that this was King Fear's vampire trope and everyone who attended was their prey.
+join "King Fear" center [animation="Fade In" length="0.7" z_index="1"]
+Lizzy: that sounds terrifying.
+Dagger: yes.
+Dagger: it was.
+leave "King Fear"
+Lizzy: so, wait, why did they chose to turn you?
+Dagger: as the vampires attacked the audience during the fifth act, I escaped under the stage.
+Dagger: lady MacDeath pursued me,
+Dagger: I didn't get very far before she was upon me and started draining me of blood...
+Lizzy: ...
+Dagger: i started mumbling my wants and fears and regrets, you know the type of thing you start saying when you're about to die.
+Dagger: she heard me say that I was alone in my life. That my parents didn't love me.
+Dagger: she stopped drinking and opened her palm, pressing her blood, my blood, into my mouth.
+Dagger: as soon as the blood touched my lips...
+update Dagger [animation="Tada"]
+Dagger: i couldn't stop myself.
+Dagger: after I was turned, she told King Fear that I was her new protege, because having all of the young handsome men played by old wrinkly vampires was getting boring.
+Lizzy: so you became a member of the trope?
+Dagger: yes.
+Dagger: for many years we traveled and performed.
+Dagger: i made quite the romeo.
+Lizzy: yeah, I'm sure.
+Lizzy: did you family wonder what happened to you?
+Dagger: they didn't need to.
+Dagger: the first thing I did as a vampire...
+update Dagger left [move_time="0.5"]
+Dagger: the first thing I did was kill my brother.
+Lizzy: ...
+Lizzy: what?
+Lizzy: why?
+Dagger: at first I went to see him to make amends, and to say goodbye.
+Dagger: news of the theatre massacre was spreading and King Fear wanted to leave the city.
+Dagger: but Henry refused to listen to me.
+Dagger: He continued to push my insecurities, telling me I was nothing but dirt on his heel.
+Dagger: the anger overtook me.
+update Dagger [animation="Tada"]
+Dagger: my resentment ran deeper than I admitted even to myself.
+Dagger: killing him was the most satisfying thing I've ever done.
+Dagger: but also my deepest regret.
+Lizzy: ...
+VO: What do I even say to that?
+VO: Oh, Dagger...
+Lizzy: I'm sorry that all your friends died.
+Dagger: I've made my peace.
+
 do GameState.learn_fact("d_brother_death")
 jump ending_4/
