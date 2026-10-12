@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bowixpvgh6ief"]
 
 [ext_resource type="Script" uid="uid://bowcvcrlaugk0" path="res://Scenes/Journal Menu/Juniper_Page/juniper_page.gd" id="1_u2yhl"]
+[ext_resource type="Texture2D" uid="uid://bvjjo5o6a8nfl" path="res://assets/Journal_Juniper.png" id="2_2kw7x"]
 [ext_resource type="Script" uid="uid://gbp5mykln8bs" path="res://Scenes/Journal Menu/contacts_button.gd" id="2_26clk"]
 [ext_resource type="Script" uid="uid://fc4gkbh5vqd0" path="res://Scenes/Journal Menu/notes_button.gd" id="3_8ba4b"]
 [ext_resource type="Script" uid="uid://eaxyvjwtfee6" path="res://Scenes/Journal Menu/Settings/inventory_button.gd" id="4_ijk6r"]
@@ -20,9 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://ccyph8fth613n" path="res://assets/Journal Overlays/juniper_journal/J_Lied.png" id="13_w18wb"]
 [ext_resource type="Texture2D" uid="uid://uoi1kn7tviua" path="res://assets/Journal Overlays/juniper_journal/J_Lied_Hover.png" id="14_505p3"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wkakf"]
-load_path = "res://.godot/imported/journal_juniper.png-3554f55938390bb1f4c34e7c25bf1576.ctex"
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ijk6r"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
 
@@ -35,7 +33,7 @@ script = ExtResource("1_u2yhl")
 [node name="JuniperPage" type="Sprite2D" parent="." unique_id=331983510]
 position = Vector2(575.1111, 324.49997)
 scale = Vector2(0.59907407, 0.59907407)
-texture = SubResource("CompressedTexture2D_wkakf")
+texture = ExtResource("2_2kw7x")
 
 [node name="Contacts Button" type="LinkButton" parent="." unique_id=691147711]
 offset_left = 21.999939

@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://758dakh00et8" path="res://Scenes/Phone/up_pressed.png" id="7_aarmo"]
 [ext_resource type="Texture2D" uid="uid://c7eymnprpbdlb" path="res://Scenes/Phone/down_pressed.png" id="8_6txpn"]
 [ext_resource type="Texture2D" uid="uid://hbfupcb848kb" path="res://Scenes/Phone/contacts pressed.png" id="9_q4ybf"]
-[ext_resource type="Script" uid="uid://cp1r3m7dib2m1" path="res://Scenes/Journal Menu/contacts.gd" id="10_todfv"]
 [ext_resource type="Texture2D" uid="uid://8iinocowcahj" path="res://Scenes/Phone/1_pressed.png" id="11_y230q"]
 [ext_resource type="Texture2D" uid="uid://bu8k1jlyiqgw" path="res://Scenes/Phone/2_pressed.png" id="12_nch4f"]
 [ext_resource type="Texture2D" uid="uid://b4kxeqr34oybr" path="res://Scenes/Phone/3_pressed.png" id="13_8gqy6"]
@@ -89,7 +88,6 @@ offset_right = 1763.0
 offset_bottom = 1662.0
 scale = Vector2(0.03676269, 0.03676269)
 texture_pressed = ExtResource("9_q4ybf")
-script = ExtResource("10_todfv")
 
 [node name="1" type="TextureButton" parent="CanvasLayer/PhoneBG" unique_id=750266394]
 layout_mode = 0

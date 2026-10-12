@@ -2,7 +2,7 @@
 [background arg="res://assets/Locations/school outside.png" fade="0.0"]
 join Lizzy (Talking) right [mirrored="true"]
 join Barb (Talking) leftmost
-Barb (Talking): Lizzy, wait.
+Barb: Lizzy, wait.
 Lizzy: Barb?
 update Lizzy [mirrored="false"]
 update Barb left [move_time="0.5"]

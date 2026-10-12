@@ -9,7 +9,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:frame")
+tracks/0/path = NodePath("DialogicPortrait/Barb1/AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -26,7 +26,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:sprite_frames")
+tracks/0/path = NodePath("DialogicPortrait/Barb1/AnimatedSprite2D:sprite_frames")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -38,7 +38,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:frame")
+tracks/1/path = NodePath("DialogicPortrait/Barb1/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -54,21 +54,23 @@ _data = {
 &"barb_Talking": SubResource("Animation_xxbpr")
 }
 
-[node name="DialogicPortrait" type="Node" unique_id=388540671]
+[node name="Parent Node" type="Node2D" unique_id=1129618386]
+
+[node name="DialogicPortrait" type="Node" parent="." unique_id=1974944594]
 script = ExtResource("1_c3ow6")
 metadata/_custom_type_script = "uid://djbg8sc0q67ow"
 
-[node name="Barb1" type="Sprite2D" parent="." unique_id=1216159837]
+[node name="Barb1" type="Sprite2D" parent="DialogicPortrait" unique_id=1216159837]
 position = Vector2(519, 324)
 scale = Vector2(0.31237793, 0.31237793)
 texture = ExtResource("2_c3ow6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Barb1" unique_id=1263411467]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_j1kpd")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Barb1/AnimationPlayer" unique_id=1026984565]
-position = Vector2(557, 319)
-scale = Vector2(0.31311032, 0.31311032)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="DialogicPortrait/Barb1" unique_id=1026984565]
+position = Vector2(121.64746, -16.006287)
+scale = Vector2(1.0023446, 1.0023446)
 sprite_frames = ExtResource("3_c3ow6")
 animation = &"Talking"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogicPortrait/Barb1/AnimatedSprite2D" unique_id=1263411467]
+root_node = NodePath("../../../..")
+libraries/ = SubResource("AnimationLibrary_j1kpd")

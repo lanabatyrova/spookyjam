@@ -16,21 +16,14 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="Control" type="Control" parent="." unique_id=2007742272]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(0.8799997, 0.8799997)
-
-[node name="StreetDay" type="Sprite2D" parent="Control" unique_id=566009330]
-position = Vector2(576, 324.50003)
-scale = Vector2(0.6, 0.60092586)
+[node name="StreetDay" type="Sprite2D" parent="." unique_id=566009330]
+position = Vector2(506.87982, 285.55994)
+scale = Vector2(0.5279998, 0.52881455)
 texture = ExtResource("2_myi71")
 
-[node name="StreetNight" type="Sprite2D" parent="Control" unique_id=717733791]
-position = Vector2(576, 324.50003)
-scale = Vector2(0.6, 0.60092586)
+[node name="StreetNight" type="Sprite2D" parent="." unique_id=717733791]
+position = Vector2(506.87982, 285.55994)
+scale = Vector2(0.5279998, 0.52881455)
 texture = ExtResource("3_exxs6")
 
 [node name="JuniperButton" type="TextureButton" parent="." unique_id=1760701709]
