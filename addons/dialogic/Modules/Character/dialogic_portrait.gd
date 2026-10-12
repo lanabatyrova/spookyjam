@@ -20,6 +20,9 @@ func _should_do_portrait_update(_character: DialogicCharacter, _portrait: String
 	return false
 
 
+
+
+
 ## If the custom portrait accepts a change, then accept it here
 ## You should position your portrait so that the root node is at the pivot point*.
 ## For example for a simple sprite this code would work:

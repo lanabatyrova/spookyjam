@@ -164,9 +164,11 @@ Lizzy: finally amirite haha...
 Juniper: shhh
 [background arg="res://assets/Locations/Girls_Bathroom_Open.png" fade="0.5" wait="true"]
 join Barb (Talking) midleft [animation="Fade In Up" length="3.0" wait="true"]
+join Item (Barb Ripped Dress) midleft [z_index="1"]
 [background arg="res://assets/Locations/Girls_Bathroom.png" fade="0.4" wait="true"]
 Lizzy: uh.. did a wild animal tear into that?
 update Barb [animation="Shake X" length="1.5" mirrored="true"]
+update Item (Barb Ripped Dress) midleft [z_index="1" mirrored="true"]
 Barb: i tried putting it on and.. it..
 [sniff]
 Juniper: i mean.
@@ -174,6 +176,7 @@ Juniper: It's not so bad.
 update Lizzy [animation="Bounce"]
 Lizzy: are you kidding that things shredded motza!
 update Barb [mirrored="false"]
+leave Item [animation="Fade Out Down"]
 Barb: i might as well jump off a bridge now.
 Lizzy: Barb, you are the most capable person I know
 Lizzy: when it comes to fashion.

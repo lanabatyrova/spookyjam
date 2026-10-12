@@ -2,8 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://hbmnotj4ag7" path="res://assets/Locations/Basement.png" id="1_5fdut"]
 [ext_resource type="Script" uid="uid://c1uk035w18ycn" path="res://Scenes/Basement/basement.gd" id="1_gg0k3"]
+[ext_resource type="Texture2D" uid="uid://cjmdkr4c8170p" path="res://assets/noah_destroyed_contraption.png" id="3_bx3rb"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="3_u0mjk"]
 [ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="4_7dc70"]
+[ext_resource type="Texture2D" uid="uid://dh6pb2o31ul6f" path="res://assets/noah_contraption.png" id="4_i3el1"]
 [ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="4_u0mjk"]
 
 [node name="Basement" type="Node2D" unique_id=1156537435]
@@ -18,6 +20,17 @@ offset_bottom = 649.0
 position = Vector2(575.77783, 324)
 scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_5fdut")
+
+[node name="NoahDestroyedContraption" type="Sprite2D" parent="." unique_id=2021236958]
+visible = false
+position = Vector2(851, 237.00002)
+scale = Vector2(0.24000059, 0.24000059)
+texture = ExtResource("3_bx3rb")
+
+[node name="NoahContraption" type="Sprite2D" parent="." unique_id=1876605477]
+position = Vector2(920.00006, 274)
+scale = Vector2(0.24000059, 0.24000059)
+texture = ExtResource("4_i3el1")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=1249788943]
 offset_left = 837.99994

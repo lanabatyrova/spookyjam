@@ -72,11 +72,11 @@ flip_h = true
 script = ExtResource("8_jhg32")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=1926191232]
-offset_left = 345.0
-offset_top = 290.00003
-offset_right = 692.0
-offset_bottom = 1242.0
-scale = Vector2(0.20837258, 0.20837258)
+offset_left = 372.0
+offset_top = 341.0
+offset_right = 719.0
+offset_bottom = 1293.0
+scale = Vector2(0.08837013, 0.08837013)
 texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
 

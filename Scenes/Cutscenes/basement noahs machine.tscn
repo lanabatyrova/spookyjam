@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cpg4trjdajl63"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_4e3vp"]
+[ext_resource type="Texture2D" uid="uid://d17fpwoqrqn34" path="res://assets/ripped_belt.png" id="2_apqac"]
+[ext_resource type="Texture2D" uid="uid://hbmnotj4ag7" path="res://assets/Locations/Basement.png" id="2_r2ow4"]
+[ext_resource type="Texture2D" uid="uid://cjmdkr4c8170p" path="res://assets/noah_destroyed_contraption.png" id="3_r2ow4"]
+
+[node name="DialogicBackground" type="Node" unique_id=621745587]
+script = ExtResource("1_4e3vp")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Control" type="Control" parent="." unique_id=289721382]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 536.0
+offset_top = 323.0
+offset_right = 576.0
+offset_bottom = 363.0
+
+[node name="Basement" type="Sprite2D" parent="Control" unique_id=324616892]
+scale = Vector2(0.6530093, 0.6530093)
+texture = ExtResource("2_r2ow4")
+
+[node name="NoahContraption" type="Sprite2D" parent="Control" unique_id=934771943]
+position = Vector2(191, -66)
+scale = Vector2(0.22835153, 0.2283515)
+texture = ExtResource("3_r2ow4")
+
+[node name="RippedBelt" type="Sprite2D" parent="Control" unique_id=1053581139]
+position = Vector2(23.999992, 256.00003)
+rotation = -0.550405
+scale = Vector2(0.09054549, 0.09054549)
+texture = ExtResource("2_apqac")

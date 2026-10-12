@@ -1,11 +1,11 @@
 [background arg="#000000ff" fade="1.0"]
-[background arg="res://Temp Assets/depositphotos_2371440-stock-photo-modern-school-building-4143423643.jpg" fade="0.0"]
-join Lizzy right [mirrored="true"]
-join Barb left
-Barb: Lizzy, wait.
+[background arg="res://assets/Locations/school outside.png" fade="0.0"]
+join Lizzy (Talking) right [mirrored="true"]
+join Barb (Talking) leftmost
+Barb (Talking): Lizzy, wait.
 Lizzy: Barb?
 update Lizzy [mirrored="false"]
-update Barb center [move_time="0.5"]
+update Barb left [move_time="0.5"]
 Barb: Literally what is your problem today? You blew off the math exam and now you’re slinking away to god knows where.
 Lizzy: since when are you concerned about what I do?
 Barb: we fight monsters together, Lizzy.

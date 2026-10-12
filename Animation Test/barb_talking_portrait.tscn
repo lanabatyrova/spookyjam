@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dimb0j1p4ew7w"]
+
+[ext_resource type="Script" uid="uid://bbf151uw5h8op" path="res://Animation Test/barb_talking_portrait.gd" id="1_c3ow6"]
+[ext_resource type="Texture2D" uid="uid://cflggl7cmedhg" path="res://sprites/Barb_1.png" id="2_c3ow6"]
+[ext_resource type="SpriteFrames" uid="uid://c5ir7k6n7lgua" path="res://Animation Test/barb_frames.tres" id="3_c3ow6"]
+
+[sub_resource type="Animation" id="Animation_2th60"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_xxbpr"]
+resource_name = "barb_Talking"
+length = 0.96666664
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Barb1/AnimationPlayer/AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.49),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j1kpd"]
+_data = {
+&"RESET": SubResource("Animation_2th60"),
+&"barb_Talking": SubResource("Animation_xxbpr")
+}
+
+[node name="DialogicPortrait" type="Node" unique_id=388540671]
+script = ExtResource("1_c3ow6")
+metadata/_custom_type_script = "uid://djbg8sc0q67ow"
+
+[node name="Barb1" type="Sprite2D" parent="." unique_id=1216159837]
+position = Vector2(519, 324)
+scale = Vector2(0.31237793, 0.31237793)
+texture = ExtResource("2_c3ow6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Barb1" unique_id=1263411467]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_j1kpd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Barb1/AnimationPlayer" unique_id=1026984565]
+position = Vector2(557, 319)
+scale = Vector2(0.31311032, 0.31311032)
+sprite_frames = ExtResource("3_c3ow6")
+animation = &"Talking"

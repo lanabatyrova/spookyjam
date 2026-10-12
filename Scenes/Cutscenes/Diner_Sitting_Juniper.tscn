@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dfghmgdxyp1v"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_shkda"]
-[ext_resource type="Texture2D" uid="uid://5bwpmcixvinx" path="res://Temp Assets/neons-36-of-44-scaled-975515292.jpg" id="2_ytg5s"]
+[ext_resource type="Texture2D" uid="uid://kpd8fhnmp6db" path="res://assets/bgs/Diner seat.png" id="2_s0abo"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="4_7mwsm"]
-[ext_resource type="Texture2D" uid="uid://cops428hn2e2e" path="res://Temp Assets/diner table.png" id="5_84hrw"]
+[ext_resource type="Texture2D" uid="uid://cbw3a7r6un2bc" path="res://assets/bgs/Diner_Sitting_Table.png" id="4_10ydo"]
 
 [node name="DialogicBackground" type="Node" unique_id=1496060221]
 script = ExtResource("1_shkda")
@@ -19,9 +19,9 @@ offset_bottom = 947.0
 scale = Vector2(0.9199998, 0.9199998)
 
 [node name="Neons36Of44Scaled975515292" type="Sprite2D" parent="Control" unique_id=1026287920]
-position = Vector2(532, 531)
-scale = Vector2(0.6007689, 0.60076904)
-texture = ExtResource("2_ytg5s")
+position = Vector2(532, 431.5218)
+scale = Vector2(0.818159, 0.81815916)
+texture = ExtResource("2_s0abo")
 
 [node name="Juniper1" type="Sprite2D" parent="Control" unique_id=1285419599]
 position = Vector2(98.91308, 682.60895)
@@ -29,6 +29,6 @@ scale = Vector2(0.53005576, 0.5300557)
 texture = ExtResource("4_7mwsm")
 
 [node name="DinerTable" type="Sprite2D" parent="Control" unique_id=137182115]
-position = Vector2(517, 785)
-scale = Vector2(0.658291, 0.65829104)
-texture = ExtResource("5_84hrw")
+position = Vector2(517, 756.5219)
+scale = Vector2(0.70176923, 0.7017693)
+texture = ExtResource("4_10ydo")

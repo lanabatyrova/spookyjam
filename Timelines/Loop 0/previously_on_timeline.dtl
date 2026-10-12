@@ -55,7 +55,7 @@ Juniper: No...
 join Dagger right [animation="Fade In" length="1.0"]
 Dagger (Talking): There’s more at play than you and I, dearest Elizabeth.
 leave Dagger [animation="Fade Out" length="1.0"]
-[background arg="res://Temp Assets/baseball-field-night-260nw-2508561219-3781484238.jpg" fade="1.0" wait="true"]
+[background arg="res://assets/bgs/IMG_6427.png" fade="1.0" wait="true"]
 AND THE VERMILION WOLVES TAKE ANOTHER VICTORY-
 join "King Fear" center [animation="Slide In Up" length="0.7"]
 "King Fear": King Fear\: Tonight is the day you die Springs!! Now is the winter of your discontent!
