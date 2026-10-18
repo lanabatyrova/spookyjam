@@ -1,17 +1,17 @@
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
-join Lizzy left
+join Lizzy (Mine) left
 Lizzy: So this is the abandoned silver mine, huh?
-join Barb midleft [mirrored="true"]
+join Barb (Mine) midleft [mirrored="true"]
 Barb: It’s super creepy
-join Noah midright [z_index="1" mirrored="true"]
+join Noah (Mine) midright [z_index="1" mirrored="true"]
 Noah: It looks...
 Noah: well, abandoned is a good description.
 Lizzy: It’s like everyone just vanished and left behind dusty stuff.
-join Valerie center [mirrored="true"]
+join Valerie (Mine) center [mirrored="true"]
 Valerie: Vermilion’s entire economy was based around this mine. It’s a living piece of history. Look at this preserved gear.
-join Knightmare rightmost
+join Knightmare (Mine) rightmost
 Knightmare: Hmm.
-join Dagger right
+join Dagger (Mine) right
 Dagger: ...
 Dagger: There is a lot of silver still within these walls.
 update Dagger [animation="Shake Y" length="0.8"]
@@ -31,7 +31,7 @@ update Lizzy [mirrored="false"]
 
 
 Juniper: ah. Lizzy.
-join Juniper leftmost [animation="Fade In"]
+join Juniper (Mine) leftmost [animation="Fade In"]
 Juniper: and everyone else.
 Noah: Hey, Juni!
 Barb: ...

@@ -1,5 +1,6 @@
-join Lizzy right
-join Noah left
+[background arg="#00000050" fade="0.0"]
+join Lizzy (Talking) right
+join Noah (Talking) left
 Lizzy: You're dealing with this whole thing pretty well, Noah.
 Noah: I'm just happy I'm not in the hospital.
 - Noah is always coming up [br] with whacky schemes, [br] I should ask him about how [br] we should approach this.
@@ -22,7 +23,7 @@ Noah: I'm just happy I'm not in the hospital.
 	Noah: It's probably best you don't know.
 	Lizzy: I really really really
 	Lizzy: really really really really
-	Lizzy: Really really 
+	Lizzy: Really really
 	Lizzy: really want to know.
 	Noah: like ten reallys.
 	Noah: wow...

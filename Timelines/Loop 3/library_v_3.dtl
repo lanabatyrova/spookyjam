@@ -1,6 +1,7 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 do GameState.learn_fact("j_clairvoyance")
-join Valerie left [animation="Instant In"]
-join Lizzy right [animation="Slide From Right"]
+join Valerie (Talking) left [animation="Instant In"]
+join Lizzy (Talking) right [animation="Slide From Right"]
 Valerie: Elizabeth, excellent. How are you faring?
 Lizzy: All I've managed to accomplish so far is be eaten by zombies twice and stabbed.
 update Valerie [animation="Bounce" length="0.4" wait="true"]

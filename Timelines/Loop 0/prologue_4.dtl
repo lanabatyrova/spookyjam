@@ -1,5 +1,5 @@
 [later]
-[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="1.0"]
+[background arg="res://assets/Locations/street night new.png" fade="1.0"]
 join Juniper left [animation="Fade In" length="1.0" mirrored="true"]
 join Lizzy right [animation="Fade In" length="1.0" wait="true"]
 Lizzy: hey, Juniper. I am really sorry you didn’t get in. I know it meant a lot to you.
@@ -20,7 +20,7 @@ update Juniper offleft [mirrored="true" move_time="2.0"]
 VO: man, I’m a terrible friend, celebrating Juniper’s misfortune.
 update Lizzy midright [move_time="0.5"]
 VO: oh hey, she dropped something.
-join Item (Silver) center [animation="Slide In Up" length="0.6" wait="true"]
+join "Strike Ball" (Silver) center [animation="Slide In Up" length="0.6" wait="true"]
 
 VO: this looks important. I better give it back to her.
 leave Item [animation="Fade Out Down" wait="true"]
@@ -60,13 +60,13 @@ VO: If Dagger felt the need to warn me... I better go the graveyard and ask him 
 Lizzy: Time to wolf out.
 update Lizzy (Half Wolf) [animation="Tada"]
 [background arg="#ffffffff" fade="0.2"]
-[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="0.2" wait="true"]
+[background arg="res://assets/Locations/street night new.png" fade="0.2" wait="true"]
 [wait time="1.0"]
 leave Lizzy [animation="Slide To Left" length="1.0" wait="true"]
 leave --All-- [animation="Instant Out" length="0.1"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [wait time="1.0"]
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.5" wait="true"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.5" wait="true"]
 join Lizzy (Half Wolf) center [animation="Slide From Left" length="1.0" mirrored="true"]
 
 
@@ -75,7 +75,7 @@ VO: Phew, that was farther away than I remembered.
 Lizzy: Dagger! I know you’re around here somewhere
 join Dagger right [animation="Slide From Right"]
 update Lizzy left [mirrored="true" move_time="0.2"]
-Dagger: Lizzie? You really shouldn’t be here.
+Dagger: Lizzy? You really shouldn’t be here.
 Lizzy: What is so bad that I can’t handle it? I killed your boss, remember?
 Dagger: Technically Lady is my boss—
 update Dagger [animation="Shake X" length="0.3" mirrored="true"]
@@ -99,11 +99,11 @@ label END
 update "Lady MacDeath" [animation="Heartbeat" length="1.0" repeat="3" mirrored="false"]
 "Lady MacDeath": Of my undead army!
 [background arg="#000000ff" fade="0.2" wait="true"]
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.2" wait="true"]
 [background arg="#000000ff" fade="0.2" wait="true"]
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.2" wait="true"]
 [background arg="#000000ff" fade="0.2" wait="true"]
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="0.2" wait="true"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.2" wait="true"]
 update Lizzy [mirrored="false"]
 Lizzy: Crap!
 VO: This is bad!

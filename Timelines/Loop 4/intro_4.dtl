@@ -3,7 +3,7 @@ join Lizzy (Talking) center [animation="Fade In" wait="true"]
 VO: okay, this is really starting to test my patience.
 
 [phone ringing]
-VO: barbs calling..?
+VO: barb's calling..?
 join Barb (Phone) left
 update Lizzy right [move_time="0.4"]
 

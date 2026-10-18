@@ -1,3 +1,4 @@
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
 join Lizzy center
 Lizzy: Alright, time to stop this thing once and for all.
 VO: I hope i'm not too late.

@@ -1,5 +1,5 @@
-join Lizzy left
-join Dagger right
+join Lizzy (Talking) right
+join Dagger (Talking) left
 Lizzy: Hey.
 Dagger: Hello.
 - I appreciate dagger being [br] here, I should tell him.
@@ -29,6 +29,6 @@ Dagger: Hello.
 	Lizzy: Yeah, i'm not doing that.
 	Dagger: ...
 	Dagger: you are a better person than I am.
-	
+
 do ProgressionTracker.complete_requirement("7A", "dagger_dialog")
 do GameState.mark_characters_as_spoken(["dagger"])

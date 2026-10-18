@@ -1,3 +1,4 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Dagger (Talking) left
 join Lizzy (Talking) right
 Dagger: Lizzy… a serendipitous entrance...

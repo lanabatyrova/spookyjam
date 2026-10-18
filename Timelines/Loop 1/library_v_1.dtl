@@ -1,4 +1,4 @@
-[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Lizzy (Talking) right
 Lizzy: VALERIE!
 join Valerie (Talking) left
@@ -90,11 +90,11 @@ Valerie: just until graduation.
 Valerie: then you can give it back.
 Lizzy: I....
 set {collected_item_name} = "Pocket Watch"
-join Characters/Item center [animation="Fade In"]
+join  center [animation="Fade In"]
 do GameState.pick_up_item("pocket_watch")
 [wait time="1.0"]
 [wait_input]
-leave Characters/Item [animation="Fade Out"]
+leave  [animation="Fade Out"]
 [wait time="1.0"]
 Lizzy: Thanks.
 Valerie: get some rest before your big day.

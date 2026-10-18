@@ -1,6 +1,6 @@
 [background arg="#000000ff" fade="0.0"]
 [present bffs]
-join Juniper left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
+join Juniper (Mine Serious) left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
 join Lizzy (Full Wolf) right [animation="Fade In" length="2.0" wait="true"]
 Lizzy: You mean so much to me Juniper, and to see you in pain like this...
 Juniper: ....
@@ -9,25 +9,28 @@ Juniper: Oh my god.
 Juniper: I... oh god what have I...
 update Juniper [animation="Shake X" length="2.0" repeat_forever="true" mirrored="false"]
 update Lizzy center [animation="Tada" wait="true" move_time="0.5"]
+leave Juniper [animation="Instant Out"]
+update Lizzy (Juniper Hug) [fade="Fade Cross"]
 Lizzy: It's okay. You're okay.
-update Juniper [animation="Shake X"]
+[wait time="2.0"]
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
 update Juniper leftmost
 update Lizzy lefter
-join Noah midright [mirrored="true"]
+join Noah (Mine) midright [mirrored="true"]
 
 
 Noah: So, that just happened.
-join Barb center [mirrored="true"]
+update Lizzy (Mine)
+join Juniper (Mine Serious) leftmost
+join Barb (Mine) center [mirrored="true"]
 Barb: Just because you know you’re in a TV show doesn’t mean you need to pull out the cliche dialogue.
-join Valerie right [mirrored="true"]
+join Valerie (Mine) right [mirrored="true"]
 Valerie: Oh my, this is a lot to take in…
 Valerie: A television program?
-join Dagger righter [mirrored="true"]
-join Knightmare rightmost
+join Dagger (Mine) righter [mirrored="true"]
+join Knightmare (Mine) rightmost
 Dagger: I don’t know how I feel about my pain being put on display to millions of viewers across the country.
 Noah: That explains why weird things happen on a weekly basis.
-update Lizzy (Full Body)
 Lizzy: Jay, how did this all start?
 Lizzy: How can we help?
 Juniper: I don't know where to begin.
@@ -63,7 +66,7 @@ join Barb center [animation="Instant In" mirrored="true"]
 join Valerie right [animation="Instant In" mirrored="true"]
 join Dagger righter [animation="Instant In" mirrored="true"]
 join Knightmare rightmost [animation="Instant In"]
-join Lizzy left 
+join Lizzy left
 join Juniper Lefter
 Noah: Why’d we get cancelled?
 Juniper: I think it’s because of the oversaturated teen paranormal drama genre.

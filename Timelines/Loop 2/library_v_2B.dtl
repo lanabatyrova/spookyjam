@@ -1,7 +1,15 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Valerie (Talking) left [animation="Fade In"]
+join Lizzy (Talking) right [animation="Bounce In"]
 Valerie: I've only just started my research, but I'm confident we'll find something useful.
 Lizzy: what should I do?
-Valerie: continue trying new things.
+Valerie: Do what you do best.
+Lizzy: Break stuff.
+Valerie: ...
+Valerie: Maybe not that.
+Lizzy: Thanks, Val,
 Lizzy: I think I might have a plan...
 Valerie: ...
 Valerie: just don't do anything foolish.
+Valerie: Please.
 do GameState.mark_characters_as_spoken(["valerie"])

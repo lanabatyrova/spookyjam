@@ -4,7 +4,7 @@
 join Foreground center [z_index="1"]
 join Lizzy (Talking) righter [animation="Fade In" length="1.0" wait="true"]
 join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
-join Juniper (Talking) left [animation="Fade In" length="1.0"]
+join Juniper (Talking) left [animation="Fade In" length="1.0" z_index="-1"]
 Lizzy: I never want to see a dress again.
 Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
 join Noah (Barb's Phone) center [animation="Slide In Up" z_index="2"]
@@ -190,61 +190,3 @@ update Barb [mirrored="false"]
 Barb: ...
 update Barb [mirrored="true"]
 Barb: I didn’t tell you guys because I was sort of embarrassed, but I got into the clown program.
-Noah: No way. You’re going to become a clown?
-Noah: And you didn't tell me????
-Noah: I was literally voted class clown four years in a row!
-update Barb [animation="Bounce" mirrored="false"]
-Barb: Clowns aren't all flowers that spray water and pulling pranks and making balloon animals,
-Barb: they're  important to society and have a strict code of ethics.
-Barb: But no, I'm not becoming a clown.
-Barb: I’m becoming an actor.
-Juniper: There's a difference?
-Lizzy: Uh, how does becoming a clown make you an actor?
-Barb: There's not a lot of jobs in hollywood right now for traditional roles, so I’m going to go for the ones that have a gap in the market.
-Juniper: Which means?
-update Barb [animation="Shake Y" length="1.0"]
-Barb: Zombies, scary ghosts, creepy ghouls.
-Barb: I figure I have enough experience with the real things to sell it.
-Noah: Wow, Barb. I knew you were a horror movie nut, but I didn’t think you’d go so far to become part of the industry.
-Noah: I’m impressed.
-Barb: Your approval means nothing to me.
-Noah: yeah, I know.
-Noah: Still impressed.
-Barb: thanks.
-Lizzy: We can all send each other electronic mails or chat on MySpace.
-Lizzy: And you could visit on your breaks, right?
-Barb: I guess.
-update Barb [animation="Shake X" length="1.0"]
-Barb: Ugh. It’s so hard to chase your dreams.
-Barb: Us splitting up means that tomorrow is even more important!
-Barb: Juniper, please tell me you managed to get a better date than Noah.
-Noah: That's just being mean for no reason.
-Juniper: We're just going as friends, incase you were worried.
-Barb: I'm always worried for my friend's love life.
-Noah: Like you've got a better date than me. I'm the best.
-Barb: I'm going with Dave.
-Barb: Yeah. Hot Dave.
-Lizzy: Isn't he in the year below us?
-Barb: The pool is very limited so we all have to make compromises.
-Barb: His brother is totally cool to go with you, Lizzy.
-Lizzy: I'll pass...
-Barb: What ever.
-Lizzy: Speaking of, my mom offered to drive all of us tomorrow.
-Lizzy: To graduation not the dance.
-Lizzy: since they're in the same place.
-update Barb [animation="Bounce" mirrored="true"]
-Barb: I’m still taking my Limo.
-Barb: My new dress isn't as glamorous so I’ll just have to make do in other ways.
-Noah: I’ll take that ride.
-Noah: Not the limo.
-Barb: You weren't invited anyway!
-update Noah [animation="Shake X"]
-Noah: Heywaitdon'thangup—
-leave Noah
-Barb: Men!
-Juniper: That's really nice of your mom.
-Lizzy: she felt bad abandonning me for a week to go relax in the tropics.
-Lizzy: and she wouldn't let me borrow the car.
-leave --All-- [animation="Fade Out" length="0.4"]
-[background arg="#000000ff" fade="0.5" wait="true"]
-jump prologue_4/

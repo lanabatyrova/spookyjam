@@ -1,4 +1,4 @@
-[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.5"]
+[background scene="res://Scenes/Cutscenes/Library_Talking.tscn" fade="0.5"]
 join Valerie (Talking) left [animation="Fade In"]
 join Lizzy (Talking) right [animation="Fade In" wait="true"]
 Valerie: Ah, Elizabeth, how was your last day of highschool?
@@ -24,7 +24,7 @@ Lizzy: You must’ve had dreams outside of prophecies and the keepers.
 update Valerie [mirrored="true"]
 [wait time="2.0"]
 update Valerie [mirrored="false"]
-join Item (Watch) center [animation="Fade In Up"]
+join "Strike Ball" (Watch) center [animation="Fade In Up"]
 Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started.
 Valerie: The eldest of every generation inherits that responsibility. This watch is a symbol of the struggle between light and darkness,
 Valerie: And of course, helps me get to appointments on time.
@@ -149,7 +149,7 @@ Barb: My reputation for being stylish despite the current economical climate and
 Lizzy: she Must've spilled something on it.
 Juniper: we cant help you if you don't tell us the problem.
 Lizzy: yeah we arent psychics. Or at least im not.
-[sniff]
+Barb: [sniff]
 Barb: dont laugh.
 Lizzy: i cant promise that.
 update Juniper [animation="Bounce"]
@@ -170,7 +170,7 @@ Lizzy: uh.. did a wild animal tear into that?
 update Barb [animation="Shake X" length="1.5" mirrored="true"]
 update Item (Barb Ripped Dress) midleft [z_index="1" mirrored="true"]
 Barb: i tried putting it on and.. it..
-[sniff]
+barb: [sniff]
 Juniper: i mean.
 Juniper: It's not so bad.
 update Lizzy [animation="Bounce"]

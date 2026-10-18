@@ -1,5 +1,6 @@
-join Lizzy right
-join Dagger left
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Lizzy (Talking) right
+join Dagger (Talking) left
 
 Dagger: dearest Elizabeth...
 Lizzy: dagger.
@@ -10,7 +11,7 @@ Dagger: you were incredible.
 Dagger: your fur so red in the moonlight...
 Lizzy: i almost took your face off.
 Dagger: yes, I look upon that memory fondly.
-Dagger: vampires and werewolves don't normally engage in... 
+Dagger: vampires and werewolves don't normally engage in...
 Dagger: well, what we shared was special.
 Lizzy: and then you had to go and ruin it.
 Dagger: it was for the best.
@@ -22,5 +23,6 @@ Lizzy: ...
 VO: maybe after this whole thing is sorted out we can have a real conversation.
 VO: not that I want to date him,
 VO: i just hate anything being off limits.
+leave --All-- [animation="Instant Out"]
 
 do GameState.mark_characters_as_spoken(["dagger"])

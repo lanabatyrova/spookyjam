@@ -1,5 +1,5 @@
-join Lizzy right
-join Knightmare left
+join Lizzy (Talking) right
+join Knightmare (Talking) left
 Lizzy: ...
 Knightmare: ...
 VO: well, this is awkward.
@@ -47,9 +47,9 @@ VO: what do you say to your worst enemy?
 	leave --All-- [animation="Fade Out"]
 	[background arg="#000000ff" fade="0.0"]
 	[several sweeping minutes of rich visual storytelling]
-	[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.0"]
-	join Lizzy right
-	join Knightmare left
+	[background fade="0.0"]
+	join Lizzy (Talking) right
+	join Knightmare (Talking) left
 	audio music -
 	Lizzy: Wow, that's incredible.
 	Knightmare: yes.

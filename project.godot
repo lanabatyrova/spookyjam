@@ -28,19 +28,20 @@ ProgressionTracker="*uid://3a2w24rr6hsm"
 
 directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
-"Characters/Item": "res://Characters/Item.dch",
 "Dagger": "res://Characters/Dagger.dch",
 "Foreground": "res://Characters/Foreground.dch",
-"Item": "res://Characters/Strike Ball.dch",
+"Item": "res://Characters/Item.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
 "Knightmare": "res://Characters/Knightmare.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Logo": "res://Characters/Logo.dch",
+"Minigame": "res://Characters/Minigame.dch",
 "Names": "res://Characters/Names.dch",
 "Noah": "res://Characters/Noah.dch",
 "Postcard": "res://Characters/Postcard.dch",
+"Strike Ball": "res://Characters/Strike Ball.dch",
 "VO": "res://Characters/VO.dch",
 "Valerie": "res://Characters/Valerie.dch"
 }

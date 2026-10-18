@@ -1,8 +1,7 @@
-[background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.0"]
+[background arg="res://assets/Locations/hallway_day.png" fade="0.0"]
 join Juniper left
 join Barb center
 join Lizzy right
-join Noah lefter
 Juniper: Hey, Lizzy, want to head to the exam together?
 
 
@@ -18,7 +17,6 @@ Barb: Ugh, you know I didn’t mean that.
 
 
 Juniper: Just make sure you get back in time. You don’t want to miss it.
-Noah: I personally think you should escape while you still can! Save yourself!
 
 
 
@@ -26,4 +24,4 @@ Noah: I personally think you should escape while you still can! Save yourself!
 
 
 
-do GameState.mark_characters_as_spoken(["barb","noah","juniper"])
+do GameState.mark_characters_as_spoken(["barb", "noah", "juniper"])

@@ -1,5 +1,5 @@
 [wait time="0.5"]
-[background arg="res://Temp Assets/1000_F_723850983_AeO7ZIn4XL63UCBzNL6zkAfNrKtNiQRU-1204700946.jpg" fade="1.0"]
+[background arg="res://assets/Locations/street night new.png" fade="1.0"]
 join Lizzy right [animation="Instant In"]
 VO: Well, that could've been better.
 [wait time="0.4"]

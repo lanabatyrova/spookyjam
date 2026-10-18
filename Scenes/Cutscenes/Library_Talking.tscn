@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://y4reefddyli"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_p6bol"]
+[ext_resource type="Texture2D" uid="uid://02ja2xmax1np" path="res://assets/Locations/library_day.png" id="2_min0i"]
+
+[node name="DialogicBackground" type="Node" unique_id=432908608]
+script = ExtResource("1_p6bol")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="LibraryDay" type="Sprite2D" parent="." unique_id=1981532382]
+position = Vector2(470, 390)
+scale = Vector2(0.6371003, 0.6371002)
+texture = ExtResource("2_min0i")

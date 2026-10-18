@@ -1,7 +1,8 @@
 do GameState.start_minigame()
-[background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
+[background scene="res://Scenes/Cutscenes/Valerie_Minigame.tscn" fade="0.0"]
+join Valerie midleft [z_index="1"]
+join Minigame (0) center [animation="Slide In Up" length="1.0"]
 audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
-join Valerie midleft
 [wait time="1.5"]
 Lizzy: I have proof!
 Valerie: Alright then.
@@ -39,11 +40,11 @@ if {is_success} == true:
 	join Item leftmost [animation="Zoom In" length="9.0"]
 	leave Item [animation="Slide To Right" length="1.1" wait="true"]
 	if {strikes_number} == 1.0:
-		[background arg="res://assets/Minigame/Minigame_2.png" fade="0.0" transition="Simple Fade"]
+		update Minigame (1)
 	elif {strikes_number} == 2.0:
-		[background arg="res://assets/Minigame/Minigame_3.png" fade="0.0" transition="Simple Fade"]
+		update Minigame (2)
 	elif {strikes_number} == 3.0:
-		[background arg="res://assets/Minigame/Minigame_4.png" fade="0.0" transition="Simple Fade"]
+		update Minigame (3)
 	[wait time="1.5"]
 else:
 	Valerie: What does this have to do with your time loop theory?

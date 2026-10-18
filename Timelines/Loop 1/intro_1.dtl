@@ -7,7 +7,7 @@ Lizzy: Be realistic, Lizzy. I probably just passed out and Dagger carried me hom
 Lizzy: He always does that stupid romantic crap. I’ll have to chew him out for it later.
 Lizzy: I better hurry to graduation before everyone dies from being eaten by zombies!
 leave Lizzy [animation="Fade Out"]
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5" wait="true"]
+[background arg="res://assets/Locations/diner_day.png" fade="0.5" wait="true"]
 join Item (Postcard Front) center
 Lizzy: Wait...
 Lizzy: This is the same postcard I got yesterday...

@@ -1,3 +1,4 @@
+[Alarm beeping]
 Lizzy: -AaAAAAAAAAHHHHHHHHHH-
 join Lizzy (Talking) center [animation="Fade In Up" length="2.0" wait="true"]
 Lizzy: ...
@@ -13,7 +14,7 @@ audio "res://audio/Phone ringing sound.mp3"
 
 [PHONE RINGING]
 VO: Valerie’s calling me?
-VO:  She never does that.
+VO: She never does that.
 VO: She doesn’t believe in phones.
 join Valerie (Phone) left
 update Lizzy right
@@ -23,7 +24,7 @@ Valerie: Good for you.
 Valerie: I called to tell you that I remember everything.
 update Lizzy [animation="Bounce" wait="true"]
 Lizzy: WHAT! Really?
-Lizzy:  That’s amazing!
+Lizzy: That’s amazing!
 Lizzy: Well, I mean, it sucks because now we’re both stuck in this time loop,
 Lizzy: But at least I’m not alone anymore!
 Valerie: Your unbeatable spirit allowed me to retain my memories from the previous loop. My research may have uncovered a possible solution.

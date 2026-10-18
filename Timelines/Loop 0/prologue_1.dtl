@@ -10,7 +10,7 @@ Lizzy: Life would be so much easier if I could punch numbers.
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 join Lizzy (Full Body) left [animation="Fade In" mirrored="true" move_time="0.5"]
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.5"]
+[background arg="res://assets/Locations/diner_day.png" fade="0.5"]
 MAIL DELIVERY
 Lizzy: Huh, what’s this?
 leave Lizzy [animation="Fade Out"]
