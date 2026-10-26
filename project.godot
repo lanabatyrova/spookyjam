@@ -28,6 +28,7 @@ ProgressionTracker="*uid://3a2w24rr6hsm"
 
 directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
+"CGS": "res://Characters/CGS.dch",
 "Dagger": "res://Characters/Dagger.dch",
 "Foreground": "res://Characters/Foreground.dch",
 "Item": "res://Characters/Item.dch",
@@ -46,6 +47,7 @@ directories/dch_directory={
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
+"Opening": "res://Scenes/Previously On/Opening.dtl",
 "TEST": "res://Scenes/TEST.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
 "basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",

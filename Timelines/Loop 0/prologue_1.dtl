@@ -1,7 +1,7 @@
+[background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="2.0" wait="true"]
 [wait time="2.0"]
 audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
 [alarm blaring]
-[background arg="res://Temp Assets/Screenshot_2026-09-25_at_9.55.45_PM.png" fade="2.0" wait="true"]
 join Lizzy (Talking) center [animation="Fade In"]
 Lizzy: Ugh. I so don’t want to get up.
 Lizzy: Graduation is tomorrow, why the hell are they making us go to class? Not only go to class, but a math exam?
@@ -22,7 +22,7 @@ update Item (Postcard Back) [animation="Heartbeat"]
 join Lizzy (Talking) right [animation="Fade In"]
 Lizzy: I guess once you become a best selling author writing your own letters is small potatoes.
 leave Item
-[background arg="res://Temp Assets/depositphotos_256047908-stock-photo-american-diner-restaurant-retro-interior-3979675290.jpg" fade="0.0"]
+[background arg="res://assets/Locations/diner_day.png" fade="0.0"]
 update Lizzy (Full Body) [mirrored="true"]
 Lizzy: Well, time to fail this exam. Here goes nothing.
 leave Lizzy [animation="Fade Out"]

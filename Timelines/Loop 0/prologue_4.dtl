@@ -113,3 +113,4 @@ leave --All-- [animation="Fade Out" length="0.2"]
 [background arg="res://assets/to be continued.png" fade="7.0"]
 [wait time="1.0"]
 jump rewind/
+do Dialogic

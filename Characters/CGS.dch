@@ -1,0 +1,157 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Baseball 1",
+&"description": "",
+&"display_name": "Cgs",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Baseball 1": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 2": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 3": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 4": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 5": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 6": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Baseball 7": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/baseball_7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Graveyard": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/graveyard.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Hospital 1": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/hospital_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Hospital 2": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/hospital_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Mayor 1": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/mayor_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Mayor 2": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/mayor_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"No": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/no.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Play 1": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/play_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Play 2": {
+"export_overrides": {
+"image": "\"res://assets/Previously On/Play_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

@@ -53,6 +53,15 @@
 "scale": 1.4,
 "scene": ""
 },
+"Talking Reverse": {
+"export_overrides": {
+"image": "\"res://sprites/Reverse/Val_1_reverse.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 460),
+"scale": 1.7,
+"scene": ""
+},
 "VO": {
 "export_overrides": {
 "image": "\"res://sprites/Val_dream.png\""

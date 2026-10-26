@@ -1,0 +1,8 @@
+[background scene="res://Opening Theme/Opening_Theme.tscn" fade="0.0"]
+audio music "res://audio/Music/Lizzy Springs theme edited.wav"
+[wait time="25.7"]
+# 
+audio music -
+[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+[clear time="1.0"]
+jump prologue_1/

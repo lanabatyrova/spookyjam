@@ -15,12 +15,14 @@ join Barb left [animation="Fade In"]
 join "King Fear" midleft [animation="Fade In" mirrored="true"]
 update "King Fear" [animation="Bounce"]
 "King Fear": Blood will have blood!
+join CGS (Play 2) center [z_index="1"]
 update "King Fear" [animation="Bounce"]
 "King Fear": To be or not to be!
+update CGS (Play 1)
 update Barb [animation="Shake Y" length="1.0"]
 Barb: He’s just saying random quotes!!
-leave --All-- [animation="Fade Out"]
 [background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.5" wait="true"]
+leave --All-- [animation="Instant Out"]
 join Valerie (VO) leftmost [animation="Fade In" wait="true"]
 Valerie: ...Who is destined to defeat the six vampire lords and prevent the end of days from wiping out every single non-monster in existence.
 leave Valerie [animation="Fade Out" wait="true"]
@@ -29,50 +31,72 @@ join Barb rightmost [animation="Fade In" length="0.3" mirrored="true"]
 join Lizzy midleft [animation="Fade In" length="0.3" mirrored="true"]
 join Valerie leftmost [animation="Fade In" length="0.3"]
 join Juniper righter [animation="Fade In" length="0.3" mirrored="true"]
-[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.3" wait="true"]
+[background arg="res://assets/Locations/library_day.png" fade="0.3" wait="true"]
 update Noah [animation="Bounce"]
 Noah: So, the entire fate of the world depends on if Lizzy can pass Mr. Burke’s english final?
 update Lizzy [animation="Shake X" length="1.0"]
 Lizzy: This blows.
 update Barb [animation="Bounce" repeat="2"]
 Barb: Screw the english final, what about grad?
-leave --All-- [animation="Fade Out" length="0.8"]
+leave --All-- [animation="Instant Out" length="0.8"]
+[background arg="res://assets/Previously On/mayor_1.png" fade="0.0"]
+Lizzy: Oh my god, uh,
+Lizzy: Hang in there, mayor Silver.
+[background arg="res://assets/Previously On/mayor_2.png" fade="0.0"]
+It's up to you, Elizabeth.
+Carry on my legacy...
+[background arg="res://assets/Previously On/hospital_1.png" fade="0.0"]
+[wait time="1.0"]
+[background arg="res://assets/Previously On/hospital_2.png" fade="0.0"]
+Lizzy: Out of everyone, he had to bite me?
+[wait time="1.0"]
 [background arg="res://Temp Assets/kitchen location.png" fade="0.8" wait="true"]
 join Juniper (Talking) left [animation="Fade In" length="0.4"]
 join Valerie (Talking) right [animation="Fade In" length="0.4" wait="true" mirrored="true"]
 update Juniper [animation="Shake X" length="2.0"]
 Juniper: In my vision... Vermilion was gone.
-update Valerie [animation="Bounce"]
+update Valerie (Talking) [animation="Bounce"]
 Valerie: Did you see anything else?
 [wait time="0.5"]
 update Juniper [mirrored="true"]
 Juniper: ...
 leave --All-- [animation="Fade Out"]
-[background arg="res://Temp Assets/dead lizzy.png" fade="2.0" wait="true"]
+[background arg="res://assets/dead_lizzy.png" fade="2.0" wait="true"]
 [wait time="1.0"]
+join CGS (No) center [z_index="1"]
 Juniper: No...
 [background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="2.0" wait="true"]
+update CGS (Graveyard)
 join Dagger right [animation="Fade In" length="1.0"]
 Dagger (Talking): There’s more at play than you and I, dearest Elizabeth.
-leave Dagger [animation="Fade Out" length="1.0"]
+leave --All-- [animation="Fade Out" length="1.0"]
 [background arg="res://assets/bgs/IMG_6427.png" fade="1.0" wait="true"]
 AND THE VERMILION WOLVES TAKE ANOTHER VICTORY-
 join "King Fear" center [animation="Slide In Up" length="0.7"]
 "King Fear": King Fear\: Tonight is the day you die Springs!! Now is the winter of your discontent!
 join Lizzy (Full Body) rightmost [animation="Slide From Right" z_index="1"]
+join CGS (Baseball 1) center [z_index="1"]
 Lizzy: Here goes nothing
-join Item (Strike Ball Mini) center [animation="Slide From Right" length="0.3" wait="true" mirrored="true"]
-leave Item [animation="Fade Out Down" length="0.1"]
 update "King Fear" left [animation="Heartbeat" length="1.0"]
+update CGS (Baseball 2)
+[wait time="1.7"]
+update CGS (Baseball 3)
 "King Fear": [aa=0.1]Urghh
+update CGS (Baseball 4)
+[wait time="1.8"]
+update CGS (Baseball 5)
+[wait time="1.3"]
+update CGS (Baseball 6)
 leave "King Fear" [animation="Slide Out Down" wait="true"]
 join "Lady MacDeath" leftmost
 "Lady MacDeath": My King! NOOOOO
 join Noah (Full Body) midright [animation="Fade In Up" length="0.2"]
+[wait time="1.0"]
+update CGS (Baseball 7)
 Noah: Whoa, killer throw!
 leave --All-- [animation="Fade Out" length="0.4"]
 [wait time="0.4"]
-[background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.5" wait="true"]
+[background arg="res://assets/Locations/tomb.png" fade="0.5" wait="true"]
 join "Lady MacDeath" (FullBody LM) right [animation="Fade In"]
 join Dagger left [animation="Fade In" wait="true" mirrored="true"]
 "Lady MacDeath": Come now, Dagger. We have much work ahead if we are to deliver Elizabeth Springs to her retribution.
@@ -80,12 +104,12 @@ update Dagger lefter [mirrored="false" move_time="0.5" move_ease="out"]
 Dagger: ...
 leave --All-- [animation="Fade Out"]
 [wait time="0.5"]
-[background arg="res://Temp Assets/Stockholm-Public-Library-Alamy-1808398246.jpg" fade="0.5" wait="true"]
+[background scene="res://Scenes/Cutscenes/Library_Talking.tscn" fade="0.5" wait="true"]
 join Lizzy center [animation="Zoom In"]
 Lizzy (Talking): So, what? I’ve got five more to go?
-Piece of cake.
+Lizzy: Piece of cake.
 [background arg="#000000ff" fade="0.5"]
 leave Lizzy [animation="Fade Out" wait="true"]
 audio music - [fade="0.5"]
 [wait time="1.0"]
-jump prologue_1/
+jump Opening/
