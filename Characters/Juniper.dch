@@ -17,6 +17,24 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Animated": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://Characters/Layered Portraits/layered_portrait_juniper.tscn"
+},
+"Animated_CloseUp": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(30, 310),
+"scale": 1.5,
+"scene": "res://Characters/Layered Portraits/layered_portrait_juniper.tscn"
+},
 "Full Body J": {
 "export_overrides": {
 "image": "\"res://sprites/Juniper_1.png\""

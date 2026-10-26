@@ -17,6 +17,24 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Animated": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": "res://Characters/Layered Portraits/layered_portrait_barb.tscn"
+},
+"Animated_CloseUp": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(30, 310),
+"scale": 1.5,
+"scene": "res://Characters/Layered Portraits/layered_portrait_barb.tscn"
+},
 "Full Body": {
 "export_overrides": {
 "image": "\"res://sprites/Barb_1.png\""
@@ -91,15 +109,6 @@
 "offset": Vector2(30, 310),
 "scale": 1.3,
 "scene": ""
-},
-"new portrait": {
-"export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": "res://Animation Test/barb_animated.tscn"
 }
 },
 &"scale": 1.0

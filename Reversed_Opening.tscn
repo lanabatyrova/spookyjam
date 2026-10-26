@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dmtsf4uk3eq4g"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_8mamr"]
+[ext_resource type="VideoStream" uid="uid://ckxxchjhrmcta" path="res://Opening Theme/Reversed.ogv" id="2_51jnh"]
+
+[node name="DialogicBackground" type="Node" unique_id=580474979]
+script = ExtResource("1_8mamr")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=139236856]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.6023535, 0.6023535)
+stream = ExtResource("2_51jnh")
+autoplay = true

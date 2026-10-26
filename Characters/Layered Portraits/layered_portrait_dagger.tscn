@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c2mw7ofuloavt"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://cmi0bbjo7ih6l" path="res://sprites/Dagger/Dagger_Talking.png" id="2_cjpra"]
+
+[sub_resource type="Animation" id="Animation_uh0op"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_m4g7y"]
+resource_name = "Talking"
+length = 0.8333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iodpf"]
+_data = {
+&"RESET": SubResource("Animation_uh0op"),
+&"Talking": SubResource("Animation_m4g7y")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1252965864]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=435399865]
+texture = ExtResource("2_cjpra")
+hframes = 2
+
+[node name="Animated" type="Node2D" parent="." unique_id=116267026]
+
+[node name="Talking" type="Sprite2D" parent="Animated" unique_id=1679748248]
+texture = ExtResource("2_cjpra")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=2061242477]
+libraries/ = SubResource("AnimationLibrary_iodpf")
+autoplay = &"Talking"
+
+[node name="Layer2" type="Sprite2D" parent="Animated" unique_id=117471692]

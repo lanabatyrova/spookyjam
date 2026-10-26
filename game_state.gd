@@ -6,7 +6,7 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 0
+var current_day: int = 1
 var midpoint_reached = false
 var is_minigame = false
 
@@ -37,7 +37,7 @@ var item_collectible = {
 # both for journal display and mini game button appearances?
 var facts = {
 	"v_case_study": false,
-	"v_future_worries": true,
+	"v_future_worries": false,
 	"b_camp_story": false,
 	"b_clown_school": true,
 	"n_detention": true,

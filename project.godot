@@ -131,9 +131,10 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://Default_Style.tres",
-"Default_Style": "res://Default_Style.tres"
+"Default_Style": "res://Default_Style.tres",
+"test": "res://Design/Glossary/test.tres"
 }
-layout/style_list=["res://Default_Style.tres"]
+layout/style_list=["res://Default_Style.tres", "res://Design/Glossary/test.tres"]
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={
@@ -186,6 +187,7 @@ history/visited_event_history_enabled=false
 history/save_on_save=true
 history/save_on_autosave=false
 text/input_action="dialogic_default_action"
+glossary/glossary_files=[]
 
 [display]
 

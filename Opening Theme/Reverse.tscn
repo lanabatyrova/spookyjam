@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dunv7n8dar2nv"]
+
+[ext_resource type="PackedScene" uid="uid://c7jhehboc17nv" path="res://Opening Theme/Opening_Theme.tscn" id="1_7ujrl"]
+[ext_resource type="Script" uid="uid://2qomn8fk423g" path="res://Opening Theme/reverse.gd" id="1_r5rfs"]
+[ext_resource type="Script" uid="uid://bu8yqw5p18hq5" path="res://Opening Theme/animation_player_2.gd" id="2_r2rji"]
+
+[sub_resource type="Animation" id="Animation_77cr7"]
+resource_name = "new_animation"
+length = 8.066667
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r5rfs"]
+_data = {
+&"new_animation": SubResource("Animation_77cr7")
+}
+
+[node name="Reverse" type="Node2D" unique_id=147198755]
+script = ExtResource("1_r5rfs")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=661576570]
+root_node = NodePath("../Node2D")
+libraries/ = SubResource("AnimationLibrary_r5rfs")
+script = ExtResource("2_r2rji")
+
+[node name="Node2D" parent="." unique_id=2113514394 instance=ExtResource("1_7ujrl")]

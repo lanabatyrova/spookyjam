@@ -1,105 +1,169 @@
 [background arg="#000000ff" fade="1.0"]
 [background arg="res://assets/Locations/school outside.png" fade="0.0"]
-join Lizzy (Talking) right [mirrored="true"]
-join Barb (Talking) leftmost
+join Lizzy (Animated) right [mirrored="true" extra_data="hide Animation/Talking"]
+join Barb (Animated) left [extra_data="hide Animation/Talking"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: Lizzy, wait.
+update Barb [extra_data="hide Animation/Talking"]
+update Lizzy (Animated) [mirrored="true"]
+update Lizzy [extra_data="show Animation/Talking"]
 Lizzy: Barb?
-update Lizzy [mirrored="false"]
+update Lizzy [extra_data="hide Animation/Talking"]
 update Barb left [move_time="0.5"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: Literally what is your problem today? You blew off the math exam and now you’re slinking away to god knows where.
+update Barb [extra_data="hide Animation/Talking"]
+update Lizzy [extra_data="show Animation/Talking"]
 Lizzy: since when are you concerned about what I do?
+update Lizzy [extra_data="hide Animation/Talking"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: we fight monsters together, Lizzy.
 Barb: what if you go off into a dangerous situation and then die and then we’re going to be left picking up the pieces.
+update Barb [extra_data="hide Animation/Talking"]
+update Lizzy [extra_data="show Animation/Talking"]
 Lizzy: I’ll be fine.
+update Lizzy [extra_data="hide Animation/Talking"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: Lately you’ve been super distant. It’s not healthy.
+update Barb [extra_data="hide Animation/Talking"]
+update Lizzy [extra_data="show Animation/Talking"]
 Lizzy: Do you want me to start talking about my problems?
 Lizzy: I’ve got a lot of them.
+update Lizzy [extra_data="hide Animation/Talking"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: I mean...
 Barb: what are friends for?
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: ...
 Lizzy: I’m not used to you being this emotionally vulnerable.
+update Barb [extra_data="show Animation/Talking"]
 Barb: Ugh!
 Barb: you act like you’re the main character or something.
 Barb: Not everything is about you, Lizzy.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: unfortunately, Barb, it kinda is.
 Lizzy: Lady MacDeath is up to something and I need to go stop her.
+update Barb [extra_data="show Animation/Talking"]
 Barb: Is that where you’re going now?
 Barb: Without us?
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: Uh.
 Lizzy: no.
+update Barb [extra_data="show Animation/Talking"]
 Barb: you’re a terrible liar.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: I disagree.
+update Barb [extra_data="show Animation/Talking"]
 Barb: Lady MacDeath is the least of our problems.
 Barb: Her boyfriend is like, dead dead. Isn’t she in hiding?
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: you’d think, but recent events have...
 Lizzy: informed me otherwise.
+update Barb [extra_data="show Animation/Talking"]
 Barb: oh, your hot vampire boyfriend?
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: he’s not my boyfriend!
+update Barb [extra_data="show Animation/Talking"]
 Barb: Wake up and smell the graveyard dirt, Lizzy. Don’t throw away your life to go on some silly mission with no back up and expect us to sit back and watch.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: ...
 Lizzy: It’s not a silly mission.
 Lizzy: she’s done something to us, and I’m going to fix it.
+
 Barb: ...
+update Barb [extra_data="show Animation/Talking"]
 Barb: I’m going to tell you something extremely personal.
+update Barb [extra_data="hide Animation/Talking"]
 VO: oh my god.
 VO: is this actually happening?
 VO: I’m going to have to owe Noah five bucks?
+update Barb [extra_data="show Animation/Talking"]
 Barb: When I was six years old—
+update Barb [extra_data="hide Animation/Talking"]
+update Lizzy [extra_data="show Animation/Talking"]
 Lizzy: Is this a long story? Because I really gotta go—
+update Lizzy [extra_data="hide Animation/Talking"]
+update Barb [extra_data="show Animation/Talking"]
 Barb: shut up and listen.
 Barb: When I was six, I went to this summer camp called Little Oaks.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: I’ve heard of that place.
 Lizzy: Didn’t it shut down because of some scandal?
 Lizzy: a kid went missing for four days or something?
 Barb: ...
+update Barb [extra_data="show Animation/Talking"]
 Barb: I used to be super into camping.
 Barb: I knew how to set up tents, roast marshmallows, make friendship bracelets, you know, the essentials.
+update Barb [extra_data="hide Animation/Talking"]
 VO: I guess tents are camping related.
+update Barb [extra_data="show Animation/Talking"]
 Barb: I was eager to prove to everyone I was capable.
 Barb: There was this total bitch in cabin three who wanted to show me up, all because she knew how to do archery and tie fancy knots.
 Barb: and of course, she managed to con everyone into voting her the mvc.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: Mvc?
+update Barb [extra_data="show Animation/Talking"]
 Barb: the most valuable camper.
 Barb: Well, I couldn’t let that stand.
 Barb: I hatched this plan to show everyone I should’ve been the one they voted for.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: I’m assuming it didn’t work, because this is totally the type of thing you’d brag about.
+update Barb [extra_data="show Animation/Talking"]
 Barb: I got lost in the woods for three days.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: Lost in the woods.
 Lizzy: WAIT.
 Lizzy: that was you?
 Barb: ...
+update Barb [extra_data="show Animation/Talking"]
 Barb: yes.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: YOu single handedly shut down the camp and destroyed any chance of them ever hosting children ever again.
 Barb: ...
+update Barb [extra_data="show Animation/Talking"]
 Barb: this is my greatest shame, Lizzy.
 Barb: it keeps me up at night.
 Barb: I was forced to survive by eating pinecones and bugs.
 Barb: but I made one kick-ass lean to.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: Why’d you eat a pinecone?
 Barb: I didn’t want to eat bugs.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: This is a great story and all, but what does this have to do with me?
+update Barb [extra_data="show Animation/Talking"]
 Barb: read between the lines, Lizzy!
 Barb: I thought I had to prove myself by doing a dangerous stunt that ultimately shut down the only place I ever loved and I ended up in the ER
 Barb: because the bug I ate was actually super toxic.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: I’m not trying to prove myself, Barb.
 Lizzy: this is my job.
+update Barb [extra_data="show Animation/Talking"]
 Barb: Getting yourself killed isn’t a job.
 Barb: It’s a distraction from thinking about graduation.
 Barb: and your lack of grad dress.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: I’m getting real sick of this conversation—
+update Barb [extra_data="show Animation/Talking"]
 Barb: Well, I’m getting real sick of you acting like you’re the only one in this fight.
 Barb: we’re a team, Lizzy.
-Barb: Please stop cutting us off.
+update Barb [extra_data="hide Animation/Talking"]
 Lizzy: ...
+
 Barb: ...
-Barb: you're going to ignore everything I just said and run head first into danger, right?
-Lizzy: yeah.
-Lizzy: pretty much.
+Lizzy: You’re right.
+update Barb [extra_data="show Animation/Talking"]
+Barb: You're just going to go and do your stupid plan anyway, aren't you?
+update Barb [extra_data="hide Animation/Talking"]
+Lizzy: ...
+Lizzy: No...
+Barb: ...
+update Barb [extra_data="show Animation/Talking"]
 Barb: whatever.
 Barb: it’s your funeral.
-do GameState.learn_fact("b_camp_story")
-leave Barb
-VO: barb was unusually forthcoming with that story just now, the dress thing must’ve really humbled her.
+update Barb [extra_data="hide Animation/Talking"]
+
+[background arg="#000000ff" fade="5.0" wait="true"]
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
-do GameState.reset_all_spoken_states()
+[Later that day]
+[background fade="5.0" wait="true"]

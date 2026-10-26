@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://blml2yv0y2bm1"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://rbdctx6mm7gp" path="res://sprites/Lizzy/Lizzy_1.png" id="2_wbbvf"]
+[ext_resource type="Texture2D" uid="uid://dd8ubr8p8styf" path="res://sprites/Lizzy/Lizzy_Talking.png" id="3_3iq05"]
+
+[sub_resource type="Animation" id="Animation_7hykl"]
+resource_name = "Lizzy_Talking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_vgers"]
+length = 0.6333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5aubw"]
+_data = {
+&"Lizzy_Talking": SubResource("Animation_7hykl"),
+&"RESET": SubResource("Animation_vgers")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=41093712]
+script = ExtResource("1_uubi5")
+
+[node name="Layer1" type="Sprite2D" parent="." unique_id=1894009300]
+texture = ExtResource("2_wbbvf")
+
+[node name="Animated" type="Node2D" parent="." unique_id=900211482]
+
+[node name="Talking" type="Sprite2D" parent="Animated" unique_id=1295762100]
+texture = ExtResource("3_3iq05")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=243867188]
+libraries/ = SubResource("AnimationLibrary_5aubw")
+autoplay = &"Lizzy_Talking"
+
+[node name="Layer2" type="Sprite2D" parent="Animated" unique_id=844451634]

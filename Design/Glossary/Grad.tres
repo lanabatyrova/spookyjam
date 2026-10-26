@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://dva1hci752cu8"]
+
+[ext_resource type="Script" uid="uid://80elcodyqohb" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_gfva5"]
+
+[resource]
+script = ExtResource("1_gfva5")
+entries = {
+"Grad": {
+"alternatives": ["Prom"],
+"case_sensitive": false,
+"name": "Grad",
+"text": "A dance that everyone is totally going to after graduation, and it's really important!!"
+},
+"Prom": "Grad"
+}

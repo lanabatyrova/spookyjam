@@ -1,17 +1,25 @@
 [background arg="#000000ff" fade="0.0"]
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
-join Juniper (Talking) left [animation="Fade In" length="1.0" z_index="-1"]
-join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
-join Lizzy (Talking) righter [z_index="1"]
+join Juniper (Animated_CloseUp) left [extra_data="hide Animated/Talking" animation="Fade In" length="1.0" z_index="-1"]
+join Barb (Animated_CloseUp) leftmost [extra_data="hide Animated/Talking" animation="Fade In" length="1.0"]
+join Lizzy (Animated_CloseUp) righter [extra_data="hide Animated/Talking" z_index="1"]
+update Barb [extra_data="show Animated/Talking"]
 Barb: You’re out of jam.
+update Barb [extra_data="hide Animated/Talking"]
+update Lizzy [extra_data="show Animated/Talking"]
 Lizzy: Thanks for letting me know, I'll get on that.
+update Lizzy [extra_data="hide Animated/Talking"]
 join Noah (Barb's Phone) center [animation="Slide In Up" z_index="2"]
 Noah: Don't let Barb win, Lizzy!
 Noah: Also I'm here, but on the phone, because I'm in the hospital.
 Noah: Long story.
+update Juniper [extra_data="show Animated/Talking"]
 Juniper: You seem to be back to your old self.
+update Juniper [extra_data="hide Animated/Talking"]
+update Lizzy [extra_data="show Animated/Talking"]
 Lizzy: I feel like I’m finally making progress.
+update Lizzy [extra_data="hide Animated/Talking"]
 Juniper: Progress? With what?
 Lizzy: something I’m working on.
 Barb: Is it getting a grad dress?
