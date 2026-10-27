@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://di6kinuiyu8n4"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://doyf02jujqrpq" path="res://sprites/Lady/Lady_Knightmare_Talking.png" id="2_1k2d5"]
+[ext_resource type="Texture2D" uid="uid://blwbwexcbgxiv" path="res://sprites/Lady/Lady_Talking1.png" id="3_1dw8m"]
+[ext_resource type="Texture2D" uid="uid://bl7dsmi8674r3" path="res://sprites/Lady/Lady_Talking2.png" id="4_hyusl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1dw8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hyusl")
+}],
+"loop": 1,
+"name": &"Lady Talking",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_uh0op"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_vgl7g")]
+}
+
+[sub_resource type="Animation" id="Animation_m4g7y"]
+resource_name = "Talking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t2ech"]
+_data = {
+&"RESET": SubResource("Animation_uh0op"),
+&"Talking": SubResource("Animation_m4g7y")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1251390962]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=577192269]
+texture = ExtResource("2_1k2d5")
+hframes = 2
+
+[node name="Animated" type="Node2D" parent="." unique_id=1121316128]
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1217418946]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Lady Talking"
+autoplay = "Lady Talking"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=1210577646]
+libraries/ = SubResource("AnimationLibrary_t2ech")
+autoplay = &"Talking"
+
+[node name="Layer2" type="Sprite2D" parent="Animated" unique_id=1188483754]

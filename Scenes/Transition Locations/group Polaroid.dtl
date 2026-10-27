@@ -1,0 +1,10 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join "Strike Ball" (Group Polaroid) center
+I remember taking this photo.
+VO: It was Valerie's idea, so she could add it to her ever growing Vermilion Hills keeper record.
+VO: I can't believe it's been two years...
+VO: ...
+VO: Those pants were definately a choice.
+[clear time="1.0" step="false"]
+[background fade="0.0"]
+leave --All--

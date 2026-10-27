@@ -30,4 +30,4 @@ func _on_door_pressed() -> void:
 
 
 func _on_room_door_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Diner_Stairs.tscn")

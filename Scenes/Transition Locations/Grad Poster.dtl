@@ -1,0 +1,8 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join "Strike Ball" (Grad Poster) center
+VO: Grad...
+VO: I don't get why Barb is so obsessed with this stupid dance.
+VO: Like, come on? What type of theme is that?
+VO: Happily ever after?
+[background fade="0.0"]
+leave --All--

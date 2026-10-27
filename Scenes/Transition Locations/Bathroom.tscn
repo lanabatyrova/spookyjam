@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://k0qkbl5e1hnd"]
+
+[ext_resource type="Texture2D" uid="uid://cbyq6t6ehonan" path="res://assets/Locations/Girls_Bathroom.png" id="1_5fm0b"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="2_hqgqb"]
+
+[node name="Node2D" type="Node2D" unique_id=711751234]
+
+[node name="GirlsBathroom" type="Sprite2D" parent="." unique_id=148877192]
+position = Vector2(584.3334, 323.625)
+scale = Vector2(0.6136574, 0.6136574)
+texture = ExtResource("1_5fm0b")
+
+[node name="Upstairs Hallway" type="TextureButton" parent="." unique_id=843263301]
+offset_left = 857.0
+offset_top = 745.00006
+offset_right = 2857.0
+offset_bottom = 1316.0
+rotation = -1.5721707
+scale = Vector2(0.44000018, 0.520003)
+texture_normal = ExtResource("2_hqgqb")

@@ -17,7 +17,7 @@ offset_right = 1150.9999
 offset_bottom = 649.0
 
 [node name="Basement" type="Sprite2D" parent="." unique_id=2014623844]
-position = Vector2(575.77783, 324)
+position = Vector2(353, 324)
 scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_5fdut")
 

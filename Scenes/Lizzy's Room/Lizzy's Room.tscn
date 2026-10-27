@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://dncv7q0ecgvbb" path="res://Scenes/Lizzy's Room/belt.gd" id="6_l8lln"]
 [ext_resource type="Texture2D" uid="uid://clcl8u1yg681k" path="res://assets/Pickup Items/belt_hover.png" id="7_q7j6m"]
 [ext_resource type="BitMap" uid="uid://dqaatxbj0o8mp" path="res://assets/Pickup Items/belt_bitmap.png" id="9_q7j6m"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="11_q7j6m"]
 
 [node name="Lizzy\'sRoom" type="Node2D" unique_id=1457501583]
 script = ExtResource("1_2ymcl")
@@ -46,5 +47,15 @@ texture_hover = ExtResource("7_q7j6m")
 texture_click_mask = ExtResource("9_q7j6m")
 script = ExtResource("6_l8lln")
 
+[node name="HallwayButton" type="TextureButton" parent="." unique_id=2126945772]
+offset_left = 137.0
+offset_top = -27.0
+offset_right = 2137.0
+offset_bottom = 544.0
+rotation = 1.5712388
+scale = Vector2(0.36001772, 0.24000001)
+texture_hover = ExtResource("11_q7j6m")
+
 [connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
+[connection signal="pressed" from="HallwayButton" to="." method="_on_hallway_button_pressed"]

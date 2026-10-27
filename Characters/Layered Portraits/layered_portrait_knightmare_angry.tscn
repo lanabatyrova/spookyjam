@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bpj823sn6l88r"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://cpg12672md7ca" path="res://sprites/Lady/Lady_Knightmare_Slamming.png" id="2_5c0p4"]
+
+[sub_resource type="Animation" id="Animation_uh0op"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_m4g7y"]
+resource_name = "Talking"
+length = 0.8333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0wy8j"]
+_data = {
+&"RESET": SubResource("Animation_uh0op"),
+&"Talking": SubResource("Animation_m4g7y")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1093592688]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1862360427]
+texture = ExtResource("2_5c0p4")
+hframes = 2
+frame = 1
+
+[node name="Animated" type="Node2D" parent="." unique_id=1653739588]
+
+[node name="Talking" type="Sprite2D" parent="Animated" unique_id=467065324]
+texture = ExtResource("2_5c0p4")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=733120718]
+libraries/ = SubResource("AnimationLibrary_0wy8j")
+autoplay = &"Talking"
+
+[node name="Layer2" type="Sprite2D" parent="Animated" unique_id=1348472384]

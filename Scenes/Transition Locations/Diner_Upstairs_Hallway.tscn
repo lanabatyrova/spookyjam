@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ckat1nse5hl1l"]
+
+[ext_resource type="Script" uid="uid://x1sk35qquvv7" path="res://Scenes/Transition Locations/diner_upstairs_hallway.gd" id="1_n4tj6"]
+[ext_resource type="Texture2D" uid="uid://bewmrvoynuvvx" path="res://Temp Assets/Temp Locations/IMG_6550.jpg" id="2_b4hpj"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="3_fnti8"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_n4200"]
+
+[node name="Node2D" type="Node2D" unique_id=729489977]
+script = ExtResource("1_n4tj6")
+
+[node name="Hallway" type="Sprite2D" parent="." unique_id=1365943404]
+position = Vector2(550, 325)
+scale = Vector2(1.2958657, 1.2958657)
+texture = ExtResource("2_b4hpj")
+
+[node name="Lizzy\'s Room" type="TextureButton" parent="." unique_id=910463562]
+offset_left = 486.0
+offset_top = 194.0
+offset_right = 726.0
+offset_bottom = 644.0
+scale = Vector2(0.5199988, 0.7200006)
+texture_hover = ExtResource("3_fnti8")
+
+[node name="Diner Stairs" type="TextureButton" parent="." unique_id=924074873]
+offset_left = -1.9999998
+offset_top = 543.00006
+offset_right = 1998.0
+offset_bottom = 1114.0
+scale = Vector2(0.5765729, 0.1816667)
+texture_hover = ExtResource("4_n4200")
+
+[node name="Parent\'s Room" type="TextureButton" parent="." unique_id=1334141058]
+offset_left = 670.0
+offset_top = 35.000008
+offset_right = 910.0
+offset_bottom = 485.0
+scale = Vector2(0.24000001, 1.415716)
+texture_hover = ExtResource("3_fnti8")
+
+[connection signal="pressed" from="Lizzy\'s Room" to="." method="_on_lizzys_room_pressed"]
+[connection signal="pressed" from="Diner Stairs" to="." method="_on_diner_stairs_pressed"]
+[connection signal="pressed" from="Parent\'s Room" to="." method="_on_parents_room_pressed"]

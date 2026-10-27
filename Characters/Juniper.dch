@@ -23,7 +23,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.9,
 "scene": "res://Characters/Layered Portraits/layered_portrait_juniper.tscn"
 },
 "Close Up": {
@@ -50,7 +50,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.9,
 "scene": "res://Characters/Layered Portraits/layered_portrait_juniper_serious.tscn"
 },
 "VO": {

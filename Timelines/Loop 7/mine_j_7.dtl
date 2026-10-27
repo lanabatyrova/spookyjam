@@ -1,17 +1,17 @@
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
-join Lizzy (Mine) left
+join Lizzy (Animated) left
 Lizzy: So this is the abandoned silver mine, huh?
-join Barb (Mine) midleft [mirrored="true"]
+join Barb (Animated) midleft [mirrored="true"]
 Barb: It’s super creepy
-join Noah (Mine) midright [z_index="1" mirrored="true"]
+join Noah (Animated) midright [z_index="1" mirrored="true"]
 Noah: It looks...
 Noah: well, abandoned is a good description.
 Lizzy: It’s like everyone just vanished and left behind dusty stuff.
-join Valerie (Mine) center [mirrored="true"]
+join Valerie (Animated) center [mirrored="true"]
 Valerie: Vermilion’s entire economy was based around this mine. It’s a living piece of history. Look at this preserved gear.
-join Knightmare (Mine) rightmost
+join Knightmare (Animated) rightmost
 Knightmare: Hmm.
-join Dagger (Mine) right
+join Dagger (Animated) right
 Dagger: ...
 Dagger: There is a lot of silver still within these walls.
 update Dagger [animation="Shake Y" length="0.8"]
@@ -28,17 +28,17 @@ Barb: Really? Because this is totally like some boss battle or climatic finish t
 Knightmare: I’ve come prepared to fight.
 Lizzy: We’re not fighting anyone.
 update Lizzy [mirrored="false"]
+join Juniper (Serious) leftmost [animation="Fade In" extra_data="show Animated/Talking"]
 
 
 Juniper: ah. Lizzy.
-join Juniper (Mine) leftmost [animation="Fade In"]
 Juniper: and everyone else.
 Noah: Hey, Juni!
 Barb: ...
-update Knightmare [animation="Heartbeat" length="0.8" repeat="3"]
+update Knightmare (Angry) [length="0.8" repeat="3" extra_data="show Animated/Talking"]
 Knightmare: We’ve come to crush your bones to ash—
 Lizzy: We’ve come to help you.
-update Knightmare [mirrored="true"]
+update Knightmare (Animated) [mirrored="false"]
 Knightmare: Don’t interrupt me.
 Lizzy: Lady, we talked about this like two seconds ago.
 Dagger: My Lady, perhaps it’s best to let Lizzy take the lead on this.

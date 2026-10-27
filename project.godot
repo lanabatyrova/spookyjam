@@ -47,7 +47,9 @@ directories/dch_directory={
 "Valerie": "res://Characters/Valerie.dch"
 }
 directories/dtl_directory={
+"Grad Poster": "res://Scenes/Transition Locations/Grad Poster.dtl",
 "Opening": "res://Scenes/Previously On/Opening.dtl",
+"Parent's Room": "res://Scenes/Transition Locations/Parent's Room.dtl",
 "TEST": "res://Scenes/TEST.dtl",
 "Testing": "res://Scenes/Previously On/Testing.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
@@ -68,6 +70,7 @@ directories/dtl_directory={
 "graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",
 "graveyard_d_5": "res://Timelines/Loop 5/graveyard_d_5.dtl",
 "graveyard_dbnm_6": "res://Timelines/Loop 6/graveyard_dbnm_6.dtl",
+"group Polaroid": "res://Scenes/Transition Locations/group Polaroid.dtl",
 "hallway_b_3": "res://Timelines/Loop 3/hallway_b_3.dtl",
 "hallway_j_4": "res://Timelines/Loop 4/hallway_j_4.dtl",
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",

@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://d3j2ombum2vuh" path="res://assets/Locations/hallway_night.png" id="3_bogav"]
 [ext_resource type="Script" uid="uid://kojof2x8xvyn" path="res://Scenes/Hallway/juniper_hallway.gd" id="4_84xge"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="4_c1afe"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_o5p3j"]
 [ext_resource type="BitMap" uid="uid://dp7wbt46ne45d" path="res://assets/People/Juniper_1_bitmap.png" id="5_0f3vm"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="5_26o71"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="5_c1afe"]
 [ext_resource type="Script" uid="uid://dcp3dx2knhfih" path="res://Scenes/Hallway/barb_hallway.gd" id="6_5tr82"]
 [ext_resource type="Texture2D" uid="uid://cma3l10yvy1jg" path="res://assets/People/Barb_1_Hover.png" id="7_5tr82"]
@@ -38,32 +40,65 @@ position = Vector2(615, 254.10378)
 scale = Vector2(0.62, 0.5970138)
 texture = ExtResource("3_bogav")
 
-[node name="JuniperButton" type="TextureButton" parent="." unique_id=445886226]
-offset_left = 262.0
-offset_top = 159.0
-offset_right = 932.0
-offset_bottom = 1981.0
-scale = Vector2(0.2288405, 0.2288405)
-texture_normal = ExtResource("3_as5ck")
-texture_hover = ExtResource("4_c1afe")
-texture_click_mask = ExtResource("5_0f3vm")
-script = ExtResource("4_84xge")
+[node name="Outside" type="TextureButton" parent="." unique_id=551017862]
+offset_left = 626.0
+offset_top = 244.00002
+offset_right = 866.0
+offset_bottom = 694.0
+scale = Vector2(0.42646673, 0.18984416)
+texture_hover = ExtResource("5_26o71")
+
+[node name="Upstairs" type="TextureButton" parent="." unique_id=478904796]
+offset_left = 971.0
+offset_top = 316.0
+offset_right = 2971.0
+offset_bottom = 887.0
+rotation = 3.1280315
+scale = Vector2(0.09938474, 0.48786217)
+texture_hover = ExtResource("4_o5p3j")
+
+[node name="Basement" type="TextureButton" parent="." unique_id=317989508]
+offset_left = 473.00003
+offset_top = 206.0
+offset_right = 713.0
+offset_bottom = 656.0
+scale = Vector2(0.22290976, 0.440239)
+texture_hover = ExtResource("5_26o71")
+
+[node name="Lizzy\'s Locker" type="TextureButton" parent="." unique_id=1271093178]
+offset_left = 104.0
+offset_top = 112.0
+offset_right = 344.0
+offset_bottom = 562.0
+scale = Vector2(0.2908125, 1.0377159)
+texture_hover = ExtResource("5_26o71")
 
 [node name="BarbButton" type="TextureButton" parent="." unique_id=1459977272]
-offset_left = 413.0
-offset_top = 184.00002
-offset_right = 1212.0
-offset_bottom = 1976.0
+offset_left = 316.00003
+offset_top = 185.00002
+offset_right = 1115.0
+offset_bottom = 1977.0
 scale = Vector2(0.2079453, 0.2079453)
 texture_normal = ExtResource("5_c1afe")
 texture_hover = ExtResource("7_5tr82")
 texture_click_mask = ExtResource("9_hae4b")
 script = ExtResource("6_5tr82")
 
+[node name="JuniperButton" type="TextureButton" parent="." unique_id=445886226]
+offset_left = 193.0
+offset_top = 180.0
+offset_right = 863.0
+offset_bottom = 2002.0
+scale = Vector2(0.2288405, 0.2288405)
+texture_normal = ExtResource("3_as5ck")
+texture_hover = ExtResource("4_c1afe")
+texture_click_mask = ExtResource("5_0f3vm")
+script = ExtResource("4_84xge")
+
 [node name="NoahButton" type="TextureButton" parent="." unique_id=960815392]
-offset_left = 554.99994
+offset_left = 518.0
 offset_top = 197.0
-offset_right = 1211.0
+offset_right = 1174.0
 offset_bottom = 1952.0
 scale = Vector2(0.21628141, 0.21628141)
 texture_normal = ExtResource("12_bogav")
@@ -84,7 +119,11 @@ texture_hover = ExtResource("16_bogav")
 texture_click_mask = ExtResource("18_rtv73")
 script = ExtResource("10_as5ck")
 
-[connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
+[connection signal="pressed" from="Outside" to="." method="_on_outside_pressed"]
+[connection signal="pressed" from="Upstairs" to="." method="_on_upstairs_pressed"]
+[connection signal="pressed" from="Basement" to="." method="_on_basement_pressed"]
+[connection signal="pressed" from="Lizzy\'s Locker" to="." method="_on_lizzys_locker_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
+[connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]

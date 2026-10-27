@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://b67tib5ojh4r5"]
+
+[ext_resource type="Script" uid="uid://0s340mxca61a" path="res://Scenes/Extras/lizzy's_locker.gd" id="1_488ey"]
+[ext_resource type="Texture2D" uid="uid://b1vmaapmu2876" path="res://Temp Assets/Temp Locations/Lizzys Locker.png" id="1_mtxs8"]
+[ext_resource type="Texture2D" uid="uid://d35tavhglmrqg" path="res://assets/Props/grad poster.png" id="2_kbp30"]
+[ext_resource type="Texture2D" uid="uid://bh40hq7xabbla" path="res://assets/Props/grad poster hover.png" id="3_488ey"]
+[ext_resource type="Texture2D" uid="uid://dw60t8xpa1gk4" path="res://assets/Props/MacDeath Poster.png" id="4_kbp30"]
+[ext_resource type="Texture2D" uid="uid://dsrr1njx0y36k" path="res://assets/Props/Group Polaroid.png" id="6_13mgl"]
+[ext_resource type="Texture2D" uid="uid://21id5m6r0nxs" path="res://assets/Props/Group Polaroid Hover.png" id="7_451x0"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="8_6kocx"]
+
+[node name="Node2D" type="Node2D" unique_id=2047878710]
+script = ExtResource("1_488ey")
+
+[node name="LizzysLocker" type="Sprite2D" parent="." unique_id=85085225]
+position = Vector2(567, 325.00003)
+scale = Vector2(1.9068627, 1.9068627)
+texture = ExtResource("1_mtxs8")
+
+[node name="Grad Poster" type="TextureButton" parent="." unique_id=265851116]
+offset_left = 200.0
+offset_top = 106.0
+offset_right = 1262.0
+offset_bottom = 1615.0
+scale = Vector2(0.22078308, 0.22078308)
+texture_normal = ExtResource("2_kbp30")
+texture_hover = ExtResource("3_488ey")
+
+[node name="Play Poster" type="TextureButton" parent="." unique_id=303412365]
+offset_left = -34.0
+offset_top = 183.0
+offset_right = 1272.0
+offset_bottom = 2335.0
+scale = Vector2(0.16157874, 0.16157874)
+texture_normal = ExtResource("4_kbp30")
+
+[node name="Group Polaroid" type="TextureButton" parent="." unique_id=1430566750]
+offset_left = 695.0
+offset_top = 220.0
+offset_right = 2234.0
+offset_bottom = 2026.0
+scale = Vector2(0.039999567, 0.039999567)
+texture_normal = ExtResource("6_13mgl")
+texture_hover = ExtResource("7_451x0")
+
+[node name="Return To Hallway" type="TextureButton" parent="." unique_id=1702090231]
+offset_left = -12.999998
+offset_top = 540.00006
+offset_right = 1987.0
+offset_bottom = 1111.0
+scale = Vector2(0.599459, 0.19094962)
+texture_hover = ExtResource("8_6kocx")
+
+[connection signal="pressed" from="Grad Poster" to="." method="_on_grad_poster_pressed"]
+[connection signal="pressed" from="Group Polaroid" to="." method="_on_group_polaroid_pressed"]
+[connection signal="pressed" from="Return To Hallway" to="." method="_on_return_to_hallway_pressed"]

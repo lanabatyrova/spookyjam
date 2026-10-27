@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ca8yqja6s5bbj"]
+
+[ext_resource type="Script" uid="uid://cteirib3dvy3p" path="res://Scenes/Transition Locations/diner_stairs.gd" id="1_3kij4"]
+[ext_resource type="Texture2D" uid="uid://lq27g5b7rphm" path="res://Temp Assets/Temp Locations/IMG_6547.jpg" id="2_hvewg"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="3_hvewg"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_lyo8f"]
+
+[node name="Node2D" type="Node2D" unique_id=382866753]
+script = ExtResource("1_3kij4")
+
+[node name="Img6547" type="Sprite2D" parent="." unique_id=1345645791]
+position = Vector2(610, 489)
+scale = Vector2(4.3125, 4.3125005)
+texture = ExtResource("2_hvewg")
+
+[node name="DinerUpstairsDoor" type="TextureButton" parent="." unique_id=2013578039]
+offset_left = 529.0
+offset_top = 48.0
+offset_right = 769.0
+offset_bottom = 498.0
+scale = Vector2(0.6580687, 0.4615014)
+texture_hover = ExtResource("3_hvewg")
+
+[node name="DinerTurnBack" type="TextureButton" parent="." unique_id=268621691]
+offset_top = 480.0
+offset_right = 2000.0
+offset_bottom = 1051.0
+scale = Vector2(0.57477796, 0.294779)
+texture_hover = ExtResource("4_lyo8f")
+
+[connection signal="pressed" from="DinerUpstairsDoor" to="." method="_on_diner_upstairs_door_pressed"]
+[connection signal="pressed" from="DinerTurnBack" to="." method="_on_diner_turn_back_pressed"]

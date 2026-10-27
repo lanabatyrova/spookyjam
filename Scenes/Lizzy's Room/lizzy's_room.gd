@@ -17,3 +17,7 @@ func _process(delta: float) -> void:
 func update_day(day: int):
 	belt.visible = !GameState.inventory["belt"]
 	sewing.visible = !GameState.inventory["sewing_kit"]
+
+
+func _on_hallway_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Diner_Upstairs_Hallway.tscn")

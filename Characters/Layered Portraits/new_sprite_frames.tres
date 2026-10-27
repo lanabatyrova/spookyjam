@@ -1,3 +1,18 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://cam2xgmhnyfre"]
 
+[ext_resource type="Texture2D" uid="uid://blwbwexcbgxiv" path="res://sprites/Lady/Lady_Talking1.png" id="1_xho7f"]
+[ext_resource type="Texture2D" uid="uid://bl7dsmi8674r3" path="res://sprites/Lady/Lady_Talking2.png" id="2_frp2h"]
+
 [resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xho7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_frp2h")
+}],
+"loop": 1,
+"name": &"Lady Knightmare Talking",
+"speed": 5.0
+}]

@@ -24,3 +24,19 @@ func update_day(day: int):
 	noah.visible = day in [1,2,3] && !GameState.midpoint_reached
 	letter.visible = day in [5] && !GameState.inventory["acceptance_letter"]
 	evening.visible = GameState.midpoint_reached
+
+
+func _on_lizzys_locker_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Extras/Lizzy's Locker.tscn")
+
+
+func _on_basement_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_upstairs_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_outside_pressed() -> void:
+	pass # Replace with function body.
