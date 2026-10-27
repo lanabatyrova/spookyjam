@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b2ydbm50x5m31"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://b3eo4b21kw63b" path="res://sprites/Barb/Barb_Animations.png" id="2_kxub3"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1484259804]
+script = ExtResource("1_uubi5")
+
+[node name="Layer1" type="Sprite2D" parent="." unique_id=399748829]
+texture = ExtResource("2_kxub3")
+hframes = 2
+
+[node name="Group1" type="Node2D" parent="." unique_id=904115316]
+
+[node name="Layer1" type="Sprite2D" parent="Group1" unique_id=1113001524]
+
+[node name="Layer2" type="Sprite2D" parent="Group1" unique_id=932561905]

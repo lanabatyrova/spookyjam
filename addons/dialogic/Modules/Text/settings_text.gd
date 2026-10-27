@@ -58,7 +58,7 @@ func _ready() -> void:
 	%AutoskipTimePerEvent.value_changed.connect(_on_float_set.bind(_SETTING_AUTOSKIP_TIME_PER_EVENT))
 
 	%AutoPausesAbsolute.toggled.connect(_on_bool_set.bind(_SETTING_ABSOLUTE_AUTOPAUSES))
-
+	
 
 func _refresh() -> void:
 	## BEHAVIOUR

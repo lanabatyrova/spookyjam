@@ -1,5 +1,5 @@
 [background scene="res://Scenes/Cutscenes/basement noahs machine.tscn" fade="0.0"]
-join Barb left
+join Barb (Animated) left
 join Lizzy right
 Barb: Um, what the hell is this?
 join Item (Ruined Belt) center
@@ -9,7 +9,7 @@ leave Item
 Barb: Oooh my god. It's part of one of Noah's contraptions.
 
 Lizzy: "contraptions"?
-Barb: You know him and his whacky inventions or whatever. He was probably planning something to ruin grad.
+Barb (Animated): You know him and his whacky inventions or whatever. He was probably planning something to ruin grad.
 Lizzy: What does the beef jerky have to do with anything?
 Barb: It’s not beef jerky, Lizzy. Ugh, you’re such a dog.
 Lizzy: Hey!

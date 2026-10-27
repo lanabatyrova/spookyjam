@@ -1,3 +1,4 @@
+
 extends DialogicSubsystem
 
 ## Subsystem that manages portraits and portrait positions.

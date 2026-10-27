@@ -1,7 +1,7 @@
 do GameState.start_minigame()
 [background arg="res://assets/Minigame/Minigame_1.png" fade="1.0" transition="Push Up"]
 audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3" [volume="-14.0" loop="true"]
-join Juniper center
+join Juniper (Serious) center
 [wait time="1.5"]
 Lizzy: I know it sounds crazy, but trust me.
 Lizzy: I can prove it.
@@ -75,7 +75,7 @@ leave Juniper [animation="Slide To Left"]
 Lizzy: Juniper, wait!
 VO: Why is she running away?
 join Lizzy right
-join Dagger left 
+join Dagger left
 Dagger: Lizzy—
 Lizzy: Not now, Dagger.
 Lizzy: I need to go after Juniper.

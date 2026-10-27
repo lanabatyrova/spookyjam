@@ -1,5 +1,9 @@
+
 class_name DialogicPortrait
 extends Node
+
+func _should_do_portrait_update(_character: DialogicCharacter, _portrait: String) -> bool:
+	return true
 
 ## Default portrait class. Should be extended by custom portraits.
 
@@ -16,8 +20,8 @@ var portrait: String
 ## [method _update_portrait] on this one.
 ## This is only relevant if the next portrait uses the same scene.
 ## This allows implementing transitions between portraits that use the same scene.
-func _should_do_portrait_update(_character: DialogicCharacter, _portrait: String) -> bool:
-	return false
+## func _should_do_portrait_update(_character: DialogicCharacter, _portrait: String) -> bool:
+	## return false
 
 
 
@@ -83,9 +87,13 @@ func _load_state(_state:Dictionary) -> void:
 #region HIGHLIGHT OVERRIDES
 ################################################################################
 
+
+
 ## Called when this becomes the active speaker
 func _highlight() -> void:
 	pass
+	
+
 
 
 ## Called when this stops being the active speaker

@@ -48,9 +48,6 @@ script = ExtResource("1_uubi5")
 texture = ExtResource("2_ttj6h")
 hframes = 2
 
-[node name="Layer1" type="Sprite2D" parent="." unique_id=1684377550]
-scale = Vector2(0.8906663, 1)
-
 [node name="Animated" type="Node2D" parent="." unique_id=700870667]
 
 [node name="Talking" type="Sprite2D" parent="Animated" unique_id=636420097]

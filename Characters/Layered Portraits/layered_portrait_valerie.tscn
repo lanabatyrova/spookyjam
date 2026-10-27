@@ -49,6 +49,7 @@ texture = ExtResource("2_o16ts")
 hframes = 2
 
 [node name="Animated" type="Node2D" parent="." unique_id=1129710982]
+visible = false
 
 [node name="Talking" type="Sprite2D" parent="Animated" unique_id=953464565]
 texture = ExtResource("2_o16ts")

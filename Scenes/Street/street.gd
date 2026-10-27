@@ -19,3 +19,7 @@ func _process(delta: float) -> void:
 func update_day(day: int, is_night):
 	juniper.visible = day in [5] && GameState.midpoint_reached
 	evening.visible = is_night
+
+
+func _on_door_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Diner/Diner.tscn")

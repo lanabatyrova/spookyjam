@@ -23,3 +23,11 @@ func update_day(day: int):
 	juniper.visible = day in [1,2,4] && GameState.midpoint_reached
 	noah.visible = day in [1,2] && GameState.midpoint_reached
 	evening.visible = GameState.midpoint_reached
+
+
+func _on_door_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Street/Street.tscn")
+
+
+func _on_room_door_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")

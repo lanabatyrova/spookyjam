@@ -49,6 +49,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Opening": "res://Scenes/Previously On/Opening.dtl",
 "TEST": "res://Scenes/TEST.dtl",
+"Testing": "res://Scenes/Previously On/Testing.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
 "basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",
 "diner_j_4": "res://Timelines/Loop 4/diner_j_4.dtl",

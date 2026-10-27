@@ -57,7 +57,8 @@ func _ready() -> void:
 		var x: Resource = load(i.strip_edges())
 		if x is RichTextEffect:
 			custom_effects.append(x.duplicate())
-
+			
+			
 
 ## This is called by the [subsytem Text] to set text and play the reveal animation according to [member active_speed].
 func reveal_text(_text: String, keep_previous:=false) -> void:

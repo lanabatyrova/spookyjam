@@ -2,14 +2,14 @@
 [wait time="2.0"]
 audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
 [alarm blaring]
-join Lizzy (Talking) center [animation="Fade In"]
+join Lizzy (Close Up) center [animation="Fade In"]
 VO: Ugh. I so don’t want to get up.
 VO: Graduation is tomorrow, why the hell are they making us go to class? Not only go to class, but a math exam?
 VO: I’d take on ten times the amount of ghouls, vampires, zombies, evil scientists, frankensteins, and mutated fruit flies, over whatever calculus is.
 VO: Life would be so much easier if I could punch numbers.
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
-join Lizzy (Full Body) left [animation="Fade In" mirrored="true" move_time="0.5"]
+join Lizzy (Animated) left [animation="Fade In" mirrored="true" move_time="0.5"]
 [background arg="res://assets/Locations/diner_day.png" fade="0.5"]
 MAIL DELIVERY
 VO: Huh, what’s this?
@@ -19,7 +19,7 @@ join Item (Postcard Front) center
 [wait_input]
 update Item (Postcard Back) [animation="Heartbeat"]
 [wait_input]
-join Lizzy (Talking) right [animation="Fade In"]
+join Lizzy (Close Up) right [animation="Fade In"]
 VO: I guess once you become a best selling author writing your own letters is small potatoes.
 leave Item
 [background arg="res://assets/Locations/diner_day.png" fade="0.0"]
@@ -29,119 +29,119 @@ leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [One horrible exam later...]
 [background scene="res://Scenes/Cutscenes/Hallway_To_Scale.tscn" fade="0.0"]
-join Barb (Animated) lefter [animation="Fade In" z_index="1" extra_data="hide Animated/Talking"]
-join Juniper (Animated) midleft [animation="Fade In" wait="true" mirrored="true" extra_data="hide Animated/Talking"]
+join Barb (Animated) lefter [animation="Fade In" z_index="1"]
+join Juniper (Animated) midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
-join Lizzy (Animated) righter [animation="Slide From Right" length="1.0" extra_data="hide Animated/Talking"]
+join Lizzy (Animated) righter [animation="Slide From Right" length="1.0"]
 VO: Wow I really beefed it on that.
 update Barb [animation="Bounce" length="0.3" repeat="3"]
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: Finally, we’ve been waiting here for eons.
-update Barb [extra_data="hide Animated/Talking"]
+
 [wait time="0.2"]
 update Juniper [mirrored="false"]
 Juniper: Barb’s just being mean because she’s excited.
-update Lizzy [extra_data="show Animated/Talking"]
+
 Lizzy: What’s so important that you’re forcing us to stay at school longer than humanely possible.
-update Lizzy [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: Guess what I got this morning?
-update Barb [extra_data="hide Animated/Talking"]
+
 Lizzy: Uhhh.
 update Juniper [mirrored="true"]
-update Juniper [extra_data="show Animated/Talking"]
+
 Juniper: A good nights sleep? You need eight hours, you know.
-update Juniper [extra_data="hide Animated/Talking"]
+
 update Barb [animation="Shake X" length="1.0"]
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: No and no-
-update Barb [extra_data="hide Animated/Talking"]
+
 Lizzy: I didn’t say anything, you can’t no nothing-
 update Barb [animation="Shake X" length="0.3"]
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: My grad dress!!
-update Barb [extra_data="hide Animated/Talking"]
-Lizzy: ...
-Juniper: ...
+
+...
+...
 update Barb [animation="Shake X" length="0.3" repeat="3"]
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: The one I ordered last year? To my exact measurements?
 Barb: It’s all I’ve been talking about for the past week!
-update Barb [extra_data="hide Animated/Talking"]
+
 update Juniper [animation="Shake X" length="2.0"]
-update Juniper [extra_data="show Animated/Talking"]
+
 Juniper: Sorry, Babs.
-update Juniper [extra_data="hide Animated/Talking"]
+
 Lizzy: A lot has happened, and you say a bunch of stuff I don’t pay attention to.
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: Please tell me you’ve at least got your grad dresses.
-update Barb [extra_data="hide Animated/Talking"]
+
 Lizzy: ...
 Juniper: ...
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: I sent you both electronic mail!
-update Barb [extra_data="hide Animated/Talking"]
-update Lizzy [extra_data="show Animated/Talking"]
+
+
 Lizzy: I’m going to be totally honest, I think my mom started marking your messages as spam since you sent so many.
-update Lizzy [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: I expected this of Lizzy, but you too, Juniper? You’re psychic!
-update Barb [extra_data="hide Animated/Talking"]
-update Juniper [extra_data="show Animated/Talking"]
+
+
 Juniper: It doesn't work like that.
-update Juniper [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: Ugh, I swear when it doesn’t involve some sort of Mummy’s curse you two have the memory of a goldfish.
-update Barb [extra_data="hide Animated/Talking"]
-update Lizzy [extra_data="show Animated/Talking"]
+
+
 Lizzy: Listen, I’d care a lot more about dress shopping if I wasn’t kicking demon ass on a regular basis.
-update Lizzy [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: The grad dance is the single most important nights of our entire lives!
-update Barb [extra_data="hide Animated/Talking"]
+
 Juniper: It really isn’t, but okay.
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: If it doesn’t go picture perfectly I’m disowning all of you.
-update Barb [extra_data="hide Animated/Talking"]
-join Noah (Animated) righter [animation="Slide From Right" wait="true" mirrored="true" extra_data="hide Animated/Talking"]
+
+join Noah (Animated) righter [animation="Slide From Right" wait="true" mirrored="true"]
 update Lizzy midright [mirrored="true" move_time="0.3"]
-update Noah [extra_data="show Animated/Talking"]
+
 Noah: Heeey laaadies, did I hear something about grad?
-update Noah [extra_data="hide Animated/Talking"]
+
 update Juniper [mirrored="false"]
 Juniper: Please never say ladies like that ever again.
-update Noah [extra_data="show Animated/Talking"]
+
 Noah: Yeah, I don’t know why I went with that.
-update Noah [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: Noah, you have your grad outfit picked out already, right?
-update Barb [extra_data="hide Animated/Talking"]
-update Noah [extra_data="show Animated/Talking"]
+
+
 Noah: Uh, does the apple fall far from the tree?
-update Noah [extra_data="hide Animated/Talking"]
-update Lizzy [extra_data="show Animated/Talking"]
+
+
 Lizzy: No, not really.
-update Lizzy [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: So is that a yes?
-update Barb [extra_data="hide Animated/Talking"]
-update Noah [extra_data="show Animated/Talking"]
+
+
 Noah: Yeah, I’ve got my fit all picked and rip roaring to go.
-update Noah [extra_data="hide Animated/Talking"]
-update Barb [extra_data="show Animated/Talking"]
+
+
 Barb: See? Even Noah is prepared.
-update Barb [extra_data="hide Animated/Talking"]
+
 Noah: I scored the full Bond. James Bond. Specially from “Licence to Kill”
 Noah: Totally not spelled how you expect it to be, by the way.
 Juniper: Doesn’t James Bond wear the same tuxedo in every movie?
 Noah: There are subtleties.
 Juniper: If you’re really that pressed about it, Barb, I’m sure Lizzy and I can throw something together.
-update Barb [extra_data="show Animated/Talking"]
+
 Barb: I don’t want you to throw something together! I want you both to look pretty and for me to look even prettier!
 Noah: I wouldn’t worry about grad, if you know what I mean...
 Barb: I can’t with you right now.
 Barb: I’m meeting Mona to go over the limo situation and by the time we meet back up you better have a full walk in closet of options.
-update Barb [extra_data="hide Animated/Talking"]
+
 leave Barb [animation="Slide To Right" length="1.5" wait="true"]
 [wait time="0.5"]
 Noah: Wait, you guys are taking a limo to grad? Isn’t it just at the school?

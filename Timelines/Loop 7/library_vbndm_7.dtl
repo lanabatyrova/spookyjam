@@ -1,8 +1,10 @@
-[background scene="res://Scenes/Cutscenes/Library chat.tscn" fade="0.0"]
-join Valerie lefter
-join Noah (Full Body) leftmost [z_index="1"]
-join Barb (Full Body) righter [z_index="1" mirrored="true"]
-join Lizzy (Full Body) right
+[background arg="res://assets/Locations/library_day.png" fade="0.0"]
+join Valerie left
+join Noah lefter [z_index="1"]
+join Barb leftmost [z_index="1"]
+join Lizzy center
+join Dagger right
+join Knightmare righter
 
 Lizzy: Alright everyone, are we ready?
 Valerie: yes.
