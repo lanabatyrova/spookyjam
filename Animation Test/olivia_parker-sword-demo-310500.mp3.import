@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jimcx1bmnb6o"
+path="res://.godot/imported/olivia_parker-sword-demo-310500.mp3-c4f2a175ff179e7a29f0f488909e8748.mp3str"
+
+[deps]
+
+source_file="res://Animation Test/olivia_parker-sword-demo-310500.mp3"
+dest_files=["res://.godot/imported/olivia_parker-sword-demo-310500.mp3-c4f2a175ff179e7a29f0f488909e8748.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Hidden Past.mp3-c97527a42bc2217bc187e13fdf95c
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

@@ -1,14 +1,13 @@
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
-join Juniper (Talking) left
+join Juniper (Close Up) left
 join Foreground center
-join Lizzy (Talking) right [animation="Fade In Up" length="0.2" z_index="1"]
+join Lizzy (Close Up) right [animation="Fade In Up" length="0.2" z_index="1"]
 Juniper: Lizzy, there you are. You didn’t come to the exam.
 Juniper: Neither did Barb or Noah.
 Juniper: I’m pretty sure Holiday all gave you automatic fails.
-Lizzy: Eh, she can deal. I got like 80% on that group project, I think my grades are safe.
-Juniper: What was so important that you ditched?
-Lizzy: I can’t tell you right now...
-Lizzy: Also, unrelated, but are you feeling.. Anything weird?
+Lizzy: Eh, she can deal. I got like eighty percent on our group project, I think my grades are safe.
+Lizzy: By the way...
+Lizzy: Are you feeling.. Anything weird?
 Juniper: ... huh?
 Lizzy: Like you know.
 Lizzy: Psychically.
@@ -16,14 +15,34 @@ Juniper: Uh, no? I don’t think so.
 Lizzy: No visions or vision like... things?
 Juniper: Nope.
 Lizzy: Hm. Okay. Keep me posted.
-Juniper: ...
+...
 Juniper: Are YOU feeling alright?
 Lizzy: Never better.
+Juniper: So What was so important that you ditched?
+Lizzy: Okay, this is going to sound crazy,
+Lizzy: But we're in a time loop.
+Juniper: A time loop?
+Lizzy: Yeah.
+Lizzy: Reliving the same day over and over again.
+Lizzy: This is like my fifth time around.
+Juniper: Hm..
+Juniper: Yeah, I don't really...
+Juniper: That seems kinda far fetched, even for you, Lizzy.
+Lizzy: No, actually it isn't,
+audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3"
+Lizzy: You see I've got hard proof-
+<Empty Text Event>
+[wait time="1.0"]
+audio music -
 Juniper: I think I’m just going to go home.
-Lizzy: Okay, yeah. Sure.
+Lizzy: Oh.
 Juniper: See you tomorrow.
 leave Juniper [animation="Fade Out"]
+Lizzy: Uh. Okay.
+Lizzy: Sure.
 [wait_input]
-VO: Don’t worry, Jay. I’ll fix this.
+VO: Huh...
+VO: I guess I have to get her next time around.
 leave --All-- [animation="Fade Out Down"]
+[background fade="0.0"]
 do GameState.mark_characters_as_spoken(["juniper"])

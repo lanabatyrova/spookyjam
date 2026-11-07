@@ -1,4 +1,5 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+audio music "res://audio/Music/Love Song.mp3" [volume="-15.0"]
 join Lizzy (Close Up) right
 join Dagger (Close Up) left
 

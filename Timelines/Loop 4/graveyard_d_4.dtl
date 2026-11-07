@@ -1,24 +1,45 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Dagger (Talking) left
-join Lizzy (Talking) right
+audio music "res://audio/Music/Love Song.mp3" [volume="-15.0" loop="true"]
+join Dagger (Close Up) left
+join Lizzy (Close Up) right
 Dagger: Lizzy… a serendipitous entrance...
 Lizzy: Yeah. Yeah.
-Lizzy: I know.
-Dagger: ...
+...
+- I don't have time for this.
+	Lizzy: Save your wounded soul routine for someone who cares.
+- "I was just observing the epitaphs[br]on the tombstones that call this place home"
+	Lizzy: "and it struck me,"
+	...
+	- "how death is an inevitability..."
+		Lizzy: "for humanity..."
+		...
+		- "but for those cursed with cruel mistress"
+			Lizzy: "of immortality!"
+			Lizzy: "it rips loved ones from your arms and stakes you in the heart!"
+			...
+	[wait time="1.0"]
+	Dagger: How did you—
+	Dagger: Have I said this before?
+	Lizzy: You really need to get new material.
+	...
+[wait time="1.0"]
 Dagger: is something on your mind?
 update Lizzy [animation="Bounce" mirrored="true"]
 Lizzy: You don't even know the half of it!
-Lizzy: ...
+...
+[wait time="1.0"]
 Lizzy: It's not fair.
 Lizzy: I didn't choose to be a werewolf.
-Lizzy: and now I have to deal with all of this supernatural bullshit.
-Dagger: ...
+Lizzy: and now I have to deal with all of this...
+Lizzy: junk.
+...
+[wait time="1.0"]
 Dagger: you could've left vermilion hills a long time ago, Lizzy.
 update Dagger midleft [mirrored="true" move_time="0.3"]
 Dagger: you chose to stay.
 Dagger: To protect the people who call this humble town their home.
 Dagger: what mayor Silver did to you was selfish and irresponsible.
-update Lizzy [mirrored="false"]
+update Lizzy [mirrored="true"]
 Lizzy: he seemed like a decent guy.
 Lizzy: also he apologized a lot before he, you know, died.
 Lizzy: and I actually love being a werewolf.
@@ -92,10 +113,14 @@ Dagger: my resentment ran deeper than I admitted even to myself.
 Dagger: killing him was the most satisfying thing I've ever done.
 Dagger: but also my deepest regret.
 Lizzy: ...
-VO: What do I even say to that?
 VO: Oh, Dagger...
-Lizzy: I'm sorry that all your friends died.
+VO: What do I even say to that?
+- friends dead
+	Lizzy: I'm sorry that all your friends died.
+- (((ANOTHER CHOICE TO PUT HERE))))
 Dagger: I've made my peace.
+leave --All-- [animation="Instant Out"]
+audio music -
 
 do GameState.learn_fact("d_brother_death")
 jump ending_4/

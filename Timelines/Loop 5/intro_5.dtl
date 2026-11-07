@@ -1,3 +1,4 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Lizzy (Close Up) center [animation="Fade In" wait="true"]
 VO: Ugh, I’m really starting to hate my alarm sound.
 VO: Dagger told me some pretty heavy stuff just now...
@@ -6,7 +7,7 @@ VO: Especially since he won’t remember telling me.
 VO: ...
 
 [Cellphone ringing]
-update Lizzy right [move_time="0.5"]
+update Lizzy midright [move_time="0.5"]
 join Noah (Phone) left [animation="Bounce In" length="1.0"]
 Noah: Lizzy!
 update Noah [animation="Bounce" repeat="3"]

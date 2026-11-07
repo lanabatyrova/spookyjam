@@ -1,29 +1,63 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+audio "res://audio/Alarm and Click.mp3"
 [Alarm blaring]
-join Lizzy (Talking) center [animation="Fade In" wait="true"]
+join Lizzy (Close Up) center [animation="Fade In" wait="true"]
 VO: okay, this is really starting to test my patience.
+audio "res://audio/Phone ringing sound.mp3"
 
 [phone ringing]
-VO: barb's calling..?
+[wait time="2.1"]
+VO: barb...?
 join Barb (Phone) left
-update Lizzy right [move_time="0.4"]
+update Lizzy midright [move_time="0.4"]
 
 Lizzy: y’ello?
 Barb: Lizzy, oh my god. This time loop thing is real?
-Lizzy: ...
+...
 Lizzy: yeah? I thought I'd convinced you already.
 Barb: i mean, yeah, you did,
 Barb: but I mostly thought you were exaggerating, like you usually do.
 Lizzy: i don't exaggerate.
-Lizzy: I'm very realistic in my explanations.
+Lizzy: I gerate a normal amount.
+Barb: That's not a word.
+Lizzy: Are you sure?
+Lizzy: Do you know every language in the world?
+Barb: Gerate is not a word.
+Lizzy: I'm dealing with a lot, okay?
 Barb: so, like, does the same day repeat every day?
 Lizzy: pretty much, yeah.
 Barb: ...
 Barb: this is just like the new SG1 episode, window of opportunity.
 Lizzy: sg1...?
-Barb: stargate? You know the movie with james spader and kurt Russell?
+Barb: stargate\: sg1.
+Lizzy: okay, now you're saying fake words.
+Barb: It's a television show based on stargate.
+Barb: You know the movie with james spader and kurt Russell?
+Lizzy: I don't.
 Barb: I personally prefer kurt with long hair, but I think RDA makes the short hair for Jack work.
+Barb: Anyway, in the episode there's this time loop, right?
+VO: Oh no.
+Barb: and Jack and Teal'c are the only ones who are aware that they're in this loop.
+Barb: for a while they try and decode this ancient writing on a device they were investigating.
+Barb: but then they end up doing a bunch of other stuff.
+Barb: Like golf.
+join "black screen" center [animation="Fade In" length="2.0" wait="true" z_index="1"]
+VO: She's just going to keep going like this forever.
+join "Strike Ball" (Watch) righter
+update Lizzy right [mirrored="true"]
+update "Strike Ball" [animation="Bounce" length="1.9" repeat_forever="true"]
+leave "black screen" [animation="Fade Out" length="1.1" wait="true"]
+Barb: eventually they figure out what's going on,
+Barb: and as it happens, the guy behind the whole thing was doing it so he could spend time with his-
+update Lizzy midright [mirrored="true"]
+update "Strike Ball" midright [animation="Bounce"]
 Lizzy: I don't know what any of this means.
-Barb: it's like talking to a wall!
+leave "Strike Ball"
+audio music - [volume="-5.0"]
+Barb: ...
+Barb: It's not my fault the intricate plot is going way over your head.
+Lizzy: uh...
+Barb: I don't even know why I bother.
 Barb: ...
 Barb: so I'll have to fix my dress with your sewing kit, every day?
 Lizzy: didn't i give it to—
@@ -34,6 +68,7 @@ Barb: how do I get stuff to stay in my pockets?
 Lizzy: to be completely honest, I don't know
 Barb: ugh
 Barb: you better figure it out because I'm this close to loosing it.
+[wait time="1.3"]
 Lizzy: i can't see what you're doing.
 Barb: holding my fingers very close together.
 Lizzy: why are you fixing your dress? Can't you wait until we sort this time loop thing out?
@@ -47,6 +82,7 @@ Barb: just, figure it out, okay?
 Barb: I'm going to go to the library and see if Valerie knows anything.
 Lizzy: go easy on her, she's still new at this.
 leave Barb [animation="Fade Out Down"]
+audio "res://audio/Phone Close.mp3"
 [Phone clicks]
 VO: not even a goodbye?
 VO: I should probably tell Noah and Juniper about the time loop next,

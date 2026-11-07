@@ -44,7 +44,8 @@ directories/dch_directory={
 "Postcard": "res://Characters/Postcard.dch",
 "Strike Ball": "res://Characters/Strike Ball.dch",
 "VO": "res://Characters/VO.dch",
-"Valerie": "res://Characters/Valerie.dch"
+"Valerie": "res://Characters/Valerie.dch",
+"black screen": "res://Characters/black screen.dch"
 }
 directories/dtl_directory={
 "Grad Poster": "res://Scenes/Transition Locations/Grad Poster.dtl",

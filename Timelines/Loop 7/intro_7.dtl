@@ -1,12 +1,14 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+audio music "res://audio/Music/main menu backtrack 2.wav" [volume="-10.0" loop="true"]
 [alarm blaring]
-join Lizzy (Talking) center
+join Lizzy (Close Up) center
 VO: what the hell?
 
 [phone ringing]
 
 
 Lizzy: Juniper!
-update Lizzy right [length="0.1" move_time="0.2"]
+update Lizzy midright [length="0.1" move_time="0.2"]
 join Juniper (Phone) left
 Juniper: Hey Lizzy. Sorry about...
 Juniper: ...
@@ -17,18 +19,28 @@ Lizzy: Let us help you figure it out. We’re a team.
 Juniper: You have to trust me.
 Juniper: ...
 Juniper: Don’t you trust me, Lizzy?
-Lizzy: ...
+...
+- No.
+	...
+	- I want to trust her.
+		...
+		- She's my best friend.
+			...
+- Yes.
+	...
+	- I do trust her.
+		...
+		- So why do i get the feeling....
+			...
+			- Something terrible is going on?
+				...
 update Lizzy [mirrored="true"]
-Lizzy: I wish I could say I did.
-Juniper: ...
-Juniper: That’s...
-Juniper: ...
-Juniper: I’m sorry you feel that way.
+Lizzy: I...
 Juniper: ...
 Juniper: Maybe next time around, you’ll understand.
-update Lizzy [mirrored="false"]
-Lizzy: Please, Jay.
-Lizzy: You must know how ominous that sounds.
+update Lizzy [mirrored="true"]
+Lizzy: Uh,
+Lizzy: Next time?
 Juniper: Goodbye, Lizzy.
 leave Juniper
 Lizzy: Juniper!
@@ -38,7 +50,17 @@ VO: she hung up.
 VO: why is she doing this? It doesn’t make any sense?
 VO: is she trying to stop something from happening?
 VO: something she saw in a vision?
+audio music "res://audio/Music/main menu backtrack 1.wav" [fade="0.9"]
+update Lizzy (Animated) right [mirrored="true" fade="Fade Cross" fade_length="1.2"]
+[background arg="#000000ff" fade="1.2"]
 VO: ...
 VO: the why doesn’t matter.
-VO: I need to save her from herself.
-VO: it’s going to be okay, Jay. Just hang on a bit longer.
+join Juniper (Juniper Dream) left [animation="Fade In" length="1.1"]
+VO: I have to help her.
+VO: She'd risk everything to save me.
+VO: I owe her that much.
+VO: it’s going to be okay, Jay.
+VO: Just hang on a bit longer.
+leave --All--
+[background fade="0.0"]
+audio music - [fade="1.2"]

@@ -1,3 +1,4 @@
+audio music "res://audio/Music/Celtic Impulse.mp3" [volume="-10.0"]
 [background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
 join Lizzy center
 VO: Alright, time to stop this thing once and for all.
@@ -27,7 +28,9 @@ Lizzy: The time loop.
 Lizzy:  I came here to foil your plan.
 "Lady MacDeath": Ohohoho… My plan is far from foiled furry foe, it has just begun!!
 "Lady MacDeath": By the power of this great sword, I banish you to bitter death!
+audio "res://audio/Sound Effects/daviddumaisaudio-super-long-unsheathing-sword-scrape-185436.mp3" [volume="-5.0"]
 "Lady MacDeath": Have at ye.
+audio "res://audio/Sound Effects/olivia_parker-sword-demo-310500.mp3" [volume="-5.0"]
 update "Lady MacDeath" center [animation="Bounce" length="1.0" wait="true"]
 update Lizzy rightmost [animation="Shake X" wait="true"]
 Lizzy: You'll never win!
@@ -36,8 +39,10 @@ Lizzy: You'll never win!
 Lizzy: What.
 VO: okay, I'm confused.
 VO: she's super determined to kill me with this sword-
+audio "res://audio/Sound Effects/universfield-sword-blade-slicing-flesh-352708.mp3" [volume="-10.0"]
 update "Lady MacDeath" right [animation="Tada" wait="true"]
 update Lizzy [animation="Shake X" length="1.0" wait="true" repeat="2"]
+audio music "res://audio/Supernatural Radio A.mp3" [volume="-10.0"]
 Lizzy: Ough.....
 join Dagger left [animation="Slide From Left" wait="true" mirrored="true"]
 Dagger: Lizzy!!
@@ -48,8 +53,10 @@ leave "Lady MacDeath" [animation="Fade Out" wait="true"]
 leave Dagger [animation="Fade Out" wait="true"]
 Lizzy: AhhHhHhhh
 leave Lizzy [animation="Fade Out Down" length="3.0" wait="true"]
-[background arg="#000000ff" fade="0.0"]
-[background fade="0.0"]
+[background arg="res://assets/to be continued.png" fade="2.0" wait="true"]
+[wait time="1.9"]
+[background arg="#000000ff" fade="2.0" wait="true"]
+[background fade="0.4"]
 do GameState.learn_fact("d_zombie_plan")
 do GameState.learn_fact("m_suspicion")
 do GameState.next_day()

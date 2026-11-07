@@ -1,7 +1,7 @@
 join Dagger left
 join Lizzy right
 Dagger: I suppose she's noticed how frequently we've been speaking.
-Dagger: How... 
+Dagger: How...
 Dagger: ...
 Dagger: You affect me, Lizzy.
 Lizzy: Dagger...
@@ -10,17 +10,26 @@ Dagger: Don’t apologize.
 Dagger: I’m the one who should know not to play with your emotions.
 Dagger: There’s an unspoken bond between us,
 Dagger: You understand me unlike any other.
-Lizzy: In your weird way, I think you understand me too.
+Lizzy: In your weird way,
+Lizzy:  I think you understand me too.
 Dagger: I don’t want to lose that.
 Dagger: Even more than I fear your death.
+update Dagger [mirrored="true"]
 Dagger: I’d rather know you while you’re alive.
 Lizzy: That’s oddly sweet.
 Dagger: I have my moments.
-Lizzy: ...
+...
+[wait_input]
+update Lizzy midright [move_time="0.5"]
 Lizzy: This isn’t easy for me to say,
-Lizzy: but I want to know you too—
-leave --All-- 
+Lizzy: but I want to get to know—
+leave --All-- [animation="Instant Out" length="0.8" z_index="1"]
+[background arg="#000000ff" fade="0.0"]
+[wait time="1.6"]
+[background arg="res://assets/to be continued.png" fade="1.8" wait="true"]
+[wait time="1.4"]
+[background arg="#000000ff" fade="1.0" wait="true"]
 
 do GameState.learn_fact("m_shakespeare_hate")
 do GameState.next_day()
-jump intro_6/
+jump rewind/

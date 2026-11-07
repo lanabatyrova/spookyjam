@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfm4ptoi0h5lq"
+path="res://.godot/imported/daviddumaisaudio-super-long-unsheathing-sword-scrape-185436.mp3-1877e459cf6f4b7e9f39be0a0b46c9fd.mp3str"
+
+[deps]
+
+source_file="res://Animation Test/daviddumaisaudio-super-long-unsheathing-sword-scrape-185436.mp3"
+dest_files=["res://.godot/imported/daviddumaisaudio-super-long-unsheathing-sword-scrape-185436.mp3-1877e459cf6f4b7e9f39be0a0b46c9fd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
