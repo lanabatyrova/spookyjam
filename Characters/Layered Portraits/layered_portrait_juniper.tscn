@@ -1,7 +1,23 @@
 [gd_scene format=3 uid="uid://dtmqbrvcrdjsu"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://58lt5du82ccf" path="res://sprites/Juniper/Juniper_Talking.png" id="2_epcqp"]
+[ext_resource type="Texture2D" uid="uid://r7solxxt1e5j" path="res://sprites/Juniper/Juniper_Default_1.png" id="2_epcqp"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_epcqp"]
+[ext_resource type="Texture2D" uid="uid://dwcy4q2xnvfxl" path="res://sprites/Juniper/Juniper_Default_Blinking.png" id="3_ustke"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_epcqp")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_ustke")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="Animation" id="Animation_vbqxv"]
 length = 0.001
@@ -46,13 +62,17 @@ script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=1647924612]
 texture = ExtResource("2_epcqp")
-hframes = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=728186342]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+autoplay = "default"
 
 [node name="Animated" type="Node2D" parent="." unique_id=2107604000]
+visible = false
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=1714432742]
-texture = ExtResource("2_epcqp")
-hframes = 2
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1534982319]
+sprite_frames = ExtResource("3_epcqp")
+animation = &"Juniper Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=237151686]
 libraries/ = SubResource("AnimationLibrary_2jmnv")

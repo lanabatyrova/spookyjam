@@ -1,5 +1,7 @@
-join Dagger leftmost [animation="Instant In" mirrored="true"]
-join Lizzy righter [animation="Bounce In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+audio music "res://audio/Music/Love Song.mp3" [volume="-15.0"]
+join Dagger (Close Up) leftmost [animation="Instant In" mirrored="true"]
+join Lizzy (Close Up) righter [animation="Bounce In"]
 Dagger: Lizzy… a serendipitous entrance...
 update Dagger left [length="0.8" move_time="1.5"]
 Dagger: I was just observing the epitaphs on the tombstones--

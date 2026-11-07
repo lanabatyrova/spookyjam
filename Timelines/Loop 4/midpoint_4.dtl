@@ -1,6 +1,8 @@
 leave --All-- [animation="Fade Out" wait="true"]
 
-[background arg="#000000ff" fade="0.5"]
-[later that day]
+[background scene="res://Scenes/Midpoint_Transition.tscn" fade="0.6"]
+[wait time="7.0"]
+
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
+[background fade="0.5"]

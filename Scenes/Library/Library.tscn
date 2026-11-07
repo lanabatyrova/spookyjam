@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="3_3kh1m"]
 [ext_resource type="Texture2D" uid="uid://cuax18n2jnhhs" path="res://assets/Locations/library_night.png" id="3_e1b7t"]
 [ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="4_3kh1m"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_e1b7t"]
 [ext_resource type="Texture2D" uid="uid://c8p0mr4tndkhr" path="res://assets/People/Lady-MacDeath_1_Hover.png" id="4_gnrwe"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="5_6apm7"]
 [ext_resource type="BitMap" uid="uid://d1uoemouek5yk" path="res://assets/People/Lady-MacDeath_1_bitmap.png" id="5_fsgr3"]
@@ -41,6 +42,14 @@ texture = ExtResource("2_fsgr3")
 position = Vector2(575.7385, 313.81253)
 scale = Vector2(0.4236739, 0.38397217)
 texture = ExtResource("3_e1b7t")
+
+[node name="To Outside" type="TextureButton" parent="." unique_id=176613813]
+offset_left = -3.0
+offset_top = 579.0
+offset_right = 1997.0
+offset_bottom = 1150.0
+scale = Vector2(0.6199618, 0.12487441)
+texture_hover = ExtResource("4_e1b7t")
 
 [node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
 offset_left = 916.0
@@ -97,6 +106,7 @@ texture_hover = ExtResource("20_am823")
 texture_click_mask = ExtResource("21_7pdhs")
 script = ExtResource("6_1rjaq")
 
+[connection signal="pressed" from="To Outside" to="." method="_on_to_outside_pressed"]
 [connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
 [connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]

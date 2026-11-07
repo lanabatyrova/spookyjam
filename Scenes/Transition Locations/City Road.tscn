@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://df6fyllauur4n"]
+
+[ext_resource type="Texture2D" uid="uid://dyc8t1s0qw6r" path="res://assets/Locations/Temp/City Road.png" id="1_cib6m"]
+[ext_resource type="Script" uid="uid://1wd730x1p0yj" path="res://Scenes/Transition Locations/city_road.gd" id="1_qa0uk"]
+[ext_resource type="Texture2D" uid="uid://1ta2gq6veva8" path="res://assets/Locations/Hover Doors/City Road Sign.png" id="2_havp1"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="3_havp1"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_qa0uk"]
+
+[node name="Node2D" type="Node2D" unique_id=1271494550]
+script = ExtResource("1_qa0uk")
+
+[node name="CityRoad" type="Sprite2D" parent="." unique_id=1770137049]
+position = Vector2(563, 321)
+scale = Vector2(0.6541667, 0.6541667)
+texture = ExtResource("1_cib6m")
+
+[node name="CityRoadSign" type="Sprite2D" parent="." unique_id=325409506]
+position = Vector2(1090, 336)
+scale = Vector2(0.3809453, 0.38094532)
+texture = ExtResource("2_havp1")
+
+[node name="Library Enter" type="TextureButton" parent="." unique_id=1270721894]
+offset_left = 632.0
+offset_top = 254.99998
+offset_right = 872.0
+offset_bottom = 705.0
+scale = Vector2(0.23349941, 0.12885576)
+texture_hover = ExtResource("3_havp1")
+
+[node name="To Mine Street" type="TextureButton" parent="." unique_id=2108776768]
+offset_left = 228.99998
+offset_top = 262.99997
+offset_right = 2229.0
+offset_bottom = 1817.0
+rotation = 1.766665
+scale = Vector2(0.27837723, 0.29037806)
+texture_hover = ExtResource("3_qa0uk")
+
+[node name="To Silver Street" type="TextureButton" parent="." unique_id=1906444522]
+offset_left = 971.0
+offset_top = 657.99994
+offset_right = 2971.0
+offset_bottom = 1229.0
+rotation = -1.5717622
+scale = Vector2(0.33478943, 0.33478943)
+texture_hover = ExtResource("3_qa0uk")
+
+[node name="City Hall" type="TextureButton" parent="." unique_id=221997220]
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 304.0
+offset_bottom = 578.0
+rotation = -0.028226778
+scale = Vector2(1.3987937, 0.39293855)
+texture_hover = ExtResource("3_havp1")
+
+[connection signal="pressed" from="Library Enter" to="." method="_on_library_enter_pressed"]
+[connection signal="pressed" from="To Mine Street" to="." method="_on_to_mine_street_pressed"]
+[connection signal="pressed" from="To Silver Street" to="." method="_on_to_silver_street_pressed"]
+[connection signal="pressed" from="City Hall" to="." method="_on_city_hall_pressed"]

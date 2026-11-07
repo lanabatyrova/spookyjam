@@ -1,9 +1,9 @@
 [background arg="#000000ff" fade="0.0"]
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
-join Juniper (Animated_CloseUp) left [extra_data="hide Animated/Talking" animation="Fade In" length="1.0" z_index="-1"]
-join Barb (Animated_CloseUp) leftmost [extra_data="hide Animated/Talking" animation="Fade In" length="1.0"]
-join Lizzy (Animated_CloseUp) righter [extra_data="hide Animated/Talking" z_index="1"]
+join Juniper (Close Up) left [animation="Fade In" length="1.0" z_index="-1" extra_data="hide Animated/Talking"]
+join Barb (Close Up) leftmost [animation="Fade In" length="1.0" extra_data="hide Animated/Talking"]
+join Lizzy (Close Up) righter [z_index="1" extra_data="hide Animated/Talking"]
 update Barb [extra_data="show Animated/Talking"]
 Barb: You’re out of jam.
 update Barb [extra_data="hide Animated/Talking"]
@@ -92,6 +92,7 @@ Noah: Why is everyone quiet.
 Lizzy: I’m going to go take care of something and leave this conversation as non conspicuously as possible.
 
 leave --All--
+[background fade="0.0"]
 
 
 

@@ -1,2 +1,8 @@
-library chat with val
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Valerie (Talking) left [animation="Instant In"]
+join Lizzy (Talking) right [animation="Slide From Right"]
+Valerie: more talking yipee
 do GameState.mark_characters_as_spoken(["valerie"])
+leave --All--
+[background fade="0.0"]
+[end_timeline]

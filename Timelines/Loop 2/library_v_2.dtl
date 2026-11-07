@@ -17,7 +17,9 @@ Valerie: Given how strange this town is, I wouldn’t be surprised that there wa
 Lizzy: Oh thank god.
 Valerie: But they are incredibly rare. Are you sure the pressure of post-secondary plans isn’t getting to you?
 
-There has to be a way to convince her. Think, Lizzy, Think!
-It’s just like the pitcher’s mound. Ready the ball, and throw.
+VO: There has to be a way to convince her. Think, Lizzy, Think!
+VO: It’s just like the pitcher’s mound.
+VO:  Ready the ball,
+VO:  and throw!
 leave Lizzy [animation="Fade Out Down" wait="true"]
 jump minigame_v_2/

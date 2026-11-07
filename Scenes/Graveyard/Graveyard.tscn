@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://dbbh62br4k1ng" path="res://Scenes/Graveyard/pocket_shakespeare.gd" id="6_wr5li"]
 [ext_resource type="Texture2D" uid="uid://djlo0jcvmr78v" path="res://assets/Pickup Items/skespeare_hover.png" id="7_3cfoq"]
 [ext_resource type="BitMap" uid="uid://70va1jdrb0un" path="res://assets/Pickup Items/shakespeare_bitmap.png" id="9_3cfoq"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="11_h5jha"]
 
 [node name="Graveyard" type="Node2D" unique_id=975334763]
 script = ExtResource("1_mfimy")
@@ -40,15 +41,23 @@ texture_hover = ExtResource("4_cjcfh")
 script = ExtResource("3_cpdem")
 
 [node name="PocketShakespeare" type="TextureButton" parent="." unique_id=1951281941]
-offset_left = 270.0
-offset_top = 433.0
-offset_right = 2318.0
-offset_bottom = 2481.0
+offset_left = 257.0
+offset_top = 404.0
+offset_right = 2305.0
+offset_bottom = 2452.0
 scale = Vector2(0.100695446, 0.100695446)
 texture_normal = ExtResource("6_fc70l")
 texture_hover = ExtResource("7_3cfoq")
 texture_click_mask = ExtResource("9_3cfoq")
 script = ExtResource("6_wr5li")
 
+[node name="To Graveyard Way" type="TextureButton" parent="." unique_id=523293111]
+offset_top = 575.99994
+offset_right = 2000.0
+offset_bottom = 1147.0
+scale = Vector2(0.5768693, 0.13157776)
+texture_hover = ExtResource("11_h5jha")
+
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
 [connection signal="pressed" from="PocketShakespeare" to="PocketShakespeare" method="_on_pressed"]
+[connection signal="pressed" from="To Graveyard Way" to="." method="_on_to_graveyard_way_pressed"]

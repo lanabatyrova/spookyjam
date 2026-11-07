@@ -1,4 +1,6 @@
-[background arg="#000000ff" fade="1.0"]
-[cut to evening day 3]
+[background scene="res://Scenes/Midpoint_Transition.tscn" fade="0.6"]
+[wait time="7.0"]
+
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
+[background fade="0.5"]

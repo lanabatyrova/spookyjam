@@ -31,12 +31,13 @@ func _on_lizzys_locker_pressed() -> void:
 
 
 func _on_basement_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Basement/Basement.tscn")
+	
 
 
 func _on_upstairs_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/School_Upstairs.tscn")
 
 
 func _on_outside_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/School_Outside.tscn")

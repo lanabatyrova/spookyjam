@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bx3wpsn6sb02b"]
+
+[ext_resource type="Texture2D" uid="uid://cph4ucvaocv6v" path="res://assets/Locations/Temp/Silver Lake View.png" id="1_72ffr"]
+[ext_resource type="Script" uid="uid://duq2c8mhhewgn" path="res://Scenes/Transition Locations/silver_lake.gd" id="1_ucvaf"]
+[ext_resource type="Texture2D" uid="uid://dcafcom1fygfx" path="res://assets/Locations/Temp/Silver Lake Plaque.png" id="2_ajmof"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_cnwi2"]
+[ext_resource type="Texture2D" uid="uid://c6aoptychxp35" path="res://assets/Locations/Temp/Silver Lake Plaque Hover.png" id="3_ucvaf"]
+
+[node name="Node2D" type="Node2D" unique_id=1405551933]
+script = ExtResource("1_ucvaf")
+
+[node name="SilverLakeView" type="Sprite2D" parent="." unique_id=579986350]
+position = Vector2(581.00006, 317)
+scale = Vector2(0.6186342, 0.6240741)
+texture = ExtResource("1_72ffr")
+
+[node name="To Mine Street" type="TextureButton" parent="." unique_id=869470281]
+offset_top = 556.0
+offset_right = 2000.0
+offset_bottom = 1127.0
+scale = Vector2(0.5778584, 0.15954445)
+texture_normal = ExtResource("3_cnwi2")
+
+[node name="Plaque" type="TextureButton" parent="." unique_id=1710769527]
+offset_left = 2.0
+offset_top = 340.0
+offset_right = 1334.0
+offset_bottom = 1143.0
+scale = Vector2(0.24728039, 0.12728032)
+texture_normal = ExtResource("2_ajmof")
+texture_hover = ExtResource("3_ucvaf")
+
+[connection signal="pressed" from="To Mine Street" to="." method="_on_to_mine_street_pressed"]
+[connection signal="pressed" from="Plaque" to="." method="_on_plaque_pressed"]

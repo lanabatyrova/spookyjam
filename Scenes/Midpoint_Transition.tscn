@@ -1,0 +1,219 @@
+[gd_scene format=3 uid="uid://wgar1emcu51c"]
+
+[ext_resource type="Script" uid="uid://dk83t6tb6eu3q" path="res://Scenes/midpoint_transition.gd" id="1_0ulxi"]
+[ext_resource type="Texture2D" uid="uid://bueq21csl02id" path="res://assets/Midpoint/Sky Night.png" id="1_necua"]
+[ext_resource type="Texture2D" uid="uid://d1iqg585uvw2v" path="res://assets/Midpoint/Sky Day.png" id="2_jjocw"]
+[ext_resource type="Texture2D" uid="uid://8djl5e255432" path="res://assets/Midpoint/Moon.png" id="3_b2dtn"]
+[ext_resource type="Texture2D" uid="uid://svbboqk64fba" path="res://assets/Midpoint/sky night gradient.png" id="4_57s8d"]
+[ext_resource type="Texture2D" uid="uid://cao8qcfaww8pa" path="res://assets/Midpoint/Sun.png" id="5_0ulxi"]
+[ext_resource type="Texture2D" uid="uid://bpfd8dqyk7ydd" path="res://assets/Midpoint/mountains.png" id="6_8q7ek"]
+[ext_resource type="Texture2D" uid="uid://ch07xt1kamewo" path="res://assets/Midpoint/moon shine.png" id="6_b2dtn"]
+[ext_resource type="Script" uid="uid://bti7viw06mesd" path="res://Scenes/midpoint transition animation.gd" id="8_8q7ek"]
+[ext_resource type="Texture2D" uid="uid://dtcn1vvh51ul7" path="res://assets/Midpoint/mountains darker.png" id="8_57s8d"]
+
+[sub_resource type="Animation" id="Animation_xs1r2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(550.00006, 136.00002)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../SkyNightGradient:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(623.00006, -402.99997)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../Mountains2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../SkyNight:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../MoonShine:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6pa4h"]
+resource_name = "Transition"
+length = 5.9666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sun:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.03333333, 4.0666666),
+"transitions": PackedFloat32Array(0.43527535, 2.0705302),
+"update": 0,
+"values": [Vector2(550.00006, 136.00002), Vector2(550.00006, 492)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../SkyNightGradient:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.03333333, 4.5666666),
+"transitions": PackedFloat32Array(0.4829681, 2.4622886),
+"update": 0,
+"values": [Vector2(623.00006, -402.99997), Vector2(623.00006, 602)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.03333333, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../Mountains2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.03, 3.6333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../SkyNight:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 3.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../MoonShine:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 4.5666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nkrmi"]
+_data = {
+&"RESET": SubResource("Animation_xs1r2"),
+&"Transition": SubResource("Animation_6pa4h")
+}
+
+[node name="Node2D" type="Node" unique_id=857088080]
+script = ExtResource("1_0ulxi")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1813228825]
+
+[node name="SkyDay" type="Sprite2D" parent="Node2D" unique_id=741125998]
+position = Vector2(626, 322)
+texture = ExtResource("2_jjocw")
+
+[node name="SkyNightGradient" type="Sprite2D" parent="Node2D" unique_id=978945590]
+position = Vector2(623.00006, -402.99997)
+rotation = 1.5737915
+scale = Vector2(0.65621614, 1.7272056)
+texture = ExtResource("4_57s8d")
+
+[node name="SkyNight" type="Sprite2D" parent="Node2D" unique_id=891733591]
+position = Vector2(636, 370)
+texture = ExtResource("1_necua")
+
+[node name="Sun" type="Sprite2D" parent="Node2D" unique_id=694606522]
+position = Vector2(550.00006, 136.00002)
+scale = Vector2(0.12662499, 0.12662499)
+texture = ExtResource("5_0ulxi")
+
+[node name="Moon" type="Sprite2D" parent="Node2D" unique_id=571731985]
+position = Vector2(731, 131)
+scale = Vector2(0.085499935, 0.085499935)
+texture = ExtResource("3_b2dtn")
+
+[node name="MoonShine" type="Sprite2D" parent="Node2D" unique_id=989453014]
+position = Vector2(734, 128.00002)
+scale = Vector2(0.15999877, 0.15999877)
+texture = ExtResource("6_b2dtn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=1214676399]
+root_node = NodePath("../Moon")
+libraries/ = SubResource("AnimationLibrary_nkrmi")
+script = ExtResource("8_8q7ek")
+
+[node name="Mountains" type="Sprite2D" parent="." unique_id=797298816]
+position = Vector2(594, 371)
+scale = Vector2(0.66759264, 0.6675926)
+texture = ExtResource("6_8q7ek")
+
+[node name="Mountains2" type="Sprite2D" parent="." unique_id=2113682445]
+position = Vector2(594, 371)
+scale = Vector2(0.66759264, 0.6675926)
+texture = ExtResource("8_57s8d")

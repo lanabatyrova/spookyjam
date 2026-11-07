@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx1hm5rittoia"
+path="res://.godot/imported/Darkening Developments.mp3-c6f46d02f01264510855039d834ef144.mp3str"
+
+[deps]
+
+source_file="res://audio/Music/Darkening Developments.mp3"
+dest_files=["res://.godot/imported/Darkening Developments.mp3-c6f46d02f01264510855039d834ef144.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,28 @@
 [gd_scene format=3 uid="uid://cj7jwm254mvt"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://3jtwgiqcyn0t" path="res://sprites/Val/Val_Talking.png" id="2_o16ts"]
+[ext_resource type="Texture2D" uid="uid://cmteia3gcwqhu" path="res://sprites/Val/Val_Default_1.png" id="2_8xmyu"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_tgasl"]
+[ext_resource type="Texture2D" uid="uid://doyitwg6jwpa" path="res://sprites/Val/Val_Default_Blinking.png" id="4_tgasl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_8xmyu")
+}, {
+"duration": 0.5,
+"texture": ExtResource("4_tgasl")
+}],
+"loop": 1,
+"name": &"Val Blinking",
+"speed": 2.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_8xmyu"]
 length = 0.001
@@ -45,15 +66,19 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=2138059210]
-texture = ExtResource("2_o16ts")
-hframes = 2
+texture = ExtResource("2_8xmyu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2133353532]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Val Blinking"
+autoplay = "Val Blinking"
 
 [node name="Animated" type="Node2D" parent="." unique_id=1129710982]
 visible = false
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=953464565]
-texture = ExtResource("2_o16ts")
-hframes = 2
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=995275478]
+sprite_frames = ExtResource("3_tgasl")
+animation = &"Val Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=883137409]
 libraries/ = SubResource("AnimationLibrary_gk201")

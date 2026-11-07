@@ -37,7 +37,7 @@
 },
 "Barb Ripped Dress": {
 "export_overrides": {
-"image": "\"res://assets/barb_ripped_dress.png\""
+"image": "\"res://assets/Props/barb_ripped_dress.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 200),
@@ -89,6 +89,15 @@
 "scale": 1.0,
 "scene": ""
 },
+"Shakespeare": {
+"export_overrides": {
+"image": "\"res://assets/Pickup Items/shakespeare.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.45,
+"scene": ""
+},
 "Silver": {
 "export_overrides": {
 "image": "\"res://assets/Pickup Items/nugget.png\""
@@ -96,6 +105,15 @@
 "mirror": false,
 "offset": Vector2(0, -40),
 "scale": 0.3,
+"scene": ""
+},
+"Silver Lake Plaque": {
+"export_overrides": {
+"image": "\"res://assets/Locations/Temp/Silver Lake Plaque.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
 "scene": ""
 },
 "Strike Ball": {

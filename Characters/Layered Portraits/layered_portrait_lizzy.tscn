@@ -1,8 +1,40 @@
 [gd_scene format=3 uid="uid://blml2yv0y2bm1"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://rbdctx6mm7gp" path="res://sprites/Lizzy/Lizzy_1.png" id="2_wbbvf"]
-[ext_resource type="Texture2D" uid="uid://dd8ubr8p8styf" path="res://sprites/Lizzy/Lizzy_Talking.png" id="3_3iq05"]
+[ext_resource type="Texture2D" uid="uid://b0s245fqb1fdh" path="res://sprites/Lizzy/Lizzy_Default.png" id="2_wbbvf"]
+[ext_resource type="Texture2D" uid="uid://d1boxu1o8d3t2" path="res://sprites/Lizzy/Lizzy_Default_Blinking.png" id="3_3iq05"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_wbbvf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_wbbvf")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_3iq05")
+}],
+"loop": 1,
+"name": &"Lizzy Blinking",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_5aubw"]
+resource_name = "Blinking"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Default:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 2.9666667, 3.1333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0]
+}
 
 [sub_resource type="Animation" id="Animation_7hykl"]
 resource_name = "Lizzy_Talking"
@@ -36,9 +68,22 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 1]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Default:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5aubw"]
 _data = {
+&"Blinking": SubResource("Animation_5aubw"),
 &"Lizzy_Talking": SubResource("Animation_7hykl"),
 &"RESET": SubResource("Animation_vgers")
 }
@@ -49,11 +94,17 @@ script = ExtResource("1_uubi5")
 [node name="Layer1" type="Sprite2D" parent="." unique_id=1894009300]
 texture = ExtResource("2_wbbvf")
 
-[node name="Animated" type="Node2D" parent="." unique_id=900211482]
+[node name="Default" type="AnimatedSprite2D" parent="." unique_id=156494236]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Lizzy Blinking"
+autoplay = "Lizzy Blinking"
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=1295762100]
-texture = ExtResource("3_3iq05")
-hframes = 2
+[node name="Animated" type="Node2D" parent="." unique_id=900211482]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1612452546]
+sprite_frames = ExtResource("3_wbbvf")
+animation = &"Lizzy Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=243867188]
 libraries/ = SubResource("AnimationLibrary_5aubw")

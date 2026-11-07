@@ -1,32 +1,56 @@
 [background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
 join Lizzy center
-Lizzy: Alright, time to stop this thing once and for all.
+VO: Alright, time to stop this thing once and for all.
 VO: I hope i'm not too late.
-Lizzy: Huh. What's this?
-Lizzy: An annoted Shakespeare??
+VO: Huh. What's this?
+VO: The Complete works of shakespeare?
+VO: ...
+VO: Wow, this this is heavily annotated.
+VO: Not a casual fan.
 join "Lady MacDeath" left [animation="Fade In" length="3.0" wait="true"]
 update Lizzy right [animation="Bounce" wait="true"]
 "Lady MacDeath": Elizabeth Springs, how wonderful for you to make an appearance-
-Lizzy: There you are. Its time to put an end to your time loop plot! Im sick of doing the same math exam over and over again!
-"Lady MacDeath": Time.. loop? What on earth are you speaking of child?
-Lizzy: Your plot to ruin me. The time loop. I came here to foil your plan.
+"Lady MacDeath": Wait a fortnight.
+"Lady MacDeath": That's my complete works of shakespeare book you've got clutched in your wretched teenage meddling hands!
+"Lady MacDeath": It was you who stole it from my private chambers!
+Lizzy: What?
+Lizzy: I just found it on the ground-
+"Lady MacDeath": I will not let your vile lies poison my ears!
+Lizzy: Whatever. I didn't come here to talk about this book.
+Lizzy: It's time to put an end to your time loop plot! Im sick of doing the same math exam over and over again!
+"Lady MacDeath": Time.. loop?
+"Lady MacDeath":  What in the hell are you speaking of child?
+Lizzy: Your plot to ruin me.
+...
+Lizzy: The time loop.
+"Lady MacDeath": I still don't know what that is.
+Lizzy:  I came here to foil your plan.
 "Lady MacDeath": Ohohoho… My plan is far from foiled furry foe, it has just begun!!
-"Lady MacDeath": Have at ye
+"Lady MacDeath": By the power of this great sword, I banish you to bitter death!
+"Lady MacDeath": Have at ye.
 update "Lady MacDeath" center [animation="Bounce" length="1.0" wait="true"]
 update Lizzy rightmost [animation="Shake X" wait="true"]
 Lizzy: You'll never win!
 "Lady MacDeath": Huzzah!
+"Lady MacDeath": Winning is in the eye of the beholder.
+Lizzy: What.
+VO: okay, I'm confused.
+VO: she's super determined to kill me with this sword-
 update "Lady MacDeath" right [animation="Tada" wait="true"]
 update Lizzy [animation="Shake X" length="1.0" wait="true" repeat="2"]
 Lizzy: Ough.....
 join Dagger left [animation="Slide From Left" wait="true" mirrored="true"]
 Dagger: Lizzy!!
-"Lady MacDeath": VICTORY!!! Now you will watch as your friends and family are devoured by zombies. Mwahhhahahahhhaha~
+"Lady MacDeath": VICTORY!!!
+"Lady MacDeath":  Now you will watch as your friends and family are devoured by zombies.
+"Lady MacDeath":  Mwahhhahahahhhaha~
 leave "Lady MacDeath" [animation="Fade Out" wait="true"]
 leave Dagger [animation="Fade Out" wait="true"]
 Lizzy: AhhHhHhhh
 leave Lizzy [animation="Fade Out Down" length="3.0" wait="true"]
+[background arg="#000000ff" fade="0.0"]
+[background fade="0.0"]
 do GameState.learn_fact("d_zombie_plan")
 do GameState.learn_fact("m_suspicion")
 do GameState.next_day()
-jump intro_3/
+jump rewind/

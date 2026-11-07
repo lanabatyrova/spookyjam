@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://ddhomlh25f71a"]
+
+[ext_resource type="Texture2D" uid="uid://c21ohfrgw3h58" path="res://assets/BG Elements/Sky Day.png" id="1_uyuav"]
+[ext_resource type="Texture2D" uid="uid://pik4uv6cuwdo" path="res://assets/BG Elements/Ground Grass.png" id="1_wjf7m"]
+[ext_resource type="Texture2D" uid="uid://dm6tdv46my7x6" path="res://assets/BG Elements/tree line.png" id="2_6w3ek"]
+[ext_resource type="Texture2D" uid="uid://8stm3eeelc6j" path="res://assets/Road/Straight Up.png" id="2_hqqt1"]
+[ext_resource type="Texture2D" uid="uid://ceypbuv6wmd4" path="res://assets/BG Elements/House side.png" id="3_m7hpt"]
+[ext_resource type="Texture2D" uid="uid://cpld408q673s6" path="res://assets/BG Elements/House front.png" id="4_lh2bb"]
+[ext_resource type="Texture2D" uid="uid://bvxc6ff46tot4" path="res://assets/Road/Side Walk Up.png" id="6_6w3ek"]
+[ext_resource type="Texture2D" uid="uid://emcksiqbti0n" path="res://assets/Road/Across Further.png" id="6_n1pjy"]
+[ext_resource type="Texture2D" uid="uid://cgvg6kvgss84d" path="res://assets/Road/Sidewalk Across.png" id="7_hfc8n"]
+
+[node name="Node2D" type="Node2D" unique_id=1985212312]
+
+[node name="Day" type="Control" parent="." unique_id=153987810]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sky" type="Control" parent="Day" unique_id=510683348]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SkyDay" type="Sprite2D" parent="Day/Sky" unique_id=2141198030]
+position = Vector2(570, 280)
+texture = ExtResource("1_uyuav")
+
+[node name="Trees" type="Sprite2D" parent="Day/Sky" unique_id=1105334369]
+position = Vector2(585, 308.99997)
+scale = Vector2(0.6158901, 0.44489932)
+texture = ExtResource("2_6w3ek")
+
+[node name="Ground" type="Control" parent="Day" unique_id=1152195007]
+anchors_preset = 0
+offset_left = 543.0
+offset_top = 406.0
+offset_right = 583.0
+offset_bottom = 446.0
+
+[node name="GroundGrass" type="Sprite2D" parent="Day/Ground" unique_id=244729599]
+position = Vector2(-2, -12)
+texture = ExtResource("1_wjf7m")
+
+[node name="Road" type="Control" parent="Day" unique_id=858465188]
+anchors_preset = 0
+offset_left = 543.0
+offset_top = 406.0
+offset_right = 583.0
+offset_bottom = 446.0
+
+[node name="StraightUp" type="Sprite2D" parent="Day/Road" unique_id=637497706]
+position = Vector2(6, -11.5625)
+scale = Vector2(0.53702986, 0.65222156)
+texture = ExtResource("2_hqqt1")
+
+[node name="Sidewalk2" type="Sprite2D" parent="Day/Road" unique_id=1491091666]
+position = Vector2(17.999992, -11.999992)
+scale = Vector2(0.6674938, 0.8035044)
+texture = ExtResource("6_6w3ek")
+flip_h = true
+
+[node name="Sidewalk" type="Sprite2D" parent="Day/Road" unique_id=31629801]
+position = Vector2(1, -14.000011)
+scale = Vector2(0.6508995, 0.83322895)
+texture = ExtResource("6_6w3ek")
+
+[node name="AcrossFurther" type="Sprite2D" parent="Day/Road" unique_id=1417035500]
+position = Vector2(51.00006, -3)
+scale = Vector2(0.92866004, 0.6339174)
+texture = ExtResource("6_n1pjy")
+
+[node name="SidewalkAcross3" type="Sprite2D" parent="Day/Road" unique_id=1118232999]
+position = Vector2(-417, -40.03183)
+scale = Vector2(0.4932803, 0.09503927)
+texture = ExtResource("7_hfc8n")
+
+[node name="SidewalkAcross4" type="Sprite2D" parent="Day/Road" unique_id=949337094]
+position = Vector2(427, -42)
+scale = Vector2(0.4932803, 0.09503927)
+texture = ExtResource("7_hfc8n")
+
+[node name="SidewalkAcross" type="Sprite2D" parent="Day/Road" unique_id=772686079]
+position = Vector2(-582, -39.000004)
+scale = Vector2(0.6780397, 0.19743438)
+texture = ExtResource("7_hfc8n")
+
+[node name="SidewalkAcross2" type="Sprite2D" parent="Day/Road" unique_id=366073646]
+position = Vector2(615, -31.000004)
+scale = Vector2(0.6780397, 0.19743438)
+texture = ExtResource("7_hfc8n")
+
+[node name="House" type="Control" parent="Day" unique_id=175480375]
+anchors_preset = 0
+offset_left = -30.0
+offset_top = -138.0
+offset_right = 10.0
+offset_bottom = -98.0
+scale = Vector2(1.4000002, 1.28)
+
+[node name="HouseSide" type="Sprite2D" parent="Day/House" unique_id=827719991]
+position = Vector2(-62.75, 421.25)
+scale = Vector2(0.28125, 0.28125)
+texture = ExtResource("3_m7hpt")
+
+[node name="HouseFront" type="Sprite2D" parent="Day/House" unique_id=948908913]
+position = Vector2(119, 416.99997)
+rotation = -0.053082183
+scale = Vector2(0.09192186, 0.28550005)
+texture = ExtResource("4_lh2bb")

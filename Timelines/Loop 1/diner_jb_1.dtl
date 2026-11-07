@@ -1,8 +1,8 @@
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
-join Lizzy (Talking) righter [animation="Fade In"]
-join Barb (Talking) leftmost [animation="Fade In" length="1.0"]
-join Juniper (Talking) left [animation="Fade In" length="1.0" z_index="-1"]
+join Lizzy (Close Up) righter [animation="Fade In"]
+join Barb (Close Up) leftmost [animation="Fade In" length="1.0"]
+join Juniper (Close Up) left [animation="Fade In" length="1.0" z_index="-1"]
 
 Barb: You’re out of jam.
 Lizzy: Hello to you too. Also I told you to stop taking those!

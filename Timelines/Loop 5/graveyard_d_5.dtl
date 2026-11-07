@@ -1,6 +1,6 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Talking) right
-join Dagger (Talking) left
+join Lizzy (Close Up) right
+join Dagger (Close Up) left
 
 Dagger: dearest Elizabeth...
 Lizzy: dagger.
@@ -24,5 +24,6 @@ VO: maybe after this whole thing is sorted out we can have a real conversation.
 VO: not that I want to date him,
 VO: i just hate anything being off limits.
 leave --All-- [animation="Instant Out"]
+[background fade="0.0"]
 
 do GameState.mark_characters_as_spoken(["dagger"])

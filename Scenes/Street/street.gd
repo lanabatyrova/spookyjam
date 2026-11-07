@@ -23,3 +23,11 @@ func update_day(day: int, is_night):
 
 func _on_door_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Diner/Diner.tscn")
+
+
+func _on_to_park_ave_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Park Ave.tscn")
+
+
+func _on_to_city_road_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/City Road Silver Street.tscn")

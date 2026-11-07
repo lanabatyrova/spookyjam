@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://go8ikm6g5665"]
+
+[ext_resource type="Script" uid="uid://c13vf5fjk31gl" path="res://Scenes/Transition Locations/community_center.gd" id="1_2mjmn"]
+[ext_resource type="Texture2D" uid="uid://bfbacw8vvob2r" path="res://assets/Locations/Temp/IMG_6553.jpg" id="1_qtwcm"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="2_2mjmn"]
+
+[node name="Node2D" type="Node2D" unique_id=576763564]
+script = ExtResource("1_2mjmn")
+
+[node name="Img6553" type="Sprite2D" parent="." unique_id=846156009]
+position = Vector2(583, 270)
+scale = Vector2(1.8399999, 1.8399999)
+texture = ExtResource("1_qtwcm")
+
+[node name="Return to School Road" type="TextureButton" parent="." unique_id=862735136]
+offset_left = 3.0000029
+offset_top = 428.0
+offset_right = 2003.0
+offset_bottom = 999.0
+scale = Vector2(0.57945037, 0.39276558)
+texture_hover = ExtResource("2_2mjmn")
+
+[connection signal="pressed" from="Return to School Road" to="." method="_on_return_to_school_road_pressed"]

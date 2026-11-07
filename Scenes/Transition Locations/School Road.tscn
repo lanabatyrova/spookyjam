@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://fdoqhwkbur0k"]
+
+[ext_resource type="Texture2D" uid="uid://c10pwnf7kqhpl" path="res://assets/Locations/Temp/School Ave.png" id="1_jmgqh"]
+[ext_resource type="Script" uid="uid://16vpfcqmjbmc" path="res://Scenes/Transition Locations/school_road.gd" id="1_mm0e7"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="2_mm0e7"]
+[ext_resource type="Texture2D" uid="uid://r26425g4potm" path="res://assets/Locations/Hover Doors/School Ave To School.png" id="3_8x2bt"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="5_8x2bt"]
+[ext_resource type="Texture2D" uid="uid://dphx0tpnc1grx" path="res://assets/Locations/Hover Doors/School Road.png" id="6_cs0y0"]
+
+[node name="Node2D" type="Node2D" unique_id=941974511]
+script = ExtResource("1_mm0e7")
+
+[node name="SchoolAve" type="Sprite2D" parent="." unique_id=1859607517]
+position = Vector2(570, 322)
+scale = Vector2(0.7564834, 0.8144556)
+texture = ExtResource("1_jmgqh")
+
+[node name="Community Center Enter" type="TextureButton" parent="." unique_id=978549037]
+offset_left = 306.00003
+offset_top = 219.00002
+offset_right = 546.0
+offset_bottom = 669.0
+scale = Vector2(0.40000117, 0.2400006)
+texture_hover = ExtResource("2_mm0e7")
+
+[node name="To School" type="TextureButton" parent="." unique_id=1728754544]
+offset_left = 856.0
+offset_top = 316.0
+offset_right = 2856.0
+offset_bottom = 771.0
+rotation = -0.25905812
+scale = Vector2(0.120001204, 0.2400012)
+texture_hover = ExtResource("3_8x2bt")
+
+[node name="To Silver Street" type="TextureButton" parent="." unique_id=1042117146]
+offset_left = 372.0
+offset_top = 391.00003
+offset_right = 2372.0
+offset_bottom = 962.0
+rotation = 1.5479838
+scale = Vector2(0.13200346, 0.32005143)
+texture_hover = ExtResource("5_8x2bt")
+
+[node name="SchoolRoad" type="Sprite2D" parent="." unique_id=357480066]
+position = Vector2(670, 257.00003)
+scale = Vector2(0.17591043, 0.17591047)
+texture = ExtResource("6_cs0y0")
+
+[connection signal="pressed" from="Community Center Enter" to="." method="_on_community_center_enter_pressed"]
+[connection signal="pressed" from="To School" to="." method="_on_to_school_pressed"]
+[connection signal="pressed" from="To Silver Street" to="." method="_on_to_silver_street_pressed"]

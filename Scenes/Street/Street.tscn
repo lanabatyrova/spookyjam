@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://lac2pv4fu30" path="res://assets/Locations/Hover Doors/StreetDoor.png" id="4_exxs6"]
 [ext_resource type="Script" uid="uid://c5063scdyesue" path="res://Scenes/Street/juniper_street.gd" id="4_myi71"]
 [ext_resource type="BitMap" uid="uid://dp7wbt46ne45d" path="res://assets/People/Juniper_1_bitmap.png" id="5_myi71"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="9_7bs4h"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="10_xgmgp"]
 
 [node name="Street" type="Node2D" unique_id=316988252]
 script = ExtResource("1_q35gy")
@@ -46,5 +48,25 @@ texture_hover = ExtResource("4_d4b3n")
 texture_click_mask = ExtResource("5_myi71")
 script = ExtResource("4_myi71")
 
+[node name="To Park Ave" type="TextureButton" parent="." unique_id=782886082]
+offset_left = 988.0
+offset_top = 269.0
+offset_right = 2988.0002
+offset_bottom = 1823.0
+rotation = 3.2057815
+scale = Vector2(-0.09250162, -0.06893265)
+texture_hover = ExtResource("9_7bs4h")
+
+[node name="To City Road" type="TextureButton" parent="." unique_id=2071482932]
+offset_left = 166.00002
+offset_top = 338.99997
+offset_right = 2166.0
+offset_bottom = 910.0
+rotation = 1.5554097
+scale = Vector2(0.1218678, 0.2861553)
+texture_hover = ExtResource("10_xgmgp")
+
 [connection signal="pressed" from="Door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
+[connection signal="pressed" from="To Park Ave" to="." method="_on_to_park_ave_pressed"]
+[connection signal="pressed" from="To City Road" to="." method="_on_to_city_road_pressed"]

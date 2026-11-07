@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cma3l10yvy1jg" path="res://assets/People/Barb_1_Hover.png" id="9_3ntpo"]
 [ext_resource type="Script" uid="uid://d27dgr26uvnlj" path="res://Scenes/Diner/noah_diner.gd" id="10_pw08d"]
 [ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="11_nbcyd"]
-[ext_resource type="Texture2D" uid="uid://cohxwdm51a3i4" path="res://sprites/Noah_Phone_Barb.png" id="11_pw08d"]
+[ext_resource type="Texture2D" uid="uid://cohxwdm51a3i4" path="res://sprites/Noah/Noah_Phone_Barb.png" id="11_pw08d"]
 
 [node name="Diner" type="Node2D" unique_id=1757622433]
 script = ExtResource("1_1iy0u")

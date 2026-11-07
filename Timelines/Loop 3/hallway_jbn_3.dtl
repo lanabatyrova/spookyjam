@@ -1,6 +1,7 @@
-join Juniper lefter
-join Barb midleft
-join Lizzy midright
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Juniper (Close Up) lefter
+join Barb (Close Up) midleft
+join Lizzy (Close Up) midright
 Juniper: Hey, Lizzy, want to head to the exam together?
 Lizzy: Um, I’m okay, actually.
 Lizzy: I just have to do something first.

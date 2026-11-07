@@ -40,7 +40,7 @@ Lizzy: I thought it was a bit much then too.
 Barb: Are you high or something?
 Lizzy: Honestly, I have no idea.
 Lizzy: Maybe.
-join Noah midright [animation="Slide From Right" length="1.0" wait="true"]
+join Noah (Animated) midright [animation="Slide From Right" length="1.0" wait="true"]
 Noah: Whoa, you’re high? That’s badass.
 Barb: Of course you’d be interested in doing recreational drugs.
 Barb: Your brain is already scrambled eggs.

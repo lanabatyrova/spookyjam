@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bjt7hibbrp6pw"]
+
+[ext_resource type="Texture2D" uid="uid://dnw5c1mxddy0x" path="res://assets/Locations/Temp/Park Ave.PNG" id="1_mg2mf"]
+[ext_resource type="Script" uid="uid://cxphkd60srut8" path="res://Scenes/Transition Locations/park_ave.gd" id="1_x22wb"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="2_tf0af"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="3_vcnlk"]
+[ext_resource type="Texture2D" uid="uid://cc5hd7sx0ovsf" path="res://assets/Locations/Hover Doors/Graveyard Sign.png" id="4_rbp3f"]
+[ext_resource type="Texture2D" uid="uid://crmk7uxycrhb7" path="res://assets/Locations/Hover Doors/Park Ave and Silver Street.png" id="5_24nu0"]
+
+[node name="Node2D" type="Node2D" unique_id=891295357]
+script = ExtResource("1_x22wb")
+
+[node name="ParkAve" type="Sprite2D" parent="." unique_id=284116664]
+position = Vector2(594, 331)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("1_mg2mf")
+
+[node name="To Graveyard Way" type="TextureButton" parent="." unique_id=985672737]
+offset_left = 216.0
+offset_top = 344.00003
+offset_right = 2216.0
+offset_bottom = 915.0
+scale = Vector2(0.16898811, -0.0976263)
+texture_hover = ExtResource("2_tf0af")
+
+[node name="To Silver Street" type="TextureButton" parent="." unique_id=1396591311]
+offset_left = -11.999999
+offset_top = 490.0
+offset_right = 1988.0
+offset_bottom = 1061.0
+scale = Vector2(0.60146415, 0.28000033)
+texture_hover = ExtResource("2_tf0af")
+
+[node name="To School Road" type="TextureButton" parent="." unique_id=171172686]
+offset_left = 870.0
+offset_top = 276.0
+offset_right = 2870.0
+offset_bottom = 1830.0
+scale = Vector2(0.14352581, 0.051492885)
+texture_hover = ExtResource("3_vcnlk")
+
+[node name="GraveyardSign" type="Sprite2D" parent="." unique_id=1896157667]
+position = Vector2(253.00003, 283)
+scale = Vector2(0.09506439, 0.09506437)
+texture = ExtResource("4_rbp3f")
+
+[node name="ParkAveAndSilverStreet" type="Sprite2D" parent="." unique_id=1884128794]
+position = Vector2(596.00006, 246.99998)
+scale = Vector2(0.117239214, 0.11723921)
+texture = ExtResource("5_24nu0")
+
+[connection signal="pressed" from="To Graveyard Way" to="." method="_on_to_graveyard_way_pressed"]
+[connection signal="pressed" from="To Silver Street" to="." method="_on_to_silver_street_pressed"]
+[connection signal="pressed" from="To School Road" to="." method="_on_to_school_road_pressed"]

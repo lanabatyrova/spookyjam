@@ -19,3 +19,7 @@ func update_day(day: int):
 	dagger.visible = day in [1,3,4,5,6] && GameState.midpoint_reached
 	shakespeare.visible = day in [2] && GameState.midpoint_reached && !GameState.inventory["pocket_shakespeare"]
 	evening.visible = GameState.midpoint_reached
+
+
+func _on_to_graveyard_way_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Graveyard Way.tscn")

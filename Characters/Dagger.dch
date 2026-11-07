@@ -31,17 +31,17 @@
 "image": ""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(0, 290),
+"scale": 1.35,
 "scene": "res://Characters/Layered Portraits/layered_portrait_dagger.tscn"
 },
 "Phone": {
 "export_overrides": {
-"image": "\"res://sprites/Dagger_Phone.png\""
+"image": "\"res://sprites/Dagger/Dagger_Phone.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 0.85,
+"offset": Vector2(0, -70),
+"scale": 0.65,
 "scene": ""
 }
 },

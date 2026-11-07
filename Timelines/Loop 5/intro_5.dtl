@@ -1,4 +1,4 @@
-join Lizzy (Talking) center [animation="Fade In" wait="true"]
+join Lizzy (Close Up) center [animation="Fade In" wait="true"]
 VO: Ugh, I’m really starting to hate my alarm sound.
 VO: Dagger told me some pretty heavy stuff just now...
 VO: I’m not really sure what to do with that information,
@@ -7,7 +7,7 @@ VO: ...
 
 [Cellphone ringing]
 update Lizzy right [move_time="0.5"]
-join Noah left [animation="Bounce In" length="1.0"]
+join Noah (Phone) left [animation="Bounce In" length="1.0"]
 Noah: Lizzy!
 update Noah [animation="Bounce" repeat="3"]
 Noah: Oh my god! The time loop is real!

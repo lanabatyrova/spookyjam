@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bs54u2vsy4wr8"]
+
+[ext_resource type="Texture2D" uid="uid://xlkicme0qq61" path="res://assets/Locations/Temp/Graveyard Way.png" id="1_ab2lm"]
+[ext_resource type="Script" uid="uid://dhivdxmoyx76e" path="res://Scenes/Transition Locations/graveyard_way.gd" id="1_rqi2k"]
+[ext_resource type="Texture2D" uid="uid://b0gcegqadvxlv" path="res://assets/Locations/Hover Doors/Graveyard Way and Silver Street.png" id="2_0p6pk"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="2_engqy"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_rqi2k"]
+
+[node name="Node2D" type="Node2D" unique_id=1014007777]
+script = ExtResource("1_rqi2k")
+
+[node name="GraveyardWay" type="Sprite2D" parent="." unique_id=347998455]
+position = Vector2(571, 314)
+scale = Vector2(0.66944444, 0.66944444)
+texture = ExtResource("1_ab2lm")
+
+[node name="To Mine Street" type="TextureButton" parent="." unique_id=418008045]
+offset_left = 846.99994
+offset_top = 392.0
+offset_right = 2847.0
+offset_bottom = 1946.0
+rotation = 0.109455235
+scale = Vector2(0.13133338, 0.108016096)
+texture_hover = ExtResource("2_engqy")
+
+[node name="GraveyardWayAndSilverStreet" type="Sprite2D" parent="." unique_id=175419574]
+position = Vector2(1073, 375.00003)
+scale = Vector2(0.27280805, 0.3598603)
+texture = ExtResource("2_0p6pk")
+
+[node name="Graveyard Door" type="TextureButton" parent="." unique_id=1782479834]
+offset_left = 598.00006
+offset_top = 450.00003
+offset_right = 2598.0
+offset_bottom = 2004.0
+rotation = -3.1871614
+scale = Vector2(-0.12314434, 0.11724889)
+texture_hover = ExtResource("4_rqi2k")
+
+[node name="Silver Street" type="TextureButton" parent="." unique_id=1886580780]
+offset_left = -144.0
+offset_top = 558.0
+offset_right = 1856.0
+offset_bottom = 1129.0
+scale = Vector2(0.601984, 0.15086551)
+texture_hover = ExtResource("4_rqi2k")
+
+[connection signal="pressed" from="To Mine Street" to="." method="_on_to_mine_street_pressed"]
+[connection signal="pressed" from="Graveyard Door" to="." method="_on_graveyard_door_pressed"]
+[connection signal="pressed" from="Silver Street" to="." method="_on_silver_street_pressed"]

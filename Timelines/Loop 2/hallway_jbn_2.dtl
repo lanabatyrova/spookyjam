@@ -1,14 +1,11 @@
-[background arg="res://assets/Locations/hallway_day.png" fade="0.0"]
-join Juniper left
-join Barb center
-join Lizzy right
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Juniper (Close Up) left
+join Barb (Close Up) lefter [z_index="1"]
+join Lizzy (Close Up) right
 Juniper: Hey, Lizzy, want to head to the exam together?
 
 
 Lizzy: Sorry, I gotta take care of something in the library first.
-Noah: what are you doing in the library? Something supernatural related?
-Lizzy: kinda.
-Lizzy: It’s actually more personal.
 
 Barb: Then why are you telling? Do we look like your PDA?
 Lizzy: Public Display of Affection?
@@ -25,3 +22,6 @@ Juniper: Just make sure you get back in time. You don’t want to miss it.
 
 
 do GameState.mark_characters_as_spoken(["barb", "noah", "juniper"])
+leave --All-- [animation="Instant Out"]
+[background fade="0.0"]
+[end_timeline]

@@ -1,10 +1,10 @@
 [wait time="0.5"]
 [background arg="res://assets/Locations/street night new.png" fade="1.0"]
-join Lizzy right [animation="Instant In"]
+join Lizzy (Animated) right [animation="Instant In"]
 VO: Well, that could've been better.
 [wait time="0.4"]
 audio "res://audio/Character Sounds/floraphonic-spooky-movement-violin-6-186910.mp3"
-join Dagger left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
+join Dagger (Animated) left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
 [wait time="0.5"]
 Lizzy: Dagger!
 Lizzy: What are you doing here?

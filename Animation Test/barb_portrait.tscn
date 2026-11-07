@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ce6t8p5c71ptv"]
 
 [ext_resource type="Script" uid="uid://djbg8sc0q67ow" path="res://addons/dialogic/Modules/Character/dialogic_portrait.gd" id="1_bu02r"]
-[ext_resource type="Texture2D" uid="uid://cflggl7cmedhg" path="res://sprites/Barb_1.png" id="2_mosce"]
+[ext_resource type="Texture2D" uid="uid://cflggl7cmedhg" path="res://sprites/OLD/Barb_1.png" id="2_mosce"]
 
 [node name="DialogicPortrait" type="Node" unique_id=388540671]
 script = ExtResource("1_bu02r")

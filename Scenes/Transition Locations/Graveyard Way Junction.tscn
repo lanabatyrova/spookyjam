@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://vbxkktufkswg"]
+
+[ext_resource type="Texture2D" uid="uid://ddmryr8kx3hym" path="res://assets/Locations/Temp/Graveyard Way to Mine Street and City Road.png" id="1_h7m7u"]
+[ext_resource type="Script" uid="uid://cyrr4taechjl0" path="res://Scenes/Transition Locations/graveyard_way_junction.gd" id="1_i3qat"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="2_i3qat"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_u2sd0"]
+
+[node name="Node2D" type="Node2D" unique_id=274037415]
+script = ExtResource("1_i3qat")
+
+[node name="GraveyardWayToMineStreetAndCityRoad" type="Sprite2D" parent="." unique_id=1873262135]
+position = Vector2(767, 361)
+scale = Vector2(1.161574, 1.161574)
+texture = ExtResource("1_h7m7u")
+
+[node name="Mine Street" type="TextureButton" parent="." unique_id=2009761370]
+offset_left = 478.0
+offset_top = 358.0
+offset_right = 2478.0
+offset_bottom = 1912.0
+rotation = -3.2125645
+scale = Vector2(0.15663022, -0.041074324)
+texture_normal = ExtResource("2_i3qat")
+
+[node name="City Road" type="TextureButton" parent="." unique_id=249541770]
+offset_left = 849.99994
+offset_top = 360.0
+offset_right = 2850.0
+offset_bottom = 1914.0
+rotation = 3.2036192
+scale = Vector2(-0.12222128, -0.044895735)
+texture_normal = ExtResource("2_i3qat")
+
+[node name="Graveyard Way" type="TextureButton" parent="." unique_id=874095630]
+offset_left = 1.0000004
+offset_top = 570.0
+offset_right = 2001.0
+offset_bottom = 1141.0
+scale = Vector2(0.57505155, 0.13478214)
+texture_normal = ExtResource("3_u2sd0")
+
+[connection signal="pressed" from="Mine Street" to="." method="_on_mine_street_pressed"]
+[connection signal="pressed" from="City Road" to="." method="_on_city_road_pressed"]
+[connection signal="pressed" from="Graveyard Way" to="." method="_on_graveyard_way_pressed"]

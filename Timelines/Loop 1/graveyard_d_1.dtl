@@ -1,6 +1,7 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.5"]
-join Lizzy (Talking) right [animation="Fade In"]
-join Dagger (Talking) left [animation="Fade In" mirrored="true"]
+audio music "res://audio/Music/Love Song.mp3" [volume="-15.0" loop="true"]
+join Lizzy (Close Up) right [animation="Fade In"]
+join Dagger (Close Up) left [animation="Fade In" mirrored="true"]
 Lizzy: Dagger! You’re here.
 Lizzy: Actually, I don’t know why I’m surprised.
 Dagger: Lizzy… a serendipitous entrance...
@@ -18,3 +19,4 @@ Dagger: We are as... You see, vampires and werewolves go together as well as Nap
 Lizzy: Please stop reminding me how old you are.
 VO: This is getting me no where.
 leave --All-- [animation="Fade Out Down"]
+[background fade="0.0"]

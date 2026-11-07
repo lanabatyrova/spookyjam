@@ -1,5 +1,5 @@
-[background arg="#000000ff" fade="5.0" wait="true"]
+[background scene="res://Scenes/Midpoint_Transition.tscn" fade="0.6"]
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
-[Later that day]
-[background fade="5.0" wait="true"]
+[wait time="7.0"]
+[background fade="0.6" wait="true"]

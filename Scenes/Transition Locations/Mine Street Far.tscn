@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://d013glox86k2u"]
+
+[ext_resource type="Script" uid="uid://bub8vtl3q8rvl" path="res://Scenes/Transition Locations/mine_street_far.gd" id="1_7xdx8"]
+[ext_resource type="Texture2D" uid="uid://2yxdvmjes653" path="res://assets/Locations/Temp/Mine Way.png" id="1_e22p8"]
+[ext_resource type="Texture2D" uid="uid://b3wofti271t6q" path="res://assets/Locations/Hover Doors/Mine Sign.png" id="2_gih1m"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="2_kg7pl"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="2_xt0wj"]
+
+[node name="Node2D" type="Node2D" unique_id=1869647786]
+script = ExtResource("1_7xdx8")
+
+[node name="MineWay" type="Sprite2D" parent="." unique_id=194918291]
+position = Vector2(567.00006, 335.00003)
+scale = Vector2(0.6319444, 0.6319444)
+texture = ExtResource("1_e22p8")
+flip_h = true
+
+[node name="MineSign" type="Sprite2D" parent="." unique_id=1077574602]
+position = Vector2(299.99997, 317)
+scale = Vector2(0.16000128, 0.16000126)
+texture = ExtResource("2_gih1m")
+
+[node name="To Lake" type="TextureButton" parent="." unique_id=1572173839]
+offset_left = 665.99994
+offset_top = 364.0
+offset_right = 2666.0
+offset_bottom = 1918.0
+rotation = -1.6137528
+scale = Vector2(0.02307151, -0.13687046)
+texture_hover = ExtResource("2_kg7pl")
+
+[node name="To Mine Street" type="TextureButton" parent="." unique_id=678446751]
+offset_left = 1.0
+offset_top = 556.0
+offset_right = 2001.0
+offset_bottom = 1127.0
+scale = Vector2(0.5753719, 0.16637696)
+texture_hover = ExtResource("2_xt0wj")
+
+[node name="To Mine" type="TextureButton" parent="." unique_id=1795402419]
+offset_left = 290.0
+offset_top = 366.00003
+offset_right = 2290.0
+offset_bottom = 1920.0
+rotation = -4.6617885
+scale = Vector2(0.1073174, 0.342588)
+texture_hover = ExtResource("2_xt0wj")
+
+[connection signal="pressed" from="To Lake" to="." method="_on_to_lake_pressed"]
+[connection signal="pressed" from="To Mine Street" to="." method="_on_to_mine_street_pressed"]
+[connection signal="pressed" from="To Mine" to="." method="_on_to_mine_pressed"]

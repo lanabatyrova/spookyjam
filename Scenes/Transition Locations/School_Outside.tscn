@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://i3svnfo7kiwd"]
+
+[ext_resource type="Script" uid="uid://m4wmmvjp6tj6" path="res://Scenes/Transition Locations/School_Outside.gd" id="1_bhnqm"]
+[ext_resource type="Texture2D" uid="uid://ndtyu08pv1kw" path="res://assets/Locations/school outside.png" id="1_f8rjd"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="2_bhnqm"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_ybx8d"]
+
+[node name="Node2D" type="Node2D" unique_id=1720091678]
+script = ExtResource("1_bhnqm")
+
+[node name="SchoolOutside" type="Sprite2D" parent="." unique_id=642406941]
+position = Vector2(643, 278)
+scale = Vector2(0.6600151, 0.66001505)
+texture = ExtResource("1_f8rjd")
+
+[node name="DoorInside" type="TextureButton" parent="." unique_id=1697335625]
+offset_left = 699.0
+offset_top = 316.0
+offset_right = 939.0
+offset_bottom = 766.0
+scale = Vector2(0.5490909, 0.20999998)
+texture_hover = ExtResource("2_bhnqm")
+
+[node name="School Road Exit" type="TextureButton" parent="." unique_id=446106354]
+offset_left = 1211.0
+offset_top = 123.99998
+offset_right = 3211.0
+offset_bottom = 1678.0
+rotation = -4.0833855
+scale = Vector2(0.4588563, -0.3402546)
+texture_hover = ExtResource("3_ybx8d")
+
+[connection signal="pressed" from="DoorInside" to="." method="_on_door_inside_pressed"]
+[connection signal="pressed" from="School Road Exit" to="." method="_on_school_road_exit_pressed"]

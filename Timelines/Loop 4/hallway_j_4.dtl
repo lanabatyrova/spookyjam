@@ -1,16 +1,21 @@
-join Juniper (Talking) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Juniper (Close Up) left
+join Lizzy (Close Up) right
 Juniper: Hey Lizzy, want to head to the exam together?
 Juniper: Barb and Noah are kinda no shows... Hopefully they don’t miss it.
-join Lizzy (Talking) right
 Lizzy: they probably just went there early to get ahead start.
 Juniper: Yeah.
-Lizzy: ...
+...
 Lizzy: so this might sound crazy—
-Juniper: Sorry, Lizzy, I’m going to go into the exam. I really don’t want to be late. I’ll see you in there.
+Juniper: Sorry, Lizzy, we're going to be late for the exam,
+update Juniper [mirrored="true"]
+Juniper: I'll catch up with you soon.
 Lizzy: Oh, okay. Uh.
+update Juniper offleft [mirrored="false" move_time="1.4" move_trans="linear"]
+leave Juniper [animation="Slide To Left"]
 Lizzy: I’ll talk to you later.
-Juniper: See ya.
-leave Juniper
 VO: Weird. She’s not normally so...
 VO: Avoidant.
+leave --All--
+[background fade="0.0"]
 do GameState.mark_characters_as_spoken(["juniper"])

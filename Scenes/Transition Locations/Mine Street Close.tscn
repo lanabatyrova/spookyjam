@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ckaxre401t3lx"]
+
+[ext_resource type="Script" uid="uid://b880dpib0pppe" path="res://Scenes/Transition Locations/mine_street_close.gd" id="1_im8ns"]
+[ext_resource type="Texture2D" uid="uid://mcuuvg05cadf" path="res://assets/Locations/Temp/Mine Close.png" id="2_1wccw"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_4nmx1"]
+
+[node name="Node2D" type="Node2D" unique_id=1268636220]
+script = ExtResource("1_im8ns")
+
+[node name="MineClose" type="Sprite2D" parent="." unique_id=1773159717]
+position = Vector2(572, 332)
+scale = Vector2(0.6399994, 0.6399994)
+texture = ExtResource("2_1wccw")
+
+[node name="To Mine Street Far" type="TextureButton" parent="." unique_id=279187876]
+offset_left = 520.0
+offset_top = 332.00003
+offset_right = 2520.0
+offset_bottom = 1886.0
+rotation = -3.1748729
+scale = Vector2(0.10772783, 0.049346276)
+texture_normal = ExtResource("3_4nmx1")
+
+[node name="To City Road" type="TextureButton" parent="." unique_id=215697858]
+offset_left = -20.0
+offset_top = 512.0
+offset_right = 1980.0
+offset_bottom = 1083.0
+scale = Vector2(0.6000001, 0.23999995)
+texture_normal = ExtResource("3_4nmx1")
+
+[connection signal="pressed" from="To Mine Street Far" to="." method="_on_to_mine_street_far_pressed"]
+[connection signal="pressed" from="To City Road" to="." method="_on_to_city_road_pressed"]

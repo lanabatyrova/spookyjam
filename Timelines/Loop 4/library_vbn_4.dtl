@@ -1,18 +1,20 @@
-join Barb (Talking) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Barb (Close Up) left
 Barb: So you’re in on it now.
 Barb: great.
-join Noah (Talking) right [mirrored="true"]
+join Noah (Close Up) right [mirrored="true"]
 Noah: you’re just pissed because Lizzy was paying more attention to you.
 Barb: Not true! Valerie was here too.
 update Barb leftmost [move_time="0.2"]
 update Noah rightmost [move_time="0.2"]
-join Valerie (Talking) left
+join Valerie (Close Up) left
 Valerie: Elizabeth, I see you’ve convinced Noah. Excellent work.
-join Lizzy (Talking) right
+join Lizzy (Close Up) right
 Lizzy: have they been fighting the entire time?
-Valerie: ...
+...
 Valerie: Yes.
 Lizzy: you guys really gotta knock it off.
+update Barb [animation="Tada"]
 Barb: he started it.
 Lizzy: You know I don’t believe that.
 Noah: it’s okay.
@@ -21,5 +23,6 @@ Barb: I’m the one winning the conversation.
 Noah: um, no, I’m pretty sure I’m kinda rocking it--
 Lizzy: I’m just gonna--
 Valerie: probably for the best.
-leave --All-- [animation="Fade Out Down" wait="true"]
+leave --All-- [animation="Instant Out" wait="true"]
+[background fade="0.0"]
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

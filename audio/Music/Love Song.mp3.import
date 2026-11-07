@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biei7lw3xghmd"
+path="res://.godot/imported/Love Song.mp3-5b501b440913daf96eb6e4067ccff387.mp3str"
+
+[deps]
+
+source_file="res://audio/Music/Love Song.mp3"
+dest_files=["res://.godot/imported/Love Song.mp3-5b501b440913daf96eb6e4067ccff387.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

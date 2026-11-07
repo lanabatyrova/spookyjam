@@ -1,0 +1,342 @@
+[gd_scene format=3 uid="uid://sln38gwndp15"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_ku0m8"]
+[ext_resource type="Texture2D" uid="uid://bpt2nw8anx1d5" path="res://assets/Locations/Graveyard/Graveyard Background 1.png" id="2_wvn81"]
+[ext_resource type="Texture2D" uid="uid://yriqgcp0xg7a" path="res://assets/Locations/Graveyard/Graveyard Background 2.png" id="3_cqf0e"]
+[ext_resource type="Texture2D" uid="uid://dtpolb84wx28r" path="res://assets/bgs/Moon.png" id="3_uuk3j"]
+[ext_resource type="Texture2D" uid="uid://ch07xt1kamewo" path="res://assets/Midpoint/moon shine.png" id="4_4cw5p"]
+[ext_resource type="Texture2D" uid="uid://c33qorl26y7ax" path="res://assets/Locations/Graveyard/Graveyard Background 3.png" id="4_uuk3j"]
+[ext_resource type="Texture2D" uid="uid://cadlw76olyq0b" path="res://assets/Locations/Graveyard/Graveyard Midground 2.png" id="5_4cw5p"]
+[ext_resource type="Texture2D" uid="uid://qhos323otww5" path="res://assets/Locations/Graveyard/Graveyard Midground 3.png" id="6_i80t7"]
+[ext_resource type="Texture2D" uid="uid://bhmt4lt1fab6a" path="res://assets/Locations/Graveyard/Graveyard church.png" id="6_uuk3j"]
+[ext_resource type="Texture2D" uid="uid://cgoah58b8exol" path="res://assets/Locations/Graveyard/Graveyard Midground 1.png" id="7_n6eny"]
+[ext_resource type="Texture2D" uid="uid://cohhchh0giow" path="res://assets/Locations/Graveyard/Graveyard Foreground 1.png" id="8_t0y0d"]
+
+[sub_resource type="Animation" id="Animation_cqf0e"]
+resource_name = "Moving"
+length = 8.066667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../GraveyardBackground1:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(921.47925, 184.96017), Vector2(572.3678, 184.96017)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1373.0001, -111.00001), Vector2(1321.0514, -111.00001)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../GraveyardBackground2:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(948.6832, 200.00027), Vector2(569.7362, 200.00027)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../GraveyardBackground3:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(925.9593, 176.31563), Vector2(11.472595, 176.31561)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../GraveyardMidground2:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 8.033334, 8.433333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(928.83936, 203.2003), Vector2(-628.9468, 203.2003), Vector2(-1219.7358, 203.2003)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../GraveyardMidground3:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 8.033334, 8.400001, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(925.9593, 203.2003), Vector2(-814.47284, 203.2003), Vector2(-1271.0515, 203.2003), Vector2(-68.18805, 203.2003)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../GraveyardMidground1:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(931.71936, 223.04044), Vector2(-1286.8408, 223.04044)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../GraveyardForeground1:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.033333335, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(920.1993, 221), Vector2(-1255.2618, 221)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../GraveyardChurch:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.03333334, 8.033334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2057.8926, -107.89463), Vector2(1818.4194, -107.89463)]
+}
+
+[sub_resource type="Animation" id="Animation_uuk3j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../GraveyardBackground1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(921.47925, 184.96017)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1373.0001, -111.00001)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../GraveyardBackground2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(925.6393, 200.00027)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../GraveyardBackground3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(925.9593, 246.0806)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../GraveyardForeground1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(920.1993, 221)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../GraveyardMidground1:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(931.71936, 223.04044)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../GraveyardMidground3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(925.9593, 203.2003)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../GraveyardMidground2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(928.83936, 203.2003)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../GraveyardChurch:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2057.8926, -107.89463)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4cw5p"]
+_data = {
+&"Moving": SubResource("Animation_cqf0e"),
+&"RESET": SubResource("Animation_uuk3j")
+}
+
+[node name="Node2D" type="Node" unique_id=1602622483]
+script = ExtResource("1_ku0m8")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=655183266]
+root_node = NodePath("../Node2D/Moon/MoonShine")
+libraries/ = SubResource("AnimationLibrary_4cw5p")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1462340275]
+position = Vector2(0, 158)
+scale = Vector2(0.7600007, 0.7600007)
+
+[node name="GraveyardBackground1" type="Sprite2D" parent="Node2D" unique_id=77350871]
+z_index = -3
+position = Vector2(921.47925, 184.96017)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("2_wvn81")
+
+[node name="Moon" type="Sprite2D" parent="Node2D" unique_id=1581249437]
+z_index = -2
+position = Vector2(1373.0001, -111.00001)
+scale = Vector2(0.09474997, 0.09474997)
+texture = ExtResource("3_uuk3j")
+
+[node name="MoonShine" type="Sprite2D" parent="Node2D/Moon" unique_id=327403338]
+position = Vector2(7.2054443, 60.54831)
+scale = Vector2(1.6351893, 1.6351893)
+texture = ExtResource("4_4cw5p")
+
+[node name="GraveyardBackground2" type="Sprite2D" parent="Node2D" unique_id=1596673262]
+z_index = -2
+position = Vector2(925.6393, 200.00027)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("3_cqf0e")
+
+[node name="GraveyardChurch" type="Sprite2D" parent="Node2D" unique_id=1874154151]
+visible = false
+z_index = -2
+position = Vector2(2057.8926, -107.89463)
+scale = Vector2(0.6684209, 0.6684209)
+texture = ExtResource("6_uuk3j")
+
+[node name="GraveyardBackground3" type="Sprite2D" parent="Node2D" unique_id=2118632391]
+z_index = -1
+position = Vector2(925.9593, 246.0806)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("4_uuk3j")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/GraveyardBackground3" unique_id=651611489]
+z_index = -1
+position = Vector2(5362.084, 32.806396)
+scale = Vector2(1.1423643, 1.1423643)
+texture = ExtResource("4_uuk3j")
+
+[node name="GraveyardMidground2" type="Sprite2D" parent="Node2D" unique_id=1433402840]
+position = Vector2(928.83936, 203.2003)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("5_4cw5p")
+
+[node name="GraveyardMidground2" type="Sprite2D" parent="Node2D/GraveyardMidground2" unique_id=1593770151]
+position = Vector2(5843.218, -47.00763)
+scale = Vector2(0.9587542, 0.9587541)
+texture = ExtResource("5_4cw5p")
+
+[node name="GraveyardMidground3" type="Sprite2D" parent="Node2D" unique_id=241645357]
+z_index = 1
+position = Vector2(925.9593, 203.2003)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("6_i80t7")
+
+[node name="GraveyardMidground3" type="Sprite2D" parent="Node2D/GraveyardMidground3" unique_id=264634012]
+z_index = 1
+position = Vector2(5913.895, -67.5668)
+scale = Vector2(0.9970809, 0.9970809)
+texture = ExtResource("6_i80t7")
+
+[node name="GraveyardMidground1" type="Sprite2D" parent="Node2D" unique_id=83847529]
+z_index = 2
+position = Vector2(931.71936, 223.04044)
+scale = Vector2(0.32000214, 0.32000214)
+texture = ExtResource("7_n6eny")
+
+[node name="GraveyardMidground1" type="Sprite2D" parent="Node2D/GraveyardMidground1" unique_id=1687391272]
+z_index = 2
+position = Vector2(5945.237, -30.883408)
+scale = Vector2(1.0105578, 1.0105578)
+texture = ExtResource("7_n6eny")
+
+[node name="GraveyardForeground1" type="Sprite2D" parent="Node2D" unique_id=2109273545]
+z_index = 3
+position = Vector2(920.1993, 221)
+scale = Vector2(0.32000214, 0.3470684)
+texture = ExtResource("8_t0y0d")
+
+[node name="GraveyardForeground1" type="Sprite2D" parent="Node2D/GraveyardForeground1" unique_id=676370814]
+z_index = 3
+position = Vector2(5747.3086, -37.76037)
+scale = Vector2(0.97743005, 1.0391093)
+texture = ExtResource("8_t0y0d")

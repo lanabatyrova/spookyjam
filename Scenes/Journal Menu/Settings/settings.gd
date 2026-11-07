@@ -13,3 +13,7 @@ func _process(delta: float) -> void:
 
 func update_items(items):
 	bffs.visible = GameState.facts["j_bffs"] && GameState.is_minigame == true
+
+
+func _on_street_names_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Street Names.tscn")

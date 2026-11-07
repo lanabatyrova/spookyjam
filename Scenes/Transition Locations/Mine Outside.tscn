@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dcfkkyumx3qo4"]
+
+[ext_resource type="Texture2D" uid="uid://dsmxtmgbnxke" path="res://assets/Locations/Temp/abandoned-mine-entrance-colorado-rockies-v0-0euiqp6epu1d1-2119221375.jpg" id="1_4g150"]
+[ext_resource type="Script" uid="uid://duty1obatk12j" path="res://Scenes/Transition Locations/mine_outside.gd" id="1_egbsq"]
+[ext_resource type="Texture2D" uid="uid://bwk2k5pb1ygkw" path="res://assets/Locations/Hover Doors/MINE ENTRANCE SIGN.png" id="2_4kao1"]
+[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="3_rg8qe"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="5_rg8qe"]
+
+[node name="Node2D" type="Node2D" unique_id=636744048]
+script = ExtResource("1_egbsq")
+
+[node name="AbandonedMineEntranceColoradoRockiesV00Euiqp6Epu1d12119221375" type="Sprite2D" parent="." unique_id=2030842715]
+position = Vector2(551, 302)
+scale = Vector2(0.24000001, 0.24000001)
+texture = ExtResource("1_4g150")
+
+[node name="Mine enter" type="TextureButton" parent="." unique_id=323860613]
+offset_left = 445.0
+offset_top = 261.0
+offset_right = 685.0
+offset_bottom = 711.0
+scale = Vector2(1, 0.44)
+texture_hover = ExtResource("3_rg8qe")
+
+[node name="MineEntranceSign" type="Sprite2D" parent="." unique_id=1296830098]
+position = Vector2(571, 216)
+scale = Vector2(0.18913451, 0.18913442)
+texture = ExtResource("2_4kao1")
+
+[node name="To Mine Street" type="TextureButton" parent="." unique_id=457360977]
+offset_left = 2.0
+offset_top = 536.0
+offset_right = 2002.0
+offset_bottom = 1107.0
+scale = Vector2(0.57677215, 0.19495969)
+texture_hover = ExtResource("5_rg8qe")
+
+[connection signal="pressed" from="Mine enter" to="." method="_on_mine_enter_pressed"]
+[connection signal="pressed" from="To Mine Street" to="." method="_on_to_mine_street_pressed"]

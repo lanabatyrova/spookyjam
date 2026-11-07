@@ -25,3 +25,7 @@ func update_day(day: int):
 	dagger.visible = day in [7] && !GameState.midpoint_reached
 	lady.visible = day in [7] && !GameState.midpoint_reached
 	evening.visible = GameState.midpoint_reached
+
+
+func _on_to_outside_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Transition Locations/City Road.tscn")

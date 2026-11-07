@@ -1,7 +1,28 @@
 [gd_scene format=3 uid="uid://q3uh7ohgt6l5"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://46qoskkehdey" path="res://sprites/Lady/Lady_Talking.png" id="2_h2723"]
+[ext_resource type="Texture2D" uid="uid://cpjxckqlvxwvr" path="res://sprites/Lady/Lady_Default_1.png" id="2_sflsx"]
+[ext_resource type="Texture2D" uid="uid://7wxwxadf1yap" path="res://sprites/Lady/Lady_Default_Blinking.png" id="3_fe3s2"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_g1a4i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_sflsx")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_fe3s2")
+}],
+"loop": 1,
+"name": &"Lady Blinking",
+"speed": 2.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_sflsx"]
 length = 0.001
@@ -45,14 +66,19 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=1053589720]
-texture = ExtResource("2_h2723")
-hframes = 2
+texture = ExtResource("2_sflsx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1472962821]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Lady Blinking"
+autoplay = "Lady Blinking"
 
 [node name="Animated" type="Node2D" parent="." unique_id=384783148]
+visible = false
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=2892405]
-texture = ExtResource("2_h2723")
-hframes = 2
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1038518493]
+sprite_frames = ExtResource("3_g1a4i")
+animation = &"Lady Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=712387895]
 libraries/ = SubResource("AnimationLibrary_fe3s2")

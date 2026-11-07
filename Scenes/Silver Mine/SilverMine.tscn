@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://bmwqq8a787kce" path="res://Scenes/Silver Mine/juniper_mine.gd" id="3_1g6fs"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="3_d0oyi"]
 [ext_resource type="BitMap" uid="uid://dp7wbt46ne45d" path="res://assets/People/Juniper_1_bitmap.png" id="4_ypbp8"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="6_ypbp8"]
+[ext_resource type="Script" uid="uid://bbysghgn16o6u" path="res://Scenes/Silver Mine/exit_mine.gd" id="7_arg3h"]
 
 [node name="SilverMine" type="Node2D" unique_id=1269674359]
 
@@ -29,4 +31,14 @@ texture_hover = ExtResource("3_d0oyi")
 texture_click_mask = ExtResource("4_ypbp8")
 script = ExtResource("3_1g6fs")
 
+[node name="Exit Mine" type="TextureButton" parent="." unique_id=1077701562]
+offset_left = 4.0
+offset_top = 582.0
+offset_right = 2004.0
+offset_bottom = 1153.0
+scale = Vector2(0.5787649, 0.114391826)
+texture_normal = ExtResource("6_ypbp8")
+script = ExtResource("7_arg3h")
+
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
+[connection signal="pressed" from="Exit Mine" to="Exit Mine" method="_on_pressed"]

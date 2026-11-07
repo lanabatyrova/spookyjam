@@ -166,13 +166,13 @@ Barb: it’s your funeral.
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
 [Later that day]
-[background fade="5.0" wait="true"]nd arg="res://assets/Locations/school outside.png" fade="0.0"]
+[background arg="res://assets/Locations/school outside.png" fade="0.0" wait="true"]
 join Lizzy (Animated) right [mirrored="true"]
 join Barb (Animated) left
 
 Barb: Lizzy, wait.
 
-update Lizzy (Animated) [mirrored="true"]s
+update Lizzy (Animated) [mirrored="true"]
 
 Lizzy: Barb?
 
@@ -332,5 +332,7 @@ Barb: it’s your funeral.
 [background arg="#000000ff" fade="5.0" wait="true"]
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
-[Later that day]
+[background scene="res://Scenes/Midpoint_Transition.tscn" fade="0.6"]
+[wait time="7.0"]
+
 [background fade="5.0" wait="true"]

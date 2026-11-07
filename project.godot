@@ -50,6 +50,7 @@ directories/dtl_directory={
 "Grad Poster": "res://Scenes/Transition Locations/Grad Poster.dtl",
 "Opening": "res://Scenes/Previously On/Opening.dtl",
 "Parent's Room": "res://Scenes/Transition Locations/Parent's Room.dtl",
+"Silver Lake Plaque": "res://Scenes/Transition Locations/Silver Lake Plaque.dtl",
 "TEST": "res://Scenes/TEST.dtl",
 "Testing": "res://Scenes/Previously On/Testing.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",

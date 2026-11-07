@@ -3,7 +3,7 @@ join Valerie left
 join Noah lefter [z_index="1"]
 join Barb leftmost [z_index="1"]
 join Lizzy center
-join Dagger (Animated) righter [z_index="1"]
+join Dagger righter [z_index="1"]
 join Knightmare right
 
 Lizzy: Alright everyone, are we ready?

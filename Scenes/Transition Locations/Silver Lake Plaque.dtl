@@ -1,0 +1,9 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join "Strike Ball" (Silver Lake Plaque) center
+Silver Lake.
+VO: Named after the Silver family, who are secretly a long line of werewolves who defend the town against evil vampires.
+VO: and now there's none of them left.
+VO: It's up to me.
+VO: ...
+[background fade="0.0"]
+leave --All--

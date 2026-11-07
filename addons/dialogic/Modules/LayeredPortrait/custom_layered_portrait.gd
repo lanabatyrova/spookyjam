@@ -28,4 +28,3 @@ func _highlight() -> void:
 ## Called when this stops being the active speaker
 func _unhighlight() -> void:
 	get_node("Animated").hide()
-	##get_node("Static").show()

@@ -1,7 +1,23 @@
 [gd_scene format=3 uid="uid://c41300gpeynbp"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://dk8wrf5kcfa4t" path="res://sprites/Noah/Noah_Talking.png" id="2_sgpup"]
+[ext_resource type="Texture2D" uid="uid://c5vqucqy4cqe8" path="res://sprites/Noah/Noah_Default_1.png" id="2_jnfwn"]
+[ext_resource type="Texture2D" uid="uid://bd7nyxvrqwhve" path="res://sprites/Noah/Noah_Default_Blinking.png" id="3_0w2nv"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_h8l3m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_jnfwn")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_0w2nv")
+}],
+"loop": 1,
+"name": &"Noah Blinking",
+"speed": 2.0
+}]
 
 [sub_resource type="Animation" id="Animation_jnfwn"]
 length = 0.001
@@ -45,14 +61,19 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=856224704]
-texture = ExtResource("2_sgpup")
-hframes = 2
+texture = ExtResource("2_jnfwn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=910375175]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Noah Blinking"
+autoplay = "Noah Blinking"
 
 [node name="Animated" type="Node2D" parent="." unique_id=1377488799]
+visible = false
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=83541540]
-texture = ExtResource("2_sgpup")
-hframes = 2
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=825434253]
+sprite_frames = ExtResource("3_h8l3m")
+animation = &"Noah Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=630356572]
 libraries/ = SubResource("AnimationLibrary_0w2nv")

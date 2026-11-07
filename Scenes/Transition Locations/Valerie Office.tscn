@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d1ftmay2uwghu"]
+
+[ext_resource type="Script" uid="uid://bspe1k3yp2xsu" path="res://Scenes/Transition Locations/valerie_office.gd" id="1_msgv4"]
+[ext_resource type="Texture2D" uid="uid://rkjvm18eb3mi" path="res://assets/Locations/Temp/IMG_6554.jpg" id="1_w52pv"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="2_xch5b"]
+
+[node name="Node2D" type="Node2D" unique_id=1456382935]
+script = ExtResource("1_msgv4")
+
+[node name="Img6554" type="Sprite2D" parent="." unique_id=1295412348]
+position = Vector2(569, 199)
+scale = Vector2(0.3405093, 0.34050933)
+texture = ExtResource("1_w52pv")
+
+[node name="To Library" type="TextureButton" parent="." unique_id=1916432805]
+offset_left = -3.999998
+offset_top = 514.0
+offset_right = 1996.0
+offset_bottom = 1085.0
+scale = Vector2(0.585435, 0.23093195)
+texture_normal = ExtResource("2_xch5b")
+
+[connection signal="pressed" from="To Library" to="." method="_on_to_library_pressed"]

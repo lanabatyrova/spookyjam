@@ -1,39 +1,36 @@
 [gd_scene format=3 uid="uid://c2mw7ofuloavt"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://cmi0bbjo7ih6l" path="res://sprites/Dagger/Dagger_Talking.png" id="2_cjpra"]
+[ext_resource type="Texture2D" uid="uid://bcmp5uj0eq6ny" path="res://sprites/Dagger/Dagger_Default_1.png" id="2_uh0op"]
+[ext_resource type="Texture2D" uid="uid://id5tj700vipf" path="res://sprites/Dagger/Dagger_Default_Blinking.png" id="3_iodpf"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_m4g7y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_uh0op")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_iodpf")
+}],
+"loop": 1,
+"name": &"Dagger Blinking",
+"speed": 2.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_uh0op"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
 
 [sub_resource type="Animation" id="Animation_m4g7y"]
 resource_name = "Talking"
 length = 0.8333333
 loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [0, 1]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iodpf"]
 _data = {
@@ -45,14 +42,20 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=435399865]
-texture = ExtResource("2_cjpra")
-hframes = 2
+texture = ExtResource("2_uh0op")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2040739518]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Dagger Blinking"
+autoplay = "Dagger Blinking"
 
 [node name="Animated" type="Node2D" parent="." unique_id=116267026]
+visible = false
 
-[node name="Talking" type="Sprite2D" parent="Animated" unique_id=1679748248]
-texture = ExtResource("2_cjpra")
-hframes = 2
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1314271138]
+sprite_frames = ExtResource("3_m4g7y")
+animation = &"Val Default"
+autoplay = "Dagger Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=2061242477]
 libraries/ = SubResource("AnimationLibrary_iodpf")

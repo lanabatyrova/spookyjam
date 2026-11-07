@@ -1,7 +1,8 @@
-join Valerie leftmost [animation="Instant In"]
-join Barb midleft [animation="Instant In" mirrored="true"]
-join Noah center [animation="Instant In"]
-join Lizzy righter [animation="Slide From Right"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Valerie (Close Up) leftmost [animation="Instant In"]
+join Barb (Close Up) midleft [animation="Instant In" mirrored="true"]
+join Noah (Close Up) center [animation="Instant In"]
+join Lizzy (Close Up) righter [animation="Slide From Right"]
 Valerie: Elizabeth.
 Barb: Lizzy.
 Noah: Lizzy.
@@ -26,5 +27,7 @@ Valerie: Please resolve this time loop situation fast,
 Valerie: I’m not sure how much more I can take.
 Lizzy: I’m going to go find Juniper and then we can take on Lady MacDeath and save the day!
 Valerie: Hurry.
+leave --All--
+[background fade="0.0"]
 
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])

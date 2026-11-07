@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c06iw70rts2f"]
+
+[ext_resource type="Texture2D" uid="uid://x41kg7vxbk3s" path="res://assets/Locations/Hover Doors/City Road and Silver Street.png" id="1_6j7xj"]
+[ext_resource type="Script" uid="uid://drf3eck5no57j" path="res://Scenes/Transition Locations/city_road_silver_street.gd" id="1_tx2yn"]
+[ext_resource type="Texture2D" uid="uid://cyd60qc1ygu07" path="res://assets/Locations/Hover Doors/City Road Silver Street.png" id="2_6j7xj"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_e6q3d"]
+[ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="5_ua2xp"]
+
+[node name="Node2D" type="Node2D" unique_id=916674035]
+script = ExtResource("1_tx2yn")
+
+[node name="CityRoadAndSilverStreet" type="Sprite2D" parent="." unique_id=1048215151]
+position = Vector2(564.1111, 324.49997)
+scale = Vector2(0.64351845, 0.6435185)
+texture = ExtResource("1_6j7xj")
+
+[node name="CityRoadSilverStreet" type="Sprite2D" parent="." unique_id=476812357]
+position = Vector2(790, 279)
+scale = Vector2(0.24793044, 0.2479305)
+texture = ExtResource("2_6j7xj")
+
+[node name="To Silver Street" type="TextureButton" parent="." unique_id=1590121758]
+offset_top = 541.99994
+offset_right = 2000.0
+offset_bottom = 1113.0
+scale = Vector2(0.5806793, 0.19192985)
+texture_hover = ExtResource("3_e6q3d")
+
+[node name="To City Road" type="TextureButton" parent="." unique_id=1682824253]
+offset_left = 384.99997
+offset_top = 268.0
+offset_right = 2385.0
+offset_bottom = 1822.0
+rotation = 2.9598138
+scale = Vector2(0.17050736, -0.064691015)
+texture_hover = ExtResource("5_ua2xp")
+
+[connection signal="pressed" from="To Silver Street" to="." method="_on_to_silver_street_pressed"]
+[connection signal="pressed" from="To City Road" to="." method="_on_to_city_road_pressed"]

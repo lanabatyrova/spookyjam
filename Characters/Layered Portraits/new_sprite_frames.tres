@@ -1,10 +1,81 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://cam2xgmhnyfre"]
 
+[ext_resource type="Texture2D" uid="uid://d0opyh5act8i2" path="res://sprites/Barb/Barb_Default_1.png" id="1_hgcwx"]
 [ext_resource type="Texture2D" uid="uid://blwbwexcbgxiv" path="res://sprites/Lady/Lady_Talking1.png" id="1_xho7f"]
+[ext_resource type="Texture2D" uid="uid://lfo3ruf0y3gc" path="res://sprites/Barb/Barb_Default_2.png" id="2_4ekny"]
 [ext_resource type="Texture2D" uid="uid://bl7dsmi8674r3" path="res://sprites/Lady/Lady_Talking2.png" id="2_frp2h"]
+[ext_resource type="Texture2D" uid="uid://bcmp5uj0eq6ny" path="res://sprites/Dagger/Dagger_Default_1.png" id="3_46pfl"]
+[ext_resource type="Texture2D" uid="uid://0sd41dbltt7v" path="res://sprites/Dagger/Dagger_Default_2.png" id="4_bad57"]
+[ext_resource type="Texture2D" uid="uid://r7solxxt1e5j" path="res://sprites/Juniper/Juniper_Default_1.png" id="5_5h6mk"]
+[ext_resource type="Texture2D" uid="uid://cept3tt6puw14" path="res://sprites/Juniper/Juniper_Default_2.png" id="6_npwdp"]
+[ext_resource type="Texture2D" uid="uid://dftrfebwab80v" path="res://sprites/Juniper/Juniper_Serious_1.png" id="7_uds0a"]
+[ext_resource type="Texture2D" uid="uid://brnv1exyh4fdp" path="res://sprites/Juniper/Juniper_Serious_2.png" id="8_y6b68"]
+[ext_resource type="Texture2D" uid="uid://cpjxckqlvxwvr" path="res://sprites/Lady/Lady_Default_1.png" id="9_sxam4"]
+[ext_resource type="Texture2D" uid="uid://bgaak31guwddx" path="res://sprites/Lady/Lady_Default_2.png" id="10_uos2v"]
+[ext_resource type="Texture2D" uid="uid://bis0wuf1uv7kw" path="res://sprites/Lizzy/Lizzy_Default_1.png" id="13_2boas"]
+[ext_resource type="Texture2D" uid="uid://dckvqogb1blh6" path="res://sprites/Lizzy/Lizzy_Default_2.png" id="14_dsyy7"]
+[ext_resource type="Texture2D" uid="uid://c5vqucqy4cqe8" path="res://sprites/Noah/Noah_Default_1.png" id="15_ertqo"]
+[ext_resource type="Texture2D" uid="uid://b5fkug8iuiif6" path="res://sprites/Noah/Noah_Default_2.png" id="16_drelx"]
+[ext_resource type="Texture2D" uid="uid://cmteia3gcwqhu" path="res://sprites/Val/Val_Default_1.png" id="17_868b4"]
+[ext_resource type="Texture2D" uid="uid://p5w3t12fjl0l" path="res://sprites/Val/Val_Default_2.png" id="18_2b7r0"]
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hgcwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4ekny")
+}],
+"loop": 1,
+"name": &"Barb Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_46pfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bad57")
+}],
+"loop": 1,
+"name": &"Dagger Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_5h6mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_npwdp")
+}],
+"loop": 1,
+"name": &"Juniper Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_uds0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_y6b68")
+}],
+"loop": 1,
+"name": &"Juniper Serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_sxam4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uos2v")
+}],
+"loop": 1,
+"name": &"Lady Default",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_xho7f")
@@ -14,5 +85,38 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Lady Knightmare Talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_2boas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dsyy7")
+}],
+"loop": 1,
+"name": &"Lizzy Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_ertqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_drelx")
+}],
+"loop": 1,
+"name": &"Noah Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_868b4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2b7r0")
+}],
+"loop": 1,
+"name": &"Val Default",
 "speed": 5.0
 }]
