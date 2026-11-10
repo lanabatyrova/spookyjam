@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bg23lqk1eybux" path="res://Scenes/Street/street.gd" id="1_q35gy"]
 [ext_resource type="Texture2D" uid="uid://bdrghf1drm8il" path="res://assets/Locations/street day.png" id="2_myi71"]
+[ext_resource type="AudioStream" uid="uid://b6ru08wssxpc5" path="res://audio/ambient sounds/street day.mp3" id="2_ofnmi"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="3_d4b3n"]
 [ext_resource type="Texture2D" uid="uid://32nn4by4xos" path="res://assets/Locations/street night new.png" id="3_exxs6"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="4_d4b3n"]
@@ -13,6 +14,12 @@
 
 [node name="Street" type="Node2D" unique_id=316988252]
 script = ExtResource("1_q35gy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1678311529]
+stream = ExtResource("2_ofnmi")
+volume_db = -9.557
+autoplay = true
+parameters/looping = true
 
 [node name="Panel" type="Panel" parent="." unique_id=707589052]
 offset_left = -9.1552734e-05

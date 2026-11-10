@@ -34,6 +34,15 @@
 "offset": Vector2(-40, 210),
 "scale": 0.6,
 "scene": ""
+},
+"Tv Overlay Mm": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/TV Overlay MM.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
 }
 },
 &"scale": 1.0

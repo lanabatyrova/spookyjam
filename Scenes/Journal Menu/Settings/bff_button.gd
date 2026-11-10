@@ -18,4 +18,10 @@ func _update_hover_state():
 
 func _on_pressed() -> void:
 	# do stuff... this will be juniper minigame things
-	pass
+	if(GameState.is_minigame):
+		if(GameState.current_day == 7):
+			Dialogic.VAR.set_variable("is_success", true)
+			Dialogic.VAR.set_variable("current_item", "j_bffs")
+			MenuManager.close_journal()
+		else:
+			MenuManager.close_journal()

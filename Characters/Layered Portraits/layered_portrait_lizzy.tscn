@@ -1,9 +1,20 @@
 [gd_scene format=3 uid="uid://blml2yv0y2bm1"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://bfob2xsg71q0k" path="res://sprites/Lizzy/Expressions/IMG_6630.png" id="2_5aubw"]
 [ext_resource type="Texture2D" uid="uid://b0s245fqb1fdh" path="res://sprites/Lizzy/Lizzy_Default.png" id="2_wbbvf"]
 [ext_resource type="Texture2D" uid="uid://d1boxu1o8d3t2" path="res://sprites/Lizzy/Lizzy_Default_Blinking.png" id="3_3iq05"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_wbbvf"]
+[ext_resource type="Texture2D" uid="uid://p3nfwpjvvlho" path="res://sprites/Lizzy/Expressions/Lizzy_DefaultV2.png" id="5_0ob1c"]
+[ext_resource type="Texture2D" uid="uid://bybsgqxrs32ed" path="res://sprites/Lizzy/Expressions/Lizzy_Default_BlinkingV2.png" id="6_h8l7s"]
+[ext_resource type="Texture2D" uid="uid://cjejo18sicgwr" path="res://sprites/Lizzy/Expressions/IMG_6633.png" id="8_i0g2k"]
+[ext_resource type="Texture2D" uid="uid://bj6k8tsatfarv" path="res://sprites/Lizzy/Expressions/IMG_6625.png" id="9_jw443"]
+[ext_resource type="Texture2D" uid="uid://c7ab1yng7y0nn" path="res://sprites/Lizzy/Expressions/IMG_6629.png" id="10_y6hdl"]
+[ext_resource type="Texture2D" uid="uid://cf8vxc0hskph2" path="res://sprites/Lizzy/Expressions/IMG_6627.png" id="11_5qit2"]
+[ext_resource type="Texture2D" uid="uid://bo7mtuf280d5" path="res://sprites/Lizzy/Expressions/IMG_6638.png" id="12_bjti3"]
+[ext_resource type="Texture2D" uid="uid://bs6gywi1y8gko" path="res://sprites/Lizzy/Expressions/IMG_6635.png" id="13_07xup"]
+[ext_resource type="Texture2D" uid="uid://qpr4xjve1i4h" path="res://sprites/Lizzy/Expressions/IMG_6636.png" id="14_o3wn8"]
+[ext_resource type="Texture2D" uid="uid://cm7rn34s6jlb6" path="res://sprites/Lizzy/Expressions/IMG_6637.png" id="15_masa2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
 animations = [{
@@ -17,6 +28,45 @@ animations = [{
 "loop": 1,
 "name": &"Lizzy Blinking",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("5_0ob1c")
+}, {
+"duration": 0.5,
+"texture": ExtResource("6_h8l7s")
+}],
+"loop": 1,
+"name": &"Lizzy Blinking 2",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xotu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_07xup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o3wn8")
+}],
+"loop": 1,
+"name": &"Arms",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ylmb"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("15_masa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bjti3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
 }]
 
 [sub_resource type="Animation" id="Animation_5aubw"]
@@ -92,22 +142,80 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Layer1" type="Sprite2D" parent="." unique_id=1894009300]
-texture = ExtResource("2_wbbvf")
+texture = ExtResource("2_5aubw")
+
+[node name="Arms" type="Node2D" parent="." unique_id=902919382]
+visible = false
+
+[node name="Crossed" type="Sprite2D" parent="Arms" unique_id=1857126664]
+visible = false
+texture = ExtResource("8_i0g2k")
+
+[node name="Side" type="Node2D" parent="." unique_id=1419875823]
+visible = false
+
+[node name="2" type="Sprite2D" parent="Side" unique_id=621282437]
+texture = ExtResource("9_jw443")
+
+[node name="Body" type="Sprite2D" parent="Side" unique_id=326476532]
+texture = ExtResource("2_5aubw")
+
+[node name="Head" type="Sprite2D" parent="Side" unique_id=1887975202]
+visible = false
+texture = ExtResource("5_0ob1c")
+
+[node name="1" type="Sprite2D" parent="Side" unique_id=836117428]
+texture = ExtResource("10_y6hdl")
+
+[node name="Hips" type="Node2D" parent="." unique_id=128357144]
+visible = false
+
+[node name="2" type="Sprite2D" parent="Hips" unique_id=1294772274]
+texture = ExtResource("9_jw443")
+
+[node name="Body" type="Sprite2D" parent="Hips" unique_id=1436539093]
+texture = ExtResource("2_5aubw")
+
+[node name="Head" type="Sprite2D" parent="Hips" unique_id=963195275]
+visible = false
+texture = ExtResource("5_0ob1c")
+
+[node name="1" type="Sprite2D" parent="Hips" unique_id=1504322041]
+texture = ExtResource("11_5qit2")
 
 [node name="Default" type="AnimatedSprite2D" parent="." unique_id=156494236]
 sprite_frames = SubResource("SpriteFrames_vgl7g")
-animation = &"Lizzy Blinking"
-autoplay = "Lizzy Blinking"
+animation = &"Lizzy Blinking 2"
+autoplay = "Lizzy Blinking 2"
+
+[node name="Loop3" type="Node2D" parent="." unique_id=2015565409]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Loop3" unique_id=220729425]
+texture = ExtResource("12_bjti3")
+
+[node name="2" type="AnimatedSprite2D" parent="Loop3" unique_id=2126284146]
+sprite_frames = SubResource("SpriteFrames_5xotu")
+animation = &"Arms"
+autoplay = "Arms"
+frame = 1
+frame_progress = 0.805197
+
+[node name="3" type="AnimatedSprite2D" parent="Loop3" unique_id=832506471]
+sprite_frames = SubResource("SpriteFrames_6ylmb")
+autoplay = "default"
+frame_progress = 0.10988319
 
 [node name="Animated" type="Node2D" parent="." unique_id=900211482]
-visible = false
 
 [node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1612452546]
 sprite_frames = ExtResource("3_wbbvf")
-animation = &"Lizzy Default"
+animation = &"Lizzy 2"
+autoplay = "Lizzy 2"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=243867188]
 libraries/ = SubResource("AnimationLibrary_5aubw")
 autoplay = &"Lizzy_Talking"
 
 [node name="Layer2" type="Sprite2D" parent="Animated" unique_id=844451634]
+visible = false

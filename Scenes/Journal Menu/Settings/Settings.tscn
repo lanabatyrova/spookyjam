@@ -11,7 +11,6 @@
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_si324"]
 [ext_resource type="Texture2D" uid="uid://bcstdixid8ufm" path="res://assets/BFFS_button.png" id="9_jr3r8"]
 [ext_resource type="Script" uid="uid://ttuerlfdsmrt" path="res://Scenes/Journal Menu/Settings/bff_button.gd" id="10_c5na5"]
-[ext_resource type="Texture2D" uid="uid://lu1knwc15opo" path="res://assets/Map Overlays/street names paper.png" id="12_gu7ho"]
 
 [sub_resource type="GDScript" id="GDScript_xoghp"]
 script/source = "extends TextureButton
@@ -118,15 +117,6 @@ texture_pressed = SubResource("CompressedTexture2D_xgdt1")
 texture_hover = ExtResource("7_p1mro")
 script = ExtResource("8_si324")
 
-[node name="Street Names" type="TextureButton" parent="." unique_id=525265046]
-offset_left = 78.0
-offset_top = 464.99997
-offset_right = 865.0
-offset_bottom = 1187.0
-rotation = -0.30827776
-scale = Vector2(0.21534193, 0.17981593)
-texture_normal = ExtResource("12_gu7ho")
-
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
@@ -134,4 +124,3 @@ texture_normal = ExtResource("12_gu7ho")
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="BFF_Button" to="BFF_Button" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
-[connection signal="pressed" from="Street Names" to="." method="_on_street_names_pressed"]

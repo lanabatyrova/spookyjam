@@ -13,7 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://cpjxckqlvxwvr" path="res://sprites/Lady/Lady_Default_1.png" id="9_sxam4"]
 [ext_resource type="Texture2D" uid="uid://bgaak31guwddx" path="res://sprites/Lady/Lady_Default_2.png" id="10_uos2v"]
 [ext_resource type="Texture2D" uid="uid://bis0wuf1uv7kw" path="res://sprites/Lizzy/Lizzy_Default_1.png" id="13_2boas"]
+[ext_resource type="Texture2D" uid="uid://bvrofvxdjee2o" path="res://sprites/Lizzy/Expressions/Lizzy_Talking_2V2.png" id="13_uds0a"]
 [ext_resource type="Texture2D" uid="uid://dckvqogb1blh6" path="res://sprites/Lizzy/Lizzy_Default_2.png" id="14_dsyy7"]
+[ext_resource type="Texture2D" uid="uid://che6wyti0gwl4" path="res://sprites/Lizzy/Expressions/Lizzy_TalkingV2.png" id="14_y6b68"]
 [ext_resource type="Texture2D" uid="uid://c5vqucqy4cqe8" path="res://sprites/Noah/Noah_Default_1.png" id="15_ertqo"]
 [ext_resource type="Texture2D" uid="uid://b5fkug8iuiif6" path="res://sprites/Noah/Noah_Default_2.png" id="16_drelx"]
 [ext_resource type="Texture2D" uid="uid://cmteia3gcwqhu" path="res://sprites/Val/Val_Default_1.png" id="17_868b4"]
@@ -85,6 +87,17 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Lady Knightmare Talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_uds0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_y6b68")
+}],
+"loop": 1,
+"name": &"Lizzy 2",
 "speed": 5.0
 }, {
 "frames": [{

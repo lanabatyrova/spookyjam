@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3o33tjsyq2x8"
+path="res://.godot/imported/school hallway.mp3-bdc540ae946e8711d9d150490517a6af.mp3str"
+
+[deps]
+
+source_file="res://audio/ambient sounds/school hallway.mp3"
+dest_files=["res://.godot/imported/school hallway.mp3-bdc540ae946e8711d9d150490517a6af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

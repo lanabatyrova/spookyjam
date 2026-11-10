@@ -1,12 +1,12 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Talking) right
+join Lizzy (Close Up) right
 Lizzy: VALERIE!
-join Valerie (Talking) left
+join Valerie (Close Up) left
 Valerie: Ah, Elizabeth, how was your last day of highschool?
 Lizzy: You said that yesterday.
 Valerie: Oh. Did I? I think I would remember something like that.
 Lizzy: You also mentioned something about faxing me class lists. It was a bad day in all honesty.
-Valerie: ...
+...
 Valerie: Hm. You are under a lot of stress, so it makes sense that you would feel overwhelmed by—
 Lizzy: No, you don’t understand.
 Lizzy: I’m reliving the same day over again.
@@ -15,7 +15,7 @@ Lizzy: Maybe not exactly the same. There’s little differences.
 Lizzy: It’s like im stuck in some sort of...
 Lizzy: Loop of...
 Lizzy: Time.
-Valerie: ...
+...
 Valerie: A time loop?
 Lizzy: Yes! That’s the word.
 Valerie: Time loops are incredibly rare, Elizabeth.
@@ -79,23 +79,18 @@ Valerie: It took about a year for my father to finally track me down and take me
 Valerie: and I went kicking and screaming,
 Valerie: but eventually, I saw reason.
 Valerie: He sat me down and gave me this.
-join Item (Watch) center [animation="Fade In Up"]
+join "Strike Ball" (Watch) center [animation="Fade In Up"]
 Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started.
 Valerie: It's a symbol of the struggle between light and darkness.
 Valerie: and why I had to join the Keepers.
-leave Item [animation="Fade Out Down" length="0.3"]
+leave "Strike Ball" [animation="Fade Out Down" length="0.3"]
 Lizzy: The watch is nice and all, but you told me this last time too.
 Valerie: I want you to hold onto it for me,
 Valerie: just until graduation.
 Valerie: then you can give it back.
 Lizzy: I....
 set {collected_item_name} = "Pocket Watch"
-join  center [animation="Fade In"]
 do GameState.pick_up_item("pocket_watch")
-[wait time="1.0"]
-[wait_input]
-leave  [animation="Fade Out"]
-[wait time="1.0"]
 Lizzy: Thanks.
 Valerie: get some rest before your big day.
 Valerie: I'll see you tomorrow.

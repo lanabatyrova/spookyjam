@@ -35,6 +35,15 @@
 "scale": 1,
 "scene": ""
 },
+"1C": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "2": {
 "export_overrides": {
 "image": ""
@@ -44,9 +53,72 @@
 "scale": 1,
 "scene": ""
 },
+"2c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "3": {
 "export_overrides": {
 "image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"3c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"4c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"5c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"6c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"7c": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/Crack_7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Tv Overlay Mm": {
+"export_overrides": {
+"image": "\"res://assets/Minigame/Juniper_Minigame/TV Overlay MM.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

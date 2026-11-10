@@ -59,7 +59,7 @@ if {is_success} == true:
 else:
 	Barb: And this is supposed to mean something to me because....?
 	Lizzy: Uh... I was just testing to see if you're paying attention.
-	[V.O] I'll have to try something else.
+	VO: I'll have to try something else.
 set {is_success} = false
 if {strikes_number} < 3.0:
 	jump Journal Select

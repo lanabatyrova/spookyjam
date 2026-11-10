@@ -1,11 +1,13 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 audio music - [volume="-2.0" loop="true"]
 [Alarm beeping]
+join Lizzy (Close Up) center [animation="Fade In Up" extra_data="show Hips"]
 Lizzy: -AaAAAAAAAAHHHHHHHHHH-
-join Lizzy (Close Up) center [animation="Fade In Up" length="2.0" wait="true"]
 ...
+update Lizzy (Close Up) center [length="2.0" wait="true" extra_data="show Loop3, hide Hips"]
 VO: My guts are still firmly inside of me, where they belong.
 VO: I guess that’s one of the advantages of being stuck in a time loop.
+update Lizzy [extra_data="hide Loop3, show Side"]
 VO: Attacking Lady MacDeath directly won’t get me anywhere...
 VO: Well.
 VO: I’m out of ideas.
@@ -24,7 +26,7 @@ join Valerie (Phone) left
 update Lizzy midright [length="0.2" move_time="0.2"]
 Valerie: Elizabeth, it’s Valerie.
 Lizzy: I know,
-Lizzy:  I have caller ID.
+Lizzy: I have caller ID.
 Valerie: Good for you.
 Valerie: I called to tell you that I remember everything.
 update Lizzy [animation="Bounce" wait="true"]
@@ -35,7 +37,7 @@ Lizzy: But at least I’m not alone anymore!
 update Valerie [animation="Tada"]
 Valerie: Your unbeatable spirit allowed me to retain my memories from the previous loop.
 Lizzy: thank god for my unbeatable spirit.
-Valerie:  and good news, My research may have uncovered a possible solution.
+Valerie: and good news, My research may have uncovered a possible solution.
 Lizzy: Phew, I was starting to think I’d have to keep doing random stuff until something changed.
 Lizzy: I'm not that good at coming up with new ideas.
 Valerie: Meet me in the library. I’m giving you permission to skip your final exam.

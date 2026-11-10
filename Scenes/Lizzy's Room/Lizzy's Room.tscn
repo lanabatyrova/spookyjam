@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://clcl8u1yg681k" path="res://assets/Pickup Items/belt_hover.png" id="7_q7j6m"]
 [ext_resource type="BitMap" uid="uid://dqaatxbj0o8mp" path="res://assets/Pickup Items/belt_bitmap.png" id="9_q7j6m"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="11_q7j6m"]
+[ext_resource type="AudioStream" uid="uid://bumedealt00y0" path="res://audio/ambient sounds/Lizzys room.mp3" id="12_5csp6"]
 
 [node name="Lizzy\'sRoom" type="Node2D" unique_id=1457501583]
 script = ExtResource("1_2ymcl")
@@ -55,6 +56,12 @@ offset_bottom = 544.0
 rotation = 1.5712388
 scale = Vector2(0.36001772, 0.24000001)
 texture_hover = ExtResource("11_q7j6m")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=91442729]
+stream = ExtResource("12_5csp6")
+volume_db = -4.763
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]

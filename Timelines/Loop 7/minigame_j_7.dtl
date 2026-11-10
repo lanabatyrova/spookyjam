@@ -1,5 +1,200 @@
 do GameState.learn_fact("j_past_adventures")
-juniper minigame (final)
-then at some point\:
-do GameState.learn_fact("j_bffs")
+do GameState.start_minigame()
+audio music "res://audio/Character Sounds/Juniper Boss Theme.mp3" [volume="-5.0" loop="true"]
+[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="1.0" transition="Push Up"]
+join Juniper (Animated) left
+join Lizzy (Animated) right
+join Foreground (Tv Overlay Mm) center [animation="Fade In" length="0.8" wait="true" z_index="1"]
+[wait time="1.5"]
+VO: Come on, Lizzy. Everything has led to this.
+VO: She’s your best friend.
+VO: Piece of cake.
+label Journal Select
+do MenuManager.open_journal()
+[wait_input]
+if {is_success} == true:
+	do MinegameTest.update_background("strikes_number")
+	if {current_item} == "j_past_adventures":
+		Lizzy: past
+	
+	elif {current_item} == "noah":
+		join Noah center
+		Noah: Come on, Juniper. You’re like, the second most chill person I know. Other than me of course.
+		Noah: if you keep looping us, we’ll never get to try out deep fried ice cream.
+		Noah: like, how does the ice cream not immediately melt?
+		Juniper: ...
+		Juniper: it’s coated in batter—
+		Noah: Yeah, I know, but it’s like, who figured that out?
+		Noah: like did this accidentally drop ice cream in the vat of oil and then it turned out okay?
+		Noah: accidents and unexpected miracles!
+		Noah: can’t get that in a time loop.
+		Juniper: ...
+		Juniper: and mars bars.
+		Juniper: Don’t forget mars bars.
+		Noah: and mars bars!
+		Noah: like, what?!
+		leave Noah
+	
+	elif {current_item} == "barb":
+		join Barb center
+		Barb: Juniper, you know you’re acting super totally not okay right?
+		Barb: like supervillain levels of not okay.
+		Juniper: I know it seems like that, Barb, but this is all for a very good reason—
+		Barb: Save the rationalizing crap for someone who doesn’t know you and how incredibly and infuriating compassionate you are.
+		Barb: Like, everything you do and say drives me up the damn wall,
+		Barb: because I’m like, she’s figuring it out.
+		Barb: she’s doing the right thing.
+		Barb: You find the perfect nice thing to say every time and make it look so effortless. Like saint levels of nice.
+		Juniper: Well, I wouldn’t go that far...
+		Barb: Take the compliment. Being emotionally vulnerable isn’t easy for me, okay?
+		Juniper: Thank you.
+		Barb: You’re welcome.
+		Barb: But also.
+		Barb: Why are you acting like such an idiot?
+		Barb: Don’t you know how important you are?
+		Barb: Get it together!!
+		Juniper: ...
+		Juniper: Barb...
+		leave Barb
+	
+	
+	elif {current_item} == "valerie":
+		join Valerie center
+		Valerie: The only reason that you are taking this course of action is because you feel it necessary.
+		Valerie: and even with your clairvoyance, you do not know what the future holds.
+		Valerie: seeing a single piece of an impossibly large picture...
+		Valerie: you can’t possibly know all of the context.
+		Juniper: I’ve seen enough, Valerie.
+		Valerie: this ritual you’ve created, looping the same day over and over again, is from a place of uncertainty, which is completely normal for someone your age.
+		Valerie: You may feel in control, but this time loop is trapping you just as much as it’s trapping us.
+		Valerie: There is no winning.
+		Valerie: no gaming the system.
+		Valerie: You must see that. Don’t ignore that feeling of fear.
+		Valerie: We will face it together.
+		Juniper: ...
+		leave Valerie
+	
+	elif {current_item} == "knightmare":
+		join Knightmare center
+		Knightmare: You are a powerful psychic and a formidable foe. I’ve always deeply respected you out of all the annoying children.
+		Juniper: ...
+		Juniper: uh.
+		Juniper: thanks?
+		Knightmare: Do not mistake this for a compliment, it means I must slay you in battle to truly succeed.
+		Knightmare: but that is for another time.
+		...
+		Juniper: ... okay?
+		Knightmare: we have destinies to attend to, young one.
+		Knightmare: for the past several decades I lived in my Julian’s shadow, thinking it was the only way forward, when it was holding me back.
+		Knightmare: Once you shed the false impression of the life you deserve,
+		Knightmare: you can become who you were truly meant to be.
+		Juniper: I do have to say, this knight look suits you way better than Lady MacBeth.
+		Juniper: far less derivative.
+		Knightmare: You are an intelligent woman.
+		Knightmare: Perhaps, when this is all over...
+		Knightmare: What would you say if I offered a position as my second in command?
+		Lizzy: Okay, wait, hang on—
+		Juniper: um.
+		join Dagger offright
+		Dagger: my... Lady?
+		Knightmare: oh do shut up right now, Dagger, can’t you see the goth and I are having a tender moment?
+		Lizzy: you consider this tender?
+		Lizzy: Stop recruiting my morally confused friend!
+		...
+		leave Dagger
+		leave Knightmare
+	
+	elif {current_item} == "dagger":
+		join Dagger center
+		Dagger: Juniper,
+		Dagger: Lizzy has shared with me how much she cares for you.
+		Dagger: How much you support your friends. Your family. Your town.
+		...
+		Dagger: You are a protector.
+		Juniper: I’m really not.
+		Dagger: Do not downplay your role.
+		Dagger: Lizzy may be the one in the prophecy, but you are equally as important.
+		Juniper: My role is to support her.
+		Juniper: Out of everyone, I would think you’d understand that.
+		Dagger: Before I became what I am now,
+		Dagger: I had very close friends, not to dissimilar to your group.
+		Dagger: I would give up all of this realm, my immortal life, to go back to them, to see them one last time.
+		Dagger: but I know I can’t, so I must continue on for them.
+		Dagger: Do not destroy your friendships in an attempt to preserve them.
+		Dagger: Treasure the few moments you do have,
+		Dagger: because one day, you’ll look back fondly, and regret not doing more.
+		Juniper: I think this situation is a little different,
+		Dagger: What is immortality if not reliving the same moment over and over again?
+		...
+		leave Dagger
+	
+	elif {current_item} == "j_bffs":
+		update Lizzy (Full Wolf)
+		Lizzy: When I first moved here, you were the one that made me feel welcomed.
+		Lizzy: You were the one that helped me deal with my werewolf stuff.
+		Lizzy: Never once did I think you weren’t being genuine.
+		Lizzy: You’re my best friend, Juniper.
+		Lizzy: Without you...
+		Lizzy: I wouldn’t be Lizzy Springs.
+		Lizzy: Monster Hunter and Werewolf.
+		Lizzy: I don’t care if we’re in a TV show or if we’re going to be hit by a meteor tomorrow.
+		Lizzy: And if I have to chose between you or continuing on like this,
+		Lizzy: In an endless loop of a badly written episode of television,
+		Lizzy: Well,
+		Lizzy: I’d choose you every time.
+		Lizzy: Because I’d rather spend whatever time we have left with you,
+		Lizzy: Even if that means just one more episode.
+	
+	set {strikes_number} += 1.0
+	join "Strike Ball" leftmost [animation="Zoom In" length="9.0"]
+	leave "Strike Ball" [animation="Slide To Right" length="1.1" wait="true"]
+	if {strikes_number} == 1.0:
+		join Minigame (1C) center
+	elif {strikes_number} == 2.0:
+		update Minigame (2c) center
+	elif {strikes_number} == 3.0:
+		update Minigame (3c) center
+	elif {strikes_number} == 4.0:
+		update Minigame (4c) center
+	elif {strikes_number} == 5.0:
+		update Minigame (5c) center
+	elif {strikes_number} == 6.0:
+		update Minigame (6c) center
+		Juniper: You guys don’t understand.
+		Juniper: If I end this,
+		Juniper: There won’t be any more Vermilion Hills.
+		Lizzy: What are you talking about?
+		Juniper: This isn’t real.
+		Juniper: We aren’t real.
+		Juniper: We’re in a TV show called Lizzy Springs Monster Hunter and Werewolf,
+		Juniper: And after this episode...
+		Juniper: There’s nothing.
+		join Valerie righter
+		Valerie: Hm.
+		leave Valerie
+		join Barb offright
+		Barb: Um, I think I’d  know if we were in a TV show.
+		leave Barb
+		Juniper: I’ve been rewinding the season, keeping us one episode before the finale.
+		Juniper: If you stop me now, you’ll be killing everyone.
+		join Knightmare midleft
+		Knightmare: Rewinding the tape?
+		Knightmare: Psychic tall one, how do you go about doing such a thing?
+		Lizzy: Please don’t be getting any ideas, Knightmare.
+		...
+		leave Knightmare
+		do GameState.learn_fact("j_bffs")
+	[wait time="1.5"]
+else:
+	Juniper: There's no point in trying to stop me.
+set {is_success} = false
+if {strikes_number} < 7.0:
+	jump Journal Select
+update Minigame (7c) [animation="Tada" length="0.3" wait="true" repeat="5"]
+join "black screen" center [animation="Instant In" z_index="2"]
+
+
+[background fade="0.0"]
+audio music - [fade="4.0"]
+leave --All-- [animation="Instant Out"]
 jump ending_7/

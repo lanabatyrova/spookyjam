@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dsrr1njx0y36k" path="res://assets/Props/Group Polaroid.png" id="6_13mgl"]
 [ext_resource type="Texture2D" uid="uid://21id5m6r0nxs" path="res://assets/Props/Group Polaroid Hover.png" id="7_451x0"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="8_6kocx"]
+[ext_resource type="AudioStream" uid="uid://3o33tjsyq2x8" path="res://audio/ambient sounds/school hallway.mp3" id="9_451x0"]
 
 [node name="Node2D" type="Node2D" unique_id=2047878710]
 script = ExtResource("1_488ey")
@@ -50,6 +51,12 @@ offset_right = 1987.0
 offset_bottom = 1111.0
 scale = Vector2(0.599459, 0.19094962)
 texture_hover = ExtResource("8_6kocx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=542159017]
+stream = ExtResource("9_451x0")
+volume_db = -8.732
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="Grad Poster" to="." method="_on_grad_poster_pressed"]
 [connection signal="pressed" from="Group Polaroid" to="." method="_on_group_polaroid_pressed"]
