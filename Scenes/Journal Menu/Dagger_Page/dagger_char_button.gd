@@ -21,5 +21,10 @@ func _on_pressed() -> void:
 			Dialogic.VAR.set_variable("is_success", true)
 			Dialogic.VAR.set_variable("current_item", "lm_dagger_vouch")
 			MenuManager.close_journal()
+		if(GameState.current_day == 7):
+			Dialogic.VAR.set_variable("is_success", true)
+			Dialogic.VAR.set_variable("current_item", "dagger")
+			print(Dialogic.VAR.get_variable("current_item"))
+			MenuManager.close_journal()
 		else:
 			MenuManager.close_journal()

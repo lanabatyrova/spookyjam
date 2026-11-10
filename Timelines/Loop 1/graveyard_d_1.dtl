@@ -20,3 +20,4 @@ Lizzy: Please stop reminding me how old you are.
 VO: This is getting me no where.
 leave --All-- [animation="Fade Out Down"]
 [background fade="0.0"]
+[signal arg="start_ambience"]

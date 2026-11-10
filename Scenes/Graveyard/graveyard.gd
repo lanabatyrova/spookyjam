@@ -6,14 +6,20 @@ extends Node2D
 @onready var day = $daysounds
 @onready var night = $nightsounds
 
-
 var current_day: int
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	current_day = GameState.current_day
 	update_day(current_day)
+	play_music()
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 
+	
+func _on_dialogic_signal(argument: Variant) -> void:
+	if argument == "start_ambience":
+		play_music()
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
@@ -23,11 +29,16 @@ func update_day(day: int):
 	shakespeare.visible = day in [2] && GameState.midpoint_reached && !GameState.inventory["pocket_shakespeare"]
 	evening.visible = GameState.midpoint_reached
 	
-func playMusic():
-	night.stream_paused = true
+func play_music():
 	if GameState.midpoint_reached:
-		day.stream_paused = true
-		night.stream_paused = false
+		night.play()
+	else:
+		day.play()
+		
 
 func _on_to_graveyard_way_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Graveyard Way.tscn")
+
+
+func _on_dagger_button_pressed() -> void:
+	night.stop()

@@ -148,7 +148,6 @@ texture = ExtResource("2_5aubw")
 visible = false
 
 [node name="Crossed" type="Sprite2D" parent="Arms" unique_id=1857126664]
-visible = false
 texture = ExtResource("8_i0g2k")
 
 [node name="Side" type="Node2D" parent="." unique_id=1419875823]
@@ -168,7 +167,6 @@ texture = ExtResource("5_0ob1c")
 texture = ExtResource("10_y6hdl")
 
 [node name="Hips" type="Node2D" parent="." unique_id=128357144]
-visible = false
 
 [node name="2" type="Sprite2D" parent="Hips" unique_id=1294772274]
 texture = ExtResource("9_jw443")

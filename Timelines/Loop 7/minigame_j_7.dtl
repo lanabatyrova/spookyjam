@@ -1,9 +1,9 @@
 do GameState.learn_fact("j_past_adventures")
 do GameState.start_minigame()
-audio music "res://audio/Character Sounds/Juniper Boss Theme.mp3" [volume="-5.0" loop="true"]
+audio music "res://audio/Character Sounds/main menu backtrack 2.wav" [volume="-5.0" loop="true"]
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="1.0" transition="Push Up"]
 join Juniper (Animated) left
-join Lizzy (Animated) right
+join Lizzy (Animated) right [extra_data="show Side"]
 join Foreground (Tv Overlay Mm) center [animation="Fade In" length="0.8" wait="true" z_index="1"]
 [wait time="1.5"]
 VO: Come on, Lizzy. Everything has led to this.
@@ -15,7 +15,33 @@ do MenuManager.open_journal()
 if {is_success} == true:
 	do MinegameTest.update_background("strikes_number")
 	if {current_item} == "j_past_adventures":
-		Lizzy: past
+		Lizzy: Back in the diner, when we all shared our favourite Vermilion Hills weird moment, I couldn’t choose.
+		Lizzy: and you called it a cop out, but it’s true.
+		Lizzy: I wouldn’t trade any of them for the world.
+		Juniper: ...
+		Lizzy: the good.
+		Lizzy: the bad.
+		Lizzy: the sort of okay, but not really remarkable moments too.
+		Lizzy: all the times I was kinda like, is this really necessary?
+		Juniper: None of it really matters.
+		Juniper: You may think you’ve had a choice in everything, that you you made mistakes and learned from them...
+		Juniper: but you didn’t.
+		Juniper: Not really.
+		Lizzy: All of those experiences made us who we are!
+		Lizzy: Who I am.
+		Lizzy: We can face anything life throws at us,
+		Lizzy: We’ve faced evil magicians and demons,
+		Lizzy: and oh my god, we survived high school??
+		Lizzy: while juggling monsters every week and also powers and evil vampires trying to kill us.
+		Juniper: You’re not getting it.
+		Lizzy: I do get it.
+		Lizzy: I’m terrified of the future. I would give anything to keep everything exactly the same.
+		Lizzy: But this isn’t living, Jay.
+		Lizzy: it’s having the same conversations over and over and over again. Experiencing the same stupid math exam.
+		Lizzy: That sounds incredibly lonely.
+		Juniper: ...
+		Juniper: You have no idea.
+
 	
 	elif {current_item} == "noah":
 		join Noah center
@@ -192,7 +218,6 @@ if {strikes_number} < 7.0:
 	jump Journal Select
 update Minigame (7c) [animation="Tada" length="0.3" wait="true" repeat="5"]
 join "black screen" center [animation="Instant In" z_index="2"]
-
 
 [background fade="0.0"]
 audio music - [fade="4.0"]

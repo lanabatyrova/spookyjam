@@ -97,10 +97,10 @@ texture_click_mask = ExtResource("5_0f3vm")
 script = ExtResource("4_84xge")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=960815392]
-offset_left = 518.0
-offset_top = 197.0
-offset_right = 1174.0
-offset_bottom = 1952.0
+offset_left = 1500.0
+offset_top = 178.0
+offset_right = 2156.0
+offset_bottom = 1933.0
 scale = Vector2(0.21628141, 0.21628141)
 texture_normal = ExtResource("12_bogav")
 texture_hover = ExtResource("12_0f3vm")

@@ -20,13 +20,11 @@ script = ExtResource("1_mfimy")
 [node name="daysounds" type="AudioStreamPlayer" parent="." unique_id=2025843430]
 stream = ExtResource("2_qdebc")
 volume_db = -2.382
-autoplay = true
 parameters/looping = false
 
 [node name="nightsounds" type="AudioStreamPlayer" parent="." unique_id=967184532]
 stream = ExtResource("3_jrpsr")
 volume_db = -3.969
-autoplay = true
 parameters/looping = true
 
 [node name="Panel" type="Panel" parent="." unique_id=58270089]
@@ -72,6 +70,7 @@ offset_bottom = 1147.0
 scale = Vector2(0.5768693, 0.13157776)
 texture_hover = ExtResource("11_h5jha")
 
+[connection signal="pressed" from="DaggerButton" to="." method="_on_dagger_button_pressed"]
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
 [connection signal="pressed" from="PocketShakespeare" to="PocketShakespeare" method="_on_pressed"]
 [connection signal="pressed" from="To Graveyard Way" to="." method="_on_to_graveyard_way_pressed"]

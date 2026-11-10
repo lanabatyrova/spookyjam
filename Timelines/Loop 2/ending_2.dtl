@@ -20,12 +20,12 @@ Lizzy: I just found it on the ground-
 Lizzy: Whatever. I didn't come here to talk about this book.
 Lizzy: It's time to put an end to your time loop plot! Im sick of doing the same math exam over and over again!
 "Lady MacDeath": Time.. loop?
-"Lady MacDeath":  What in the hell are you speaking of child?
+"Lady MacDeath": What in the hell are you speaking of child?
 Lizzy: Your plot to ruin me.
 ...
 Lizzy: The time loop.
 "Lady MacDeath": I still don't know what that is.
-Lizzy:  I came here to foil your plan.
+Lizzy: I came here to foil your plan.
 "Lady MacDeath": Ohohoho… My plan is far from foiled furry foe, it has just begun!!
 "Lady MacDeath": By the power of this great sword, I banish you to bitter death!
 audio "res://audio/Sound Effects/daviddumaisaudio-super-long-unsheathing-sword-scrape-185436.mp3" [volume="-5.0"]
@@ -47,8 +47,8 @@ Lizzy: Ough.....
 join Dagger left [animation="Slide From Left" wait="true" mirrored="true"]
 Dagger: Lizzy!!
 "Lady MacDeath": VICTORY!!!
-"Lady MacDeath":  Now you will watch as your friends and family are devoured by zombies.
-"Lady MacDeath":  Mwahhhahahahhhaha~
+"Lady MacDeath": Now you will watch as your friends and family are devoured by zombies.
+"Lady MacDeath": Mwahhhahahahhhaha~
 leave "Lady MacDeath" [animation="Fade Out" wait="true"]
 leave Dagger [animation="Fade Out" wait="true"]
 Lizzy: AhhHhHhhh

@@ -1,7 +1,7 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 audio music "res://audio/Music/main menu backtrack 2.wav" [volume="-10.0" loop="true"]
 [alarm blaring]
-join Lizzy (Close Up) center
+join Lizzy (Close Up) center [extra_data="show Side"]
 VO: what the hell?
 
 [phone ringing]
@@ -56,6 +56,7 @@ update Lizzy (Animated) right [mirrored="true" fade="Fade Cross" fade_length="1.
 VO: ...
 VO: the why doesn’t matter.
 join Juniper (Juniper Dream) left [animation="Fade In" length="1.1"]
+update Juniper [animation="Tada" length="25.0" repeat_forever="true"]
 VO: I have to help her.
 VO: She'd risk everything to save me.
 VO: I owe her that much.

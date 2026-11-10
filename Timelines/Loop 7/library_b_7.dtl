@@ -1,5 +1,5 @@
-join Barb (Talking) left [z_index="1"]
-join Lizzy (Talking) right
+join Barb (Close Up) left [z_index="1" extra_data="show Side"]
+join Lizzy (Close Up) right
 Lizzy: hey.
 Barb: ...
 Lizzy: ...

@@ -1,7 +1,7 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 audio "res://audio/Alarm and Click.mp3"
 [Alarm blaring]
-join Lizzy (Close Up) center [animation="Fade In" wait="true"]
+join Lizzy (Close Up) center [animation="Fade In" wait="true" extra_data="show Hips"]
 VO: okay, this is really starting to test my patience.
 audio "res://audio/Phone ringing sound.mp3"
 
@@ -44,16 +44,15 @@ Barb: Like golf.
 join "black screen" center [animation="Fade In" length="2.0" wait="true" z_index="1"]
 VO: She's just going to keep going like this forever.
 join "Strike Ball" (Watch) righter
-update Lizzy right [mirrored="true"]
+update Lizzy right [mirrored="true" extra_data="show Loop3, hide Hips"]
 update "Strike Ball" [animation="Bounce" length="1.9" repeat_forever="true"]
 leave "black screen" [animation="Fade Out" length="1.1" wait="true"]
 Barb: eventually they figure out what's going on,
 Barb: and as it happens, the guy behind the whole thing was doing it so he could spend time with his-
-update Lizzy midright [mirrored="true"]
+update Lizzy midright [mirrored="true" extra_data="hide Loop3, show Hips"]
 update "Strike Ball" midright [animation="Bounce"]
 Lizzy: I don't know what any of this means.
 leave "Strike Ball"
-audio music - [volume="-5.0"]
 Barb: ...
 Barb: It's not my fault the intricate plot is going way over your head.
 Lizzy: uh...

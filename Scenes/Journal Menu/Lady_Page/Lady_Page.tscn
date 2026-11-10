@@ -15,17 +15,13 @@
 [ext_resource type="Script" uid="uid://bkvp1mjq3tbs" path="res://Scenes/Journal Menu/Lady_Page/lady_char_button.gd" id="10_jusjv"]
 [ext_resource type="Script" uid="uid://bw1ck1r0h2765" path="res://Scenes/Journal Menu/Lady_Page/zombie_plan_button.gd" id="11_4enno"]
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="11_507vs"]
+[ext_resource type="Texture2D" uid="uid://jy0p7yud5hyl" path="res://assets/Journal Overlays/macdeath_journal/Polaroid_Lady.png" id="11_ajc5n"]
+[ext_resource type="Texture2D" uid="uid://dl72oxopwe5gy" path="res://assets/Journal Overlays/macdeath_journal/Polaroid_Lady_Hover.png" id="12_2l03f"]
 [ext_resource type="Texture2D" uid="uid://cmg1yahilxyk1" path="res://assets/Journal Overlays/macdeath_journal/Lady_NameChange.png" id="15_6rcgt"]
 [ext_resource type="Texture2D" uid="uid://c3cme2wifoxxi" path="res://assets/Journal Overlays/macdeath_journal/Lady_PhoneNumber.png" id="15_r4ufa"]
 [ext_resource type="Script" uid="uid://pqdaq1ktx3fy" path="res://Scenes/Journal Menu/Lady_Page/lady_phone_button.gd" id="16_6tjxn"]
 [ext_resource type="Texture2D" uid="uid://cf4mxul1ayej3" path="res://assets/Journal Overlays/macdeath_journal/Lady_Timeloop.png" id="16_ajc5n"]
 [ext_resource type="Texture2D" uid="uid://dhhhwy54jmtpc" path="res://assets/Journal Overlays/macdeath_journal/Lady_Timeloop_Crossedout.png" id="17_6rcgt"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6tjxn"]
-load_path = "res://.godot/imported/Polaroid_Lady.png-ba170196a638cb6701f41b4dbbb62dea.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6rcgt"]
-load_path = "res://.godot/imported/Polaroid_Lady_Hover.png-b6564a831ced6d86e7835d2b2b48d9e3.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e4lmo"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
@@ -112,8 +108,9 @@ offset_right = 1176.0
 offset_bottom = 1214.0
 rotation = -0.053523265
 scale = Vector2(0.23201175, 0.23201175)
-texture_normal = SubResource("CompressedTexture2D_6tjxn")
-texture_hover = SubResource("CompressedTexture2D_6rcgt")
+texture_normal = ExtResource("11_ajc5n")
+texture_pressed = ExtResource("12_2l03f")
+texture_hover = ExtResource("12_2l03f")
 script = ExtResource("10_jusjv")
 
 [node name="LadyNameButton" type="TextureButton" parent="." unique_id=713271291]
