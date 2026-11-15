@@ -1,37 +1,46 @@
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
-join Juniper (Close Up) left
+join Juniper (Close Up) left [extra_data="hide Mouth/Default, show Mouth/Unamused, hide Brows/Default, show Brows/Concerned"]
 join Foreground center
-join Lizzy (Close Up) right [animation="Fade In Up" length="0.2" z_index="1"]
+join Lizzy (Close Up) right [animation="Fade In Up" length="0.2" z_index="1" extra_data="show Eyes/Side"]
 Juniper: Lizzy, there you are. You didn’t come to the exam.
 Juniper: Neither did Barb or Noah.
 Juniper: I’m pretty sure Holiday all gave you automatic fails.
 Lizzy: Eh, she can deal. I got like eighty percent on our group project, I think my grades are safe.
+update Lizzy [extra_data="hide Eyes/Side, show Brows/Up, hide Brows/Default, hide Mouth/Default, show Mouth/2"]
 Lizzy: By the way...
 Lizzy: Are you feeling.. Anything weird?
+update Lizzy [extra_data="show Eyes/Side"]
 Juniper: ... huh?
 Lizzy: Like you know.
 Lizzy: Psychically.
 Juniper: Uh, no? I don’t think so.
 Lizzy: No visions or vision like... things?
 Juniper: Nope.
+update Lizzy [extra_data="hide Brows/Up, show Brows/Default"]
 Lizzy: Hm. Okay. Keep me posted.
+update Juniper [extra_data="show Eyes/Side"]
 ...
+update Juniper [extra_data="hide Eyes/Side"]
 Juniper: Are YOU feeling alright?
+update Lizzy [extra_data="hide Mouth/2, show Mouth/Default"]
 Lizzy: Never better.
 Juniper: So What was so important that you ditched?
 Lizzy: Okay, this is going to sound crazy,
 Lizzy: But we're in a time loop.
+update Juniper [extra_data="show Eyes/Wide"]
 Juniper: A time loop?
 Lizzy: Yeah.
+update Juniper [extra_data="hide Eyes/Wide, show Eyes/Side, hide Brows/Concerned, show Brows/Default"]
 Lizzy: Reliving the same day over and over again.
 Lizzy: This is like my fifth time around.
 Juniper: Hm..
 Juniper: Yeah, I don't really...
+update Juniper [extra_data="hide Eyes/Side"]
 Juniper: That seems kinda far fetched, even for you, Lizzy.
 Lizzy: No, actually it isn't,
 audio music "res://audio/higheruniversalman-take-me-out-to-the-ball-game-sports-stadium-crowd-music-506221.mp3"
 Lizzy: You see I've got hard proof-
-<Empty Text Event>
+...
 [wait time="1.0"]
 audio music -
 Juniper: I think I’m just going to go home.

@@ -1,6 +1,6 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 audio music "res://audio/Music/Love Song.mp3" [volume="-15.0" loop="true"]
-join Lizzy (Close Up) right [animation="Fade In"]
+join Lizzy (Close Up) right [animation="Fade In" extra_data="show Eyes/Side, show Mouth/Closed, hide Mouth/Default"]
 join Dagger (Close Up) left [animation="Fade In" mirrored="true"]
 Lizzy: Dagger! You’re here.
 Lizzy: Actually, I don’t know why I’m surprised.

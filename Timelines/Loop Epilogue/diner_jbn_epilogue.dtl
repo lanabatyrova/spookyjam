@@ -1,0 +1,6 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Barb (Close Up) center
+join Noah (Close Up) left
+join Juniper (Close Up) leftmost
+join Lizzy (Close Up) righter
+hh

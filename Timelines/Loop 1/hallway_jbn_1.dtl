@@ -1,5 +1,5 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.2"]
-join Lizzy (Close Up) right [animation="Fade In Up"]
+join Lizzy (Close Up) right [animation="Fade In Up" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
 join Juniper (Close Up) leftmost [animation="Fade In Up"]
 join Barb (Close Up) left [animation="Fade In Up" wait="true" extra_data="show Normal"]
 Juniper: Hey, Lizzy, want to head to the exam together?
@@ -7,6 +7,7 @@ Lizzy: ... why isn’t there zombies everywhere eating people?
 Juniper: Should there be?
 Lizzy: Uh. Yeah.
 Lizzy: Also wait, exam? We already did an exam and it was terrible
+update Barb [extra_data="show Eyebrows/Up"]
 Barb: Graduation’s tomorrow...?
 Juniper: Are you feeling alright?
 Lizzy: ...
@@ -22,7 +23,7 @@ leave --All-- [animation="Fade Out"]
 join Barb lefter [animation="Fade In" z_index="1"]
 join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
-join Lizzy righter [animation="Slide From Right" length="1.0"]
+join Lizzy righter [animation="Slide From Right" length="1.0" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
 VO: That was even worse than last time.
 update Barb [animation="Bounce" length="0.3" repeat="3"]
 Barb: Finally, we’ve been waiting here for eons.
@@ -74,3 +75,4 @@ leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")
 [background fade="4.0"]
+update Barb [extra_data="hide Eyebrows/Up"]

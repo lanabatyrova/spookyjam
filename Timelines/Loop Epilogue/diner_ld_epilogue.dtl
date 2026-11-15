@@ -1,0 +1,7 @@
+[background scene="res://Scenes/Diner/Diner_epilogue.tscn" arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Foreground (Diner Counter Day) rightmost [z_index="1"]
+join Dagger (Close Up) lefter
+join Knightmare (Close Up) midleft
+join Lizzy (Close Up) right [z_index="2" extra_data="show Eyes/Side"]
+Lizzy: hey, guys.
+h
