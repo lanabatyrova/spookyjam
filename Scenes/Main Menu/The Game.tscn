@@ -1,16 +1,24 @@
 [gd_scene format=3 uid="uid://c4jxsrexg1pd"]
 
-[ext_resource type="Texture2D" uid="uid://cnknmnffnspkj" path="res://Scenes/Main Menu/New_Assets/Main_Menu_Main.png" id="1_law43"]
+[ext_resource type="AudioStream" uid="uid://bdlrjplrd6xvt" path="res://audio/Music/Lizzy Springs main menu theme.wav" id="1_bnksx"]
 [ext_resource type="Script" uid="uid://c7o62x7fymsdk" path="res://Scenes/day_tester_button.gd" id="2_bnksx"]
+[ext_resource type="Texture2D" uid="uid://cs6j03u2elr0x" path="res://Scenes/Main Menu/New_Assets/Main_Menu_Main2.png" id="2_law43"]
 [ext_resource type="Texture2D" uid="uid://be504du2586wn" path="res://Scenes/Main Menu/New_Assets/Main_Menu_Button_Reference.png" id="2_oddrt"]
 [ext_resource type="Texture2D" uid="uid://cj8asupmqbuah" path="res://Scenes/Main Menu/New_Assets/MM_Play.png" id="4_h7nca"]
 [ext_resource type="Script" uid="uid://c5fuvsnfr6fa7" path="res://Scenes/Main Menu/play.gd" id="4_motf4"]
 [ext_resource type="Texture2D" uid="uid://bnlgx0fwhkyvk" path="res://Scenes/Main Menu/New_Assets/MM_Load.png" id="6_a21cu"]
+[ext_resource type="Script" uid="uid://chnyes82ogui1" path="res://Scenes/Main Menu/load.gd" id="7_a21cu"]
 [ext_resource type="Texture2D" uid="uid://cr0kw456cxfrw" path="res://Scenes/Main Menu/New_Assets/MM_Settings.png" id="7_motf4"]
 [ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://Scenes/Main Menu/settings.gd" id="8_03oub"]
 [ext_resource type="Texture2D" uid="uid://deou1vk4xmeup" path="res://Scenes/Main Menu/New_Assets/MM_Exit.png" id="9_bnksx"]
+[ext_resource type="Script" uid="uid://dx1t3twb4vskg" path="res://Scenes/Main Menu/exit.gd" id="11_motf4"]
 
 [node name="Menu" type="Node2D" unique_id=2053078578]
+
+[node name="LizzieSpringsMainMenuTheme" type="AudioStreamPlayer2D" parent="." unique_id=1209565762]
+position = Vector2(128, 292)
+stream = ExtResource("1_bnksx")
+autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2062908496]
 layer = 20
@@ -18,7 +26,7 @@ layer = 20
 [node name="0000151" type="Sprite2D" parent="CanvasLayer" unique_id=975768206]
 position = Vector2(575, 324)
 scale = Vector2(0.6015757, 0.6020518)
-texture = ExtResource("1_law43")
+texture = ExtResource("2_law43")
 
 [node name="MainMenuButtonReference" type="Sprite2D" parent="CanvasLayer" unique_id=2131545410]
 position = Vector2(398, 428.00003)
@@ -53,6 +61,7 @@ scale = Vector2(0.5695468, 0.5564858)
 offset_transform_position_ratio = Vector2(0.13, 0)
 texture_pressed = ExtResource("6_a21cu")
 texture_hover = ExtResource("6_a21cu")
+script = ExtResource("7_a21cu")
 
 [node name="Settings" type="TextureButton" parent="CanvasLayer" unique_id=1587340858]
 offset_left = 311.0
@@ -74,6 +83,7 @@ scale = Vector2(0.55814475, 0.56666)
 offset_transform_position_ratio = Vector2(0.4, 0)
 texture_pressed = ExtResource("9_bnksx")
 texture_hover = ExtResource("9_bnksx")
+script = ExtResource("11_motf4")
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=1450916194]
 visible = false
@@ -101,4 +111,6 @@ metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="CanvasLayer/DayButton" to="CanvasLayer/DayButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Scenes" to="CanvasLayer/Scenes" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Settings" to="CanvasLayer/Settings" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Exit" to="CanvasLayer/Exit" method="_on_pressed"]

@@ -10,7 +10,7 @@ VO: Life would be so much easier if I could punch numbers.
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 join Lizzy (Animated) left [animation="Fade In" mirrored="true" move_time="0.5"]
-[background arg="res://assets/Locations/diner_day.png" fade="0.5"]
+[background arg="res://assets/Locations/Diner_Day_V2.png" fade="0.5"]
 MAIL DELIVERY
 VO: Huh, what’s this?
 leave Lizzy [animation="Fade Out"]
@@ -22,8 +22,8 @@ update Item (Postcard Back) [animation="Heartbeat"]
 join Lizzy (Close Up) right [animation="Fade In"]
 VO: I guess once you become a best selling author writing your own letters is small potatoes.
 leave Item
-[background arg="res://assets/Locations/diner_day.png" fade="0.0"]
-update Lizzy (Full Body) [mirrored="true"]
+[background arg="res://assets/Locations/Diner_Day_V2.png" fade="0.0"]
+update Lizzy (Animated) [mirrored="true"]
 VO: Well, time to fail this exam. Here goes nothing.
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]

@@ -170,11 +170,11 @@ autoplay = "Lady Blinking 2"
 [node name="Body" type="Sprite2D" parent="Body" unique_id=1280513660]
 texture = ExtResource("6_hhav2")
 
-[node name="Arms" type="Node2D" parent="." unique_id=898730157]
+[node name="Arm L" type="Node2D" parent="." unique_id=898730157]
 
-[node name="Up" type="Sprite2D" parent="Arms" unique_id=1406920152]
+[node name="Up" type="Sprite2D" parent="Arm L" unique_id=1406920152]
 texture = ExtResource("19_57bbs")
 
-[node name="Down" type="Sprite2D" parent="Arms" unique_id=1054982347]
+[node name="Down" type="Sprite2D" parent="Arm L" unique_id=1054982347]
 visible = false
 texture = ExtResource("20_e52mb")

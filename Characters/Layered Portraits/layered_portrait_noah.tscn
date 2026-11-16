@@ -100,12 +100,12 @@ script = ExtResource("1_uubi5")
 [node name="Base" type="Sprite2D" parent="." unique_id=856224704]
 texture = ExtResource("2_idqiv")
 
-[node name="Arms right" type="Node2D" parent="." unique_id=1086113505]
+[node name="ArmR" type="Node2D" parent="." unique_id=1086113505]
 
-[node name="Down" type="Sprite2D" parent="Arms right" unique_id=512650670]
+[node name="Down" type="Sprite2D" parent="ArmR" unique_id=512650670]
 texture = ExtResource("7_xlmjx")
 
-[node name="Pointing" type="Sprite2D" parent="Arms right" unique_id=780460663]
+[node name="Pointing" type="Sprite2D" parent="ArmR" unique_id=780460663]
 visible = false
 texture = ExtResource("8_48ae4")
 
@@ -186,24 +186,24 @@ texture = ExtResource("24_uqf8y")
 visible = false
 texture = ExtResource("25_3m43b")
 
-[node name="Arms left" type="Node2D" parent="." unique_id=1174127414]
+[node name="ArmL" type="Node2D" parent="." unique_id=1174127414]
 
-[node name="Down" type="Sprite2D" parent="Arms left" unique_id=870661933]
+[node name="Down" type="Sprite2D" parent="ArmL" unique_id=870661933]
 texture = ExtResource("11_dsewd")
 
-[node name="Out" type="Sprite2D" parent="Arms left" unique_id=730884894]
+[node name="Out" type="Sprite2D" parent="ArmL" unique_id=730884894]
 visible = false
 texture = ExtResource("12_xlmjx")
 
-[node name="Pocket" type="Sprite2D" parent="Arms left" unique_id=488457503]
+[node name="Pocket" type="Sprite2D" parent="ArmL" unique_id=488457503]
 visible = false
 texture = ExtResource("13_48ae4")
 
-[node name="Hips" type="Sprite2D" parent="Arms left" unique_id=873541579]
+[node name="Hips" type="Sprite2D" parent="ArmL" unique_id=873541579]
 visible = false
 texture = ExtResource("14_n4jfr")
 
-[node name="Pointing over" type="Sprite2D" parent="Arms left" unique_id=58194330]
+[node name="Pointing" type="Sprite2D" parent="ArmL" unique_id=58194330]
 visible = false
 texture = ExtResource("17_n4jfr")
 

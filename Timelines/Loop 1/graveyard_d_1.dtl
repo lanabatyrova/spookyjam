@@ -1,22 +1,28 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 audio music "res://audio/Music/Love Song.mp3" [volume="-15.0" loop="true"]
 join Lizzy (Close Up) right [animation="Fade In" extra_data="show Eyes/Side, show Mouth/Closed, hide Mouth/Default"]
-join Dagger (Close Up) left [animation="Fade In" mirrored="true"]
+join Dagger (Close Up) left [animation="Fade In" mirrored="true" extra_data="show Eyes/Side"]
 Lizzy: Dagger! You’re here.
 Lizzy: Actually, I don’t know why I’m surprised.
 Dagger: Lizzy… a serendipitous entrance...
-update Dagger [animation="Shake X" mirrored="false"]
+update Dagger [animation="Shake X" mirrored="false" extra_data="hide Eyes/Side"]
 Dagger: I was just observing the epitaphs on the tombstones that call this place home,
 Dagger: and it struck me how death is an inevitability for much of humanity,
 Dagger: But for others...
+update Dagger [extra_data="show Eyes/Closed, show Brows/Down, hide Brows/Default"]
 Dagger: those cursed with cruel mistress of immortality,
 Dagger: it’s the horrid power that rips loved ones from each other’s arms and drives the emotional stake of—
+update Lizzy [extra_data="show Brows/Down, hide Brows/Default, show Eyes/Half, hide Eyes/Side, hide Eyes/Default"]
 Lizzy: Alright, I get it. Death sucks.
+update Dagger [extra_data="show Brows/Default, hide Brows/Down, hide Eyes/Closed, show Eyes/Side"]
 Dagger: You see… I’ve been pondering us.
+update Lizzy [extra_data="show Eyes/Side, hide Eyes/Half, "]
 Lizzy: Oh here we go again.
-Dagger: …
+…
 Dagger: We are as... You see, vampires and werewolves go together as well as Napoleon and surrendering.
+update Lizzy [extra_data="hide Eyes/Side, show Eyes/Default, hide Brows/Down, show Brows/Default"]
 Lizzy: Please stop reminding me how old you are.
+update Lizzy
 VO: This is getting me no where.
 leave --All-- [animation="Fade Out Down"]
 [background fade="0.0"]

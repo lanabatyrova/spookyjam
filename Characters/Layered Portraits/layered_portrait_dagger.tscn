@@ -1,9 +1,33 @@
 [gd_scene format=3 uid="uid://c2mw7ofuloavt"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://dwjybyw28vtdq" path="res://sprites/Dagger/Body/dagger base.png" id="2_ejb31"]
 [ext_resource type="Texture2D" uid="uid://bcmp5uj0eq6ny" path="res://sprites/Dagger/Dagger_Default_1.png" id="2_uh0op"]
+[ext_resource type="Texture2D" uid="uid://bu5rbcttovcws" path="res://sprites/Dagger/Arms/Dagger arm L 1.png" id="3_674r6"]
 [ext_resource type="Texture2D" uid="uid://id5tj700vipf" path="res://sprites/Dagger/Dagger_Default_Blinking.png" id="3_iodpf"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_m4g7y"]
+[ext_resource type="Texture2D" uid="uid://ckychean5w25r" path="res://sprites/Dagger/Arms/dagger arm L 2.png" id="4_bcw3p"]
+[ext_resource type="Texture2D" uid="uid://du1ekl1yibi3y" path="res://sprites/Dagger/Face/dagger eyes closed.png" id="5_mcs3g"]
+[ext_resource type="Texture2D" uid="uid://ciani2dk3g0ir" path="res://sprites/Dagger/Body/dagger trenchcoat behind.png" id="5_qcktt"]
+[ext_resource type="Texture2D" uid="uid://cu46640okmuhi" path="res://sprites/Dagger/Body/dagger body.png" id="6_un4tg"]
+[ext_resource type="Texture2D" uid="uid://dbnk86djy04uo" path="res://sprites/Dagger/Face/dagger head.png" id="7_02kx4"]
+[ext_resource type="Texture2D" uid="uid://d1bw436ld6qpl" path="res://sprites/Dagger/Face/dagger eyes default.png" id="8_p6gha"]
+[ext_resource type="Texture2D" uid="uid://crnxd7ck7msbm" path="res://sprites/Dagger/Face/dagger eyes side.png" id="9_yct3w"]
+[ext_resource type="Texture2D" uid="uid://dh02qixxsiyv3" path="res://sprites/Dagger/Face/dagger eyes wide.png" id="10_m27dl"]
+[ext_resource type="Texture2D" uid="uid://ikjkhykx5xom" path="res://sprites/Dagger/Face/dagger eyes wide side.png" id="11_d5bm0"]
+[ext_resource type="Texture2D" uid="uid://dnjxr0yaojgg2" path="res://sprites/Dagger/Face/dagger eyes half.png" id="13_ndjwg"]
+[ext_resource type="Texture2D" uid="uid://b0u6k5btrji4o" path="res://sprites/Dagger/Face/dagger mouth default.png" id="14_0jcot"]
+[ext_resource type="Texture2D" uid="uid://dfdljmqqaqq0k" path="res://sprites/Dagger/Face/dagger mouth frown.png" id="15_l2o3v"]
+[ext_resource type="Texture2D" uid="uid://i6m0htfrfob3" path="res://sprites/Dagger/Face/dagger mouth smile.png" id="16_oymrd"]
+[ext_resource type="Texture2D" uid="uid://djyopux5luxsd" path="res://sprites/Dagger/Face/dagger mouth wide smile.png" id="17_i2tuu"]
+[ext_resource type="Texture2D" uid="uid://8v1ojbu12e3f" path="res://sprites/Dagger/Face/dagger brows default.png" id="18_3tqxs"]
+[ext_resource type="Texture2D" uid="uid://cyq56df60air3" path="res://sprites/Dagger/Face/dagger brows confuse.png" id="19_f48p2"]
+[ext_resource type="Texture2D" uid="uid://8cri143w75h3" path="res://sprites/Dagger/Face/dagger brows up.png" id="20_rd4wj"]
+[ext_resource type="Texture2D" uid="uid://c6jspvhpnmkuc" path="res://sprites/Dagger/Face/dagger brows down.png" id="21_xlirh"]
+[ext_resource type="Texture2D" uid="uid://c5ge01mqn8654" path="res://sprites/Dagger/Body/dagger trenchcoat front.png" id="25_0ik5q"]
+[ext_resource type="Texture2D" uid="uid://cochuaks2sn4l" path="res://sprites/Dagger/Arms/dagger arm R 1.png" id="26_10sf3"]
+[ext_resource type="Texture2D" uid="uid://cjexqg62vegnq" path="res://sprites/Dagger/Arms/dagger arm r 2.png" id="27_3xu05"]
+[ext_resource type="Texture2D" uid="uid://62fpfvlo0y1" path="res://sprites/Dagger/Arms/dagger arm R 3.png" id="28_b6xcg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
 animations = [{
@@ -16,6 +40,17 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Dagger Blinking",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_ejb31")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_mcs3g")
+}],
+"loop": 1,
+"name": &"Dagger Blinking V2",
 "speed": 2.0
 }, {
 "frames": [],
@@ -42,19 +77,104 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=435399865]
-texture = ExtResource("2_uh0op")
+texture = ExtResource("2_ejb31")
+
+[node name="Arms L" type="Node2D" parent="." unique_id=1799883493]
+
+[node name="1" type="Sprite2D" parent="Arms L" unique_id=2106039283]
+texture = ExtResource("3_674r6")
+
+[node name="2" type="Sprite2D" parent="Arms L" unique_id=1893945620]
+visible = false
+texture = ExtResource("4_bcw3p")
+
+[node name="3" type="Sprite2D" parent="Arms L" unique_id=578291814]
+visible = false
+texture = ExtResource("2_ejb31")
+
+[node name="Trenchcoat behind" type="Sprite2D" parent="." unique_id=1280538686]
+texture = ExtResource("5_qcktt")
+
+[node name="Body" type="Node2D" parent="." unique_id=1270446847]
+
+[node name="Body2" type="Sprite2D" parent="Body" unique_id=677474712]
+texture = ExtResource("6_un4tg")
+
+[node name="Face" type="Node2D" parent="." unique_id=70478306]
+
+[node name="Head" type="Sprite2D" parent="Face" unique_id=1103869953]
+texture = ExtResource("7_02kx4")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=27415169]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=173839187]
+texture = ExtResource("8_p6gha")
+
+[node name="Side" type="Sprite2D" parent="Eyes" unique_id=1633373898]
+visible = false
+texture = ExtResource("9_yct3w")
+
+[node name="Wide" type="Sprite2D" parent="Eyes" unique_id=669568621]
+visible = false
+texture = ExtResource("10_m27dl")
+
+[node name="Wide side" type="Sprite2D" parent="Eyes" unique_id=1867553959]
+visible = false
+texture = ExtResource("11_d5bm0")
+
+[node name="Closed" type="Sprite2D" parent="Eyes" unique_id=1244886996]
+visible = false
+texture = ExtResource("5_mcs3g")
+
+[node name="Half" type="Sprite2D" parent="Eyes" unique_id=1563030856]
+visible = false
+texture = ExtResource("13_ndjwg")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=223272006]
+
+[node name="Default" type="Sprite2D" parent="Mouth" unique_id=1147196665]
+texture = ExtResource("14_0jcot")
+
+[node name="Frown" type="Sprite2D" parent="Mouth" unique_id=72937968]
+visible = false
+texture = ExtResource("15_l2o3v")
+
+[node name="Smile" type="Sprite2D" parent="Mouth" unique_id=1445449969]
+visible = false
+texture = ExtResource("16_oymrd")
+
+[node name="Smile 2" type="Sprite2D" parent="Mouth" unique_id=2124607987]
+visible = false
+texture = ExtResource("17_i2tuu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2040739518]
 sprite_frames = SubResource("SpriteFrames_vgl7g")
-animation = &"Dagger Blinking"
-autoplay = "Dagger Blinking"
+animation = &"Dagger Blinking V2"
+autoplay = "Dagger Blinking V2"
+
+[node name="Brows" type="Node2D" parent="." unique_id=763109322]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=84566124]
+texture = ExtResource("18_3tqxs")
+
+[node name="Confused" type="Sprite2D" parent="Brows" unique_id=1257504349]
+visible = false
+texture = ExtResource("19_f48p2")
+
+[node name="Up" type="Sprite2D" parent="Brows" unique_id=1692600802]
+visible = false
+texture = ExtResource("20_rd4wj")
+
+[node name="Down" type="Sprite2D" parent="Brows" unique_id=1229425821]
+visible = false
+texture = ExtResource("21_xlirh")
 
 [node name="Animated" type="Node2D" parent="." unique_id=116267026]
 visible = false
 
 [node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1314271138]
 sprite_frames = ExtResource("3_m4g7y")
-animation = &"Val Default"
+animation = &"Dagger Default"
 autoplay = "Dagger Default"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=2061242477]
@@ -62,3 +182,19 @@ libraries/ = SubResource("AnimationLibrary_iodpf")
 autoplay = &"Talking"
 
 [node name="Layer2" type="Sprite2D" parent="Animated" unique_id=117471692]
+
+[node name="Trenchcoat front" type="Sprite2D" parent="." unique_id=1629035811]
+texture = ExtResource("25_0ik5q")
+
+[node name="Arms R" type="Node2D" parent="." unique_id=1473691632]
+
+[node name="1" type="Sprite2D" parent="Arms R" unique_id=1609840107]
+texture = ExtResource("26_10sf3")
+
+[node name="2" type="Sprite2D" parent="Arms R" unique_id=1990711629]
+visible = false
+texture = ExtResource("27_3xu05")
+
+[node name="3" type="Sprite2D" parent="Arms R" unique_id=367633373]
+visible = false
+texture = ExtResource("28_b6xcg")

@@ -22,11 +22,14 @@
 [ext_resource type="Texture2D" uid="uid://b8aoghndd370o" path="res://sprites/Lizzy/Face/Lizzy_Default_BlinkingV3.png" id="12_masa2"]
 [ext_resource type="Texture2D" uid="uid://bs6gywi1y8gko" path="res://sprites/Lizzy/Arms/IMG_6635.png" id="13_07xup"]
 [ext_resource type="Texture2D" uid="uid://dhe06xngsg6nw" path="res://sprites/Lizzy/Face/Lizzy Eyes Side.png" id="13_cwcio"]
+[ext_resource type="Texture2D" uid="uid://drat2ai8n4jhy" path="res://sprites/Lizzy/Face/lizzy eyes half.png" id="14_2jfx6"]
 [ext_resource type="Texture2D" uid="uid://qpr4xjve1i4h" path="res://sprites/Lizzy/Arms/IMG_6636.png" id="14_o3wn8"]
 [ext_resource type="Texture2D" uid="uid://cm7rn34s6jlb6" path="res://sprites/Lizzy/Expressions/IMG_6637.png" id="15_masa2"]
 [ext_resource type="Texture2D" uid="uid://bte0p4pix3sdo" path="res://sprites/Lizzy/Face/Lizzy eyebrows up.png" id="15_qj4ia"]
+[ext_resource type="Texture2D" uid="uid://inwm03bj3ro0" path="res://sprites/Lizzy/Face/lizzy eyes half side.png" id="15_ywo4b"]
 [ext_resource type="Texture2D" uid="uid://bjcrv25cim6bl" path="res://sprites/Lizzy/Face/Lizzy closed mouth.png" id="16_eoduw"]
 [ext_resource type="Texture2D" uid="uid://dm8tkkofi0taf" path="res://sprites/Lizzy/Face/Lizzy Mouth Concerned.png" id="17_tewwe"]
+[ext_resource type="Texture2D" uid="uid://y1mjmir8up8" path="res://sprites/Lizzy/Face/lizzy brows down.png" id="18_483m5"]
 [ext_resource type="Texture2D" uid="uid://bon0xermhkfeo" path="res://sprites/Lizzy/Face/Lizzy mouth smile.png" id="21_ik7rx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
@@ -234,14 +237,13 @@ texture = ExtResource("12_eoduw")
 visible = false
 texture = ExtResource("13_cwcio")
 
-[node name="Brows" type="Node2D" parent="." unique_id=1368327130]
-
-[node name="Default" type="Sprite2D" parent="Brows" unique_id=1221870490]
-texture = ExtResource("10_x32y8")
-
-[node name="Up" type="Sprite2D" parent="Brows" unique_id=1214019892]
+[node name="Half" type="Sprite2D" parent="Eyes" unique_id=1403192434]
 visible = false
-texture = ExtResource("15_qj4ia")
+texture = ExtResource("14_2jfx6")
+
+[node name="Half side" type="Sprite2D" parent="Eyes" unique_id=1744438439]
+visible = false
+texture = ExtResource("15_ywo4b")
 
 [node name="Mouth" type="Node2D" parent="." unique_id=2126886435]
 
@@ -260,6 +262,19 @@ texture = ExtResource("17_tewwe")
 sprite_frames = SubResource("SpriteFrames_vgl7g")
 animation = &"Lizzy Blinking 3"
 autoplay = "Lizzy Blinking 3"
+
+[node name="Brows" type="Node2D" parent="." unique_id=1368327130]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=1221870490]
+texture = ExtResource("10_x32y8")
+
+[node name="Up" type="Sprite2D" parent="Brows" unique_id=1214019892]
+visible = false
+texture = ExtResource("15_qj4ia")
+
+[node name="Down" type="Sprite2D" parent="Brows" unique_id=1591218281]
+visible = false
+texture = ExtResource("18_483m5")
 
 [node name="Loop3" type="Node2D" parent="." unique_id=2015565409]
 visible = false

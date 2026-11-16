@@ -72,12 +72,12 @@ script = ExtResource("1_uubi5")
 [node name="Base" type="Sprite2D" parent="." unique_id=1550580167]
 texture = ExtResource("2_ptfsg")
 
-[node name="L_Arm" type="Node2D" parent="." unique_id=1296681459]
+[node name="ArmL" type="Node2D" parent="." unique_id=1296681459]
 
-[node name="1" type="Sprite2D" parent="L_Arm" unique_id=459001835]
+[node name="1" type="Sprite2D" parent="ArmL" unique_id=459001835]
 texture = ExtResource("2_x0ade")
 
-[node name="2" type="Sprite2D" parent="L_Arm" unique_id=2056623885]
+[node name="2" type="Sprite2D" parent="ArmL" unique_id=2056623885]
 visible = false
 texture = ExtResource("3_ptfsg")
 
@@ -136,6 +136,7 @@ visible = false
 texture = ExtResource("14_3dbpc")
 
 [node name="Animated" type="Node2D" parent="." unique_id=700870667]
+visible = false
 
 [node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=543926258]
 sprite_frames = ExtResource("3_vma3l")
@@ -149,12 +150,12 @@ autoplay = &"Talking"
 
 [node name="Layer2" type="Sprite2D" parent="Animated" unique_id=568057571]
 
-[node name="R_Arm" type="Node2D" parent="." unique_id=1268734012]
+[node name="ArmR" type="Node2D" parent="." unique_id=1268734012]
 
-[node name="1" type="Sprite2D" parent="R_Arm" unique_id=445509723]
+[node name="1" type="Sprite2D" parent="ArmR" unique_id=445509723]
 texture = ExtResource("17_ugbqm")
 
-[node name="2" type="Sprite2D" parent="R_Arm" unique_id=1040054384]
+[node name="2" type="Sprite2D" parent="ArmR" unique_id=1040054384]
 visible = false
 texture = ExtResource("18_agfrc")
 

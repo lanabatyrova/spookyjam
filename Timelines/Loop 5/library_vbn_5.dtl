@@ -1,5 +1,5 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Valerie (Close Up) leftmost [animation="Instant In"]
+join Valerie (Close Up) lefter [animation="Instant In" extra_data="show Mouth/Unamused, hide Mouth/Default"]
 join Barb (Close Up) midleft [animation="Instant In" mirrored="true"]
 join Noah (Close Up) center [animation="Instant In"]
 join Lizzy (Close Up) righter [animation="Slide From Right"]
@@ -26,6 +26,7 @@ update Valerie midleft [move_time="0.5"]
 Valerie: Please resolve this time loop situation fast,
 Valerie: I’m not sure how much more I can take.
 Lizzy: I’m going to go find Juniper and then we can take on Lady MacDeath and save the day!
+update Valerie [extra_data="show Eyes/Wide"]
 Valerie: Hurry.
 leave --All--
 [background fade="0.0"]

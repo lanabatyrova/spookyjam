@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bmybefoq1lxry"]
+
+[ext_resource type="AudioStream" uid="uid://b4nvyc7ct7jli" path="res://audio/Character Sounds/main menu backtrack 1.wav" id="1_6evga"]
+[ext_resource type="Texture2D" uid="uid://dj61rnfnr0foe" path="res://Scenes/Main Menu/New_Assets/main menu  blank.png" id="1_8ob8k"]
+[ext_resource type="Texture2D" uid="uid://cs071n2sypv0l" path="res://Scenes/Main Menu/Main_Menu_Settings_Page.png" id="2_h6df0"]
+[ext_resource type="Texture2D" uid="uid://cq1rvh7kbn3vw" path="res://Scenes/Main Menu/Main_Menu_Back.png" id="3_hu5vy"]
+[ext_resource type="Texture2D" uid="uid://bidk2ev5ku7gf" path="res://Scenes/Main Menu/Main_Menu_Back_Hover.png" id="4_6evga"]
+[ext_resource type="Script" uid="uid://cuqwfek58h1fr" path="res://Scenes/Main Menu/settings_back.gd" id="5_m8q3e"]
+
+[node name="Node2D" type="Node2D" unique_id=1901808227]
+
+[node name="MainMenuBacktrack1" type="AudioStreamPlayer2D" parent="." unique_id=1399523496]
+position = Vector2(313, 417)
+stream = ExtResource("1_6evga")
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=367380749]
+layer = 20
+
+[node name="0000151" type="Sprite2D" parent="CanvasLayer" unique_id=936151592]
+position = Vector2(575, 324)
+scale = Vector2(0.6015757, 0.6020518)
+texture = ExtResource("1_8ob8k")
+
+[node name="Settings_Back" type="TextureButton" parent="CanvasLayer" unique_id=201853912]
+offset_left = 496.0
+offset_top = 537.0
+offset_right = 1244.0
+offset_bottom = 1039.0
+scale = Vector2(0.1577988, 0.1577988)
+size_flags_horizontal = 0
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.2, 0)
+texture_normal = ExtResource("3_hu5vy")
+texture_pressed = ExtResource("4_6evga")
+texture_hover = ExtResource("4_6evga")
+script = ExtResource("5_m8q3e")
+
+[node name="Load" type="GridContainer" parent="CanvasLayer" unique_id=1483534613]
+propagate_maximum_size = false
+offset_left = 218.99998
+offset_top = 122.0
+offset_right = 4063.0
+offset_bottom = 2286.0
+scale = Vector2(0.18562786, 0.18562786)
+columns = 2
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/Load" unique_id=448896563]
+layout_mode = 2
+texture_normal = ExtResource("2_h6df0")
+
+[node name="TextureButton2" type="TextureButton" parent="CanvasLayer/Load" unique_id=2116233752]
+layout_mode = 2
+texture_normal = ExtResource("2_h6df0")
+
+[node name="TextureButton3" type="TextureButton" parent="CanvasLayer/Load" unique_id=702600646]
+layout_mode = 2
+texture_normal = ExtResource("2_h6df0")
+
+[node name="TextureButton4" type="TextureButton" parent="CanvasLayer/Load" unique_id=1686468028]
+layout_mode = 2
+texture_normal = ExtResource("2_h6df0")
+
+[connection signal="pressed" from="CanvasLayer/Settings_Back" to="CanvasLayer/Settings_Back" method="_on_pressed"]

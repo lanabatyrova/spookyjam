@@ -67,8 +67,8 @@
 "image": "\"res://assets/Postcard_back.png\""
 },
 "mirror": false,
-"offset": Vector2(0, -55),
-"scale": 0.88,
+"offset": Vector2(0, -100),
+"scale": 1.5,
 "scene": ""
 },
 "Postcard Front": {
@@ -76,8 +76,8 @@
 "image": "\"res://assets/Postcard_Front.png\""
 },
 "mirror": false,
-"offset": Vector2(0, -55),
-"scale": 0.88,
+"offset": Vector2(0, -100),
+"scale": 1.5,
 "scene": ""
 },
 "Ruined Belt": {

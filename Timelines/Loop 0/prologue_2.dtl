@@ -1,6 +1,6 @@
 [background scene="res://Scenes/Cutscenes/Library_Talking.tscn" fade="0.5"]
-join Valerie (Talking) left [animation="Fade In"]
-join Lizzy (Talking) right [animation="Fade In" wait="true"]
+join Valerie (Close Up) left [animation="Fade In"]
+join Lizzy (Close Up) right [animation="Fade In" wait="true"]
 Valerie: Ah, Elizabeth, how was your last day of highschool?
 Valerie: Some of the visiting students were grumbling about an exam?
 Lizzy: It was pretty brutal.
@@ -33,7 +33,7 @@ update Lizzy [mirrored="false"]
 Lizzy: Yeah the watch is cool and all, but...
 Lizzy: Didn’t you want to do literally anything else?
 Valerie: Hm.
-leave Item [animation="Fade Out Down" length="0.3"]
+leave "Strike Ball" [animation="Fade Out Down" length="0.3"]
 Valerie: ...
 [wait time="1.0"]
 Valerie: No.
@@ -87,7 +87,7 @@ Valerie: when it’s so much bigger than that.
 Lizzy: As soon as I’ve got the whole monster hunting thing figured out, I gotta refigure it all out again.
 Lizzy: This sucks!
 Valerie: You’re more capable than you think.
-join Juniper (Talking) rightmost [animation="Slide From Right" mirrored="true"]
+join Juniper (Close Up) rightmost [animation="Slide From Right" mirrored="true"]
 Juniper: Lizzy, Barb’s locked herself in the school bathroom and won't come out.
 Juniper: You have to use your werewolf strength to bust down the door!
 update Lizzy [animation="Bounce" mirrored="true"]
@@ -105,11 +105,11 @@ leave Juniper [animation="Slide To Right"]
 leave --All-- [animation="Fade Out" length="0.4"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [background arg="res://Temp Assets/1000_F_347921305_pjOg9RZciRuXplmBc7lx8x8uFE6kBGNq-825048994.jpg" fade="0.5" wait="true"]
-join Juniper (Full Body J) righter [animation="Slide From Left" length="1.0"]
+join Juniper (Animated) righter [animation="Slide From Left" length="1.0"]
 [wait time="0.2"]
-join Lizzy (Full Body) midright [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
+join Lizzy (Animated) midright [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
 [wait time="0.5"]
-join Noah offleft [animation="Slide From Right" length="5.0" mirrored="true"]
+join Noah (Animated) offleft [animation="Slide From Right" length="5.0" mirrored="true"]
 [wait time="0.5"]
 update Lizzy [mirrored="false"]
 update Juniper [mirrored="true"]
@@ -122,8 +122,8 @@ leave Juniper [animation="Slide To Right"]
 leave Lizzy [animation="Slide To Right"]
 leave --All-- [animation="Fade Out" length="0.1"]
 [background arg="res://assets/Locations/Girls_Bathroom.png" fade="1.0" wait="true"]
-join Juniper (Talking) right [animation="Slide From Left" length="1.0"]
-join Lizzy (Talking) lefter [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
+join Juniper (Close Up) right [animation="Slide From Left" length="1.0"]
+join Lizzy (Close Up) lefter [animation="Slide From Left" length="1.0" wait="true" mirrored="true"]
 update Juniper [mirrored="true"]
 
 
@@ -163,12 +163,12 @@ Barb: I'm coming out.
 Lizzy: finally amirite haha...
 Juniper: shhh
 [background arg="res://assets/Locations/Girls_Bathroom_Open.png" fade="0.5" wait="true"]
-join Barb (Talking) midleft [animation="Fade In Up" length="3.0" wait="true"]
-join Item (Barb Ripped Dress) midleft [z_index="1"]
+join Barb (Close Up) midleft [animation="Fade In Up" length="3.0" wait="true"]
+join "Strike Ball" (Barb Ripped Dress) midleft [z_index="1"]
 [background arg="res://assets/Locations/Girls_Bathroom.png" fade="0.4" wait="true"]
 Lizzy: uh.. did a wild animal tear into that?
 update Barb [animation="Shake X" length="1.5" mirrored="true"]
-update Item (Barb Ripped Dress) midleft [z_index="1" mirrored="true"]
+update "Strike Ball" (Barb Ripped Dress) midleft [z_index="1" mirrored="true"]
 Barb: i tried putting it on and.. it..
 barb: [sniff]
 Juniper: i mean.
@@ -176,7 +176,7 @@ Juniper: It's not so bad.
 update Lizzy [animation="Bounce"]
 Lizzy: are you kidding that things shredded motza!
 update Barb [mirrored="false"]
-leave Item [animation="Fade Out Down"]
+leave "Strike Ball" [animation="Fade Out Down"]
 Barb: i might as well jump off a bridge now.
 Lizzy: Barb, you are the most capable person I know
 Lizzy: when it comes to fashion.

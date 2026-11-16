@@ -16,9 +16,14 @@
 [ext_resource type="Texture2D" uid="uid://buaqcoky3b305" path="res://Scenes/Phone/7_pressed.png" id="17_tbm6s"]
 [ext_resource type="Texture2D" uid="uid://5nasmatt4ok0" path="res://Scenes/Phone/8_pressed.png" id="18_srr64"]
 [ext_resource type="Texture2D" uid="uid://o42q5cc82f57" path="res://Scenes/Phone/9_pressed.png" id="19_es4ui"]
+[ext_resource type="Script" uid="uid://tq30q37tuwvb" path="res://Scenes/Phone/character_body_2d.gd" id="20_cmosd"]
 [ext_resource type="Script" uid="uid://bjc4qdjndyk7o" path="res://Scenes/Phone/phone_close_button.gd" id="20_gp411"]
+[ext_resource type="Texture2D" uid="uid://bfibsrsvtfm4p" path="res://assets/Journal Overlays/valerie_journal/Polaroid_Val.png" id="20_rklnj"]
 [ext_resource type="Texture2D" uid="uid://tshkdlldjnql" path="res://Scenes/Phone/0_pressed.png" id="20_uj5th"]
 [ext_resource type="Texture2D" uid="uid://o7fmg4x6j30" path="res://Scenes/Phone/pound_presssed.png" id="21_w1i8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgl7g"]
+size = Vector2(37.97747, 24.07287)
 
 [node name="Node2D" type="Control" unique_id=859518970]
 layout_mode = 3
@@ -196,4 +201,29 @@ offset_bottom = 89.0
 text = "X"
 script = ExtResource("20_gp411")
 
+[node name="Control" type="Control" parent="." unique_id=2084778124]
+visible = false
+z_index = 1
+anchors_preset = 0
+offset_left = 684.0
+offset_top = 268.0
+offset_right = 724.0
+offset_bottom = 308.0
+
+[node name="Node2D" type="Node2D" parent="Control" unique_id=1093150596]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Control/Node2D" unique_id=1347418241]
+input_pickable = true
+script = ExtResource("20_cmosd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Node2D/CharacterBody2D" unique_id=2016602585]
+position = Vector2(2.5000062, 10.563571)
+scale = Vector2(5.187286, 5.187286)
+shape = SubResource("RectangleShape2D_vgl7g")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Node2D/CharacterBody2D" unique_id=936255358]
+scale = Vector2(0.14481239, 0.14481239)
+texture = ExtResource("20_rklnj")
+
 [connection signal="pressed" from="CanvasLayer/Close Button" to="CanvasLayer/Close Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Control/Node2D/CharacterBody2D" to="Control/Node2D/CharacterBody2D" method="_on_mouse_entered"]

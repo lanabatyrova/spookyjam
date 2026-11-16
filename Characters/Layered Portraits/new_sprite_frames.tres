@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://blwbwexcbgxiv" path="res://sprites/Lady/Lady_Talking1.png" id="1_xho7f"]
 [ext_resource type="Texture2D" uid="uid://bl7dsmi8674r3" path="res://sprites/Lady/Lady_Talking2.png" id="2_frp2h"]
 [ext_resource type="Texture2D" uid="uid://cfkk04k0idsxm" path="res://sprites/Barb/Face/Barb_Default_Talking.png" id="2_y6b68"]
-[ext_resource type="Texture2D" uid="uid://bcmp5uj0eq6ny" path="res://sprites/Dagger/Dagger_Default_1.png" id="3_46pfl"]
-[ext_resource type="Texture2D" uid="uid://0sd41dbltt7v" path="res://sprites/Dagger/Dagger_Default_2.png" id="4_bad57"]
+[ext_resource type="Texture2D" uid="uid://dwjybyw28vtdq" path="res://sprites/Dagger/Body/dagger base.png" id="3_uds0a"]
+[ext_resource type="Texture2D" uid="uid://ctemcfx847l05" path="res://sprites/Dagger/Face/dagger mouth talking.png" id="4_y6b68"]
 [ext_resource type="Texture2D" uid="uid://62prwjbs3ddf" path="res://sprites/Juniper/Body/Juniper base.png" id="5_uds0a"]
 [ext_resource type="Texture2D" uid="uid://bnxea0w4e1ymo" path="res://sprites/Juniper/Face/Juniper mouth talking.png" id="6_y6b68"]
 [ext_resource type="Texture2D" uid="uid://dftrfebwab80v" path="res://sprites/Juniper/Juniper_Serious_1.png" id="7_uds0a"]
@@ -16,10 +16,10 @@
 [ext_resource type="Texture2D" uid="uid://dyxb28h5j7pjq" path="res://sprites/Lizzy/Lizzy Base.png" id="13_uds0a"]
 [ext_resource type="Texture2D" uid="uid://dckvqogb1blh6" path="res://sprites/Lizzy/Lizzy_Default_2.png" id="14_dsyy7"]
 [ext_resource type="Texture2D" uid="uid://ge6yovhq55b2" path="res://sprites/Lizzy/Face/Lizzy Talking V3.png" id="14_y6b68"]
-[ext_resource type="Texture2D" uid="uid://cmteia3gcwqhu" path="res://sprites/Val/Val_Default_1.png" id="17_868b4"]
 [ext_resource type="Texture2D" uid="uid://vlos4bdbluux" path="res://sprites/Noah/Body/noah base.png" id="17_uds0a"]
-[ext_resource type="Texture2D" uid="uid://p5w3t12fjl0l" path="res://sprites/Val/Val_Default_2.png" id="18_2b7r0"]
 [ext_resource type="Texture2D" uid="uid://c4kkd2rgu7bw5" path="res://sprites/Noah/Face/noah mouth talking.png" id="18_y6b68"]
+[ext_resource type="Texture2D" uid="uid://dqnjdgd2ktpo3" path="res://sprites/Val/Body/val base.png" id="19_uds0a"]
+[ext_resource type="Texture2D" uid="uid://qp03nneurxjx" path="res://sprites/Val/Face/val mouth talking.png" id="20_y6b68"]
 
 [resource]
 animations = [{
@@ -36,10 +36,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_46pfl")
+"texture": ExtResource("3_uds0a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_bad57")
+"texture": ExtResource("4_y6b68")
 }],
 "loop": 1,
 "name": &"Dagger Default",
@@ -124,10 +124,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_868b4")
+"texture": ExtResource("19_uds0a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_2b7r0")
+"texture": ExtResource("20_y6b68")
 }],
 "loop": 1,
 "name": &"Val Default",
