@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c8kfffl2qefim"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://ckxq10iiyupsc" path="res://assets/Loop 7/Lizzy_Sitting.png" id="2_8h1uo"]
+[ext_resource type="Texture2D" uid="uid://ge6yovhq55b2" path="res://sprites/Lizzy/Face/Lizzy Talking V3.png" id="3_hqef7"]
+[ext_resource type="Texture2D" uid="uid://dyxb28h5j7pjq" path="res://sprites/Lizzy/Lizzy Base.png" id="4_umu8k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4e6rc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hqef7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_umu8k")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=864156078]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=84671974]
+texture = ExtResource("2_8h1uo")
+
+[node name="Animated" type="Node2D" parent="." unique_id=231975230]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1025121180]
+position = Vector2(42, 174.00002)
+scale = Vector2(1.1251148, 1.2147497)
+sprite_frames = SubResource("SpriteFrames_4e6rc")
+autoplay = "default"
+frame = 1
+frame_progress = 0.93901604
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=983678888]
+root_node = NodePath("../../..")

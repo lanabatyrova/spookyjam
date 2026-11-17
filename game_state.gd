@@ -6,8 +6,14 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 2
-var midpoint_reached = true
+
+# Load the custom images for the mouse cursor.
+var arrow = load("res://Design/Cursors/cursor.png")
+var pointing = load("res://Design/Cursors/Pointing.png")
+
+
+var current_day: int = 7
+var midpoint_reached = false
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
@@ -73,6 +79,14 @@ var spoken_today = {
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_dialogic_layer()
+	
+	# Changes only the arrow shape of the cursor.
+	# This is similar to changing it in the project settings.
+	Input.set_custom_mouse_cursor(arrow)
+
+	# Changes a specific shape of the cursor (here, the I-beam shape).
+	Input.set_custom_mouse_cursor(pointing, Input.CURSOR_POINTING_HAND)
+
 	
 func start_minigame():
 	is_minigame = true

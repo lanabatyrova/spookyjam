@@ -1,34 +1,53 @@
-join Lizzy (Talking) right
-join Dagger (Talking) left
+audio music "res://audio/Music/Love Song.mp3" [volume="-5.0"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Lizzy (Close Up) right [extra_data="show Eyes/Side"]
+join Dagger (Close Up) left
 Lizzy: Hey.
 Dagger: Hello.
-- I appreciate dagger being [br] here, I should tell him.
+...
+label C1
+- [VO] I appreciate dagger being [br] here, I should tell him. | [if {Choices.C_1} == 0.0] [else="hide"]
 	Lizzy: Thanks for making it, Dagger.
 	Lizzy: it means a lot to me.
 	Dagger: of course.
+	update Dagger [extra_data="show Eyes/Closed"]
 	Dagger: I would walk to the ends of existence for you.
-	Lizzy: ...
+	...
+	update  Brows/Up, hide Brows/Default, "]
 	Dagger: in a loyal friend kind of way,
 	Dagger: if you'd prefer.
+	update Dagger [extra_data="show Brows/Default, hide Brows/Up, hide Eyes/Closed"]
 	Lizzy: I'm still deciding.
-- he's like super old, he probably [br]deals with this sort of thing all the time.
+	set {Choices.C_1} += 1.0
+	jump C1
+- [VO] he's like super old, he probably [br]deals with this sort of thing all the time. | [if {Choices.C_2} == 0.0] [else="hide"]
 	Lizzy: Have you much experience with...
 	Lizzy: this sort of thing?
 	Dagger: betrayal?
 	Lizzy: I wouldn't call it betrayal—
+	update Dagger [extra_data="show Eyes/Side"]
 	Dagger: it's hard to accept at first that a close ally could possess the ability to stab you in the back.
 	Lizzy: Okay, okay,
 	Lizzy: Juniper isn't stabbing me in the back or anything,
+	update Dagger [extra_data="hide Eyes/Side"]
 	Lizzy: she's just,
 	Lizzy: repeating the same day over and over again.
 	Lizzy: Normal teen stuff.
+	update Dagger [extra_data="hide Brows/Default, show Brows/Down"]
 	Dagger: You may have to kill her.
 	Lizzy: WHoa, hey! No. No one is killing her, alright?
-	Dagger: ...
+	update Dagger [extra_data="show Eyes/Side"]
+	...
 	Dagger: just prepare for the possibility.
 	Lizzy: Yeah, i'm not doing that.
-	Dagger: ...
+	update Dagger [extra_data="show Brows/Default, hide Brows/Down, hide Eyes/Side"]
+	...
+	update Dagger [extra_data="hide Mouth/Default, show Mouth/Smile"]
 	Dagger: you are a better person than I am.
+	set {Choices.C_2} += 1.0
+	jump C1
 
+set {Choices.C_1} = 0
+set {Choices.C_2} = 0
 do ProgressionTracker.complete_requirement("7A", "dagger_dialog")
 do GameState.mark_characters_as_spoken(["dagger"])

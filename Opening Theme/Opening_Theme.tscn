@@ -34,11 +34,12 @@
 [ext_resource type="Texture2D" uid="uid://ckcddjtmsae5y" path="res://assets/Previously On/graveyard.png" id="28_y3l1d"]
 [ext_resource type="Texture2D" uid="uid://df4lwl3p5nt5b" path="res://assets/Locations/graveyard_night.png" id="30_di7a1"]
 [ext_resource type="Texture2D" uid="uid://bxdjjliahbul1" path="res://Opening Theme/poster 2.png" id="31_l7vrd"]
-[ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="32_0ioj6"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="33_btoj4"]
 [ext_resource type="Texture2D" uid="uid://b7fpi8v4ti7t5" path="res://assets/bgs/table behind.png" id="33_ocye5"]
+[ext_resource type="Texture2D" uid="uid://c2lna6ob8sj55" path="res://sprites/Val/Val_Opening_1.png" id="34_1krbe"]
 [ext_resource type="Texture2D" uid="uid://bx4g6pv44l003" path="res://Opening Theme/barb and juniper.png" id="34_lkhe1"]
 [ext_resource type="Texture2D" uid="uid://q6ka683c4ih2" path="res://assets/bgs/table middle.png" id="35_6cqnx"]
+[ext_resource type="Texture2D" uid="uid://cx8qfbolodxd8" path="res://sprites/Val/Val_Opening_2.png" id="35_520j3"]
 [ext_resource type="Texture2D" uid="uid://c3bisqgolpst7" path="res://sprites/King Fear Temp.png" id="35_kot0a"]
 [ext_resource type="Texture2D" uid="uid://d24vpbak41ael" path="res://Opening Theme/Lizzy hates studying.png" id="36_w1stu"]
 [ext_resource type="Texture2D" uid="uid://dw8gcawkkiv4f" path="res://assets/bgs/Table front.png" id="37_a4ygg"]
@@ -50,7 +51,11 @@
 [ext_resource type="Texture2D" uid="uid://cbw3a7r6un2bc" path="res://assets/bgs/Diner_Sitting_Table.png" id="46_6cqnx"]
 [ext_resource type="Texture2D" uid="uid://cu2mufbiiccmw" path="res://Temp Assets/temp items/book.png" id="46_esdus"]
 [ext_resource type="Texture2D" uid="uid://7qeonaw8bd3y" path="res://Temp Assets/temp items/classic-american-breakfast-platter-o9c8rjv14n5u2b6z-1069890933.png" id="47_6cqnx"]
+[ext_resource type="Texture2D" uid="uid://bghlon3g5d2el" path="res://sprites/Noah/Noah_Opening_1.png" id="47_kx3if"]
+[ext_resource type="Texture2D" uid="uid://v8dvsedos55s" path="res://sprites/Noah/Noah_Opening_2.png" id="48_gfp11"]
+[ext_resource type="Texture2D" uid="uid://bbujbtdyrsuwq" path="res://sprites/Lizzy/Lizzy_Opening_1.png" id="49_3mnrs"]
 [ext_resource type="Texture2D" uid="uid://b3t52bhb6o8yv" path="res://sprites/Lizzy/Lizzy_half_wolf.png" id="49_6p1d7"]
+[ext_resource type="Texture2D" uid="uid://qgam13djbhgk" path="res://sprites/Lizzy/Lizzy_Opening_2.png" id="50_1krbe"]
 [ext_resource type="Texture2D" uid="uid://rn7e8lg2qr0j" path="res://sprites/Reverse/Dagger_1_Reverse.png" id="50_tgbjt"]
 [ext_resource type="Texture2D" uid="uid://c505ws3k10n4k" path="res://Temp Assets/Vignette-Transparent-1323519034.png" id="51_6p1d7"]
 [ext_resource type="Texture2D" uid="uid://capbso3jlmrb1" path="res://Opening Theme/IMG_6512.png" id="53_3b2lr"]
@@ -682,10 +687,10 @@ tracks/51/path = NodePath("Clips/Diner Fun/People/Lizzie1:position")
 tracks/51/interp = 2
 tracks/51/loop_wrap = true
 tracks/51/keys = {
-"times": PackedFloat32Array(9.133333, 9.233334, 9.4, 9.566667, 9.766666),
-"transitions": PackedFloat32Array(1, 1.2311445, 1, 0.8705506, 1),
+"times": PackedFloat32Array(9.133333, 9.3, 9.466666, 9.6, 9.766666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1457.5016, 691.2508), Vector2(1467.9266, 665.4381), Vector2(1457.5016, 691.2508), Vector2(1467.9266, 665.4381), Vector2(1457.5016, 691.2508)]
+"values": [Vector2(1485.937, 616.611), Vector2(1478.137, 626.091), Vector2(1485.937, 616.611), Vector2(1478.137, 626.091), Vector2(1485.937, 616.611)]
 }
 tracks/52/type = "value"
 tracks/52/imported = false
@@ -817,7 +822,7 @@ tracks/62/keys = {
 "times": PackedFloat32Array(15.033333, 15.166666, 15.333333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, 0.026179938779914945, 0.0]
+"values": [0.0, 0.02617993877991494, 0.0]
 }
 tracks/63/type = "value"
 tracks/63/imported = false
@@ -853,7 +858,7 @@ tracks/65/keys = {
 "times": PackedFloat32Array(5, 5.3999996, 5.733333, 6.0333333, 6.333333, 6.633333, 6.8601823, 7.193516, 7.493516, 7.7935157),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, -0.03141592653589813, 0.0, 0.017453292519943295, 0.0, 0.0, -0.03141592653589813, 0.0, 0.017453292519943295, 0.0]
+"values": [0.0, -0.03141592653589813, 0.0, 0.01745329251994329, 0.0, 0.0, -0.03141592653589813, 0.0, 0.01745329251994329, 0.0]
 }
 tracks/66/type = "value"
 tracks/66/imported = false
@@ -865,7 +870,7 @@ tracks/66/keys = {
 "times": PackedFloat32Array(5.4666667, 6.1, 6.233333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, 0.027925268031909173, 0.0]
+"values": [0.0, 0.02792526803190917, 0.0]
 }
 tracks/67/type = "value"
 tracks/67/imported = false
@@ -2113,6 +2118,53 @@ _data = {
 &"RESET": SubResource("Animation_pgmg5")
 }
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ylmb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_1krbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_520j3")
+}],
+"loop": 1,
+"name": &"Library study",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_kx3if")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_gfp11")
+}],
+"loop": 1,
+"name": &"Diner Fun",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xotu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_3mnrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_1krbe")
+}],
+"loop": 1,
+"name": &"Diner Fun Lizzy",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node" unique_id=2113514394]
 script = ExtResource("1_j7gbj")
 metadata/_custom_type_script = "uid://blsjcvm6gvd78"
@@ -2362,10 +2414,13 @@ position = Vector2(233.15677, 111.02704)
 scale = Vector2(1.2467276, 1.2467276)
 texture = ExtResource("20_77u0x")
 
-[node name="Val1" type="Sprite2D" parent="Clips/Library Study" unique_id=2022884182]
+[node name="Val1" type="AnimatedSprite2D" parent="Clips/Library Study" unique_id=984117005]
 position = Vector2(498.38797, 102.3916)
 scale = Vector2(0.5276091, 0.5276091)
-texture = ExtResource("32_0ioj6")
+sprite_frames = SubResource("SpriteFrames_6ylmb")
+animation = &"Library study"
+autoplay = "Library study"
+frame_progress = 0.559623
 flip_h = true
 
 [node name="Table" type="Control" parent="Clips/Library Study" unique_id=673050122]
@@ -2498,16 +2553,22 @@ position = Vector2(234.12546, 552.4034)
 scale = Vector2(0.9778444, 0.9778445)
 texture = ExtResource("12_623nw")
 
-[node name="Noah1" type="Sprite2D" parent="Clips/Diner Fun/People" unique_id=2042769313]
+[node name="Noah1" type="AnimatedSprite2D" parent="Clips/Diner Fun/People" unique_id=811257475]
 position = Vector2(1027.5012, 560.0006)
 scale = Vector2(0.8948448, 0.8948448)
-texture = ExtResource("17_77u0x")
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Diner Fun"
+autoplay = "Diner Fun"
 flip_h = true
 
-[node name="Lizzie1" type="Sprite2D" parent="Clips/Diner Fun/People" unique_id=1824622984]
+[node name="Lizzie1" type="AnimatedSprite2D" parent="Clips/Diner Fun/People" unique_id=1377935540]
 position = Vector2(1457.5016, 691.2508)
 scale = Vector2(0.96837205, 0.968372)
-texture = ExtResource("7_smeob")
+sprite_frames = SubResource("SpriteFrames_5xotu")
+animation = &"Diner Fun Lizzy"
+autoplay = "Diner Fun Lizzy"
+frame = 1
+frame_progress = 0.08784967
 
 [node name="DinerSittingTable" type="Sprite2D" parent="Clips/Diner Fun" unique_id=1285364141]
 position = Vector2(631.24915, 723.7491)

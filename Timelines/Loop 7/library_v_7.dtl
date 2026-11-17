@@ -1,12 +1,13 @@
-join Lizzy (Talking) right
-join Valerie (Talking) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Lizzy (Close Up) right [extra_data="show Eyes/Side, show Side, hide Hips"]
+join Valerie (Close Up) left
 Lizzy: Hey, Val.
 Valerie: Hello, Elizabeth.
 Valerie: i am sorry that Juniper is wrapped up in all of this.
 Valerie: i should have seen it coming.
 Lizzy: it's super out of character for her.
-Valerie: ...
-Valerie: she told me of a vision,, where Vermilion was destroyed.
+...
+Valerie: she told me of a vision, where Vermilion was destroyed.
 Valerie: it weighed on her heavily.
 Valerie: I figured, it would be alright,
 Valerie: that whatever happened would make all of your stronger,
@@ -17,8 +18,8 @@ Lizzy: we're a team.
 Valerie: yes.
 Valerie: we are.
 Valerie: and she needs us now more than ever.
-
-- This might be the only chance [br] I'll get to ask her about what [br] else she did in Scotland.
+label C1
+- [VO] This might be the only chance [br] I'll get to ask her about what [br] else she did in Scotland. | [if {Choices.C_1} == 0.0] [else="hide"]
 	Lizzy: so, when you were taking your uh, gap years, what else did you get up to?
 	Lizzy: any whacky adventures?
 	Valerie: hm.
@@ -46,7 +47,10 @@ Valerie: and she needs us now more than ever.
 	Valerie: I've been out of practice for far too long.
 	Valerie: and I'd rather not give in to the temptation.
 	Lizzy: it was worth a shot.
-- 
+	set {Choices.C_1} += 1.0
+	jump C1
+
+- [VO] I've always been curious about the Keepers. | [if {Choices.C_2} == 0.0] [else="hide"]
 	Lizzy: so.
 	Lizzy: you grew up in the Keep, right?
 	Valerie: that's correct.
@@ -63,17 +67,25 @@ Valerie: and she needs us now more than ever.
 	Valerie: i don't like thinking about it like that,
 	Valerie: the Keepers prefer to keep it within the order, but marriage and relationships outside of the keep is also permitted.
 	Valerie: are you interested in joining the order?
-	Valerie: im not sure how they'd feel about,
-	Valerie: a... um...
-	Lizzy: werewolf?
+	Lizzy: uh...
+	Valerie: i'm not sure how they'd feel about,
+	Valerie: uh,
+	Valerie: you being,
+	Valerie: well
+	Lizzy: a werewolf?
 	Valerie: american.
-	Lizzy: oh. Well.
+	Lizzy: figures.
 	Lizzy: I'm not interested in joining, so you don't have to worry about that.
 	Valerie: hm, that's a shame. You would make an excellent keeper.
 	Valerie: if you change your mind, when we figure out a way to stop this whole thing, please let me know.
 	Lizzy: thanks, VAL.
 	VO: american werewolf in london.
 	VO: where have I heard that before?
+	set {Choices.C_2} += 1.0
+	jump C1
+
+set {Choices.C_1} = 0
+set {Choices.C_2} = 0
 
 do ProgressionTracker.complete_requirement("7A", "valerie_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])

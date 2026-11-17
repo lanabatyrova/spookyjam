@@ -1,10 +1,12 @@
 join Lizzy (Close Up) right
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Knightmare (Close Up) left
 Lizzy: ...
 Knightmare: ...
 VO: well, this is awkward.
 VO: what do you say to your worst enemy?
-- How did Dagger and Lady Knightmare[br] even get into the library?[br]Last time I checked [br] vampires burn up in the sun.
+label C1
+- How did Dagger and Lady Knightmare[br] even get into the library?[br]Last time I checked [br] vampires burn up in the sun. | [if {Choices.C_1} == 0.0] [else="hide"]
 	Lizzy: So...
 	Lizzy: How did you and dagger get in here?
 	Lizzy: Isn't it like,
@@ -23,7 +25,9 @@ VO: what do you say to your worst enemy?
 	Knightmare: I will crush you!
 	Knightmare: after our mutual goal is complete.
 	VO: at least she's semi-resonable.
-- She seems really at [br] home in her new identity. [br] I wonder what inspired it?
+	set {Choices.C_1} += 1.0
+	jump C1
+- She seems really at [br] home in her new identity. [br] I wonder what inspired it? | [if {Choices.C_2} == 0.0] [else="hide"]
 	Lizzy: I have to ask, this whole knights costume—
 	Knightmare: It is not a costume, Elizabeth Springs. It is a way of life.
 	Lizzy: Uh,
@@ -47,9 +51,9 @@ VO: what do you say to your worst enemy?
 	leave --All-- [animation="Fade Out"]
 	[background arg="#000000ff" fade="0.0"]
 	[several sweeping minutes of rich visual storytelling]
-	[background fade="0.0"]
-	join Lizzy (Talking) right
-	join Knightmare (Talking) left
+	[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+	join Lizzy (Close Up) right
+	join Knightmare (Close Up) left
 	audio music -
 	Lizzy: Wow, that's incredible.
 	Knightmare: yes.
@@ -57,5 +61,11 @@ VO: what do you say to your worst enemy?
 	VO: I totally just zoned out for all of that.
 	VO: ...
 	VO: I'll have to ask dagger later.
+	set {Choices.C_2} += 1.0
+	jump C1
+
+set {Choices.C_1} = 0
+set {Choices.C_2} = 0
+
 do ProgressionTracker.complete_requirement("7A", "lady_dialog")
 do GameState.reach_midpoint(["lady_macdeath"])

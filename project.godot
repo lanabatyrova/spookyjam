@@ -30,12 +30,14 @@ directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "CGS": "res://Characters/CGS.dch",
 "Dagger": "res://Characters/Dagger.dch",
+"Fg2": "res://Characters/Fg2.dch",
 "Foreground": "res://Characters/Foreground.dch",
 "Item": "res://Characters/Item.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
 "Knightmare": "res://Characters/Knightmare.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
+"Lighting": "res://Characters/Lighting.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Logo": "res://Characters/Logo.dch",
 "Minigame": "res://Characters/Minigame.dch",
@@ -54,6 +56,7 @@ directories/dtl_directory={
 "Silver Lake Plaque": "res://Scenes/Transition Locations/Silver Lake Plaque.dtl",
 "TEST": "res://Scenes/TEST.dtl",
 "Testing": "res://Scenes/Previously On/Testing.dtl",
+"Testing Timeline": "res://Timelines/Testing Timeline.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
 "basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",
 "diner_j_4": "res://Timelines/Loop 4/diner_j_4.dtl",
@@ -131,6 +134,7 @@ directories/dtl_directory={
 "prologue_4": "res://Timelines/Loop 0/prologue_4.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "rewind": "res://Timelines/rewind.dtl",
+"scratch pad": "res://Timelines/Loop 7/scratch pad.dtl",
 "scratch_pad": "res://scratch_pad.dtl",
 "street_j_5": "res://Timelines/Loop 5/street_j_5.dtl",
 "test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
@@ -148,6 +152,13 @@ layout/style_list=["res://Default_Style.tres", "res://Design/Glossary/test.tres"
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={
+"Choices": {
+"C_1": 0,
+"C_2": 0,
+"C_3": 0,
+"C_4": 0,
+"C_5": 0
+},
 "collected_item_image": "",
 "collected_item_name": "",
 "cur_day": "",
@@ -203,7 +214,7 @@ glossary/glossary_files=[]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-mouse_cursor/custom_image="uid://5b3su8yjlcch"
+mouse_cursor/custom_image="uid://bwsxffj2m3bkg"
 
 [editor_plugins]
 

@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://Scenes/Main Menu/settings.gd" id="8_03oub"]
 [ext_resource type="Texture2D" uid="uid://deou1vk4xmeup" path="res://Scenes/Main Menu/New_Assets/MM_Exit.png" id="9_bnksx"]
 [ext_resource type="Script" uid="uid://dx1t3twb4vskg" path="res://Scenes/Main Menu/exit.gd" id="11_motf4"]
+[ext_resource type="Script" uid="uid://d4j1mgq027h0a" path="res://Scenes/Main Menu/test_timelines.gd" id="13_law43"]
 
 [node name="Menu" type="Node2D" unique_id=2053078578]
 
@@ -109,8 +110,17 @@ scale = Vector2(0.15, 0.15)
 offset_transform_enabled = true
 metadata/_edit_use_anchors_ = true
 
+[node name="TEST TIMELINES" type="Button" parent="CanvasLayer" unique_id=1506368378]
+offset_left = 1010.0
+offset_top = 87.0
+offset_right = 1131.0
+offset_bottom = 118.0
+text = "TEST TIMELINE"
+script = ExtResource("13_law43")
+
 [connection signal="pressed" from="CanvasLayer/DayButton" to="CanvasLayer/DayButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Scenes" to="CanvasLayer/Scenes" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Settings" to="CanvasLayer/Settings" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Exit" to="CanvasLayer/Exit" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/TEST TIMELINES" to="CanvasLayer/TEST TIMELINES" method="_on_pressed"]

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://by1vy7p63rayr"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_hq6ts"]
+[ext_resource type="Texture2D" uid="uid://d3g0je3euw0sf" path="res://assets/Loop 7/lake at night.png" id="2_4e6rc"]
+[ext_resource type="Texture2D" uid="uid://kgiif8ujrhv0" path="res://assets/Loop 7/park bench.png" id="3_6r67d"]
+[ext_resource type="Texture2D" uid="uid://bpqmgl15pkyue" path="res://assets/Loop 7/picnic bench.png" id="4_cw3ka"]
+[ext_resource type="Texture2D" uid="uid://5cx2fcnmqrdy" path="res://assets/Loop 7/park bench top.png" id="5_hcdqf"]
+[ext_resource type="Texture2D" uid="uid://dlmgts5pspghm" path="res://assets/Loop 7/picnic bench topp.png" id="6_dmbfu"]
+
+[node name="Node2D" type="Node" unique_id=1851473381]
+script = ExtResource("1_hq6ts")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=2075594200]
+position = Vector2(315.99997, 120.99999)
+scale = Vector2(0.62318134, 0.62318134)
+
+[node name="LakeAtNight" type="Sprite2D" parent="Node2D" unique_id=1758744171]
+position = Vector2(447, 322)
+texture = ExtResource("2_4e6rc")
+
+[node name="Node2D2" type="Node2D" parent="Node2D" unique_id=260301128]
+position = Vector2(-507.0755, -194.165)
+scale = Vector2(1.6046695, 1.6046695)
+
+[node name="ParkBench" type="Sprite2D" parent="Node2D/Node2D2" unique_id=522299102]
+position = Vector2(595.1851, 323.5339)
+scale = Vector2(0.6231813, 0.6231813)
+texture = ExtResource("3_6r67d")
+
+[node name="PicnicBench" type="Sprite2D" parent="Node2D/Node2D2" unique_id=640264389]
+position = Vector2(598.3011, 325.40344)
+scale = Vector2(0.6231813, 0.6231813)
+texture = ExtResource("4_cw3ka")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D" unique_id=428047308]
+layer = 3
+visible = false
+
+[node name="Node2D" type="Node2D" parent="Node2D/CanvasLayer" unique_id=2027318764]
+z_as_relative = false
+position = Vector2(598.30115, 325.4035)
+scale = Vector2(0.6231814, 0.6231814)
+
+[node name="ParkBenchTop" type="Sprite2D" parent="Node2D/CanvasLayer/Node2D" unique_id=848490134]
+position = Vector2(-5.000122, -3.000061)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_hcdqf")
+
+[node name="PicnicBenchTopp" type="Sprite2D" parent="Node2D/CanvasLayer/Node2D" unique_id=34249064]
+texture = ExtResource("6_dmbfu")

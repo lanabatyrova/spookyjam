@@ -202,5 +202,4 @@ autoplay = &"Talking"
 texture = ExtResource("16_l1cdd")
 
 [node name="Glasses" type="Sprite2D" parent="Glasses2" unique_id=2106637804]
-z_index = 1
 texture = ExtResource("17_gqffh")

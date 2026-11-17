@@ -15,10 +15,8 @@ join Barb left [animation="Fade In"]
 join "King Fear" midleft [animation="Fade In" mirrored="true"]
 update "King Fear" [animation="Bounce"]
 "King Fear": Blood will have blood!
-join CGS (Play 2) center [z_index="1"]
 update "King Fear" [animation="Bounce"]
 "King Fear": To be or not to be!
-update CGS (Play 1)
 update Barb [animation="Shake Y" length="1.0"]
 Barb: He’s just saying random quotes!!
 [background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.5" wait="true"]
@@ -49,23 +47,26 @@ Carry on my legacy...
 [wait time="1.0"]
 [background arg="res://assets/Previously On/hospital_2.png" fade="0.0"]
 Lizzy: Out of everyone, he had to bite me?
+label Test 1
 [wait time="1.0"]
 [background arg="res://Temp Assets/kitchen location.png" fade="0.8" wait="true"]
-join Juniper (Talking) left [animation="Fade In" length="0.4"]
-join Valerie (Talking) right [animation="Fade In" length="0.4" wait="true" mirrored="true"]
+join Foreground (Kitchen Table) center [animation="Instant In"]
+join Juniper (Kitchen) left [animation="Fade In" length="0.4" z_index="-1" extra_data="hide Mouth/Default, show Mouth/Unamused"]
+join Valerie (Kitchen) right [animation="Fade In" length="0.4" wait="true" z_index="1" mirrored="true"]
 update Juniper [animation="Shake X" length="2.0"]
 Juniper: In my vision... Vermilion was gone.
-update Valerie (Talking) [animation="Bounce"]
 Valerie: Did you see anything else?
+...
 [wait time="0.5"]
 update Juniper [mirrored="true"]
-Juniper: ...
-leave --All-- [animation="Fade Out"]
-[background arg="res://assets/dead_lizzy.png" fade="2.0" wait="true"]
+[background arg="#000000ff" fade="0.8"]
+leave --All-- [animation="Fade Out" wait="true"]
+join CGS (Dead Lizzy) center [animation="Fade In" z_index="3"]
 [wait time="1.0"]
-join CGS (No) center [z_index="1"]
+update CGS (No) center [z_index="3" fade="Fade Cross"]
 Juniper: No...
-[background arg="res://Temp Assets/graveyard-1577478-4189764713.jpg" fade="2.0" wait="true"]
+leave --All-- [animation="Fade Out"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="2.0" wait="true"]
 update CGS (Graveyard)
 join Dagger right [animation="Fade In" length="1.0"]
 Dagger (Talking): There’s more at play than you and I, dearest Elizabeth.
@@ -74,25 +75,18 @@ leave --All-- [animation="Fade Out" length="1.0"]
 AND THE VERMILION WOLVES TAKE ANOTHER VICTORY-
 join "King Fear" center [animation="Slide In Up" length="0.7"]
 "King Fear": King Fear\: Tonight is the day you die Springs!! Now is the winter of your discontent!
-join Lizzy (Full Body) rightmost [animation="Slide From Right" z_index="1"]
-join CGS (Baseball 1) center [z_index="1"]
+join Lizzy (Animated) rightmost [animation="Slide From Right" z_index="1"]
 Lizzy: Here goes nothing
 update "King Fear" left [animation="Heartbeat" length="1.0"]
-update CGS (Baseball 2)
 [wait time="1.7"]
-update CGS (Baseball 3)
 "King Fear": [aa=0.1]Urghh
-update CGS (Baseball 4)
 [wait time="1.8"]
-update CGS (Baseball 5)
 [wait time="1.3"]
-update CGS (Baseball 6)
 leave "King Fear" [animation="Slide Out Down" wait="true"]
 join "Lady MacDeath" leftmost
 "Lady MacDeath": My King! NOOOOO
 join Noah (Full Body) midright [animation="Fade In Up" length="0.2"]
 [wait time="1.0"]
-update CGS (Baseball 7)
 Noah: Whoa, killer throw!
 leave --All-- [animation="Fade Out" length="0.4"]
 [wait time="0.4"]
