@@ -12,9 +12,11 @@ var arrow = load("res://Design/Cursors/cursor.png")
 var pointing = load("res://Design/Cursors/Pointing.png")
 
 
-var current_day: int = 7
+var current_day: int = 1
 var midpoint_reached = false
 var is_minigame = false
+
+
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {

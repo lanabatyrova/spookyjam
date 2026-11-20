@@ -31,3 +31,7 @@ func _on_door_pressed() -> void:
 
 func _on_room_door_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Transition Locations/Diner_Stairs.tscn")
+
+
+func _on_texture_button_pressed() -> void:
+	Dialogic.start("res://Scenes/Diner/menu.dtl")

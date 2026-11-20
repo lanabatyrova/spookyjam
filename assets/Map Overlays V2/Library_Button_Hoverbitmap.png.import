@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bcv57fkgv1rv8"
+path="res://.godot/imported/Library_Button_Hoverbitmap.png-81bbd0a7580709eaf23894536a341709.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays V2/Library_Button_Hoverbitmap.png"
+dest_files=["res://.godot/imported/Library_Button_Hoverbitmap.png-81bbd0a7580709eaf23894536a341709.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

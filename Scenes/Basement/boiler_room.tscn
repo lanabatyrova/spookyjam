@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://c57p2ycqefst2"]
+
+[ext_resource type="Texture2D" uid="uid://d18hb12h6gs1w" path="res://assets/Locations/basement boilerroom.png" id="1_jyrdo"]
+[ext_resource type="Script" uid="uid://buu5v0mlf88vs" path="res://Scenes/Basement/boiler_room.gd" id="1_s0aia"]
+[ext_resource type="Texture2D" uid="uid://cjmdkr4c8170p" path="res://assets/noah_destroyed_contraption.png" id="3_tmo50"]
+[ext_resource type="Texture2D" uid="uid://dh6pb2o31ul6f" path="res://assets/noah_contraption.png" id="4_4jypg"]
+[ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="5_8et35"]
+[ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="6_hcmt4"]
+[ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="7_wrcba"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="8_tmo50"]
+
+[node name="Node2D" type="Node2D" unique_id=2133629802]
+script = ExtResource("1_s0aia")
+
+[node name="Basement" type="Sprite2D" parent="." unique_id=1416699331]
+position = Vector2(576, 324)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("1_jyrdo")
+
+[node name="NoahDestroyedContraption" type="TextureButton" parent="." unique_id=419923551]
+offset_left = 245.0
+offset_top = -65.0
+offset_right = 3842.0
+offset_bottom = 2352.0
+scale = Vector2(0.2517115, 0.2517115)
+texture_normal = ExtResource("3_tmo50")
+
+[node name="NoahContraption" type="TextureButton" parent="." unique_id=2095061814]
+offset_left = 458.0
+offset_top = 42.0
+offset_right = 2506.0
+offset_bottom = 2090.0
+scale = Vector2(0.24000059, 0.24000059)
+texture_normal = ExtResource("4_4jypg")
+
+[node name="NoahButton" type="TextureButton" parent="." unique_id=2031358436]
+offset_left = 340.0
+offset_top = 181.0
+offset_right = 996.0001
+offset_bottom = 1936.0
+scale = Vector2(0.22519131, 0.22519131)
+texture_normal = ExtResource("5_8et35")
+texture_hover = ExtResource("6_hcmt4")
+script = ExtResource("7_wrcba")
+
+[node name="hallway" type="TextureButton" parent="." unique_id=816185265]
+offset_left = 998.99994
+offset_top = 658.0
+offset_right = 3009.0469
+offset_bottom = 1400.5134
+rotation = -1.5723326
+scale = Vector2(0.3431871, 0.25399753)
+texture_hover = ExtResource("8_tmo50")
+
+[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[connection signal="pressed" from="hallway" to="." method="_on_hallway_pressed"]

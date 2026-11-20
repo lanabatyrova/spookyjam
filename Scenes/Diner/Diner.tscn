@@ -104,6 +104,14 @@ scale = Vector2(0.08837013, 0.08837013)
 texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
 
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1704070880]
+offset_left = 267.0
+offset_top = 90.0
+offset_right = 507.0
+offset_bottom = 540.0
+scale = Vector2(0.25035837, 0.37959707)
+texture_normal = ExtResource("4_p231a")
+
 [node name="Epilogue" type="Node2D" parent="." unique_id=1854509585]
 visible = false
 position = Vector2(191, 233.99998)
@@ -160,3 +168,4 @@ texture = ExtResource("26_3icix")
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
