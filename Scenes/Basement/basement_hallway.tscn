@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dtkrielx4klg6" path="res://assets/Locations/basement hallway.png" id="1_35gab"]
 [ext_resource type="Script" uid="uid://c1h4740cpbqiu" path="res://Scenes/Basement/basement_hallway.gd" id="1_78pi1"]
 [ext_resource type="Texture2D" uid="uid://bd687n3o6vs5r" path="res://assets/Locations/Hover Doors/basement_door_exit.png" id="2_lirwp"]
+[ext_resource type="Texture2D" uid="uid://cnpiiwgq3y7x3" path="res://assets/Locations/basement hallway glitter.png" id="3_d7pwm"]
 [ext_resource type="Texture2D" uid="uid://xg5q6p7624qu" path="res://assets/Locations/Hover Doors/basement_door_exit2.png" id="3_lirwp"]
 [ext_resource type="Texture2D" uid="uid://m0r1nlm6y1xf" path="res://assets/Locations/Hover Doors/basement_hallway_door_1.png" id="4_d7pwm"]
 [ext_resource type="Texture2D" uid="uid://dviyi0w6vvp87" path="res://assets/Locations/Hover Doors/basement_hallway_door_2.png" id="5_nxfjy"]
@@ -14,6 +15,11 @@ script = ExtResource("1_78pi1")
 position = Vector2(577, 324)
 scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_35gab")
+
+[node name="BasementNight" type="Sprite2D" parent="." unique_id=73683725]
+position = Vector2(577, 324)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("3_d7pwm")
 
 [node name="exit" type="TextureButton" parent="." unique_id=1063488389]
 offset_left = 890.99994

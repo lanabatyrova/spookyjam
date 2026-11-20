@@ -24,7 +24,7 @@ var inventory = {
 	"belt": false,
 	"allergy_meds": false,
 	"pocket_shakespeare": false,
-	"silver_nugget": false,
+	"silver_nugget": true,
 	"pocket_watch": false,
 	"acceptance_letter": false
 }
@@ -47,10 +47,10 @@ var facts = {
 	"v_case_study": false,
 	"v_future_worries": false,
 	"b_camp_story": false,
-	"b_clown_school": false,
-	"n_detention": false,
+	"b_clown_school": true,
+	"n_detention": true,
 	"d_brother_death": false,
-	"d_zombie_plan": false,
+	"d_zombie_plan": true,
 	"m_suspition": false, # lmd is causing the loop?
 	"m_absolved": false, #no she's not
 	"m_shakespeare_hate": false,

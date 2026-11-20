@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://i3svnfo7kiwd"]
 
 [ext_resource type="Script" uid="uid://m4wmmvjp6tj6" path="res://Scenes/Transition Locations/School_Outside.gd" id="1_bhnqm"]
-[ext_resource type="Texture2D" uid="uid://ndtyu08pv1kw" path="res://assets/Locations/school outside.png" id="1_f8rjd"]
-[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="2_bhnqm"]
+[ext_resource type="Texture2D" uid="uid://bde7fpvkhlus" path="res://assets/Locations/out_school_night.png" id="2_8d0e5"]
+[ext_resource type="Texture2D" uid="uid://ck57es7ybk1qq" path="res://assets/Locations/outside_school_day.png" id="3_rxwwb"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_ybx8d"]
+[ext_resource type="Texture2D" uid="uid://duuxnmispmemv" path="res://assets/Locations/Hover Doors/school entrance.png" id="4_qa7io"]
+[ext_resource type="Texture2D" uid="uid://d251fua62h2m5" path="res://assets/Locations/Hover Doors/school entrance open.png" id="5_swf0f"]
 
 [node name="Node2D" type="Node2D" unique_id=1720091678]
 script = ExtResource("1_bhnqm")
@@ -11,15 +13,21 @@ script = ExtResource("1_bhnqm")
 [node name="SchoolOutside" type="Sprite2D" parent="." unique_id=642406941]
 position = Vector2(643, 278)
 scale = Vector2(0.6600151, 0.66001505)
-texture = ExtResource("1_f8rjd")
+texture = ExtResource("3_rxwwb")
+
+[node name="OutsideNight" type="Sprite2D" parent="." unique_id=2059793307]
+position = Vector2(643, 278)
+scale = Vector2(0.6600151, 0.66001505)
+texture = ExtResource("2_8d0e5")
 
 [node name="DoorInside" type="TextureButton" parent="." unique_id=1697335625]
-offset_left = 699.0
-offset_top = 316.0
-offset_right = 939.0
-offset_bottom = 766.0
-scale = Vector2(0.5490909, 0.20999998)
-texture_hover = ExtResource("2_bhnqm")
+offset_left = 746.0
+offset_top = 309.0
+offset_right = 2055.0
+offset_bottom = 1973.0
+scale = Vector2(0.06815226, 0.07008229)
+texture_normal = ExtResource("4_qa7io")
+texture_hover = ExtResource("5_swf0f")
 
 [node name="School Road Exit" type="TextureButton" parent="." unique_id=446106354]
 offset_left = 1211.0

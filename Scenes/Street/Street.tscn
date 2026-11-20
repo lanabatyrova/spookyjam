@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://blsuj7f0ohigg"]
 
 [ext_resource type="Script" uid="uid://bg23lqk1eybux" path="res://Scenes/Street/street.gd" id="1_q35gy"]
-[ext_resource type="Texture2D" uid="uid://bdrghf1drm8il" path="res://assets/Locations/street day.png" id="2_myi71"]
 [ext_resource type="AudioStream" uid="uid://b6ru08wssxpc5" path="res://audio/ambient sounds/street day.mp3" id="2_ofnmi"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="3_d4b3n"]
-[ext_resource type="Texture2D" uid="uid://32nn4by4xos" path="res://assets/Locations/street night new.png" id="3_exxs6"]
+[ext_resource type="Texture2D" uid="uid://cfhmmbuy7g6ty" path="res://assets/Locations/street_day.png" id="3_iepis"]
 [ext_resource type="Texture2D" uid="uid://p3y2pm8kmv58" path="res://assets/People/Juniper_1_Hover.png" id="4_d4b3n"]
-[ext_resource type="Texture2D" uid="uid://lac2pv4fu30" path="res://assets/Locations/Hover Doors/StreetDoor.png" id="4_exxs6"]
+[ext_resource type="Texture2D" uid="uid://b3idok86uvlhq" path="res://assets/Locations/street_night.png" id="4_j7d42"]
 [ext_resource type="Script" uid="uid://c5063scdyesue" path="res://Scenes/Street/juniper_street.gd" id="4_myi71"]
+[ext_resource type="Texture2D" uid="uid://dp0spv3i23ioj" path="res://assets/Locations/Hover Doors/street door closed.png" id="5_iepis"]
 [ext_resource type="BitMap" uid="uid://dp7wbt46ne45d" path="res://assets/People/Juniper_1_bitmap.png" id="5_myi71"]
+[ext_resource type="Texture2D" uid="uid://caugbl31smsqb" path="res://assets/Locations/Hover Doors/street door open.png" id="6_j7d42"]
 [ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="9_7bs4h"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="10_xgmgp"]
 
@@ -26,23 +27,24 @@ offset_left = -9.1552734e-05
 offset_right = 1150.9999
 offset_bottom = 649.0
 
-[node name="StreetNight" type="Sprite2D" parent="." unique_id=717733791]
-position = Vector2(506.87982, 285.55994)
-scale = Vector2(0.52799976, 0.52881455)
-texture = ExtResource("3_exxs6")
-
 [node name="StreetDay" type="Sprite2D" parent="." unique_id=566009330]
 position = Vector2(506.87982, 285.55994)
 scale = Vector2(0.5279998, 0.52881455)
-texture = ExtResource("2_myi71")
+texture = ExtResource("3_iepis")
+
+[node name="StreetNight" type="Sprite2D" parent="." unique_id=717733791]
+position = Vector2(506.87982, 285.55994)
+scale = Vector2(0.52799976, 0.52881455)
+texture = ExtResource("4_j7d42")
 
 [node name="Door" type="TextureButton" parent="." unique_id=1544176818]
 offset_left = 587.0
-offset_top = 235.0
-offset_right = 1230.0
-offset_bottom = 1301.0
-scale = Vector2(0.071895696, 0.071895696)
-texture_hover = ExtResource("4_exxs6")
+offset_top = 232.0
+offset_right = 1612.0
+offset_bottom = 2232.0
+scale = Vector2(0.03587548, 0.03587548)
+texture_normal = ExtResource("5_iepis")
+texture_hover = ExtResource("6_j7d42")
 
 [node name="JuniperButton" type="TextureButton" parent="." unique_id=1760701709]
 offset_left = 753.99994

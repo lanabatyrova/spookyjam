@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bk4xbqc4keqr" path="res://assets/Locations/Diner_Day_V2.png" id="2_j2dj2"]
 [ext_resource type="Texture2D" uid="uid://b3cm2u0t2umsl" path="res://assets/Pickup Items/meds.png" id="3_2l1dh"]
 [ext_resource type="Texture2D" uid="uid://bsjhnwfyu08nj" path="res://assets/Locations/Diner_Night_V2.png" id="3_kafqh"]
-[ext_resource type="Texture2D" uid="uid://lrnmt2pxnjh8" path="res://assets/Locations/Hover Doors/DinerToRoomDoor.png" id="4_0vt8t"]
 [ext_resource type="Texture2D" uid="uid://bhwh7q8ooi1cs" path="res://assets/Pickup Items/meds_hover.png" id="4_0wn7f"]
 [ext_resource type="Script" uid="uid://d16ufkis4lu1b" path="res://Scenes/Diner/allergy_meds.gd" id="4_hui2y"]
+[ext_resource type="Texture2D" uid="uid://br78usfg2bfc0" path="res://assets/Locations/Hover Doors/diner home hover.png" id="4_kafqh"]
 [ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="4_p231a"]
+[ext_resource type="Texture2D" uid="uid://deewq5vgr1ccp" path="res://assets/Locations/Hover Doors/diner exit hover.png" id="5_j2dj2"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="5_qitao"]
 [ext_resource type="BitMap" uid="uid://xm3kppnk80f7" path="res://assets/Pickup Items/meds_bitmap.png" id="6_0wn7f"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="6_1j8du"]
@@ -45,20 +46,20 @@ scale = Vector2(0.6041666, 0.6083333)
 texture = ExtResource("3_kafqh")
 
 [node name="RoomDoor" type="TextureButton" parent="." unique_id=213897984]
-offset_left = 742.0001
-offset_top = 199.99998
-offset_right = 1054.0001
-offset_bottom = 2033.0
-scale = Vector2(0.2811219, 0.08825456)
-texture_hover = ExtResource("4_0vt8t")
+offset_left = 741.99994
+offset_top = 190.0
+offset_right = 1522.0
+offset_bottom = 2023.0
+scale = Vector2(0.11491347, 0.1191194)
+texture_hover = ExtResource("4_kafqh")
 
 [node name="Door" type="TextureButton" parent="." unique_id=974856693]
-offset_left = 1000.99994
-offset_top = 182.0
-offset_right = 1241.0
-offset_bottom = 632.0
-scale = Vector2(0.17965248, 0.6056939)
-texture_hover = ExtResource("4_p231a")
+offset_left = 978.00006
+offset_top = 151.0
+offset_right = 1758.0
+offset_bottom = 1850.0
+scale = Vector2(0.10782999, 0.11234071)
+texture_hover = ExtResource("5_j2dj2")
 
 [node name="AllergyMeds" type="TextureButton" parent="." unique_id=1189417611]
 offset_left = 1002.0

@@ -2,12 +2,34 @@
 
 [ext_resource type="Texture2D" uid="uid://d18hb12h6gs1w" path="res://assets/Locations/basement boilerroom.png" id="1_jyrdo"]
 [ext_resource type="Script" uid="uid://buu5v0mlf88vs" path="res://Scenes/Basement/boiler_room.gd" id="1_s0aia"]
-[ext_resource type="Texture2D" uid="uid://cjmdkr4c8170p" path="res://assets/noah_destroyed_contraption.png" id="3_tmo50"]
+[ext_resource type="Texture2D" uid="uid://d13m51s5wg36t" path="res://assets/Locations/boilerroom glitter.png" id="3_4jypg"]
 [ext_resource type="Texture2D" uid="uid://dh6pb2o31ul6f" path="res://assets/noah_contraption.png" id="4_4jypg"]
+[ext_resource type="Texture2D" uid="uid://c1s2a7jj5a6pp" path="res://assets/con1.png" id="4_wrcba"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="5_8et35"]
+[ext_resource type="Texture2D" uid="uid://dhmmx35r33ivm" path="res://assets/con2.png" id="5_i28sg"]
+[ext_resource type="Texture2D" uid="uid://v38ldb0hi5q4" path="res://assets/con3.png" id="6_eq1tr"]
 [ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="6_hcmt4"]
+[ext_resource type="Texture2D" uid="uid://0j3uh7oghnxd" path="res://assets/conquestion.png" id="7_h1738"]
 [ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="7_wrcba"]
-[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="8_tmo50"]
+[ext_resource type="Texture2D" uid="uid://c2rb6s0ou623s" path="res://assets/Locations/Hover Doors/basement boiler exit closed.png" id="12_i28sg"]
+[ext_resource type="Texture2D" uid="uid://d33yrgjlrxj20" path="res://assets/Locations/Hover Doors/basement boiler exit.png" id="13_eq1tr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_wrcba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i28sg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_eq1tr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=2133629802]
 script = ExtResource("1_s0aia")
@@ -17,40 +39,57 @@ position = Vector2(576, 324)
 scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_jyrdo")
 
-[node name="NoahDestroyedContraption" type="TextureButton" parent="." unique_id=419923551]
-offset_left = 245.0
-offset_top = -65.0
-offset_right = 3842.0
-offset_bottom = 2352.0
+[node name="Basement_night" type="Node2D" parent="." unique_id=630247597]
+position = Vector2(576, 324)
+scale = Vector2(0.59999996, 0.6)
+
+[node name="Basement_nightd" type="Sprite2D" parent="Basement_night" unique_id=1208536508]
+texture = ExtResource("3_4jypg")
+
+[node name="NoahDestroyedContraption" type="AnimatedSprite2D" parent="." unique_id=1435969652]
+position = Vector2(651.00006, 272)
 scale = Vector2(0.2517115, 0.2517115)
-texture_normal = ExtResource("3_tmo50")
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+autoplay = "default"
+frame_progress = 0.15354614
+
+[node name="noah outline" type="TextureButton" parent="NoahDestroyedContraption" unique_id=1834533772]
+z_index = 1
+offset_left = -874.0167
+offset_top = -87.40167
+offset_right = 2722.9834
+offset_bottom = 2329.5984
+scale = Vector2(0.43515167, 0.39412698)
+texture_hover = ExtResource("7_h1738")
 
 [node name="NoahContraption" type="TextureButton" parent="." unique_id=2095061814]
-offset_left = 458.0
-offset_top = 42.0
-offset_right = 2506.0
-offset_bottom = 2090.0
+offset_left = 379.0
+offset_top = 86.0
+offset_right = 2427.0
+offset_bottom = 2134.0
 scale = Vector2(0.24000059, 0.24000059)
 texture_normal = ExtResource("4_4jypg")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=2031358436]
-offset_left = 340.0
-offset_top = 181.0
-offset_right = 996.0001
-offset_bottom = 1936.0
+offset_left = 302.0
+offset_top = 211.0
+offset_right = 958.0001
+offset_bottom = 1966.0
 scale = Vector2(0.22519131, 0.22519131)
 texture_normal = ExtResource("5_8et35")
 texture_hover = ExtResource("6_hcmt4")
 script = ExtResource("7_wrcba")
 
 [node name="hallway" type="TextureButton" parent="." unique_id=816185265]
-offset_left = 998.99994
-offset_top = 658.0
-offset_right = 3009.0469
-offset_bottom = 1400.5134
-rotation = -1.5723326
-scale = Vector2(0.3431871, 0.25399753)
-texture_hover = ExtResource("8_tmo50")
+offset_left = 1033.0
+offset_top = 4.0000005
+offset_right = 1481.0
+offset_bottom = 2004.0
+rotation = 0.0025457046
+scale = Vector2(0.29725257, 0.30371997)
+texture_normal = ExtResource("12_i28sg")
+texture_hover = ExtResource("13_eq1tr")
 
+[connection signal="pressed" from="NoahDestroyedContraption/noah outline" to="." method="_on_noah_outline_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="hallway" to="." method="_on_hallway_pressed"]

@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://cudh0v5xqyki1"]
 
 [ext_resource type="Script" uid="uid://cgaermw4rem0" path="res://Scenes/Library/library.gd" id="1_3kh1m"]
-[ext_resource type="Texture2D" uid="uid://02ja2xmax1np" path="res://assets/Locations/library_day.png" id="2_fsgr3"]
+[ext_resource type="Texture2D" uid="uid://dycv1f8x82jku" path="res://assets/Locations/library_day1.png" id="2_e1b7t"]
 [ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="3_3kh1m"]
-[ext_resource type="Texture2D" uid="uid://cuax18n2jnhhs" path="res://assets/Locations/library_night.png" id="3_e1b7t"]
+[ext_resource type="Texture2D" uid="uid://chi2qawdo1k7o" path="res://assets/Locations/library_night1.png" id="3_re8ce"]
 [ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="4_3kh1m"]
-[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="4_e1b7t"]
 [ext_resource type="Texture2D" uid="uid://c8p0mr4tndkhr" path="res://assets/People/Lady-MacDeath_1_Hover.png" id="4_gnrwe"]
+[ext_resource type="Texture2D" uid="uid://bk8abd6u04bjx" path="res://assets/Locations/Hover Doors/library exit.png" id="4_re8ce"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="5_6apm7"]
+[ext_resource type="Texture2D" uid="uid://ctaf021u8ml34" path="res://assets/Locations/Hover Doors/library exit hover.png" id="5_06v86"]
 [ext_resource type="BitMap" uid="uid://d1uoemouek5yk" path="res://assets/People/Lady-MacDeath_1_bitmap.png" id="5_fsgr3"]
 [ext_resource type="Script" uid="uid://c45tqmv6kjcvo" path="res://Scenes/Library/barb_library.gd" id="6_1rjaq"]
+[ext_resource type="Texture2D" uid="uid://cpjxckqlvxwvr" path="res://sprites/Lady/Lady_Default_1.png" id="6_re8ce"]
 [ext_resource type="Texture2D" uid="uid://cyn3pynrl4o6q" path="res://assets/People/Dagger_1_Hover.png" id="8_e1b7t"]
 [ext_resource type="Script" uid="uid://lrkki6l17hps" path="res://Scenes/Library/noah_library.gd" id="8_hi2wh"]
 [ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="9_14au8"]
 [ext_resource type="BitMap" uid="uid://kkiegcjf5lvx" path="res://assets/People/Dagger_1_bitmap.png" id="9_re8ce"]
 [ext_resource type="Script" uid="uid://b0udjftf53w77" path="res://Scenes/Library/dagger_library.gd" id="10_bybqk"]
-[ext_resource type="Texture2D" uid="uid://c8kjux08cenjj" path="res://assets/People/Lady-MacDeath_1.png" id="11_0fyj4"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="11_06v86"]
 [ext_resource type="Script" uid="uid://my8fu5o6jxvf" path="res://Scenes/Library/lady_library.gd" id="12_rjhi6"]
 [ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="12_t63kn"]
@@ -34,73 +35,74 @@ offset_right = 1150.9999
 offset_bottom = 649.0
 
 [node name="LibraryDay" type="Sprite2D" parent="." unique_id=2054042218]
-position = Vector2(575.7385, 313.81253)
-scale = Vector2(0.4236739, 0.38397217)
-texture = ExtResource("2_fsgr3")
+position = Vector2(572.00006, 359.7714)
+scale = Vector2(0.6090449, 0.5519724)
+texture = ExtResource("2_e1b7t")
 
-[node name="LibraryNight" type="Sprite2D" parent="." unique_id=1561707157]
-position = Vector2(575.7385, 313.81253)
-scale = Vector2(0.4236739, 0.38397217)
-texture = ExtResource("3_e1b7t")
+[node name="LibraryNight" type="Sprite2D" parent="." unique_id=324493093]
+position = Vector2(572.00006, 359.7714)
+scale = Vector2(0.6090449, 0.5519724)
+texture = ExtResource("3_re8ce")
 
 [node name="To Outside" type="TextureButton" parent="." unique_id=176613813]
-offset_left = -3.0
-offset_top = 579.0
-offset_right = 1997.0
-offset_bottom = 1150.0
-scale = Vector2(0.6199618, 0.12487441)
-texture_hover = ExtResource("4_e1b7t")
+offset_left = -18.0
+offset_top = 153.0
+offset_right = 1982.0
+offset_bottom = 1865.0
+scale = Vector2(0.082923464, 0.07615559)
+texture_normal = ExtResource("4_re8ce")
+texture_hover = ExtResource("5_06v86")
 
 [node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
-offset_left = 916.0
-offset_top = 196.0
-offset_right = 2078.0
-offset_bottom = 2078.0
-scale = Vector2(0.20761497, 0.20761497)
-texture_normal = ExtResource("11_0fyj4")
+offset_left = 843.0
+offset_top = 104.99999
+offset_right = 2005.0
+offset_bottom = 2139.0
+scale = Vector2(0.26269123, 0.26269123)
+texture_normal = ExtResource("6_re8ce")
 texture_hover = ExtResource("4_gnrwe")
 texture_click_mask = ExtResource("5_fsgr3")
 script = ExtResource("12_rjhi6")
 
 [node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
-offset_left = 34.0
-offset_top = 246.00002
-offset_right = 931.0
-offset_bottom = 1949.0
-scale = Vector2(0.22653967, 0.22653967)
+offset_left = 634.0
+offset_top = 177.0
+offset_right = 1531.0
+offset_bottom = 1880.0
+scale = Vector2(0.26353577, 0.26353577)
 texture_normal = ExtResource("9_14au8")
 texture_hover = ExtResource("8_e1b7t")
 texture_click_mask = ExtResource("9_re8ce")
 script = ExtResource("10_bybqk")
 
 [node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
-offset_left = 234.0
-offset_top = 181.0
-offset_right = 990.0
-offset_bottom = 2186.0
-scale = Vector2(0.1794737, 0.1794737)
+offset_left = 386.0
+offset_top = 178.0
+offset_right = 1142.0
+offset_bottom = 2183.0
+scale = Vector2(0.20878348, 0.20878348)
 texture_normal = ExtResource("3_3kh1m")
 texture_hover = ExtResource("16_uc0od")
 texture_click_mask = ExtResource("17_1b55p")
 script = ExtResource("4_3kh1m")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
-offset_left = 452.0
-offset_top = 250.0
-offset_right = 1108.0
-offset_bottom = 2005.0
-scale = Vector2(0.18333973, 0.18333973)
+offset_left = 66.0
+offset_top = 213.00002
+offset_right = 722.0
+offset_bottom = 1968.0
+scale = Vector2(0.22489813, 0.22489813)
 texture_normal = ExtResource("11_06v86")
 texture_hover = ExtResource("12_t63kn")
 texture_click_mask = ExtResource("13_luw7s")
 script = ExtResource("8_hi2wh")
 
 [node name="BarbButton" type="TextureButton" parent="." unique_id=506002566]
-offset_left = 562.0
-offset_top = 238.0
-offset_right = 1361.0
-offset_bottom = 2030.0
-scale = Vector2(0.18415901, 0.18415901)
+offset_left = 191.99997
+offset_top = 213.0
+offset_right = 991.0
+offset_bottom = 2005.0
+scale = Vector2(0.21423393, 0.21423393)
 texture_normal = ExtResource("5_6apm7")
 texture_hover = ExtResource("20_am823")
 texture_click_mask = ExtResource("21_7pdhs")
