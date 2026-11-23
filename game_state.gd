@@ -6,22 +6,14 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-
-# Load the custom images for the mouse cursor.
-var arrow = load("res://Design/Cursors/cursor.png")
-var pointing = load("res://Design/Cursors/Pointing.png")
-
-
-var current_day: int = 1
+var current_day: int = 0
 var midpoint_reached = false
 var is_minigame = false
-
-
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
 	"sewing_kit": false,
-	"belt": false,
+	"belt": true,
 	"allergy_meds": false,
 	"pocket_shakespeare": false,
 	"silver_nugget": true,
@@ -46,19 +38,23 @@ var item_collectible = {
 var facts = {
 	"v_case_study": false,
 	"v_future_worries": false,
-	"b_camp_story": false,
-	"b_clown_school": true,
-	"n_detention": true,
+	"b_camp_story": true,
+	"b_clown_school": false,
+	"n_detention": false,
 	"d_brother_death": false,
-	"d_zombie_plan": true,
+	"d_zombie_plan": false,
 	"m_suspition": false, # lmd is causing the loop?
 	"m_absolved": false, #no she's not
 	"m_shakespeare_hate": false,
-	"m_phone":false, #LMD phone number
+	"m_phone": false, #LMD phone number
 	"m_name": false, # LMD name change to Knightmare
 	"j_clairvoyance": false,
 	"j_bffs": false, # bff sticker (clickable, visible always)
 	"j_past_adventures": false # beastiary page (clickable. visible always)
+}
+
+var dialogue_facts = {
+	
 }
 
 var objectives = {
@@ -76,20 +72,11 @@ var spoken_today = {
 	"valerie": false,
 	"lady_macdeath": false,
 	"dagger": false
-	
 }
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_dialogic_layer()
-	
-	# Changes only the arrow shape of the cursor.
-	# This is similar to changing it in the project settings.
-	Input.set_custom_mouse_cursor(arrow)
-
-	# Changes a specific shape of the cursor (here, the I-beam shape).
-	Input.set_custom_mouse_cursor(pointing, Input.CURSOR_POINTING_HAND)
-
 	
 func start_minigame():
 	is_minigame = true
