@@ -34,6 +34,11 @@ animations = [{
 "name": &"Barb Default",
 "speed": 5.0
 }, {
+"frames": [],
+"loop": 1,
+"name": &"Dad Blinking",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_uds0a")
@@ -109,6 +114,11 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Lizzy Default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Mom Blinking",
 "speed": 5.0
 }, {
 "frames": [{

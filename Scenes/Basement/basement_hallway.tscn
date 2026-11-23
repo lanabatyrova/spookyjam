@@ -13,29 +13,30 @@ script = ExtResource("1_78pi1")
 
 [node name="Basement" type="Sprite2D" parent="." unique_id=991436585]
 position = Vector2(577, 324)
-scale = Vector2(0.59999996, 0.6)
+scale = Vector2(0.6065576, 0.60655767)
 texture = ExtResource("1_35gab")
 
 [node name="BasementNight" type="Sprite2D" parent="." unique_id=73683725]
+visible = false
 position = Vector2(577, 324)
-scale = Vector2(0.59999996, 0.6)
+scale = Vector2(0.6065576, 0.60655767)
 texture = ExtResource("3_d7pwm")
 
 [node name="exit" type="TextureButton" parent="." unique_id=1063488389]
-offset_left = 890.99994
-offset_top = -2.0
-offset_right = 1251.0
-offset_bottom = 1078.0
-scale = Vector2(0.6107885, 0.6039813)
+offset_left = 833.0
+offset_top = 63.0
+offset_right = 1419.0
+offset_bottom = 1981.0
+scale = Vector2(0.30259168, 0.30488363)
 texture_normal = ExtResource("2_lirwp")
 texture_hover = ExtResource("3_lirwp")
 
 [node name="boilerroom" type="TextureButton" parent="." unique_id=1351292504]
-offset_left = 181.0
-offset_top = 9.000001
-offset_right = 471.0
-offset_bottom = 1073.0
-scale = Vector2(0.5894558, 0.60204506)
+offset_left = 424.99997
+offset_top = 152.0
+offset_right = 902.0
+offset_bottom = 2040.0
+scale = Vector2(0.14584498, 0.14515676)
 texture_normal = ExtResource("4_d7pwm")
 texture_hover = ExtResource("5_nxfjy")
 

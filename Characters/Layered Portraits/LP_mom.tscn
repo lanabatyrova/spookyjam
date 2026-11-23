@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b1i75n3roix62"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_nwujr"]
+[ext_resource type="Texture2D" uid="uid://d07jesbtx0wb3" path="res://sprites/Extras/Mom/Mom_Base.png" id="2_0lx3l"]
+[ext_resource type="Texture2D" uid="uid://6hpc6kd8623m" path="res://sprites/Extras/Mom/Lizzy_Mom.png" id="3_r2ex5"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="4_odtgh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_r2ex5")
+}],
+"loop": 1,
+"name": &"Mom Talking",
+"speed": 5.0
+}]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1720190308]
+script = ExtResource("1_nwujr")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=645837423]
+texture = ExtResource("2_0lx3l")
+
+[node name="ArmL" type="Node2D" parent="." unique_id=616372978]
+
+[node name="Legs" type="Node2D" parent="." unique_id=1883087863]
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1396154711]
+texture = ExtResource("3_r2ex5")
+
+[node name="Face" type="Node2D" parent="." unique_id=685077103]
+
+[node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=1699819223]
+sprite_frames = ExtResource("4_odtgh")
+animation = &"Mom Blinking"
+
+[node name="Mouth" type="Node2D" parent="." unique_id=667948848]
+
+[node name="Eyes" type="Node2D" parent="." unique_id=1542498153]
+
+[node name="Eyebrows" type="Node2D" parent="." unique_id=432166058]
+
+[node name="Animated" type="Node2D" parent="." unique_id=340887265]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=496865723]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Mom Talking"
+
+[node name="ArmR" type="Node2D" parent="." unique_id=1401631772]

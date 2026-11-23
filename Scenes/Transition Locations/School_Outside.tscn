@@ -16,6 +16,7 @@ scale = Vector2(0.6600151, 0.66001505)
 texture = ExtResource("3_rxwwb")
 
 [node name="OutsideNight" type="Sprite2D" parent="." unique_id=2059793307]
+visible = false
 position = Vector2(643, 278)
 scale = Vector2(0.6600151, 0.66001505)
 texture = ExtResource("2_8d0e5")

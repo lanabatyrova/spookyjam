@@ -16,6 +16,17 @@
 [node name="Lizzy\'sRoom" type="Node2D" unique_id=1457501583]
 script = ExtResource("1_2ymcl")
 
+[node name="Belt" type="TextureButton" parent="." unique_id=36942555]
+offset_left = 925.0
+offset_top = 466.0
+offset_right = 2973.0
+offset_bottom = 2514.0
+scale = Vector2(0.09610536, 0.09610536)
+texture_normal = ExtResource("6_jlpgp")
+texture_hover = ExtResource("7_q7j6m")
+texture_click_mask = ExtResource("9_q7j6m")
+script = ExtResource("6_l8lln")
+
 [node name="Panel" type="Panel" parent="." unique_id=1798756798]
 offset_left = -9.1552734e-05
 offset_right = 1150.9999
@@ -37,17 +48,6 @@ texture_hover = ExtResource("4_r7hqq")
 texture_click_mask = ExtResource("5_jlpgp")
 script = ExtResource("4_wdvmo")
 
-[node name="Belt" type="TextureButton" parent="." unique_id=36942555]
-offset_left = 925.0
-offset_top = 466.0
-offset_right = 2973.0
-offset_bottom = 2514.0
-scale = Vector2(0.09610536, 0.09610536)
-texture_normal = ExtResource("6_jlpgp")
-texture_hover = ExtResource("7_q7j6m")
-texture_click_mask = ExtResource("9_q7j6m")
-script = ExtResource("6_l8lln")
-
 [node name="HallwayButton" type="TextureButton" parent="." unique_id=2126945772]
 offset_left = 137.0
 offset_top = -27.0
@@ -63,6 +63,6 @@ volume_db = -4.763
 autoplay = true
 parameters/looping = true
 
-[connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
+[connection signal="pressed" from="SewingKit" to="SewingKit" method="_on_pressed"]
 [connection signal="pressed" from="HallwayButton" to="." method="_on_hallway_button_pressed"]

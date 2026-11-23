@@ -40,6 +40,7 @@ scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_jyrdo")
 
 [node name="Basement_night" type="Node2D" parent="." unique_id=630247597]
+visible = false
 position = Vector2(576, 324)
 scale = Vector2(0.59999996, 0.6)
 

@@ -31,7 +31,7 @@
 "image": "\"res://sprites/Noah/Noah_Phone_Barb.png\""
 },
 "mirror": false,
-"offset": Vector2(0, -50),
+"offset": Vector2(-25, -50),
 "scale": 0.75,
 "scene": ""
 },

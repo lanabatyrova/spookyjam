@@ -3,7 +3,7 @@ do GameState.start_minigame()
 audio music "res://audio/Character Sounds/main menu backtrack 2.wav" [volume="-5.0" loop="true"]
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="1.0" transition="Push Up"]
 join Juniper (Animated) left
-join Lizzy (Animated) right [extra_data="show Side"]
+join Lizzy (Animated) right
 join Foreground (Tv Overlay Mm) center [animation="Fade In" length="0.8" wait="true" z_index="1"]
 [wait time="1.5"]
 VO: Come on, Lizzy. Everything has led to this.
@@ -41,7 +41,7 @@ if {is_success} == true:
 		Lizzy: That sounds incredibly lonely.
 		Juniper: ...
 		Juniper: You have no idea.
-
+	
 	
 	elif {current_item} == "noah":
 		join Noah center
@@ -125,7 +125,7 @@ if {is_success} == true:
 		Dagger: my... Lady?
 		Knightmare: oh do shut up right now, Dagger, can’t you see the goth and I are having a tender moment?
 		Lizzy: you consider this tender?
-		Lizzy: Stop recruiting my morally confused friend!
+		Lizzy: Stop recruiting my confused friend!
 		...
 		leave Dagger
 		leave Knightmare
@@ -178,12 +178,28 @@ if {is_success} == true:
 		join Minigame (1C) center
 	elif {strikes_number} == 2.0:
 		update Minigame (2c) center
+		Juniper: Stop.
+		Juniper: I've already fixed everything.
+		Juniper: You're going to ruin it.
 	elif {strikes_number} == 3.0:
 		update Minigame (3c) center
+		Juniper: Why can't you just listen to me for once?
+		Juniper: I know what I'm doing!
+		Juniper: I have to do this!
 	elif {strikes_number} == 4.0:
 		update Minigame (4c) center
 	elif {strikes_number} == 5.0:
 		update Minigame (5c) center
+		Juniper: That's it.
+		Juniper: If you're going to continue interfering...
+		Juniper: I have no choice but to stop you.
+		Barb: What does she mean by that?
+		VO: uh oh.
+		VO: that doesn't sound good.
+		[rock slideee]
+		Lizzy: Juniper!!
+		VO: I better wolf out to clear the rocks.
+		VO: [wolf out]
 	elif {strikes_number} == 6.0:
 		update Minigame (6c) center
 		Juniper: You guys don’t understand.

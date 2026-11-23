@@ -1,8 +1,8 @@
-[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+[background arg="res://assets/Credits/black screen.png" fade="0.0"]
 [wait time="1.0"]
 audio music "res://audio/Stay the Course.mp3"
 Noah: Previously on Lizzy Springs Monster Hunter and Werewolf...
-[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.0"]
+[background arg="res://assets/Credits/black screen.png" fade="0.0"]
 join Valerie (VO) center [animation="Fade In Up" length="4.0"]
 update Valerie leftmost [move_time="4.0"]
 Valerie: The keepers have a prophecy.
@@ -19,7 +19,7 @@ update "King Fear" [animation="Bounce"]
 "King Fear": To be or not to be!
 update Barb [animation="Shake Y" length="1.0"]
 Barb: He’s just saying random quotes!!
-[background arg="res://Temp Assets/wp3597497-3635545115.jpg" fade="0.5" wait="true"]
+[background arg="res://assets/Credits/black screen.png" fade="0.5" wait="true"]
 leave --All-- [animation="Instant Out"]
 join Valerie (VO) leftmost [animation="Fade In" wait="true"]
 Valerie: ...Who is destined to defeat the six vampire lords and prevent the end of days from wiping out every single non-monster in existence.

@@ -1,4 +1,4 @@
-[background scene="res://Scenes/Cutscenes/Library_Talking.tscn" fade="0.5"]
+[background scene="res://Scenes/Cutscenes/Library_Talking.tscn" arg="res://assets/Locations/library_day1.png" fade="0.5"]
 join Valerie (Close Up) left [animation="Fade In"]
 join Lizzy (Close Up) right [animation="Fade In" wait="true"]
 Valerie: Ah, Elizabeth, how was your last day of highschool?

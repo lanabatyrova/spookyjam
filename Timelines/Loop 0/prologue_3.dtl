@@ -3,8 +3,8 @@
 [background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
 join Foreground center [z_index="1"]
 join Lizzy (Close Up) righter [animation="Fade In" length="1.0" wait="true"]
-join Barb (Close Up) lefter [animation="Fade In" length="1.0"]
-join Juniper (Close Up) midleft [animation="Fade In" length="1.0" z_index="-1"]
+join Barb (Close Up) midleft [animation="Fade In" length="1.0"]
+join Juniper (Close Up) lefter [animation="Fade In" length="1.0" z_index="-1"]
 Lizzy: I never want to see a dress again.
 Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
 join Noah (Barb's Phone) midright [animation="Bounce In" z_index="1"]

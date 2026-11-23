@@ -76,6 +76,7 @@ var spoken_today = {
 	"valerie": false,
 	"lady_macdeath": false,
 	"dagger": false
+	
 }
 
 # Called when the node enters the scene tree for the first time.

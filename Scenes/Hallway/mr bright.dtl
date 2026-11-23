@@ -1,0 +1,11 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join "Mr Bright" left
+Hey, Lizzy.
+join Lizzy (Close Up) right
+Lizzy: Hey, Mr. Bright.
+"Mr Bright": Excited for graduation?
+Lizzy: Uh
+Lizzy: Yep.
+"Mr Bright": Love to hear it.
+"Mr Bright": Feel free to look in the lost and found before you head out.
+"Mr Bright": There's a bunch of stuff nobody's claimed yet.

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bj882466c1inj"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://blg27k8p1w75s" path="res://sprites/Extras/Dad/Dad_Base.png" id="2_f487o"]
+[ext_resource type="Texture2D" uid="uid://cwxh1883nyxty" path="res://sprites/Extras/Dad/Lizzy_Dad.png" id="3_s561p"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="4_wa3jm"]
+[ext_resource type="Texture2D" uid="uid://6hpc6kd8623m" path="res://sprites/Extras/Mom/Lizzy_Mom.png" id="5_s561p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m6i3a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_s561p")
+}],
+"loop": 1,
+"name": &"Dad Talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s561p")
+}],
+"loop": 1,
+"name": &"Mom Talking",
+"speed": 5.0
+}]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1738335904]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1686588082]
+texture = ExtResource("2_f487o")
+
+[node name="ArmL" type="Node2D" parent="." unique_id=1832741917]
+
+[node name="Legs" type="Node2D" parent="." unique_id=2070219755]
+
+[node name="Body" type="Sprite2D" parent="." unique_id=571709482]
+texture = ExtResource("3_s561p")
+
+[node name="Face" type="Node2D" parent="." unique_id=260001937]
+
+[node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=2071555817]
+sprite_frames = ExtResource("4_wa3jm")
+animation = &"Dad Blinking"
+
+[node name="Mouth" type="Node2D" parent="." unique_id=1820584825]
+
+[node name="Eyes" type="Node2D" parent="." unique_id=780505111]
+
+[node name="Eyebrows" type="Node2D" parent="." unique_id=1020236725]
+
+[node name="Animated" type="Node2D" parent="." unique_id=2025665522]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=29429427]
+sprite_frames = SubResource("SpriteFrames_m6i3a")
+animation = &"Dad Talking"
+
+[node name="ArmR" type="Node2D" parent="." unique_id=157608228]
