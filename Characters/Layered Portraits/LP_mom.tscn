@@ -34,6 +34,7 @@ texture = ExtResource("3_r2ex5")
 [node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=1699819223]
 sprite_frames = ExtResource("4_odtgh")
 animation = &"Mom Blinking"
+autoplay = "Mom Blinking"
 
 [node name="Mouth" type="Node2D" parent="." unique_id=667948848]
 
@@ -47,5 +48,6 @@ visible = false
 [node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=496865723]
 sprite_frames = SubResource("SpriteFrames_vgl7g")
 animation = &"Mom Talking"
+autoplay = "Mom Talking"
 
 [node name="ArmR" type="Node2D" parent="." unique_id=1401631772]

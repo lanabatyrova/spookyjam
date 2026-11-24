@@ -9,3 +9,4 @@ Lizzy: Yep.
 "Mr Bright": Love to hear it.
 "Mr Bright": Feel free to look in the lost and found before you head out.
 "Mr Bright": There's a bunch of stuff nobody's claimed yet.
+do GameState.mark_characters_as_spoken(["mr_bright"])

@@ -11,8 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	pass #match GameState.current_day:
-		#1,2,3,4,5,6,7:
-			#if !GameState.spoken_today["mr_bight"]:
-				#Dialogic.start("res://Timelines/Loop 1/hallway_jbn_1.dtl")
-				#await Dialogic.timeline_ended
+	if !GameState.spoken_today["mr_bright"]:
+		Dialogic.start("res://Scenes/Hallway/mr bright.dtl")
+		await Dialogic.timeline_ended

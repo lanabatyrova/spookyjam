@@ -89,7 +89,6 @@ scale = Vector2(0.30963323, 0.29391688)
 texture_normal = ExtResource("11_up33r")
 texture_hover = ExtResource("12_dulhp")
 
-[connection signal="pressed" from="OfficeDay/Mr Bright" to="." method="_on_mr_bright_pressed"]
 [connection signal="pressed" from="OfficeDay/Mr Bright" to="OfficeDay/Mr Bright" method="_on_pressed"]
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
 [connection signal="pressed" from="leave" to="." method="_on_leave_pressed"]

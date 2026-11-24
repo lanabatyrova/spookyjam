@@ -25,8 +25,3 @@ func update_day(day: int):
 
 func _on_leave_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Transition Locations/School_Upstairs.tscn")
-
-
-
-func _on_mr_bright_pressed() -> void:
-	Dialogic.start("res://Scenes/Hallway/mr bright.dtl")

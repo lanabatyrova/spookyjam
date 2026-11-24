@@ -3,3 +3,4 @@ join Barb lefter
 join Dagger right
 [background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
 ssss
+jump

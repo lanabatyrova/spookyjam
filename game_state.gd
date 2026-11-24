@@ -6,8 +6,8 @@ var settings = {
 	"volume" = 10 # Volume can be any number from 0-10
 }
 
-var current_day: int = 0
-var midpoint_reached = false
+var current_day: int = 1
+var midpoint_reached = true
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
@@ -54,7 +54,8 @@ var facts = {
 }
 
 var dialogue_facts = {
-	
+	"example": false, #testing
+	"example_2": -1 #0 = burgers, 1 = fries, 2 = pizza
 }
 
 var objectives = {
@@ -71,7 +72,8 @@ var spoken_today = {
 	"barb": false,
 	"valerie": false,
 	"lady_macdeath": false,
-	"dagger": false
+	"dagger": false,
+	"mr_bright": false
 }
 
 # Called when the node enters the scene tree for the first time.
@@ -88,13 +90,21 @@ func mark_characters_as_spoken(names):
 	#print(names)
 	for name in names:
 		spoken_today[name] = true
-	#print(spoken_today)
+	print(spoken_today)
 
 func pick_up_item(name):
 	inventory[name] = true
 
 func learn_fact(name):
 	facts[name] = true
+	
+func learn_dialogue_fact(name):
+	dialogue_facts[name] = true
+	print(dialogue_facts[name])
+	
+func set_dialogue_fact(name,value):
+	dialogue_facts[name] = value
+	print(dialogue_facts[name])
 
 func make_item_collectible(name):
 	item_collectible[name] = true

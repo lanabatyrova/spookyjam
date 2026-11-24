@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgesd2n2b7oic"
-path="res://.godot/imported/Dagger_1.png-01d80ced2f72cd0fee8e0b53dfd314be.ctex"
+uid="uid://c0x5pexsyn82q"
+path="res://.godot/imported/dagger_button_hover.png-2468f536d505994f13a3291865a52715.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/People/Dagger_1.png"
-dest_files=["res://.godot/imported/Dagger_1.png-01d80ced2f72cd0fee8e0b53dfd314be.ctex"]
+source_file="res://assets/People/dagger_button_hover.png"
+dest_files=["res://.godot/imported/dagger_button_hover.png-2468f536d505994f13a3291865a52715.ctex"]
 
 [params]
 

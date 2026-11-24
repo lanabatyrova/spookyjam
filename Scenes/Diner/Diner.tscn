@@ -20,7 +20,7 @@
 [ext_resource type="Script" uid="uid://d27dgr26uvnlj" path="res://Scenes/Diner/noah_diner.gd" id="10_pw08d"]
 [ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="11_nbcyd"]
 [ext_resource type="Texture2D" uid="uid://cohxwdm51a3i4" path="res://sprites/Noah/Noah_Phone_Barb.png" id="11_pw08d"]
-[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="20_j2dj2"]
+[ext_resource type="Texture2D" uid="uid://b68to7qf6ru0t" path="res://assets/People/dagger_button.png" id="21_j2dj2"]
 [ext_resource type="Texture2D" uid="uid://cqper82xfrk7p" path="res://assets/People/Lady_Knightmare_1.png" id="21_kafqh"]
 [ext_resource type="Texture2D" uid="uid://ilucjt6jddmu" path="res://assets/Locations/Diner_Counter_day.png" id="22_clqby"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="24_t0cfx"]
@@ -44,6 +44,14 @@ texture = ExtResource("2_j2dj2")
 position = Vector2(576, 323.50003)
 scale = Vector2(0.6041666, 0.6083333)
 texture = ExtResource("3_kafqh")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1704070880]
+offset_left = 267.0
+offset_top = 90.0
+offset_right = 507.0
+offset_bottom = 540.0
+scale = Vector2(0.25035837, 0.37959707)
+texture_hover = ExtResource("4_p231a")
 
 [node name="RoomDoor" type="TextureButton" parent="." unique_id=213897984]
 offset_left = 741.99994
@@ -105,14 +113,6 @@ scale = Vector2(0.08837013, 0.08837013)
 texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1704070880]
-offset_left = 267.0
-offset_top = 90.0
-offset_right = 507.0
-offset_bottom = 540.0
-scale = Vector2(0.25035837, 0.37959707)
-texture_normal = ExtResource("4_p231a")
-
 [node name="Epilogue" type="Node2D" parent="." unique_id=1854509585]
 visible = false
 position = Vector2(191, 233.99998)
@@ -126,7 +126,7 @@ texture = ExtResource("2_j2dj2")
 [node name="Dagger1" type="Sprite2D" parent="Epilogue" unique_id=1272869174]
 position = Vector2(-62.16939, 572.8463)
 scale = Vector2(0.9805097, 0.9805097)
-texture = ExtResource("20_j2dj2")
+texture = ExtResource("21_j2dj2")
 
 [node name="LadyKnightmare1" type="Sprite2D" parent="Epilogue" unique_id=1220352508]
 position = Vector2(346.3722, 470.71094)
@@ -163,10 +163,10 @@ position = Vector2(3151.8887, 646.299)
 scale = Vector2(0.82460123, 0.82460123)
 texture = ExtResource("26_3icix")
 
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="RoomDoor" to="." method="_on_room_door_pressed"]
 [connection signal="pressed" from="Door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="AllergyMeds" to="AllergyMeds" method="_on_pressed"]
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

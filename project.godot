@@ -175,6 +175,7 @@ variables={
 "collected_item_image": "",
 "collected_item_name": "",
 "cur_day": "",
+"current_decision": false,
 "current_item": "",
 "is_success": false,
 "strikes_number": 0

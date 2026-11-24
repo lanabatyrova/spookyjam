@@ -142,7 +142,7 @@ Barb: It’s a distraction from thinking about graduation.
 Barb: and your lack of grad dress.
 
 Lizzy: I’m getting real sick of this conversation—
-
+do GameState.learn_fact("b_camp_story")
 Barb: Well, I’m getting real sick of you acting like you’re the only one in this fight.
 Barb: we’re a team, Lizzy.
 
