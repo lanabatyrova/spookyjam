@@ -2,15 +2,26 @@
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
 [ext_resource type="Texture2D" uid="uid://blg27k8p1w75s" path="res://sprites/Extras/Dad/Dad_Base.png" id="2_f487o"]
-[ext_resource type="Texture2D" uid="uid://cwxh1883nyxty" path="res://sprites/Extras/Dad/Lizzy_Dad.png" id="3_s561p"]
+[ext_resource type="Texture2D" uid="uid://dvee6hfvyxgnu" path="res://sprites/Extras/Dad/Dad_Arm_Left.png" id="3_8swtc"]
+[ext_resource type="Texture2D" uid="uid://cpw3bxks56v2r" path="res://sprites/Extras/Dad/Dad_Body.png" id="4_if0ft"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="4_wa3jm"]
 [ext_resource type="Texture2D" uid="uid://6hpc6kd8623m" path="res://sprites/Extras/Mom/Lizzy_Mom.png" id="5_s561p"]
+[ext_resource type="Texture2D" uid="uid://mreig1pd0pm6" path="res://sprites/Extras/Dad/Dad_Face.png" id="5_v3yuh"]
+[ext_resource type="Texture2D" uid="uid://bd02k2p51ndeo" path="res://sprites/Extras/Dad/Dad_Mouth_Default.png" id="7_ffh78"]
+[ext_resource type="Texture2D" uid="uid://b6hemwl8qmk4h" path="res://sprites/Extras/Dad/Dad_Brows_Default.png" id="7_nyo7w"]
+[ext_resource type="Texture2D" uid="uid://cjmvgysf2ejfl" path="res://sprites/Extras/Dad/Dad_Eyes_Default.png" id="8_nyo7w"]
+[ext_resource type="Texture2D" uid="uid://csmo73ck55lbd" path="res://sprites/Extras/Dad/Dad_Arm_Right.png" id="8_v3yuh"]
+[ext_resource type="Texture2D" uid="uid://1wx4osj5t61m" path="res://sprites/Extras/Dad/Dad_Eyes_Side.png" id="9_eqp4h"]
+[ext_resource type="Texture2D" uid="uid://d2stsw77of123" path="res://sprites/Extras/Dad/Dad_Mouth_Talking.png" id="9_ffh78"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m6i3a"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_s561p")
+"texture": ExtResource("2_f487o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ffh78")
 }],
 "loop": 1,
 "name": &"Dad Talking",
@@ -25,6 +36,75 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_5aubw"]
+resource_name = "Blinking"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Blinking:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 2.9666667, 3.1333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_7hykl"]
+resource_name = "Lizzy_Talking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_vgers"]
+length = 0.6333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Blinking:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eqp4h"]
+_data = {
+&"Blinking": SubResource("Animation_5aubw"),
+&"Lizzy_Talking": SubResource("Animation_7hykl"),
+&"RESET": SubResource("Animation_vgers")
+}
+
 [node name="LayeredPortrait" type="CanvasGroup" unique_id=1738335904]
 script = ExtResource("1_uubi5")
 
@@ -33,22 +113,49 @@ texture = ExtResource("2_f487o")
 
 [node name="ArmL" type="Node2D" parent="." unique_id=1832741917]
 
+[node name="Arm" type="Sprite2D" parent="ArmL" unique_id=345967197]
+texture = ExtResource("3_8swtc")
+
 [node name="Legs" type="Node2D" parent="." unique_id=2070219755]
 
+[node name="Base" type="Sprite2D" parent="Legs" unique_id=2032590397]
+texture = ExtResource("2_f487o")
+
 [node name="Body" type="Sprite2D" parent="." unique_id=571709482]
-texture = ExtResource("3_s561p")
+texture = ExtResource("4_if0ft")
 
 [node name="Face" type="Node2D" parent="." unique_id=260001937]
+
+[node name="Base" type="Sprite2D" parent="Face" unique_id=76143746]
+texture = ExtResource("5_v3yuh")
+
+[node name="Brows" type="Node2D" parent="." unique_id=976558244]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=314449678]
+texture = ExtResource("7_nyo7w")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=1820584825]
+
+[node name="Base" type="Sprite2D" parent="Mouth" unique_id=484794979]
+texture = ExtResource("7_ffh78")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=780505111]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=1523831487]
+texture = ExtResource("8_nyo7w")
+
+[node name="Side" type="Sprite2D" parent="Eyes" unique_id=930418112]
+texture = ExtResource("9_eqp4h")
 
 [node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=2071555817]
 sprite_frames = ExtResource("4_wa3jm")
 animation = &"Dad Blinking"
-
-[node name="Mouth" type="Node2D" parent="." unique_id=1820584825]
-
-[node name="Eyes" type="Node2D" parent="." unique_id=780505111]
+autoplay = "Dad Blinking"
 
 [node name="Eyebrows" type="Node2D" parent="." unique_id=1020236725]
+
+[node name="Default" type="Sprite2D" parent="Eyebrows" unique_id=2130024909]
+texture = ExtResource("2_f487o")
 
 [node name="Animated" type="Node2D" parent="." unique_id=2025665522]
 visible = false
@@ -56,5 +163,13 @@ visible = false
 [node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=29429427]
 sprite_frames = SubResource("SpriteFrames_m6i3a")
 animation = &"Dad Talking"
+autoplay = "Dad Talking"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=1692228961]
+libraries/ = SubResource("AnimationLibrary_eqp4h")
+autoplay = &"Lizzy_Talking"
 
 [node name="ArmR" type="Node2D" parent="." unique_id=157608228]
+
+[node name="Arm" type="Sprite2D" parent="ArmR" unique_id=1005943623]
+texture = ExtResource("8_v3yuh")

@@ -12,7 +12,7 @@
 },
 &"default_portrait": "Animated",
 &"description": "",
-&"display_name": "Mom:",
+&"display_name": "Mom: ",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

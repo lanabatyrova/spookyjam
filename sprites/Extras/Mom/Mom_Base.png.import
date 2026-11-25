@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d07jesbtx0wb3"
-path="res://.godot/imported/Mom_Base.png-5744249c4c8163dc243937b571fa8c06.ctex"
+uid="uid://dsb3knauv1ciy"
+path="res://.godot/imported/mom_base.png-b9678300fd4f90926c09635759e52033.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Extras/Mom/Mom_Base.png"
-dest_files=["res://.godot/imported/Mom_Base.png-5744249c4c8163dc243937b571fa8c06.ctex"]
+source_file="res://sprites/Extras/Mom/mom_base.png"
+dest_files=["res://.godot/imported/mom_base.png-b9678300fd4f90926c09635759e52033.ctex"]
 
 [params]
 

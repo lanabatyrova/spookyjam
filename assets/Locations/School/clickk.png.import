@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://xg2x2npvetac"
+path="res://.godot/imported/clickk.png-bd626d85385e8fb547661bf8c0c6709f.res"
+
+[deps]
+
+source_file="res://assets/Locations/School/clickk.png"
+dest_files=["res://.godot/imported/clickk.png-bd626d85385e8fb547661bf8c0c6709f.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

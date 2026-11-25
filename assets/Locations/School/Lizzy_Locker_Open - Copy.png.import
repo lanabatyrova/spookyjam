@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dqvgixurig2gk"
+path="res://.godot/imported/Lizzy_Locker_Open - Copy.png-a5f456396e848730578a33819de179c3.res"
+
+[deps]
+
+source_file="res://assets/Locations/School/Lizzy_Locker_Open - Copy.png"
+dest_files=["res://.godot/imported/Lizzy_Locker_Open - Copy.png-a5f456396e848730578a33819de179c3.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

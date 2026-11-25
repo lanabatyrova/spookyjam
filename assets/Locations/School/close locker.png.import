@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b5dwjsmv4cvvx"
+path="res://.godot/imported/close locker.png-63937c4c1ed68f1cdc85e4ad4523d311.res"
+
+[deps]
+
+source_file="res://assets/Locations/School/close locker.png"
+dest_files=["res://.godot/imported/close locker.png-63937c4c1ed68f1cdc85e4ad4523d311.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

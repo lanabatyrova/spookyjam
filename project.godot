@@ -69,6 +69,7 @@ directories/dtl_directory={
 "diner_jbn_epilogue": "res://Timelines/Loop Epilogue/diner_jbn_epilogue.dtl",
 "diner_ld_epilogue": "res://Timelines/Loop Epilogue/diner_ld_epilogue.dtl",
 "diner_parents_epilogue": "res://Timelines/Loop Epilogue/diner_parents_epilogue.dtl",
+"diner_v_epilogue": "res://Timelines/Loop Epilogue/diner_v_epilogue.dtl",
 "ending_1": "res://Timelines/Loop 1/ending_1.dtl",
 "ending_2": "res://Timelines/Loop 2/ending_2.dtl",
 "ending_3": "res://Timelines/Loop 3/ending_3.dtl",

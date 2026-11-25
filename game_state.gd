@@ -7,7 +7,7 @@ var settings = {
 }
 
 var current_day: int = 1
-var midpoint_reached = true
+var midpoint_reached = false
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
@@ -55,7 +55,8 @@ var facts = {
 
 var dialogue_facts = {
 	"example": false, #testing
-	"example_2": -1 #0 = burgers, 1 = fries, 2 = pizza
+	"example_2": -1, #0 = burgers, 1 = fries, 2 = pizza
+	"v_car": false
 }
 
 var objectives = {
