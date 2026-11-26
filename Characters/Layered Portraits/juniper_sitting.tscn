@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://dbiymmpce7ys0"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://b703wwsesyhky" path="res://assets/Loop 7/Juniper_Sitting.png" id="2_4ccb7"]
-[ext_resource type="Texture2D" uid="uid://bnxea0w4e1ymo" path="res://sprites/Juniper/Face/Juniper mouth talking.png" id="3_ujmyn"]
+[ext_resource type="Texture2D" uid="uid://b6dbk00wjcq26" path="res://sprites/Juniper/Juniper_Legs_Sitting.png" id="2_wsxq7"]
 [ext_resource type="Texture2D" uid="uid://62prwjbs3ddf" path="res://sprites/Juniper/Body/Juniper base.png" id="4_5o0kw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7f415"]
@@ -10,9 +9,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_5o0kw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_ujmyn")
 }],
 "loop": 1,
 "name": &"default",
@@ -23,7 +19,7 @@ animations = [{
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=759857879]
-texture = ExtResource("2_4ccb7")
+texture = ExtResource("2_wsxq7")
 
 [node name="Animated" type="Node2D" parent="." unique_id=1273782802]
 visible = false

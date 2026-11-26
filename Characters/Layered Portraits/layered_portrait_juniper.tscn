@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://r7solxxt1e5j" path="res://sprites/Juniper/Juniper_Default_1.png" id="2_epcqp"]
 [ext_resource type="Texture2D" uid="uid://c53r7aus8qh7f" path="res://sprites/Juniper/Face/Juniper hairback.png" id="3_eo6xe"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_epcqp"]
-[ext_resource type="Texture2D" uid="uid://1si5aab0666e" path="res://sprites/Juniper/Body/Juniper Body.png" id="3_q48nt"]
 [ext_resource type="Texture2D" uid="uid://dwcy4q2xnvfxl" path="res://sprites/Juniper/Juniper_Default_Blinking.png" id="3_ustke"]
 [ext_resource type="Texture2D" uid="uid://daoo2a30grvgb" path="res://sprites/Juniper/Face/Juniper eyes default.png" id="4_52ai8"]
 [ext_resource type="Texture2D" uid="uid://c346oui4tqmpv" path="res://sprites/Juniper/Face/Juniper eyes closed.png" id="4_pd1j0"]
@@ -13,10 +12,13 @@
 [ext_resource type="Texture2D" uid="uid://c3rei6wwsckhm" path="res://sprites/Juniper/Arms/Juniper arm 2_R.png" id="5_6l2ou"]
 [ext_resource type="Texture2D" uid="uid://dfo6s6ooaclna" path="res://sprites/Juniper/Face/Juniper eyes default side.png" id="5_rv4na"]
 [ext_resource type="Texture2D" uid="uid://dbmswuky0r0cf" path="res://sprites/Juniper/Face/Juniper eyes squint.png" id="6_6edde"]
+[ext_resource type="Texture2D" uid="uid://derqeydbv77a7" path="res://sprites/Juniper/Juniper_Legs.png" id="6_p5cq4"]
 [ext_resource type="Texture2D" uid="uid://cu4noj7anbjoy" path="res://sprites/Juniper/Face/Juniper head.png" id="7_plvp6"]
+[ext_resource type="Texture2D" uid="uid://b6dbk00wjcq26" path="res://sprites/Juniper/Juniper_Legs_Sitting.png" id="7_shs6g"]
 [ext_resource type="Texture2D" uid="uid://derkxg220sgre" path="res://sprites/Juniper/Face/Juniper eyes wide.png" id="7_yie6n"]
 [ext_resource type="Texture2D" uid="uid://c8v8dkiapxec" path="res://sprites/Juniper/Face/Juniper eyes wide side.png" id="8_efsu7"]
 [ext_resource type="Texture2D" uid="uid://ccprkhta7dmkg" path="res://sprites/Juniper/Arms/Juniper arm 1_L.png" id="8_p5cq4"]
+[ext_resource type="Texture2D" uid="uid://cu4wjfpcq4i1a" path="res://sprites/Juniper/Juniper_Torso.png" id="8_rt3dn"]
 [ext_resource type="Texture2D" uid="uid://bprffbu8fsumy" path="res://sprites/Juniper/Face/Juniper eyes wide front.png" id="9_i3js5"]
 [ext_resource type="Texture2D" uid="uid://ch3i23dv0qk03" path="res://sprites/Juniper/Arms/Juniper arm 3_L.png" id="9_shs6g"]
 [ext_resource type="Texture2D" uid="uid://c8or16n2dr4xt" path="res://sprites/Juniper/Arms/Juniper arm 4_L.png" id="10_rt3dn"]
@@ -115,8 +117,16 @@ texture = ExtResource("5_6l2ou")
 
 [node name="Body" type="Node2D" parent="." unique_id=2040454353]
 
+[node name="Legs" type="Sprite2D" parent="Body" unique_id=861740699]
+texture = ExtResource("6_p5cq4")
+
+[node name="Sitting" type="Sprite2D" parent="Body" unique_id=789323331]
+visible = false
+position = Vector2(207, -9)
+texture = ExtResource("7_shs6g")
+
 [node name="Body" type="Sprite2D" parent="Body" unique_id=270114375]
-texture = ExtResource("3_q48nt")
+texture = ExtResource("8_rt3dn")
 
 [node name="Face" type="Node2D" parent="." unique_id=701126315]
 

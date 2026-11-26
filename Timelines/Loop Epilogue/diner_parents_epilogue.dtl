@@ -1,5 +1,5 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) left [mirrored="true"]
+join Lizzy (Close Up) lefter [mirrored="true"]
 join Mom (Close up) righter [z_index="1"]
 join Dad (Close up) right
 Lizzy: hey mom,

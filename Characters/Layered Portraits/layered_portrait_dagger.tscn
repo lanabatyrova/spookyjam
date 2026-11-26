@@ -9,8 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://ckychean5w25r" path="res://sprites/Dagger/Arms/dagger arm L 2.png" id="4_bcw3p"]
 [ext_resource type="Texture2D" uid="uid://du1ekl1yibi3y" path="res://sprites/Dagger/Face/dagger eyes closed.png" id="5_mcs3g"]
 [ext_resource type="Texture2D" uid="uid://ciani2dk3g0ir" path="res://sprites/Dagger/Body/dagger trenchcoat behind.png" id="5_qcktt"]
-[ext_resource type="Texture2D" uid="uid://cu46640okmuhi" path="res://sprites/Dagger/Body/dagger body.png" id="6_un4tg"]
+[ext_resource type="Texture2D" uid="uid://dqn6wfhell5dc" path="res://sprites/Dagger/Dagger_Legs.png" id="6_qcktt"]
 [ext_resource type="Texture2D" uid="uid://dbnk86djy04uo" path="res://sprites/Dagger/Face/dagger head.png" id="7_02kx4"]
+[ext_resource type="Texture2D" uid="uid://cfosyyfh8w7kc" path="res://sprites/Dagger/Dagger Sitting.png" id="7_un4tg"]
+[ext_resource type="Texture2D" uid="uid://c4tiompcahkmp" path="res://sprites/Dagger/Dagger_Torso.png" id="8_02kx4"]
 [ext_resource type="Texture2D" uid="uid://d1bw436ld6qpl" path="res://sprites/Dagger/Face/dagger eyes default.png" id="8_p6gha"]
 [ext_resource type="Texture2D" uid="uid://crnxd7ck7msbm" path="res://sprites/Dagger/Face/dagger eyes side.png" id="9_yct3w"]
 [ext_resource type="Texture2D" uid="uid://dh02qixxsiyv3" path="res://sprites/Dagger/Face/dagger eyes wide.png" id="10_m27dl"]
@@ -97,8 +99,17 @@ texture = ExtResource("5_qcktt")
 
 [node name="Body" type="Node2D" parent="." unique_id=1270446847]
 
+[node name="Legs" type="Sprite2D" parent="Body" unique_id=990564473]
+texture = ExtResource("6_qcktt")
+
+[node name="Sitting" type="Sprite2D" parent="Body" unique_id=1228348389]
+visible = false
+position = Vector2(-220, -176)
+texture = ExtResource("7_un4tg")
+flip_h = true
+
 [node name="Body2" type="Sprite2D" parent="Body" unique_id=677474712]
-texture = ExtResource("6_un4tg")
+texture = ExtResource("8_02kx4")
 
 [node name="Face" type="Node2D" parent="." unique_id=70478306]
 

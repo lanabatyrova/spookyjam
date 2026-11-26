@@ -58,9 +58,9 @@
 "image": ""
 },
 "mirror": true,
-"offset": Vector2(150, 70),
-"scale": 1,
-"scene": "res://Characters/Layered Portraits/juniper_sitting.tscn"
+"offset": Vector2(90, 85),
+"scale": 0.9,
+"scene": "res://Characters/Layered Portraits/layered_portrait_juniper.tscn"
 },
 "Phone": {
 "export_overrides": {

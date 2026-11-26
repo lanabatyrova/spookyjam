@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://bl2qxkgf3s1sq"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
-[ext_resource type="Texture2D" uid="uid://dyv08a1l4gvtc" path="res://assets/Loop 7/Dagger_Sitting.png" id="2_miu06"]
-[ext_resource type="Texture2D" uid="uid://ctemcfx847l05" path="res://sprites/Dagger/Face/dagger mouth talking.png" id="3_c4par"]
+[ext_resource type="Texture2D" uid="uid://cfosyyfh8w7kc" path="res://sprites/Dagger/Dagger Sitting.png" id="2_4lbmw"]
 [ext_resource type="Texture2D" uid="uid://dwjybyw28vtdq" path="res://sprites/Dagger/Body/dagger base.png" id="4_dpaj6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q8kwp"]
@@ -10,9 +9,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_dpaj6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_c4par")
 }],
 "loop": 1,
 "name": &"default",
@@ -23,7 +19,7 @@ animations = [{
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=693904565]
-texture = ExtResource("2_miu06")
+texture = ExtResource("2_4lbmw")
 flip_h = true
 
 [node name="Animated" type="Node2D" parent="." unique_id=1970075562]

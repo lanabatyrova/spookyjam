@@ -40,9 +40,9 @@
 "image": ""
 },
 "mirror": true,
-"offset": Vector2(-40, 40),
-"scale": 1,
-"scene": "res://Characters/Layered Portraits/dagger_sitting.tscn"
+"offset": Vector2(-200, 105),
+"scale": 0.95,
+"scene": "res://Characters/Layered Portraits/layered_portrait_dagger.tscn"
 },
 "Phone": {
 "export_overrides": {

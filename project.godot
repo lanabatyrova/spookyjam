@@ -50,6 +50,7 @@ directories/dch_directory={
 "Strike Ball": "res://Characters/Strike Ball.dch",
 "VO": "res://Characters/VO.dch",
 "Valerie": "res://Characters/Valerie.dch",
+"background": "res://Characters/background.dch",
 "black screen": "res://Characters/black screen.dch"
 }
 directories/dtl_directory={
@@ -102,6 +103,7 @@ directories/dtl_directory={
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
 "intro_epilogue": "res://Timelines/Loop Epilogue/intro_epilogue.dtl",
 "item_collected": "res://Timelines/item_collected.dtl",
+"lake_7": "res://Timelines/Loop 7/lake_7.dtl",
 "library_b_7": "res://Timelines/Loop 7/library_b_7.dtl",
 "library_d_7": "res://Timelines/Loop 7/library_d_7.dtl",
 "library_m_7": "res://Timelines/Loop 7/library_m_7.dtl",

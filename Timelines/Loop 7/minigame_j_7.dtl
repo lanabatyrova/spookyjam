@@ -8,7 +8,7 @@ join Foreground (Tv Overlay Mm) center [animation="Fade In" length="0.8" wait="t
 [wait time="1.5"]
 VO: Come on, Lizzy. Everything has led to this.
 VO: She’s your best friend.
-VO: Piece of cake.
+VO: ...
 label Journal Select
 do MenuManager.open_journal()
 [wait_input]
@@ -45,16 +45,35 @@ if {is_success} == true:
 	
 	elif {current_item} == "noah":
 		join Noah center
-		Noah: Come on, Juniper. You’re like, the second most chill person I know. Other than me of course.
-		Noah: if you keep looping us, we’ll never get to try out deep fried ice cream.
+		Noah: Dude,
+		Noah: Real talk,
+		Noah: you've got to snap out of this.
+		Juniper: You don't know what's at stake here, Noah.
+		Juniper: I'm trying to stop you all from...
+		Juniper: Let me do this, okay?
+		Noah: You were there for me and Isaac when it counted,
+		Noah: I want to repay the favor.
+		Juniper: this isn't the same.
+		Noah: well, it might not be the same exactly, but,
+		Noah: I'd do anything to bring my mom back.
+		Noah: even if it destroyed me.
+		Noah: but I know she wouldn't want that.
+		Noah: It would eat her up inside.
+		Noah: so while you're saving us by looping the same day over and over again,
+		Noah: please consider how we feel about it?
+		Noah: I'm not going to let you throw your own life away.
+		VO: wow.
+		VO: Noah is full of surprises.
+		Noah: Plus if you keep looping us, we’ll never get to try out deep fried ice cream.
 		Noah: like, how does the ice cream not immediately melt?
-		Juniper: ...
+		VO: okay, that's better.
+		...
 		Juniper: it’s coated in batter—
 		Noah: Yeah, I know, but it’s like, who figured that out?
 		Noah: like did this accidentally drop ice cream in the vat of oil and then it turned out okay?
 		Noah: accidents and unexpected miracles!
 		Noah: can’t get that in a time loop.
-		Juniper: ...
+		...
 		Juniper: and mars bars.
 		Juniper: Don’t forget mars bars.
 		Noah: and mars bars!
@@ -64,23 +83,27 @@ if {is_success} == true:
 	elif {current_item} == "barb":
 		join Barb center
 		Barb: Juniper, you know you’re acting super totally not okay right?
-		Barb: like supervillain levels of not okay.
-		Juniper: I know it seems like that, Barb, but this is all for a very good reason—
-		Barb: Save the rationalizing crap for someone who doesn’t know you and how incredibly and infuriating compassionate you are.
-		Barb: Like, everything you do and say drives me up the damn wall,
-		Barb: because I’m like, she’s figuring it out.
+		Barb: like my mom throwing away all of my dad's things when he filed for divorce because she cheated on him with her personal tennis trainer levels of not okay.
+		VO: Barb's mom cheated with her personal tennis trainer?
+		VO: I didn't know that. 
+		Juniper: This is all for a good reason—
+		Barb: Save the rationalizing crap for someone who doesn’t know how incredibly and infuriating compassionate you are.
+		Barb: everything you do and say drives me up the damn wall,
+		Barb: because everytime I’m like, she’s figuring it out.
 		Barb: she’s doing the right thing.
-		Barb: You find the perfect nice thing to say every time and make it look so effortless. Like saint levels of nice.
-		Juniper: Well, I wouldn’t go that far...
+		Barb: even if she doesn't get what she wants.
+		Barb: and make it look so effortless.
+		Barb: Like saint levels of nice.
+		Juniper: Well,
+		Juniper: I wouldn’t go that far...
 		Barb: Take the compliment. Being emotionally vulnerable isn’t easy for me, okay?
 		Juniper: Thank you.
 		Barb: You’re welcome.
 		Barb: But also.
 		Barb: Why are you acting like such an idiot?
 		Barb: Don’t you know how important you are?
-		Barb: Get it together!!
-		Juniper: ...
-		Juniper: Barb...
+		Barb: Get it together!
+		...
 		leave Barb
 	
 	
@@ -91,19 +114,25 @@ if {is_success} == true:
 		Valerie: seeing a single piece of an impossibly large picture...
 		Valerie: you can’t possibly know all of the context.
 		Juniper: I’ve seen enough, Valerie.
-		Valerie: this ritual you’ve created, looping the same day over and over again, is from a place of uncertainty, which is completely normal for someone your age.
-		Valerie: You may feel in control, but this time loop is trapping you just as much as it’s trapping us.
+		Valerie: this ritual you’ve created,
+		Valerie: looping the same day over and over again,
+		Valerie: is from a place of uncertainty, which is completely normal for someone your age.
+		Valerie: You may feel in control,
+		Valerie: but this time loop is trapping you just as much as it’s trapping us.
 		Valerie: There is no winning.
 		Valerie: no gaming the system.
-		Valerie: You must see that. Don’t ignore that feeling of fear.
+		Valerie: You must see that.
+		Valerie: Don’t ignore that feeling of fear.
 		Valerie: We will face it together.
+		Valerie: As a team.
+		Lizzy: Well said, Val.
 		Juniper: ...
 		leave Valerie
 	
 	elif {current_item} == "knightmare":
 		join Knightmare center
 		Knightmare: You are a powerful psychic and a formidable foe. I’ve always deeply respected you out of all the annoying children.
-		Juniper: ...
+		...
 		Juniper: uh.
 		Juniper: thanks?
 		Knightmare: Do not mistake this for a compliment, it means I must slay you in battle to truly succeed.
@@ -155,7 +184,6 @@ if {is_success} == true:
 		leave Dagger
 	
 	elif {current_item} == "j_bffs":
-		update Lizzy (Full Wolf)
 		Lizzy: When I first moved here, you were the one that made me feel welcomed.
 		Lizzy: You were the one that helped me deal with my werewolf stuff.
 		Lizzy: Never once did I think you weren’t being genuine.
@@ -196,10 +224,42 @@ if {is_success} == true:
 		Barb: What does she mean by that?
 		VO: uh oh.
 		VO: that doesn't sound good.
-		[rock slideee]
+
+		join Foreground (Mine/1) midright [animation="Slide In Down"]
+		[background arg="#ffffffff" fade="0.0"]
+		[background arg="res://" fade="0.5" wait="true"]
+		update Foreground [animation="Tada" repeat="3"]
 		Lizzy: Juniper!!
-		VO: I better wolf out to clear the rocks.
-		VO: [wolf out]
+
+		update Foreground (Mine/2) midright [animation="Tada" repeat="3" fade="Fade Cross"]
+		[background arg="#ffffffff" fade="0.0"]
+		[background arg="res://" fade="0.5" wait="true"]
+		Barb: She's going to kill us!
+		Noah: Relax, she's not going to kill us,
+		Noah: just trap us in this scary mine.
+
+		update Foreground (Mine/3) midright [animation="Tada" fade="Fade Cross" fade_length="0.4" move_time="0.2"]
+		[background arg="#ffffffff" fade="0.0"]
+		[background arg="res://" fade="0.5" wait="true"]
+		VO: I didn't want to have to do this,
+		VO: but,
+		update Lizzy (Half Wolf) [animation="Tada" length="0.6"]
+		update Foreground (Mine/4) midright [animation="Tada" length="0.7" repeat="6" fade="Fade Cross" fade_length="0.3"]
+		[background arg="#ffffffff" fade="0.0"]
+		[background arg="res://" fade="0.5" wait="true"]
+		<Empty Text Event>
+		VO: I need more power!
+		VO: Graaahhhh
+		[background arg="#ffffffff" fade="0.0"]
+		[background arg="res://" fade="0.5" wait="true"]
+		update Lizzy (Full Wolf)
+		[wolf howl]
+		update Foreground (Mine/5) midright [animation="Tada" length="1.0" repeat="6" fade="Fade Cross" fade_length="0.6"]
+		leave Foreground [animation="Fade Out Down"]
+		update Lizzy [animation="Tada" repeat="3"]
+		Barb: Oh my god...
+		Noah: She's gone full wolf!
+		Valerie: You can do it, Elizabeth!
 	elif {strikes_number} == 6.0:
 		update Minigame (6c) center
 		Juniper: You guys don’t understand.

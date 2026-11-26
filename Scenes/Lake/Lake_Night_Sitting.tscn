@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://by1vy7p63rayr"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_hq6ts"]
-[ext_resource type="Texture2D" uid="uid://d3g0je3euw0sf" path="res://assets/Loop 7/lake at night.png" id="2_4e6rc"]
+[ext_resource type="Texture2D" uid="uid://coyp8trwcn8wb" path="res://assets/Locations/Lake/Lake_Evening.png" id="2_4e6rc"]
 [ext_resource type="Texture2D" uid="uid://kgiif8ujrhv0" path="res://assets/Loop 7/park bench.png" id="3_6r67d"]
 [ext_resource type="Texture2D" uid="uid://bpqmgl15pkyue" path="res://assets/Loop 7/picnic bench.png" id="4_cw3ka"]
 [ext_resource type="Texture2D" uid="uid://5cx2fcnmqrdy" path="res://assets/Loop 7/park bench top.png" id="5_hcdqf"]
@@ -20,6 +20,7 @@ position = Vector2(447, 322)
 texture = ExtResource("2_4e6rc")
 
 [node name="Node2D2" type="Node2D" parent="Node2D" unique_id=260301128]
+visible = false
 position = Vector2(-507.0755, -194.165)
 scale = Vector2(1.6046695, 1.6046695)
 

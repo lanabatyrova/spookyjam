@@ -1,0 +1,46 @@
+[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
+join Juniper (Animated) left
+join Lizzy right
+update Minigame (5c) center
+Juniper: That's it.
+Juniper: If you're going to continue interfering...
+Juniper: I have no choice but to stop you.
+Barb: What does she mean by that?
+VO: uh oh.
+VO: that doesn't sound good.
+
+join Foreground (Mine/1) midright [animation="Slide In Down"]
+[background arg="#ffffffff" fade="0.0"]
+[background arg="res://" fade="0.5" wait="true"]
+update Foreground [animation="Tada" repeat="3"]
+Lizzy: Juniper!!
+
+update Foreground (Mine/2) midright [animation="Tada" repeat="3" fade="Fade Cross"]
+[background arg="#ffffffff" fade="0.0"]
+[background arg="res://" fade="0.5" wait="true"]
+Barb: She's going to kill us!
+Noah: Relax, she's not going to kill us,
+Noah: just trap us in this scary mine.
+
+update Foreground (Mine/3) midright [animation="Tada" fade="Fade Cross" fade_length="0.4" move_time="0.2"]
+[background arg="#ffffffff" fade="0.0"]
+[background arg="res://" fade="0.5" wait="true"]
+VO: I didn't want to have to do this,
+VO: but,
+update Lizzy (Half Wolf) [animation="Tada" length="0.6"]
+update Foreground (Mine/4) midright [animation="Tada" length="0.7" repeat="6" fade="Fade Cross" fade_length="0.3"]
+[background arg="#ffffffff" fade="0.0"]
+[background arg="res://" fade="0.5" wait="true"]
+<Empty Text Event>
+VO: I need more power!
+VO: Graaahhhh
+[background arg="#ffffffff" fade="0.0"]
+[background arg="res://" fade="0.5" wait="true"]
+update Lizzy (Full Wolf)
+[wolf howl]
+update Foreground (Mine/5) midright [animation="Tada" length="1.0" repeat="6" fade="Fade Cross" fade_length="0.6"]
+leave Foreground [animation="Fade Out Down"]
+update Lizzy [animation="Tada" repeat="3"]
+Barb: Oh my god...
+Noah: She's gone full wolf!
+Valerie: You can do it, Elizabeth!

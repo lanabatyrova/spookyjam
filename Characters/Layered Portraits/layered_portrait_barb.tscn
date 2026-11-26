@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://cuxrabsi7js3g" path="res://sprites/Barb/Body/Barb body.png" id="4_0f7mw"]
 [ext_resource type="Texture2D" uid="uid://cmgot68b02vgm" path="res://sprites/Barb/Face/barb closed eyes.png" id="4_qwbwn"]
 [ext_resource type="Texture2D" uid="uid://xi010mjm72gk" path="res://sprites/Barb/Face/barb face.png" id="5_xiwrn"]
+[ext_resource type="Texture2D" uid="uid://t4itw6klx6p1" path="res://sprites/Barb/Barb Legs Sitting.png" id="7_7egwi"]
+[ext_resource type="Texture2D" uid="uid://bcbg2axyc25rv" path="res://sprites/Barb/Barb Sitting.png" id="9_ugbqm"]
 [ext_resource type="Texture2D" uid="uid://bpec4murdyakl" path="res://sprites/Barb/Face/barb eyebrows dafault.png" id="10_st725"]
 [ext_resource type="Texture2D" uid="uid://y37hq7vkadv" path="res://sprites/Barb/Face/barb side eye.png" id="12_g58g8"]
 [ext_resource type="Texture2D" uid="uid://c7wr8wijlm0h4" path="res://sprites/Barb/Face/barb scared eyes.png" id="13_st725"]
@@ -90,8 +92,17 @@ texture = ExtResource("2_hsrfl")
 visible = false
 texture = ExtResource("3_r6u08")
 
+[node name="3" type="Sprite2D" parent="Legs" unique_id=179466761]
+visible = false
+position = Vector2(67, 62)
+texture = ExtResource("7_7egwi")
+
 [node name="Body" type="Sprite2D" parent="." unique_id=1978738098]
 texture = ExtResource("4_0f7mw")
+
+[node name="Sitting" type="Sprite2D" parent="." unique_id=658431343]
+visible = false
+texture = ExtResource("9_ugbqm")
 
 [node name="Face" type="Node2D" parent="." unique_id=365810907]
 

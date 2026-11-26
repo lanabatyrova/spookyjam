@@ -50,7 +50,7 @@ var facts = {
 	"m_name": false, # LMD name change to Knightmare
 	"j_clairvoyance": false,
 	"j_bffs": false, # bff sticker (clickable, visible always)
-	"j_past_adventures": false # beastiary page (clickable. visible always)
+	"j_past_adventures": true # beastiary page (clickable. visible always)
 }
 
 var dialogue_facts = {
