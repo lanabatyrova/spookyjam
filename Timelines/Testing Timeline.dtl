@@ -1,0 +1,4 @@
+join Lizzy (Animated) left
+join Barb (Animated) left [z_index="1"]
+join Valerie (Animated) center
+dd

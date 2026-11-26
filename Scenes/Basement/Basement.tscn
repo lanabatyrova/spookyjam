@@ -2,11 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://hbmnotj4ag7" path="res://assets/Locations/Basement.png" id="1_5fdut"]
 [ext_resource type="Script" uid="uid://c1uk035w18ycn" path="res://Scenes/Basement/basement.gd" id="1_gg0k3"]
-[ext_resource type="Texture2D" uid="uid://cjmdkr4c8170p" path="res://assets/noah_destroyed_contraption.png" id="3_bx3rb"]
-[ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="3_u0mjk"]
-[ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="4_7dc70"]
-[ext_resource type="Texture2D" uid="uid://dh6pb2o31ul6f" path="res://assets/noah_contraption.png" id="4_i3el1"]
-[ext_resource type="Script" uid="uid://cimtny27ajyeh" path="res://Scenes/Basement/noah_basement.gd" id="4_u0mjk"]
+[ext_resource type="Texture2D" uid="uid://cwgixepsmfhdr" path="res://assets/Locations/basement_night.png" id="3_u0mjk"]
+[ext_resource type="Texture2D" uid="uid://b2hkeo8mkimk" path="res://assets/Locations/Hover Doors/basement_stairs.png" id="5_7dc70"]
+[ext_resource type="Texture2D" uid="uid://d0dn1evfd2gly" path="res://assets/question mark glitter.png" id="6_7dc70"]
+[ext_resource type="Texture2D" uid="uid://68mrb5mxtgr1" path="res://assets/Locations/Hover Doors/basementhallway entrance.png" id="6_bx3rb"]
+[ext_resource type="Texture2D" uid="uid://o2s0d4u6i8vn" path="res://assets/Locations/Hover Doors/basementhallway entrance hover.png" id="7_i3el1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bx3rb"]
+load_path = "res://.godot/imported/turn back.png-5893c56737d9fe10dd818e9c11785abe.ctex"
 
 [node name="Basement" type="Node2D" unique_id=1156537435]
 script = ExtResource("1_gg0k3")
@@ -17,29 +20,50 @@ offset_right = 1150.9999
 offset_bottom = 649.0
 
 [node name="Basement" type="Sprite2D" parent="." unique_id=2014623844]
-position = Vector2(353, 324)
+position = Vector2(578, 324)
 scale = Vector2(0.59999996, 0.6)
 texture = ExtResource("1_5fdut")
 
-[node name="NoahDestroyedContraption" type="Sprite2D" parent="." unique_id=2021236958]
+[node name="Basement_night" type="Node2D" parent="." unique_id=1206109207]
 visible = false
-position = Vector2(851, 237.00002)
-scale = Vector2(0.24000059, 0.24000059)
-texture = ExtResource("3_bx3rb")
 
-[node name="NoahContraption" type="Sprite2D" parent="." unique_id=1876605477]
-position = Vector2(920.00006, 274)
-scale = Vector2(0.24000059, 0.24000059)
-texture = ExtResource("4_i3el1")
+[node name="Basement_night1" type="Sprite2D" parent="Basement_night" unique_id=826336822]
+position = Vector2(578, 324)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("3_u0mjk")
 
-[node name="NoahButton" type="TextureButton" parent="." unique_id=1249788943]
-offset_left = 837.99994
-offset_top = 197.0
-offset_right = 1494.0
-offset_bottom = 1952.0
-scale = Vector2(0.22519131, 0.22519131)
-texture_normal = ExtResource("3_u0mjk")
-texture_hover = ExtResource("4_7dc70")
-script = ExtResource("4_u0mjk")
+[node name="TextureButton" type="TextureButton" parent="Basement_night" unique_id=1316531902]
+offset_left = 600.0
+offset_top = 308.99997
+offset_right = 2600.0
+offset_bottom = 5850.0
+scale = Vector2(0.051785816, 0.051785816)
+texture_hover = ExtResource("6_7dc70")
 
-[connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[node name="Basement2" type="Sprite2D" parent="." unique_id=1471826049]
+position = Vector2(578, 324)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("5_7dc70")
+
+[node name="school" type="TextureButton" parent="." unique_id=1306843370]
+offset_left = 382.00003
+offset_top = 8.000001
+offset_right = 2382.0
+offset_bottom = 579.0
+rotation = 1.5600864
+scale = Vector2(0.31340972, 0.31909597)
+texture_hover = SubResource("CompressedTexture2D_bx3rb")
+
+[node name="hallway" type="TextureButton" parent="." unique_id=1418811428]
+offset_left = 587.00006
+offset_top = 126.00001
+offset_right = 1827.0
+offset_bottom = 1990.0
+rotation = -0.006240621
+scale = Vector2(0.13367991, 0.13977012)
+texture_normal = ExtResource("6_bx3rb")
+texture_hover = ExtResource("7_i3el1")
+
+[connection signal="pressed" from="Basement_night/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="school" to="." method="_on_school_pressed"]
+[connection signal="pressed" from="hallway" to="." method="_on_hallway_pressed"]

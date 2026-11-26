@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://d0iwne1a4sqlm"]
+
+[ext_resource type="Texture2D" uid="uid://b5ywt54nf8irx" path="res://assets/Locations/office day.png" id="1_6uvpq"]
+[ext_resource type="Script" uid="uid://kn2xr3i2tgys" path="res://Scenes/Hallway/office.gd" id="1_dulhp"]
+[ext_resource type="Texture2D" uid="uid://ou1srta0yb33" path="res://assets/Locations/office night.png" id="2_w8q14"]
+[ext_resource type="Texture2D" uid="uid://bivgk5ppvrdbx" path="res://assets/People/bright_body.png" id="3_7y8d0"]
+[ext_resource type="Texture2D" uid="uid://8ctq3tnyik3b" path="res://assets/Locations/Hover Doors/lostandfoundbelow.png" id="3_px3k4"]
+[ext_resource type="Texture2D" uid="uid://dhknjiei846vd" path="res://assets/People/bright_body_hover.png" id="4_ci00b"]
+[ext_resource type="BitMap" uid="uid://dbsg68hwy03fx" path="res://sprites/Extras/Mr_Bright/bright_body.png" id="5_vc6jk"]
+[ext_resource type="Script" uid="uid://yu2lgufd4hma" path="res://Scenes/Hallway/mr_bright.gd" id="6_7y8d0"]
+[ext_resource type="Texture2D" uid="uid://c1iram32v5xh3" path="res://assets/Locations/office day desk.png" id="6_ci00b"]
+[ext_resource type="Texture2D" uid="uid://djnrnmg7o15rf" path="res://assets/Locations/Hover Doors/lostnfound above.png" id="6_dypsc"]
+[ext_resource type="Texture2D" uid="uid://boomcv1mvkfeo" path="res://assets/Pickup Items/belt.png" id="6_pj6n0"]
+[ext_resource type="SpriteFrames" uid="uid://wj2705gfu0xc" path="res://PeopleButtons.tres" id="6_vc6jk"]
+[ext_resource type="Texture2D" uid="uid://clcl8u1yg681k" path="res://assets/Pickup Items/belt_hover.png" id="7_up33r"]
+[ext_resource type="BitMap" uid="uid://dqaatxbj0o8mp" path="res://assets/Pickup Items/belt_bitmap.png" id="8_dulhp"]
+[ext_resource type="Script" uid="uid://dncv7q0ecgvbb" path="res://Scenes/Lizzy's Room/belt.gd" id="9_5cm7y"]
+[ext_resource type="Texture2D" uid="uid://c7dhegqavct1c" path="res://assets/Locations/Hover Doors/lost_found.png" id="11_lsbmt"]
+[ext_resource type="Texture2D" uid="uid://jxa1svbndvlm" path="res://assets/Locations/Hover Doors/office leave.png" id="11_up33r"]
+[ext_resource type="Texture2D" uid="uid://br4ebovlffqnq" path="res://assets/Locations/Hover Doors/office leave hover.png" id="12_dulhp"]
+[ext_resource type="Texture2D" uid="uid://cxfjan4xcesx5" path="res://assets/Locations/Hover Doors/lost_found_hover.png" id="12_ktaeo"]
+
+[node name="Node2D" type="Node2D" unique_id=1270136042]
+script = ExtResource("1_dulhp")
+
+[node name="OfficeDay" type="Node2D" parent="." unique_id=1864212957]
+position = Vector2(578.00006, 321.00003)
+scale = Vector2(0.60277766, 0.60277766)
+
+[node name="OfficeDaya" type="Sprite2D" parent="OfficeDay" unique_id=860194403]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_6uvpq")
+
+[node name="Mr Bright" type="TextureButton" parent="OfficeDay" unique_id=84491466]
+offset_left = 174.19345
+offset_top = -396.4978
+offset_right = 937.1935
+offset_bottom = 1637.5022
+scale = Vector2(0.37608382, 0.37608382)
+texture_normal = ExtResource("3_7y8d0")
+texture_hover = ExtResource("4_ci00b")
+texture_click_mask = ExtResource("5_vc6jk")
+script = ExtResource("6_7y8d0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="OfficeDay" unique_id=1672000606]
+position = Vector2(316.86633, -13.271933)
+scale = Vector2(0.37608382, 0.37608382)
+sprite_frames = ExtResource("6_vc6jk")
+animation = &"Bright"
+autoplay = "Bright"
+
+[node name="OfficeDaya2" type="Sprite2D" parent="OfficeDay" unique_id=1038406416]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("6_ci00b")
+
+[node name="OfficeNight" type="Node2D" parent="." unique_id=1572400876]
+visible = false
+position = Vector2(578.00006, 321.00003)
+scale = Vector2(0.60277766, 0.60277766)
+
+[node name="OfficeNighta" type="Sprite2D" parent="OfficeNight" unique_id=473059327]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_w8q14")
+
+[node name="Lostandfoundbelow" type="Sprite2D" parent="." unique_id=1037237561]
+position = Vector2(125.91614, 340.1764)
+scale = Vector2(0.24762234, 0.24517481)
+texture = ExtResource("3_px3k4")
+
+[node name="TextureButton3" type="TextureButton" parent="." unique_id=1324295446]
+offset_left = 88.00001
+offset_top = 252.0
+offset_right = 1210.0
+offset_bottom = 2252.0
+scale = Vector2(0.25544176, 0.25544176)
+texture_normal = ExtResource("11_lsbmt")
+texture_hover = ExtResource("12_ktaeo")
+texture_click_mask = ExtResource("5_vc6jk")
+
+[node name="Belt" type="TextureButton" parent="." unique_id=377350806]
+visible = false
+offset_left = 103.00001
+offset_top = 302.0
+offset_right = 2151.0
+offset_bottom = 2350.0
+scale = Vector2(0.05139219, 0.05139219)
+texture_normal = ExtResource("6_pj6n0")
+texture_hover = ExtResource("7_up33r")
+texture_click_mask = ExtResource("8_dulhp")
+script = ExtResource("9_5cm7y")
+
+[node name="Lostandfoundbelow2" type="Sprite2D" parent="." unique_id=562642932]
+position = Vector2(125.91614, 340.1764)
+scale = Vector2(0.24762234, 0.24517481)
+texture = ExtResource("6_dypsc")
+
+[node name="leave" type="TextureButton" parent="." unique_id=618507619]
+offset_left = 1072.0
+offset_top = 61.000008
+offset_right = 1449.0
+offset_bottom = 2061.0
+scale = Vector2(0.30963323, 0.29391688)
+texture_normal = ExtResource("11_up33r")
+texture_hover = ExtResource("12_dulhp")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=924122239]
+
+[connection signal="pressed" from="OfficeDay/Mr Bright" to="OfficeDay/Mr Bright" method="_on_pressed"]
+[connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
+[connection signal="pressed" from="leave" to="." method="_on_leave_pressed"]

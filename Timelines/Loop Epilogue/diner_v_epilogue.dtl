@@ -1,0 +1,12 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Valerie (Close Up) left
+join Lizzy (Close Up) right
+Lizzy: Hey
+Valerie: Hello
+set {current_decision} = GameState.dialogue_facts["v_car"]
+if {current_decision} == true:
+	Normal convo
+else:
+	Lizzy: I didn't know you had a car.
+	Valerie: I try not to drive too much.
+	Valerie: I prefer a more green approach to transportation.

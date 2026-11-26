@@ -1,0 +1,26 @@
+join Barb left
+join Lizzy right
+Barb: help
+
+- burgers
+	Lizzy: i love burgers
+	do GameState.set_dialogue_fact("example_2", 0)
+- fries
+	Lizzy: fries are my guys
+	do GameState.set_dialogue_fact("example_2", 1)
+- pizza
+	Lizzy: pizza is yummy
+	do GameState.set_dialogue_fact("example_2", 2)
+Barb: ew
+NEW DAY
+set {current_decision} = GameState.dialogue_facts["example_2"]
+if {current_decision} == 0.0:
+	Barb: I can't believe you like burgers.
+	Lizzy: this is true!
+elif {current_decision} == 1.0:
+	Barb: you know, what you said about fries is kinda relatable
+elif {current_decision} == 2.0:
+	Barb: well nobody is perfect. pizza is mid.
+else:
+	it didn't work.
+Lizzy: you remembered...

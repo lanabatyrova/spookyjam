@@ -17,4 +17,10 @@ func _update_hover_state():
 
 func _on_pressed() -> void:
 	if(GameState.is_minigame):
-		MenuManager.close_journal()
+		if(GameState.current_day == 7):
+			Dialogic.VAR.set_variable("is_success", true)
+			Dialogic.VAR.set_variable("current_item", "noah")
+			print(Dialogic.VAR.get_variable("current_item"))
+			MenuManager.close_journal()
+		else:
+			MenuManager.close_journal()

@@ -1,5 +1,6 @@
 [background arg="#000000ff" fade="0.0"]
-join Juniper (Mine Serious) left [animation="Fade In" length="2.0" wait="true" mirrored="true"]
+audio music "res://audio/Character Sounds/main menu backtrack 1.wav"
+join Juniper (Serious) left [animation="Fade In" length="2.0" wait="true"]
 join Lizzy (Full Wolf) right [animation="Fade In" length="2.0" wait="true"]
 Lizzy: You mean so much to me Juniper, and to see you in pain like this...
 Juniper: ....
@@ -7,105 +8,31 @@ update Juniper [animation="Shake X" length="1.0" wait="true"]
 Juniper: Oh my god.
 Juniper: I... oh god what have I...
 update Juniper [animation="Shake X" length="2.0" repeat_forever="true" mirrored="false"]
-update Lizzy center [animation="Tada" wait="true" move_time="0.5"]
+update Lizzy center [animation="Tada" wait="true" move_time="0.5" extra_data="show Hips"]
 leave Juniper [animation="Instant Out"]
 update Lizzy (Juniper Hug) [fade="Fade Cross"]
 Lizzy: It's okay. You're okay.
 [wait time="2.0"]
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
 update Juniper leftmost
-update Lizzy lefter
-join Noah (Mine) midright [mirrored="true"]
+update Lizzy lefter [extra_data="show Hips"]
+join Noah (Mine) midright [animation="Fade In Up" wait="true" mirrored="true"]
+audio music -
 
 
 Noah: So, that just happened.
-update Lizzy (Mine)
-join Juniper (Mine Serious) leftmost
-join Barb (Mine) center [mirrored="true"]
+update Lizzy (Animated) left [extra_data="show ArmL/Ripped, hide ArmL/1, show ArmsR/Ripped, hide ArmsR/1"]
+join Juniper (Animated) lefter
+join Barb (Animated) center [mirrored="true"]
 Barb: Just because you know you’re in a TV show doesn’t mean you need to pull out the cliche dialogue.
-join Valerie (Mine) right [mirrored="true"]
-Valerie: Oh my, this is a lot to take in…
-Valerie: A television program?
-join Dagger (Mine) righter [mirrored="true"]
-join Knightmare (Mine) rightmost
-Dagger: I don’t know how I feel about my pain being put on display to millions of viewers across the country.
-Noah: That explains why weird things happen on a weekly basis.
-Lizzy: Jay, how did this all start?
-Lizzy: How can we help?
-Juniper: I don't know where to begin.
-Barb: How about with why you thought it was a good idea to force us into a time loop?
-Noah: I think the more accurate term is "rerun".
-Barb: Just double checking, we're okay with this whole we're a tv show thing?
-Noah: Yeah.
-Valerie: Yes.
-Dagger: No.
-knightmare: Excalibur!
-Barb: Can she leave?
-Juniper: I’m sorry you had to learn about it this way.
-Lizzy: Why this day?
-Juniper: I chose this episode because it’s one where we spend the most time together, going dress shopping with Barb, talking in the diner.
-Noah: Lizzy told me I got sent to the hospital?
-Noah: How is that spending time together?
-Juniper: Sorry, Noah,
-Juniper: None of the other episodes were as...
-leave --All-- [animation="Instant Out"]
-join Juniper (Talking) left
-Juniper: Nice.
-Juniper: Next episode is the season finale, where Lady MacDeath attacks graduation and kills almost everyone.
-Juniper: It ends with...
-Juniper: Lizzy, it ends with you dying.
-join Lizzy (Talking) right
-Lizzy: What.
-Juniper: And the show was cancelled after season two, so there was never a season three where we could bring you back.
-Lizzy: I...
-Lizzy: Die?
-leave --All-- [animation="Instant Out"]
-join Noah midright [animation="Instant In" mirrored="true"]
-join Barb center [animation="Instant In" mirrored="true"]
-join Valerie right [animation="Instant In" mirrored="true"]
-join Dagger righter [animation="Instant In" mirrored="true"]
-join Knightmare rightmost [animation="Instant In"]
-join Lizzy left
-join Juniper Lefter
-Noah: Why’d we get cancelled?
-Juniper: I think it’s because of the oversaturated teen paranormal drama genre.
-Noah: Originality goes to Hollywood to die.
-Lizzy: So, how did you figure out we were in a TV show?
-Juniper: It’s said that the silver from the mine makes my family’s power of clairvoyance  stronger.
-Juniper: When I had my vision about Vermillion Hills being destroyed,
-Juniper: About you dying,
-Juniper: I decided I might as well see if the mine could help widen the picture,
-Juniper: To see if there was a way to prevent you from dying.
-Valerie: You never told me Elizabeth died in your vision.
-Valerie: Why did you keep it from us.
-Juniper: I thought I could stop it. Make it so there was no reason to tell you.
-Juniper: Well, as it turns out, silver worked.
-Juniper: Too well.
-Juniper: I saw the real world,
-Juniper: Saw the executives refusing to renew the next season,
-Juniper: The writers leaving to work on other shows.
-Juniper: I didn’t know how to process it at first.
-Juniper: I think I convinced myself it wasn’t real, that I was imagining it.
-Juniper: But then, the finale played, and everything was happening as I saw it.
-Juniper: I rushed back here.
-Juniper: The only thing I could do to stop the episode from ending was to rewind. I kept rewinding. All the way to the beginning.
-Juniper: I did that for a while, restarted the whole show over and over again.
-Juniper: The first year was a lot of trying and failing to save you, Lizzy.
-Juniper: It became easier to just play one episode.
-Valerie: The first year?
-Lizzy: We've been looping for a year?
-Juniper: ...
-Juniper: More like.
-Juniper: Twenty-five or so years.
-Juniper: Give or take.
-Barb: Excuse me?
-Noah: Wait,
-Noah: I can legally drink now?
-Valerie: Twenty five years. .. that's unimaginable.
-Valerie: How are you not.. well...
-Juniper: Insane?
-Valerie: Uh...
-Valerie: I wasn’t going to say it.
-Juniper: my clairvoyance is already sort of like knowing the future, so it felt comfortable.
-Juniper: the worst part was knowing I couldn't stop. I had to keep going, or else..
-Juniper: everything would end.
+Barb: also, wow,
+Barb: Lizzy, your sleeves are totally ripped.
+Lizzy: that usually happens when I go full wolf.
+VO: good thing I have about ten of these jackets.
+Noah: I think it looks great.
+Lizzy: How about we continue this conversation somewhere less...
+Lizzy: Underground.
+Juniper: I'd like that.
+[background fade="0.0"]
+leave --All--
+jump lake_7/

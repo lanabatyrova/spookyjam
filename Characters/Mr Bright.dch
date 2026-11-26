@@ -1,0 +1,40 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Animated",
+&"description": "",
+&"display_name": "Mr. Bright: ",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Animated": {
+"export_overrides": {
+"image": "\"res://Temp Assets/Temp Locations/Mr bright temp.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": "res://Characters/Layered Portraits/lp_MrBright.tscn"
+},
+"Close up": {
+"export_overrides": {
+"image": "\"res://Temp Assets/Temp Locations/Mr bright temp.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 330),
+"scale": 1.6,
+"scene": "res://Characters/Layered Portraits/lp_MrBright.tscn"
+}
+},
+&"scale": 1.0
+}

@@ -1,6 +1,7 @@
 extends TextureButton
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -15,6 +16,7 @@ func is_convinceable():
 
 
 func _on_pressed() -> void:
+	#here
 	match GameState.current_day:
 		1:
 			if !GameState.spoken_today["dagger"]:

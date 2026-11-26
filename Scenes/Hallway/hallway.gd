@@ -27,7 +27,7 @@ func update_day(day: int):
 
 
 func _on_lizzys_locker_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Extras/Lizzy's Locker.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Hallway/Lizzy's Locker.tscn")
 
 
 func _on_basement_pressed() -> void:

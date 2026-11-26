@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://c0tvbnqy8axcp"]
 
 [ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_kutg2"]
-[ext_resource type="Texture2D" uid="uid://dhos22nquignr" path="res://assets/Locations/hallway_day.png" id="2_fs5pb"]
+[ext_resource type="Texture2D" uid="uid://c546ysawflv7h" path="res://assets/Locations/Hallway_Day.png" id="2_kutg2"]
+[ext_resource type="Texture2D" uid="uid://rdy4wum0owtx" path="res://assets/Locations/Hover Doors/school_door_exit.png" id="3_174ce"]
+[ext_resource type="Texture2D" uid="uid://bj4w3c54uhtjg" path="res://assets/Locations/Hover Doors/basement_door_entrance.png" id="4_41oy3"]
 
 [node name="DialogicBackground" type="Node" unique_id=1406915900]
 script = ExtResource("1_kutg2")
@@ -10,4 +12,14 @@ metadata/_custom_type_script = "uid://blsjcvm6gvd78"
 [node name="Hallway1" type="Sprite2D" parent="." unique_id=425612449]
 position = Vector2(591, 220)
 scale = Vector2(0.8141361, 0.81413615)
-texture = ExtResource("2_fs5pb")
+texture = ExtResource("2_kutg2")
+
+[node name="SchoolDoorExit" type="Sprite2D" parent="." unique_id=1180967216]
+position = Vector2(662, 263)
+scale = Vector2(0.124077804, 0.12666416)
+texture = ExtResource("3_174ce")
+
+[node name="BasementDoorEntrance" type="Sprite2D" parent="." unique_id=24174953]
+position = Vector2(431.00003, 288)
+scale = Vector2(0.23517993, 0.2098334)
+texture = ExtResource("4_41oy3")

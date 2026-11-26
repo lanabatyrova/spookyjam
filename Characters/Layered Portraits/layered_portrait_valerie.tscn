@@ -2,8 +2,28 @@
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
 [ext_resource type="Texture2D" uid="uid://cmteia3gcwqhu" path="res://sprites/Val/Val_Default_1.png" id="2_8xmyu"]
+[ext_resource type="Texture2D" uid="uid://dqnjdgd2ktpo3" path="res://sprites/Val/Body/val base.png" id="2_nyghy"]
+[ext_resource type="Texture2D" uid="uid://b11sc7cw8owa" path="res://sprites/Val/Body/val body.png" id="3_g7jpx"]
+[ext_resource type="Texture2D" uid="uid://bt2sy8ia57peh" path="res://sprites/Val/Arms/val arm R 1.png" id="3_nprte"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_tgasl"]
 [ext_resource type="Texture2D" uid="uid://doyitwg6jwpa" path="res://sprites/Val/Val_Default_Blinking.png" id="4_tgasl"]
+[ext_resource type="Texture2D" uid="uid://deg11qb00oey2" path="res://sprites/Val/Face/val face.png" id="4_uav0h"]
+[ext_resource type="Texture2D" uid="uid://b1jgijyqsm3bh" path="res://sprites/Val/Face/val eyes closed.png" id="5_1tkpg"]
+[ext_resource type="Texture2D" uid="uid://bhnjudra2amdg" path="res://sprites/Val/Face/val mouth default.png" id="5_eotrs"]
+[ext_resource type="Texture2D" uid="uid://0n85qi4wragt" path="res://sprites/Val/Face/val brows default.png" id="6_wq0fs"]
+[ext_resource type="Texture2D" uid="uid://n45rpuovxc7v" path="res://sprites/Val/Face/val eyes default.png" id="7_kfb5n"]
+[ext_resource type="Texture2D" uid="uid://b6b5sctnb8rb3" path="res://sprites/Val/Face/val mouth neutral.png" id="7_xuem2"]
+[ext_resource type="Texture2D" uid="uid://djebnj1g35emx" path="res://sprites/Val/Face/vals eyes wide.png" id="8_gprsl"]
+[ext_resource type="Texture2D" uid="uid://bi6j5aaug5eem" path="res://sprites/Val/Face/val mouth unamused.png" id="8_l1cdd"]
+[ext_resource type="Texture2D" uid="uid://c0jwnhypjpvj3" path="res://sprites/Val/Face/vals eyes wide side.png" id="9_a2nxl"]
+[ext_resource type="Texture2D" uid="uid://dlbjp1y2w6lob" path="res://sprites/Val/Face/val browsup.png" id="10_gqffh"]
+[ext_resource type="Texture2D" uid="uid://cwihx0nd2q2gs" path="res://sprites/Val/Face/val eyes half.png" id="10_nprte"]
+[ext_resource type="Texture2D" uid="uid://d3wbqtpsegtv8" path="res://sprites/Val/Face/val brows down.png" id="11_ah688"]
+[ext_resource type="Texture2D" uid="uid://c8vmw80fthrgq" path="res://sprites/Val/Face/val eyes half sid.png" id="11_xuem2"]
+[ext_resource type="Texture2D" uid="uid://btspkivo0ph67" path="res://sprites/Val/Face/val brows confused.png" id="12_vjc55"]
+[ext_resource type="Texture2D" uid="uid://pb8wp163yd8i" path="res://sprites/Val/Face/val glasses behind.png" id="16_l1cdd"]
+[ext_resource type="Texture2D" uid="uid://7o5m76xhvn71" path="res://sprites/Val/Face/val glasses.png" id="17_gqffh"]
+[ext_resource type="Texture2D" uid="uid://ccfvrgjmodoah" path="res://sprites/Val/Arms/val arm L 1.png" id="19_nw3es"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
 animations = [{
@@ -16,6 +36,17 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Val Blinking",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_nyghy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_1tkpg")
+}],
+"loop": 1,
+"name": &"Val Blinking V2",
 "speed": 2.0
 }, {
 "frames": [],
@@ -66,12 +97,91 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=2138059210]
-texture = ExtResource("2_8xmyu")
+texture = ExtResource("2_nyghy")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2133353532]
+[node name="ArmsR" type="Node2D" parent="." unique_id=1697694158]
+
+[node name="1" type="Sprite2D" parent="ArmsR" unique_id=588161658]
+texture = ExtResource("3_nprte")
+
+[node name="Body" type="Node2D" parent="." unique_id=1424415551]
+
+[node name="Body" type="Sprite2D" parent="Body" unique_id=1677656450]
+texture = ExtResource("3_g7jpx")
+
+[node name="Face" type="Node2D" parent="." unique_id=65873054]
+
+[node name="Head" type="Sprite2D" parent="Face" unique_id=2073787722]
+texture = ExtResource("4_uav0h")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=1826710540]
+
+[node name="Default" type="Sprite2D" parent="Mouth" unique_id=1773511675]
+texture = ExtResource("5_eotrs")
+
+[node name="Neutral" type="Sprite2D" parent="Mouth" unique_id=547973735]
+visible = false
+texture = ExtResource("7_xuem2")
+
+[node name="Unamused" type="Sprite2D" parent="Mouth" unique_id=59764901]
+visible = false
+texture = ExtResource("8_l1cdd")
+
+[node name="Brows" type="Node2D" parent="." unique_id=336626202]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=1191161392]
+texture = ExtResource("6_wq0fs")
+
+[node name="Up" type="Sprite2D" parent="Brows" unique_id=1489504130]
+visible = false
+texture = ExtResource("10_gqffh")
+
+[node name="Down" type="Sprite2D" parent="Brows" unique_id=1458949665]
+visible = false
+texture = ExtResource("11_ah688")
+
+[node name="Confused" type="Sprite2D" parent="Brows" unique_id=1090465903]
+visible = false
+texture = ExtResource("12_vjc55")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=1017434873]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=1237916526]
+texture = ExtResource("7_kfb5n")
+
+[node name="Wide" type="Sprite2D" parent="Eyes" unique_id=89463090]
+visible = false
+texture = ExtResource("8_gprsl")
+
+[node name="Side" type="Sprite2D" parent="Eyes" unique_id=283569504]
+visible = false
+texture = ExtResource("7_kfb5n")
+
+[node name="Wide side" type="Sprite2D" parent="Eyes" unique_id=1303674529]
+visible = false
+texture = ExtResource("9_a2nxl")
+
+[node name="Half" type="Sprite2D" parent="Eyes" unique_id=1181734641]
+visible = false
+texture = ExtResource("10_nprte")
+
+[node name="Half side" type="Sprite2D" parent="Eyes" unique_id=576317672]
+visible = false
+texture = ExtResource("11_xuem2")
+
+[node name="Closed" type="Sprite2D" parent="Eyes" unique_id=1870606378]
+visible = false
+texture = ExtResource("5_1tkpg")
+
+[node name="Arm L" type="Node2D" parent="." unique_id=1015581900]
+
+[node name="1" type="Sprite2D" parent="Arm L" unique_id=910683037]
+texture = ExtResource("19_nw3es")
+
+[node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=2133353532]
 sprite_frames = SubResource("SpriteFrames_vgl7g")
-animation = &"Val Blinking"
-autoplay = "Val Blinking"
+animation = &"Val Blinking V2"
+autoplay = "Val Blinking V2"
 
 [node name="Animated" type="Node2D" parent="." unique_id=1129710982]
 visible = false
@@ -85,3 +195,11 @@ libraries/ = SubResource("AnimationLibrary_gk201")
 autoplay = &"Talking"
 
 [node name="Layer2" type="Sprite2D" parent="Animated" unique_id=2121477103]
+
+[node name="Glasses2" type="Node2D" parent="." unique_id=1682944017]
+
+[node name="Glasses behind" type="Sprite2D" parent="Glasses2" unique_id=1200175956]
+texture = ExtResource("16_l1cdd")
+
+[node name="Glasses" type="Sprite2D" parent="Glasses2" unique_id=2106637804]
+texture = ExtResource("17_gqffh")

@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://m6jhvvpy8d1h"]
 
 [ext_resource type="Script" uid="uid://lsj62taw77b0" path="res://Scenes/Diner/diner.gd" id="1_1iy0u"]
-[ext_resource type="Texture2D" uid="uid://d3fe3uju2c1kd" path="res://assets/Locations/diner_day.png" id="2_nbcyd"]
-[ext_resource type="Texture2D" uid="uid://bfpijbn07b88l" path="res://assets/Locations/diner_night.png" id="3_0wn7f"]
+[ext_resource type="Texture2D" uid="uid://bk4xbqc4keqr" path="res://assets/Locations/Diner_Day_V2.png" id="2_j2dj2"]
 [ext_resource type="Texture2D" uid="uid://b3cm2u0t2umsl" path="res://assets/Pickup Items/meds.png" id="3_2l1dh"]
-[ext_resource type="Texture2D" uid="uid://lrnmt2pxnjh8" path="res://assets/Locations/Hover Doors/DinerToRoomDoor.png" id="4_0vt8t"]
+[ext_resource type="Texture2D" uid="uid://bsjhnwfyu08nj" path="res://assets/Locations/Diner_Night_V2.png" id="3_kafqh"]
 [ext_resource type="Texture2D" uid="uid://bhwh7q8ooi1cs" path="res://assets/Pickup Items/meds_hover.png" id="4_0wn7f"]
 [ext_resource type="Script" uid="uid://d16ufkis4lu1b" path="res://Scenes/Diner/allergy_meds.gd" id="4_hui2y"]
+[ext_resource type="Texture2D" uid="uid://br78usfg2bfc0" path="res://assets/Locations/Hover Doors/diner home hover.png" id="4_kafqh"]
 [ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="4_p231a"]
+[ext_resource type="Texture2D" uid="uid://deewq5vgr1ccp" path="res://assets/Locations/Hover Doors/diner exit hover.png" id="5_j2dj2"]
 [ext_resource type="Texture2D" uid="uid://ba5xdux3cdi4n" path="res://assets/People/Juniper_1.png" id="5_qitao"]
 [ext_resource type="BitMap" uid="uid://xm3kppnk80f7" path="res://assets/Pickup Items/meds_bitmap.png" id="6_0wn7f"]
 [ext_resource type="Texture2D" uid="uid://fr0578byryf1" path="res://assets/People/Barb_1.png" id="6_1j8du"]
@@ -19,6 +20,12 @@
 [ext_resource type="Script" uid="uid://d27dgr26uvnlj" path="res://Scenes/Diner/noah_diner.gd" id="10_pw08d"]
 [ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="11_nbcyd"]
 [ext_resource type="Texture2D" uid="uid://cohxwdm51a3i4" path="res://sprites/Noah/Noah_Phone_Barb.png" id="11_pw08d"]
+[ext_resource type="Texture2D" uid="uid://b68to7qf6ru0t" path="res://assets/People/dagger_button.png" id="21_j2dj2"]
+[ext_resource type="Texture2D" uid="uid://cqper82xfrk7p" path="res://assets/People/Lady_Knightmare_1.png" id="21_kafqh"]
+[ext_resource type="Texture2D" uid="uid://ilucjt6jddmu" path="res://assets/Locations/Diner_Counter_day.png" id="22_clqby"]
+[ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="24_t0cfx"]
+[ext_resource type="Texture2D" uid="uid://1kwgdcae7m15" path="res://assets/People/Lizzy_Dad.png" id="25_4yt8d"]
+[ext_resource type="Texture2D" uid="uid://datgv14kctyxf" path="res://assets/People/Lizzy_Mom.png" id="26_3icix"]
 
 [node name="Diner" type="Node2D" unique_id=1757622433]
 script = ExtResource("1_1iy0u")
@@ -31,36 +38,44 @@ offset_bottom = 649.0
 [node name="DinerDay" type="Sprite2D" parent="." unique_id=1238657391]
 position = Vector2(576, 323.50003)
 scale = Vector2(0.6041666, 0.6083333)
-texture = ExtResource("2_nbcyd")
+texture = ExtResource("2_j2dj2")
 
 [node name="DinerNight" type="Sprite2D" parent="." unique_id=436265283]
 position = Vector2(576, 323.50003)
 scale = Vector2(0.6041666, 0.6083333)
-texture = ExtResource("3_0wn7f")
+texture = ExtResource("3_kafqh")
 
-[node name="RoomDoor" type="TextureButton" parent="." unique_id=213897984]
-offset_left = 1113.0
-offset_top = 62.0
-offset_right = 1425.0
-offset_bottom = 1895.0
-scale = Vector2(0.13883646, 0.14026628)
-texture_hover = ExtResource("4_0vt8t")
-
-[node name="Door" type="TextureButton" parent="." unique_id=974856693]
-offset_left = 467.0
-offset_top = 105.00001
-offset_right = 707.0
-offset_bottom = 555.0
-scale = Vector2(0.57965255, 0.6056939)
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1704070880]
+offset_left = 267.0
+offset_top = 90.0
+offset_right = 507.0
+offset_bottom = 540.0
+scale = Vector2(0.25035837, 0.37959707)
 texture_hover = ExtResource("4_p231a")
 
+[node name="RoomDoor" type="TextureButton" parent="." unique_id=213897984]
+offset_left = 741.99994
+offset_top = 190.0
+offset_right = 1522.0
+offset_bottom = 2023.0
+scale = Vector2(0.11491347, 0.1191194)
+texture_hover = ExtResource("4_kafqh")
+
+[node name="Door" type="TextureButton" parent="." unique_id=974856693]
+offset_left = 978.00006
+offset_top = 151.0
+offset_right = 1758.0
+offset_bottom = 1850.0
+scale = Vector2(0.10782999, 0.11234071)
+texture_hover = ExtResource("5_j2dj2")
+
 [node name="AllergyMeds" type="TextureButton" parent="." unique_id=1189417611]
-offset_left = 969.0
-offset_top = 377.99997
-offset_right = 1671.0
-offset_bottom = 1266.0
+offset_left = 1002.0
+offset_top = 438.0
+offset_right = 1704.0
+offset_bottom = 1326.0
 rotation = 0.34837958
-scale = Vector2(0.16957128, 0.16957128)
+scale = Vector2(0.07735448, 0.07735448)
 texture_normal = ExtResource("3_2l1dh")
 texture_hover = ExtResource("4_0wn7f")
 texture_click_mask = ExtResource("6_0wn7f")
@@ -98,6 +113,57 @@ scale = Vector2(0.08837013, 0.08837013)
 texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
 
+[node name="Epilogue" type="Node2D" parent="." unique_id=1854509585]
+visible = false
+position = Vector2(191, 233.99998)
+scale = Vector2(0.22519131, 0.22519131)
+
+[node name="DinerDay" type="Sprite2D" parent="Epilogue" unique_id=1968179332]
+position = Vector2(1711.8086, 395.2743)
+scale = Vector2(2.6787195, 2.6971934)
+texture = ExtResource("2_j2dj2")
+
+[node name="Dagger1" type="Sprite2D" parent="Epilogue" unique_id=1272869174]
+position = Vector2(-62.16939, 572.8463)
+scale = Vector2(0.9805097, 0.9805097)
+texture = ExtResource("21_j2dj2")
+
+[node name="LadyKnightmare1" type="Sprite2D" parent="Epilogue" unique_id=1220352508]
+position = Vector2(346.3722, 470.71094)
+scale = Vector2(0.8698205, 0.86982054)
+texture = ExtResource("21_kafqh")
+
+[node name="DinerDay2" type="Sprite2D" parent="Epilogue" unique_id=1313356845]
+position = Vector2(1711.8086, 395.2744)
+scale = Vector2(2.6787198, 2.6971936)
+texture = ExtResource("22_clqby")
+
+[node name="Barb1" type="Sprite2D" parent="Epilogue" unique_id=41944333]
+position = Vector2(1598.6406, 808.2018)
+scale = Vector2(0.8405853, 0.8405853)
+texture = ExtResource("6_1j8du")
+
+[node name="Noah1" type="Sprite2D" parent="Epilogue" unique_id=701723247]
+position = Vector2(1183.7136, 825.9157)
+scale = Vector2(0.9265556, 0.92655545)
+texture = ExtResource("24_t0cfx")
+
+[node name="Juniper1" type="Sprite2D" parent="Epilogue" unique_id=254090401]
+position = Vector2(734.1221, 849.157)
+scale = Vector2(0.9321152, 0.9321152)
+texture = ExtResource("5_qitao")
+
+[node name="LizzyDad" type="Sprite2D" parent="Epilogue" unique_id=1815943177]
+position = Vector2(2778.8726, 593.01086)
+scale = Vector2(0.82460123, 0.82460123)
+texture = ExtResource("25_4yt8d")
+
+[node name="LizzyMom" type="Sprite2D" parent="Epilogue" unique_id=1584697966]
+position = Vector2(3151.8887, 646.299)
+scale = Vector2(0.82460123, 0.82460123)
+texture = ExtResource("26_3icix")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="RoomDoor" to="." method="_on_room_door_pressed"]
 [connection signal="pressed" from="Door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="AllergyMeds" to="AllergyMeds" method="_on_pressed"]

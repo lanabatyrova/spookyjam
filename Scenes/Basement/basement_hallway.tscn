@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://ctxgw4shj32u7"]
+
+[ext_resource type="Texture2D" uid="uid://dtkrielx4klg6" path="res://assets/Locations/basement hallway.png" id="1_35gab"]
+[ext_resource type="Script" uid="uid://c1h4740cpbqiu" path="res://Scenes/Basement/basement_hallway.gd" id="1_78pi1"]
+[ext_resource type="Texture2D" uid="uid://bd687n3o6vs5r" path="res://assets/Locations/Hover Doors/basement_door_exit.png" id="2_lirwp"]
+[ext_resource type="Texture2D" uid="uid://cnpiiwgq3y7x3" path="res://assets/Locations/basement hallway glitter.png" id="3_d7pwm"]
+[ext_resource type="Texture2D" uid="uid://xg5q6p7624qu" path="res://assets/Locations/Hover Doors/basement_door_exit2.png" id="3_lirwp"]
+[ext_resource type="Texture2D" uid="uid://m0r1nlm6y1xf" path="res://assets/Locations/Hover Doors/basement_hallway_door_1.png" id="4_d7pwm"]
+[ext_resource type="Texture2D" uid="uid://dviyi0w6vvp87" path="res://assets/Locations/Hover Doors/basement_hallway_door_2.png" id="5_nxfjy"]
+
+[node name="Node2D" type="Node2D" unique_id=22992010]
+script = ExtResource("1_78pi1")
+
+[node name="Basement" type="Sprite2D" parent="." unique_id=991436585]
+position = Vector2(577, 324)
+scale = Vector2(0.6065576, 0.60655767)
+texture = ExtResource("1_35gab")
+
+[node name="BasementNight" type="Sprite2D" parent="." unique_id=73683725]
+visible = false
+position = Vector2(577, 324)
+scale = Vector2(0.6065576, 0.60655767)
+texture = ExtResource("3_d7pwm")
+
+[node name="exit" type="TextureButton" parent="." unique_id=1063488389]
+offset_left = 833.0
+offset_top = 63.0
+offset_right = 1419.0
+offset_bottom = 1981.0
+scale = Vector2(0.30259168, 0.30488363)
+texture_normal = ExtResource("2_lirwp")
+texture_hover = ExtResource("3_lirwp")
+
+[node name="boilerroom" type="TextureButton" parent="." unique_id=1351292504]
+offset_left = 424.99997
+offset_top = 152.0
+offset_right = 902.0
+offset_bottom = 2040.0
+scale = Vector2(0.14584498, 0.14515676)
+texture_normal = ExtResource("4_d7pwm")
+texture_hover = ExtResource("5_nxfjy")
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="boilerroom" to="." method="_on_boilerroom_pressed"]

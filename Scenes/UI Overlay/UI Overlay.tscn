@@ -27,23 +27,23 @@ script = ExtResource("2_0fm1h")
 
 [node name="MapButton" type="TextureButton" parent="UI Panel" unique_id=609533822]
 layout_mode = 0
-offset_left = -10.000001
-offset_top = 478.0
-offset_right = 1017.0
-offset_bottom = 2482.0
-rotation = -0.56516737
-scale = Vector2(0.10402279, 0.10402279)
+offset_left = 27.0
+offset_top = 450.99997
+offset_right = 1054.0
+offset_bottom = 2455.0
+rotation = 0.018561125
+scale = Vector2(0.13960244, 0.13960244)
 texture_normal = ExtResource("3_38bau")
 texture_hover = ExtResource("3_ae22a")
 script = ExtResource("4_rregw")
 
 [node name="PhoneButton" type="TextureButton" parent="UI Panel" unique_id=1858763735]
 layout_mode = 0
-offset_left = 893.00006
-offset_top = 23.999971
-offset_right = 1633.0
-offset_bottom = 1773.0
-scale = Vector2(0.086883135, 0.086883135)
+offset_left = 866.0
+offset_top = 22.0
+offset_right = 1691.0
+offset_bottom = 1822.0
+scale = Vector2(0.09406086, 0.09406086)
 texture_normal = ExtResource("5_ae22a")
 texture_hover = ExtResource("6_iw2gq")
 script = ExtResource("6_38bau")
@@ -51,15 +51,16 @@ script = ExtResource("6_38bau")
 [node name="JournalButton" type="TextureButton" parent="UI Panel" unique_id=1183452521]
 layout_mode = 0
 offset_left = 972.00006
-offset_top = 45.0
-offset_right = 2125.0
-offset_bottom = 1248.0
-scale = Vector2(0.119561575, 0.119561575)
+offset_top = 31.000004
+offset_right = 2172.0
+offset_bottom = 1241.0
+scale = Vector2(0.13115136, 0.13115136)
 texture_normal = ExtResource("8_703c3")
 texture_hover = ExtResource("9_ae22a")
 script = ExtResource("8_rregw")
 
 [node name="VhsUi" type="Sprite2D" parent="UI Panel" unique_id=1013850591]
+visible = false
 position = Vector2(119.00001, 86.50002)
 scale = Vector2(0.119, 0.119)
 texture = ExtResource("11_iw2gq")

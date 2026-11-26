@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://jpwjjbvx61j4"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://d8iymurhjrop" path="res://sprites/Noah/Noah Sitting.png" id="2_t80cq"]
+[ext_resource type="Texture2D" uid="uid://vlos4bdbluux" path="res://sprites/Noah/Body/noah base.png" id="3_ndejn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q5wag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ndejn")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=993767000]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1390691713]
+texture = ExtResource("2_t80cq")
+
+[node name="Animated" type="Node2D" parent="." unique_id=594374386]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=2083596450]
+position = Vector2(-91, 131)
+scale = Vector2(1.0743906, 1.2486981)
+sprite_frames = SubResource("SpriteFrames_q5wag")
+autoplay = "default"
+frame_progress = 0.9680733
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=846382411]
+root_node = NodePath("../../..")

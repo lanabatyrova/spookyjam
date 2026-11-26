@@ -1,0 +1,12 @@
+[background scene="res://Scenes/Cutscenes/Hallway_To_Scale.tscn" fade="0.0"]
+join Barb midleft
+join Juniper left
+join Noah leftmost
+join Lizzy midright
+join Mom righter
+join Dad rightmost
+Lizzy: Ready for graduation?
+Juniper: Let's go.
+leave --All--
+[background fade="0.0"]
+jump grad_dance_epilogue/

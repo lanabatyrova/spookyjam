@@ -22,8 +22,8 @@
 "image": ""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 0.9,
+"offset": Vector2(110, 50),
+"scale": 1.0,
 "scene": "res://Characters/Layered Portraits/layered_portrait_barb.tscn"
 },
 "Close Up": {
@@ -31,9 +31,27 @@
 "image": ""
 },
 "mirror": false,
-"offset": Vector2(0, 300),
-"scale": 1.4,
+"offset": Vector2(90, 380),
+"scale": 1.5,
 "scene": "res://Characters/Layered Portraits/layered_portrait_barb.tscn"
+},
+"L7_Sitting": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(-90, 80),
+"scale": 0.9,
+"scene": "res://Characters/Layered Portraits/layered_portrait_barb.tscn"
+},
+"New portrait": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
 },
 "Phone": {
 "export_overrides": {

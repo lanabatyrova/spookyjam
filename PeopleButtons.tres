@@ -1,0 +1,31 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://wj2705gfu0xc"]
+
+[ext_resource type="Texture2D" uid="uid://c1sbt2ejdxjtf" path="res://sprites/Extras/Mr_Bright/base.png" id="1_tpf07"]
+[ext_resource type="Texture2D" uid="uid://bsmn1c8ixcodx" path="res://sprites/Extras/Mr_Bright/IMG_6916.png" id="2_xw4qf"]
+[ext_resource type="Texture2D" uid="uid://dp37wdrloej0v" path="res://sprites/Extras/Mr_Bright/IMG_6915.png" id="3_1i8p6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("1_tpf07")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_xw4qf")
+}, {
+"duration": 7.0,
+"texture": ExtResource("1_tpf07")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_xw4qf")
+}, {
+"duration": 7.0,
+"texture": ExtResource("3_1i8p6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_xw4qf")
+}],
+"loop": 1,
+"name": &"Bright",
+"speed": 2.0
+}]

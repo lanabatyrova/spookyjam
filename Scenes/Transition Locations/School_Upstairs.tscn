@@ -1,28 +1,42 @@
 [gd_scene format=3 uid="uid://c4odngouquusa"]
 
-[ext_resource type="Texture2D" uid="uid://dkcmsmeicfk2g" path="res://Temp Assets/Temp Locations/IMG_6552.webp" id="1_2h7c2"]
-[ext_resource type="Texture2D" uid="uid://btht7sw8ar88l" path="res://assets/Locations/Hover Doors/DinerDoorHover.png" id="2_6udm0"]
-[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="3_q6fts"]
+[ext_resource type="Script" uid="uid://drnyb1gv5t5ux" path="res://Scenes/Transition Locations/school_upstairs.gd" id="1_q5pyb"]
+[ext_resource type="Texture2D" uid="uid://l6sg6ocflhv2" path="res://assets/Locations/school upstairs day.png" id="1_q6fts"]
+[ext_resource type="Texture2D" uid="uid://clgg7c2hyjj8e" path="res://assets/Locations/school upstairs night.png" id="2_q5pyb"]
+[ext_resource type="Texture2D" uid="uid://drynu6vsd0b38" path="res://assets/Locations/Hover Doors/counselors door closed.png" id="3_cr4ki"]
+[ext_resource type="Texture2D" uid="uid://cxcwk8w2uorbf" path="res://assets/Locations/Hover Doors/counselors door hover.png" id="4_yo01e"]
+[ext_resource type="Texture2D" uid="uid://bkhdmwenk13p8" path="res://assets/Locations/Hover Doors/downstairs school arrow.png" id="5_q6fts"]
 
 [node name="Node2D" type="Node2D" unique_id=1870836424]
+script = ExtResource("1_q5pyb")
 
-[node name="Upstairs Hallway" type="Sprite2D" parent="." unique_id=832455449]
-position = Vector2(589, 279)
-scale = Vector2(1.28, 1)
-texture = ExtResource("1_2h7c2")
+[node name="Day" type="Sprite2D" parent="." unique_id=601241766]
+position = Vector2(580, 320)
+scale = Vector2(0.6055556, 0.6055556)
+texture = ExtResource("1_q6fts")
 
-[node name="Bathroom" type="TextureButton" parent="." unique_id=1726713964]
-offset_left = 651.00006
-offset_top = 221.0
-offset_right = 891.00006
-offset_bottom = 671.0
-scale = Vector2(0.14500001, 0.24000244)
-texture_hover = ExtResource("2_6udm0")
+[node name="Night" type="Sprite2D" parent="." unique_id=485710094]
+visible = false
+position = Vector2(580, 320)
+scale = Vector2(0.6055556, 0.6055556)
+texture = ExtResource("2_q5pyb")
+
+[node name="Counsellors" type="TextureButton" parent="." unique_id=1726713964]
+offset_left = 210.99998
+offset_top = 128.00002
+offset_right = 915.0
+offset_bottom = 2056.0
+scale = Vector2(0.133735, 0.1366288)
+texture_normal = ExtResource("3_cr4ki")
+texture_hover = ExtResource("4_yo01e")
 
 [node name="Downstairs" type="TextureButton" parent="." unique_id=1398701341]
-offset_left = -87.0
-offset_top = 502.0
-offset_right = 1913.0
-offset_bottom = 1073.0
-scale = Vector2(0.6891415, 0.25359663)
-texture_hover = ExtResource("3_q6fts")
+offset_left = 490.00006
+offset_top = -5.999996
+offset_right = 1342.0
+offset_bottom = 1994.0
+scale = Vector2(0.27207938, 0.27522463)
+texture_hover = ExtResource("5_q6fts")
+
+[connection signal="pressed" from="Counsellors" to="." method="_on_counsellors_pressed"]
+[connection signal="pressed" from="Downstairs" to="." method="_on_downstairs_pressed"]

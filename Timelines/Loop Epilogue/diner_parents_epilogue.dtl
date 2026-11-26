@@ -1,0 +1,36 @@
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Lizzy (Close Up) lefter [mirrored="true"]
+join Mom (Close up) righter [z_index="1"]
+join Dad (Close up) right
+Lizzy: hey mom,
+Lizzy: hey dad.
+Lizzy: am I glad to see you.
+Dad: heya, Liz.
+Mom: hi, Honey.
+Mom: quite the party you've got going here.
+Mom: I'm a little confused about the suit of armour though.
+Lizzy: that's Lady Knightmare.
+Mom: hm.
+Mom: your answer only inspires more questions.
+Lizzy: you and me both.
+Lizzy: but she's cool.
+Dad: is this everyone going to graduation?
+Lizzy: yeah.
+Mom: I don't think they’ll fit in the car.
+Dad: we can sure as hell try.
+join Valerie (Close Up) leftmost
+Valerie: mr. And mrs. Springs, I'll be driving my own car to the school, so you needn't not worry about space.
+do GameState.learn_dialogue_fact("v_car")
+do GameState.set_dialogue_fact(true)
+Mom: oh, hello. You're Lizzy’s librarian friend, right?
+Valerie: i suppose that surmises our relationship rather nicely.
+Lizzy: she's kinda my career advisor.
+Dad: that's awesome.
+Dad: are you taking any of her advice?
+Mom: you sure don't take ours.
+Lizzy: actually, I am.
+Dad: maybe we should go on vacation more often.
+Dad: i like this independent almost graduated Lizzy.
+...
+leave All
+do GameState.mark_characters_as_spoken(["parents"])

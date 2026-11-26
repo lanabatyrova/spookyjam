@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://04c5iqqj46fv"
+path="res://.godot/imported/Diner_Button1.png-e44677fdfb8b1c49467f69e7e0f37f82.res"
+
+[deps]
+
+source_file="res://assets/Map Overlays V2/Diner_Button1.png"
+dest_files=["res://.godot/imported/Diner_Button1.png-e44677fdfb8b1c49467f69e7e0f37f82.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

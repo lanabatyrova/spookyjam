@@ -1,9 +1,37 @@
 [gd_scene format=3 uid="uid://c41300gpeynbp"]
 
 [ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://vlos4bdbluux" path="res://sprites/Noah/Body/noah base.png" id="2_idqiv"]
 [ext_resource type="Texture2D" uid="uid://c5vqucqy4cqe8" path="res://sprites/Noah/Noah_Default_1.png" id="2_jnfwn"]
 [ext_resource type="Texture2D" uid="uid://bd7nyxvrqwhve" path="res://sprites/Noah/Noah_Default_Blinking.png" id="3_0w2nv"]
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_h8l3m"]
+[ext_resource type="Texture2D" uid="uid://bsut0grow71rx" path="res://sprites/Noah/Face/noah eyes closed.png" id="5_bxq6k"]
+[ext_resource type="Texture2D" uid="uid://dga7h0ptwulkx" path="res://sprites/Noah/Noah_Legs.png" id="5_uqf8y"]
+[ext_resource type="Texture2D" uid="uid://d8iymurhjrop" path="res://sprites/Noah/Noah Sitting.png" id="6_3m43b"]
+[ext_resource type="Texture2D" uid="uid://dm6uslprqyy2g" path="res://sprites/Noah/Noah_Body.png" id="7_7bee1"]
+[ext_resource type="Texture2D" uid="uid://dr466xwoqdo7p" path="res://sprites/Noah/Arms/noah arm right 1.png" id="7_xlmjx"]
+[ext_resource type="Texture2D" uid="uid://cs7p5byvc5mp6" path="res://sprites/Noah/Arms/noah arm right 2.png" id="8_48ae4"]
+[ext_resource type="Texture2D" uid="uid://nlsbaykij1al" path="res://sprites/Noah/Face/noah face.png" id="8_e15cw"]
+[ext_resource type="Texture2D" uid="uid://r560bpl0x1o4" path="res://sprites/Noah/Face/noah brows down.png" id="9_uouu6"]
+[ext_resource type="Texture2D" uid="uid://dg41minh3baxf" path="res://sprites/Noah/Face/noah mouth default.png" id="10_qslj2"]
+[ext_resource type="Texture2D" uid="uid://bgkvssrtqkt4s" path="res://sprites/Noah/Face/noah eyes default.png" id="11_7835p"]
+[ext_resource type="Texture2D" uid="uid://cwmqg1a4kg5rv" path="res://sprites/Noah/Arms/noah arm left 1.png" id="11_dsewd"]
+[ext_resource type="Texture2D" uid="uid://buxark2angxmn" path="res://sprites/Noah/Face/noah eyes halflid.png" id="12_upjrh"]
+[ext_resource type="Texture2D" uid="uid://chpcqimptkkrr" path="res://sprites/Noah/Arms/noah arm left 2.png" id="12_xlmjx"]
+[ext_resource type="Texture2D" uid="uid://4iswejbjxrha" path="res://sprites/Noah/Arms/noah arm left_3.png" id="13_48ae4"]
+[ext_resource type="Texture2D" uid="uid://dnptycqgyqloy" path="res://sprites/Noah/Face/noah eyes side.png" id="13_x6d5y"]
+[ext_resource type="Texture2D" uid="uid://chil5p1m1o78y" path="res://sprites/Noah/Face/noah brows up.png" id="13_y17hb"]
+[ext_resource type="Texture2D" uid="uid://w0xd1y6qvu1x" path="res://sprites/Noah/Arms/noah arm left 4.png" id="14_n4jfr"]
+[ext_resource type="Texture2D" uid="uid://cwh57ymit8bin" path="res://sprites/Noah/Face/noah eyes wide.png" id="14_n6u18"]
+[ext_resource type="Texture2D" uid="uid://eo12o082cbcd" path="res://sprites/Noah/Face/noah brows confused.png" id="14_u5p82"]
+[ext_resource type="Texture2D" uid="uid://b8qkelyrbtj0j" path="res://sprites/Noah/Face/noah eyes wide side.png" id="15_82a77"]
+[ext_resource type="Texture2D" uid="uid://2aj0k5fnfoil" path="res://sprites/Noah/Face/Noah brows concerned.png" id="15_k47js"]
+[ext_resource type="Texture2D" uid="uid://d3ktfkk4yee7k" path="res://sprites/Noah/Face/noah eyes wide front.png" id="16_obxoo"]
+[ext_resource type="Texture2D" uid="uid://dqxocuwxv7vnu" path="res://sprites/Noah/Arms/noah arm right 3.png" id="17_n4jfr"]
+[ext_resource type="Texture2D" uid="uid://b7m4yeeorjxy6" path="res://sprites/Noah/Face/noah mouth smile.png" id="22_obxoo"]
+[ext_resource type="Texture2D" uid="uid://bblqkrvbwx080" path="res://sprites/Noah/Face/noah mouth sad.png" id="23_8jqmc"]
+[ext_resource type="Texture2D" uid="uid://dfhujndtg5l67" path="res://sprites/Noah/Face/noah mouth scared.png" id="24_uqf8y"]
+[ext_resource type="Texture2D" uid="uid://lil7dx06tly2" path="res://sprites/Noah/Face/noah mouth pursed.png" id="25_3m43b"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
 animations = [{
@@ -16,6 +44,17 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Noah Blinking",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_idqiv")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_bxq6k")
+}],
+"loop": 1,
+"name": &"Noah Blinking V2",
 "speed": 2.0
 }]
 
@@ -61,12 +100,128 @@ _data = {
 script = ExtResource("1_uubi5")
 
 [node name="Base" type="Sprite2D" parent="." unique_id=856224704]
-texture = ExtResource("2_jnfwn")
+texture = ExtResource("2_idqiv")
+
+[node name="ArmR" type="Node2D" parent="." unique_id=1086113505]
+
+[node name="Down" type="Sprite2D" parent="ArmR" unique_id=512650670]
+texture = ExtResource("7_xlmjx")
+
+[node name="Pointing" type="Sprite2D" parent="ArmR" unique_id=780460663]
+visible = false
+texture = ExtResource("8_48ae4")
+
+[node name="Body" type="Node2D" parent="." unique_id=239251551]
+
+[node name="Legs" type="Sprite2D" parent="Body" unique_id=279363368]
+texture = ExtResource("5_uqf8y")
+
+[node name="Sitting" type="Sprite2D" parent="Body" unique_id=740703789]
+visible = false
+position = Vector2(146, -42)
+texture = ExtResource("6_3m43b")
+
+[node name="Body" type="Sprite2D" parent="Body" unique_id=1387611087]
+texture = ExtResource("7_7bee1")
+
+[node name="Face" type="Node2D" parent="." unique_id=1705242164]
+
+[node name="Head" type="Sprite2D" parent="Face" unique_id=1023298534]
+texture = ExtResource("8_e15cw")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=1067040917]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=1283892720]
+texture = ExtResource("11_7835p")
+
+[node name="Closed" type="Sprite2D" parent="Eyes" unique_id=931493043]
+visible = false
+texture = ExtResource("5_bxq6k")
+
+[node name="Half" type="Sprite2D" parent="Eyes" unique_id=1949743874]
+visible = false
+texture = ExtResource("12_upjrh")
+
+[node name="Side" type="Sprite2D" parent="Eyes" unique_id=1594583544]
+visible = false
+texture = ExtResource("13_x6d5y")
+
+[node name="Wide" type="Sprite2D" parent="Eyes" unique_id=717331965]
+visible = false
+texture = ExtResource("14_n6u18")
+
+[node name="Wide side" type="Sprite2D" parent="Eyes" unique_id=1102635531]
+visible = false
+texture = ExtResource("15_82a77")
+
+[node name="Wide front" type="Sprite2D" parent="Eyes" unique_id=619003026]
+visible = false
+texture = ExtResource("16_obxoo")
+
+[node name="Brows" type="Node2D" parent="." unique_id=876544232]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=605422758]
+texture = ExtResource("9_uouu6")
+
+[node name="Up" type="Sprite2D" parent="Brows" unique_id=508407162]
+visible = false
+texture = ExtResource("13_y17hb")
+
+[node name="Confused" type="Sprite2D" parent="Brows" unique_id=361967169]
+visible = false
+texture = ExtResource("14_u5p82")
+
+[node name="Concerned" type="Sprite2D" parent="Brows" unique_id=4754212]
+visible = false
+texture = ExtResource("15_k47js")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=584772919]
+
+[node name="Default" type="Sprite2D" parent="Mouth" unique_id=1837373651]
+texture = ExtResource("10_qslj2")
+
+[node name="Smile" type="Sprite2D" parent="Mouth" unique_id=1877453404]
+visible = false
+texture = ExtResource("22_obxoo")
+
+[node name="Sad" type="Sprite2D" parent="Mouth" unique_id=382082252]
+visible = false
+texture = ExtResource("23_8jqmc")
+
+[node name="Scared" type="Sprite2D" parent="Mouth" unique_id=1160731697]
+visible = false
+texture = ExtResource("24_uqf8y")
+
+[node name="Pursed" type="Sprite2D" parent="Mouth" unique_id=2054839700]
+visible = false
+texture = ExtResource("25_3m43b")
+
+[node name="ArmL" type="Node2D" parent="." unique_id=1174127414]
+
+[node name="Down" type="Sprite2D" parent="ArmL" unique_id=870661933]
+texture = ExtResource("11_dsewd")
+
+[node name="Out" type="Sprite2D" parent="ArmL" unique_id=730884894]
+visible = false
+texture = ExtResource("12_xlmjx")
+
+[node name="Pocket" type="Sprite2D" parent="ArmL" unique_id=488457503]
+visible = false
+texture = ExtResource("13_48ae4")
+
+[node name="Hips" type="Sprite2D" parent="ArmL" unique_id=873541579]
+visible = false
+texture = ExtResource("14_n4jfr")
+
+[node name="Pointing" type="Sprite2D" parent="ArmL" unique_id=58194330]
+visible = false
+texture = ExtResource("17_n4jfr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=910375175]
 sprite_frames = SubResource("SpriteFrames_vgl7g")
-animation = &"Noah Blinking"
-autoplay = "Noah Blinking"
+animation = &"Noah Blinking V2"
+autoplay = "Noah Blinking V2"
+frame_progress = 0.47383505
 
 [node name="Animated" type="Node2D" parent="." unique_id=1377488799]
 visible = false

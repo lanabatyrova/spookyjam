@@ -30,36 +30,48 @@ SaveManager="*uid://crspx2qectvvj"
 directories/dch_directory={
 "Barb": "res://Characters/Barb.dch",
 "CGS": "res://Characters/CGS.dch",
+"Dad": "res://Characters/Dad.dch",
 "Dagger": "res://Characters/Dagger.dch",
+"Fg2": "res://Characters/Fg2.dch",
 "Foreground": "res://Characters/Foreground.dch",
 "Item": "res://Characters/Item.dch",
 "Juniper": "res://Characters/Juniper.dch",
 "King Fear": "res://Characters/King Fear.dch",
 "Knightmare": "res://Characters/Knightmare.dch",
 "Lady MacDeath": "res://Characters/Lady MacDeath.dch",
+"Lighting": "res://Characters/Lighting.dch",
 "Lizzy": "res://Characters/Lizzy.dch",
 "Logo": "res://Characters/Logo.dch",
 "Minigame": "res://Characters/Minigame.dch",
+"Mom": "res://Characters/Mom.dch",
+"Mr Bright": "res://Characters/Mr Bright.dch",
 "Names": "res://Characters/Names.dch",
 "Noah": "res://Characters/Noah.dch",
 "Postcard": "res://Characters/Postcard.dch",
 "Strike Ball": "res://Characters/Strike Ball.dch",
 "VO": "res://Characters/VO.dch",
 "Valerie": "res://Characters/Valerie.dch",
+"background": "res://Characters/background.dch",
 "black screen": "res://Characters/black screen.dch"
 }
 directories/dtl_directory={
+"Credits": "res://Timelines/Loop Epilogue/Credits.dtl",
 "Grad Poster": "res://Scenes/Transition Locations/Grad Poster.dtl",
 "Opening": "res://Scenes/Previously On/Opening.dtl",
 "Parent's Room": "res://Scenes/Transition Locations/Parent's Room.dtl",
 "Silver Lake Plaque": "res://Scenes/Transition Locations/Silver Lake Plaque.dtl",
 "TEST": "res://Scenes/TEST.dtl",
 "Testing": "res://Scenes/Previously On/Testing.dtl",
+"Testing Timeline": "res://Timelines/Testing Timeline.dtl",
 "Theme Song": "res://Scenes/Previously On/Theme Song.dtl",
 "basement_n_4": "res://Timelines/Loop 4/basement_n_4.dtl",
 "diner_j_4": "res://Timelines/Loop 4/diner_j_4.dtl",
 "diner_jb_1": "res://Timelines/Loop 1/diner_jb_1.dtl",
 "diner_jb_2": "res://Timelines/Loop 2/diner_jb_2.dtl",
+"diner_jbn_epilogue": "res://Timelines/Loop Epilogue/diner_jbn_epilogue.dtl",
+"diner_ld_epilogue": "res://Timelines/Loop Epilogue/diner_ld_epilogue.dtl",
+"diner_parents_epilogue": "res://Timelines/Loop Epilogue/diner_parents_epilogue.dtl",
+"diner_v_epilogue": "res://Timelines/Loop Epilogue/diner_v_epilogue.dtl",
 "ending_1": "res://Timelines/Loop 1/ending_1.dtl",
 "ending_2": "res://Timelines/Loop 2/ending_2.dtl",
 "ending_3": "res://Timelines/Loop 3/ending_3.dtl",
@@ -67,7 +79,10 @@ directories/dtl_directory={
 "ending_5": "res://Timelines/Loop 5/ending_5.dtl",
 "ending_6": "res://Timelines/Loop 6/ending_6.dtl",
 "ending_7": "res://Timelines/Loop 7/ending_7.dtl",
+"ending_epilogue": "res://Timelines/Loop Epilogue/ending_epilogue.dtl",
 "epilogue_timeline": "res://Timelines/epilogue_timeline.dtl",
+"glitter": "res://Scenes/Basement/glitter.dtl",
+"grad_dance_epilogue": "res://Timelines/Loop Epilogue/graduation.dtl",
 "graveyard_d_1": "res://Timelines/Loop 1/graveyard_d_1.dtl",
 "graveyard_d_3": "res://Timelines/Loop 3/graveyard_d_3.dtl",
 "graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",
@@ -79,6 +94,7 @@ directories/dtl_directory={
 "hallway_jbn_1": "res://Timelines/Loop 1/hallway_jbn_1.dtl",
 "hallway_jbn_2": "res://Timelines/Loop 2/hallway_jbn_2.dtl",
 "hallway_jbn_3": "res://Timelines/Loop 3/hallway_jbn_3.dtl",
+"hallway_jnbv_epilogue": "res://Timelines/Loop Epilogue/hallway_jnbv_epilogue.dtl",
 "intro_1": "res://Timelines/Loop 1/intro_1.dtl",
 "intro_2": "res://Timelines/Loop 2/intro_2.dtl",
 "intro_3": "res://Timelines/Loop 3/intro_3.dtl",
@@ -86,7 +102,9 @@ directories/dtl_directory={
 "intro_5": "res://Timelines/Loop 5/intro_5.dtl",
 "intro_6": "res://Timelines/Loop 6/intro_6.dtl",
 "intro_7": "res://Timelines/Loop 7/intro_7.dtl",
+"intro_epilogue": "res://Timelines/Loop Epilogue/intro_epilogue.dtl",
 "item_collected": "res://Timelines/item_collected.dtl",
+"lake_7": "res://Timelines/Loop 7/lake_7.dtl",
 "library_b_7": "res://Timelines/Loop 7/library_b_7.dtl",
 "library_d_7": "res://Timelines/Loop 7/library_d_7.dtl",
 "library_m_7": "res://Timelines/Loop 7/library_m_7.dtl",
@@ -105,6 +123,7 @@ directories/dtl_directory={
 "library_vbn_5B": "res://Timelines/Loop 5/library_vbn_5B.dtl",
 "library_vbn_6": "res://Timelines/Loop 6/library_vbn_6.dtl",
 "library_vbndm_7": "res://Timelines/Loop 7/library_vbndm_7.dtl",
+"menu": "res://Scenes/Diner/menu.dtl",
 "midpoint_1": "res://Timelines/Loop 1/midpoint_1.dtl",
 "midpoint_2": "res://Timelines/Loop 2/midpoint_2.dtl",
 "midpoint_3": "res://Timelines/Loop 3/midpoint_3.dtl",
@@ -120,7 +139,11 @@ directories/dtl_directory={
 "minigame_m_6": "res://Timelines/Loop 6/minigame_m_6.dtl",
 "minigame_n_4": "res://Timelines/Loop 4/minigame_n_4.dtl",
 "minigame_v_2": "res://Timelines/Loop 2/minigame_v_2.dtl",
+"mr bright": "res://Scenes/Hallway/mr bright.dtl",
+"noah_outline": "res://Scenes/Basement/noah_outline.dtl",
 "not_ready_vo": "res://Timelines/not_ready_vo.dtl",
+"office enter": "res://Scenes/Hallway/office enter.dtl",
+"pre-midpoint_2": "res://Timelines/Loop 2/pre-midpoint_2.dtl",
 "previously_on_timeline": "res://Timelines/Loop 0/previously_on_timeline.dtl",
 "prologue_1": "res://Timelines/Loop 0/prologue_1.dtl",
 "prologue_2": "res://Timelines/Loop 0/prologue_2.dtl",
@@ -128,6 +151,7 @@ directories/dtl_directory={
 "prologue_4": "res://Timelines/Loop 0/prologue_4.dtl",
 "prologue_timeline": "res://Timelines/prologue_timeline.dtl",
 "rewind": "res://Timelines/rewind.dtl",
+"scratch pad": "res://Timelines/Loop 7/scratch pad.dtl",
 "scratch_pad": "res://scratch_pad.dtl",
 "street_j_5": "res://Timelines/Loop 5/street_j_5.dtl",
 "test_game_timeline": "res://Timelines/test/test_game_timeline.dtl",
@@ -145,9 +169,17 @@ layout/style_list=["res://Default_Style.tres", "res://Design/Glossary/test.tres"
 layout/default_style="res://Default_Style.tres"
 glossary/default_case_sensitive=true
 variables={
+"Choices": {
+"C_1": 0,
+"C_2": 0,
+"C_3": 0,
+"C_4": 0,
+"C_5": 0
+},
 "collected_item_image": "",
 "collected_item_name": "",
 "cur_day": "",
+"current_decision": false,
 "current_item": "",
 "is_success": false,
 "strikes_number": 0
@@ -200,7 +232,7 @@ glossary/glossary_files=[]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-mouse_cursor/custom_image="uid://5b3su8yjlcch"
+mouse_cursor/custom_image="uid://bwsxffj2m3bkg"
 
 [editor_plugins]
 

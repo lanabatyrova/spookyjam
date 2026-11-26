@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://b1i75n3roix62"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_nwujr"]
+[ext_resource type="Texture2D" uid="uid://dsb3knauv1ciy" path="res://sprites/Extras/Mom/mom_base.png" id="2_0lx3l"]
+[ext_resource type="Texture2D" uid="uid://27dhqmqjh4v" path="res://sprites/Extras/Mom/Mom_Arm_Left.png" id="3_knbce"]
+[ext_resource type="Texture2D" uid="uid://8m24q83k5x7k" path="res://sprites/Extras/Mom/Mom_Body.png" id="3_odtgh"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="4_odtgh"]
+[ext_resource type="Texture2D" uid="uid://0m1o5vhqqtcx" path="res://sprites/Extras/Mom/Mom_Face.png" id="5_kks52"]
+[ext_resource type="Texture2D" uid="uid://cb2hjkdgvnpk6" path="res://sprites/Extras/Mom/Mom_Mouth_Default.png" id="7_pyq5p"]
+[ext_resource type="Texture2D" uid="uid://csoq3523cgkw6" path="res://sprites/Extras/Mom/Mom_Eyes_Default.png" id="8_fnvit"]
+[ext_resource type="Texture2D" uid="uid://dhbriiuutvvh6" path="res://sprites/Extras/Mom/Mom_Brows_Default.png" id="9_kc5gf"]
+[ext_resource type="Texture2D" uid="uid://bvu73smkik1bx" path="res://sprites/Extras/Mom/Mom_Mouth_Open.png" id="10_knbce"]
+[ext_resource type="Texture2D" uid="uid://cf0ilnuaedgjg" path="res://sprites/Extras/Mom/Mom_Arm_Right.png" id="11_5vxal"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0lx3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_knbce")
+}],
+"loop": 1,
+"name": &"Mom Talking",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_5aubw"]
+resource_name = "Blinking"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Blinking:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 2.9666667, 3.1333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_7hykl"]
+resource_name = "Lizzy_Talking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_vgers"]
+length = 0.6333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Blinking:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_knbce"]
+_data = {
+&"Blinking": SubResource("Animation_5aubw"),
+&"Lizzy_Talking": SubResource("Animation_7hykl"),
+&"RESET": SubResource("Animation_vgers")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1720190308]
+script = ExtResource("1_nwujr")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=645837423]
+texture = ExtResource("2_0lx3l")
+
+[node name="ArmL" type="Node2D" parent="." unique_id=616372978]
+
+[node name="1" type="Sprite2D" parent="ArmL" unique_id=1962824595]
+texture = ExtResource("3_knbce")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1396154711]
+texture = ExtResource("3_odtgh")
+
+[node name="Face" type="Node2D" parent="." unique_id=685077103]
+
+[node name="Base" type="Sprite2D" parent="Face" unique_id=52133912]
+texture = ExtResource("5_kks52")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=667948848]
+
+[node name="Default" type="Sprite2D" parent="Mouth" unique_id=1362856925]
+texture = ExtResource("7_pyq5p")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=1542498153]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=773770921]
+texture = ExtResource("8_fnvit")
+
+[node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=1699819223]
+sprite_frames = ExtResource("4_odtgh")
+animation = &"Mom Blinking"
+autoplay = "Mom Blinking"
+
+[node name="Brows" type="Node2D" parent="." unique_id=272813501]
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=1643348674]
+texture = ExtResource("9_kc5gf")
+
+[node name="Eyebrows" type="Node2D" parent="." unique_id=432166058]
+
+[node name="Default" type="Sprite2D" parent="Eyebrows" unique_id=158044541]
+texture = ExtResource("2_0lx3l")
+
+[node name="Animated" type="Node2D" parent="." unique_id=340887265]
+visible = false
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=496865723]
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"Mom Talking"
+autoplay = "Mom Talking"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=1789135099]
+libraries/ = SubResource("AnimationLibrary_knbce")
+autoplay = &"Lizzy_Talking"
+
+[node name="ArmR" type="Node2D" parent="." unique_id=1401631772]
+
+[node name="1" type="Sprite2D" parent="ArmR" unique_id=700907057]
+texture = ExtResource("11_5vxal")

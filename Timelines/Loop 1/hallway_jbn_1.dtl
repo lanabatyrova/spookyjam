@@ -1,12 +1,13 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.2"]
-join Lizzy (Talking) right [animation="Fade In Up"]
-join Juniper (Talking) leftmost [animation="Fade In Up"]
-join Barb (Talking) left [animation="Fade In Up" wait="true" extra_data="show Normal"]
+join Lizzy (Close Up) right [animation="Fade In Up" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
+join Juniper (Close Up) leftmost [animation="Fade In Up"]
+join Barb (Close Up) left [animation="Fade In Up" wait="true" extra_data="show Normal"]
 Juniper: Hey, Lizzy, want to head to the exam together?
 Lizzy: ... why isn’t there zombies everywhere eating people?
 Juniper: Should there be?
 Lizzy: Uh. Yeah.
 Lizzy: Also wait, exam? We already did an exam and it was terrible
+update Barb [extra_data="show Eyebrows/Up"]
 Barb: Graduation’s tomorrow...?
 Juniper: Are you feeling alright?
 Lizzy: ...
@@ -22,17 +23,18 @@ leave --All-- [animation="Fade Out"]
 join Barb lefter [animation="Fade In" z_index="1"]
 join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
-join Lizzy righter [animation="Slide From Right" length="1.0"]
+join Lizzy righter [animation="Slide From Right" length="1.0" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
 VO: That was even worse than last time.
 update Barb [animation="Bounce" length="0.3" repeat="3"]
 Barb: Finally, we’ve been waiting here for eons.
 [wait time="0.2"]
-update Juniper [mirrored="false"]
-Juniper: Barb’s just being mean because she’s excited.
+update Juniper [mirrored="false" extra_data="show Eyes/Side"]
 Lizzy: We already took that test, right?
+Juniper: Barb’s just being mean because she’s excited.
 Lizzy: Like it was the same exact test we took yesterday?
 Barb: What?
-Juniper: ...
+update Juniper [mirrored="true" extra_data="hide Eyes/Side"]
+...
 Lizzy: And you said that yesterday too.
 Barb: “What” is a reflexive response to you at this point.
 Lizzy: No, the eons thing.
@@ -41,8 +43,11 @@ Barb: Are you high or something?
 Lizzy: Honestly, I have no idea.
 Lizzy: Maybe.
 join Noah (Animated) midright [animation="Slide From Right" length="1.0" wait="true"]
-Noah: Whoa, you’re high? That’s badass.
+Noah: Whoa, you’re high?
+update Noah [extra_data="hide ArmL/Down, show ArmL/Out"]
+Noah: That’s badass.
 Barb: Of course you’d be interested in doing recreational drugs.
+update Noah [extra_data="hide ArmL/Out, show ArmL/Pocket"]
 Barb: Your brain is already scrambled eggs.
 Lizzy: Noah.
 Lizzy: Tell me I’m not crazy and that today was yesterday.
@@ -62,6 +67,7 @@ VO: but I’m feeling about the same as I did then.
 	Juniper: ...
 	VO: I should talk to Val, she’ll believe me! She’s got to.
 	Lizzy: I’ve gotta go.
+	update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
 	Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
 	Barb: Why am I even friends with you??
 
@@ -74,3 +80,4 @@ leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")
 [background fade="4.0"]
+update Barb [extra_data="hide Eyebrows/Up"]

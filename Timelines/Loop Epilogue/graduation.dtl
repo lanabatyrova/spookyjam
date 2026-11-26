@@ -1,0 +1,6 @@
+[background arg="res://assets/Locations/School/graduation.png" fade="0.0"]
+join Lizzy (Graduation) right [z_index="1"]
+join Juniper (Graduation) center
+join Foreground (Podum) center
+[we are graduation\
+]

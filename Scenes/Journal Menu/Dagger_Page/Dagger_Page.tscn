@@ -10,9 +10,13 @@
 [ext_resource type="Script" uid="uid://cwled30xe2uhe" path="res://Scenes/Journal Menu/Settings/bestiary_button.gd" id="6_7xdvo"]
 [ext_resource type="Script" uid="uid://ylwi7hv2fahb" path="res://Scenes/Journal Menu/flip_back.gd" id="6_gjhgc"]
 [ext_resource type="Texture2D" uid="uid://dqxavrs75wja5" path="res://assets/Journal Overlays/Flip Page 2.png" id="7_cje14"]
+[ext_resource type="Texture2D" uid="uid://d0b3urgdgkv7i" path="res://assets/Journal Overlays/dagger_journal/Dagger_Polaroid.png" id="8_gjhgc"]
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_nbkba"]
 [ext_resource type="Script" uid="uid://bwcfyomit0ybv" path="res://Scenes/Journal Menu/Dagger_Page/dagger_char_button.gd" id="9_55ulx"]
+[ext_resource type="Texture2D" uid="uid://dxn5ywa0dhapq" path="res://assets/Journal Overlays/dagger_journal/Dagger_Polaroid_Hover.png" id="9_cje14"]
 [ext_resource type="Script" uid="uid://d26o7cg2mgy03" path="res://Scenes/Journal Menu/Dagger_Page/brother_death_button.gd" id="10_vmrb2"]
+[ext_resource type="Texture2D" uid="uid://cd65sthrv4vtw" path="res://assets/Journal Overlays/dagger_journal/dagger_brother_secret.png" id="11_nbkba"]
+[ext_resource type="Texture2D" uid="uid://cf86fjgyuvcwd" path="res://assets/Journal Overlays/dagger_journal/dagger_brother_secret_Hover.png" id="12_55ulx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vq6vg"]
 load_path = "res://.godot/imported/Flip Page 1.png-c4ed41273037187f36378e68fee8ab98.ctex"
@@ -73,22 +77,25 @@ rotation = -0.0878505
 scale = Vector2(1.0196751, 2.4833512)
 script = ExtResource("6_7xdvo")
 
-[node name="DaggerCharButton" type="Button" parent="." unique_id=2091267164]
-offset_left = 192.0
-offset_top = 186.0
-offset_right = 266.0
-offset_bottom = 254.0
-text = "Dagger Char
-Button"
+[node name="DaggerCharButton" type="TextureButton" parent="." unique_id=1571771137]
+offset_left = 130.0
+offset_top = 98.0
+offset_right = 1854.0
+offset_bottom = 2098.0
+scale = Vector2(0.13445096, 0.13445096)
+texture_normal = ExtResource("8_gjhgc")
+texture_hover = ExtResource("9_cje14")
 script = ExtResource("9_55ulx")
 
-[node name="BrotherDeathButton" type="Button" parent="." unique_id=16920673]
-offset_left = 583.0
-offset_top = 360.0
-offset_right = 719.0
-offset_bottom = 398.0
-text = "d_brother_death
-"
+[node name="BrotherDeathButton" type="TextureButton" parent="." unique_id=2137478900]
+offset_left = 452.0
+offset_top = 335.00003
+offset_right = 2189.0
+offset_bottom = 847.0
+rotation = -0.07885597
+scale = Vector2(0.16744769, 0.16744769)
+texture_normal = ExtResource("11_nbkba")
+texture_hover = ExtResource("12_55ulx")
 script = ExtResource("10_vmrb2")
 
 [node name="FlipBack" type="TextureButton" parent="." unique_id=595633432]
