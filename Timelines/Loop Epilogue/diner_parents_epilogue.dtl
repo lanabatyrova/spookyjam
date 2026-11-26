@@ -31,4 +31,6 @@ Mom: you sure don't take ours.
 Lizzy: actually, I am.
 Dad: maybe we should go on vacation more often.
 Dad: i like this independent almost graduated Lizzy.
-UNFINSHED
+...
+leave All
+do GameState.mark_characters_as_spoken(["parents"])

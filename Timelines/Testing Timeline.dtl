@@ -1,6 +1,4 @@
-join Lighting center [z_index="1"]
-join Barb lefter
-join Dagger right
-[background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
-ssss
-jump
+join Lizzy (Animated) left
+join Barb (Animated) left [z_index="1"]
+join Valerie (Animated) center
+dd

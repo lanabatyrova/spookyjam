@@ -3,4 +3,91 @@ join Barb (Close Up) center
 join Noah (Close Up) left
 join Juniper (Close Up) leftmost
 join Lizzy (Close Up) righter
-hh
+Lizzy: we did it.
+Lizzy: we made it to a new day.
+Barb: next episode you mean.
+Noah: I thought I was supposed to make the TV references.
+Barb: ya, well,
+Barb: I'm completely at peace with it now.
+Juniper: It’s weird ...but a good weird.
+Juniper: thanks for...
+...
+Juniper: thanks for snapping me out of it.
+Lizzy: hey, all good.
+Lizzy: you'd do the same for us.
+Noah: we love you, Juniper.
+Barb: it was in our best interest, really.
+Noah: so, is anything different this time around?
+Juniper: well,
+Juniper: other than you guys knowing about it,
+Juniper: the rain is new.
+Barb: Great.
+Barb: It just had to rain on the day where if my clothes get wet they're ruined,
+Barb: on the most important night of our lives.
+Barb: and before any of you goes to argue against me again,
+Barb: this may be the last night we ever experience,
+Barb: ever.
+Barb: SO.
+Barb: it is the most important night of our lives.
+VO: her twisted logic is kinda sound.
+Noah: I never thought I'd say this.
+Noah: you're right, Barb.
+Noah: it is the most important night of our lives.
+barb: So you better not do anything to ruin it, okay?
+Noah: I pinky promise.
+Barb: you're totally crossing your fingers right now.
+Noah: no i'm not.
+Lizzy: it's nice to see everything back to normal.
+Lizzy: well, not normal, normal,
+Lizzy: considering,
+Lizzy: but familiar.
+Juniper: Yeah.
+Juniper: I've missed you guys.
+Barb: Lizzy, I've got to go fix my dress now.
+Lizzy: yeah?
+Barb: I need your sewing kit.
+Lizzy: oh, right.
+Lizzy: here you go.
+Lizzy: don't lose it.
+Barb: who do you take me for?
+Barb: see you all at graduation.
+leave Barb
+Noah: okay, now that Barb's gone...
+Noah: Lizzy—
+Lizzy: let me guess.
+Lizzy: the belt?
+Noah: yes.
+Lizzy: Sure, known yourself out.
+Noah: Yippee!
+Noah: get ready for the best night ever!!!
+leave Noah
+Lizzy: well,
+Lizzy: since I'm emptying my pockets now,
+Lizzy: do you want your letter?
+Juniper: sure.
+Juniper: I still don't know how you managed to find it.
+Lizzy: it was just on the ground.
+Juniper: I must've dropped it.
+Lizzy: I know you probably still think that after tonight the world is going to cease existing,
+Lizzy: but on the off chance that it doesn't,
+Lizzy: i think you should go to Emmerdale.
+Juniper: I'll consider it.
+Lizzy: you better mean that.
+Juniper: I do.
+Juniper: after twenty-six years of doing the same highschool classes over and over again,
+Juniper: I'm warming up to the idea of post secondary education.
+
+set {current_decision} = GameState.spoken_today["parents"]
+if {current_decision} == false:
+	
+	Lizzy: I just gotta go talk to my parents real quick.
+	Lizzy: and then they can drive us.
+	Juniper: take your time.
+	Juniper: we've got lots.
+else:
+	Lizzy: I think my mom and dad are ready to drive us now,
+	Lizzy: if you still want a ride.
+	Juniper: Let's go.
+	Juniper: maybe we can beat Barb and Noah.
+set 
+leave --All--
