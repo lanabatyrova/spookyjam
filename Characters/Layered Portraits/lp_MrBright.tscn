@@ -1,14 +1,194 @@
-[gd_scene load_steps=2 format=3 ]
+[gd_scene format=3 uid="uid://c7bllj1b8or85"]
 
-[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://Characters/Layered Portraits/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://bct8po862nvmu" path="res://sprites/Extras/Mr_Bright/IMG_6917.png" id="2_tn6up"]
+[ext_resource type="Texture2D" uid="uid://dvee6hfvyxgnu" path="res://sprites/Extras/Dad/Dad_Arm_Left.png" id="3_efhqg"]
+[ext_resource type="Texture2D" uid="uid://c1sbt2ejdxjtf" path="res://sprites/Extras/Mr_Bright/base.png" id="4_7pxgq"]
+[ext_resource type="Texture2D" uid="uid://umkk37ionvb5" path="res://sprites/Extras/Mr_Bright/IMG_6914.png" id="5_degi8"]
+[ext_resource type="Texture2D" uid="uid://b6hemwl8qmk4h" path="res://sprites/Extras/Dad/Dad_Brows_Default.png" id="6_l0vrk"]
+[ext_resource type="Texture2D" uid="uid://bd02k2p51ndeo" path="res://sprites/Extras/Dad/Dad_Mouth_Default.png" id="7_yunvp"]
+[ext_resource type="Texture2D" uid="uid://cjmvgysf2ejfl" path="res://sprites/Extras/Dad/Dad_Eyes_Default.png" id="8_wth0e"]
+[ext_resource type="Texture2D" uid="uid://dp37wdrloej0v" path="res://sprites/Extras/Mr_Bright/IMG_6915.png" id="9_g4dpd"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="10_0vu2h"]
+[ext_resource type="Texture2D" uid="uid://blg27k8p1w75s" path="res://sprites/Extras/Dad/Dad_Base.png" id="11_rwnd5"]
+[ext_resource type="Texture2D" uid="uid://dfw1hhl1v5nkh" path="res://sprites/Extras/Mr_Bright/IMG_6923.png" id="12_v1s83"]
+[ext_resource type="Texture2D" uid="uid://d2stsw77of123" path="res://sprites/Extras/Dad/Dad_Mouth_Talking.png" id="13_2ep0w"]
+[ext_resource type="Texture2D" uid="uid://6hpc6kd8623m" path="res://sprites/Extras/Mom/Lizzy_Mom.png" id="14_s4rxv"]
+[ext_resource type="Texture2D" uid="uid://csmo73ck55lbd" path="res://sprites/Extras/Dad/Dad_Arm_Right.png" id="15_jee6y"]
 
-[node name="LayeredPortrait" type="CanvasGroup"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2h1g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7pxgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_v1s83")
+}],
+"loop": 1,
+"name": &"Bright Talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_rwnd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2ep0w")
+}],
+"loop": 1,
+"name": &"Dad Talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_s4rxv")
+}],
+"loop": 1,
+"name": &"Mom Talking",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_5aubw"]
+resource_name = "Blinking"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Blinking:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 2.9666667, 3.1333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_7hykl"]
+resource_name = "Lizzy_Talking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_vgers"]
+length = 0.6333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Blinking:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2qiya"]
+_data = {
+&"Blinking": SubResource("Animation_5aubw"),
+&"Lizzy_Talking": SubResource("Animation_7hykl"),
+&"RESET": SubResource("Animation_vgers")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=360959423]
 script = ExtResource("1_uubi5")
 
-[node name="Layer1" type="Sprite2D" parent="."]
+[node name="Base" type="Sprite2D" parent="." unique_id=1643880302]
+texture = ExtResource("2_tn6up")
 
-[node name="Group1" type="Node2D" parent="."]
+[node name="ArmL" type="Node2D" parent="." unique_id=1638433059]
+visible = false
 
-[node name="Layer1" type="Sprite2D" parent="Group1"]
+[node name="Arm" type="Sprite2D" parent="ArmL" unique_id=148607031]
+texture = ExtResource("3_efhqg")
 
-[node name="Layer2" type="Sprite2D" parent="Group1"]
+[node name="Legs" type="Node2D" parent="." unique_id=1500140393]
+
+[node name="Base" type="Sprite2D" parent="Legs" unique_id=1717826298]
+texture = ExtResource("4_7pxgq")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1684908827]
+texture = ExtResource("2_tn6up")
+
+[node name="Face" type="Node2D" parent="." unique_id=754547232]
+
+[node name="Base" type="Sprite2D" parent="Face" unique_id=1452027402]
+texture = ExtResource("5_degi8")
+
+[node name="Brows" type="Node2D" parent="." unique_id=936369332]
+visible = false
+
+[node name="Default" type="Sprite2D" parent="Brows" unique_id=1471590075]
+texture = ExtResource("6_l0vrk")
+
+[node name="Mouth" type="Node2D" parent="." unique_id=915371771]
+visible = false
+
+[node name="Base" type="Sprite2D" parent="Mouth" unique_id=694938673]
+texture = ExtResource("7_yunvp")
+
+[node name="Eyes" type="Node2D" parent="." unique_id=1598038583]
+
+[node name="Default" type="Sprite2D" parent="Eyes" unique_id=1231183350]
+visible = false
+texture = ExtResource("8_wth0e")
+
+[node name="Side" type="Sprite2D" parent="Eyes" unique_id=1432577166]
+visible = false
+texture = ExtResource("9_g4dpd")
+
+[node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=1058453584]
+sprite_frames = ExtResource("10_0vu2h")
+animation = &"Bright"
+autoplay = "Bright"
+
+[node name="Eyebrows" type="Node2D" parent="." unique_id=1066016125]
+visible = false
+
+[node name="Default" type="Sprite2D" parent="Eyebrows" unique_id=1893657380]
+texture = ExtResource("11_rwnd5")
+
+[node name="Animated" type="Node2D" parent="." unique_id=94142931]
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=903084137]
+sprite_frames = SubResource("SpriteFrames_t2h1g")
+animation = &"Bright Talking"
+autoplay = "Bright Talking"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=1578738892]
+libraries/ = SubResource("AnimationLibrary_2qiya")
+autoplay = &"Lizzy_Talking"
+
+[node name="ArmR" type="Node2D" parent="." unique_id=1627725752]
+visible = false
+
+[node name="Arm" type="Sprite2D" parent="ArmR" unique_id=318501361]
+texture = ExtResource("15_jee6y")

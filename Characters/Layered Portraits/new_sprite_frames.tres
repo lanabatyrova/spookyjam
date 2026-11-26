@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://blwbwexcbgxiv" path="res://sprites/Lady/Lady_Talking1.png" id="1_xho7f"]
 [ext_resource type="Texture2D" uid="uid://bl7dsmi8674r3" path="res://sprites/Lady/Lady_Talking2.png" id="2_frp2h"]
 [ext_resource type="Texture2D" uid="uid://cfkk04k0idsxm" path="res://sprites/Barb/Face/Barb_Default_Talking.png" id="2_y6b68"]
+[ext_resource type="Texture2D" uid="uid://c1sbt2ejdxjtf" path="res://sprites/Extras/Mr_Bright/base.png" id="3_ertqo"]
 [ext_resource type="Texture2D" uid="uid://blg27k8p1w75s" path="res://sprites/Extras/Dad/Dad_Base.png" id="3_sxam4"]
 [ext_resource type="Texture2D" uid="uid://dwjybyw28vtdq" path="res://sprites/Dagger/Body/dagger base.png" id="3_uds0a"]
+[ext_resource type="Texture2D" uid="uid://bsmn1c8ixcodx" path="res://sprites/Extras/Mr_Bright/IMG_6916.png" id="4_drelx"]
 [ext_resource type="Texture2D" uid="uid://c33syirlh45hm" path="res://sprites/Extras/Dad/Dad_Eyes_Closed.png" id="4_uos2v"]
 [ext_resource type="Texture2D" uid="uid://ctemcfx847l05" path="res://sprites/Dagger/Face/dagger mouth talking.png" id="4_y6b68"]
 [ext_resource type="Texture2D" uid="uid://62prwjbs3ddf" path="res://sprites/Juniper/Body/Juniper base.png" id="5_uds0a"]
@@ -37,6 +39,17 @@ animations = [{
 "loop": 1,
 "name": &"Barb Default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("3_ertqo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("4_drelx")
+}],
+"loop": 1,
+"name": &"Bright",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 7.0,

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dbsg68hwy03fx"
+path="res://.godot/imported/bright_body.png-27df77e6899bbc4f026189ca25b274c4.res"
+
+[deps]
+
+source_file="res://sprites/Extras/Mr_Bright/bright_body.png"
+dest_files=["res://.godot/imported/bright_body.png-27df77e6899bbc4f026189ca25b274c4.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

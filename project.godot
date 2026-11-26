@@ -81,7 +81,7 @@ directories/dtl_directory={
 "ending_epilogue": "res://Timelines/Loop Epilogue/ending_epilogue.dtl",
 "epilogue_timeline": "res://Timelines/epilogue_timeline.dtl",
 "glitter": "res://Scenes/Basement/glitter.dtl",
-"grad_dance_epilogue": "res://Timelines/Loop Epilogue/grad_dance_epilogue.dtl",
+"grad_dance_epilogue": "res://Timelines/Loop Epilogue/graduation.dtl",
 "graveyard_d_1": "res://Timelines/Loop 1/graveyard_d_1.dtl",
 "graveyard_d_3": "res://Timelines/Loop 3/graveyard_d_3.dtl",
 "graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",

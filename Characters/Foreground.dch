@@ -107,6 +107,15 @@
 "scale": 1,
 "scene": ""
 },
+"Podum": {
+"export_overrides": {
+"image": "\"res://assets/Locations/School/podum.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -150),
+"scale": 0.5,
+"scene": ""
+},
 "Tv Overlay Mm": {
 "export_overrides": {
 "image": "\"res://assets/Minigame/Juniper_Minigame/TV Overlay MM.png\""
