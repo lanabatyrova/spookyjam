@@ -15,7 +15,7 @@ var requirements_1B = {
 }
 
 var requirements_3A = {
-	"hallway_dialog" = false,
+	"hallway_dialog" = true,
 	"library_dialog" = false
 }
 
@@ -42,8 +42,21 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func is_requirement_met(name):
-	for req in requirement_sets[name].values():
+# ------------ Save/Load section START ---------------
+
+func get_save_data() -> Dictionary:
+	return {
+		"requirement_sets": requirement_sets
+	}
+
+func load_save_data(data: Dictionary):
+	print("PROGRESSION: \n", data)
+	requirement_sets = data.get("requirement_sets", requirement_sets)
+
+# ------------ Save/Load section END ---------------
+
+func is_requirement_met(req_name):
+	for req in requirement_sets[req_name].values():
 		if !req:
 			return false
 	return true

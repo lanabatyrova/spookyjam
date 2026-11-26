@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cr0kw456cxfrw" path="res://Scenes/Main Menu/New_Assets/MM_Settings.png" id="7_motf4"]
 [ext_resource type="Script" uid="uid://c43y76qanihhq" path="res://Scenes/Main Menu/settings.gd" id="8_03oub"]
 [ext_resource type="Texture2D" uid="uid://deou1vk4xmeup" path="res://Scenes/Main Menu/New_Assets/MM_Exit.png" id="9_bnksx"]
+[ext_resource type="Script" uid="uid://so85sl5r16gu" path="res://Scenes/Main Menu/load_tester_button.gd" id="10_a21cu"]
+[ext_resource type="Script" uid="uid://ih4k0r2mhg37" path="res://Scenes/Main Menu/save_tester_button.gd" id="10_motf4"]
 
 [node name="Menu" type="Node2D" unique_id=2053078578]
 
@@ -99,6 +101,24 @@ scale = Vector2(0.15, 0.15)
 offset_transform_enabled = true
 metadata/_edit_use_anchors_ = true
 
+[node name="Save Test" type="Button" parent="CanvasLayer" unique_id=1487137153]
+offset_left = 1053.0
+offset_top = 272.0
+offset_right = 1105.0
+offset_bottom = 315.0
+text = "Save test"
+script = ExtResource("10_motf4")
+
+[node name="Load Test" type="Button" parent="CanvasLayer" unique_id=1927315715]
+offset_left = 1057.0
+offset_top = 328.0
+offset_right = 1137.0
+offset_bottom = 371.0
+text = "Load test"
+script = ExtResource("10_a21cu")
+
 [connection signal="pressed" from="CanvasLayer/DayButton" to="CanvasLayer/DayButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Settings" to="CanvasLayer/Settings" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Save Test" to="CanvasLayer/Save Test" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Load Test" to="CanvasLayer/Load Test" method="_on_pressed"]

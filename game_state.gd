@@ -35,7 +35,7 @@ var item_collectible = {
 # and additional buttons (ex. dagger's polaroid for lm_dagger_vouch
 # and bff photo) to more easily keep track of them. Could be used
 # both for journal display and mini game button appearances?
-var facts = {
+var facts = { # TODO: rename to journal_facts
 	"v_case_study": false,
 	"v_future_worries": false,
 	"b_camp_story": true,
@@ -78,30 +78,69 @@ var spoken_today = {
 func _ready() -> void:
 	set_dialogic_layer()
 	
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+# ------------ Save/Load section START ---------------
+
+func get_save_data() -> Dictionary:
+	return {
+		"settings": settings,
+		"current_day": current_day,
+		"midpoint_reached": midpoint_reached,
+		"is_minigame": is_minigame,
+		"inventory": inventory,
+		"item_collectible": item_collectible,
+		"facts": facts,
+		"dialogue_facts": dialogue_facts,
+		"objectives": objectives,
+		"spoken_today": spoken_today
+	}
+
+func load_save_data(data: Dictionary):
+	print("GAME STATE: \n")
+	settings = data.get("settings", settings)
+	current_day = data.get("current_day", current_day)
+	midpoint_reached = data.get("midpoint_reached", midpoint_reached)
+	is_minigame = data.get("is_minigame", is_minigame)
+	inventory = data.get("inventory", inventory)
+	item_collectible = data.get("item_collectible", item_collectible)
+	facts = data.get("facts", facts)
+	dialogue_facts = data.get("dialogue_facts", dialogue_facts)
+	objectives = data.get("objectives", objectives)
+	spoken_today = data.get("spoken_today", spoken_today)
+	
+	print(spoken_today)
+
+
+
+# ------------ Save/Load section END ---------------
+
+
 func start_minigame():
 	is_minigame = true
 
 func end_minigame():
 	is_minigame = false
 	
-func mark_characters_as_spoken(names):
-	#print(names)
-	for name in names:
-		spoken_today[name] = true
+func mark_characters_as_spoken(char_names):
+	for char_name in char_names:
+		spoken_today[char_name] = true
 	#print(spoken_today)
 
-func pick_up_item(name):
-	inventory[name] = true
+func pick_up_item(item_name):
+	inventory[item_name] = true
 
-func learn_fact(name):
-	facts[name] = true
+func learn_fact(fact_name):
+	facts[fact_name] = true
 
-func make_item_collectible(name):
-	item_collectible[name] = true
+func make_item_collectible(item_name):
+	item_collectible[item_name] = true
 	#print(item_collectible)
 
-func complete_task(name):
-	objectives[name] = true
+func complete_task(task_name):
+	objectives[task_name] = true
 
 func reach_midpoint():
 	midpoint_reached = true
@@ -128,17 +167,12 @@ func set_dialogic_layer():
 	else:
 		print("error, no dialogic canvas found")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func next_day():
 	current_day += 1
 	Dialogic.VAR.set_variable("cur_day", current_day)
 	midpoint_reached = false
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print
-
 
 
 
