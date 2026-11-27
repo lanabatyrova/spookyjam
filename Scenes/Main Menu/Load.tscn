@@ -38,11 +38,11 @@ script = ExtResource("5_m8q3e")
 
 [node name="Load" type="GridContainer" parent="CanvasLayer" unique_id=1483534613]
 propagate_maximum_size = false
-offset_left = 280.00003
-offset_top = 128.00002
-offset_right = 866.0
-offset_bottom = 194.00002
-columns = 3
+offset_left = 297.0
+offset_top = 128.0
+offset_right = 883.0
+offset_bottom = 194.0
+columns = 4
 script = ExtResource("6_6evga")
 
 [connection signal="pressed" from="CanvasLayer/Settings_Back" to="CanvasLayer/Settings_Back" method="_on_pressed"]

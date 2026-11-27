@@ -28,7 +28,7 @@ func generate_save_title(file_name):
 	var day_time = ("Morning" if file_name.substr(1, 1) == "A" else "Evening")
 	var manual_marker = ""
 	if (file_name.ends_with("manual")):
-		manual_marker = " (manual)"
+		manual_marker = "\n(manual)"
 	
 	return "Loop " + day_num + ", " + day_time + manual_marker
 	
