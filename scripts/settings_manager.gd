@@ -9,9 +9,8 @@ const TEXT_SPEEDS = {
 }
 
 var	fullscreen = false
-#TODO: check how dialogic takes in text speed
-var text_speed = 1.0 # slow = 2.0, medium = 1.0, fast = 0.5
-var master_volume = 10 # Volume can be any number from 0-10
+var text_speed = TEXT_SPEEDS["MEDIUM"] # slow = 2.0, medium = 1.0, fast = 0.5
+var master_volume = 5 # Volume can be any number from 0-5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -29,13 +28,12 @@ func save_settings():
 	cfg.save(SETTINGS_PATH)
 
 func volume_up():
-	if(master_volume < 10):
+	if(master_volume < 5):
 		master_volume += 1
 
 func volume_down():
 	if(master_volume > 0):
 		master_volume -= 1
-
 
 # takes a text speed as either 5.0 (slow), 1.0 (medium), or 0.2 (fast)
 func set_text_speed(speed: float):
@@ -45,7 +43,7 @@ func apply_settings():
 	apply_fullscreen(fullscreen)
 	apply_volume(master_volume)
 	ProjectSettings.set_setting("dialogic/text/letter_speed", text_speed)
-	print("text speed set to: ", ProjectSettings.get_setting("dialogic/text/letter_speed"))
+	#print("text speed set to: ", ProjectSettings.get_setting("dialogic/text/letter_speed"))
 
 func apply_fullscreen(is_fullscreen: bool):
 	if(is_fullscreen):
@@ -57,6 +55,6 @@ func apply_fullscreen(is_fullscreen: bool):
 # vol is a value from 0-10
 func apply_volume(vol: float):
 	var bus = AudioServer.get_bus_index("Master")
-	AudioServer.set_bus_volume_db(bus, linear_to_db(vol/10))
+	AudioServer.set_bus_volume_db(bus, linear_to_db(vol/5))
 
 #

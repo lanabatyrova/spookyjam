@@ -21,10 +21,10 @@ Dialogic="*uid://ds2q0uclmolvu"
 GameState="*uid://dqe0igdcv3mes"
 UiOverlay="*uid://dr3bbkdfb4dxf"
 MenuManager="*uid://bf6js6fstys8g"
-MinegameTest="*uid://dye3d7c6locdx"
 ProgressionTracker="*uid://3a2w24rr6hsm"
 SaveManager="*uid://crspx2qectvvj"
 SettingsManager="*uid://bfrxa1gs4jl1h"
+GameManager="*uid://bimn2wgj74wlm"
 
 [dialogic]
 

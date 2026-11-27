@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	SaveManager.save_game(0)
+	SaveManager.manual_save()

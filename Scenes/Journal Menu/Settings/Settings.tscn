@@ -11,6 +11,25 @@
 [ext_resource type="Script" uid="uid://7mfcjiulmf0u" path="res://Scenes/Journal Menu/flip_forward.gd" id="8_si324"]
 [ext_resource type="Texture2D" uid="uid://bcstdixid8ufm" path="res://assets/BFFS_button.png" id="9_jr3r8"]
 [ext_resource type="Script" uid="uid://ttuerlfdsmrt" path="res://Scenes/Journal Menu/Settings/bff_button.gd" id="10_c5na5"]
+[ext_resource type="Texture2D" uid="uid://dqoxr3bc62n0k" path="res://assets/Journal Overlays/settings_journal/Vol_5.png" id="12_p1mro"]
+[ext_resource type="Texture2D" uid="uid://cc8o3p3au1pc4" path="res://assets/Journal Overlays/settings_journal/Vol_4.png" id="13_si324"]
+[ext_resource type="Texture2D" uid="uid://7tb0588oy8eo" path="res://assets/Journal Overlays/settings_journal/Vol_3.png" id="14_jr3r8"]
+[ext_resource type="Texture2D" uid="uid://bj7noms7qa81" path="res://assets/Journal Overlays/settings_journal/Vol_2.png" id="15_c5na5"]
+[ext_resource type="Texture2D" uid="uid://b4nqgn88uiemb" path="res://assets/Journal Overlays/settings_journal/Vol_1.png" id="16_xoghp"]
+[ext_resource type="Texture2D" uid="uid://bblw4vg2a7k1j" path="res://assets/Journal Overlays/settings_journal/fullscreen_x.png" id="17_jr3r8"]
+[ext_resource type="Texture2D" uid="uid://dcqjqckt8xckk" path="res://assets/Journal Overlays/settings_journal/fullscreen_x_hover.png" id="18_c5na5"]
+[ext_resource type="Script" uid="uid://dic50tbhepg8n" path="res://Scenes/Journal Menu/Settings/fullscreen_turn_off.gd" id="19_c5na5"]
+[ext_resource type="Script" uid="uid://2qgjnltu5pjx" path="res://Scenes/Journal Menu/Settings/fullscreen_turn_on.gd" id="20_xoghp"]
+[ext_resource type="Texture2D" uid="uid://bq7mlfbgp34oj" path="res://assets/Journal Overlays/settings_journal/volume_down_button_hover.png" id="21_ndilx"]
+[ext_resource type="Script" uid="uid://bdxokvbuyl51p" path="res://Scenes/Journal Menu/Settings/volume_down_button.gd" id="22_6xn5e"]
+[ext_resource type="Texture2D" uid="uid://t3comyoabb0c" path="res://assets/Journal Overlays/settings_journal/volume_up_button_hover.png" id="23_8ekxs"]
+[ext_resource type="Script" uid="uid://c3xu6pdahtwt6" path="res://Scenes/Journal Menu/Settings/volume_up_button.gd" id="23_qiylk"]
+[ext_resource type="Texture2D" uid="uid://cv484po44abe1" path="res://assets/Journal Overlays/settings_journal/Circle_Select.png" id="25_8ekxs"]
+[ext_resource type="Texture2D" uid="uid://cs85gcguwws6d" path="res://assets/Journal Overlays/settings_journal/Circle_Select_2.png" id="26_h4v5v"]
+[ext_resource type="Script" uid="uid://dk75qleyew65l" path="res://Scenes/Journal Menu/Settings/slow_select_button.gd" id="26_j6j15"]
+[ext_resource type="Texture2D" uid="uid://bn7edoeguhb3k" path="res://assets/Journal Overlays/settings_journal/Circle_Select_3.png" id="27_if11n"]
+[ext_resource type="Script" uid="uid://c7d2tv5gtyplt" path="res://Scenes/Journal Menu/Settings/medium_select_button.gd" id="28_yb57g"]
+[ext_resource type="Script" uid="uid://caisnoo53385s" path="res://Scenes/Journal Menu/Settings/fast_select_button.gd" id="30_c0moo"]
 
 [sub_resource type="GDScript" id="GDScript_xoghp"]
 script/source = "extends TextureButton
@@ -117,6 +136,115 @@ texture_pressed = SubResource("CompressedTexture2D_xgdt1")
 texture_hover = ExtResource("7_p1mro")
 script = ExtResource("8_si324")
 
+[node name="Vol5" type="Sprite2D" parent="." unique_id=30738377]
+visible = false
+position = Vector2(605.6966, 344.5)
+scale = Vector2(0.11326855, 0.11326856)
+texture = ExtResource("12_p1mro")
+
+[node name="Vol4" type="Sprite2D" parent="." unique_id=1849085878]
+visible = false
+position = Vector2(605.6966, 344.5)
+scale = Vector2(0.11326855, 0.11326856)
+texture = ExtResource("13_si324")
+
+[node name="Vol3" type="Sprite2D" parent="." unique_id=2123612831]
+visible = false
+position = Vector2(605.6966, 344.5)
+scale = Vector2(0.11326855, 0.11326856)
+texture = ExtResource("14_jr3r8")
+
+[node name="Vol2" type="Sprite2D" parent="." unique_id=2043602570]
+visible = false
+position = Vector2(605.6966, 344.5)
+scale = Vector2(0.11326855, 0.11326856)
+texture = ExtResource("15_c5na5")
+
+[node name="Vol1" type="Sprite2D" parent="." unique_id=1283171883]
+visible = false
+position = Vector2(605.6966, 344.5)
+scale = Vector2(0.11326855, 0.11326856)
+texture = ExtResource("16_xoghp")
+
+[node name="FullscreenTurnOff" type="TextureButton" parent="." unique_id=1232555690]
+offset_left = 447.0
+offset_top = 146.0
+offset_right = 1569.0
+offset_bottom = 1567.0
+scale = Vector2(0.028055048, 0.028055048)
+texture_normal = ExtResource("17_jr3r8")
+texture_hover = ExtResource("18_c5na5")
+script = ExtResource("19_c5na5")
+metadata/_edit_use_anchors_ = true
+
+[node name="FullscreenTurnOn" type="TextureButton" parent="." unique_id=1518875438]
+offset_left = 447.0
+offset_top = 146.0
+offset_right = 1569.0
+offset_bottom = 1567.0
+scale = Vector2(0.028055048, 0.028055048)
+texture_hover = ExtResource("17_jr3r8")
+script = ExtResource("20_xoghp")
+metadata/_edit_use_anchors_ = true
+
+[node name="VolumeDown" type="TextureButton" parent="." unique_id=1220849044]
+offset_left = 474.99997
+offset_top = 349.0
+offset_right = 615.0
+offset_bottom = 429.0
+scale = Vector2(0.14408647, 0.14408647)
+offset_transform_enabled = true
+offset_transform_position = Vector2(-0.835, -1.025)
+texture_hover = ExtResource("21_ndilx")
+script = ExtResource("22_6xn5e")
+
+[node name="VolumeUp" type="TextureButton" parent="." unique_id=1953918534]
+offset_left = 713.0
+offset_top = 323.0
+offset_right = 898.0
+offset_bottom = 471.0
+scale = Vector2(0.14408647, 0.14408647)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_hover = ExtResource("23_8ekxs")
+script = ExtResource("23_qiylk")
+
+[node name="SlowSelect" type="TextureButton" parent="." unique_id=600253275]
+offset_left = 449.00003
+offset_top = 222.00002
+offset_right = 1903.0
+offset_bottom = 981.0
+scale = Vector2(0.064518146, 0.064518146)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_hover = ExtResource("25_8ekxs")
+texture_disabled = ExtResource("25_8ekxs")
+script = ExtResource("26_j6j15")
+
+[node name="MediumSelect" type="TextureButton" parent="." unique_id=642803671]
+offset_left = 551.00006
+offset_top = 213.0
+offset_right = 1949.0
+offset_bottom = 888.0
+scale = Vector2(0.071937405, 0.071937405)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_hover = ExtResource("27_if11n")
+texture_disabled = ExtResource("27_if11n")
+script = ExtResource("28_yb57g")
+
+[node name="FastSelect" type="TextureButton" parent="." unique_id=1652976639]
+offset_left = 663.00006
+offset_top = 198.0
+offset_right = 1841.0
+offset_bottom = 1079.0
+scale = Vector2(0.065211296, 0.065211296)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_hover = ExtResource("26_h4v5v")
+texture_disabled = ExtResource("26_h4v5v")
+script = ExtResource("30_c0moo")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
@@ -124,3 +252,10 @@ script = ExtResource("8_si324")
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="BFF_Button" to="BFF_Button" method="_on_pressed"]
 [connection signal="pressed" from="FlipForward" to="FlipForward" method="_on_pressed"]
+[connection signal="pressed" from="FullscreenTurnOff" to="FullscreenTurnOff" method="_on_pressed"]
+[connection signal="pressed" from="FullscreenTurnOn" to="FullscreenTurnOn" method="_on_pressed"]
+[connection signal="pressed" from="VolumeDown" to="VolumeDown" method="_on_pressed"]
+[connection signal="pressed" from="VolumeUp" to="VolumeUp" method="_on_pressed"]
+[connection signal="pressed" from="SlowSelect" to="SlowSelect" method="_on_pressed"]
+[connection signal="pressed" from="MediumSelect" to="MediumSelect" method="_on_pressed"]
+[connection signal="pressed" from="FastSelect" to="FastSelect" method="_on_pressed"]

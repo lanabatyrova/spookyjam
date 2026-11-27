@@ -16,6 +16,8 @@
 [ext_resource type="Script" uid="uid://ba6det1lm7w2o" path="res://Scenes/Journal Menu/minigame_test_button.gd" id="10_vstuw"]
 [ext_resource type="PackedScene" uid="uid://cctd6tpk4kbnk" path="res://Scenes/Journal Menu/Bestiary/Bestiary.tscn" id="11_oxvox"]
 [ext_resource type="Script" uid="uid://dryk6xouh5y0d" path="res://Scenes/Journal Menu/minigame_wrong_button.gd" id="11_qbbbw"]
+[ext_resource type="Texture2D" uid="uid://bc0qiealr1xqi" path="res://assets/Journal Overlays/close_x.png" id="14_46go2"]
+[ext_resource type="Texture2D" uid="uid://31ic8wksuf5u" path="res://assets/Journal Overlays/close_x_hover.png" id="15_g0eq8"]
 
 [node name="JournalUi" type="Control" unique_id=1935407484]
 layout_mode = 3
@@ -58,12 +60,14 @@ script = ExtResource("1_md78m")
 
 [node name="Bestiary" parent="CanvasLayer/JournalBG/JournalPages" unique_id=1784635410 instance=ExtResource("11_oxvox")]
 
-[node name="CloseButton" type="Button" parent="CanvasLayer" unique_id=1261437690]
-offset_left = 59.0
-offset_top = 65.0
-offset_right = 82.0
-offset_bottom = 96.0
-text = "X"
+[node name="CloseButton" type="TextureButton" parent="CanvasLayer" unique_id=960099446]
+offset_left = 53.0
+offset_top = 73.0
+offset_right = 1133.0
+offset_bottom = 1283.0
+scale = Vector2(0.023196615, 0.023196615)
+texture_normal = ExtResource("14_46go2")
+texture_hover = ExtResource("15_g0eq8")
 script = ExtResource("9_5tflb")
 
 [node name="Minigame Test Button" type="Button" parent="CanvasLayer" unique_id=58267368]

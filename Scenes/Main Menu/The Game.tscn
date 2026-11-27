@@ -19,6 +19,7 @@
 [ext_resource type="Script" uid="uid://6ef6t0dngvji" path="res://Scenes/Main Menu/txt_slow_test_but.gd" id="17_tmkhq"]
 [ext_resource type="Script" uid="uid://cbt160kcsg5eu" path="res://Scenes/Main Menu/txt_med_test_but.gd" id="18_cy14l"]
 [ext_resource type="Script" uid="uid://cswp62tneg0tu" path="res://Scenes/Main Menu/txt_fast_test_but.gd" id="19_ggdxr"]
+[ext_resource type="Script" uid="uid://ih4k0r2mhg37" path="res://Scenes/Main Menu/save_tester_button.gd" id="20_ex4a5"]
 
 [node name="Menu" type="Node2D" unique_id=2053078578]
 
@@ -173,6 +174,14 @@ offset_bottom = 311.0
 text = "txt fast"
 script = ExtResource("19_ggdxr")
 
+[node name="save tester" type="Button" parent="CanvasLayer" unique_id=2031125430]
+offset_left = 947.0
+offset_top = 330.0
+offset_right = 1083.0
+offset_bottom = 373.0
+text = "save_tester"
+script = ExtResource("20_ex4a5")
+
 [connection signal="pressed" from="CanvasLayer/DayButton" to="CanvasLayer/DayButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Scenes" to="CanvasLayer/Scenes" method="_on_pressed"]
@@ -185,3 +194,4 @@ script = ExtResource("19_ggdxr")
 [connection signal="pressed" from="CanvasLayer/txt slow" to="CanvasLayer/txt slow" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/txt med" to="CanvasLayer/txt med" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/txt fast" to="CanvasLayer/txt fast" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/save tester" to="CanvasLayer/save tester" method="_on_pressed"]
