@@ -1,13 +1,16 @@
+join "black screen" center [animation="Instant In" z_index="5"]
 [background scene="res://Scenes/Lake/Lake_Night_Sitting.tscn" fade="0.0"]
 join background center
+join etc center [z_index="1"]
 join Foreground (Lake Sitting Overlay) center [animation="Instant In" z_index="4"]
-join Barb (L7_Sitting) right [z_index="2" extra_data="hide Legs/2, show Sitting, show Legs/3, hide Body, show Eyes/Side"]
-join Noah (L7_Sitting) right [z_index="1" extra_data="hide Body/Legs, show Body/Sitting"]
-join Lizzy (L7_Sitting) right [z_index="1" extra_data="hide Legs/Legs2, show Sitting, show Eyes/Side, show ArmL/Ripped, hide ArmL/1, show ArmsR/Ripped, hide ArmsR/1"]
-join Juniper (L7_Sitting) right [z_index="2" extra_data="hide Body/Legs, show Body/Sitting"]
+join Barb (L7_Sitting) right [animation="Instant In" z_index="2" extra_data="hide Legs/2, show Sitting, show Legs/3, hide Body, show Eyes/Side"]
+join Noah (L7_Sitting) right [animation="Instant In" z_index="1" extra_data="hide Body/Legs, show Body/Sitting"]
+join Lizzy (L7_Sitting) right [animation="Instant In" z_index="1" extra_data="hide Legs/Legs2, show Sitting, show Eyes/Side, show ArmL/Ripped, hide ArmL/1, show ArmsR/Ripped, hide ArmsR/1"]
+join Juniper (L7_Sitting) right [animation="Instant In" z_index="2" extra_data="hide Body/Legs, show Body/Sitting"]
 join Valerie (L7_Sitting) right
-join Dagger (L7_Sitting) left [extra_data="hide Body/Legs, show Body/Sitting, show Eyes/Side"]
+join Dagger (L7_Sitting) left [animation="Instant In" extra_data="hide Body/Legs, show Body/Sitting, show Eyes/Side"]
 join Knightmare (L7_Standing) left
+leave "black screen" [animation="Fade Out" length="0.6" wait="true"]
 
 
 Noah: The lake was a great choice, Lizzy.

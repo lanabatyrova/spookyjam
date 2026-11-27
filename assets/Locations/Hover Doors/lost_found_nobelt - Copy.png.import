@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c7tiquv58c8q6"
+path="res://.godot/imported/lost_found_nobelt - Copy.png-95d1aac2fb8055be0d69b8c2c7c8cf08.res"
+
+[deps]
+
+source_file="res://assets/Locations/Hover Doors/lost_found_nobelt - Copy.png"
+dest_files=["res://.godot/imported/lost_found_nobelt - Copy.png-95d1aac2fb8055be0d69b8c2c7c8cf08.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

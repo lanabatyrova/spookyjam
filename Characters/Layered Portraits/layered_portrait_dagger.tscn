@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://ciani2dk3g0ir" path="res://sprites/Dagger/Body/dagger trenchcoat behind.png" id="5_qcktt"]
 [ext_resource type="Texture2D" uid="uid://dqn6wfhell5dc" path="res://sprites/Dagger/Dagger_Legs.png" id="6_qcktt"]
 [ext_resource type="Texture2D" uid="uid://dbnk86djy04uo" path="res://sprites/Dagger/Face/dagger head.png" id="7_02kx4"]
-[ext_resource type="Texture2D" uid="uid://cfosyyfh8w7kc" path="res://sprites/Dagger/Dagger Sitting.png" id="7_un4tg"]
 [ext_resource type="Texture2D" uid="uid://c4tiompcahkmp" path="res://sprites/Dagger/Dagger_Torso.png" id="8_02kx4"]
 [ext_resource type="Texture2D" uid="uid://d1bw436ld6qpl" path="res://sprites/Dagger/Face/dagger eyes default.png" id="8_p6gha"]
 [ext_resource type="Texture2D" uid="uid://crnxd7ck7msbm" path="res://sprites/Dagger/Face/dagger eyes side.png" id="9_yct3w"]
@@ -101,12 +100,6 @@ texture = ExtResource("5_qcktt")
 
 [node name="Legs" type="Sprite2D" parent="Body" unique_id=990564473]
 texture = ExtResource("6_qcktt")
-
-[node name="Sitting" type="Sprite2D" parent="Body" unique_id=1228348389]
-visible = false
-position = Vector2(-220, -176)
-texture = ExtResource("7_un4tg")
-flip_h = true
 
 [node name="Body2" type="Sprite2D" parent="Body" unique_id=677474712]
 texture = ExtResource("8_02kx4")

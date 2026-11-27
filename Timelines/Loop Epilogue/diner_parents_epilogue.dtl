@@ -1,5 +1,5 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) lefter [mirrored="true"]
+join Lizzy (Close Up) left [mirrored="true"]
 join Mom (Close up) righter [z_index="1"]
 join Dad (Close up) right
 Lizzy: hey mom,
@@ -18,7 +18,7 @@ Dad: is this everyone going to graduation?
 Lizzy: yeah.
 Mom: I don't think they’ll fit in the car.
 Dad: we can sure as hell try.
-join Valerie (Close Up) leftmost
+join Valerie (Close Up) lefter
 Valerie: mr. And mrs. Springs, I'll be driving my own car to the school, so you needn't not worry about space.
 do GameState.learn_dialogue_fact("v_car")
 do GameState.set_dialogue_fact(true)
@@ -31,6 +31,24 @@ Mom: you sure don't take ours.
 Lizzy: actually, I am.
 Dad: maybe we should go on vacation more often.
 Dad: i like this independent almost graduated Lizzy.
-...
-leave All
+leave Valerie
+Lizzy: How was your trip?
+Lizzy: did you get up to anything crazy?
+
+
+- [VO] I should tell them everything. [br] they deserve to know the truth.
+	set {Choices.C_5} = true
+	Dad: thanks for telling us Lizzy.
+
+
+- [VO] The possibly last day of their [br] lives shouldn't be spent having a break [br] down over the fact we're all television characters.
+	Lizzy: well,
+	Lizzy: let's go to graduation.
+
+
+
+
+
+leave --All--
 do GameState.mark_characters_as_spoken(["parents"])
+jump diner_ld_epilogue/

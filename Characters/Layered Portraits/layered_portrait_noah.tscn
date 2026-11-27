@@ -7,7 +7,6 @@
 [ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="3_h8l3m"]
 [ext_resource type="Texture2D" uid="uid://bsut0grow71rx" path="res://sprites/Noah/Face/noah eyes closed.png" id="5_bxq6k"]
 [ext_resource type="Texture2D" uid="uid://dga7h0ptwulkx" path="res://sprites/Noah/Noah_Legs.png" id="5_uqf8y"]
-[ext_resource type="Texture2D" uid="uid://d8iymurhjrop" path="res://sprites/Noah/Noah Sitting.png" id="6_3m43b"]
 [ext_resource type="Texture2D" uid="uid://dm6uslprqyy2g" path="res://sprites/Noah/Noah_Body.png" id="7_7bee1"]
 [ext_resource type="Texture2D" uid="uid://dr466xwoqdo7p" path="res://sprites/Noah/Arms/noah arm right 1.png" id="7_xlmjx"]
 [ext_resource type="Texture2D" uid="uid://cs7p5byvc5mp6" path="res://sprites/Noah/Arms/noah arm right 2.png" id="8_48ae4"]
@@ -115,11 +114,6 @@ texture = ExtResource("8_48ae4")
 
 [node name="Legs" type="Sprite2D" parent="Body" unique_id=279363368]
 texture = ExtResource("5_uqf8y")
-
-[node name="Sitting" type="Sprite2D" parent="Body" unique_id=740703789]
-visible = false
-position = Vector2(146, -42)
-texture = ExtResource("6_3m43b")
 
 [node name="Body" type="Sprite2D" parent="Body" unique_id=1387611087]
 texture = ExtResource("7_7bee1")

@@ -19,6 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://jxa1svbndvlm" path="res://assets/Locations/Hover Doors/office leave.png" id="11_up33r"]
 [ext_resource type="Texture2D" uid="uid://br4ebovlffqnq" path="res://assets/Locations/Hover Doors/office leave hover.png" id="12_dulhp"]
 [ext_resource type="Texture2D" uid="uid://cxfjan4xcesx5" path="res://assets/Locations/Hover Doors/lost_found_hover.png" id="12_ktaeo"]
+[ext_resource type="BitMap" uid="uid://c7tiquv58c8q6" path="res://assets/Locations/Hover Doors/lost_found_nobelt - Copy.png" id="13_ktaeo"]
+[ext_resource type="Script" uid="uid://bnk43un6n8thw" path="res://Scenes/Hallway/lost_found.gd" id="14_ophm4"]
 
 [node name="Node2D" type="Node2D" unique_id=1270136042]
 script = ExtResource("1_dulhp")
@@ -67,7 +69,7 @@ position = Vector2(125.91614, 340.1764)
 scale = Vector2(0.24762234, 0.24517481)
 texture = ExtResource("3_px3k4")
 
-[node name="TextureButton3" type="TextureButton" parent="." unique_id=1324295446]
+[node name="LostFound" type="TextureButton" parent="." unique_id=1324295446]
 offset_left = 88.00001
 offset_top = 252.0
 offset_right = 1210.0
@@ -75,7 +77,8 @@ offset_bottom = 2252.0
 scale = Vector2(0.25544176, 0.25544176)
 texture_normal = ExtResource("11_lsbmt")
 texture_hover = ExtResource("12_ktaeo")
-texture_click_mask = ExtResource("5_vc6jk")
+texture_click_mask = ExtResource("13_ktaeo")
+script = ExtResource("14_ophm4")
 
 [node name="Belt" type="TextureButton" parent="." unique_id=377350806]
 visible = false
@@ -106,5 +109,6 @@ texture_hover = ExtResource("12_dulhp")
 [node name="Node2D" type="Node2D" parent="." unique_id=924122239]
 
 [connection signal="pressed" from="OfficeDay/Mr Bright" to="OfficeDay/Mr Bright" method="_on_pressed"]
+[connection signal="pressed" from="LostFound" to="LostFound" method="_on_pressed"]
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
 [connection signal="pressed" from="leave" to="." method="_on_leave_pressed"]
