@@ -1,11 +1,5 @@
 extends Node
 
-var settings = {
-	"fullscreen" = false,
-	"text_speed" = 2, #TODO: check how dialogic takes in text speed
-	"volume" = 10 # Volume can be any number from 0-10
-}
-
 var current_day: int = 1
 var midpoint_reached = false
 var is_minigame = false
@@ -81,39 +75,74 @@ var spoken_today = {
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_dialogic_layer()
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+# ------------ Save/Load section START ---------------
+
+func get_save_data() -> Dictionary:
+	return {
+		"current_day": current_day,
+		"midpoint_reached": midpoint_reached,
+		"is_minigame": is_minigame,
+		"inventory": inventory,
+		"item_collectible": item_collectible,
+		"facts": facts,
+		"dialogue_facts": dialogue_facts,
+		"objectives": objectives,
+		"spoken_today": spoken_today
+	}
+
+func load_save_data(data: Dictionary):
+	#print("GAME STATE: \n")
+	current_day = data.get("current_day", current_day)
+	midpoint_reached = data.get("midpoint_reached", midpoint_reached)
+	is_minigame = data.get("is_minigame", is_minigame)
+	inventory = data.get("inventory", inventory)
+	item_collectible = data.get("item_collectible", item_collectible)
+	facts = data.get("facts", facts)
+	dialogue_facts = data.get("dialogue_facts", dialogue_facts)
+	objectives = data.get("objectives", objectives)
+	spoken_today = data.get("spoken_today", spoken_today)
 	
+	#print(spoken_today)
+
+# ------------ Save/Load section END ---------------
+
 func start_minigame():
 	is_minigame = true
 
 func end_minigame():
 	is_minigame = false
 	
-func mark_characters_as_spoken(names):
+func mark_characters_as_spoken(char_names):
 	#print(names)
-	for name in names:
-		spoken_today[name] = true
+	for char_name in char_names:
+		spoken_today[char_name] = true
 	print(spoken_today)
 
-func pick_up_item(name):
-	inventory[name] = true
+func pick_up_item(item_name):
+	inventory[item_name] = true
 
-func learn_fact(name):
-	facts[name] = true
+func learn_fact(fact_name):
+	facts[fact_name] = true
 	
-func learn_dialogue_fact(name):
-	dialogue_facts[name] = true
-	print(dialogue_facts[name])
+func learn_dialogue_fact(fact_name):
+	dialogue_facts[fact_name] = true
+	print(dialogue_facts[fact_name])
 	
-func set_dialogue_fact(name,value):
-	dialogue_facts[name] = value
-	print(dialogue_facts[name])
+func set_dialogue_fact(fact_name,value):
+	dialogue_facts[fact_name] = value
+	print(dialogue_facts[fact_name])
 
-func make_item_collectible(name):
-	item_collectible[name] = true
+func make_item_collectible(item_name):
+	item_collectible[item_name] = true
 	#print(item_collectible)
 
-func complete_task(name):
-	objectives[name] = true
+func complete_task(task_name):
+	objectives[task_name] = true
 
 func reach_midpoint():
 	midpoint_reached = true
@@ -140,19 +169,12 @@ func set_dialogic_layer():
 	else:
 		print("error, no dialogic canvas found")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func next_day():
 	current_day += 1
 	Dialogic.VAR.set_variable("cur_day", current_day)
 	midpoint_reached = false
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	print("Cur day: ", current_day) #TODO:remove debug print
-
-
-
 
 
 # ---------debug helper section-----------

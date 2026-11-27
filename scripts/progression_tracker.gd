@@ -50,7 +50,7 @@ func get_save_data() -> Dictionary:
 	}
 
 func load_save_data(data: Dictionary):
-	print("PROGRESSION: \n", data)
+	#print("PROGRESSION: \n", data)
 	requirement_sets = data.get("requirement_sets", requirement_sets)
 
 # ------------ Save/Load section END ---------------

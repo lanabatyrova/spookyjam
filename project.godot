@@ -24,6 +24,7 @@ MenuManager="*uid://bf6js6fstys8g"
 MinegameTest="*uid://dye3d7c6locdx"
 ProgressionTracker="*uid://3a2w24rr6hsm"
 SaveManager="*uid://crspx2qectvvj"
+SettingsManager="*uid://bfrxa1gs4jl1h"
 
 [dialogic]
 
@@ -82,7 +83,7 @@ directories/dtl_directory={
 "ending_epilogue": "res://Timelines/Loop Epilogue/ending_epilogue.dtl",
 "epilogue_timeline": "res://Timelines/epilogue_timeline.dtl",
 "glitter": "res://Scenes/Basement/glitter.dtl",
-"grad_dance_epilogue": "res://Timelines/Loop Epilogue/graduation.dtl",
+"graduation": "res://Timelines/Loop Epilogue/graduation.dtl",
 "graveyard_d_1": "res://Timelines/Loop 1/graveyard_d_1.dtl",
 "graveyard_d_3": "res://Timelines/Loop 3/graveyard_d_3.dtl",
 "graveyard_d_4": "res://Timelines/Loop 4/graveyard_d_4.dtl",
