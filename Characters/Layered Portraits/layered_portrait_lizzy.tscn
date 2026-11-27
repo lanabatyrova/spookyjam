@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://cmtrjdhwjluqs" path="res://sprites/Lizzy/Lizzy_Legs_lower.png" id="6_rofko"]
 [ext_resource type="Texture2D" uid="uid://7ipawv1e657e" path="res://sprites/Lizzy/Lizzy_Legs.png" id="7_i6l37"]
 [ext_resource type="Texture2D" uid="uid://dy4133pi3veuy" path="res://sprites/Lizzy/Face/Lizzy face.png" id="8_4bbvm"]
-[ext_resource type="Texture2D" uid="uid://dqlaevt8cu0lh" path="res://sprites/Lizzy/Lizzy Sitting.png" id="8_gw0kc"]
 [ext_resource type="Texture2D" uid="uid://cjejo18sicgwr" path="res://sprites/Lizzy/Arms/IMG_6633.png" id="8_i0g2k"]
 [ext_resource type="Texture2D" uid="uid://ct4tcn78ejfrp" path="res://sprites/Lizzy/Face/Lizzy eyes.png" id="9_eg12h"]
 [ext_resource type="Texture2D" uid="uid://bj6k8tsatfarv" path="res://sprites/Lizzy/Arms/IMG_6625.png" id="9_jw443"]
@@ -192,12 +191,6 @@ texture = ExtResource("4_htgfi")
 
 [node name="Sleeve ripped" type="Sprite2D" parent="ArmL/Ripped" unique_id=1879808952]
 texture = ExtResource("5_5jacm")
-
-[node name="Sitting" type="Sprite2D" parent="." unique_id=1235022452]
-visible = false
-position = Vector2(-264, -32)
-scale = Vector2(0.8759846, 0.9921197)
-texture = ExtResource("8_gw0kc")
 
 [node name="Body" type="Sprite2D" parent="." unique_id=421760626]
 texture = ExtResource("9_yapj0")

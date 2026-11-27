@@ -51,7 +51,8 @@ directories/dch_directory={
 "VO": "res://Characters/VO.dch",
 "Valerie": "res://Characters/Valerie.dch",
 "background": "res://Characters/background.dch",
-"black screen": "res://Characters/black screen.dch"
+"black screen": "res://Characters/black screen.dch",
+"etc": "res://Characters/etc.dch"
 }
 directories/dtl_directory={
 "Credits": "res://Timelines/Loop Epilogue/Credits.dtl",

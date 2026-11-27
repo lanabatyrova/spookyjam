@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://rqbvvxwhqu6q"]
 
-[ext_resource type="Texture2D" uid="uid://bv26yj05jawqs" path="res://assets/Scene_Overlay.png" id="1_37hx4"]
 [ext_resource type="Texture2D" uid="uid://dwihdlvclhauj" path="res://assets/Locations/School/lost_found_innerlayer.png" id="2_1ljtx"]
 [ext_resource type="Texture2D" uid="uid://boomcv1mvkfeo" path="res://assets/Pickup Items/belt.png" id="3_lw3qb"]
 [ext_resource type="Texture2D" uid="uid://co4t6lyncq7ix" path="res://assets/Locations/School/lost_found_outerlayer.png" id="3_wx22j"]
@@ -12,12 +11,10 @@
 [ext_resource type="Script" uid="uid://w8kvgtef2owh" path="res://Scenes/Hallway/water_bottle.gd" id="10_5sidt"]
 [ext_resource type="Script" uid="uid://bx8sfhixwseto" path="res://Scenes/Hallway/pom_poms.gd" id="11_qydd0"]
 [ext_resource type="Script" uid="uid://cstclaph68k6t" path="res://Scenes/Hallway/top_hat.gd" id="12_uw68e"]
+[ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="13_5sidt"]
+[ext_resource type="Script" uid="uid://dxvq0wybl1icm" path="res://Scenes/Hallway/officereturn.gd" id="13_qydd0"]
 
 [node name="Node2D" type="Node2D" unique_id=1250386599]
-
-[node name="SceneOverlay" type="Sprite2D" parent="." unique_id=625386895]
-position = Vector2(617, 270)
-texture = ExtResource("1_37hx4")
 
 [node name="LostFoundInnerLayer" type="Sprite2D" parent="." unique_id=1818631296]
 position = Vector2(576, 329)
@@ -65,9 +62,20 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("12_uw68e")
 
+[node name="Office" type="TextureButton" parent="." unique_id=1707968950]
+offset_left = 984.99994
+offset_top = -5.000001
+offset_right = 2985.0
+offset_bottom = 566.0
+rotation = 1.5753521
+scale = Vector2(0.3343063, -0.2956359)
+texture_hover = ExtResource("13_5sidt")
+script = ExtResource("13_qydd0")
+
 [connection signal="pressed" from="Belt" to="Belt" method="_on_pressed"]
 [connection signal="pressed" from="Wig" to="Wig" method="_on_pressed"]
 [connection signal="pressed" from="Racket" to="Racket" method="_on_pressed"]
 [connection signal="pressed" from="WaterBottle" to="WaterBottle" method="_on_pressed"]
 [connection signal="pressed" from="PomPoms" to="PomPoms" method="_on_pressed"]
 [connection signal="pressed" from="TopHat" to="TopHat" method="_on_pressed"]
+[connection signal="pressed" from="Office" to="Office" method="_on_pressed"]

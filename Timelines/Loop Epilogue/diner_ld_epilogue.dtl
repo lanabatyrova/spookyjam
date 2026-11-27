@@ -3,5 +3,124 @@ join Foreground (Diner Counter Day) rightmost [z_index="1"]
 join Dagger (Close Up) lefter
 join Knightmare (Close Up) midleft
 join Lizzy (Close Up) right [z_index="2" extra_data="show Eyes/Side"]
-Lizzy: hey, guys.
-h
+Lizzy: you two look right at home behind the counter.
+
+Lizzy: maybe if you're well behaved my parents'll offer you a job.
+Dagger: this is the only place in your diner that is completely hidden from the sun.
+Knightmare: how much is the payment for a job such as the one in which you are describing?
+Dagger: my lady,
+Dagger: you aren't really considering...
+Dagger: you would loath working in food service.
+Knightmare: I am charting my path.
+Knightmare: you don't know until you try.
+Lizzy: I think our little heart to heart last night was a good influence on you Lady Knightmare.
+Lizzy: the board games after probably helped too.
+Knightmare: I was most intrigued by the catan game.
+Knightmare: my victory was assured.
+Dagger: I notice your parents are here.
+Dagger: Have you talked them yet?
+set {current_decision} = GameState.spoken_today["parents"]
+if {current_decision} == true:
+		if {Choices.C_5} == true:
+				Lizzy: i tried explaining everything,
+				Lizzy: but they seemed more confused than anything.
+				Dagger: it might take them a while to fully understand.
+				Lizzy: unfortunately we don't have a while.
+				Dagger: i thought you believed there was something after the end of the episode.
+				Lizzy: well,
+				Lizzy: yes, i do,
+				Lizzy: but...
+				Lizzy: I'm going to treat this like my last day on earth.
+				Dagger: what a novel idea.
+				Dagger: maybe if I approached my immortality the same way,
+				Dagger: things would be different.
+				else:
+						Lizzy: Yeah,
+						Lizzy: but I didn't tell them anything.
+						Dagger: that's a shame.
+						Dagger: it feels cruel to hide that part of yourself.
+						Lizzy: hey,
+						Lizzy: mr I killed my brother when I couldn't handle the pressure of a conversation.
+						Lizzy: It's not easy to be honest!
+						Dagger: fair enough.
+						VO: maybe that was a bit mean.
+						Knightmare: yes.
+						Knightmare: cut him down!
+						VO: okay, if Lady Knightmare's cheering me on...
+						VO: I know i've done something wrong.
+						Lizzy: sorry.
+						Lizzy: I just don't want to them to worry about stuff when, well,
+						Lizzy: this could be our last day together.
+						Dagger: it's easy for me to judge others when I myself have not been burdened with the task of confession.
+						Dagger: you know your parents best.
+				
+				else:
+						Lizzy: I'm building up to it.
+						Dagger: will you tell them what happened?
+						Lizzy: I'm not sure.
+						Lizzy: i don't know how I'd even begin to explain everything.
+						Lizzy: plus, they don't even know about my werewolf stuff.
+						Dagger: perhaps now would be the time to share that part of your life.
+						VO: man,
+						VO: i hate it when he's right.
+						
+						label C1
+						if {choice} == 3.0:
+								jump C1_after
+								else:
+										jump C1_choices
+										label C1_choices
+										- [VO] I wonder if they want [br] to go to the school dance. | [if {Choices.C_1} == 0.0] [else="hide"]
+												set {Choices.C_1} += 1.0
+												Lizzy: are you two going to grad?
+												Dagger: are we invited
+												Lizzy: absolutely.
+												Lizzy: i think it's going to be pretty wild.
+												Knightmare: i would be honored to attend the festival.
+												Lizzy: it's not really a festival...
+												Lizzy: more like a themed dance.
+												Knightmare: what is the theme?
+												Lizzy: happily ever after or something.
+												Knightmare: ew.
+												Dagger: i like it.
+												Dagger: it's romantic.
+												Lizzy: of course you would.
+												Dagger: should we wear a costume for the occasion?
+												Lizzy: i guess, if you want.
+												Knightmare: i have just the thing.
+												jump C1
+												
+												- [VO] How are they dealing with the[br] whole Lizzy Springs TV show thing? | [if {Choices.C_2} == 0.0] [else="hide"]
+														set {Choices.C_2} += 1.0
+														Lizzy: so you're totally fine with your life being a television show?
+														Knightmare: completely.
+														Dagger: I've come to accept it.
+														Knightmare: co-running a theatre company
+														Knightmare: five hundred of my very long years of life was dedicated to performing in a show.
+														Knightmare: a professional actor is skilled at maintaining character.
+														Lizzy: so you can't ever turn it off, i see.
+														Dagger: i am just thankful to be included in your inner circle, elizabeth.
+														Dagger: despite our sortit history.
+														Lizzy: yeah, yeah,
+														Lizzy: enough of that.
+														jump C1
+														
+														- [VO] it seems rude not to introduce [br] them to mom and dad. | [if {Choices.C_3} == 0.0] [else="hide"]
+																set {Choices.C_3} += 1.0
+																Lizzy: want to meet my mom and dad?
+																Dagger: no thank you.
+																Knightmare: i would love to engage your mother in combat to see if your natural strength has been passed on maternally.
+																Lizzy: uh, actually,
+																Lizzy: on second thought..
+																VO: it's probably best if they stay far away from eachother.
+																jump C1
+																
+																label C1_after
+																Lizzy: well, I gotta go.
+																Dagger: see you shortly, Elizabeth.
+																Knightmare: show your enemies no mercy.
+																Lizzy: bye.
+																set {Choices.C_1} = 0
+																set {Choices.C_2} = 0
+																set {Choices.C_3} = 0
+																leave
