@@ -22,6 +22,7 @@ scale = Vector2(0.6065291, 0.6101171)
 texture = ExtResource("2_wt1ky")
 
 [node name="LLNight" type="Sprite2D" parent="." unique_id=1351576914]
+visible = false
 position = Vector2(581.73206, 329.5367)
 scale = Vector2(0.6065291, 0.6101171)
 texture = ExtResource("3_qye7s")

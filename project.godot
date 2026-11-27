@@ -59,6 +59,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Credits": "res://Timelines/Loop Epilogue/Credits.dtl",
 "Grad Poster": "res://Scenes/Transition Locations/Grad Poster.dtl",
+"Noah_Ad": "res://Scenes/Hallway/Corkboard/Noah_Ad.dtl",
 "Opening": "res://Scenes/Previously On/Opening.dtl",
 "Parent's Room": "res://Scenes/Transition Locations/Parent's Room.dtl",
 "Silver Lake Plaque": "res://Scenes/Transition Locations/Silver Lake Plaque.dtl",
@@ -178,6 +179,7 @@ variables={
 "C_4": 0,
 "C_5": 0
 },
+"Interaction": 0,
 "collected_item_image": "",
 "collected_item_name": "",
 "cur_day": "",

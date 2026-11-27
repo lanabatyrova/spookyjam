@@ -1,5 +1,6 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Lizzy (Close Up) center [animation="Fade In" wait="true"]
+set {Interaction} = 1.0
 VO: Huh? What just happened?
 VO: Shouldn’t I be, like, zombie chow by now?
 VO: Be realistic, Lizzy. I probably just passed out and Dagger carried me home.

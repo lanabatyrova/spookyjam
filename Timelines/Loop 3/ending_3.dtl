@@ -35,6 +35,7 @@ Lizzy: Just do it after I convince him, okay?
 Barb: No promises.
 To be continued starts to fade onto the screen.
 Lizzy: wait what the hell--
+set {Interaction} = 4.0
 leave Barb
 do GameState.make_item_collectible("belt")
 do GameState.next_day()

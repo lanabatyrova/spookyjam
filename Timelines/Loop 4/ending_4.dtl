@@ -36,6 +36,7 @@ leave --All-- [animation="Instant Out"]
 [background arg="res://assets/to be continued.png" fade="1.5" wait="true"]
 [wait time="1.5"]
 [background arg="#000000ff" fade="1.5" wait="true"]
+set {Interaction} = 5.0
 do GameState.next_day()
 jump rewind/
 [background fade="0.0"]

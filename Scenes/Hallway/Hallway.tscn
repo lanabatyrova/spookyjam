@@ -26,6 +26,9 @@
 [ext_resource type="Texture2D" uid="uid://bomqn53blpl7w" path="res://assets/Pickup Items/letter_hover.png" id="16_bogav"]
 [ext_resource type="BitMap" uid="uid://bs2x8wwm71wr8" path="res://assets/Pickup Items/letter_bitmap.png" id="18_rtv73"]
 [ext_resource type="AudioStream" uid="uid://3o33tjsyq2x8" path="res://audio/ambient sounds/school hallway.mp3" id="22_26o71"]
+[ext_resource type="Texture2D" uid="uid://khxrn6u1738p" path="res://assets/Locations/School/corkboard_hallway.png" id="27_l6o1j"]
+[ext_resource type="Texture2D" uid="uid://hbpla3opsecw" path="res://assets/Locations/School/corkboard_hallway_hover.png" id="28_02fce"]
+[ext_resource type="Script" uid="uid://bwtnxf0fqs5kd" path="res://Scenes/Hallway/corkboard.gd" id="29_02fce"]
 
 [node name="Hallway" type="Node2D" unique_id=2132066994]
 script = ExtResource("1_yixj0")
@@ -133,6 +136,16 @@ volume_db = -9.527
 autoplay = true
 parameters/looping = true
 
+[node name="Corkboard" type="TextureButton" parent="." unique_id=223216137]
+offset_left = 540.0
+offset_top = 216.00002
+offset_right = 1869.0
+offset_bottom = 1866.0
+scale = Vector2(0.05379102, 0.05379102)
+texture_normal = ExtResource("27_l6o1j")
+texture_hover = ExtResource("28_02fce")
+script = ExtResource("29_02fce")
+
 [connection signal="pressed" from="Outside" to="." method="_on_outside_pressed"]
 [connection signal="pressed" from="Upstairs" to="." method="_on_upstairs_pressed"]
 [connection signal="pressed" from="Basement" to="." method="_on_basement_pressed"]
@@ -141,3 +154,4 @@ parameters/looping = true
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]
+[connection signal="pressed" from="Corkboard" to="Corkboard" method="_on_pressed"]

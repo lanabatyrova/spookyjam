@@ -45,6 +45,7 @@ Juniper: Next time will be better.
 leave Juniper [animation="Slide To Left" wait="true"]
 update Lizzy [animation="Bounce" wait="true"]
 Lizzy: Juniper!
+set {Interaction} = 7.0
 do GameState.next_day()
 leave --All-- [animation="Fade Out Down" length="0.3"]
 [background fade="0.0"]

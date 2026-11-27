@@ -11,7 +11,7 @@ Dagger: I’m the one who should know not to play with your emotions.
 Dagger: There’s an unspoken bond between us,
 Dagger: You understand me unlike any other.
 Lizzy: In your weird way,
-Lizzy:  I think you understand me too.
+Lizzy: I think you understand me too.
 Dagger: I don’t want to lose that.
 Dagger: Even more than I fear your death.
 update Dagger [mirrored="true"]
@@ -29,6 +29,7 @@ leave --All-- [animation="Instant Out" length="0.8" z_index="1"]
 [background arg="res://assets/to be continued.png" fade="1.8" wait="true"]
 [wait time="1.4"]
 [background arg="#000000ff" fade="1.0" wait="true"]
+set {Interaction} = 6.0
 
 do GameState.learn_fact("m_shakespeare_hate")
 do GameState.next_day()

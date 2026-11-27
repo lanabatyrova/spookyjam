@@ -1,0 +1,23 @@
+if {Interaction} == 1.0:
+	VO: I helped Noah design this poster.
+	VO: should I be getting a cut of the profits?
+elif {Interaction} == 2.0:
+	VO: I wonder how many people hired him after seeing this.
+	VO: and how many of those people had random machine scrap around?
+elif {Interaction} == 3.0:
+	VO: Noah has a knack for design.
+	VO: I always love seeing his posters for the school play every season.
+elif {Interaction} == 4.0:
+	VO: the colours are a bit strong.
+	VO: but that draws people in...
+elif {Interaction} == 5.0:
+	VO: Maybe I should hire Noah to make a poster for me.
+	VO: Help! Trapped in a time loop!
+	VO: he'd probably do it.
+elif {Interaction} == 6.0:
+	VO: we're really in it now, poster Noah.
+elif {Interaction} == 7.0:
+	VO: I think I'm finding a new appreciation for art.
+	VO: I'm starting to warm up to the comic sans.
+elif {Interaction} == 8.0:
+	VO: see ya around poster noah.

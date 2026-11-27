@@ -12,3 +12,5 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	Dialogic.start("res://Timelines/Loop 7/mine_j_7.dtl")
+	await Dialogic.timeline_ended
+	get_tree().change_scene_to_file("res://Scenes/Diner/Diner.tscn")

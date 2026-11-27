@@ -124,7 +124,7 @@ scale = Vector2(2.6787195, 2.6971934)
 texture = ExtResource("2_j2dj2")
 
 [node name="Dagger1" type="Sprite2D" parent="Epilogue" unique_id=1272869174]
-position = Vector2(-62.16939, 572.8463)
+position = Vector2(-66.61006, 466.27026)
 scale = Vector2(0.9805097, 0.9805097)
 texture = ExtResource("21_j2dj2")
 

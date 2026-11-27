@@ -296,5 +296,6 @@ Lizzy: i think we should have the best night of our lives.
 Lizzy: and what ever happens... happens.
 ....
 Juniper: yeah. Okay.
+do GameState.next_day()
 join "black screen" center [animation="Fade In" length="2.1"]
 leave --All--

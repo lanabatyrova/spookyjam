@@ -22,6 +22,7 @@ update Dagger offleft [wait="true" mirrored="false" move_time="0.5"]
 Lizzy: Dagger—
 Lizzy: I didn’t.
 Lizzy: …
+set {Interaction} = 2.0
 leave Lizzy [animation="Fade Out"]
 [background arg="#000000ff" fade="1.0" wait="true"]
 [background arg="res://assets/to be continued.png" fade="1.0" wait="true"]

@@ -35,4 +35,5 @@ Lizzy: Underground.
 Juniper: I'd like that.
 [background fade="0.0"]
 leave --All--
+set {Interaction} = 8.0
 jump lake_7/
