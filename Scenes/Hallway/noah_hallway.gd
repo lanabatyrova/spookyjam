@@ -31,4 +31,8 @@ func _on_pressed() -> void:
 					Dialogic.start("res://Timelines/Loop 3/midpoint_3.dtl")
 					await Dialogic.timeline_ended
 					get_parent().update_day(GameState.current_day)
+		8:
+			if !GameState.spoken_today["noah"]:
+				Dialogic.start("res://Timelines/Loop Epilogue/hallway_jnbv_epilogue.dtl")
+				await Dialogic.timeline_ended
 		_: print("how did this even happen???")

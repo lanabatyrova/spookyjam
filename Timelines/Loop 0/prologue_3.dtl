@@ -9,8 +9,9 @@ Lizzy: I never want to see a dress again.
 Barb: I think I managed to pick out cute dresses for all of us, even if you were a challenge, Lizzy.
 join Noah (Barb's Phone) midright [animation="Bounce In" z_index="1"]
 Noah: I’m still upset you didn’t invite me.
-Juniper: sorry, but you were in detention.
-Noah: And now I'm in the hospital.
+Juniper: sorry, but you were getting chewed out by Kenzie.
+Barb: now you're in the hospital.
+Barb: bring your allergy meds next time!
 Noah: Go figure.
 Lizzy: What did you even do anyway?
 
@@ -108,7 +109,7 @@ update Lizzy [mirrored="true"]
 Lizzy: eh, we sort of had a falling out.
 Juniper: What?
 Juniper: Why didn't you tell us?
-Noah: Wait what's happening, the nurse just gave me more jello.
+Noah: Wait what's happening, Nurse Kelly just gave me more jello.
 update Lizzy [mirrored="false"]
 Lizzy: he said something about werewolves and vampires not working out together and the vanished dramatically.
 Lizzy: It’s really hard to end a conversation on the high ground with that guy.

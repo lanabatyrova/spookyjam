@@ -34,4 +34,8 @@ func _on_pressed() -> void:
 		4:
 			if !GameState.spoken_today["juniper"]:
 				Dialogic.start("res://Timelines/Loop 4/hallway_j_4.dtl")
+		8:
+			if !GameState.spoken_today["juniper"]:
+				Dialogic.start("res://Timelines/Loop Epilogue/hallway_jnbv_epilogue.dtl")
+				await Dialogic.timeline_ended
 		_: print("how did this even happen???")

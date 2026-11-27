@@ -3,79 +3,157 @@ join Lizzy (Close Up) right [animation="Fade In Up" extra_data="show Mouth/Close
 join Juniper (Close Up) leftmost [animation="Fade In Up"]
 join Barb (Close Up) left [animation="Fade In Up" wait="true" extra_data="show Normal"]
 Juniper: Hey, Lizzy, want to head to the exam together?
-Lizzy: ... why isn’t there zombies everywhere eating people?
-Juniper: Should there be?
-Lizzy: Uh. Yeah.
-Lizzy: Also wait, exam? We already did an exam and it was terrible
-update Barb [extra_data="show Eyebrows/Up"]
-Barb: Graduation’s tomorrow...?
-Juniper: Are you feeling alright?
-Lizzy: ...
-Lizzy: So you guys haven't noticed anything strange around here recently?
-Lizzy: Like dead people shambling around.
-Barb: It concerns me how genuinely you asked that.
-Lizzy: Just keep your eyes peeled.
-leave --All-- [animation="Fade Out"]
-[background arg="#000000ff" fade="0.5" wait="true"]
-[wait time="1.0"]
-[one painful exam later]
-[background arg="res://assets/Locations/Hallway_1.png" fade="0.5"]
-join Barb lefter [animation="Fade In" z_index="1"]
-join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
-[wait time="0.2"]
-join Lizzy righter [animation="Slide From Right" length="1.0" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
-VO: That was even worse than last time.
-update Barb [animation="Bounce" length="0.3" repeat="3"]
-Barb: Finally, we’ve been waiting here for eons.
-[wait time="0.2"]
-update Juniper [mirrored="false" extra_data="show Eyes/Side"]
-Lizzy: We already took that test, right?
-Juniper: Barb’s just being mean because she’s excited.
-Lizzy: Like it was the same exact test we took yesterday?
-Barb: What?
-update Juniper [mirrored="true" extra_data="hide Eyes/Side"]
-...
-Lizzy: And you said that yesterday too.
-Barb: “What” is a reflexive response to you at this point.
-Lizzy: No, the eons thing.
-Lizzy: I thought it was a bit much then too.
-Barb: Are you high or something?
-Lizzy: Honestly, I have no idea.
-Lizzy: Maybe.
-join Noah (Animated) midright [animation="Slide From Right" length="1.0" wait="true"]
-Noah: Whoa, you’re high?
-update Noah [extra_data="hide ArmL/Down, show ArmL/Out"]
-Noah: That’s badass.
-Barb: Of course you’d be interested in doing recreational drugs.
-update Noah [extra_data="hide ArmL/Out, show ArmL/Pocket"]
-Barb: Your brain is already scrambled eggs.
-Lizzy: Noah.
-Lizzy: Tell me I’m not crazy and that today was yesterday.
-Noah: ...
-Noah: Uh. Sorry, what do you want me to say?
-VO: This is just like the time I was in an alternate universe
-VO: where I never got bit by the mayor
-VO: and everyone was miserable because vampires were hanging out everywhere.
-VO: Well, maybe this isn’t anything like that,
-VO: but I’m feeling about the same as I did then.
-- Tell everyone about the time you got transported[br]into an alternate universe where you were[br]never bitten and turned into a werewolf[br]and it was horrible and vampires hung out everywhere.
-	Lizzy: Do you guys remember that time
-	Lizzy: I got transported to an alternate universe where I was never turned into a werewolf
-	Lizzy: and vampires were hanging out everywhere?
-	Noah: I don’t personally remember, because I didn’t go to that alternate universe, but I remember you telling us about it.
-	Barb: I’m still not sure I believe you.
-	Juniper: ...
-	VO: I should talk to Val, she’ll believe me! She’s got to.
-	Lizzy: I’ve gotta go.
-	update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
-	Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
-	Barb: Why am I even friends with you??
+
+set {current_decision} = GameState.spoken_today["valerie"]
+if {current_decision} == true:
+	VO: okay, Lizzy,
+	VO: if Valerie's reaction to the whole repeating day thing was to think I was having a mental breakdown,
+	VO: I can only imagine that Barb will eat me alive.
+	VO: Juniper would probably understand though.
+	Barb: Why are you staring at us and saying nothing?
+	Barb: it's creepy.
+	Lizzy: sorry, I was just thinking about something.
+	Barb: that's a first.
+	Lizzy: Walked right into that one.
+	Juniper: is everything okay?
+	Lizzy: um, maybe?
+	Lizzy: you guys haven't noticed anything strange around here recently?
+	Lizzy: Like dead people shambling around.
+	Barb: It concerns me how genuinely you asked that.
+	Juniper: the only thing we've seen is the janitor and noah hauling some equiptment around.
+	Barb: he's always doing something weird.
+	Barb: boys!
+	Juniper: we really should get to the exam though.
+	VO: might as well.
+	VO: what's the worst that can happen?
+	[one extremely painful exam later]
+	VO: I somehow did even worse on that one.
+	VO: that settles it.
+	VO: I have to be in some sort of pocket dimension where the same day is repeating over and over again.
+	Barb: Finally, we’ve been waiting here for eons.
+	VO: she totally said that last time!
+	Lizzy: okay, so, hypothetically,
+	Lizzy: if we were to be stuck in some sort of timeloop,
+	Lizzy: and this is just all,
+	Lizzy: hypothetical,
+	Barb: okay?
+	Lizzy: how would you get yourself out of it?
+	Barb: usually there's a big bad trapping people in timeloops,
+	Barb: so I would go to the source and stop it.
+	Barb: super simple stuff actually.
+	Barb: like every show does it.
+	Lizzy: thoughts Juniper?
+	Juniper: a timeloop is most likely a case of deja vu.
+	Lizzy: see, that's what Val said, but,
+	Barb: you talked to Valerie about this?
+	Barb: are you like writing a spec script or something?
+	Lizzy: I don't know what that means.
+	Noah: did someone say spec script.
+	Barb: of course you come crawling out of the woodwork as soon as we talk shop.
+	VO: maybe i've been transported to another planet actually.
+	Lizzy: Noah.
+	Lizzy: Tell me I’m not crazy and that today was yesterday.
+	Noah: ...
+	Noah: Uh. Sorry, what do you want me to say?
+	VO: damnit, I thought more than anyone he'd be willing to back me up.	
+	VO: This is just like the time I was in an alternate universe
+	VO: where I never got bit by the mayor
+	VO: and everyone was miserable because vampires were hanging out everywhere.
+	VO: Well, maybe this isn’t anything like that,
+	VO: but I’m feeling about the same as I did then.
+	- Tell everyone about the time you got transported[br]into an alternate universe where you were[br]never bitten and turned into a werewolf[br]and it was horrible and vampires hung out everywhere.
+		Lizzy: Do you guys remember that time
+		Lizzy: I got transported to an alternate universe where I was never turned into a werewolf
+		Lizzy: and vampires were hanging out everywhere?
+		Noah: I don’t personally remember, because I didn’t go to that alternate universe, but I remember you telling us about it.
+		Barb: I’m still not sure I believe you.
+		Juniper: ...
+		VO: I should talk to Val, she’ll believe me! She’s got to.
+		Lizzy: I’ve gotta go.
+		update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
+		Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
+		Barb: Why am I even friends with you??
 
 
-- Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
-	Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
-	Barb: ....
-	Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
+	- Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
+		Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
+		Barb: ....
+		Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
+else:
+	Lizzy: ... why isn’t there zombies everywhere eating people?
+	Juniper: Should there be?
+	Lizzy: Uh. Yeah.
+	Lizzy: Also wait, exam? We already did an exam and it was terrible.
+	Lizzy: shouldn't we be graduating.
+	update Barb [extra_data="show Eyebrows/Up"]
+	Barb: Graduation’s tomorrow...?
+	Juniper: Are you feeling alright?
+	Lizzy: ...
+	Lizzy: So you guys haven't noticed anything strange around here recently?
+	Lizzy: Like dead people shambling around.
+	Barb: It concerns me how genuinely you asked that.
+	Lizzy: Just keep your eyes peeled.
+	leave --All-- [animation="Fade Out"]
+	[background arg="#000000ff" fade="0.5" wait="true"]
+	[wait time="1.0"]
+	[one painful exam later]
+	[background arg="res://assets/Locations/Hallway_1.png" fade="0.5"]
+	join Barb lefter [animation="Fade In" z_index="1"]
+	join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
+	[wait time="0.2"]
+	join Lizzy righter [animation="Slide From Right" length="1.0" extra_data="show Mouth/Closed, hide Mouth/Default, show Eyes/Side"]
+	VO: That was even worse than last time.
+	update Barb [animation="Bounce" length="0.3" repeat="3"]
+	Barb: Finally, we’ve been waiting here for eons.
+	[wait time="0.2"]
+	update Juniper [mirrored="false" extra_data="show Eyes/Side"]
+	Lizzy: We already took that test, right?
+	Juniper: Barb’s just being mean because she’s excited.
+	Lizzy: Like it was the same exact test we took yesterday?
+	Barb: What?
+	update Juniper [mirrored="true" extra_data="hide Eyes/Side"]
+	...
+	Lizzy: And you said that yesterday too.
+	Barb: “What” is a reflexive response to you at this point.
+	Lizzy: No, the eons thing.
+	Lizzy: I thought it was a bit much then too.
+	Barb: Are you high or something?
+	Lizzy: Honestly, I have no idea.
+	Lizzy: Maybe.
+	join Noah (Animated) midright [animation="Slide From Right" length="1.0" wait="true"]
+	Noah: Whoa, you’re high?
+	update Noah [extra_data="hide ArmL/Down, show ArmL/Out"]
+	Noah: That’s badass.
+	Barb: Of course you’d be interested in doing recreational drugs.
+	update Noah [extra_data="hide ArmL/Out, show ArmL/Pocket"]
+	Barb: Your brain is already scrambled eggs.
+	Lizzy: Noah.
+	Lizzy: Tell me I’m not crazy and that today was yesterday.
+	Noah: ...
+	Noah: Uh. Sorry, what do you want me to say?
+	VO: This is just like the time I was in an alternate universe
+	VO: where I never got bit by the mayor
+	VO: and everyone was miserable because vampires were hanging out everywhere.
+	VO: Well, maybe this isn’t anything like that,
+	VO: but I’m feeling about the same as I did then.
+	- Tell everyone about the time you got transported[br]into an alternate universe where you were[br]never bitten and turned into a werewolf[br]and it was horrible and vampires hung out everywhere.
+		Lizzy: Do you guys remember that time
+		Lizzy: I got transported to an alternate universe where I was never turned into a werewolf
+		Lizzy: and vampires were hanging out everywhere?
+		Noah: I don’t personally remember, because I didn’t go to that alternate universe, but I remember you telling us about it.
+		Barb: I’m still not sure I believe you.
+		Juniper: ...
+		VO: I should talk to Val, she’ll believe me! She’s got to.
+		Lizzy: I’ve gotta go.
+		update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
+		Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
+		Barb: Why am I even friends with you??
+
+
+	- Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
+		Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
+		Barb: ....
+		Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
 leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")

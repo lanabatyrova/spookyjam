@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var juniper = $JuniperButton
 @onready var evening = $StreetNight
+@onready var epilogue = $Epilogue
 
 var current_day: int
 var is_night: bool
@@ -19,6 +20,7 @@ func _process(delta: float) -> void:
 func update_day(day: int, is_night):
 	juniper.visible = day in [5] && GameState.midpoint_reached
 	evening.visible = is_night
+	epilogue.visible = day in [8]
 
 
 func _on_door_pressed() -> void:

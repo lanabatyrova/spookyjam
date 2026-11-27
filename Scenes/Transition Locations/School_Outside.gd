@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var night = $OutsideNight
+@onready var epilogue = $Epilogue
 
 var current_day: int
 var is_night: bool
@@ -22,6 +23,7 @@ func _on_door_inside_pressed() -> void:
 	
 func update_day(day: int, is_night):
 	night.visible = is_night
+	epilogue.visible = day in [8]
 
 func _on_school_road_exit_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Transition Locations/School Road.tscn")

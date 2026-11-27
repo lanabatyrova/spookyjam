@@ -84,6 +84,16 @@ offset_bottom = 2079.0
 scale = Vector2(0.20544682, 0.25822425)
 texture_hover = ExtResource("9_lt4cs")
 
+[node name="Corkboard" type="TextureButton" parent="." unique_id=223216137]
+offset_left = 540.0
+offset_top = 216.00002
+offset_right = 1869.0
+offset_bottom = 1866.0
+scale = Vector2(0.05379102, 0.05379102)
+texture_normal = ExtResource("27_l6o1j")
+texture_hover = ExtResource("28_02fce")
+script = ExtResource("29_02fce")
+
 [node name="BarbButton" type="TextureButton" parent="." unique_id=1459977272]
 offset_left = 316.00003
 offset_top = 185.00002
@@ -107,10 +117,10 @@ texture_click_mask = ExtResource("5_0f3vm")
 script = ExtResource("4_84xge")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=960815392]
-offset_left = 1500.0
-offset_top = 178.0
-offset_right = 2156.0
-offset_bottom = 1933.0
+offset_left = 684.0
+offset_top = 197.99998
+offset_right = 1340.0
+offset_bottom = 1953.0
 scale = Vector2(0.21628141, 0.21628141)
 texture_normal = ExtResource("12_bogav")
 texture_hover = ExtResource("12_0f3vm")
@@ -136,22 +146,14 @@ volume_db = -9.527
 autoplay = true
 parameters/looping = true
 
-[node name="Corkboard" type="TextureButton" parent="." unique_id=223216137]
-offset_left = 540.0
-offset_top = 216.00002
-offset_right = 1869.0
-offset_bottom = 1866.0
-scale = Vector2(0.05379102, 0.05379102)
-texture_normal = ExtResource("27_l6o1j")
-texture_hover = ExtResource("28_02fce")
-script = ExtResource("29_02fce")
+[node name="Epilogue" type="Node2D" parent="." unique_id=915144105]
 
 [connection signal="pressed" from="Outside" to="." method="_on_outside_pressed"]
 [connection signal="pressed" from="Upstairs" to="." method="_on_upstairs_pressed"]
 [connection signal="pressed" from="Basement" to="." method="_on_basement_pressed"]
 [connection signal="pressed" from="Lizzy\'s Locker" to="." method="_on_lizzys_locker_pressed"]
+[connection signal="pressed" from="Corkboard" to="Corkboard" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="AcceptanceLetter" to="AcceptanceLetter" method="_on_pressed"]
-[connection signal="pressed" from="Corkboard" to="Corkboard" method="_on_pressed"]
