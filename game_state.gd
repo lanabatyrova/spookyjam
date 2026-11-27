@@ -1,13 +1,13 @@
 extends Node
 
-var current_day: int = 1
+var current_day: int = 0
 var midpoint_reached = false
 var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
 	"sewing_kit": false,
-	"belt": true,
+	"belt": false,
 	"allergy_meds": false,
 	"pocket_shakespeare": false,
 	"silver_nugget": true,
@@ -32,8 +32,8 @@ var item_collectible = {
 var facts = {
 	"v_case_study": false,
 	"v_future_worries": false,
-	"b_camp_story": true,
-	"b_clown_school": false,
+	"b_camp_story": false,
+	"b_clown_school": true,
 	"n_detention": false,
 	"d_brother_death": false,
 	"d_zombie_plan": false,
@@ -44,7 +44,7 @@ var facts = {
 	"m_name": false, # LMD name change to Knightmare
 	"j_clairvoyance": false,
 	"j_bffs": false, # bff sticker (clickable, visible always)
-	"j_past_adventures": true # beastiary page (clickable. visible always)
+	"j_past_adventures": false # beastiary page (clickable. visible always)
 }
 
 var dialogue_facts = {
