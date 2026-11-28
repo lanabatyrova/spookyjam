@@ -8,6 +8,7 @@ audio music -
 audio "res://audio/Alarm and Click.mp3" [volume="-0.8"]
 [Alarm beeping]
 [background fade="0.0"]
+do SaveManager.auto_save()
 if {cur_day} == 1:
 	jump intro_1/
 elif {cur_day} == 2:

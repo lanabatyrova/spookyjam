@@ -1,7 +1,7 @@
 audio music "res://audio/Music/Love Song.mp3" [volume="-5.0"]
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) right [extra_data="show Eyes/Side"]
-join Dagger (Close Up) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Lizzy (Close Up) right [animation="Fade In Up" extra_data="show Eyes/Side"]
+join Dagger (Close Up) left [animation="Fade In Up"]
 Lizzy: Hey.
 Dagger: Hello.
 ...
@@ -13,7 +13,7 @@ label C1
 	update Dagger [extra_data="show Eyes/Closed"]
 	Dagger: I would walk to the ends of existence for you.
 	...
-	update  Brows/Up, hide Brows/Default, "]
+	update  hide Brows/Default, "]
 	Dagger: in a loyal friend kind of way,
 	Dagger: if you'd prefer.
 	update Dagger [extra_data="show Brows/Default, hide Brows/Up, hide Eyes/Closed"]
@@ -51,3 +51,5 @@ set {Choices.C_1} = 0
 set {Choices.C_2} = 0
 do ProgressionTracker.complete_requirement("7A", "dagger_dialog")
 do GameState.mark_characters_as_spoken(["dagger"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

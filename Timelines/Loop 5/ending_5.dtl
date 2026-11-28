@@ -1,5 +1,5 @@
-join Dagger left
-join Lizzy right
+join Dagger left [animation="Fade In Up"]
+join Lizzy right [animation="Fade In Up"]
 Dagger: I suppose she's noticed how frequently we've been speaking.
 Dagger: How...
 Dagger: ...

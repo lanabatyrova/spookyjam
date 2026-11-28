@@ -1,7 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-audio music - [volume="-2.0" loop="true"]
-[Alarm beeping]
-join Lizzy (Close Up) center [animation="Fade In Up" extra_data="show Hips"]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 Lizzy: -AaAAAAAAAAHHHHHHHHHH-
 ...
 update Lizzy (Close Up) center [length="2.0" wait="true" extra_data="show Loop3, hide Hips"]

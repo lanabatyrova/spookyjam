@@ -1,7 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-audio "res://audio/Alarm and Click.mp3"
-[Alarm blaring]
-join Lizzy (Close Up) center [animation="Fade In" wait="true" extra_data="show Hips"]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 VO: okay, this is really starting to test my patience.
 audio "res://audio/Phone ringing sound.mp3"
 

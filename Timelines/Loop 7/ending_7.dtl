@@ -1,7 +1,7 @@
-[background arg="#000000ff" fade="0.0"]
+[background arg="#000000ff" fade="0.5"]
 audio music "res://audio/Character Sounds/main menu backtrack 1.wav"
-join Juniper (Serious) left [animation="Fade In" length="2.0" wait="true"]
-join Lizzy (Full Wolf) right [animation="Fade In" length="2.0" wait="true"]
+join Juniper (Serious) left [animation="Fade In" length="2.0"]
+join Lizzy (Full Wolf) right [animation="Fade In" length="2.0"]
 Lizzy: You mean so much to me Juniper, and to see you in pain like this...
 Juniper: ....
 update Juniper [animation="Shake X" length="1.0" wait="true"]
@@ -14,16 +14,16 @@ update Lizzy (Juniper Hug) [fade="Fade Cross"]
 Lizzy: It's okay. You're okay.
 [wait time="2.0"]
 [background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
-update Juniper leftmost
-update Lizzy lefter [extra_data="show Hips"]
+update Juniper leftmost [move_time="0.2"]
+update Lizzy lefter [move_time="0.2" extra_data="show Hips"]
 join Noah (Mine) midright [animation="Fade In Up" wait="true" mirrored="true"]
 audio music -
 
 
 Noah: So, that just happened.
-update Lizzy (Animated) left [extra_data="show ArmL/Ripped, hide ArmL/1, show ArmsR/Ripped, hide ArmsR/1"]
-join Juniper (Animated) lefter
-join Barb (Animated) center [mirrored="true"]
+update Lizzy (Animated) left [animation="Bounce" length="0.0" move_time="0.2" extra_data="show ArmL/Ripped, hide ArmL/1, show ArmsR/Ripped, hide ArmsR/1"]
+join Juniper (Animated) leftmost [animation="Fade In Up" length="0.3"]
+join Barb (Animated) center [animation="Fade In Up" mirrored="true"]
 Barb: Just because you know you’re in a TV show doesn’t mean you need to pull out the cliche dialogue.
 Barb: also, wow,
 Barb: Lizzy, your sleeves are totally ripped.
@@ -33,7 +33,7 @@ Noah: I think it looks great.
 Lizzy: How about we continue this conversation somewhere less...
 Lizzy: Underground.
 Juniper: I'd like that.
-[background fade="0.0"]
-leave --All--
+leave --All-- [animation="Fade Out" length="3.0"]
+[background fade="3.0"]
 set {Interaction} = 8.0
 jump lake_7/

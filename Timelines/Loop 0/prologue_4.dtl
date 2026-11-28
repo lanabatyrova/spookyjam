@@ -108,6 +108,7 @@ update Lizzy [mirrored="false"]
 Lizzy: Crap!
 VO: This is bad!
 do GameState.next_day()
+do SaveManager.auto_save()
 leave --All-- [animation="Fade Out" length="0.2"]
 [background arg="#000000ff" fade="0.2" wait="true"]
 [background arg="res://assets/to be continued.png" fade="7.0"]

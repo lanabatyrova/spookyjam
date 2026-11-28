@@ -1,10 +1,10 @@
-[background arg="res://assets/Locations/library_day.png" fade="0.0"]
-join Valerie left
-join Noah lefter [z_index="1"]
-join Barb leftmost [z_index="1"]
-join Lizzy center
-join Dagger righter [z_index="1"]
-join Knightmare right
+[background arg="res://assets/Locations/library_day.png" fade="0.3"]
+join Valerie left [animation="Fade In" length="0.1"]
+join Noah lefter [animation="Fade In" length="0.1" z_index="1"]
+join Barb leftmost [animation="Fade In" length="0.1" z_index="1"]
+join Lizzy center [animation="Fade In" length="0.1"]
+join Dagger righter [animation="Fade In" length="0.1" z_index="1"]
+join Knightmare right [animation="Fade In" length="0.1"]
 
 Lizzy: Alright everyone, are we ready?
 Valerie: yes.
@@ -86,6 +86,6 @@ Noah: lets kick some metaphorical ass
 Noah: and by kick I mean nicely ask and listen to Juniper’s point of view.
 Lizzy: what you said.
 Lizzy: let's go!!
-leave --All-- [animation="Instant Out"]
+leave --All-- [animation="Fade Out"]
 
 jump midpoint_7/

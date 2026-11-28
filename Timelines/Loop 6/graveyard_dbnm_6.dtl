@@ -1,6 +1,6 @@
 audio music "res://audio/Oppressive Gloom.mp3" [volume="-0.9"]
-[background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
-join Dagger (Night) leftmost [animation="Fade In Up" length="0.3" wait="true" z_index="1" mirrored="true"]
+join Dagger (Night) leftmost [animation="Fade In Up" length="0.3" z_index="1" mirrored="true"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.5"]
 join Lizzy (Night) center [animation="Fade In Up" length="0.3"]
 join Noah (Night) right [animation="Fade In Up" length="0.3" z_index="3" mirrored="true"]
 join Barb (Night) rightmost [animation="Fade In Up" length="0.3" wait="true" z_index="2" mirrored="true"]

@@ -1,5 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Lizzy (Close Up) center [animation="Fade In" wait="true"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 set {Interaction} = 1.0
 VO: Huh? What just happened?
 VO: Shouldn’t I be, like, zombie chow by now?
@@ -16,4 +16,4 @@ VO: Why would mom send an identical message?
 VO: Also wait, shouldn’t they be back by now?
 VO: Something weird is going on.
 VO: If I wasn’t used to dealing with weird things on an almost weekly schedule, I’d be concerned!
-[background fade="0.0"]
+[background fade="0.5"]

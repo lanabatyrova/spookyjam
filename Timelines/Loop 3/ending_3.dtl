@@ -1,8 +1,8 @@
-[background scene="res://Scenes/Cutscenes/basement noahs machine.tscn" fade="0.0"]
-join Barb (Animated) left
-join Lizzy right
+join Lizzy right [animation="Fade In Up"]
+[background scene="res://Scenes/Cutscenes/basement noahs machine.tscn" fade="0.5"]
+join Barb (Animated) left [animation="Fade In Up"]
 Barb: Um, what the hell is this?
-join Item (Ruined Belt) center
+join Item center
 Lizzy: It looks like… a piece of glittery beef jerky.
 VO: Now I’m hungry.
 leave Item
@@ -33,10 +33,13 @@ Lizzy: Sorry, Barb, but this thing’s bigger than graduation.
 Barb: It’s fine, I can just sabotage it later.
 Lizzy: Just do it after I convince him, okay?
 Barb: No promises.
-To be continued starts to fade onto the screen.
+[background arg="res://assets/to be continued.png" fade="2.0"]
+leave --All-- [animation="Fade Out" length="2.0"]
+[wait time="1.0"]
 Lizzy: wait what the hell--
+[wait time="2.0"]
+[background arg="#000000ff" fade="1.5" wait="true"]
 set {Interaction} = 4.0
-leave Barb
 do GameState.make_item_collectible("belt")
 do GameState.next_day()
 jump rewind/

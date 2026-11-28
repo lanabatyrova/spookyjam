@@ -1,10 +1,10 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) rightmost
-join Valerie (Close Up) midright [mirrored="true"]
+join Valerie (Close Up) midright [animation="Fade In" mirrored="true"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Lizzy (Close Up) rightmost [animation="Slide From Right"]
 
 Valerie: Can't you both go home now?
 Valerie: won't your parents worry?
-join Barb (Close Up) left
+join Barb (Close Up) left [animation="Fade In Up"]
 Barb: I can't stand having the same conversation over and over with them.
 join Noah (Close Up) leftmost
 Noah: Don't you want us to hang out at the library, Valerie?
@@ -16,6 +16,6 @@ update Valerie (Close Up) [mirrored="true"]
 Valerie: I don't watch television and all the books I read are non-fiction.
 Barb: so boring.
 VO: I should probably let them do their own thing.
-leave --All--
-[background fade="0.0"]
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

@@ -3,6 +3,7 @@ extends GridContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	SaveManager.update_save_files()
 	populate_grid(SaveManager.save_files)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -10,9 +11,12 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_slot_pressed(file: String):
-	SaveManager.load_game(file.trim_prefix("save_slot_").get_basename())
-	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
-	GameManager.start_game(GameState.current_day)
+	var current_file_name = file.trim_prefix("save_slot_").get_basename()
+	SaveManager.load_game(current_file_name)
+	if(SaveManager.is_manual(current_file_name) || GameState.midpoint_reached):
+		GameManager.start_game_midpoint(GameState.current_day)
+	else:
+		GameManager.start_game_day(GameState.current_day)
 
 func populate_grid(files):
 	for file in files:

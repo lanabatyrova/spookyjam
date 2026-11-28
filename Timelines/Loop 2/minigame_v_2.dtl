@@ -37,7 +37,7 @@ if {is_success} == true:
 		Valerie: that is strange.
 	
 	set {strikes_number} += 1.0
-	join Item leftmost [animation="Zoom In" length="9.0"]
+	join "Strike Ball" leftmost [animation="Zoom In" length="9.0"]
 	leave Item [animation="Slide To Right" length="1.1" wait="true"]
 	if {strikes_number} == 1.0:
 		update Minigame (1)

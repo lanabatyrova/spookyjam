@@ -1,6 +1,6 @@
 [wait time="0.5"]
+join Lizzy (Animated) right [animation="Fade In" length="0.9"]
 [background arg="res://assets/Locations/street night new.png" fade="1.0"]
-join Lizzy (Animated) right [animation="Instant In"]
 VO: Well, that could've been better.
 [wait time="0.4"]
 audio "res://audio/Character Sounds/floraphonic-spooky-movement-violin-6-186910.mp3"

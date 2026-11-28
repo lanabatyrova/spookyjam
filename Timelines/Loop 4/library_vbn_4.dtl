@@ -1,15 +1,15 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Barb (Close Up) left
+join Barb (Close Up) left [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 Barb: So you’re in on it now.
 Barb: great.
-join Noah (Close Up) right [mirrored="true"]
+join Noah (Close Up) right [animation="Fade In Up" mirrored="true"]
 Noah: you’re just pissed because Lizzy was paying more attention to you.
 Barb: Not true! Valerie was here too.
 update Barb leftmost [move_time="0.2"]
 update Noah rightmost [move_time="0.2"]
-join Valerie (Close Up) left
+join Valerie (Close Up) left [animation="Fade In Up"]
 Valerie: Elizabeth, I see you’ve convinced Noah. Excellent work.
-join Lizzy (Close Up) right
+join Lizzy (Close Up) right [animation="Fade In Up"]
 Lizzy: have they been fighting the entire time?
 ...
 Valerie: Yes.
@@ -23,6 +23,6 @@ Barb: I’m the one winning the conversation.
 Noah: um, no, I’m pretty sure I’m kinda rocking it--
 Lizzy: I’m just gonna--
 Valerie: probably for the best.
-leave --All-- [animation="Instant Out" wait="true"]
-[background fade="0.0"]
 do GameState.mark_characters_as_spoken(["valerie", "barb", "noah"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

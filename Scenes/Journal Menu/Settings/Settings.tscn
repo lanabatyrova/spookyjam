@@ -30,6 +30,12 @@
 [ext_resource type="Texture2D" uid="uid://bn7edoeguhb3k" path="res://assets/Journal Overlays/settings_journal/Circle_Select_3.png" id="27_if11n"]
 [ext_resource type="Script" uid="uid://c7d2tv5gtyplt" path="res://Scenes/Journal Menu/Settings/medium_select_button.gd" id="28_yb57g"]
 [ext_resource type="Script" uid="uid://caisnoo53385s" path="res://Scenes/Journal Menu/Settings/fast_select_button.gd" id="30_c0moo"]
+[ext_resource type="Texture2D" uid="uid://bh7t00boa7vpt" path="res://assets/Journal Overlays/settings_journal/leave_game_button.png" id="31_o5m01"]
+[ext_resource type="Texture2D" uid="uid://cpg1asym6nd46" path="res://assets/Journal Overlays/settings_journal/leave_game_button_hover.png" id="32_npa51"]
+[ext_resource type="Script" uid="uid://b1ml6mq41uj2t" path="res://Scenes/Journal Menu/Settings/quit_button.gd" id="33_n6of3"]
+[ext_resource type="Texture2D" uid="uid://seawvm6ctfja" path="res://assets/Journal Overlays/settings_journal/save_button.png" id="34_mj2sl"]
+[ext_resource type="Texture2D" uid="uid://b4ca2dfl8ci6b" path="res://assets/Journal Overlays/settings_journal/save_button_hover.png" id="35_ieegh"]
+[ext_resource type="Script" uid="uid://dcro1p0gm3iyl" path="res://Scenes/Journal Menu/Settings/save_button.gd" id="36_bhu2i"]
 
 [sub_resource type="GDScript" id="GDScript_xoghp"]
 script/source = "extends TextureButton
@@ -245,6 +251,30 @@ texture_hover = ExtResource("26_h4v5v")
 texture_disabled = ExtResource("26_h4v5v")
 script = ExtResource("30_c0moo")
 
+[node name="QuitButton" type="TextureButton" parent="." unique_id=775993107]
+offset_left = 567.0
+offset_top = 416.00003
+offset_right = 833.0
+offset_bottom = 627.0
+scale = Vector2(0.64513665, 0.64513665)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_normal = ExtResource("31_o5m01")
+texture_hover = ExtResource("32_npa51")
+script = ExtResource("33_n6of3")
+
+[node name="SaveButton" type="TextureButton" parent="." unique_id=1374898]
+offset_left = 471.00003
+offset_top = 380.0
+offset_right = 707.0
+offset_bottom = 494.0
+scale = Vector2(0.6027831, 0.6027831)
+offset_transform_enabled = true
+offset_transform_position = Vector2(2.78, 0.845)
+texture_normal = ExtResource("34_mj2sl")
+texture_hover = ExtResource("35_ieegh")
+script = ExtResource("36_bhu2i")
+
 [connection signal="pressed" from="Contacts Button" to="Contacts Button" method="_on_pressed"]
 [connection signal="pressed" from="InventoryButton" to="InventoryButton" method="_on_pressed"]
 [connection signal="pressed" from="Notes Button" to="Notes Button" method="_on_pressed"]
@@ -259,3 +289,5 @@ script = ExtResource("30_c0moo")
 [connection signal="pressed" from="SlowSelect" to="SlowSelect" method="_on_pressed"]
 [connection signal="pressed" from="MediumSelect" to="MediumSelect" method="_on_pressed"]
 [connection signal="pressed" from="FastSelect" to="FastSelect" method="_on_pressed"]
+[connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]
+[connection signal="pressed" from="SaveButton" to="SaveButton" method="_on_pressed"]

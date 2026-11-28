@@ -24,7 +24,7 @@ func open_journal():
 		get_tree().root.add_child(journal_instance)
 
 func close_journal():
-	SaveManager.save_settings()
+	SettingsManager.save_settings()
 	if journal_instance:
 		journal_instance.queue_free()
 		journal_instance = null

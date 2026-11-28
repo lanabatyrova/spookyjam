@@ -1,7 +1,7 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) right
+join Lizzy (Close Up) right [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 Lizzy: VALERIE!
-join Valerie (Close Up) left
+join Valerie (Close Up) left [animation="Fade In Up"]
 Valerie: Ah, Elizabeth, how was your last day of highschool?
 Lizzy: You said that yesterday.
 Valerie: Oh. Did I? I think I would remember something like that.
@@ -100,4 +100,6 @@ VO: if there is a tomorrow...
 
 do ProgressionTracker.complete_requirement("1A", "library_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]
 jump item_collected/

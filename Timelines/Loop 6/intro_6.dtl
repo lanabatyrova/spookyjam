@@ -1,4 +1,5 @@
-join Lizzy (Talking) center [animation="Fade In" wait="true"]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 Lizzy: Oh, come on.
 Lizzy: Right when Dagger and I were starting to get into the groove of a good conversation.
 Lizzy: ...

@@ -9,6 +9,15 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	SaveManager.load_game(SaveManager.save_files[0].trim_prefix("save_slot_").get_basename())
+	SaveManager.update_save_files()
 	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
-	GameManager.start_game(GameState.current_day)
+	if SaveManager.save_files.is_empty():
+		print("No save found, running default game")
+		GameManager.start_game_day(GameState.current_day)
+	else:
+		var current_file_name = SaveManager.save_files[0].trim_prefix("save_slot_").get_basename()
+		SaveManager.load_game(current_file_name)
+		if(SaveManager.is_manual(current_file_name) || GameState.midpoint_reached):
+			GameManager.start_game_midpoint(GameState.current_day)
+		else:
+			GameManager.start_game_day(GameState.current_day)

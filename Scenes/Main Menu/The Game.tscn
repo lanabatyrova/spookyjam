@@ -31,6 +31,12 @@ autoplay = true
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2062908496]
 layer = 20
 
+[node name="Click Control" type="Control" parent="CanvasLayer" unique_id=1169307748]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 652.0
+
 [node name="0000151" type="Sprite2D" parent="CanvasLayer" unique_id=975768206]
 position = Vector2(575, 324)
 scale = Vector2(0.6015757, 0.6020518)
@@ -47,6 +53,7 @@ offset_top = 18.0
 offset_right = 1139.0
 offset_bottom = 61.0
 script = ExtResource("2_bnksx")
+metadata/_edit_use_anchors_ = true
 
 [node name="Play" type="TextureButton" parent="CanvasLayer" unique_id=1990394063]
 offset_left = 269.0
@@ -59,6 +66,7 @@ offset_transform_position_ratio = Vector2(0.2, 0)
 texture_pressed = ExtResource("4_h7nca")
 texture_hover = ExtResource("4_h7nca")
 script = ExtResource("4_motf4")
+metadata/_edit_use_anchors_ = true
 
 [node name="Scenes" type="TextureButton" parent="CanvasLayer" unique_id=1884357600]
 offset_left = 250.0
@@ -70,6 +78,7 @@ offset_transform_position_ratio = Vector2(0.13, 0)
 texture_pressed = ExtResource("6_a21cu")
 texture_hover = ExtResource("6_a21cu")
 script = ExtResource("7_a21cu")
+metadata/_edit_use_anchors_ = true
 
 [node name="Settings" type="TextureButton" parent="CanvasLayer" unique_id=1587340858]
 offset_left = 311.0
@@ -81,6 +90,7 @@ offset_transform_position_ratio = Vector2(0.3, 0)
 texture_pressed = ExtResource("7_motf4")
 texture_hover = ExtResource("7_motf4")
 script = ExtResource("8_03oub")
+metadata/_edit_use_anchors_ = true
 
 [node name="Exit" type="TextureButton" parent="CanvasLayer" unique_id=771568697]
 offset_left = 337.0
@@ -92,6 +102,7 @@ offset_transform_position_ratio = Vector2(0.4, 0)
 texture_pressed = ExtResource("9_bnksx")
 texture_hover = ExtResource("9_bnksx")
 script = ExtResource("11_motf4")
+metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=1450916194]
 visible = false
@@ -124,6 +135,7 @@ offset_right = 1131.0
 offset_bottom = 118.0
 text = "TEST TIMELINE"
 script = ExtResource("13_law43")
+metadata/_edit_use_anchors_ = true
 
 [node name="fullscreen button" type="Button" parent="CanvasLayer" unique_id=1044962224]
 offset_left = 1007.0
@@ -132,6 +144,7 @@ offset_right = 1143.0
 offset_bottom = 184.0
 text = "fullscreen toggle"
 script = ExtResource("14_oddrt")
+metadata/_edit_use_anchors_ = true
 
 [node name="vol up" type="Button" parent="CanvasLayer" unique_id=1658995183]
 offset_left = 1078.0
@@ -140,6 +153,7 @@ offset_right = 1139.0
 offset_bottom = 249.0
 text = "vol up"
 script = ExtResource("15_vhd2x")
+metadata/_edit_use_anchors_ = true
 
 [node name="vol down" type="Button" parent="CanvasLayer" unique_id=1858578088]
 offset_left = 967.0
@@ -149,6 +163,7 @@ offset_bottom = 249.0
 text = "vol down
 "
 script = ExtResource("16_tmkhq")
+metadata/_edit_use_anchors_ = true
 
 [node name="txt slow" type="Button" parent="CanvasLayer" unique_id=1280005715]
 offset_left = 883.0
@@ -157,6 +172,7 @@ offset_right = 961.0
 offset_bottom = 311.0
 text = "txt slow"
 script = ExtResource("17_tmkhq")
+metadata/_edit_use_anchors_ = true
 
 [node name="txt med" type="Button" parent="CanvasLayer" unique_id=1010794713]
 offset_left = 968.0
@@ -165,6 +181,7 @@ offset_right = 1046.0
 offset_bottom = 311.0
 text = "txt med"
 script = ExtResource("18_cy14l")
+metadata/_edit_use_anchors_ = true
 
 [node name="txt fast" type="Button" parent="CanvasLayer" unique_id=217803216]
 offset_left = 1055.0
@@ -173,6 +190,7 @@ offset_right = 1133.0
 offset_bottom = 311.0
 text = "txt fast"
 script = ExtResource("19_ggdxr")
+metadata/_edit_use_anchors_ = true
 
 [node name="save tester" type="Button" parent="CanvasLayer" unique_id=2031125430]
 offset_left = 947.0
@@ -181,6 +199,7 @@ offset_right = 1083.0
 offset_bottom = 373.0
 text = "save_tester"
 script = ExtResource("20_ex4a5")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="CanvasLayer/DayButton" to="CanvasLayer/DayButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]

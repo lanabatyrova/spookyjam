@@ -1,5 +1,5 @@
-[background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
 join Lizzy (Animated) right [animation="Fade In"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="0.5"]
 join Dagger (Animated) left [animation="Fade In"]
 [wait time="1.0"]
 join "Lady MacDeath" center [animation="Fade In Up"]
@@ -30,11 +30,9 @@ VO: here we go again.
 VO: one.
 VO: Two.
 VO: and--
-[background arg="#000000ff" fade="0.0" transition="Simple Fade"]
-leave --All-- [animation="Instant Out"]
-[wait time="1.8"]
-[background arg="res://assets/to be continued.png" fade="1.5" wait="true"]
-[wait time="1.5"]
+leave --All-- [animation="Fade Out" length="0.3"]
+[background arg="res://assets/to be continued.png" fade="0.3" wait="true"]
+[wait time="2.0"]
 [background arg="#000000ff" fade="1.5" wait="true"]
 set {Interaction} = 5.0
 do GameState.next_day()

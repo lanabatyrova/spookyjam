@@ -5,4 +5,5 @@ leave --All-- [animation="Fade Out" wait="true"]
 
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
+do SaveManager.auto_save()
 [background fade="0.5"]

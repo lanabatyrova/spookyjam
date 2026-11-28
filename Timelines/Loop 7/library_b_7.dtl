@@ -1,6 +1,6 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Barb (Close Up) left [z_index="1" extra_data="show Eyes/Side"]
-join Lizzy (Close Up) right [extra_data="show Eyes/Side"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Barb (Close Up) left [animation="Fade In Up" z_index="1" extra_data="show Eyes/Side"]
+join Lizzy (Close Up) right [animation="Fade In Up" extra_data="show Eyes/Side"]
 Lizzy: hey.
 ...
 ...
@@ -60,3 +60,5 @@ Barb: be careful.
 do ProgressionTracker.complete_requirement("7A", "barb_dialog")
 
 do GameState.mark_characters_as_spoken(["barb"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

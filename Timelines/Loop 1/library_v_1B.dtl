@@ -1,10 +1,11 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Valerie (Talking) left
-join Lizzy (Talking) right
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Valerie (Talking) left [animation="Fade In Up"]
+join Lizzy (Talking) right [animation="Fade In Up"]
 Valerie: Elizabeth, you should be home resting.
 VO: I don't think she wants to hear anymore about the time loop.
 Lizzy: Yeah, I'm heading there now.
 Lizzy: Thanks again for the watch.
 Valerie: Of course, I meant what I said.
-leave --All-- [animation="Fade Out Down"]
 do GameState.mark_characters_as_spoken()
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

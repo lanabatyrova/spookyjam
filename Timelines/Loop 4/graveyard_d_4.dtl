@@ -1,7 +1,7 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 audio music "res://audio/Music/Love Song.mp3" [volume="-15.0" loop="true"]
-join Dagger (Close Up) left
-join Lizzy (Close Up) right
+join Dagger (Close Up) left [animation="Fade In"]
+join Lizzy (Close Up) right [animation="Fade In"]
 Dagger: Lizzy… a serendipitous entrance...
 Lizzy: Yeah. Yeah.
 ...
@@ -119,8 +119,8 @@ VO: What do I even say to that?
 	Lizzy: I'm sorry that all your friends died.
 - (((ANOTHER CHOICE TO PUT HERE))))
 Dagger: I've made my peace.
-leave --All-- [animation="Instant Out"]
-audio music -
+leave --All-- [animation="Fade Out"]
+audio music - [fade="0.3"]
 
 do GameState.learn_fact("d_brother_death")
 jump ending_4/

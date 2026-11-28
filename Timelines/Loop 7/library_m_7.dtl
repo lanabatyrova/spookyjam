@@ -1,6 +1,6 @@
-join Lizzy (Close Up) right
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Knightmare (Close Up) left
+join Lizzy (Close Up) right [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Knightmare (Close Up) left [animation="Fade In"]
 Lizzy: ...
 Knightmare: ...
 VO: well, this is awkward.
@@ -69,3 +69,5 @@ set {Choices.C_2} = 0
 
 do ProgressionTracker.complete_requirement("7A", "lady_dialog")
 do GameState.reach_midpoint(["lady_macdeath"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

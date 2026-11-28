@@ -1,6 +1,6 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 audio music "res://audio/Music/Love Song.mp3" [volume="-15.0"]
-join Dagger (Close Up) leftmost [animation="Instant In" mirrored="true"]
+join Dagger (Close Up) leftmost [animation="Fade In" mirrored="true"]
 join Lizzy (Close Up) righter [animation="Bounce In"]
 Dagger: Lizzy… a serendipitous entrance...
 update Dagger left [length="0.8" move_time="1.5"]
@@ -19,6 +19,6 @@ Dagger: If that’s how you feel...
 update Dagger [mirrored="false"]
 Dagger: Farewell.
 leave --All-- [animation="Fade Out"]
-[background fade="0.0"]
+[background fade="0.5"]
 
 do GameState.mark_characters_as_spoken(["dagger"])

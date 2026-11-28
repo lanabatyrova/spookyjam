@@ -1,6 +1,6 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Juniper (Close Up) left
-join Lizzy (Close Up) right
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Juniper (Close Up) left [animation="Fade In Up"]
+join Lizzy (Close Up) right [animation="Fade In Up"]
 Juniper: Hey Lizzy, want to head to the exam together?
 Juniper: Barb and Noah are kinda no shows... Hopefully they don’t miss it.
 Lizzy: they probably just went there early to get ahead start.
@@ -16,6 +16,6 @@ leave Juniper [animation="Slide To Left"]
 Lizzy: I’ll talk to you later.
 VO: Weird. She’s not normally so...
 VO: Avoidant.
-leave --All--
-[background fade="0.0"]
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]
 do GameState.mark_characters_as_spoken(["juniper"])

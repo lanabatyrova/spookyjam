@@ -1,6 +1,6 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) right
-join Noah (Close Up) left
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Lizzy (Close Up) right [animation="Fade In Up"]
+join Noah (Close Up) left [animation="Fade In Up"]
 Lizzy: You're dealing with this whole thing pretty well, Noah.
 Noah: I'm just happy I'm not in the hospital.
 ...
@@ -53,3 +53,5 @@ Lizzy: please don't try to make another time loop.
 Noah: I'm just saying!
 do ProgressionTracker.complete_requirement("7A", "noah_dialog")
 do GameState.mark_characters_as_spoken(["noah"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

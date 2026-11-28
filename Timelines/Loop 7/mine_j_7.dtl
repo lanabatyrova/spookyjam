@@ -1,13 +1,13 @@
-[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.0"]
-join Lizzy (Animated) left
+join Lizzy (Animated) left [animation="Fade In"]
+[background arg="res://assets/Locations/Abandoned_Silver_Mine.png" fade="0.5"]
 Lizzy: So this is the abandoned silver mine, huh?
-join Barb (Animated) midleft [mirrored="true"]
+join Barb (Animated) midleft [animation="Fade In Up" mirrored="true"]
 Barb: It’s super creepy
-join Noah (Animated) midright [z_index="1" mirrored="true"]
+join Noah (Animated) midright [animation="Fade In Up" z_index="1" mirrored="true"]
 Noah: It looks...
 Noah: well, abandoned is a good description.
 Lizzy: It’s like everyone just vanished and left behind dusty stuff.
-join Valerie (Animated) center [mirrored="true"]
+join Valerie (Animated) center [animation="Fade In Up" mirrored="true"]
 Valerie: Vermilion’s entire economy was based around this mine. It’s a living piece of history. Look at this preserved gear.
 join Knightmare (Animated) rightmost
 Knightmare: Hmm.
@@ -70,6 +70,6 @@ Juniper: There’s nothing you can say to change my mind.
 Lizzy: Oh, really?
 Lizzy: Wanna bet on it?
 Juniper: Lizzy...
-leave --All--
+leave --All-- [animation="Fade Out"]
 
 jump minigame_j_7/

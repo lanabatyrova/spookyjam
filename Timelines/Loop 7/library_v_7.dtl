@@ -1,6 +1,6 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) right [extra_data="show Eyes/Side, show Side, hide Hips"]
-join Valerie (Close Up) left
+join Valerie (Close Up) left [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
+join Lizzy (Close Up) right [animation="Slide From Right" extra_data="show Eyes/Side, show Side, hide Hips"]
 Lizzy: Hey, Val.
 Valerie: Hello, Elizabeth.
 Valerie: i am sorry that Juniper is wrapped up in all of this.
@@ -89,3 +89,5 @@ set {Choices.C_2} = 0
 
 do ProgressionTracker.complete_requirement("7A", "valerie_dialog")
 do GameState.mark_characters_as_spoken(["valerie"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

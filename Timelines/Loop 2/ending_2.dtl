@@ -1,6 +1,6 @@
+join Lizzy (Animated) center [animation="Fade In" length="0.9" extra_data="show Mouth/Closed, hide Mouth/Default"]
+[background arg="res://assets/Locations/graveyard_night.png" fade="1.0"]
 audio music "res://audio/Music/Celtic Impulse.mp3" [volume="-10.0"]
-[background arg="res://assets/Locations/graveyard_night.png" fade="0.0"]
-join Lizzy (Animated) center [extra_data="show Mouth/Closed, hide Mouth/Default"]
 VO: Alright, time to stop this thing once and for all.
 VO: I hope i'm not too late.
 update Lizzy [extra_data="show Eyes/Wide"]

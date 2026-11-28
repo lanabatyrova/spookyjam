@@ -14,7 +14,7 @@ var master_volume = 5 # Volume can be any number from 0-5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	load_settings()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -24,8 +24,17 @@ func save_settings():
 	var cfg = ConfigFile.new()
 	cfg.set_value("display", "fullscreen", fullscreen)
 	cfg.set_value("audio", "master_volume", master_volume)
-	cfg.set_value("text", "speed", text_speed) #????
+	cfg.set_value("text", "speed", text_speed)
 	cfg.save(SETTINGS_PATH)
+
+func load_settings():
+	var cfg = ConfigFile.new()
+	var result = cfg.load(SETTINGS_PATH)
+	if result == 0:
+		fullscreen = cfg.get_value("display", "fullscreen", false)
+		master_volume = cfg.get_value("audio", "master_volume", 1.0)
+		text_speed = cfg.get_value("text", "speed", 1.0)
+	apply_settings()
 
 func volume_up():
 	if(master_volume < 5):

@@ -10,7 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func start_game(day):
+func start_game_day(day):
+	get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")
 	match (day):
 		0:
 			Dialogic.start("res://Timelines//Loop 0/previously_on_timeline.dtl")
@@ -28,3 +29,6 @@ func start_game(day):
 			Dialogic.start("res://Timelines/Loop 6/intro_6.dtl")
 		7:
 			Dialogic.start("res://Timelines/Loop 7/intro_7.dtl")
+
+func start_game_midpoint(day):
+		get_tree().change_scene_to_file("res://Scenes/Lizzy's Room/Lizzy's Room.tscn")

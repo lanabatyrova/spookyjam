@@ -1,5 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
 join Valerie (Talking) left [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
 join Lizzy (Talking) right [animation="Bounce In"]
 Valerie: I've only just started my research, but I'm confident we'll find something useful.
 Lizzy: what should I do?
@@ -13,3 +13,5 @@ Valerie: ...
 Valerie: just don't do anything foolish.
 Valerie: Please.
 do GameState.mark_characters_as_spoken(["valerie"])
+leave --All-- [animation="Fade Out"]
+[background fade="0.5"]

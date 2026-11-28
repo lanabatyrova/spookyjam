@@ -19,7 +19,7 @@ leave --All-- [animation="Fade Out"]
 [background arg="#000000ff" fade="0.5" wait="true"]
 [wait time="1.0"]
 [one painful exam later]
-[background arg="res://assets/Locations/Hallway_1.png" fade="0.5"]
+[background arg="res://assets/Locations/hallway_day.png" fade="0.5"]
 join Barb lefter [animation="Fade In" z_index="1"]
 join Juniper midleft [animation="Fade In" wait="true" mirrored="true"]
 [wait time="0.2"]
@@ -76,8 +76,7 @@ VO: but I’m feeling about the same as I did then.
 	Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
 	Barb: ....
 	Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
-leave --All-- [animation="Fade Out Down"]
+leave --All-- [animation="Fade Out Down" length="0.3"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")
 [background fade="4.0"]
-update Barb [extra_data="hide Eyebrows/Up"]

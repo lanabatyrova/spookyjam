@@ -1,6 +1,6 @@
 [background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Talking) right
-join Noah (Talking) left [mirrored="true"]
+join Lizzy (Talking) right [animation="Fade In Up"]
+join Noah (Talking) left [animation="Fade In Up" mirrored="true"]
 Lizzy: Noah!
 update Noah [mirrored="false"]
 Noah: Whoa, hey, Lizzy.

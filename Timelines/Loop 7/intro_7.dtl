@@ -1,7 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-audio music "res://audio/Music/main menu backtrack 2.wav" [volume="-10.0" loop="true"]
-[alarm blaring]
-join Lizzy (Close Up) center [extra_data="show Side, hide Hips, hide Mouth/Default, show Mouth/2, show Eyes/Side"]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 VO: what the hell?
 
 [phone ringing]

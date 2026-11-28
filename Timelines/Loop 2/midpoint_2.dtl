@@ -1,5 +1,6 @@
 do GameState.reach_midpoint()
 [signal arg="midpoint_updated"]
+do SaveManager.auto_save()
 [background scene="res://Scenes/Midpoint_Transition.tscn" fade="0.6"]
 [wait time="7.0"]
 

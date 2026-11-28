@@ -1,5 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) center [animation="Fade In" wait="true"]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 VO: Ugh, I’m really starting to hate my alarm sound.
 VO: Dagger told me some pretty heavy stuff just now...
 VO: I’m not really sure what to do with that information,

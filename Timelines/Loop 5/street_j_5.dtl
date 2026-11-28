@@ -1,4 +1,5 @@
-join Juniper lefter [animation="Instant In" mirrored="true"]
+join Juniper lefter [animation="Fade In" mirrored="true"]
+[background arg="res://assets/Locations/street night new.png" fade="0.5"]
 join Lizzy right [animation="Bounce In"]
 Lizzy: Juniper, there you are.
 Lizzy: I’ve been looking all over for you.

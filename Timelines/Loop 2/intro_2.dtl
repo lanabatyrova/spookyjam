@@ -1,6 +1,5 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
-join Lizzy (Close Up) center [animation="Fade In" wait="true"]
-[Alarm beeping]
+join Lizzy (Close Up) center [animation="Fade In"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.5" wait="true"]
 
 VO: this is unbearable.
 VO: i feel like I can't get anything finished.

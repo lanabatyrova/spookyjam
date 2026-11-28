@@ -1,7 +1,7 @@
-[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
-join Juniper (Close Up) left [extra_data="hide Mouth/Default, show Mouth/Unamused, hide Brows/Default, show Brows/Concerned"]
-join Foreground center
-join Lizzy (Close Up) right [animation="Fade In Up" length="0.2" z_index="1" extra_data="show Eyes/Side"]
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.5"]
+join Juniper (Close Up) left [animation="Fade In" extra_data="hide Mouth/Default, show Mouth/Unamused, hide Brows/Default, show Brows/Concerned"]
+join Foreground center [animation="Fade In"]
+join Lizzy (Close Up) right [animation="Slide From Right" length="1.0" wait="true" z_index="1" extra_data="show Eyes/Side"]
 Juniper: Lizzy, there you are. You didn’t come to the exam.
 Juniper: Neither did Barb or Noah.
 Juniper: I’m pretty sure Holiday all gave you automatic fails.
@@ -53,5 +53,5 @@ Lizzy: Sure.
 VO: Huh...
 VO: I guess I have to get her next time around.
 leave --All-- [animation="Fade Out Down"]
-[background fade="0.0"]
+[background fade="0.5"]
 do GameState.mark_characters_as_spoken(["juniper"])

@@ -4,8 +4,8 @@ var save_files
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	save_files = get_save_files()
-	#print(save_files)
+	update_save_files()
+	print(save_files)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -13,6 +13,9 @@ func _process(delta: float) -> void:
 
 const SAVE_PATH = "user://save_slot_%s.json" # You can change this to be whatever you want (save_game.txt, game.save etc.), just don't change the 'user://' at the front
 const default_dictionary: Dictionary = {"clicks" : 0, "time_elapsed" : 0.0}
+
+func update_save_files():
+	save_files = get_save_files()
 
 func get_save_files():
 	var saves = []
@@ -38,6 +41,7 @@ func auto_save():
 
 ## Stores data to a save file to be loaded from later
 func save_game(slot) -> void:
+	print("saving!!!")
 	var data = {
 		"game_state": GameState.get_save_data(),
 		"progression": ProgressionTracker.get_save_data(),
@@ -64,6 +68,11 @@ func load_game(slot) -> bool:
 	else:
 		print(SAVE_PATH % slot)
 		print("No file found")
+	return false
+
+func is_manual(file_name):
+	if file_name.ends_with("manual"):
+		return true
 	return false
 
 #func reset_save() -> void:

@@ -1,9 +1,9 @@
-[background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.0"]
-join "Lady MacDeath" leftmost [animation="Fade In" length="1.0" mirrored="true"]
-join Lizzy center [animation="Fade In" length="1.0"]
-join Barb rightmost [animation="Fade In" length="1.0" mirrored="true"]
-join Dagger right [animation="Fade In" length="1.0"]
-join Noah righter [animation="Fade In" length="1.0" mirrored="true"]
+[background arg="res://Temp Assets/egyptian-mummy-tomb-kom-ombo-765151824.jpg" fade="0.3"]
+join "Lady MacDeath" leftmost [animation="Fade In" mirrored="true"]
+join Lizzy center [animation="Fade In"]
+join Barb rightmost [animation="Fade In" mirrored="true"]
+join Dagger right [animation="Fade In"]
+join Noah righter [animation="Fade In" mirrored="true"]
 "Lady MacDeath": Shakespeare was King Fears— Julian’s thing.
 "Lady MacDeath": I only went along with it because I thought he had a real shot at becoming the ultimate vampire lord.
 update "Lady MacDeath" [animation="Bounce" wait="true" mirrored="false"]
@@ -43,10 +43,14 @@ update Lizzy [mirrored="false" move_time="0.2"]
 Juniper: It’s fine. I can fix this. Just, nobody do anything.
 Juniper: Next time will be better.
 leave Juniper [animation="Slide To Left" wait="true"]
-update Lizzy [animation="Bounce" wait="true"]
+update Lizzy [animation="Bounce" wait="true" mirrored="true"]
 Lizzy: Juniper!
 set {Interaction} = 7.0
 do GameState.next_day()
 leave --All-- [animation="Fade Out Down" length="0.3"]
-[background fade="0.0"]
-jump intro_7/
+[background arg="res://assets/to be continued.png" fade="2.0" wait="true"]
+[wait time="1.9"]
+[background arg="#000000ff" fade="2.0" wait="true"]
+[background fade="0.3"]
+do GameState.next_day()
+jump rewind/

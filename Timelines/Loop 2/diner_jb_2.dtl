@@ -1,9 +1,9 @@
 [background arg="#000000ff" fade="0.0"]
-[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.0"]
-join Foreground center [z_index="1"]
-join Lizzy (Close Up) righter [animation="Fade In" length="1.0" wait="true" z_index="1"]
-join Barb (Close Up) lefter [animation="Fade In" length="1.0"]
-join Juniper (Close Up) midleft [animation="Fade In" length="1.0" z_index="-1"]
+[background scene="res://Scenes/Cutscenes/Diner_Prologue.tscn" fade="0.5"]
+join Foreground center [animation="Fade In" z_index="1"]
+join Juniper (Close Up) midleft [animation="Fade In" length="0.3" z_index="-1"]
+join Barb (Close Up) lefter [animation="Fade In" length="0.3"]
+join Lizzy (Close Up) righter [animation="Slide From Right" length="0.8" wait="true" z_index="1"]
 Barb: You’re out of jam.
 Lizzy: Thanks for letting me know, I'll get on that.
 join Noah (Barb's Phone) midright [animation="Bounce In" z_index="1"]
