@@ -48,6 +48,7 @@ Lizzy: yeah?
 Barb: I need your sewing kit.
 Lizzy: oh, right.
 Lizzy: here you go.
+do GameState.give_away_item("sewing_kit")
 Lizzy: don't lose it.
 Barb: who do you take me for?
 Barb: see you all at graduation.
@@ -57,8 +58,13 @@ Noah: Lizzy—
 Lizzy: let me guess.
 Lizzy: the belt?
 Noah: yes.
-Lizzy: Sure, known yourself out.
+Lizzy: Sure, knock yourself out.
+do GameState.give_away_item("belt")
 Noah: Yippee!
+Lizzy: and also take your allergy meds.
+do GameState.give_away_item("allergy_meds")
+Noah: oh man, I totally forgot about that.
+Noah: thanks dude!
 Noah: get ready for the best night ever!!!
 leave Noah
 Lizzy: well,
@@ -66,6 +72,7 @@ Lizzy: since I'm emptying my pockets now,
 Lizzy: do you want your letter?
 Juniper: sure.
 Juniper: I still don't know how you managed to find it.
+do GameState.give_away_item("acceptance_letter")
 Lizzy: it was just on the ground.
 Juniper: I must've dropped it.
 Lizzy: I know you probably still think that after tonight the world is going to cease existing,
@@ -89,5 +96,5 @@ else:
 	Lizzy: if you still want a ride.
 	Juniper: Let's go.
 	Juniper: maybe we can beat Barb and Noah.
-set 
+do GameState.mark_characters_as_spoken(["barb"])
 leave --All--

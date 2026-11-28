@@ -37,5 +37,11 @@ func _on_pressed() -> void:
 		8:
 			if !GameState.spoken_today["juniper"]:
 				Dialogic.start("res://Timelines/Loop Epilogue/hallway_jnbv_epilogue.dtl")
+				Dialogic.signal_event.connect(_on_dialogic_signal)
 				await Dialogic.timeline_ended
+				get_tree().change_scene_to_file("res://Scenes/Main Menu/The Game.tscn")
 		_: print("how did this even happen???")
+
+func _on_dialogic_signal(argument:String):
+	if argument == "end":
+			get_tree().change_scene_to_file("res://Scenes/Main Menu/The Game.tscn")

@@ -40,8 +40,8 @@
 "image": ""
 },
 "mirror": false,
-"offset": Vector2(30, -125),
-"scale": 0.75,
+"offset": Vector2(30, -190),
+"scale": 0.65,
 "scene": "res://Characters/Layered Portraits/layered_portrait_juniper.tscn"
 },
 "Juniper Dream": {

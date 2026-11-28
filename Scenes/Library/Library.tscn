@@ -11,13 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://ctaf021u8ml34" path="res://assets/Locations/Hover Doors/library exit hover.png" id="5_06v86"]
 [ext_resource type="BitMap" uid="uid://d1uoemouek5yk" path="res://assets/People/Lady-MacDeath_1_bitmap.png" id="5_fsgr3"]
 [ext_resource type="Script" uid="uid://c45tqmv6kjcvo" path="res://Scenes/Library/barb_library.gd" id="6_1rjaq"]
+[ext_resource type="Texture2D" uid="uid://cqper82xfrk7p" path="res://assets/People/Lady_Knightmare_1.png" id="6_luw7s"]
 [ext_resource type="Texture2D" uid="uid://cpjxckqlvxwvr" path="res://sprites/Lady/Lady_Default_1.png" id="6_re8ce"]
-[ext_resource type="Texture2D" uid="uid://cyn3pynrl4o6q" path="res://assets/People/Dagger_1_Hover.png" id="8_e1b7t"]
+[ext_resource type="Texture2D" uid="uid://cixbb6myhumml" path="res://assets/People/Lady_Knightmare_1_Hover.png" id="7_uc0od"]
+[ext_resource type="Script" uid="uid://b86sjsqlik6wy" path="res://Scenes/Library/knightmare_button.gd" id="8_1b55p"]
 [ext_resource type="Script" uid="uid://lrkki6l17hps" path="res://Scenes/Library/noah_library.gd" id="8_hi2wh"]
-[ext_resource type="Texture2D" uid="uid://dgesd2n2b7oic" path="res://assets/People/Dagger_1.png" id="9_14au8"]
 [ext_resource type="BitMap" uid="uid://kkiegcjf5lvx" path="res://assets/People/Dagger_1_bitmap.png" id="9_re8ce"]
 [ext_resource type="Script" uid="uid://b0udjftf53w77" path="res://Scenes/Library/dagger_library.gd" id="10_bybqk"]
+[ext_resource type="Texture2D" uid="uid://b68to7qf6ru0t" path="res://assets/People/dagger_button.png" id="10_re8ce"]
 [ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="11_06v86"]
+[ext_resource type="Texture2D" uid="uid://c0x5pexsyn82q" path="res://assets/People/dagger_button_hover.png" id="11_t63kn"]
 [ext_resource type="Script" uid="uid://my8fu5o6jxvf" path="res://Scenes/Library/lady_library.gd" id="12_rjhi6"]
 [ext_resource type="Texture2D" uid="uid://1dvwwj7m35x3" path="res://assets/People/Noah_1_Hover.png" id="12_t63kn"]
 [ext_resource type="BitMap" uid="uid://cd1bfd8fsbfn7" path="res://assets/People/Noah_1_bitmap.png" id="13_luw7s"]
@@ -28,6 +31,18 @@
 
 [node name="Library" type="Node2D" unique_id=1495003555]
 script = ExtResource("1_3kh1m")
+
+[node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
+visible = false
+offset_left = 843.0
+offset_top = 104.99999
+offset_right = 2005.0
+offset_bottom = 2139.0
+scale = Vector2(0.26269123, 0.26269123)
+texture_normal = ExtResource("6_re8ce")
+texture_hover = ExtResource("4_gnrwe")
+texture_click_mask = ExtResource("5_fsgr3")
+script = ExtResource("12_rjhi6")
 
 [node name="Panel" type="Panel" parent="." unique_id=1641530559]
 offset_left = -9.1552734e-05
@@ -53,38 +68,26 @@ scale = Vector2(0.082923464, 0.07615559)
 texture_normal = ExtResource("4_re8ce")
 texture_hover = ExtResource("5_06v86")
 
-[node name="LadyButton" type="TextureButton" parent="." unique_id=270683138]
-offset_left = 843.0
-offset_top = 104.99999
-offset_right = 2005.0
-offset_bottom = 2139.0
-scale = Vector2(0.26269123, 0.26269123)
-texture_normal = ExtResource("6_re8ce")
-texture_hover = ExtResource("4_gnrwe")
-texture_click_mask = ExtResource("5_fsgr3")
-script = ExtResource("12_rjhi6")
+[node name="Knightmare" type="TextureButton" parent="." unique_id=1874002472]
+offset_left = 874.0
+offset_top = 89.0
+offset_right = 1721.0
+offset_bottom = 2123.0
+scale = Vector2(0.26887244, 0.26887244)
+texture_normal = ExtResource("6_luw7s")
+texture_hover = ExtResource("7_uc0od")
+script = ExtResource("8_1b55p")
 
 [node name="DaggerButton" type="TextureButton" parent="." unique_id=344668607]
-offset_left = 634.0
-offset_top = 177.0
-offset_right = 1531.0
-offset_bottom = 1880.0
-scale = Vector2(0.26353577, 0.26353577)
-texture_normal = ExtResource("9_14au8")
-texture_hover = ExtResource("8_e1b7t")
+offset_left = 653.00006
+offset_top = 142.0
+offset_right = 1708.0
+offset_bottom = 2176.0
+scale = Vector2(0.2483333, 0.2483333)
+texture_normal = ExtResource("10_re8ce")
+texture_hover = ExtResource("11_t63kn")
 texture_click_mask = ExtResource("9_re8ce")
 script = ExtResource("10_bybqk")
-
-[node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
-offset_left = 386.0
-offset_top = 178.0
-offset_right = 1142.0
-offset_bottom = 2183.0
-scale = Vector2(0.20878348, 0.20878348)
-texture_normal = ExtResource("3_3kh1m")
-texture_hover = ExtResource("16_uc0od")
-texture_click_mask = ExtResource("17_1b55p")
-script = ExtResource("4_3kh1m")
 
 [node name="NoahButton" type="TextureButton" parent="." unique_id=915545700]
 offset_left = 66.0
@@ -108,9 +111,21 @@ texture_hover = ExtResource("20_am823")
 texture_click_mask = ExtResource("21_7pdhs")
 script = ExtResource("6_1rjaq")
 
-[connection signal="pressed" from="To Outside" to="." method="_on_to_outside_pressed"]
+[node name="ValerieButton" type="TextureButton" parent="." unique_id=938164549]
+offset_left = 386.0
+offset_top = 178.0
+offset_right = 1142.0
+offset_bottom = 2183.0
+scale = Vector2(0.20878348, 0.20878348)
+texture_normal = ExtResource("3_3kh1m")
+texture_hover = ExtResource("16_uc0od")
+texture_click_mask = ExtResource("17_1b55p")
+script = ExtResource("4_3kh1m")
+
 [connection signal="pressed" from="LadyButton" to="LadyButton" method="_on_pressed"]
+[connection signal="pressed" from="To Outside" to="." method="_on_to_outside_pressed"]
+[connection signal="pressed" from="Knightmare" to="Knightmare" method="_on_pressed"]
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]
-[connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
+[connection signal="pressed" from="ValerieButton" to="ValerieButton" method="_on_pressed"]

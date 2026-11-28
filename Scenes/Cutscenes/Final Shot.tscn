@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dsctujm2akyb0"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_xns77"]
+[ext_resource type="Texture2D" uid="uid://c57ioqydcyo8c" path="res://Temp Assets/out_school_night_pan_up.png" id="2_f3tsb"]
+[ext_resource type="Script" uid="uid://clywflwi2mcrc" path="res://Scenes/Cutscenes/final_shot.gd" id="3_f3tsb"]
+
+[sub_resource type="Animation" id="Animation_jhkb5"]
+resource_name = "Final shot"
+length = 6.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5.866667),
+"transitions": PackedFloat32Array(1, 3.6050022),
+"update": 0,
+"values": [Vector2(1111, -2315), Vector2(578, 791.00006)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 3.6050022),
+"update": 0,
+"values": [Vector2(2.702305, 2.702305), Vector2(0.7199665, 0.7199665)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dduc2"]
+_data = {
+&"Final shot": SubResource("Animation_jhkb5")
+}
+
+[node name="DialogicBackground" type="Node" unique_id=652797870]
+script = ExtResource("1_xns77")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="OutSchoolNightPanUp" type="Sprite2D" parent="." unique_id=1894004669]
+position = Vector2(1111, -2315)
+scale = Vector2(2.702305, 2.702305)
+texture = ExtResource("2_f3tsb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1875846198]
+root_node = NodePath("../OutSchoolNightPanUp")
+libraries/ = SubResource("AnimationLibrary_dduc2")
+script = ExtResource("3_f3tsb")

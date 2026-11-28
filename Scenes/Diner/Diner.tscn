@@ -20,12 +20,20 @@
 [ext_resource type="Script" uid="uid://d27dgr26uvnlj" path="res://Scenes/Diner/noah_diner.gd" id="10_pw08d"]
 [ext_resource type="BitMap" uid="uid://c2ppsa32t31mx" path="res://assets/People/Barb_1_bitmap.png" id="11_nbcyd"]
 [ext_resource type="Texture2D" uid="uid://cohxwdm51a3i4" path="res://sprites/Noah/Noah_Phone_Barb.png" id="11_pw08d"]
-[ext_resource type="Texture2D" uid="uid://b68to7qf6ru0t" path="res://assets/People/dagger_button.png" id="21_j2dj2"]
-[ext_resource type="Texture2D" uid="uid://cqper82xfrk7p" path="res://assets/People/Lady_Knightmare_1.png" id="21_kafqh"]
 [ext_resource type="Texture2D" uid="uid://ilucjt6jddmu" path="res://assets/Locations/Diner_Counter_day.png" id="22_clqby"]
-[ext_resource type="Texture2D" uid="uid://o5cpumsbnc5y" path="res://assets/People/Noah_1.png" id="24_t0cfx"]
-[ext_resource type="Texture2D" uid="uid://1kwgdcae7m15" path="res://assets/People/Lizzy_Dad.png" id="25_4yt8d"]
-[ext_resource type="Texture2D" uid="uid://datgv14kctyxf" path="res://assets/People/Lizzy_Mom.png" id="26_3icix"]
+[ext_resource type="Script" uid="uid://bblvy35qbvm8t" path="res://Scenes/Diner/Epilogue_dagger_and_lady.gd" id="23_3icix"]
+[ext_resource type="Texture2D" uid="uid://fr5ddcn2mlug" path="res://assets/People/epilogue_bjn_button.png" id="27_2ninr"]
+[ext_resource type="Script" uid="uid://cdak0g32f3fce" path="res://Scenes/Diner/epilogue_jnb.gd" id="27_yrqna"]
+[ext_resource type="Texture2D" uid="uid://c08aupo2efy0m" path="res://assets/People/epilogue_bjn_button_Hover.png" id="28_ywnvb"]
+[ext_resource type="Texture2D" uid="uid://b3qn8i2c6xqww" path="res://assets/People/epilogue_parents_button.png" id="29_ys6x5"]
+[ext_resource type="Script" uid="uid://dq0qihdax13xc" path="res://Scenes/Diner/mom_and_dad.gd" id="30_2ninr"]
+[ext_resource type="Texture2D" uid="uid://cac4377oewnvq" path="res://assets/People/epilogue_parents_button_hover.png" id="30_vdb52"]
+[ext_resource type="Texture2D" uid="uid://dlpa3gs4nr7j3" path="res://assets/People/epilogue_ld_button.png" id="31_ngijv"]
+[ext_resource type="Texture2D" uid="uid://ce0nac5xdiihk" path="res://assets/People/epilogue_ld_button_hover.png" id="32_s53jv"]
+[ext_resource type="Texture2D" uid="uid://cuinl2o4vim0p" path="res://assets/People/Val_1.png" id="33_2hoyd"]
+[ext_resource type="BitMap" uid="uid://b7ix8eaqx2n1e" path="res://assets/People/Val_1_bitmap.png" id="33_2ninr"]
+[ext_resource type="Texture2D" uid="uid://bp1x25rh6pjun" path="res://assets/People/Val_1_Hover.png" id="34_hibcy"]
+[ext_resource type="Script" uid="uid://dfdnx43l2hm6s" path="res://Scenes/Library/valerie_library.gd" id="34_ywnvb"]
 
 [node name="Diner" type="Node2D" unique_id=1757622433]
 script = ExtResource("1_1iy0u")
@@ -114,7 +122,6 @@ texture_normal = ExtResource("11_pw08d")
 script = ExtResource("10_pw08d")
 
 [node name="Epilogue" type="Node2D" parent="." unique_id=1854509585]
-visible = false
 position = Vector2(191, 233.99998)
 scale = Vector2(0.22519131, 0.22519131)
 
@@ -123,45 +130,49 @@ position = Vector2(1711.8086, 395.2743)
 scale = Vector2(2.6787195, 2.6971934)
 texture = ExtResource("2_j2dj2")
 
-[node name="Dagger1" type="Sprite2D" parent="Epilogue" unique_id=1272869174]
-position = Vector2(-66.61006, 466.27026)
-scale = Vector2(0.9805097, 0.9805097)
-texture = ExtResource("21_j2dj2")
-
-[node name="LadyKnightmare1" type="Sprite2D" parent="Epilogue" unique_id=1220352508]
-position = Vector2(346.3722, 470.71094)
-scale = Vector2(0.8698205, 0.86982054)
-texture = ExtResource("21_kafqh")
+[node name="Dagger and Lady" type="TextureButton" parent="Epilogue" unique_id=466746183]
+offset_left = -475.15158
+offset_top = -519.5582
+offset_right = 958.8484
+offset_bottom = 1480.4418
+texture_normal = ExtResource("31_ngijv")
+texture_hover = ExtResource("32_s53jv")
+script = ExtResource("23_3icix")
 
 [node name="DinerDay2" type="Sprite2D" parent="Epilogue" unique_id=1313356845]
 position = Vector2(1711.8086, 395.2744)
 scale = Vector2(2.6787198, 2.6971936)
 texture = ExtResource("22_clqby")
 
-[node name="Barb1" type="Sprite2D" parent="Epilogue" unique_id=41944333]
-position = Vector2(1598.6406, 808.2018)
-scale = Vector2(0.8405853, 0.8405853)
-texture = ExtResource("6_1j8du")
+[node name="Barb, Noah, and Juniper" type="TextureButton" parent="Epilogue" unique_id=287927326]
+offset_left = 390.77887
+offset_top = -75.4913
+offset_right = 2164.7788
+offset_bottom = 1716.5087
+texture_normal = ExtResource("27_2ninr")
+texture_hover = ExtResource("28_ywnvb")
+script = ExtResource("27_yrqna")
 
-[node name="Noah1" type="Sprite2D" parent="Epilogue" unique_id=701723247]
-position = Vector2(1183.7136, 825.9157)
-scale = Vector2(0.9265556, 0.92655545)
-texture = ExtResource("24_t0cfx")
+[node name="Mom and Dad" type="TextureButton" parent="Epilogue" unique_id=2138984301]
+offset_left = 2411.283
+offset_top = -324.1688
+offset_right = 3461.283
+offset_bottom = 1675.8312
+scale = Vector2(1.058782, 1.058782)
+texture_normal = ExtResource("29_ys6x5")
+texture_hover = ExtResource("30_vdb52")
+script = ExtResource("30_2ninr")
 
-[node name="Juniper1" type="Sprite2D" parent="Epilogue" unique_id=254090401]
-position = Vector2(734.1221, 849.157)
-scale = Vector2(0.9321152, 0.9321152)
-texture = ExtResource("5_qitao")
-
-[node name="LizzyDad" type="Sprite2D" parent="Epilogue" unique_id=1815943177]
-position = Vector2(2778.8726, 593.01086)
-scale = Vector2(0.82460123, 0.82460123)
-texture = ExtResource("25_4yt8d")
-
-[node name="LizzyMom" type="Sprite2D" parent="Epilogue" unique_id=1584697966]
-position = Vector2(3151.8887, 646.299)
-scale = Vector2(0.82460123, 0.82460123)
-texture = ExtResource("26_3icix")
+[node name="ValerieButton" type="TextureButton" parent="Epilogue" unique_id=1270935363]
+offset_left = -976.94714
+offset_top = -230.9147
+offset_right = -220.94714
+offset_bottom = 1774.0853
+scale = Vector2(1.2918179, 1.2918179)
+texture_normal = ExtResource("33_2hoyd")
+texture_hover = ExtResource("34_hibcy")
+texture_click_mask = ExtResource("33_2ninr")
+script = ExtResource("34_ywnvb")
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="RoomDoor" to="." method="_on_room_door_pressed"]
@@ -170,3 +181,7 @@ texture = ExtResource("26_3icix")
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]
 [connection signal="pressed" from="BarbButton" to="BarbButton" method="_on_pressed"]
 [connection signal="pressed" from="NoahButton" to="NoahButton" method="_on_pressed"]
+[connection signal="pressed" from="Epilogue/Dagger and Lady" to="Epilogue/Dagger and Lady" method="_on_pressed"]
+[connection signal="pressed" from="Epilogue/Barb, Noah, and Juniper" to="Epilogue/Barb, Noah, and Juniper" method="_on_pressed"]
+[connection signal="pressed" from="Epilogue/Mom and Dad" to="Epilogue/Mom and Dad" method="_on_pressed"]
+[connection signal="pressed" from="Epilogue/ValerieButton" to="Epilogue/ValerieButton" method="_on_pressed"]

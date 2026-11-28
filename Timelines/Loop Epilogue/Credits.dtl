@@ -20,3 +20,5 @@ audio music "res://audio/Character Sounds/main menu backtrack 1.wav"
 [background arg="res://assets/Credits/black screen.png" fade="0.5" wait="true"]
 [wait time="2.0"]
 Lizzy: Thanks for playing!
+[background arg="#000000ff" fade="1.1"]
+[background fade="0.5"]

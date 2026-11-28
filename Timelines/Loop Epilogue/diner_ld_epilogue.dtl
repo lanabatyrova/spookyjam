@@ -11,7 +11,6 @@ Knightmare: how much is the payment for a job such as the one in which you are d
 Dagger: my lady,
 Dagger: you aren't really considering...
 Dagger: you would loath working in food service.
-Knightmare: I am charting my path.
 Knightmare: you don't know until you try.
 Lizzy: I think our little heart to heart last night was a good influence on you Lady Knightmare.
 Lizzy: the board games after probably helped too.
@@ -117,9 +116,21 @@ label C1_after
 Lizzy: well, I gotta go.
 Dagger: see you shortly, Elizabeth.
 Knightmare: show your enemies no mercy.
+Lizzy: Oh, before I forget.
+Lizzy: Here's your book back, Lady.
+do GameState.give_away_item("pocket_shakespeare")
+Knightmare: Ah.
+Knightmare: that's where it went.
+Lizzy: I found it in one of the loops.
+Lizzy: and then you stabbed me with a sword.
+Knightmare: classic.
+Knightmare: thank you for returning it.
+Knightmare: I will spend the next hour burning it to symbolize the burning of my old persona.
+Lizzy: sounds fun!
 Lizzy: bye.
 set {Choices.C_1} = 0
 set {Choices.C_2} = 0
 set {Choices.C_3} = 0
+do GameState.mark_characters_as_spoken(["dagger"])
 leave --All-- [animation="Fade Out Down"]
 [background fade="0.0"]

@@ -254,6 +254,7 @@ visible = false
 texture = ExtResource("17_tewwe")
 
 [node name="Blinking" type="AnimatedSprite2D" parent="." unique_id=156494236]
+visible = false
 sprite_frames = SubResource("SpriteFrames_vgl7g")
 animation = &"Lizzy Blinking 3"
 autoplay = "Lizzy Blinking 3"

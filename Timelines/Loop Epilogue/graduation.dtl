@@ -1,7 +1,23 @@
 [background arg="res://assets/Locations/School/graduation.png" fade="0.0"]
 join Lizzy (Graduation) right [z_index="1"]
 join Juniper (Graduation) center
-join Foreground (Podum) center
+join Barb (Graduation) righter [z_index="1" mirrored="true"]
+join Noah (Graduation) rightmost [mirrored="true"]
+join Valerie (Graduation) midleft [z_index="1"]
+join Mom (Graduation) lefter [z_index="1" mirrored="true"]
+join Dad (Graduation) leftmost [mirrored="true"]
 Juniper: here are some words of wisdom.
 [everyone cheers!]
+join background (Glitter) center [z_index="4"]
+update Barb [extra_data="show Eyes/Wide"]
+update Valerie [extra_data="show Mouth/Neutral, hide Mouth/Default, show Brows/Confused, hide Brows/Default, show Eyes/Wide"]
+update Juniper [extra_data="show Mouth/Smile, hide Mouth/Default"]
+Barb: Noah!!
+Barb: what the hell?!
+update Noah [extra_data="show Eyes/Wide front, hide Brows/Default, show Brows/Up"]
+Noah: Glitter forever!!!!
+
+leave --All-- [animation="Fade Out"]
+[background arg="#000000ff" fade="1.0" wait="true"]
+[signal arg="end"]
 jump ending_epilogue/

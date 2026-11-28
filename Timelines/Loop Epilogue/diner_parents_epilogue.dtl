@@ -18,7 +18,7 @@ Dad: is this everyone going to graduation?
 Lizzy: yeah.
 Mom: I don't think they’ll fit in the car.
 Dad: we can sure as hell try.
-join Valerie (Close Up) lefter
+join Valerie (Close Up) leftmost
 Valerie: mr. And mrs. Springs, I'll be driving my own car to the school, so you needn't not worry about space.
 do GameState.learn_dialogue_fact("v_car")
 do GameState.set_dialogue_fact(true)
@@ -38,17 +38,128 @@ Lizzy: did you get up to anything crazy?
 
 - [VO] I should tell them everything. [br] they deserve to know the truth.
 	set {Choices.C_5} = true
-	Dad: thanks for telling us Lizzy.
-
+	Lizzy: mom.
+	Lizzy: dad.
+	Lizzy: i don't know how to say this...
+	Mom: oh, honey,
+	Dad: we'll love you no matter what.
+	Mom: we're so honored you're comfortable enough to come out to us.
+	Lizzy: oh, uh,
+	Lizzy: oh no im not coming out as gay.
+	Mom: oh, really?
+	Dad: are you sure?
+	Lizzy: no I'm a werewolf.
+	Mom: a werewolf....
+	Dad: is that slang for something?
+	Lizzy: no it means that I can turn into a werewolf.
+	Lizzy: remember when I brought mayor silver to the hospital.
+	Mom: yes, it was a terrible experience.
+	Mom: no one your age should go through that.
+	Lizzy: I was treated for a dog bite.
+	Dad: He was mauled by a dog, wasn't he?
+	Lizzy: well, actually,
+	Lizzy: he was killed by a vampire lord called King Fear,
+	Lizzy: and it wasn't a dog bite.
+	Lizzy: Mayor Silver bit me.
+	Lizzy: he was part of a long line of werewolves tasked with protecting Vermilion Hills from vampires and monsters.
+	Lizzy: unfortunately he had no hiers,
+	Lizzy: so when he was dying, after I tried to help him,
+	Lizzy: he passed on his legacy to me,
+	Lizzy: by biting me.
+	Dad: I feel like this is the build up to a long winded joke.
+	Lizzy: it's not, I swear.
+	Mom: Lizzy, processing trauma can be hard,
+	Mom: and even though this happened two years ago,
+	Mom: I'm sure you still think about it quite a lot.
+	Lizzy: ugh, okay I didn't want to do this but,
+	update Lizzy (Half Wolf Close Up)
+	Dad: uh
+	Mom: oh, wow.
+	Lizzy: do you believe me now?
+	Dad: I feel like we can't deny the fact you turned into some sort of wolf creature.
+	Mom: This explains a lot of the strange things that have been happening to you, actually.
+	Mom: all the sneaking out, and broken bones, and cuts and bruises.
+	Mom: I was worried you were going too hard into baseball.
+	Lizzy: I'm sorry for not telling you sooner.
+	Lizzy: I wasn't sure how you were going to take it.
+	Lizzy: turns out, incredibly well.
+	Mom: I write speculative fiction and poetry, Lizzy.
+	Mom: I think in my heart I've always wanted to believe in vampires and werewolves.
+	Dad: Well, hang on.
+	Dad: I'm still not over Mayor Silver saddling you with his responsibility.
+	Dad: you're a young girl!
+	Dad: you've got your whole life ahead of you.
+	Lizzy: it's okay dad, I've thought about this already.
+	Mom: I agree with your father.
+	Mom: It's unexcusable.
+	update Lizzy (Close Up)
+	
+	- [VO] okay, the werewolf thing is out of the way[br]now it's time to tell them about the[br]whole television show thing.
+		Lizzy: honestly, it's not even that important,
+		Lizzy: because there's more.
+		Mom: there's more?
+		Dad: more than you being a werewolf and ghouls existing?
+		Lizzy: yes.
+		Dad: what a thing to come back to after vacation.
+		Mom: I'm glad we at least got a little break from all the action.
+		Lizzy: so, life as we know it,
+		Lizzy: us living here, moving to Vermilion Springs because of Dad's dream of opening a diner,
+		Lizzy: and the Inheritance from grandpas passing,
+		Lizzy: and Uncle Bill's embezzling scandal,
+		Dad: our family spins a weaving web, that's for sure.
+		Lizzy: well all of it is a Television show called Lizzy Springs Monster Hunter and Werewolf.
+		Mom: okay, after hearing the werewolf reveal,
+		Mom: I'm not as shocked as I thought I would be.
+		Dad: a television show?
+		Lizzy: I know it's a lot to take in.
+		Lizzy: but there's even more.
+		Dad: we should've sat down.
+		Lizzy: this is the last episode of the Television show.
+		Lizzy: so this could be the last night we all have together.
+		Mom: oh my.
+		Mom: This is going to take a second to fully process.
+		Dad: from the sounds of it, we won't have many seconds less.
+		VO: they're taking this surprisingly well.
+	- [VO] I've already told them one earth shattering thing.[br]maybe it's best to just leave it at that.[br]let's end on a positive note.
+		Lizzy: I appreciate you defending me.
+		Lizzy: but becoming a werewolf was the best thing that's ever happened to me.
+		Lizzy: I met all my best friends.
+		Lizzy: and I wouldn't trade that for the world.
+	Mom: Thank you for being honest with us, Lizzy.
+	Mom: we love you very much and I'm so happy that you shared this part of your life with us.
+	Dad: You'll always be our Lizzy.
+	Dad: even as a wolf.
+	Dad: and for the record,
+	Dad: I think it's super awesome.
+	Mom: me too.
+	Lizzy: thanks Mom and dad.
+	Lizzy: I love you too.
 
 - [VO] The possibly last day of their [br] lives shouldn't be spent having a break [br] down over the fact we're all television characters.
-	Lizzy: well,
-	Lizzy: let's go to graduation.
+	jump end
 
+label end
+Lizzy: well,
+Lizzy: let's go to graduation.
+Dad: alrighty then.
+Dad: should I bring the camera?
+Mom: absolutely.
+Dad: okay, I'll be right back.
 
+set {current_decision} = GameState.spoken_today["barb, dagger"]
+if {current_decision} == true:
+	Mom: your father will just be one second.
+	Mom: I forgot to unpack it from the bag when we got back.
+	Lizzy: all good.
+	Lizzy: I don't mind waiting.
+else:
+	Mom: you've got a little time before we have to head out.
+	Lizzy: yeah, I still need to talk to a few people.
+	Mom: love you, honey.
+	Lizzy: love you too, mom.
 
-
-
+Dad: okay I've got it.
+Dad: let's make some memories!
+[background arg="" fade="0.0"]
 leave --All--
 do GameState.mark_characters_as_spoken(["parents"])
-jump diner_ld_epilogue/

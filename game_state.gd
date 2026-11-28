@@ -6,19 +6,19 @@ var is_minigame = false
 
 # Whether or not you've picked up the item. Displayed in inventory if true.
 var inventory = {
-	"sewing_kit": false,
-	"belt": false,
-	"allergy_meds": false,
-	"pocket_shakespeare": false,
+	"sewing_kit": true,
+	"belt": true,
+	"allergy_meds": true,
+	"pocket_shakespeare": true,
 	"silver_nugget": true,
-	"pocket_watch": false,
-	"acceptance_letter": false
+	"pocket_watch": true,
+	"acceptance_letter": true
 }
 
 var item_collectible = {
 	"sewing_kit": false,
 	"belt": false,
-	"allergy_meds": true,
+	"allergy_meds": false,
 	"pocket_shakespeare": false,
 	"silver_nugget": false,
 	"pocket_watch": false,
@@ -30,21 +30,21 @@ var item_collectible = {
 # and bff photo) to more easily keep track of them. Could be used
 # both for journal display and mini game button appearances?
 var facts = {
-	"v_case_study": false,
-	"v_future_worries": false,
-	"b_camp_story": false,
+	"v_case_study": true,
+	"v_future_worries": true,
+	"b_camp_story": true,
 	"b_clown_school": true,
-	"n_detention": false,
-	"d_brother_death": false,
-	"d_zombie_plan": false,
-	"m_suspition": false, # lmd is causing the loop?
-	"m_absolved": false, #no she's not
-	"m_shakespeare_hate": false,
-	"m_phone": false, #LMD phone number
-	"m_name": false, # LMD name change to Knightmare
-	"j_clairvoyance": false,
-	"j_bffs": false, # bff sticker (clickable, visible always)
-	"j_past_adventures": false # beastiary page (clickable. visible always)
+	"n_detention": true,
+	"d_brother_death": true,
+	"d_zombie_plan": true,
+	"m_suspition": true, # lmd is causing the loop?
+	"m_absolved": true, #no she's not
+	"m_shakespeare_hate": true,
+	"m_phone": true, #LMD phone number
+	"m_name": true, # LMD name change to Knightmare
+	"j_clairvoyance": true,
+	"j_bffs": true, # bff sticker (clickable, visible always)
+	"j_past_adventures": true # beastiary page (clickable. visible always)
 }
 
 var dialogue_facts = {
@@ -125,6 +125,9 @@ func mark_characters_as_spoken(char_names):
 
 func pick_up_item(item_name):
 	inventory[item_name] = true
+	
+func give_away_item(item_name):
+	inventory[item_name] = false
 
 func learn_fact(fact_name):
 	facts[fact_name] = true

@@ -1,5 +1,113 @@
+[background arg="#000000ff" fade="0.0"]
+[background arg="res://Temp Assets/school dance 1.png" fade="1.0" wait="true"]
+join Barb right [mirrored="true"]
+Barb: Sigh.
+join Lizzy center [mirrored="true" extra_data="show Eyes/Side"]
+Lizzy: why aren't you with your date, hot dave?
+Barb: hot dave and I had a falling out.
+Barb: now he's making out with average Jenny.
+Lizzy: what happened?
+Barb: i have no idea.
+Barb: men are impossible to understand.
+Barb: what a great night this turned out to be.
+Lizzy: well, the night is still young.
+Lizzy: maybe you can find another date.
+Barb: the only people available are either ugly or unpopular.
+Barb: so I'll pass.
+VO: i feel slightly less bad now
+
+- [VO] I should ask her to dance.
+	Lizzy: okay, since you're not doing anything.
+	Lizzy: care to have this dance?
+	Lizzy: they're playing my favourite song.
+	Barb: what are you doing?
+	Lizzy: asking to be your dance partner?
+	Barb: i, well, that's a bit-
+	Lizzy: oh, come on.
+	Lizzy: you aren't worried about people thinking it's romantic, are you?
+	Barb: no.
+	Barb: i just-
+	Barb: ugh. Fine.
+	Barb: let's dance.
+	Barb: but i lead, because you've got two left feet.
+	Lizzy: aye aye, captain.
+	leave --All-- [animation="Fade Out Down"]
+	[background arg="#000000ff" fade="0.5" wait="true"]
+	audio music "res://audio/Hall of the Mountain King.mp3"
+	[background arg="res://Temp Assets/school dance 3.png" fade="0.0"]
+	join Lizzy center
+	join Barb midleft
+	update Lizzy [animation="Tada" repeat_forever="true"]
+	update Barb [animation="Tada" repeat_forever="true"]
+	[wait time="10.0"]
+	leave --All--
+	audio music -
+
+- [VO] she looks lonely all by herself.[br] I should try setting her up with Noah.
+	Lizzy: hey, it doesn't look like Noah is doing anything right now.
+	Lizzy: im sure juniper would be willing to lend him to you for one dance.
+	Barb: ew, I'd rather die.
+	Lizzy: thats a bit much.
+	Barb: sorry.
+	Barb: i just really wanted it to work out with hot dave.
+	Lizzy: I'll ask noah for you, so you're not embarassed.
+	Barb: no, that's worse.
+	Barb: I'll do it.
+	join Noah left
+	Noah: hey I heard my name what's  up.
+	Lizzy: speak of the devil.
+	Lizzy: hey, noah, barb has something she wants to ask youn.
+	Noah: oh, really?
+	Barb: ugh this is so stupid.
+	Barb: do you want to dance noah?
+	Barb: in an extremely non romantic way.
+	Noah: sure!
+	Noah: I'd  love to dance.
+	Noah: what happened to hot dave though?
+	Barb: it didn't work out.
+	Lizzy: creative differences.
+	Noah: and you didn't ask her Lizzy?
+	Lizzy: i figured with the whole larb pairing thing, barb might feel embarassed.
+	Noah: that's considerate of you.
+	Noah: okay barb let's boogie.
+	Barb: im already regretting this.
+	update Noah lefter [animation="Tada" repeat_forever="true"]
+	update Barb left [animation="Tada" repeat_forever="true"]
+	[wait time="5.0"]
+	VO: Awh, they're so cute.
+	leave --All--
+[background arg="#000000ff" fade="0.5" wait="true"]
+[background arg="res://Temp Assets/school dance 2.png" fade="0.0"]
+join Lizzy (Close Up) right
+
+VO: i wonder where juniper is
+VO: i haven't seen her in a while.
+join Knightmare leftmost
+join Dagger left
+join Noah midleft [mirrored="true"]
+Noah: I challenge you to a keg stand!
+
+Knightmare: huzzah!
+Knightmare: I will crush you at any task!
+Dagger: Lady, it may be wise to show self restraint.
+update Knightmare [animation="Tada" repeat_forever="true"]
+Knightmare: you are just scared of your defeat!
+[Cheers]
+VO: I'm glad lady and dagger are fitting right in.
+VO: It's nice of Noah to keep them entertained
+VO: Maybe Juniper's outside.
+leave --All-- [animation="Fade Out Down"]
+[background arg="#000000ff" fade="0.5" wait="true"]
+audio music "res://audio/Music/Water Prelude.mp3" [volume="-10.0"]
+[background scene="res://Scenes/Cutscenes/Final Shot.tscn" fade="0.0"]
+join Juniper left [mirrored="true"]
+join Lizzy center
+
+
+
 Lizzy: i thought I might find you out there.
 Juniper: hey.
+update Juniper [mirrored="true"]
 Lizzy: how are you doing?
 Juniper: poorly.
 Juniper: well, not poorly.
@@ -15,5 +123,11 @@ Lizzy: that's tiring.
 Lizzy: how about we go back into the gym and enjoy the rest of the dance.
 Lizzy: Noah's about to challenge Lady to a keg stand.
 Juniper: now this, I gotta see.
-leave --All--
+update Lizzy [mirrored="true"]
+leave --All-- [animation="Slide To Right" length="1.0" wait="true"]
+[wait time="2.5"]
+[signal arg="play"]
+[wait time="6.0"]
+audio music - [fade="4.0"]
+[background arg="#000000ff" fade="5.0" wait="true"]
 jump Credits/

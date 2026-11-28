@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://b6pn0q8qaepch"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://b2ppa2ai7tjb2" path="res://assets/effects/glitterbase.png" id="2_eliuo"]
+[ext_resource type="Texture2D" uid="uid://dfgj61ruqewhy" path="res://assets/effects/glitter4.png" id="2_f85fi"]
+[ext_resource type="Texture2D" uid="uid://dkh8ohxpcmlwo" path="res://assets/effects/glitter3.png" id="2_g5wpt"]
+[ext_resource type="Texture2D" uid="uid://c3whovxxiwfk6" path="res://assets/effects/glitter5.png" id="3_g5wpt"]
+[ext_resource type="SpriteFrames" uid="uid://cam2xgmhnyfre" path="res://Characters/Layered Portraits/new_sprite_frames.tres" id="6_26hrs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g5wpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f85fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g5wpt")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_vma3l"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_saijx"]
+resource_name = "Talking"
+length = 0.56666666
+loop_mode = 1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ouf5n"]
+_data = {
+&"RESET": SubResource("Animation_vma3l"),
+&"Talking": SubResource("Animation_saijx")
+}
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=858091985]
+script = ExtResource("1_uubi5")
+
+[node name="Layer1" type="Sprite2D" parent="." unique_id=1409694415]
+position = Vector2(0, 571)
+texture = ExtResource("2_eliuo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=461809219]
+position = Vector2(0, 571)
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+autoplay = "default"
+frame_progress = 0.12851264
+
+[node name="Group1" type="Node2D" parent="." unique_id=811227006]
+
+[node name="Layer1" type="Sprite2D" parent="Group1" unique_id=180880898]
+
+[node name="Layer2" type="Sprite2D" parent="Group1" unique_id=1782628996]
+
+[node name="Animated" type="Node2D" parent="." unique_id=1491446645]
+
+[node name="Talking" type="AnimatedSprite2D" parent="Animated" unique_id=1270888850]
+sprite_frames = ExtResource("6_26hrs")
+animation = &"new_animation"
+autoplay = "new_animation"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animated/Talking" unique_id=889110296]
+libraries/ = SubResource("AnimationLibrary_ouf5n")
+autoplay = &"Talking"
+
+[node name="Layer2" type="Sprite2D" parent="Animated" unique_id=229669939]

@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://dqnjdgd2ktpo3" path="res://sprites/Val/Body/val base.png" id="19_uds0a"]
 [ext_resource type="Texture2D" uid="uid://bulondhmfac65" path="res://sprites/Extras/Mom/Mom_Eyes_Closed.png" id="20_dsyy7"]
 [ext_resource type="Texture2D" uid="uid://qp03nneurxjx" path="res://sprites/Val/Face/val mouth talking.png" id="20_y6b68"]
+[ext_resource type="Texture2D" uid="uid://b2ppa2ai7tjb2" path="res://assets/effects/glitterbase.png" id="27_drelx"]
 
 [resource]
 animations = [{
@@ -170,5 +171,16 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Val Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_drelx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_drelx")
+}],
+"loop": 1,
+"name": &"new_animation",
 "speed": 5.0
 }]

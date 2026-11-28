@@ -5,8 +5,18 @@ Lizzy: Hey
 Valerie: Hello
 set {current_decision} = GameState.dialogue_facts["v_car"]
 if {current_decision} == true:
-	Normal convo
-else:
 	Lizzy: I didn't know you had a car.
 	Valerie: I try not to drive too much.
 	Valerie: I prefer a more green approach to transportation.
+else:
+	
+	
+Lizzy: here's your watch back.
+do GameState.give_away_item("pocket_watch")
+Valerie: thanks, Elizabeth.
+Valerie: I'm glad it was able to give you some luck.
+Valerie: now go enjoy graduation.
+Lizzy: are you going to the ceremony?
+Valerie: I wouldn't miss it for the world.
+leave --All-- 
+[background arg="" fade="0.2"]

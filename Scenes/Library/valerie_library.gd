@@ -70,6 +70,9 @@ func morning_branch():
 			else:
 				if !GameState.spoken_today["valerie"]:
 					Dialogic.start("res://Timelines/Loop 7/library_v_7.dtl")
+		8:
+				if !GameState.spoken_today["valerie"]:
+					Dialogic.start("res://Timelines/Loop Epilogue/diner_v_epilogue.dtl")
 		_: print("how did this even happen???")
 	
 	
