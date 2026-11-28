@@ -19,9 +19,9 @@ func _process(delta: float) -> void:
 	pass
 	
 func update_day(day: int):
-	juniper.visible = day in [1,2,3,4] && !GameState.midpoint_reached
-	barb.visible = day in [1,2] && !GameState.midpoint_reached || day in [3]
-	noah.visible = day in [1,2,3] && !GameState.midpoint_reached
+	juniper.visible = day in [1,2,3,4,8] && !GameState.midpoint_reached
+	barb.visible = day in [1,2,8] && !GameState.midpoint_reached || day in [3]
+	noah.visible = day in [1,2,3,8] && !GameState.midpoint_reached
 	letter.visible = day in [5] && !GameState.inventory["acceptance_letter"]
 	evening.visible = GameState.midpoint_reached
 

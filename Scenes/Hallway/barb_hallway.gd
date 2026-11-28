@@ -38,4 +38,8 @@ func _on_pressed() -> void:
 				Dialogic.start("res://Timelines/Loop 3/minigame_b_3.dtl")
 			else:
 				Dialogic.start("res://Timelines/not_ready_vo.dtl")
+		8:
+			if !GameState.spoken_today["barb"]:
+				Dialogic.start("res://Timelines/Loop Epilogue/hallway_jnbv_epilogue.dtl")
+				await Dialogic.timeline_ended
 		_: print("how did this even happen???")

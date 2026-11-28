@@ -13,6 +13,67 @@
 [ext_resource type="Texture2D" uid="uid://c0x5pexsyn82q" path="res://assets/People/dagger_button_hover.png" id="7_t8j5j"]
 [ext_resource type="BitMap" uid="uid://70va1jdrb0un" path="res://assets/Pickup Items/shakespeare_bitmap.png" id="9_3cfoq"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="11_h5jha"]
+[ext_resource type="Texture2D" uid="uid://cp6wpimxijbf0" path="res://assets/effects/rain_1.png" id="14_ocwl0"]
+[ext_resource type="Texture2D" uid="uid://cwobxndce73lf" path="res://assets/effects/rain_2.png" id="15_42mga"]
+[ext_resource type="Texture2D" uid="uid://bbgi60k676csd" path="res://assets/effects/rain_3.png" id="16_aeeu7"]
+[ext_resource type="Texture2D" uid="uid://d4djxhc461vt4" path="res://assets/effects/rain_4.png" id="17_6enba"]
+[ext_resource type="Texture2D" uid="uid://c78urcjl6gp6x" path="res://assets/effects/drops_1.png" id="18_adkjp"]
+[ext_resource type="Texture2D" uid="uid://c4mpna3wyp7qk" path="res://assets/effects/drops_2.png" id="19_55p7w"]
+[ext_resource type="Texture2D" uid="uid://dkki75noaqgp8" path="res://assets/effects/drops_3.png" id="20_ejrmb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sxnpn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ocwl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_42mga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_aeeu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6enba")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uneld"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_adkjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_55p7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ejrmb")
+}],
+"loop": 1,
+"name": &"drops",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ocwl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_42mga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_aeeu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6enba")
+}],
+"loop": 1,
+"name": &"rain",
+"speed": 5.0
+}]
 
 [node name="Graveyard" type="Node2D" unique_id=975334763]
 script = ExtResource("1_mfimy")
@@ -69,6 +130,22 @@ offset_right = 2000.0
 offset_bottom = 1147.0
 scale = Vector2(0.5768693, 0.13157776)
 texture_hover = ExtResource("11_h5jha")
+
+[node name="Epilogue" type="Node2D" parent="." unique_id=674094820]
+
+[node name="Rain" type="AnimatedSprite2D" parent="Epilogue" unique_id=513682369]
+position = Vector2(581, 305)
+scale = Vector2(0.42018038, 0.42018038)
+sprite_frames = SubResource("SpriteFrames_sxnpn")
+autoplay = "default"
+
+[node name="Drops" type="AnimatedSprite2D" parent="Epilogue" unique_id=800485672]
+position = Vector2(470.99994, 456.00003)
+rotation = 0.108816445
+scale = Vector2(0.42763638, 0.29128125)
+sprite_frames = SubResource("SpriteFrames_uneld")
+animation = &"drops"
+autoplay = "drops"
 
 [connection signal="pressed" from="DaggerButton" to="." method="_on_dagger_button_pressed"]
 [connection signal="pressed" from="DaggerButton" to="DaggerButton" method="_on_pressed"]

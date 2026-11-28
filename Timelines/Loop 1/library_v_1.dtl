@@ -12,25 +12,39 @@ Lizzy: No, you don’t understand.
 Lizzy: I’m reliving the same day over again.
 Lizzy: All exactly the same.
 Lizzy: Maybe not exactly the same. There’s little differences.
-Lizzy: It’s like im stuck in some sort of...
-Lizzy: Loop of...
-Lizzy: Time.
-...
-Valerie: A time loop?
-Lizzy: Yes! That’s the word.
-Valerie: Time loops are incredibly rare, Elizabeth.
-Valerie: Perhaps a more accurate word would be Deja vu? The sensation of feeling you’ve lived the same experience—
-Lizzy: I know what deja vu is and this is  not it.
-Lizzy: I’m experiencing the same twenty-four hours over again.
-Valerie: Wouldn’t a time loop need to be repeated multiple times for you to know for sure that you’re in one?
-Lizzy: Time loops are time loops Valerie!
-Lizzy: Isn’t it enough that I’ve experienced the same day more than once!
-Lizzy: No one should go through that.
-Valerie: I do think it’s concerning that you’re experiencing the same day, but a time loop?
+
+
+set {current_decision} = GameState.spoken_today["barb"]
+if {current_decision} == true:
+	Lizzy: Barb, Noah, and Juniper didn't remember yesterday either.
+	Valerie: Perhaps you're experiencing Deja vu? The sensation of feeling you’ve lived the same moment—
+	Lizzy: I know what deja vu is and this is not it.
+	Lizzy: I had to sit through the same two hour math exam I've already done.
+	Lizzy: no one should have to go through that!
+	Lizzy: It's evil!
+else:
+	Lizzy: but it's basically the same day!
+	Valerie: Perhaps you're experiencing Deja vu? The sensation of feeling you’ve lived the same moment—
+	Lizzy: I know what deja vu is and this is not it.
+	Lizzy: I’m experiencing the same twenty-four hours over again.
+	Lizzy: I got the same postcard from my mom and it's sort of overcast outside and we're having this conversation again!
+	Lizzy: well, you don't remember what I said yesterday at least.
+	Lizzy: you showed me your watch.
 Valerie: The Keepers often hold committee meetings about these supernatural phenomena,
-Valerie: and they often result in quite a few fists flying.
-Lizzy: Val, please, level with me. Somebody has got to be behind this!
+Valerie: and they often result in quite a few fists flying...
+Valerie: Are you positive it's not the stress from graduation making you feel as though you're repeating the day?
+Lizzy: Val, please, level with me.
+Lizzy: Somebody has got to be behind this!
 Lizzy: Somebody like Lady MacDeath, she raised a bunch of zombies in the last yesterday and was cackling about some evil plan.
+Lizzy: like maybe she's trapping me in some sort of...
+Lizzy: time circle, you know,
+Lizzy: repeating it over and over again.
+Valerie: you seem to be describing a time loop.
+Lizzy: well,
+Lizzy: maybe not a time loop.
+VO: could be a time loop.
+VO: oh god,
+VO: I hope i'm not stuck in a time loop.
 Valerie: One of the keepers, Humprey Egbert, the second, actually published a case study about this very thing.
 do GameState.learn_fact("v_case_study")
 VO: Oh no, she’s going off on one of her tangents.
@@ -39,8 +53,10 @@ Valerie: It contained a very exhaustive list of citations and appendices,
 Valerie: due in part because he had written it while being stuck in said time loop.
 Valerie: The control group in this case was the rest of the world.
 Lizzy: okay, well, how does this help me?
-Lizzy: Can you call Humphrey up and maybe he can walk me through how he broke his?
-Valerie: I detest phones, you know this Elizabeth,
+Valerie: I just thought it was interesting.
+Lizzy: Maybe can you call Humphrey up and he can walk me through his repeating day.
+Lizzy: we could compare notes.
+Valerie: I detest phones.
 Valerie: but in any case, we wouldn’t be able to.
 Lizzy: Why not??
 Valerie: He died.
@@ -75,9 +91,10 @@ do GameState.learn_fact("v_future_worries")
 Lizzy: what did you do in Scotland?
 Valerie: well, I mostly hung out with sheep in fields and wrote poetry while staring out at the water.
 Lizzy: ...
-Valerie: It took about a year for my father to finally track me down and take me back home.
+Valerie: It took about two years for my father to finally track me down and take me back home.
 Valerie: and I went kicking and screaming,
-Valerie: but eventually, I saw reason.
+Valerie: but eventually,
+Valerie: I saw reason.
 Valerie: He sat me down and gave me this.
 join "Strike Ball" (Watch) center [animation="Fade In Up"]
 Valerie: This watch belonged to my great-great-grandmother, back when the Keep was first started.

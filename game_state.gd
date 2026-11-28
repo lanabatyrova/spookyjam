@@ -1,6 +1,6 @@
 extends Node
 
-var current_day: int = 0
+var current_day: int = 8
 var midpoint_reached = false
 var is_minigame = false
 

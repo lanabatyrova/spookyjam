@@ -12,6 +12,67 @@
 [ext_resource type="Texture2D" uid="uid://caugbl31smsqb" path="res://assets/Locations/Hover Doors/street door open.png" id="6_j7d42"]
 [ext_resource type="Texture2D" uid="uid://2x63vul124dm" path="res://assets/Locations/Hover Doors/Arrow 2.png" id="9_7bs4h"]
 [ext_resource type="Texture2D" uid="uid://kyt4srlk12k1" path="res://assets/Locations/Hover Doors/turn back.png" id="10_xgmgp"]
+[ext_resource type="Texture2D" uid="uid://cp6wpimxijbf0" path="res://assets/effects/rain_1.png" id="13_kdsy4"]
+[ext_resource type="Texture2D" uid="uid://cwobxndce73lf" path="res://assets/effects/rain_2.png" id="14_r6jel"]
+[ext_resource type="Texture2D" uid="uid://bbgi60k676csd" path="res://assets/effects/rain_3.png" id="15_fdy8g"]
+[ext_resource type="Texture2D" uid="uid://d4djxhc461vt4" path="res://assets/effects/rain_4.png" id="16_hhygb"]
+[ext_resource type="Texture2D" uid="uid://c78urcjl6gp6x" path="res://assets/effects/drops_1.png" id="17_6py05"]
+[ext_resource type="Texture2D" uid="uid://c4mpna3wyp7qk" path="res://assets/effects/drops_2.png" id="18_m2htp"]
+[ext_resource type="Texture2D" uid="uid://dkki75noaqgp8" path="res://assets/effects/drops_3.png" id="19_80xbj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xotu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_kdsy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r6jel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fdy8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hhygb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgl7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_6py05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_m2htp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_80xbj")
+}],
+"loop": 1,
+"name": &"drops",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_kdsy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r6jel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fdy8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hhygb")
+}],
+"loop": 1,
+"name": &"rain",
+"speed": 5.0
+}]
 
 [node name="Street" type="Node2D" unique_id=316988252]
 script = ExtResource("1_q35gy")
@@ -74,6 +135,21 @@ offset_bottom = 910.0
 rotation = 1.5554097
 scale = Vector2(0.1218678, 0.2861553)
 texture_hover = ExtResource("10_xgmgp")
+
+[node name="Epilogue" type="Node2D" parent="." unique_id=1549295859]
+
+[node name="Rain" type="AnimatedSprite2D" parent="Epilogue" unique_id=1142176636]
+position = Vector2(501, 276)
+scale = Vector2(0.42018038, 0.42018038)
+sprite_frames = SubResource("SpriteFrames_5xotu")
+autoplay = "default"
+
+[node name="Drops" type="AnimatedSprite2D" parent="Epilogue" unique_id=843586872]
+position = Vector2(501, 276)
+scale = Vector2(0.42018038, 0.42018038)
+sprite_frames = SubResource("SpriteFrames_vgl7g")
+animation = &"drops"
+autoplay = "drops"
 
 [connection signal="pressed" from="Door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="JuniperButton" to="JuniperButton" method="_on_pressed"]

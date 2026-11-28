@@ -5,6 +5,7 @@ extends Node2D
 @onready var evening = $GraveyardNight
 @onready var day = $daysounds
 @onready var night = $nightsounds
+@onready var epilogue = $Epilogue
 
 var current_day: int
 
@@ -28,6 +29,7 @@ func update_day(day: int):
 	dagger.visible = day in [1,3,4,5,6] && GameState.midpoint_reached
 	shakespeare.visible = day in [2] && GameState.midpoint_reached && !GameState.inventory["pocket_shakespeare"]
 	evening.visible = GameState.midpoint_reached
+	epilogue.visible = day in [8]
 	
 func play_music():
 	if GameState.midpoint_reached:

@@ -1,18 +1,16 @@
-[background arg="res://assets/Scene_Overlay.png" fade="0.5"]
-join Juniper (Close Up) left [animation="Fade In Up"]
-join Barb (Close Up) lefter [animation="Fade In Up" z_index="1"]
-join Lizzy (Close Up) right [animation="Fade In Up"]
+[background arg="res://assets/Scene_Overlay.png" fade="0.0"]
+join Juniper (Close Up) left
+join Barb (Close Up) lefter [z_index="1"]
+join Lizzy (Close Up) right
 Juniper: Hey, Lizzy, want to head to the exam together?
 
-
 Lizzy: Sorry, I gotta take care of something in the library first.
-
 Barb: Then why are you telling? Do we look like your PDA?
 Lizzy: Public Display of Affection?
 update Barb [animation="Tada" wait="true" mirrored="true"]
 Barb: Ugh, you know I didn’t mean that.
-
-
+	
+	
 Juniper: Just make sure you get back in time. You don’t want to miss it.
 
 
@@ -21,6 +19,14 @@ Juniper: Just make sure you get back in time. You don’t want to miss it.
 
 
 
-do GameState.mark_characters_as_spoken(["barb", "noah", "juniper"])
-leave --All-- [animation="Fade Out"]
-[background fade="0.5"]
+
+
+
+
+
+
+do GameState.mark_characters_as_spoken(["barb", "juniper"])
+leave --All-- [animation="Instant Out"]
+[background fade="0.0"]
+[end_timeline]
+if {} == "":
