@@ -73,8 +73,8 @@ if {current_decision} == true:
 		update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
 		Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
 		Barb: Why am I even friends with you??
-
-
+	
+	
 	- Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
 		Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
 		Barb: ....
@@ -148,14 +148,13 @@ else:
 		update Noah [mirrored="true" extra_data="hide ArmL/Pocket, hide ArmR/Down, show ArmL/Down, show ArmL/Pointing"]
 		Noah: Me too. Not for any suspicious reason or anything, this just feels like a natural conversation end point.
 		Barb: Why am I even friends with you??
-
-
+	
+	
 	- Find an elegant way to leave the conversation[br]without suspicion because what if[br]you’re actually being mind probed by Lady MacDeath[br]and she’s trying to learn valuable secrets?
 		Lizzy: I’m glad that we are good enough friends that I can leave a conversation without anyone thinking it’s weird.
 		Barb: ....
 		Noah: You know, I wasn’t really thinking it was weird until you pointed it out.
-leave --All-- [animation="Fade Out Down"]
+leave --All-- [animation="Fade Out Down" length="0.3"]
 do GameState.mark_characters_as_spoken(["barb", "juniper", "noah"])
 do ProgressionTracker.complete_requirement("1A", "hallway_dialog")
 [background fade="4.0"]
-update Barb [extra_data="hide Eyebrows/Up"]
